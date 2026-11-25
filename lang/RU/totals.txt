@@ -1,0 +1,73 @@
+# ИСТОЧНИКИ БОНУСОВ: подписи слагаемых в подсказке «из чего сложено» на вкладке «Суммарные бонусы».
+# По этим же подписям удар находит своё слагаемое, поэтому одна подпись собирается в одном месте.
+# ВАЖНО ПРИ ПЕРЕВОДЕ: подписи частей вещи (totals.part.*) должны различаться между собой — иначе
+# строки разных частей начнут делить один бросок урона. Сторожит --langtest.
+
+totals.part.prefix=(префикс)
+totals.part.suffix=(суффикс)
+totals.part.component=(компонент)
+totals.part.relicBonus=(бонус завершения)
+totals.part.augment=(аугмент)
+totals.part.modifier=(модификатор)
+totals.part.ascension=(вознесение)
+totals.setShort=комплект: {0}
+totals.fromItem=с вещи: {0} ({1})
+totals.devotion=набожность: {0}
+totals.skill=умение: {0} (ур. {1})
+totals.toggled=включено: {0} (ур. {1})
+totals.skillMod=правка умения: {0}
+totals.toggledMod=включено, правка умения: {0}
+totals.chosenOn={0} — включено вручную
+totals.chosenOff={0} — выключено вручную
+totals.gateItem={0} (с вещи) — {1}
+totals.gateDevotion={0} (набожность) — {1}
+
+# ПОЧЕМУ УМЕНИЕ НЕ УЧТЕНО: оружие в руках не то, какого оно требует. Слова — наши, не игры:
+# игра пишет требование в описании умения, а здесь сказано, чего не хватает ИМЕННО СЕЙЧАС.
+totals.gate.needDualAny=нет ни парного ближнего, ни двух одноручных стрелковых
+totals.gate.needDualMelee=нет парного оружия
+totals.gate.needDualRanged=нет двух одноручных стрелковых
+totals.gate.needRanged=нет стрелкового оружия
+totals.gate.needGuns=нужны два пистолета или ружьё
+totals.gate.needEmptyHands=в руках оружие
+totals.gate.wrongWeapon=не то оружие в руках
+
+# ЗАГОЛОВКИ ГРУПП на вкладке «Суммарные бонусы». «Сопротивления», «Ответный урон», «Защита» и
+# «Характеристики» берутся у игры (панель персонажа); эти четыре строки — только запасные.
+totals.group.damage=Урон
+totals.group.overTime=Урон со временем
+totals.group.retaliation=Ответный урон
+totals.group.debuff=Что снимается с цели
+totals.group.resist=Сопротивления
+totals.group.defence=Защита
+totals.group.attributes=Характеристики
+totals.group.skills=Умения
+totals.group.other=Прочее
+
+# Области брони. Обычно берутся у игры (её панель брони); эти — запасные.
+totals.zone.head=Голова
+totals.zone.shoulders=Плечи
+totals.zone.chest=Грудь
+totals.zone.arms=Руки
+totals.zone.legs=Ноги
+totals.zone.feet=Ступни
+
+# Что упёрлось в предел у питомцев: «… зажато: хаос 84% (+12% сверх лимита), оглушение …».
+totals.capWord.elemental=стихийное
+totals.capWord.stun=оглушение
+totals.capWord.freeze=заморозка
+totals.capWord.trap=обездвиживание
+totals.capWord.petrify=окаменение
+totals.capWord.convert=контроль разума
+
+# Названия сопротивлений. Берутся у игры (её панель персонажа); эти — запасные, теми же словами.
+totals.resist.fire=Огонь
+totals.resist.cold=Холод
+totals.resist.lightning=Молния
+totals.resist.poison=Яд и кислота
+totals.resist.pierce=Проникающий урон
+totals.resist.aether=Эфир
+totals.resist.chaos=Хаос
+totals.resist.life=Урон здоровью
+totals.resist.bleeding=Кровотечение
+totals.resist.physical=Физический урон

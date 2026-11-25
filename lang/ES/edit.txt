@@ -1,0 +1,67 @@
+# VENTANA «EDITAR OBJETO» y sus subventanas: bonificación de ascensión, bonificación de finalización de reliquia.
+# Las líneas de atributos del objeto vienen de la descripción emergente (parte del texto es del propio juego).
+
+edit.title=Editar objeto
+edit.stop=Detener la búsqueda
+edit.relicBonus=Bonificación de finalización (reliquia)…
+edit.affixes=Prefijo y sufijo…
+edit.ascension=Bonificación de ascensión…
+edit.reroll=Volver a tirar el objeto al azar
+edit.findMax=Buscar la tirada máxima
+edit.findValues=Buscar por valores
+edit.close=Cerrar
+edit.notSaved=(encontrado, no escrito)
+edit.secondEnd=└ el otro extremo de la misma línea
+edit.hiddenRolls=Tirado, pero no mostrado en la descripción
+edit.perSecond=({0} por 1 s: eso es lo que guarda el campo)
+edit.range=de {0}…{1}
+
+# Panel derecho: cómo va la búsqueda y cómo termina
+edit.rerolled=El objeto se ha vuelto a tirar.\nNo se buscó nada: un objeto aleatorio es válido por sí mismo.\nPara escribirlo en la partida pulsa «Aplicar».
+edit.badNumber=No se pudo leer el número de la línea «{0}»: {1}
+edit.busy=Buscando…
+edit.busyProgress=Buscando… {0} millones de 2147 comprobados
+edit.searching=Buscando el objeto probando valores.\nLo que tarde depende de la velocidad del ordenador.
+edit.found=Se encontraron todos los números elegidos. Pulsa «Aplicar» para escribir el objeto en la partida.
+edit.impossible=Este atributo nunca tiene ese valor:
+edit.impossibleHint=Escribe uno de los valores que se muestran a la derecha de la línea.
+edit.cancelled=La búsqueda se ha detenido.
+edit.notFound=Estos atributos no se pueden encontrar juntos. Desmarca los que menos te importan y vuelve a intentarlo.
+edit.hardest=El campo más difícil fue: {0}. Se probaron todas las opciones; un objeto así no puede existir en el juego.
+edit.same=El objeto ya es así. No hay nada que cambiar.
+edit.saved=Escrito en la partida.\nEl objeto en sí, sus afijos, su componente y su ascensión no se tocaron: sigue siendo un objeto que el juego podría haber soltado.
+edit.relicCleared=Se quitó la bonificación de finalización.
+edit.relicSet=Bonificación de finalización: {0}
+edit.ascensionCleared=Se quitó la bonificación de ascensión.
+edit.ascensionSet=Bonificación de ascensión: {0}
+edit.report.scanned={0} comprobados en {1} s
+edit.report.found=ENCONTRADO:   ({0})
+edit.report.impossible={0}: este campo nunca da el valor {1}
+
+# Ventana de la bonificación de ascensión
+edit.affixSet=Prefijo: {0}\nSufijo: {1}
+edit.affix.title=Prefijo y sufijo
+edit.affix.head=Ahora: prefijo — {0};   sufijo — {1}\nSolo se muestran los que el juego pone en objetos de este tipo; un punto marca los raros (verdes).\nLos números de la lista son los TIRADOS para este objeto: un afijo se sortea, y lo que ves aquí es lo que obtienes.
+edit.affix.prefix=Prefijo
+edit.affix.suffix=Sufijo
+edit.affix.none=ninguno
+edit.affix.gone=(el juego ya no lo da; no está en la lista)
+edit.affix.clear=Quitar esta parte
+edit.affix.level=Exige nivel {0}
+edit.affix.building=Leyendo las tablas de objetos del juego: una vez tras actualizar el juego.
+
+edit.asc.title=Bonificación de ascensión
+edit.asc.head=Solo se muestran las bonificaciones a las que tiene derecho un objeto de este tipo: un arma a una mano no tiene derecho a las de dos manos, y al revés.
+# edit.asc.unknownClass=desconocida
+# edit.asc.noPool=sin determinar
+edit.asc.allPools=todas las reservas, no solo las suyas
+
+# Ventana de la bonificación de finalización de reliquia
+edit.relic.title=Bonificación de finalización de reliquia
+edit.relic.head=Reliquia: {0}   —   nivel de fabricación: {1}\nLos números de la lista son los TIRADOS para este objeto: la bonificación de finalización se sortea, y lo que ves aquí es lo que obtienes.
+edit.relic.unknown=desconocido
+edit.relic.noKind=no indicado
+# edit.relic.noTable=esta reliquia NO tiene ninguna: nunca recibe bonificación de finalización
+edit.relic.allTables=todas las tablas, no solo la suya
+edit.relic.noTableList=Esta reliquia no tiene tabla de bonificaciones: nunca recibe bonificación de finalización.
+edit.relic.jitter=(dispersión {0}%)

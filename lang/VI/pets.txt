@@ -1,0 +1,23 @@
+# CỬA SỔ «THUỘC HẠ ĐANG DÙNG» và các dòng thuộc hạ ở cửa sổ khác.
+# Tên thuộc hạ và kỹ năng của chúng lấy từ trò chơi.
+
+pets.title=Thuộc hạ đang dùng — {0}
+pets.checkbox={0}   ({1}, cấp {2})
+pets.limit=tối đa {0} cùng lúc
+pets.lifetime=sống {0} giây
+pets.life=máu: gốc {0} × (1 + {1}% của nó + {2}% của ta) = {3}
+pets.lifeAura=máu: gốc {0} × (1 + {1}% của nó + {2}% của ta + {3}% hào quang) = {4}
+pets.armour=giáp: gốc {0} × (1 + {1}% của nó + {2}% của ta) = {3}   (trò chơi không bao giờ hiện giáp của thuộc hạ — đây là con số của chúng tôi)
+pets.auras=dưới hào quang: {0}
+pets.none=Nhân vật này không có kỹ năng nào triệu hồi thuộc hạ.
+pets.note=Máu: gốc × (1 + của nó% + hỗ trợ thuộc hạ% + hào quang%). Sát thương kỹ năng được nhân với hỗ trợ thuộc hạ — quy tắc đã được đo trên bảy con số của trò chơi.
+
+pets.level=cấp {0}
+pets.levelUnknown=bản ghi thuộc hạ không ghi cấp
+pets.attack={0}   (thuộc hạ «{1}», {2})
+
+# Chuyển hóa của thuộc hạ
+pets.conversion.title=Chuyển hóa của thuộc hạ này
+pets.conversion.capped=Từ một loại không chuyển đi quá một trăm phần trăm: một trăm được chia cho các loại nhận theo tỷ lệ của chúng. Trong ngoặc — con số thực ghi trong vật phẩm.
+pets.conversion.line={0}% chuyển hóa: {1} thành {2}
+pets.conversion.recorded=(bản ghi ghi {0}%)

@@ -1,0 +1,44 @@
+# KATALOG PRZEDMIOTÓW (lewa kolumna okna głównego).
+
+catalog.title=Katalog przedmiotów
+catalog.wearable=Wszystko do założenia
+catalog.everything=Wszystkie przedmioty
+catalog.search=część nazwy…
+catalog.bonus=bonus: szybkość ataku…
+catalog.bulkHint=Ctrl + lewy przycisk — weź stos
+catalog.count=przedmioty: {0}
+catalog.notBuilt=(katalog nieutworzony)
+catalog.hidden=(ukryte filtrami: {0})
+catalog.level=poz. {0}
+
+# Rzadkość
+catalog.rarity.common=Zwykłe
+catalog.rarity.magical=Magiczne
+catalog.rarity.rare=Rzadkie
+catalog.rarity.epic=Epickie
+catalog.rarity.legendary=Legendarne
+catalog.rarity.quest=Zadania
+
+# Działy
+catalog.category.head=Pancerz: głowa
+catalog.category.shoulders=Pancerz: ramiona
+catalog.category.chest=Pancerz: tułów
+catalog.category.hands=Pancerz: dłonie
+catalog.category.waist=Pancerz: pas
+catalog.category.legs=Pancerz: nogi
+catalog.category.feet=Pancerz: stopy
+catalog.category.amulet=Biżuteria: amulety
+catalog.category.ring=Biżuteria: pierścienie
+catalog.category.medal=Biżuteria: medale
+catalog.category.relic=Relikty
+catalog.category.weapon1h=Broń: jednoręczna
+catalog.category.weapon2h=Broń: dwuręczna
+catalog.category.ranged1h=Broń: pistolety
+catalog.category.ranged2h=Broń: karabiny
+catalog.category.shield=Druga ręka: tarcze
+catalog.category.offhand=Druga ręka: przedmioty magiczne
+catalog.category.component=Składniki
+catalog.category.augment=Wzmocnienia
+catalog.category.consumable=Materiały eksploatacyjne
+catalog.category.crafting=Surowce i plany
+catalog.category.other=Inne

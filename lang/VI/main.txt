@@ -1,0 +1,110 @@
+# CỬA SỔ CHÍNH: tiêu đề, nút menu, hành trang, thanh trạng thái, thông báo.
+#
+# Định dạng của mọi tệp ngôn ngữ: khóa=văn bản. Dòng bắt đầu bằng # là chú thích.
+# \n là xuống dòng. {0}, {1} là chỗ chương trình chèn số hoặc tên;
+# phải giữ lại trong bản dịch, thứ tự có thể thay đổi.
+# Tên vật phẩm, lớp nhân vật và kỹ năng không nằm ở đây — chính trò chơi cung cấp chúng.
+
+main.title=Grim Dawn — trình xem nhân vật
+main.title.character=Grim Dawn — {0}
+
+# Nút menu
+main.menu.open=Mở bản lưu
+main.menu.skills=Kỹ Năng
+main.menu.damage=Tính sát thương
+main.menu.settings=Cài đặt
+
+# Hành trang và rương đồ
+main.edit.button=Sửa vật phẩm
+main.edit.armed=Hãy bấm vào vật phẩm
+main.trash.idle=Xóa vật phẩm — nhặt lên rồi bấm vào đây
+main.trash.armed=Xóa vật phẩm
+main.stash.title=Rương đồ nhân vật
+main.stash.none=Rương đồ nhân vật: không có thẻ
+main.stash.count=Rương đồ nhân vật: {0} thẻ, {1} vật phẩm
+main.bags.main=Chính
+main.bags.extra=Túi {0}
+
+# Dòng dưới các ô của nhân vật
+main.summary=Túi {0}, vật phẩm {1}\nRương đồ: thẻ {2}, vật phẩm {3}
+main.summary.noInventory=CHƯA CÓ HÀNH TRANG: nhân vật được tạo trong menu và chưa từng vào trò chơi.\nHãy vào trò chơi bằng nhân vật này ít nhất một lần — khi đó túi và trang bị sẽ xuất hiện.\nRương đồ: thẻ {0}, vật phẩm {1}
+
+# Lưu và mở
+main.status.saved=Đã lưu {0}
+main.status.savedBackup=Đã lưu {0}   bản sao dự phòng: {1}
+main.status.saveError=LỖI GHI: {0}
+main.saveError.title=Không lưu được
+main.open.title=Chọn player.gdc
+main.open.filter=Bản lưu Grim Dawn (player.gdc)|player.gdc|Mọi tệp|*.*
+main.loadError.title=Không đọc được bản lưu
+main.noInventory.text=Nhân vật này chưa có hành trang.\n\nNhân vật được tạo trong menu trò chơi và chưa từng vào thế giới, nên bản lưu không có túi, ô trang bị hay bộ vũ khí — trò chơi tạo chúng ở lần đầu vào thế giới.\n\nHãy vào trò chơi bằng nhân vật này ít nhất một lần, khi đó có thể sửa trang bị. Mọi thứ khác — cấp, thuộc tính, kỹ năng, tín ngưỡng — đã dùng được ngay.
+main.noInventory.title=Chưa có hành trang
+main.status.openFirst=Hãy mở một bản lưu trước.
+
+# Thư mục trò chơi
+main.status.noGame=Không tìm thấy thư mục Grim Dawn — hãy mở «Cài đặt…» và chỉ ra thư mục.
+main.status.gameBase=Cơ sở dữ liệu trò chơi: {0}   ngôn ngữ: {1}
+main.status.gameError=Không mở được cơ sở dữ liệu trò chơi: {0}
+main.askGame.text=Không tìm thấy thư mục Grim Dawn.\n\nViệc tìm kiếm xem các thư viện Steam, mục GOG và trình cài đặt trong registry, cùng các thư mục trò chơi thông thường trên mọi ổ đĩa. Nếu trò chơi nằm ở chỗ khác, hãy chỉ ra thư mục của nó — thư mục chứa database\\database.arz.
+main.askGame.title=Grim Dawn được cài ở đâu?
+
+# Danh mục vật phẩm
+main.catalog.title=Danh mục vật phẩm
+main.catalog.stale=Tệp trò chơi đã thay đổi sau khi tạo danh mục — có vẻ đã có bản cập nhật.\nTạo lại danh mục vật phẩm?
+main.catalog.missing=Danh mục vật phẩm chưa được tạo.\nTạo từ tệp trò chơi? Việc này mất vài giây.
+main.status.catalog=Danh mục: {0} vật phẩm
+main.status.catalogBuilding=Đang tạo danh mục vật phẩm…
+main.status.catalogBuilt=Đã tạo danh mục: {0} vật phẩm
+main.status.catalogError=Không tạo được danh mục: {0}
+
+# Vật phẩm trên tay
+main.status.noIcon=Vật phẩm này không có biểu tượng trong cơ sở dữ liệu trò chơi, nên không biết kích thước theo ô — không thể thêm vào một cách an toàn.
+main.status.bulkLimit=Đã lấy một chồng {0} cái — đó là giới hạn cho loại này.
+main.status.bulkNoLimit=Đã lấy một chồng {0} cái (trò chơi không nêu giới hạn cho loại này — chúng tôi lấy một trăm, như các loại khác).
+main.status.newInHand=Vật phẩm mới trên tay: {0} ({1}x{2})  —  bấm vào chỗ trống trong túi hoặc rương, vào ô trang bị hoặc vào tiêu đề thẻ. Esc để hủy.
+main.status.inHand=Trên tay: {0} ({1}x{2})  —  bấm vào chỗ trống trong túi hoặc rương, vào tiêu đề thẻ, vào ô trang bị hoặc vào thanh «Xóa vật phẩm». Esc để hủy.
+main.status.takenOff=Đã tháo ra tay: {0}  —  cho vào túi, vào rương, vào ô phù hợp khác hoặc xóa đi. Esc để hủy.
+main.status.sizeUnknown=Không biết kích thước vật phẩm này (không có biểu tượng trong cơ sở dữ liệu trò chơi) — không thể di chuyển, nếu không nó có thể tràn ra ngoài lưới.
+main.status.noRoom=Không vừa chỗ này — cần {0}x{1} ô trống. Chuột phải hoặc Esc để hủy.
+main.status.noStacking=«{0}» không xếp chồng được — ở đây cần một ô trống.
+main.status.stackFull=Chồng này đã đầy: {0}. Hãy đặt chỗ khác.
+main.status.stackFullOf=Chồng này đã đầy: {0} trên {1}. Hãy đặt chỗ khác.
+main.status.merged=Đã gộp {0} cái: chồng giờ có {1}.
+main.status.mergedRest=Đã gộp {0} cái: chồng giờ có {1}, trên tay còn {2} — hãy đặt vào chỗ trống hoặc xóa đi.
+main.status.addedBag=Đã thêm vào túi: {0}
+main.status.addedStash=Đã thêm vào rương: {0}
+main.status.unequippedBag=Đã tháo và cất vào túi: {0}
+main.status.unequippedStash=Đã tháo và cất vào rương: {0}
+main.status.movedBag=Đã chuyển vào túi: {0}
+main.status.movedStash=Đã chuyển vào rương: {0}
+main.status.equipped=Đã trang bị: {0} → {1}
+main.status.reequipped=Đã đổi ô: {0} → {1}
+main.status.discarded=Đã bỏ vật phẩm mới: {0} (nó chưa từng vào bản lưu).
+main.status.deleted=Đã xóa: {0}   (tệp gốc được giữ bên cạnh dưới dạng .bak)
+main.status.noRoomBag=Túi này không còn chỗ {0}x{1}.
+main.status.noRoomStash=Thẻ rương này không còn chỗ {0}x{1}.
+main.status.cancelled=Đã hủy: {0} vẫn ở chỗ cũ.
+
+# Vì sao không trang bị được
+main.why.noInventory=Nhân vật này chưa có hành trang: được tạo trong menu và chưa từng vào trò chơi. Hãy vào trò chơi bằng nhân vật này ít nhất một lần — trò chơi sẽ tự tạo túi, ô trang bị và bộ vũ khí, khi đó có thể sửa chúng.
+main.why.sameSlot=Vật phẩm đã ở ô này.
+main.why.wrongSlot=«{0}» không lắp vào ô «{1}» được.
+main.why.slotBusy=Ô «{0}» đã có đồ — hãy tháo thứ đang mặc ở đó trước.
+main.why.level=«{0}» cần cấp {1}, nhân vật đang cấp {2}.
+main.why.twoHanded=Vũ khí hai tay chiếm cả hai tay — hãy bỏ trống tay phụ trước.
+main.why.offHandBusy=Tay chính đang cầm vũ khí hai tay — nó chiếm luôn cả tay phụ.
+
+# Sửa vật phẩm
+main.status.editArmed=Bấm vào một vật phẩm — cửa sổ sửa chỉ số sẽ mở ra. Bấm lại nút để hủy.
+main.status.editCancelled=Đã hủy sửa — cú bấm không trúng vật phẩm.
+main.status.editNoSeed=Vật phẩm này không có gì để tìm: nó không đến từ bản lưu.
+main.status.editUnchanged=Vật phẩm không thay đổi.
+main.status.editDone=Vật phẩm đã được sửa và lưu.
+
+# Còn thiếu gì để mang vật phẩm (thanh trạng thái).
+main.need.level=cấp {0} (hiện có {1})
+
+# Gắn linh kiện hoặc phụ gia vào trang bị (2 tháng 10). Thứ gì hợp với thứ gì là lấy từ bản ghi của trò chơi.
+main.status.partAttached=Đã gắn: {0} → {1}
+main.status.partReplaced=Đã gắn: {0} → {1}, thay cho «{2}»
+main.status.partWrongItem=«{0}» không gắn được vào «{1}».

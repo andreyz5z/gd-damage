@@ -1,0 +1,23 @@
+# VENTANA «MASCOTAS ACTIVAS» y líneas de mascotas en las demás ventanas.
+# Los nombres de las mascotas y de sus habilidades vienen del juego.
+
+pets.title=Mascotas activas — {0}
+pets.checkbox={0}   ({1}, niv. {2})
+pets.limit=hasta {0} a la vez
+pets.lifetime={0} s de vida
+pets.life=vida: base {0} × (1 + {1}% propia + {2}% nuestra) = {3}
+pets.lifeAura=vida: base {0} × (1 + {1}% propia + {2}% nuestra + {3}% auras) = {4}
+pets.armour=armadura: base {0} × (1 + {1}% propia + {2}% nuestra) = {3}   (el juego nunca muestra la armadura de las mascotas; esta cifra es nuestra)
+pets.auras=bajo auras: {0}
+pets.none=Este personaje no tiene ninguna habilidad que invoque una mascota.
+pets.note=Vida: base × (1 + propia% + bonificaciones de mascota% + auras%). El daño de las habilidades se multiplica por las bonificaciones de mascota; la regla se midió con siete números del juego.
+
+pets.level=niv. {0}
+pets.levelUnknown=el registro de la mascota no indica nivel
+pets.attack={0}   (mascota «{1}», {2})
+
+# Conversión de la mascota
+pets.conversion.title=Conversión de esta mascota
+pets.conversion.capped=De un tipo no sale más del cien por cien: el cien se reparte entre los receptores según sus partes. Entre paréntesis, lo que los objetos indican realmente.
+pets.conversion.line={0}% de conversión: {1} en {2}
+pets.conversion.recorded=(el registro dice {0}%)

@@ -1,0 +1,36 @@
+# NOTAS SOBRE EL CÁLCULO DEL GOLPE (pestaña «Daño por golpe», sección «Cómo se calcula»).
+
+model.bareHands=No hay arma en la mano principal. El daño del puño en sí no se cuenta, solo lo que dan las habilidades, la devoción y los objetos; en el juego, un personaje a mano desnuda tiene unos pocos puntos más de daño físico.
+model.dualDot=Con dos armas, el daño con el tiempo no se reparte por mano: {0} es 0,75 de la suma del daño con el tiempo de AMBAS manos y del propio del personaje, contando cada fuente UNA vez. Por mano, el juego muestra «daño con el tiempo de esa mano + el del personaje» completo, así que la línea «por golpe» puede ser mayor o menor que una mano. Solo se trata así el daño con el tiempo que lleva el arma misma (un componente dentro de ella no cuenta).
+model.plainAttack=Este es el ataque de arma por defecto con el arma de la mano principal. Se puede elegir una habilidad en la lista de arriba.
+model.skill=Habilidad «{0}», nivel {1}.
+model.skillNoWeapon=No tiene parte de daño del arma, así que el arma no entra en este golpe, ni las bonificaciones planas de los objetos: solo se cuenta el daño propio de la habilidad.
+model.skillWeapon={0}% del daño del arma: este multiplicador se aplica al daño del arma junto con su daño con el tiempo, pero no al daño plano propio de la habilidad.
+model.charge=La habilidad se carga: {0}% en la última carga. El panel del juego cuenta con esa cifra incluso sin cargas acumuladas, y el multiplicador solo se aplica a la parte de daño del arma; el daño plano propio de la habilidad queda igual. La descripción de la propia habilidad no lleva este multiplicador: allí la parte aparece como {1}%.
+model.modifiers=Modificadores de habilidad incluidos en este golpe: {0}. Sus porcentajes pertenecen al ataque, no al personaje; por eso no están en la pestaña de bonificaciones totales. El juego también los incluye: para «Cadencia» muestra 210 grados y 5 objetivos, y esos son los números de «Espíritu de Lucha».
+model.temporaryIn=Aquí está incluido un efecto temporal de la habilidad: {0}. Se aplica al acertar la habilidad y dura unos segundos, es decir, mientras sigues atacando se mantiene. Pero el panel del juego muestra la habilidad SIN él, así que compara el panel con la cifra sin efectos temporales (abajo).
+model.temporaryOut=Los efectos temporales ({0}) no están incluidos aquí.
+model.retaliation=La habilidad añade al golpe el {0}% del daño de contraataque del personaje; eso se cuenta y se reparte por tipo. RESTO: para «Baluarte de Menhir» la regla da 1089 de fuego frente a los 1092 necesarios, un 0,28% de diferencia; de dónde salen esos tres puntos no está averiguado.
+model.notCounted=No incluido: {0}.
+model.notModelled=No se tiene en cuenta: la acumulación de daño con el tiempo de distintas fuentes, los golpes críticos, las bonificaciones contra un tipo de monstruo (multiplican al final) y las resistencias del objetivo.
+
+# Nombres de los tipos de daño en las líneas «Daño por golpe» y de contraataque: «1234 de daño de fuego».
+model.type.Physical=daño físico
+model.type.Pierce=daño de perforación
+model.type.Fire=daño de fuego
+model.type.Cold=daño de frío
+model.type.Lightning=daño eléctrico
+model.type.Poison=daño de ácido
+model.type.Life=daño de vitalidad
+model.type.Aether=daño de éter
+model.type.Chaos=daño de caos
+model.type.Bleeding=sangrado
+
+# Nombres del daño con el tiempo: «2072 de quemadura por segundo».
+model.dot.Physical=herida interna
+model.dot.Fire=quemadura
+model.dot.Cold=quemadura de hielo
+model.dot.Lightning=quemadura eléctrica
+model.dot.Poison=veneno
+model.dot.Life=vitalidad perdida
+model.dot.Bleeding=herida sangrante

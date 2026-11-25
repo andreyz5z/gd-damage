@@ -1,0 +1,27 @@
+# 複数のウィンドウで共通: ボタン、スキルの出どころ、アイテムの部位。
+
+common.apply=適用
+common.cancel=キャンセル
+common.search=検索:
+common.nothingFound=見つかりませんでした。
+common.put=設定
+common.clearBonus=ボーナスを外す
+
+# ゲームの難易度 (「リフトゲート」タブ、敵のタブ)
+common.difficulty.normal=ノーマル
+common.difficulty.elite=エリート
+common.difficulty.ultimate=アルティメット
+
+# スキルの出どころ (ペットとアクティブスキルのウィンドウの小見出し)
+common.source.mastery=マスタリースキル
+common.source.devotion=祈祷
+common.source.item=アイテムから: {0}
+common.source.set=セット: {0} ({1})
+common.source.setName=セット: {0}
+
+# スキルが付いてきたアイテムの部位: 「アイテムから: 名前 (接頭辞)」
+common.part.prefix=(接頭辞)
+common.part.suffix=(接尾辞)
+common.part.component=(構成材)
+common.part.augment=(増強剤)
+common.part.ascension=(アセンション)

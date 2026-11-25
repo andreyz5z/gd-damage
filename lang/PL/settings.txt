@@ -1,0 +1,14 @@
+# OKNO „USTAWIENIA”.
+
+settings.title=Ustawienia
+settings.gameFolder=Folder Grim Dawn:
+settings.gameFolder.browse=Folder, w którym zainstalowano Grim Dawn
+settings.savesFolder=Folder zapisów (dla okna otwierania):
+settings.savesFolder.browse=Folder z twoimi zapisami
+settings.browse=Wybierz…
+settings.language=Język:
+settings.rebuildCatalog=Utwórz ponownie katalog przedmiotów
+settings.rawFields=Pokazuj wszystkie pola zapisu w opisie przedmiotu
+settings.fileHint=settings.json leży obok programu
+settings.ok=OK
+settings.cancel=Anuluj

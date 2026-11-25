@@ -1,0 +1,14 @@
+# THE "SETTINGS" WINDOW.
+
+settings.title=Settings
+settings.gameFolder=Grim Dawn folder:
+settings.gameFolder.browse=The folder Grim Dawn is installed in
+settings.savesFolder=Saves folder (for the open dialog):
+settings.savesFolder.browse=The folder with your saves
+settings.browse=Browse…
+settings.language=Language:
+settings.rebuildCatalog=Rebuild the item catalog
+settings.rawFields=Show every record field in the item description
+settings.fileHint=settings.json sits next to the program
+settings.ok=OK
+settings.cancel=Cancel

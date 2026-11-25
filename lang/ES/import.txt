@@ -1,0 +1,57 @@
+# Importar un personaje desde GrimTools (el análisis está en MECHANICS 106)
+import.button=Importar un personaje desde GrimTools
+import.warning=Intentaremos equipar a tu personaje con los datos de GrimTools. Tu equipo actual será destruido y todas las características del personaje se sobrescribirán a partir de la importación. Si algún elemento de tu enlace no se reconoce, esa ranura no se modificará. ¿Seguro que quieres continuar?
+import.title=Importar un personaje desde GrimTools
+import.paste=Pega un enlace a una build — por ejemplo, https://www.grimtools.com/calc/2ELApkPN
+import.go=Importar
+import.close=Cerrar
+import.seedNote=Los objetos serán exactamente los mismos, pero los números dentro de sus rangos serán los nuestros: la build no guarda ninguna tirada. Cualquier objeto se puede ajustar después en la ventana de edición.
+import.badLink=Esto no parece un enlace a una build de GrimTools.
+import.err.build=La página se abrió, pero no hay ninguna build en ella. Comprueba el enlace: tiene que llevar a la página de una build.
+import.err.other=No salió bien: {0}
+import.step.page=Leyendo la página de la build…
+import.step.database=Descargando la base de GrimTools…
+import.step.match=Cotejando con los registros del juego…
+import.result.gear=Objetos equipados: {0}; ranuras vaciadas: {1}
+import.result.skills=Habilidades: {0}, estrellas de devoción: {1}, vínculos de poderes celestiales: {2}
+import.result.bio=Nivel {0}; físico {1}, astucia {2}, espíritu {3}
+import.missed.items=Objetos no reconocidos: {0} — esas ranuras se dejaron como estaban ({1})
+
+# La marcha del trabajo y su final. 2 de octubre: el usuario no veía ni lo uno ni lo otro.
+import.step.reading=Analizando la base de GrimTools…
+import.step.haveDatabase=La base de GrimTools ya está analizada: no hay nada que descargar.
+import.step.dress=Equipando al personaje…
+import.status.database=Descargando la base de GrimTools, archivo {0} de {1}: {2} de {3} MB
+import.status.databaseSoFar=Descargando la base de GrimTools, archivo {0} de {1}: {2} MB
+import.status.done=Listo. El personaje está equipado: cierra la ventana para verlo.
+import.status.donePartly=Listo, pero no se trasladó todo: los detalles están arriba.
+import.status.failed=No salió bien.
+# Los fallos, cada uno con su nombre y no un único «no salió bien» para todo.
+import.err.network=No hay conexión con el sitio de GrimTools. Comprueba tu internet e inténtalo de nuevo.
+import.err.page=La página de la build no se abrió: el sitio respondió {0}. Comprueba el enlace; puede que el sitio no esté disponible ahora.
+import.err.timeout=El sitio de GrimTools no respondió. Comprueba tu conexión a internet: puede que el sitio no esté disponible ahora.
+import.err.database=La base de GrimTools no se pudo leer: no hay nada que trasladar. Inténtalo otra vez.
+import.err.catalog=No se pudo armar el catálogo de objetos del juego. Comprueba que la carpeta del juego esté bien indicada.
+# Lo que no se trasladó, por la cuenta: sus números no le dirían nada a nadie.
+import.missed.parts=Partes de objetos no reconocidas: {0} — los objetos están puestos, pero sin ellas.
+import.missed.skills=Habilidades no reconocidas: {0}
+import.missed.powers=Poderes celestiales no reconocidos: {0}
+import.missed.shapes=Vínculos en habilidades de transformación no reconocidos: {0}
+import.missed.repeats=Registros que llegaron dos veces: {0} — las repeticiones se omitieron.
+# Los nombres de las ranuras. Una build las llama weapon1Alt y amulet: no son nombres para una persona.
+import.slot.head=Cabeza
+import.slot.amulet=Cuello
+import.slot.chest=Torso
+import.slot.legs=Piernas
+import.slot.feet=Pies
+import.slot.hands=Manos
+import.slot.ring1=Anillo 1
+import.slot.ring2=Anillo 2
+import.slot.waist=Cintura
+import.slot.shoulders=Hombros
+import.slot.medal=Medalla
+import.slot.relic=Reliquia
+import.slot.weapon1=Arma
+import.slot.weapon2=Escudo o segunda mano
+import.slot.weapon1Alt=Arma (segundo juego)
+import.slot.weapon2Alt=Escudo o segunda mano (segundo juego)

@@ -1,0 +1,8 @@
+# SAVE WRITE ERRORS (shown in the "Save failed: …" status line and in the "Could not save" window).
+
+save.error.unparsed=save not written: block {0} was not parsed into fields (save from an unknown game version)
+save.error.writtenUnparsed=the written file contains an unparsed block {0}
+save.error.reread=the written file does not read back correctly
+save.error.rekey=the file does not survive a change of the encryption key
+save.error.length={0} (length {1} instead of {2})
+save.error.offset={0}: mismatch at offset {1}

@@ -1,0 +1,19 @@
+# VENTANA «HABILIDADES ACTIVAS».
+
+active.title=Habilidades activas — {0}
+active.none=Este personaje no tiene habilidades activables ni habilidades otorgadas por objetos.
+active.source.devotionOn=devoción vinculada a «{0}»
+
+# Condiciones de activación, en breve («la condición «al bloquear» no se sortea»).
+active.trigger.attack=al atacar
+active.trigger.attackCrit=al atacar con crítico
+active.trigger.lowHealth=con poca vida
+active.trigger.lowMana=con poca energía
+active.trigger.hitByEnemy=al recibir un golpe
+active.trigger.hitByMelee=al recibir un golpe cuerpo a cuerpo
+active.trigger.hitByProjectile=al recibir un proyectil
+active.trigger.hitByCrit=al recibir un crítico
+active.trigger.block=al bloquear
+active.trigger.onKill=al matar
+active.trigger.castBuff=al lanzar una mejora
+active.trigger.onEquip=al equiparse

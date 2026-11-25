@@ -1,0 +1,8 @@
+# CHYBY ZÁPISU ULOŽENÉ HRY (ve stavovém řádku „Chyba zápisu: …“ a v okně „Uložení se nezdařilo“).
+
+save.error.unparsed=uložená hra nezapsána: blok {0} nebyl rozložen na pole (uložená hra z neznámé verze hry)
+save.error.writtenUnparsed=zapsaný soubor obsahuje nerozložený blok {0}
+save.error.reread=zapsaný soubor nelze správně zpětně přečíst
+save.error.rekey=soubor nepřežije změnu šifrovacího klíče
+save.error.length={0} (délka {1} místo {2})
+save.error.offset={0}: rozdíl na posunu {1}

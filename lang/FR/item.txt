@@ -1,0 +1,287 @@
+# INFOBULLE D'OBJET ET LIGNES DE BONUS (infobulles des objets, onglet « Bonus totaux »).
+#
+# La plupart des lignes de l'infobulle sont les modèles du jeu lui-même dans la langue choisie. Ici, nos mots : là où
+# le jeu n'a pas de modèle, et le texte de secours quand il n'y a pas de jeu ou que l'étiquette est introuvable.
+
+# Suffixe de durée d'un dégât sur la durée : « +31 % de dégâts de brûlure gel avec +45 % de durée ». Normalement le
+# modèle du jeu (`ImprovedTimeFormat`) ; ce texte seulement s'il manque.
+item.durationWith=avec {0} % de durée accrue
+
+# Noms des types de dégâts dans une ligne de conversion (« 50 % de conversion : dégâts de vitalité en dégâts d'acide »).
+# Normalement pris du jeu (`tagConversion<Type>`) ; voici le secours. Le jeu n'a pas d'étiquette pour le saignement.
+item.conv.Physical=dégâts physiques
+item.conv.Pierce=dégâts perforants
+item.conv.Fire=dégâts de feu
+item.conv.Cold=dégâts de froid
+item.conv.Lightning=dégâts de foudre
+item.conv.Poison=dégâts d'acide
+item.conv.Life=dégâts de vitalité
+item.conv.Aether=dégâts d'éther
+item.conv.Chaos=dégâts de chaos
+item.conv.Bleeding=saignement
+
+# ============ LIBELLÉS DES LIGNES DE L'INFOBULLE ============
+# Une ligne d'objet se construit ainsi : on cherche d'abord le modèle du jeu dans la langue choisie, et seulement
+# s'il n'y en a pas, on prend le libellé d'ici.
+
+# Types de dégâts : forme complète (« +31 % de dégâts de froid »), forme courte pour la durée.
+item.type.Physical=de dégâts physiques
+item.type.Pierce=de dégâts perforants
+item.type.Fire=de dégâts de feu
+item.type.Cold=de dégâts de froid
+item.type.Lightning=de dégâts de foudre
+item.type.Poison=de dégâts d'acide
+item.type.Life=de dégâts de vitalité
+item.type.Aether=de dégâts d'éther
+item.type.Chaos=de dégâts de chaos
+item.type.Bleeding=de dégâts de saignement
+item.type.Elemental=de dégâts élémentaires
+item.typeShort.Physical=physiques
+item.typeShort.Pierce=perforants
+item.typeShort.Fire=de feu
+item.typeShort.Cold=de froid
+item.typeShort.Lightning=de foudre
+item.typeShort.Poison=d'acide
+item.typeShort.Life=de vitalité
+item.typeShort.Aether=d'éther
+item.typeShort.Chaos=de chaos
+item.typeShort.Bleeding=de saignement
+item.typeShort.Elemental=élémentaires
+
+# Libellés construits à partir du nom d'un type.
+item.label.overTime={0} sur la durée
+item.label.dotDuration=de durée des dégâts {0}
+item.label.retaliation={0} en représailles
+item.label.resist=de résistance ({0})
+item.label.maxResist=de résistance maximale ({0})
+item.label.duration=de durée ({0})
+
+# Mots communs à plusieurs champs.
+item.label.action=de durée
+item.label.armour=d'armure
+item.label.cooldown=de recharge de la compétence
+item.label.projectiles=projectile(s)
+item.label.pierceChance=de chance de traverser les ennemis
+item.label.radius=de rayon
+item.label.resCutAll=de réduction des résistances de la cible
+item.label.resCutAllOf=de réduction des résistances de la cible
+item.label.resCut=de réduction de la résistance de la cible
+item.label.resCutOf=de réduction de la résistance de la cible
+item.label.petBaseDamage=dégâts de base du familier
+item.unit.sec=seconde(s)
+item.unit.m=mètre(s)
+item.unit.s=seconde(s)
+
+# Dégâts, dégâts sur la durée et entraves de la cible.
+item.stat.offensiveBonusPhysical=de dégâts physiques
+item.stat.offensivePierceRatio=de part perforante
+item.stat.offensiveLifeLeech=des dégâts d'attaque convertis en santé
+item.stat.offensiveManaLeech=des dégâts d'attaque convertis en énergie
+item.stat.offensivePercentCurrentLife=de réduction de la santé de l'ennemi
+item.stat.offensiveTotalDamageModifier=à tous les dégâts
+item.stat.offensiveCritDamageModifier=de dégâts critiques
+item.stat.offensiveDamageMultModifier=de modification des dégâts totaux
+item.stat.offensivePierceRatioModifier=de part perforante
+item.stat.offensiveSlowManaLeach=de vol d'énergie
+item.stat.offensiveSlowManaLeachDurationModifier=de durée du vol d'énergie
+item.stat.offensiveFumble=de réduction de la précision de la cible
+item.stat.offensiveProjectileFumble=de réduction de la précision des projectiles de la cible
+item.stat.offensiveSlowOffensiveAbility=de réduction de la capacité offensive de la cible
+item.stat.offensiveSlowDefensiveAbility=de réduction de la capacité défensive de la cible
+item.stat.offensiveSlowRunSpeed=de réduction de la vitesse de déplacement de la cible
+item.stat.offensiveSlowAttackSpeed=de réduction de la vitesse d'attaque de la cible
+item.stat.offensiveSlowSpellCastSpeed=de réduction de la vitesse de lancer de la cible
+item.stat.offensiveKnockdown=renversement de la cible
+item.stat.offensiveStun=étourdissement de la cible
+item.stat.offensiveStunModifier=de durée d'étourdissement
+item.stat.offensiveFreeze=gel de la cible
+item.stat.offensivePetrify=pétrification de la cible
+item.stat.offensiveSleep=sommeil de la cible
+item.stat.offensiveTrap=immobilisation de la cible
+item.stat.offensiveConfusion=confusion de la cible
+item.stat.offensiveTaunt=provocation de la cible
+item.stat.offensiveFear=terreur de la cible
+item.stat.offensiveConvert=conversion de la cible
+item.stat.offensiveDisruption=interruption des compétences
+item.stat.offensiveManaBurnDrain=de brûlure d'énergie
+item.stat.offensiveManaBurnDamageRatio=de l'énergie brûlée infligés en dégâts
+item.stat.offensiveTotalDamageReductionPercent=de réduction des dégâts de la cible
+item.stat.offensiveSlowTotalSpeed=ralentissement de la cible
+
+# Dégâts de représailles et entraves en représailles.
+item.stat.retaliationFreeze=de gel en représailles
+item.stat.retaliationConfusion=de confusion en représailles
+item.stat.retaliationSlowLightning=d'électrocution en représailles
+item.stat.retaliationFear=de peur en représailles
+item.stat.retaliationSlowAttackSpeed=de réduction de vitesse d'attaque en représailles
+item.stat.retaliationSlowRunSpeed=de réduction de vitesse de déplacement en représailles
+item.stat.retaliationSlowPoison=de poison en représailles
+item.stat.retaliationSlowManaLeach=de vol d'énergie en représailles
+item.stat.retaliationTotalDamageModifier=à tous les dégâts de représailles
+
+# Armure, blocage et résistances.
+item.stat.defensiveAbsorptionModifier=d'absorption d'armure
+item.stat.defensiveBlockChance=de chance de bloquer
+item.stat.defensiveBlock=dégâts bloqués
+item.stat.blockRecoveryTime=seconde(s) de récupération du blocage
+item.stat.defensiveBlockModifier=de chance de blocage au bouclier
+item.stat.defensiveBlockAmountModifier=de dégâts bloqués au bouclier
+item.stat.blockAbsorption=d'absorption au blocage
+item.stat.skillComboChargeSpendReduction=de chance de ne pas consommer les charges d'élan
+item.stat.characterDefensiveBlockRecoveryReduction=de temps de récupération du bouclier
+item.stat.defensiveElementalResistance=de résistance élémentaire
+item.stat.defensiveAllResistance=à toutes les résistances
+item.stat.defensiveAllMaxResist=à toutes les résistances maximales
+item.stat.defensivePercentReflectionResistance=de dégâts renvoyés subis
+item.stat.defensiveSlowLifeLeach=de résistance au vol de santé
+item.stat.defensiveSlowManaLeach=de résistance au vol d'énergie
+item.stat.defensiveBonusProtection=d'armure bonus
+item.stat.defensiveStun=de résistance à l'étourdissement
+item.stat.defensiveFreeze=de résistance au gel
+item.stat.defensivePetrify=de résistance à la pétrification
+item.stat.defensiveSleep=de résistance au sommeil
+item.stat.defensiveTrap=de résistance à l'immobilisation
+item.stat.defensiveDisruption=de résistance à l'interruption
+item.stat.defensiveKnockdown=de résistance au renversement
+item.stat.defensiveConfusion=de résistance à la confusion
+item.stat.defensiveFear=de résistance à la peur
+item.stat.defensiveTaunt=de résistance à la provocation
+item.stat.defensiveLifeLeach=de résistance à l'absorption de santé
+item.stat.defensiveManaLeach=de résistance à l'absorption d'énergie
+item.stat.defensiveReflect=de dégâts renvoyés
+item.stat.defensiveTotalSpeedResistance=de résistance au ralentissement
+item.stat.defensivePercentCurrentLife=de résistance aux dégâts sur la santé actuelle
+item.stat.defensiveCrowdControl=de réduction de la durée des effets de contrôle
+item.stat.defensiveConvert=de réduction de la durée du contrôle mental
+
+# Attributs du personnage — en nombre et en pourcentage.
+item.stat.characterStrength=de Physique
+item.stat.characterDexterity=de Malice
+item.stat.characterIntelligence=d'Esprit
+item.stat.characterLife=de santé
+item.stat.characterMana=d'énergie
+item.stat.characterLifeRegen=de santé régénérée par seconde
+item.stat.characterManaRegen=d'énergie régénérée par seconde
+item.stat.characterOffensiveAbility=de capacité offensive
+item.stat.characterDefensiveAbility=de capacité défensive
+item.stat.characterConstitution=de constitution
+item.stat.characterRunSpeedMax=de vitesse de déplacement maximale
+item.stat.characterManaLimitReserve=d'énergie réservée
+item.stat.characterStrengthModifier=de Physique
+item.stat.characterDexterityModifier=de Malice
+item.stat.characterIntelligenceModifier=d'Esprit
+item.stat.characterLifeModifier=de santé
+item.stat.characterManaModifier=d'énergie
+item.stat.characterLifeRegenModifier=de régénération de santé
+item.stat.characterManaRegenModifier=de régénération d'énergie
+item.stat.characterOffensiveAbilityModifier=de capacité offensive
+item.stat.characterDefensiveAbilityModifier=de capacité défensive
+item.stat.characterAttackSpeedModifier=de vitesse d'attaque
+item.stat.characterSpellCastSpeedModifier=de vitesse de lancer
+item.stat.characterRunSpeedModifier=de vitesse de déplacement
+item.stat.characterTotalSpeedModifier=de vitesse totale
+item.stat.characterDodgePercent=de chance d'éviter les attaques de mêlée
+item.stat.characterDeflectProjectile=de chance d'éviter les projectiles
+item.stat.characterHealIncreasePercent=de soins accrus
+item.stat.characterEnergyAbsorptionPercent=d'énergie absorbée des sorts ennemis
+item.stat.characterIncreasedExperience=d'expérience gagnée
+item.stat.characterLightRadius=de rayon de lumière
+item.stat.characterGlobalReqReduction=de réduction des exigences d'attributs
+item.stat.characterLevelReqReduction=de réduction de l'exigence de niveau
+item.stat.characterManaLimitReserveReduction=de réservation d'énergie
+item.stat.characterConstitutionModifier=de constitution
+item.stat.characterRunSpeedMaxModifier=de vitesse de déplacement maximale
+item.stat.characterAttackSpeedMaxModifier=de vitesse d'attaque maximale
+item.stat.characterSpellCastSpeedMaxModifier=de vitesse de lancer maximale
+item.stat.characterArmorStrengthReqReduction=de réduction de l'exigence de Physique pour les armures
+item.stat.characterMeleeStrengthReqReduction=de réduction de l'exigence de Physique pour les armes de mêlée
+item.stat.characterMeleeDexterityReqReduction=de réduction de l'exigence de Malice pour les armes de mêlée
+item.stat.characterWeaponStrengthReqReduction=de réduction de l'exigence de Physique pour les armes
+item.stat.characterHuntingDexterityReqReduction=de réduction de l'exigence de Malice pour les armes à distance
+item.stat.characterJewelryIntelligenceReqReduction=de réduction de l'exigence d'Esprit pour les bijoux
+item.stat.characterShieldStrengthReqReduction=de réduction de l'exigence de Physique pour les boucliers
+item.stat.skillCooldownReduction=de réduction du temps de recharge des compétences
+item.stat.skillManaCostReduction=de coût en énergie des compétences
+
+# Ce que coûte une compétence et jusqu'où elle porte ; plus bas, des champs propres aux modificateurs de compétence.
+item.stat.skillActiveLifeCost=de coût en santé par seconde
+item.stat.skillActiveManaCost=de coût en énergie par seconde
+item.stat.skillManaCost=de coût en énergie
+item.stat.skillActiveDuration=de durée
+item.stat.skillTargetNumber=cible(s)
+item.stat.weaponDamagePct=des dégâts de l'arme
+item.stat.retaliationDamagePct=des dégâts de représailles ajoutés à l'attaque
+item.stat.skillChanceWeight=à la chance d'utilisation
+item.stat.skillTargetAngle=degrés d'angle d'attaque
+item.stat.cooldownCharges=charge(s)
+item.stat.petLimit=de limite d'invocations
+item.stat.damageAbsorptionPercent=des dégâts absorbés
+item.stat.projectileLaunchRotation=d'arc de tir
+item.stat.beamAngle=degrés d'arc du rayon
+item.stat.beamNumber=rayon(s)
+item.stat.spawnObjectsTimeToLive=seconde(s) de durée de vie
+
+# En-tête de l'objet : armure et vitesse d'attaque — les mêmes lignes que le jeu affiche sous le nom de l'objet.
+item.head.armour={0} d'armure
+item.head.aps={0} attaques par seconde
+
+# Exigences de l'objet. Normalement prises du jeu ; voici le secours.
+item.need.level=Niveau du joueur
+item.need.strength=Physique
+item.need.dexterity=Malice
+item.need.intelligence=Esprit
+
+# Titres des parties de l'objet. Le jeu n'en a pas : il écrit les bonus des parties directement dans la liste commune,
+# et nous devons montrer d'où vient une ligne. « Composant » et « Augmentation » existent dans le jeu — secours.
+item.part.prefix=Préfixe
+item.part.suffix=Suffixe
+item.part.modifier=Éveil
+item.part.component=Composant
+item.part.relicBonus=Bonus d'achèvement
+item.part.augment=Augmentation
+item.part.ascension=Bonus d'ascension
+
+# Rareté de l'objet. Normalement prise du jeu ; voici le secours.
+item.rarity.common=Ordinaire
+item.rarity.magical=Magique
+item.rarity.rare=Rare
+item.rarity.epic=Épique
+item.rarity.legendary=Légendaire
+item.rarity.quest=Quête
+
+# La note sous l'infobulle sur les nombres tirés, et la taille de l'objet en cases.
+item.rolled.noteDoubt=Les nombres des lignes sont ceux tirés pour CET objet PRÉCIS, tels que le jeu les afficherait. Pour les lignes marquées en rouge, nous n'avons pas encore mesuré la place du champ dans l'ordre de tirage : le nombre de la fiche y est gardé, et celui calculé est ajouté comme « tiré N ? » — il peut différer du jeu d'un cran.
+item.cells={0} cases
+item.allFields=— tous les champs non nuls de la fiche —
+
+# Autres lignes de l'infobulle. Là où le jeu a son propre modèle, c'est lui qui s'affiche ; voici le secours.
+item.weaponDamageHand={0} % des dégâts de l'arme {1}
+item.hand.main=principale
+item.hand.off=de main gauche
+item.missing.noGame=la base de données du jeu n'est pas connectée
+item.missing.noRecord=la fiche a été supprimée par un correctif du jeu
+item.restore.life=de santé
+item.restore.mana=d'énergie
+item.restore.head=Restaure
+item.need.short=— insuffisant, actuel {0}
+item.chanceOfOne={0} % de chance d'obtenir l'un de :
+item.chanceOfAll={0} % de chance d'obtenir :
+item.chanceOf={0} % de chance de
+item.forSeconds=pendant {0} secondes
+item.petBonusAll=Bonus pour tous vos familiers
+item.set=Ensemble
+item.setNamed=Ensemble : {0}
+item.setWorn=Ensemble ({0})
+item.conversionField=conversion des dégâts
+item.conversion={0} % de conversion : {1} en {2}
+item.noGameWords=(cette ligne n'a pas ici de mots du jeu)
+item.rolledValue=tiré {0} ?
+item.racial.damage=de dégâts contre :
+item.racial.defence=de dégâts en moins de :
+item.skillPlus=+{0} à {1}
+item.masteryPlus=+{0} à toutes les compétences de la maîtrise {1}
+item.allSkillsPlus=+{0} à toutes les compétences
+item.summonCount={0} invoqués
+item.activationChance=de chance d'activation
+item.stat.retaliationDamageMultModifier=de modification des dégâts totaux de représailles
+item.conversionGone=-{0}% {1}

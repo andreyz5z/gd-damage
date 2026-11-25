@@ -1,0 +1,18 @@
+# AUSRÜSTUNGSLEISTE: Beschriftungen der Plätze (sie erscheinen auch in den Meldungen „passt nicht auf den Platz …“).
+
+equipment.weapon1=Waffe I
+equipment.offhand1=Nebenhand I
+equipment.weapon2=Waffe II
+equipment.offhand2=Nebenhand II
+equipment.head=Kopf
+equipment.neck=Hals
+equipment.medal=Medaille
+equipment.shoulders=Schultern
+equipment.chest=Torso
+equipment.hands=Hände
+equipment.waist=Taille
+equipment.legs=Beine
+equipment.ring1=Ring 1
+equipment.feet=Füße
+equipment.relic=Relikt
+equipment.ring2=Ring 2

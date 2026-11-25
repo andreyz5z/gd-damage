@@ -1,0 +1,237 @@
+# THE "DAMAGE CALCULATION" WINDOW: tabs, buttons, fields and choice lists.
+# Explanations on the tabs and the simulation log follow further down.
+
+damage.title=Damage calculation — {0}
+damage.tab.timeline=Combat simulation
+damage.tab.totals=Total bonuses
+damage.tab.hit=Damage per hit
+damage.tab.target=Enemy
+damage.seconds={0} sec.
+# The dot's sources named DIFFERENT durations: the weapon one, the skill another. Both printed.
+damage.secondsPair={0} and {1}
+
+# Total bonuses
+damage.pickActive=Choose active skills…
+damage.activeFromSave=counted from the save
+damage.activeChosen=chosen: {0}
+damage.pickPets=Active pets…
+damage.petsNear=pets nearby
+
+# Damage per hit
+damage.hit.what=Attack with
+damage.hit.plain=Default weapon attack (no skill)
+
+# Combat simulation: fields and button
+damage.run.seconds=Seconds
+damage.run.seed=Seed
+damage.run.go=Run the queue
+damage.run.press=What we press (by cooldown)
+damage.run.attack=Default weapon attack
+damage.run.weapon=with the weapon
+damage.run.everyLabel=No cooldown — press every
+damage.run.everyTail=sec. (0 — by animation)
+
+# Combat simulation: items of the "what we press" and "default weapon attack" lists
+damage.press.buff=buff
+damage.press.buffNotRolled=({0} — not rolled)
+damage.press.whenNotRolled={0} — not rolled, pressed on cooldown
+damage.press.every=no cooldown — press every {0} sec.
+damage.press.anim=no cooldown — by animation, every {0} sec.
+damage.press.noAnim=no cooldown — no animation found, set the interval
+damage.press.noCooldown=no cooldown
+damage.press.starHits=star, deals damage
+damage.press.pet=(pet «{0}», {1} at once, {2}, {3} attacks/sec., skills with damage {4})
+damage.press.petLives=lives {0} sec.
+damage.press.petPermanent=permanent
+damage.press.none=no pressable skills with damage
+damage.attack.form=form «{0}»   attacks with the skill «{1}»
+damage.attack.ofForm=(form «{0}»)
+damage.attack.channel=channeled, a tick every {0} sec.
+damage.attack.finale=once every {0} hits
+damage.attack.charges=charges up to {0}
+damage.attack.byAnimation=no cooldown, by animation every {0} sec.
+
+# Enemy
+damage.target.load=Load the enemy list from the game
+damage.target.reload=Rebuild the enemy list
+damage.target.find=Search by name
+damage.target.level=Level
+damage.target.difficulty=Difficulty
+damage.target.notLoaded=The enemy list is not loaded yet.
+damage.target.pressButton=Press the button above — the program will build the list of enemies. It only needs rebuilding after a game update.
+damage.target.nothing=Nothing found.
+
+# ─── EXPLANATIONS ON THE TABS ───
+
+# Total bonuses
+damage.totals.summary=Summed from: {0} equipped items (with components and augments), {1} set bonuses, {2} passive skills, {3} toggled skills, {4} devotion stars.
+damage.totals.exact=[exact]
+damage.totals.overCap=(+{0}% over maximum)
+damage.totals.resistCap=cap {0}%
+damage.totals.armourRating=armor rating {0}
+damage.totals.absorb={0}% absorption
+damage.totals.armourNote=An item's own armor goes into its slot, everything else into all six at once ({0}), and only then +{1}% armor is applied. The rating is the average of the slots, weighted by the share of hits landing on that area. Absorption is the base 70% multiplied by "+% armor absorption", no more than 100%.
+damage.totals.block=chance to block {0}%   damage blocked {1}
+damage.totals.blockNote=Block chance adds up — the shield's "block chance" plus "+% block chance" from everywhere, it is not multiplied. Damage blocked is the shield's base × (1 + % damage blocked).
+damage.totals.pets=Pet bonuses
+damage.totals.petsNote=They act only on summoned creatures and do not apply to you. Sources: {0}.
+damage.totals.petCapItem={0} {1}% (+{2}% over maximum)
+damage.totals.petCapNote=It hit the {0}% cap, and the game's panel prints the number already clamped: {1}. The surplus is not lost: enemies that reduce resistances bite into it first.
+damage.totals.missing=What this sum does not have yet
+damage.totals.missingProcs=Skills that fire on a condition rather than stay up all the time: mastery procs, skills granted by items and devotion procs.
+damage.totals.missingPressed=Skills that have to be pressed — their bonuses last only a few seconds.
+damage.totals.skipped=Skipped: {0}.
+damage.totals.toggledOff=Toggled skills that are off: {0}. The ones that are on are in the sum — the save remembers what is on.
+damage.totals.chosenByHand=Chosen by hand (the "Choose active skills" button): {0}.
+damage.totals.missingConversion=Damage conversion. Percentages to a damage type are shown as they are, but in the game they apply after conversion: "+200% physical damage" gives nothing on a build that converts all physical damage.
+damage.totals.missingScaling=Damage scaling from attributes: Cunning adds to physical and pierce damage, Spirit to the magical types. The equations are known, but that is the next layer.
+damage.totals.missingCap=The resistance cap. The bonuses here are summed as they are, so the number can exceed 80% — in the game it stops at the cap (80% plus the bonuses "to maximum", shown next to it). The surplus over the cap is not useless: bosses reduce resistances.
+damage.totals.missingDifficulty=The resistance penalty for difficulty (−25 on Elite, −50 on Ultimate) is not subtracted here: the save does not say which difficulty you are on right now.
+damage.totals.notStacked=What did not stack
+damage.totals.notStackedNote=Resistance reduction of the kinds "X reduction" and "X% reduction", reduction of the target's damage and of its accuracy do not stack: at any moment the strongest source acts. The strongest is taken here, not the sum.
+damage.totals.notStackedItem={0}: {1} sources, the strongest taken {2}
+
+# The "what it is summed from" tooltip when hovering a line of the sum
+damage.terms.pet=(pet bonus)
+damage.terms.byMax=does not stack: the strongest of {0} sources is taken
+damage.terms.summedOne=summed from {0} source
+damage.terms.summedMany=summed from {0} sources
+damage.terms.winner=← in effect
+damage.terms.total=total {0}
+
+# Damage per hit
+damage.hit.plainTitle=Default weapon attack
+damage.hit.plainWeapon=Default weapon attack: {0}
+damage.hit.skillTitle={0}   ({1}, lv. {2})
+damage.hit.weapon=weapon: {0}
+damage.hit.attackSpeed={0} attacks per sec.   ({1}% attack speed)
+damage.hit.castSpeed={0}% casting speed
+damage.hit.castCapped=(hit the {0}% cap)
+damage.hit.channel=channeled: a tick every {0} sec.
+damage.hit.perHit={0} – {1} per hit
+damage.hit.overTime=(per second, {0} s.)
+damage.hit.none=No damage.
+damage.hit.bare=Without temporary effects ({0}): {1} – {2} per hit — this is the number the game's panel shows.
+damage.hit.how=How it is calculated
+damage.hit.howBase=The base is the weapon's damage plus the flat bonuses of items. Flat elemental damage is split into three equal shares between fire, cold and lightning.
+damage.hit.howConversion=Conversions take shares of the base, and the shares add up rather than apply one after another. Armor piercing is the last conversion, from what is left.
+damage.hit.howMultiplier=Each share is multiplied by (1 + attribute/divisor + % of the type + % elemental + % all damage). Divisors: Cunning/245 and /215, Spirit/215 and /200.
+damage.hit.howTotal=The character panel in the game prints "+X% <type> damage" as the percentage of the TYPE PLUS "% all damage" — as one line.
+damage.hit.howTotalSome=This character has +{0}% all damage, so the game's panel will show the percentage of every type that much higher than ours.
+damage.hit.howTotalNone=This character has no "% all damage", so the percentages will match.
+damage.hit.howAll="% all damage" goes to EVERY kind of damage, damage over time included — there are no exceptions.
+damage.hit.howDots=Damage over time is shown per second — that is how the record holds it, no division needed. A duration bonus does not change this number: the DoT lasts longer, but deals the same per second.
+
+# Damage per hit: retaliation
+damage.retaliation.title=Retaliation (counterattack)
+damage.retaliation.note=This is the "Retaliation" PANEL of the character stats, not a part of the hit. It is calculated differently: attributes and percentages to damage types do not affect it, only "+% retaliation damage" — you have +{0}%. Conversions do act, though, and the very same ones as for normal damage.
+damage.retaliation.note2=The counterattack works only against melee attacks, only on the one who struck you and only when you were actually hit; it cannot miss itself and does not crit. Damage reflection ("X% of damage taken is reflected") is something ELSE, and the character stats never have it: it depends on the damage of whoever hits you.
+
+# Damage per hit: by hand
+damage.hands.title=How much that is in each hand
+damage.hands.both=This is the same thing the game prints in the skill tooltip. The weapon damage share is the SAME for both hands ({0}%), and the numbers in brackets differ because the weapons in the hands differ. The bracket includes the DoT of that hand too: the game's panel counts it the same way.
+damage.hands.oneMain=There is ONE line because the skill strikes with one hand — the main one — and the game prints exactly as many lines in the tooltip. Which hand it is, is written in the skill's ANIMATION: every equipment set has its own file, and the hit events in it name the hands. Switch to a two-handed weapon or put on a shield — the line may change, in the game too.
+damage.hands.oneOff=There is ONE line because the skill strikes with one hand — the off-hand — and the game prints exactly as many lines in the tooltip. Which hand it is, is written in the skill's ANIMATION: every equipment set has its own file, and the hit events in it name the hands. Switch to a two-handed weapon or put on a shield — the line may change, in the game too.
+damage.hands.single=There is one hand because there is one weapon. The bracket includes the DoT of that hand too: the game's panel counts it the same way.
+damage.hands.ownShare=the skill's own tooltip will show less — only its own share of {0}%:
+damage.hands.lineMain={0}% main hand weapon damage ({1} - {2})
+damage.hands.lineOff={0}% off-hand weapon damage ({1} - {2})
+
+# Damage per hit: what the skill is made of
+damage.parts.title=What this skill is made of
+damage.parts.temporary=— temporary effect
+damage.parts.oneHandMain=— strikes with one hand, the main one
+damage.parts.oneHandOff=— strikes with one hand, the off-hand
+damage.parts.weaponPct={0}% weapon damage
+damage.parts.conversion=conversion {0}%: {1} → {2}   (applies before the character's conversions)
+damage.parts.notCounted=NOT SUMMED: {0}
+
+# Damage per hit: the pet's hit
+damage.pet.title={0}   (hit of the pet «{1}», {2})
+damage.pet.summonedBy=summoned by the skill «{0}»
+damage.pet.withConversion=Damage with conversion — this is how it really hits
+damage.pet.noNumbers=this skill has no numbers
+damage.pet.asGame=How the game prints it — without conversion
+damage.pet.asGameNote=The game never shows a pet's conversion anywhere: measured with six numbers and confirmed by screenshots — with and without «Ghol's Mark» the skill description is the same. It works, though, just as it does for the character.
+damage.pet.notYours=This is the PET's hit, and it cannot be compared with yours: it does not come from your weapon, your damage percentages do not apply to it, pet bonuses do.
+
+# Combat simulation: help before the first run
+damage.help.title=The queue of hits over time
+damage.help.press=Press "Run the queue": every swing is played out separately — the hit, which hands came out, and the damage of EACH line with its own roll within its range. Lines appear right away, as they are calculated. At the top is the result: damage per second, the median of per-second sums, the target's health and the time to kill it (TTK).
+damage.help.twoNumbers=TWO NUMBERS IN A LINE: the first is what REACHED the target, per hand; in brackets "damage without bonuses" is what left us: already with the crit, but still without the racial bonus, armor (it cuts only physical) and resistances with their reductions. The first number can also be LARGER than the second: once our reductions drive the target's resistance below zero it no longer cuts but amplifies. DPS, the median, the damage per run and TTK are counted from what REACHED.
+damage.help.target=The target is taken from the "Enemy" tab — the one chosen there, with its level and difficulty. If none is chosen, the training dummy from the game files is used.
+damage.help.pets=PETS: the ticked ones are summoned at the start and then on the summon's cooldown until they hit the limit of their kind; the ones that fire on their own (a star, an item skill) come without a tick too. Each hits with its own default attack and its own skills at their frequency, and its hit and crit are rolled just like yours.
+damage.help.counted=Counted: swings, pressed skills, channels, the weapon pool, procs, stars, damaging auras, damage over time, crit tiers, resistance reduction, the racial bonus, health reduction, forms and pets.
+damage.help.seed=The seed makes a run repeatable: the same seed gives the same run down to the last digit. Change only it — you will see the spread; change the build with the same seed — you will see what the build changed.
+
+# Combat simulation: during the run
+damage.run.building=Building the queue…
+damage.run.buildingNote=every hit gets its own damage with its own rolls, and a long run has thousands of them
+damage.run.progress=Building the queue…   {0} of {1} sec.   ({2} lines)
+
+# Combat simulation: result
+damage.run.buffsUp=Buffs raised: {0}   — they go into the queue on cooldown for their own duration (without a duration in the record — the whole run), and change the stats rather than strike as a separate hit
+damage.run.target=Target: {0}
+damage.run.targetLevel=level {0}, {1} difficulty
+damage.run.targetStats=defensive ability {0}   armor {1}
+damage.run.hitChance=chance to hit {0}%
+damage.run.mainSpell={0} «{1}» instead of the default weapon attack: casting speed {2}%, every {3} sec., hits per run {4}
+damage.run.targetResists=target's resistances: {0}
+damage.run.gear=skills from items and sets:
+damage.run.queue=Queue
+damage.run.summary=Result of the run
+damage.run.dps=Damage per second (DPS)  {0}     median of per-second sums {1}
+damage.run.total=damage per run {0} in {1} sec.
+damage.run.targetLife=target's health {0}
+damage.run.killedAt=killed in {0} sec. (TTK)
+damage.run.dummyNote=— nominally: the dummy never dies in the game
+damage.run.notKilled=not killed during the run — {0}% left
+damage.run.percentLife=health reduction took {0} ({1} times)
+damage.run.percentLifeBlocked={0} more times the target's resistance of {1}% cancelled it completely
+damage.run.swings=swings {0}, hits {1}, misses {2}, crits {3}
+damage.run.tier=tier {0}: {1}
+damage.run.hands=hands: both {0}, first {1}, second {2}
+damage.run.procs=self-firing: procs {0} (their damage {1})
+damage.run.pool=weapon pool {0}
+damage.run.silent=without damage {0}: {1}
+damage.run.pets=pets: hits {0}, summons {1}, their damage {2}
+damage.run.petsShare=— {0}% of all
+damage.run.stars=devotion stars
+damage.run.dots=DoTs: applied {0}, refreshed {1}, their damage {2} of {3}
+damage.run.before=damage without bonuses was {0} — {1}% reached (racial bonus, armor, resistances with their reductions)
+damage.run.conditions=Conditions of the run
+damage.run.rolls=Range rolls made: {0} — one for every damage line in every hit.
+damage.run.critNote=Crits with tiers are counted: one roll decides both the hit and the tier, and "+% crit damage" is added to the tier's multiplier. The crit CHANCE itself matches the game against strong targets and is too high against weak ones — the monsters' bonuses from their equipment are not counted.
+damage.run.dotNote=DoTs are applied and tick: one source keeps ONE DoT — a new hit extends the duration and raises the damage to the best, rather than starting a second one. All weapon damage (both hands and skills with a weapon share) counts as ONE source; skills without a weapon share are their own.
+damage.run.noteRough=SIMPLIFIED: {0}
+damage.run.noteUnread=NOT READ: {0}
+damage.run.noteHint=HINT: {0}
+damage.run.pressNote=The ticked skills are pressed as soon as they come off cooldown: all at once at the start, then each on its own cooldown (with the reduction from items and modifiers). A skill that strikes with two hands ALWAYS strikes with both, and each hand misses with its own roll.
+damage.run.procNote=PROCS and skills "instead of the default weapon attack" are NOT on the list of tickable skills on purpose: nobody presses them. They play out by themselves — with their own roll on every hit and their own cooldown.
+damage.run.silentNote=FIRED WITHOUT DAMAGE — devotion stars and item skills that summon, apply a buff or a debuff. Their roll and cooldown are real; a buff acts for its duration, a debuff goes onto the target, and the summoned creature joins the pool and hits with its own lines.
+damage.run.failed=The run failed: {0}
+
+# Enemy: the enemy panel
+damage.enemy.title={0}   ({1}, level {2}, {3} difficulty)
+damage.enemy.variants=The database has {0} records with this name — they differ only in the level at which they are met; the fullest one is taken here, and the level is chosen above.
+damage.enemy.combat=Combat parameters
+damage.enemy.abilities=defensive ability {0}   offensive ability {1}
+damage.enemy.life=health {0}   armor {1}
+damage.enemy.gearArmour=(of which {0} from equipment)
+damage.enemy.resists=Resistances
+damage.enemy.none=none
+damage.enemy.hit=Hitting
+damage.enemy.ourAttack=our offensive ability {0}   against its defense {1}
+damage.enemy.hitChance=chance to hit {0}%   chance to crit {1}%
+damage.enemy.ourDefence=our defensive ability {0}   against its attack {1}
+damage.enemy.getHit=chance to be hit {0}%   chance to be crit {1}%
+
+# The enemy's rank in the list and in the "Enemy" tab heading. The game has no words of its own for the ranks.
+damage.enemy.rank.superBoss=nemesis
+damage.enemy.rank.boss=boss
+damage.enemy.rank.quest=quest
+damage.enemy.rank.hero=hero
+damage.enemy.rank.champion=champion
+damage.enemy.rank.common=common
+damage.enemy.variantsShort=({0} records)
+damage.attack.byCooldown=instead of the weapon, by cooldown every {0} sec.

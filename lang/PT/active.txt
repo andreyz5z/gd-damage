@@ -1,0 +1,19 @@
+# JANELA «HABILIDADES ATIVAS».
+
+active.title=Habilidades ativas — {0}
+active.none=Este personagem não tem habilidades alternáveis nem habilidades concedidas por itens.
+active.source.devotionOn=devoção vinculada a «{0}»
+
+# Condições de ativação, em resumo («a condição «ao bloquear» não é sorteada»).
+active.trigger.attack=ao atacar
+active.trigger.attackCrit=ao atacar com crítico
+active.trigger.lowHealth=com pouca saúde
+active.trigger.lowMana=com pouca energia
+active.trigger.hitByEnemy=ao sermos atingidos
+active.trigger.hitByMelee=ao ser atingido corpo a corpo
+active.trigger.hitByProjectile=ao ser atingido por um projétil
+active.trigger.hitByCrit=ao receber um crítico
+active.trigger.block=ao bloquear
+active.trigger.onKill=ao matar
+active.trigger.castBuff=ao lançar um aprimoramento
+active.trigger.onEquip=ao equipar

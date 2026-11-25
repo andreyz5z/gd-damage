@@ -1,0 +1,12 @@
+# ABILITÀ CHE INFLIGGONO DANNI: la riga dell'elenco «attacca con» e le parti di un'abilità («Di cosa è fatta questa abilità»).
+
+attack.title={0}   ({1}, liv. {2})
+attack.weaponPct={0}% del danno dell'arma
+attack.part={0} (liv. {1})
+attack.transmuter={0} (trasmutatore, liv. {1})
+attack.transmuterOrphan={0} — trasmutatore (liv. {1}): la sua abilità madre non è stata trovata
+attack.fromItemInForm=da un oggetto, in questa forma: {0}
+attack.fromItem=da un oggetto: {0}
+attack.pool=(al posto dell'attacco base dell'arma, {0}%)
+attack.poolNoChance=(al posto dell'attacco base dell'arma)
+attack.onHit=(si attiva al colpo, {0}%)

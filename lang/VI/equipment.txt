@@ -1,0 +1,18 @@
+# BẢNG TRANG BỊ: tên các ô (cũng xuất hiện trong thông báo «không lắp vào ô … được»).
+
+equipment.weapon1=Vũ khí I
+equipment.offhand1=Tay phụ I
+equipment.weapon2=Vũ khí II
+equipment.offhand2=Tay phụ II
+equipment.head=Đầu
+equipment.neck=Cổ
+equipment.medal=Huy chương
+equipment.shoulders=Vai
+equipment.chest=Ngực
+equipment.hands=Tay
+equipment.waist=Thắt lưng
+equipment.legs=Chân
+equipment.ring1=Nhẫn 1
+equipment.feet=Bàn chân
+equipment.relic=Thánh Vật
+equipment.ring2=Nhẫn 2

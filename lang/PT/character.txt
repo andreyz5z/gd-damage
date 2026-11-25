@@ -1,0 +1,52 @@
+# PAINEL DO PERSONAGEM (campos da janela principal) e dicas dos atributos.
+
+character.name=Nome
+character.class=Classe
+character.file=Arquivo
+character.level=Nível
+character.experience=Experiência
+character.physique=Físico
+character.cunning=Astúcia
+character.spirit=Espírito
+character.health=Saúde
+character.energy=Energia
+character.attributePoints=Pontos de atributo
+character.skillPoints=Pontos de habilidade
+character.devotionPoints=Pontos de devoção
+character.totalDevotion=Devoção total
+character.money=Ferro
+character.tributes=Tributos
+character.difficulties=Dificuldades
+character.difficulty.normal=Normal, Veterano
+character.difficulty.elite=Elite
+character.difficulty.ultimate=Supremo
+
+# Editar os números que o jogo calcula sozinho
+character.freeEdit=Editar atributos livremente
+character.freeEdit.warning=O jogo calcula sozinho estes cinco números a partir dos pontos gastos, dos itens equipados e das habilidades — as fórmulas são conhecidas e batem exatamente com o jogo.\n\nSe você escrever seus próprios valores aqui, o jogo salvo deixará de bater com o que o jogo mostra na tela: ele recalculará a saúde e a energia pelas próprias regras e manterá seus atributos.\n\nPermitir a edição mesmo assim?
+character.keptInSave=Guardado no jogo salvo separadamente do que o jogo mostra na tela.\nA saúde e a energia finais são calculadas pelo próprio jogo — a partir dos pontos gastos, dos atributos, dos itens e das habilidades — e não batem com este número.\nO que exatamente é guardado aqui ainda não descobrimos, por isso a edição está fechada.
+
+# Dica de um atributo
+character.tip.now={0}: agora {1}
+character.tip.own=no jogo salvo {0}, pontos gastos {1}
+character.tip.fromGear=de itens e habilidades: {0}
+character.tip.gives=Concede (contado além da base {0}):
+character.tip.percents=E as porcentagens — a base {0} também conta aqui:
+character.tip.percentLine=+{0}% {1}
+character.perPoint.life=+{0} de saúde por ponto
+character.perPoint.energy=+{0} de energia por ponto
+character.perPoint.defense=+{0} de capacidade defensiva por ponto
+character.perPoint.offense=+{0} de capacidade ofensiva por ponto
+character.perPoint.lifeRegen=+{0} de regeneração de saúde por ponto
+character.perPoint.energyRegen=+{0} de regeneração de energia por ponto
+character.divided.physical=dano físico e perfurante
+character.divided.bleed=dano de trauma interno e de sangramento
+character.divided.magic=dano mágico
+character.divided.dots=o restante do dano ao longo do tempo
+character.divided.energyRegen=regeneração de energia
+character.needs.physique=Necessário para armaduras, armas corpo a corpo e escudos.
+character.needs.cunning=Necessária para armas de longo alcance e parte das armas corpo a corpo.
+character.needs.spirit=Necessário para anéis, amuletos e itens de conjuradores.
+character.hardcore=Hardcore
+character.revive=Reviver
+character.revive.tip=Remove a marca de morte. Verifique no jogo se a personagem volta a carregar.

@@ -1,0 +1,44 @@
+# DANH MỤC VẬT PHẨM (cột trái của cửa sổ chính).
+
+catalog.title=Danh mục vật phẩm
+catalog.wearable=Mọi thứ mặc được
+catalog.everything=Tất cả vật phẩm
+catalog.search=một phần tên…
+catalog.bonus=chỉ số: tốc độ đánh…
+catalog.bulkHint=Ctrl + chuột trái — lấy cả chồng
+catalog.count={0} vật phẩm
+catalog.notBuilt=(chưa tạo danh mục)
+catalog.hidden=({0} bị bộ lọc ẩn)
+catalog.level=cấp {0}
+
+# Độ hiếm
+catalog.rarity.common=Thường
+catalog.rarity.magical=Phép Thuật
+catalog.rarity.rare=Hiếm
+catalog.rarity.epic=Hoàn Hảo
+catalog.rarity.legendary=Huyền Thoại
+catalog.rarity.quest=Nhiệm Vụ
+
+# Mục
+catalog.category.head=Giáp: đầu
+catalog.category.shoulders=Giáp: vai
+catalog.category.chest=Giáp: ngực
+catalog.category.hands=Giáp: tay
+catalog.category.waist=Giáp: thắt lưng
+catalog.category.legs=Giáp: chân
+catalog.category.feet=Giáp: bàn chân
+catalog.category.amulet=Trang sức: bùa hộ mệnh
+catalog.category.ring=Trang sức: nhẫn
+catalog.category.medal=Trang sức: huy chương
+catalog.category.relic=Thánh Vật
+catalog.category.weapon1h=Vũ khí: một tay
+catalog.category.weapon2h=Vũ khí: hai tay
+catalog.category.ranged1h=Vũ khí: súng lục
+catalog.category.ranged2h=Vũ khí: súng trường
+catalog.category.shield=Tay phụ: khiên
+catalog.category.offhand=Tay phụ: pháp khí
+catalog.category.component=Phụ Kiện
+catalog.category.augment=Vật Phẩm Nâng Cấp
+catalog.category.consumable=Vật phẩm tiêu hao
+catalog.category.crafting=Nguyên liệu và bản vẽ
+catalog.category.other=Khác

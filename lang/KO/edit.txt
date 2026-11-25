@@ -1,0 +1,67 @@
+# «아이템 편집» 창과 하위 창: 승천 보너스, 렐릭 완성 보너스.
+# 아이템 능력치 줄은 툴팁에서 가져옵니다 (문구 일부는 게임 자체의 것입니다).
+
+edit.title=아이템 편집
+edit.stop=검색 중지
+edit.relicBonus=완성 보너스 (렐릭)…
+edit.affixes=접두사와 접미사…
+edit.ascension=승천 보너스…
+edit.reroll=아이템을 무작위로 다시 굴리기
+edit.findMax=최대 수치 찾기
+edit.findValues=값으로 찾기
+edit.close=닫기
+edit.notSaved=(찾음, 기록 안 함)
+edit.secondEnd=└ 같은 줄의 다른 끝값
+edit.hiddenRolls=굴려졌지만 툴팁에 표시되지 않음
+edit.perSecond=(1초당 {0} — 항목에 들어 있는 값)
+edit.range={0}…{1} 중
+
+# 오른쪽 패널: 검색 진행과 결과
+edit.rerolled=아이템을 다시 굴렸습니다.\n아무것도 검색하지 않았습니다 — 무작위 아이템은 그 자체로 유효합니다.\n세이브에 기록하려면 «적용»을 누르세요.
+edit.badNumber=«{0}» 줄의 숫자를 읽지 못했습니다: {1}
+edit.busy=검색 중…
+edit.busyProgress=검색 중… 2147백만 중 {0}백만 확인
+edit.searching=값을 시도하며 아이템을 찾는 중입니다.\n걸리는 시간은 컴퓨터 속도에 따라 다릅니다.
+edit.found=선택한 숫자를 모두 찾았습니다. «적용»을 누르면 아이템이 세이브에 기록됩니다.
+edit.impossible=이 능력치는 그런 값이 될 수 없습니다:
+edit.impossibleHint=줄 오른쪽에 표시된 값 중 하나를 입력하세요.
+edit.cancelled=검색을 중지했습니다.
+edit.notFound=이 능력치들은 함께 찾을 수 없습니다. 덜 중요한 능력치의 체크를 풀고 다시 시도하세요.
+edit.hardest=가장 어려운 항목: {0}. 모든 경우를 시도했습니다. 이런 아이템은 게임에 존재할 수 없습니다.
+edit.same=아이템이 이미 그 상태입니다. 바꿀 것이 없습니다.
+edit.saved=세이브에 기록했습니다.\n아이템 본체, 접사, 컴포넌트, 승천은 건드리지 않았습니다 — 여전히 게임이 떨어뜨릴 수 있었던 아이템입니다.
+edit.relicCleared=완성 보너스를 제거했습니다.
+edit.relicSet=완성 보너스: {0}
+edit.ascensionCleared=승천 보너스를 제거했습니다.
+edit.ascensionSet=승천 보너스: {0}
+edit.report.scanned={1}초 동안 {0} 확인
+edit.report.found=찾음:   ({0})
+edit.report.impossible={0}: 이 항목은 절대 값 {1}이 되지 않습니다
+
+# 승천 보너스 창
+edit.affixSet=접두사: {0}\n접미사: {1}
+edit.affix.title=접두사와 접미사
+edit.affix.head=현재: 접두사 — {0};   접미사 — {1}\n이 종류의 아이템에 게임이 붙이는 것만 보여 줍니다. 점은 레어(초록)를 뜻합니다.\n목록의 숫자는 이 아이템에서 굴려진 값입니다: 접사는 굴려지며, 여기 보이는 값을 그대로 받습니다.
+edit.affix.prefix=접두사
+edit.affix.suffix=접미사
+edit.affix.none=없음
+edit.affix.gone=(게임이 더는 주지 않습니다 — 목록에 없습니다)
+edit.affix.clear=이 부분 제거
+edit.affix.level=레벨 {0} 필요
+edit.affix.building=게임의 아이템 표를 읽는 중입니다 — 게임 갱신 후 한 번만.
+
+edit.asc.title=승천 보너스
+edit.asc.head=이 종류의 아이템이 받을 수 있는 보너스만 보여 줍니다 — 한손 무기는 양손 무기의 것을 받을 수 없고, 그 반대도 마찬가지입니다.
+# edit.asc.unknownClass=알 수 없음
+# edit.asc.noPool=확정 안 됨
+edit.asc.allPools=자기 것만이 아닌 모든 풀
+
+# 렐릭 완성 보너스 창
+edit.relic.title=렐릭 완성 보너스
+edit.relic.head=렐릭: {0}   —   제작 레벨: {1}\n목록의 숫자는 이 아이템에서 굴려진 값입니다: 완성 보너스는 굴려지며, 여기 보이는 값을 그대로 받습니다.
+edit.relic.unknown=알 수 없음
+edit.relic.noKind=기재 없음
+# edit.relic.noTable=이 렐릭에는 표가 없습니다 — 완성 보너스를 받지 않습니다
+edit.relic.allTables=자기 것만이 아닌 모든 표
+edit.relic.noTableList=이 렐릭에는 보너스 표가 없습니다 — 완성 보너스를 받지 않습니다.
+edit.relic.jitter=(편차 {0}%)

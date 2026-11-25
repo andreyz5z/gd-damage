@@ -1,0 +1,185 @@
+# DAS KAMPFSIMULATIONSPROTOKOLL (Reiter „Kampfsimulation“): Protokollzeilen, Begründungen und Anmerkungen nach einem Durchlauf.
+#
+# Dezimalzahlen kommen bereits geschrieben (mit Punkt), in {n} wird nichts umgerechnet. Vergleichszeichen
+# „<“, „≥“, „→“, Klammern und Kommas zwischen den Teilen einer Zeile setzt das Programm.
+
+# Was eine Fähigkeit tut, die selbst nicht zuschlägt. Das Wort steht im Protokoll („Verstärkung, kein Schaden“),
+# in der Liste „was wir drücken“ und in den Anmerkungen des Durchlaufs.
+log.effect.damage=Schaden
+log.effect.summon=Beschwörung
+log.effect.buff=Verstärkung
+log.effect.debuff=Schwächung
+log.effect.none=kein Schaden im Datensatz
+
+# Eine Protokollzeile: „12.34 Sek.  Schwung: beide Hände   812 und 790   (Schaden ohne Boni 1020 und 990)   [Grund]“.
+log.line.at={0} Sek.
+log.line.and=und
+log.line.before=(Schaden ohne Boni {0})
+log.seconds={0} Sek.
+log.from=von «{0}»
+log.target.dummy=Dummy
+log.target.generic=Ziel
+
+# Hände. „Schwung: beide Hände“, „Haupthand kritisch, Stufe 2“, „Haupt 43.1 < 97.0“ (Trefferwurf einer Hand).
+log.hand.both=beide Hände
+log.hand.main=Haupthand
+log.hand.off=Nebenhand
+log.roll.main=Haupt
+log.roll.off=Neben
+log.partial.mainMissed=(Haupthand verfehlt)
+log.partial.offMissed=(Nebenhand verfehlt)
+
+log.swing=Schwung: {0}
+log.swing.hands=Hände {0} → {1}
+log.swing.crit={0} kritisch, Stufe {1} ×{2}
+log.miss=Fehlschlag
+log.fire.crit={0} kritisch ×{1}
+
+# Was zugeschlagen hat: „Fähigkeit: Schattenschlag“, „Proc: Meteor“, „statt Angriff: …“.
+log.fire.skill=Fähigkeit
+log.fire.channel=Kanalisierung
+log.fire.spell=Zauber
+log.fire.pool=statt Angriff
+log.fire.proc=Proc
+log.fire.devotion=Devotion
+log.fire.finale=Finale: Treffer {0}
+log.fire.attack=Angriff
+log.fire.charges=({0} Ladungen)
+
+# Tick eines Schadens über Zeit: „Tick Verbrennung (Haupthand, vom Standardwaffenangriff)“.
+log.tick=Tick {0}
+log.tick.from=von {0}
+log.tick.left=noch {0} Sek.
+log.tick.partial=unvollständiger Tick {0}%
+log.tick.autoattack=dem Standardwaffenangriff
+log.dot.FireDot=Verbrennung
+log.dot.ColdDot=Frostbrand
+log.dot.LightningDot=Stromschlag
+log.dot.PoisonDot=Gift
+log.dot.LifeDot=Lebenskraftverfall
+log.dot.BleedingDot=Blutung
+log.dot.PhysicalDot=Wundschaden
+
+# Das Leben des Ziels.
+log.life.killed=Ziel getötet
+log.life.killedWhy=TTK {0} Sek.: {1} verursacht gegen {2} Leben; von hier an zählen wir den Schaden, als lebte es noch, aber es gibt kein Leben mehr zu senken
+log.life.cut=Lebenssenkung {0}%  von «{1}»
+log.life.cutWhy=Leben des Ziels {0} → {1}
+log.life.cutResist=Effekt {0}%, Resistenz des Ziels {1}%
+log.life.gear=Ausrüstung
+
+# Eine Aura, eine Verstärkung nach Abklingzeit, ein Zurücksetzen der Abklingzeit.
+log.aura=Aura: {0}
+log.buff=Verstärkung: {0}
+log.buff.holds=hält {0} Sek.
+log.buff.cooldown=Abklingzeit {0} Sek.
+log.buff.shield=Absorptionsschild {0} — hält, bis er durchbrochen wird
+log.buff.noDuration=keine Dauer im Datensatz
+log.buff.notInQueue=ihre Schadensboni wirken in der Warteschlange NICHT
+log.buff.noEffect=wirkt nicht auf unseren Schaden
+log.reset=Abklingzeit zurückgesetzt: «{0}»
+log.reset.why=«{0}», {1}% {2} — für {3} Sek., bereit bei {4} statt {5}
+log.reset.onCrit=bei kritischem Angriff
+log.reset.onAttack=bei Angriff
+
+# Ausgelöst oder gedrückt, schlägt aber nicht zu.
+log.silent.fired=ausgelöst
+log.silent.pressed=gedrückt:
+log.silent.buff=Verstärkung, hält {0} Sek.
+log.silent.resists=Resistenzsenkung
+log.silent.defense=−{0} Verteidigungsqualität
+log.silent.offense=−{0} Angriffsqualität
+log.silent.absolute=−{0} Resistenzen flach
+log.silent.relative=−{0}% der aktuellen Resistenzen
+log.silent.debuff=Schwächung des Ziels für {0} Sek.
+log.silent.debuffNothing=wirkt in keiner Weise auf unseren Schaden
+log.silent.summon=Beschwörung — die Kreatur tritt in den Pool, ihre Treffer stehen unten in eigenen Zeilen
+log.silent.noDamage={0}, kein Schaden
+
+# Kreaturen im Protokoll.
+log.pet.how.self=von selbst
+log.pet.how.pressed=gedrückt
+log.pet.summonBlocked=Beschwörung ({0}): {1}
+log.pet.limit=die Grenze ihrer Art steht bereits — {0} × «{1}», es kommen keine mehr hinzu
+log.pet.summoned=beschworen ({0}): «{1}» #{2}
+log.pet.standing={0} von {1} vorhanden
+log.pet.lives=lebt {0} Sek.
+log.pet.permanent=dauerhaft
+log.pet.aps=Angriffe pro Sekunde {0}
+log.pet.gone=verschwunden: «{0}» #{1}
+log.pet.goneWhy=Lebensdauer von {0} Sek. abgelaufen, Treffer {1}
+log.pet.goneTrap=vom Gegner ausgelöst, Treffer {0}
+log.pet.onceAt=Explosion nach {0} Sek.
+log.pet.aura=Kreaturenaura: «{0}» {1}
+log.pet.auraTarget=Kreaturenaura: «{0}»
+log.pet.auraAllies=stärkt uns und andere Kreaturen, solange sie in der Nähe ist
+log.pet.auraOnTarget=liegt auf dem Ziel, solange sie in der Nähe ist
+log.pet.miss=Fehlschlag der Kreatur: «{0} #{1}» {2}
+log.pet.hitChance=Trefferchance {0}%
+log.pet.hit=Kreatur: «{0} #{1}» {2}
+log.pet.auto=(Standardangriff)
+log.pet.auraMark=(Aura)
+log.pet.perSecond=einmal pro Sekunde
+log.pet.speed=Geschwindigkeit {0} Angriffe/Sek.
+log.pet.every=alle {0} Sek.
+log.pet.crit=kritisch Stufe {0} ×{1}
+log.pet.dotApplied=Schaden über Zeit angewendet
+# Die Quelle des Schadens über Zeit einer Kreatur in einer Tickzeile: „Tick Verbrennung (von «<Kreatur> #1: <Fähigkeit>»)“.
+log.pet.source={0} #{1}: {2}
+# Eine Kreaturenfähigkeit ohne Namen im Spiel — wir nennen sie nach dem Ende ihres Datensatzpfads.
+log.pet.noName=ohne Namen: {0}
+
+# Ergebnis des Durchlaufs: der Rassenbonus.
+log.racial.noRace=Boni gegen Rassen ({0} Stück) wirken bei diesem Ziel nicht: Es hat überhaupt KEINE Rasse (wie der Dummy)
+log.racial.none=das Ziel ist {0}, und wir haben keine Boni dagegen (es gibt welche gegen andere Rassen: {1})
+log.racial.has=das Ziel ist {0}, unser Bonus dagegen beträgt {1}% Schaden (Faktor ×{2})
+log.racial.flat=der flache Bonus gegen die Rasse «{0}» ({1} Schaden) ist GESAMMELT, ABER NICHT ANGEWENDET: Unbekannt ist, als welche Schadensart er kommt (der Tooltip nennt keine Art) und an welcher Stelle der Reihenfolge er steht. Den prozentualen setzen wir nach der Formel des Artikels; für den flachen gibt es weder im Artikel noch in den Dateien eine Formel — eine Messung ist nötig
+
+# Ergebnis des Durchlaufs: Hinweise (was falsch gewählt ist).
+log.hint.mainNotSpell=«{0}» ist als Hauptfähigkeit gewählt, ist aber weder eine Kanalisierung noch ein Zauber ohne Abklingzeit (oder seine Animation wurde nicht gefunden) — wir greifen mit der Waffe an, als wäre nichts gewählt
+log.hint.buffPressed=«{0}» ist eine Verstärkung: Ihre Boni wirken auf die Treffer, solange sie aktiv ist, aber sie schlägt nicht als Treffer zu. Hake sie bei den Verstärkungen an
+log.hint.channelWithAttack=die Kanalisierung «{0}» ist ZUSAMMEN mit dem Standardwaffenangriff gedrückt — das gibt es im Spiel nie: Solange der Strahl gehalten wird, schlägt die Waffe nicht zu. Sie wird nach der „Abklingzeit“ des Datensatzes gedrückt, nicht nach der Zaubergeschwindigkeit. Wähle sie als Hauptfähigkeit
+log.hint.starHits=der Stern «{0}» verursacht Schaden — wir aktivieren ihn nicht als Verstärkung; hake ihn in der Liste der Drücke an, dann schlägt er nach Abklingzeit zu
+log.hint.starReplacing=der Stern «{0}» ist an «{1}» gebunden — das ist ein ERSATZANGRIFF: Er wird einer Taste zugewiesen und schlägt statt des normalen Treffers zu. Solche können wir zählen, aber in DIESEM Durchlauf schlagen wir nicht damit zu — der Spielstand speichert die Zuweisung nicht. Wähle ihn in der Liste „Angreifen mit“, dann wirkt der Stern
+log.hint.starIdle=der Stern «{0}» ist an die Fähigkeit «{1}» gebunden, und die schlägt in diesem Durchlauf NICHT zu (nicht zum Drücken angehakt und nicht im Waffenpool) — es gibt überhaupt keine Auslösungen, und das ist kein Pech
+
+# Ergebnis des Durchlaufs: was nicht gelesen wurde.
+log.unread.starBuffNoDuration=der Stern «{0}» wendet eine VERSTÄRKUNG an, aber der Datensatz hat keine Dauer — wir haben nichts, womit wir sie halten könnten, daher zeigt die Warteschlange nur, dass er ausgelöst hat
+log.unread.starNoDamage=den Schaden des Sterns «{0}» haben wir nicht gelesen: Die Auslösung steht in der Warteschlange, der Schaden nicht
+log.unread.buffNoDuration=die Verstärkung «{0}» ändert den Schaden, aber der Datensatz hat keine Dauer — die Warteschlange zeigt nur ihre Auslösung, die Boni wirken nicht
+log.unread.summonNoPet=die Beschwörung «{0}» hat ausgelöst, aber eine solche Kreatur gibt es im Pool nicht — ihr Schaden wird nicht gezählt
+log.unread.petMoveNoRate=die Kreatur «{0}» hat die Fähigkeit «{1}», die Schaden verursacht, aber der Datensatz sagt nicht, wie oft sie sie einsetzt — in der Warteschlange wird sie nicht eingesetzt
+log.unread.petNoSpeed=die Angriffsgeschwindigkeit der Kreatur «{0}» ließ sich nicht lesen (keine Animationstabelle) — ihr Standardangriff kommt nicht in die Warteschlange
+log.unread.petNoMoves=von der Kreatur «{0}» haben wir keine einzige Schadensfähigkeit gelesen — in der Warteschlange wird sie beschworen, schlägt aber nicht zu
+
+# Ergebnis des Durchlaufs: Fähigkeiten von Gegenständen und Sets — was aus jeder wurde.
+log.gear.mainSpell=die Hauptfähigkeit statt des Standardwaffenangriffs, Treffer {0}
+log.gear.pool=im Waffenpool
+log.gear.onlyCrit=wird nur bei Kritisch ausgewürfelt;
+log.gear.fired={0}-mal ausgelöst
+log.gear.firedSummon=— Beschwörung, die Kreatur tritt in den Pool und schlägt zu
+log.gear.firedDebuff=— Schwächung des Ziels
+log.gear.firedBuff=— Verstärkung auf uns
+log.gear.conditionNotModelled=die Bedingung wird nicht nachgebildet —
+log.gear.pressed=zum Drücken angehakt, nach Abklingzeit gedrückt: {0}-mal gedrückt
+log.gear.notPressed=drückbar — nicht zum Drücken angehakt
+log.gear.conditionHits=die Bedingung wird nicht nachgebildet, Schaden gibt es — hake sie an, dann läuft sie nach Abklingzeit
+log.gear.noHit=schlägt nicht zu ({0})
+log.gear.conditionNoHit=die Bedingung wird nicht nachgebildet, kein Schaden ({0}) — nimmt an der Warteschlange nicht teil
+
+# Ergebnis des Durchlaufs: Sterne und Kreaturen namentlich.
+log.star.head=«{0}» St. {1} von «{2}»
+log.star.onlyCrit=(nur bei Kritisch)
+log.star.chance=Chance {0}%
+log.star.cooldown=Abklingzeit {0} Sek.
+log.star.fired={0}-mal ausgelöst bei {1} Würfen
+log.star.blocked={0}-mal durch Abklingzeit verhindert
+log.petLine.auras=Kreaturenauren für andere Kreaturen, solange diese leben — {0}: {1}
+log.petLine.head=«{0}» ({1}) — {2}-mal beschworen
+log.petLine.limit=bis zu {0} gleichzeitig
+log.petLine.hits=Treffer {0}
+log.petLine.misses=Fehlschläge {0}
+log.petLine.crits=Kritisch {0}
+log.petLine.damage=Schaden {0}
+log.petLine.expired=durch Zeitablauf verschwunden {0}
+log.petLine.blocked=Beschwörungen über der Grenze {0}

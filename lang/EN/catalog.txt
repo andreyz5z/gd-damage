@@ -1,0 +1,44 @@
+# THE ITEM CATALOGUE (the left column of the main window).
+
+catalog.title=Item catalog
+catalog.wearable=Everything wearable
+catalog.everything=All items
+catalog.search=part of a name…
+catalog.bonus=bonus: attack speed…
+catalog.bulkHint=Ctrl + left click — take a stack of items
+catalog.count={0} items
+catalog.notBuilt=(catalog not built)
+catalog.hidden=({0} hidden by filters)
+catalog.level=lv. {0}
+
+# Rarity
+catalog.rarity.common=Common
+catalog.rarity.magical=Magical
+catalog.rarity.rare=Rare
+catalog.rarity.epic=Epic
+catalog.rarity.legendary=Legendary
+catalog.rarity.quest=Quest
+
+# Sections
+catalog.category.head=Armor: head
+catalog.category.shoulders=Armor: shoulders
+catalog.category.chest=Armor: chest
+catalog.category.hands=Armor: hands
+catalog.category.waist=Armor: waist
+catalog.category.legs=Armor: legs
+catalog.category.feet=Armor: feet
+catalog.category.amulet=Jewelry: amulets
+catalog.category.ring=Jewelry: rings
+catalog.category.medal=Jewelry: medals
+catalog.category.relic=Relics
+catalog.category.weapon1h=Weapons: one-handed
+catalog.category.weapon2h=Weapons: two-handed
+catalog.category.ranged1h=Weapons: pistols
+catalog.category.ranged2h=Weapons: guns
+catalog.category.shield=Off-hand: shields
+catalog.category.offhand=Off-hand: focus items
+catalog.category.component=Components
+catalog.category.augment=Augments
+catalog.category.consumable=Consumables
+catalog.category.crafting=Ingredients and blueprints
+catalog.category.other=Other

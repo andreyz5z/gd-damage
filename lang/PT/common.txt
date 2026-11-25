@@ -1,0 +1,27 @@
+# COMPARTILHADO POR VÁRIAS JANELAS: botões, origem de uma habilidade, partes de um item.
+
+common.apply=Aplicar
+common.cancel=Cancelar
+common.search=Buscar:
+common.nothingFound=Nada encontrado.
+common.put=Definir
+common.clearBonus=Remover bônus
+
+# Dificuldades do jogo (aba «Portais», aba do inimigo)
+common.difficulty.normal=Normal
+common.difficulty.elite=Elite
+common.difficulty.ultimate=Supremo
+
+# Origem de uma habilidade (subtítulos nas janelas de companheiros e de habilidades ativas)
+common.source.mastery=habilidade de maestria
+common.source.devotion=devoção
+common.source.item=de um item: {0}
+common.source.set=conjunto: {0} ({1})
+common.source.setName=conjunto: {0}
+
+# A parte do item com a qual a habilidade veio: «de um item: Nome (prefixo)»
+common.part.prefix=(prefixo)
+common.part.suffix=(sufixo)
+common.part.component=(componente)
+common.part.augment=(aprimoramento)
+common.part.ascension=(ascensão)

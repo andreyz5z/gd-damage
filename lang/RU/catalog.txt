@@ -1,0 +1,44 @@
+# КАТАЛОГ ПРЕДМЕТОВ (колонка слева в главном окне).
+
+catalog.title=Каталог предметов
+catalog.wearable=Всё надеваемое
+catalog.everything=Все предметы
+catalog.search=часть названия…
+catalog.bonus=бонус: скорости атаки…
+catalog.bulkHint=Ctrl + ЛКМ — взять стак предметов
+catalog.count={0} предметов
+catalog.notBuilt=(каталог не собран)
+catalog.hidden=(скрыто фильтрами {0})
+catalog.level=ур. {0}
+
+# Редкость
+catalog.rarity.common=Обычные
+catalog.rarity.magical=Магические
+catalog.rarity.rare=Редкие
+catalog.rarity.epic=Эпические
+catalog.rarity.legendary=Легендарные
+catalog.rarity.quest=Квестовые
+
+# Разделы
+catalog.category.head=Броня: голова
+catalog.category.shoulders=Броня: плечи
+catalog.category.chest=Броня: торс
+catalog.category.hands=Броня: кисти
+catalog.category.waist=Броня: пояс
+catalog.category.legs=Броня: ноги
+catalog.category.feet=Броня: ступни
+catalog.category.amulet=Украшения: амулеты
+catalog.category.ring=Украшения: кольца
+catalog.category.medal=Украшения: медали
+catalog.category.relic=Реликвии
+catalog.category.weapon1h=Оружие: одноручное
+catalog.category.weapon2h=Оружие: двуручное
+catalog.category.ranged1h=Оружие: пистолеты
+catalog.category.ranged2h=Оружие: ружья
+catalog.category.shield=Вторая рука: щиты
+catalog.category.offhand=Вторая рука: фокусы
+catalog.category.component=Компоненты
+catalog.category.augment=Аугменты
+catalog.category.consumable=Расходники
+catalog.category.crafting=Ингредиенты и чертежи
+catalog.category.other=Прочее

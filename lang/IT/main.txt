@@ -1,0 +1,110 @@
+# FINESTRA PRINCIPALE: titolo, pulsanti del menu, inventario, barra di stato, messaggi.
+#
+# Formato di tutti i file di lingua: chiave=testo. Una riga che inizia con # è un commento.
+# \n è un a capo. {0}, {1} sono i punti in cui il programma inserisce un numero o un nome;
+# devono restare nella traduzione, il loro ordine può cambiare.
+# I nomi di oggetti, classi e abilità non sono qui: li fornisce il gioco stesso.
+
+main.title=Grim Dawn — visualizzatore del personaggio
+main.title.character=Grim Dawn — {0}
+
+# Pulsanti del menu
+main.menu.open=Apri salvataggio
+main.menu.skills=Abilità
+main.menu.damage=Calcolo dei danni
+main.menu.settings=Impostazioni
+
+# Inventario e baule
+main.edit.button=Modifica oggetto
+main.edit.armed=Clicca su un oggetto
+main.trash.idle=Elimina un oggetto — prendilo e clicca qui
+main.trash.armed=Elimina oggetto
+main.stash.title=Baule del personaggio
+main.stash.none=Baule del personaggio: nessuna scheda
+main.stash.count=Baule del personaggio: {0} schede, {1} oggetti
+main.bags.main=Principale
+main.bags.extra=Borsa {0}
+
+# La riga sotto i campi del personaggio
+main.summary=Borse {0}, oggetti {1}\nBaule: schede {2}, oggetti {3}
+main.summary.noInventory=ANCORA NESSUN INVENTARIO: il personaggio è stato creato nel menu e non è mai entrato in gioco.\nEntra in gioco con lui almeno una volta: allora compariranno le borse e l'equipaggiamento.\nBaule: schede {0}, oggetti {1}
+
+# Salvare e aprire
+main.status.saved=Salvato {0}
+main.status.savedBackup=Salvato {0}   copia di sicurezza: {1}
+main.status.saveError=ERRORE DI SCRITTURA: {0}
+main.saveError.title=Salvataggio non riuscito
+main.open.title=Scegli player.gdc
+main.open.filter=Salvataggio di Grim Dawn (player.gdc)|player.gdc|Tutti i file|*.*
+main.loadError.title=Impossibile leggere il salvataggio
+main.noInventory.text=Questo personaggio non ha ancora un inventario.\n\nÈ stato creato nel menu del gioco e non è mai entrato nel mondo, quindi il salvataggio non contiene né borse, né slot dell'equipaggiamento, né set di armi: il gioco li crea al primo ingresso nel mondo.\n\nEntra in gioco con questo personaggio almeno una volta e allora l'equipaggiamento si potrà modificare. Tutto il resto — livello, attributi, abilità, devozione — è già disponibile.
+main.noInventory.title=Ancora nessun inventario
+main.status.openFirst=Apri prima un salvataggio.
+
+# La cartella del gioco
+main.status.noGame=La cartella di Grim Dawn non è stata trovata: apri «Impostazioni…» e indicala.
+main.status.gameBase=Database del gioco: {0}   lingua: {1}
+main.status.gameError=Impossibile aprire il database del gioco: {0}
+main.askGame.text=La cartella di Grim Dawn non è stata trovata.\n\nLa ricerca controlla le librerie di Steam, le voci di GOG e degli installer nel registro e le solite cartelle dei giochi su tutti i dischi. Se il gioco è altrove, indica la sua cartella: quella che contiene database\\database.arz.
+main.askGame.title=Dove è installato Grim Dawn?
+
+# Il catalogo degli oggetti
+main.catalog.title=Catalogo degli oggetti
+main.catalog.stale=I file del gioco sono cambiati dopo la creazione del catalogo: sembra che sia uscito un aggiornamento.\nRicreare il catalogo degli oggetti?
+main.catalog.missing=Il catalogo degli oggetti non è ancora stato creato.\nCrearlo dai file del gioco? Ci vuole qualche secondo.
+main.status.catalog=Catalogo: {0} oggetti
+main.status.catalogBuilding=Creazione del catalogo degli oggetti…
+main.status.catalogBuilt=Catalogo creato: {0} oggetti
+main.status.catalogError=Impossibile creare il catalogo: {0}
+
+# L'oggetto in mano
+main.status.noIcon=Questo oggetto non ha un'icona nel database del gioco, quindi la sua dimensione in caselle è sconosciuta: non si può aggiungere in modo sicuro.
+main.status.bulkLimit=Presa una pila di {0}: è il limite per questo tipo.
+main.status.bulkNoLimit=Presa una pila di {0} (il gioco non indica un limite per questo tipo: ne abbiamo presi cento, come per gli altri).
+main.status.newInHand=Nuovo oggetto in mano: {0} ({1}x{2})  —  clicca su un posto libero di una borsa o del baule, su uno slot dell'equipaggiamento o sul titolo di una scheda. Esc annulla.
+main.status.inHand=In mano: {0} ({1}x{2})  —  clicca su un posto libero di una borsa o del baule, sul titolo di una scheda, su uno slot dell'equipaggiamento o sulla barra «Elimina oggetto». Esc annulla.
+main.status.takenOff=Tolto e preso in mano: {0}  —  mettilo in una borsa, nel baule, in un altro slot adatto oppure eliminalo. Esc annulla.
+main.status.sizeUnknown=La dimensione di questo oggetto è sconosciuta (nessuna icona nel database del gioco): non si può spostare, altrimenti potrebbe uscire dalla griglia.
+main.status.noRoom=Qui non entra: servono {0}x{1} caselle libere. Clic destro o Esc annulla.
+main.status.noStacking=«{0}» non si impila: qui serve una casella libera.
+main.status.stackFull=Questa pila è già piena: {0}. Mettilo altrove.
+main.status.stackFullOf=Questa pila è già piena: {0} su {1}. Mettilo altrove.
+main.status.merged={0} impilati: la pila ora contiene {1}.
+main.status.mergedRest={0} impilati: la pila ora contiene {1}, ne restano {2} in mano; mettili in un posto libero o eliminali.
+main.status.addedBag=Aggiunto in una borsa: {0}
+main.status.addedStash=Aggiunto nel baule: {0}
+main.status.unequippedBag=Tolto e messo in una borsa: {0}
+main.status.unequippedStash=Tolto e messo nel baule: {0}
+main.status.movedBag=Spostato in una borsa: {0}
+main.status.movedStash=Spostato nel baule: {0}
+main.status.equipped=Equipaggiato: {0} → {1}
+main.status.reequipped=Spostato: {0} → {1}
+main.status.discarded=Il nuovo oggetto è stato scartato: {0} (non è mai finito nel salvataggio).
+main.status.deleted=Eliminato: {0}   (il file originale è stato conservato accanto come .bak)
+main.status.noRoomBag=In questa borsa non c'è posto {0}x{1}.
+main.status.noRoomStash=In questa scheda del baule non c'è posto {0}x{1}.
+main.status.cancelled=Annullato: {0} è rimasto al suo posto.
+
+# Perché non si equipaggia
+main.why.noInventory=Questo personaggio non ha ancora un inventario: è stato creato nel menu e non è mai entrato in gioco. Entra in gioco con lui almeno una volta: il gioco creerà da solo le borse, gli slot dell'equipaggiamento e i set di armi, e allora si potranno modificare.
+main.why.sameSlot=L'oggetto è già in questo slot.
+main.why.wrongSlot=«{0}» non va nello slot «{1}».
+main.why.slotBusy=Lo slot «{0}» è occupato: togli prima ciò che vi è equipaggiato.
+main.why.level=«{0}» richiede il livello {1}, il personaggio è al {2}.
+main.why.twoHanded=Un'arma a due mani occupa entrambe le mani: libera prima la mano secondaria.
+main.why.offHandBusy=Nella mano principale c'è un'arma a due mani: occupa anche la mano secondaria.
+
+# Modificare un oggetto
+main.status.editArmed=Clicca su un oggetto: si aprirà la finestra di modifica delle statistiche. Clicca di nuovo sul pulsante per annullare.
+main.status.editCancelled=Modifica annullata: il clic non ha colpito un oggetto.
+main.status.editNoSeed=Su questo oggetto non c'è niente da cercare: non proviene dal salvataggio.
+main.status.editUnchanged=L'oggetto non è stato modificato.
+main.status.editDone=L'oggetto è stato modificato e salvato.
+
+# Cosa manca per indossare un oggetto (barra di stato).
+main.need.level=livello {0} (attuale {1})
+
+# Mettere un componente o un'aggiunta in un oggetto (2 ottobre). Che cosa va dove lo dicono i record del gioco.
+main.status.partAttached=Inserito: {0} → {1}
+main.status.partReplaced=Inserito: {0} → {1}, al posto di «{2}»
+main.status.partWrongItem=«{0}» non entra in «{1}».

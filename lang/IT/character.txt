@@ -1,0 +1,52 @@
+# PANNELLO DEL PERSONAGGIO (campi della finestra principale) e suggerimenti degli attributi.
+
+character.name=Nome
+character.class=Classe
+character.file=File
+character.level=Livello
+character.experience=Esperienza
+character.physique=Fisico
+character.cunning=Acume
+character.spirit=Spirito
+character.health=Salute
+character.energy=Energia
+character.attributePoints=Punti Attributo
+character.skillPoints=Punti Abilità
+character.devotionPoints=Punti Devozione
+character.totalDevotion=Devozione totale
+character.money=Ferro
+character.tributes=Tributi
+character.difficulties=Difficoltà
+character.difficulty.normal=Normale, Veterano
+character.difficulty.elite=Elite
+character.difficulty.ultimate=Suprema
+
+# Modificare i numeri che il gioco calcola da sé
+character.freeEdit=Modifica libera degli attributi
+character.freeEdit.warning=Il gioco calcola da sé questi cinque numeri a partire dai punti spesi, dagli oggetti indossati e dalle abilità: le formule sono note e coincidono esattamente con il gioco.\n\nSe scrivi qui valori tuoi, il salvataggio non corrisponderà più a ciò che il gioco mostra a schermo: ricalcolerà salute ed energia con le sue regole e manterrà i tuoi attributi.\n\nConsentire comunque la modifica?
+character.keptInSave=Conservato nel salvataggio separatamente da ciò che il gioco mostra a schermo.\nLa salute e l'energia finali le calcola il gioco stesso — dai punti spesi, dagli attributi, dagli oggetti e dalle abilità — e non coincidono con questo numero.\nCosa venga conservato esattamente qui non l'abbiamo ancora scoperto, per questo la modifica è chiusa.
+
+# Suggerimento di un attributo
+character.tip.now={0}: ora {1}
+character.tip.own=nel salvataggio {0}, punti spesi {1}
+character.tip.fromGear=da oggetti e abilità: {0}
+character.tip.gives=Dà (contato oltre la base {0}):
+character.tip.percents=E le percentuali: anche qui conta la base {0}:
+character.tip.percentLine=+{0}% {1}
+character.perPoint.life=+{0} di salute per punto
+character.perPoint.energy=+{0} di energia per punto
+character.perPoint.defense=+{0} di capacità difensiva per punto
+character.perPoint.offense=+{0} di capacità offensiva per punto
+character.perPoint.lifeRegen=+{0} di rigenerazione della salute per punto
+character.perPoint.energyRegen=+{0} di rigenerazione dell'energia per punto
+character.divided.physical=danno fisico e perforante
+character.divided.bleed=danno da trauma interno e da sanguinamento
+character.divided.magic=danno magico
+character.divided.dots=il resto del danno nel tempo
+character.divided.energyRegen=rigenerazione dell'energia
+character.needs.physique=Richiesto per armature, armi da mischia e scudi.
+character.needs.cunning=Richiesto per armi a distanza e parte delle armi da mischia.
+character.needs.spirit=Richiesto per anelli, amuleti e oggetti da incantatore.
+character.hardcore=Hardcore
+character.revive=Rianima
+character.revive.tip=Rimuove il segno di morte. Verifica nel gioco che il personaggio si carichi di nuovo.

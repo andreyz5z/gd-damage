@@ -1,0 +1,8 @@
+# LỖI GHI BẢN LƯU (ở thanh trạng thái «Lỗi ghi: …» và cửa sổ «Không lưu được»).
+
+save.error.unparsed=chưa ghi bản lưu: khối {0} chưa được tách thành các trường (bản lưu từ phiên bản trò chơi không rõ)
+save.error.writtenUnparsed=tệp đã ghi chứa khối {0} chưa tách
+save.error.reread=tệp đã ghi không đọc lại đúng được
+save.error.rekey=tệp không chịu được việc đổi khóa mã hóa
+save.error.length={0} (độ dài {1} thay vì {2})
+save.error.offset={0}: khác biệt ở vị trí {1}

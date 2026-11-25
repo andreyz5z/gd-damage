@@ -1,0 +1,150 @@
+# OKNO „UMIEJĘTNOŚCI”: mistrzostwa, podpowiedzi umiejętności, poświęcenie, szczeliny.
+# Nazwy mistrzostw, umiejętności i konstelacji pochodzą z gry.
+
+skills.title=Umiejętności — {0}
+skills.levelParen=(poziom {0})
+
+# Wybór i porzucenie mistrzostwa
+skills.choose.first=Pierwsze mistrzostwo
+skills.choose.second=Drugie mistrzostwo
+skills.choose.intro=Mistrzostwo uważa się za wybrane, gdy tylko do jego paska trafi pierwszy punkt — dokładnie to robimy, wydając jeden punkt umiejętności. Tego samego mistrzostwa nie można wybrać drugi raz.
+skills.choose.opensAt=W grze odblokowuje się na poziomie {0}.
+skills.choose.freePoints=Wolne punkty umiejętności: {0}.
+skills.noPoints.text=Nie ma wolnych punktów umiejętności, a mistrzostwo wybiera się, wkładając punkt do jego paska.\n\nDodaj punkt w polu „Punkty umiejętności” okna głównego, a wtedy będzie można go tu wydać. Wydawanie nieistniejącego punktu jest niedozwolone: postać wydałaby więcej, niż zarobiła.
+skills.noPoints.title=Za mało punktów umiejętności
+skills.take.ask=Wybrać mistrzostwo „{0}”?\n\nJeden punkt umiejętności trafi do jego paska — tak mistrzostwo staje się wybrane. Teraz wolnych: {1}.
+skills.take.undo=Zdanie możesz zmienić przyciskiem „Porzuć mistrzostwo” — punkty wrócą.
+skills.take.title=Wybór mistrzostwa
+skills.drop.ask=Porzucić mistrzostwo „{0}”?\n\nKażdy włożony w nie punkt zostanie wyjęty — łącznie {1}, wraz z punktem paska — i wróci do wolnych. Umiejętności tego mistrzostwa znikną, a przypisane do nich gwiazdy poświęcenia pozostaną nieprzypisane.
+skills.drop.title=Porzucenie mistrzostwa
+skills.drop.button=Porzuć mistrzostwo „{0}”
+skills.drop.secondFirst=Najpierw porzuć drugie mistrzostwo
+skills.mastery.fallbackName=mistrzostwo {0}
+skills.mastery.tooEarlyFirst=W grze pierwsze mistrzostwo odblokowuje się na poziomie {0}, a postać ma {1}.
+skills.mastery.tooEarlySecond=W grze drugie mistrzostwo odblokowuje się na poziomie {0}, a postać ma {1}.
+
+# Podpowiedź umiejętności
+skills.kind.mastery=mistrzostwo
+skills.kind.active=umiejętność aktywna
+skills.kind.weaponPool=atak podstawowy (umiejętność puli broni)
+skills.kind.modifier=modyfikator umiejętności
+skills.kind.transmuter=transmutator
+skills.kind.passive=umiejętność pasywna
+skills.tip.poolChance=Szansa użycia zamiast ataku podstawowego: {0}%
+skills.tip.poolShared=Wybrane ataki podstawowe: {0}, ich szanse sumują się do {1}%. Na jeden atak uruchamia się tylko jeden z nich.
+skills.tip.poolSharedFull=Wybrane ataki podstawowe: {0}, ich szanse sumują się do {1}%. Na jeden atak uruchamia się tylko jeden z nich; zwykły atak bronią w ogóle nie nastąpi.
+skills.tip.dependsOn=Odblokowuje: {0}
+skills.tip.level=Obecny poziom: {0}
+skills.tip.levelWithBonus=Obecny poziom: {0} + {1} z przedmiotów
+skills.tip.max=(można podnieść do {0})
+skills.tip.maxWithGear=(można podnieść do {0}, limit z przedmiotami {1})
+skills.tip.recordNumbers=To liczby z zapisu umiejętności, przed bonusami postaci. We własnej podpowiedzi gra pokazuje je już pomnożone przez wszystkie obrażenia, które nosisz — dlatego jej liczby są większe. Obrażenia z bonusami: „Obliczanie obrażeń…” → „Obrażenia na trafienie”.
+skills.tip.recordNumbersHand=Z wyjątkiem żółtego wiersza o ręce: tam w nawiasie są już obrażenia tej ręki, dokładnie tak, jak pokazuje gra.
+skills.tip.celestialPower=Niebiańska Moc
+skills.tip.fromItem=Z przedmiotu: {0}
+skills.tip.nextLevel=Następny poziom: {0}
+
+# Poświęcenie
+skills.devotion.tab=Poświęcenie
+skills.devotion.spent=Wydane punkty poświęcenia: {0} z {1} zdobytych, wolne: {2}
+skills.devotion.split=Z tego {0} to gwiazdy pasywne (zsumowane poniżej), a {1} to gwiazdy z umiejętnością (pokazane osobno).
+skills.devotion.sums=Łączne bonusy
+skills.devotion.none=brak
+skills.devotion.granted=Nadane umiejętności
+skills.devotion.boundTo=przypisana do: {0}
+skills.devotion.unbound=nieprzypisana — nie uruchomi się
+skills.devotion.levels=Zmień poziom umiejętności poświęcenia
+skills.devotion.starOf={0}, gwiazda {1}
+skills.devotion.total=łącznie {0}
+skills.devotionLevels.title=Poziom umiejętności poświęcenia — {0}
+skills.devotionLevels.of=z {0}
+skills.devotionLevels.none=Postać nie ma gwiazd poświęcenia, które nadają umiejętność.
+skills.constellations.count=Konstelacje w grze: {0}. Ukończone: {1}, rozpoczęte: {2}.
+skills.constellations.legend=Wybrane gwiazdy są zaznaczone; w nawiasach przy konstelacji — ile jej gwiazd wybrano, co daje i czego wymaga.
+skills.constellations.gives=daje: {0}
+skills.constellations.needs=wymaga: {0}
+skills.constellations.star=gwiazda {0}
+skills.constellations.notTaken=(niewybrana)
+
+# Mapa poświęcenia: dodawanie punktów w gwiazdy myszą
+skills.devo.hint=Lewy klik na gwiazdę dodaje punkt, prawy go zdejmuje. Kółko przybliża, przeciąganie przesuwa mapę.
+skills.devo.fit=Cała mapa
+skills.devo.zoom=powiększenie {0}%
+skills.devo.points=Punkty poświęcenia: {0}
+skills.devo.stars=Wybrane gwiazdy: {0} z {1}
+skills.devo.noPoints=Nie ma już wolnych punktów poświęcenia. Dodaj je w polu „Punkty poświęcenia” w oknie głównym.
+skills.devo.already=W tej gwieździe jest już punkt.
+skills.devo.locked=Konstelacja „{0}” jest jeszcze zamknięta: brakuje pokrewieństwa — {1}.
+skills.devo.parentFirst=Najpierw trzeba wziąć „{0}” — ta gwiazda od niej zależy.
+skills.devo.empty=W tej gwieździe nie ma punktów.
+skills.devo.childFirst=Od tej gwiazdy zależy wybrana „{0}” — najpierw ją zdejmij.
+skills.devo.affinityHolds=Konstelacja jest pełna, a jej pokrewieństwo trzyma „{0}”: bez niego zostałoby {1}.
+skills.devo.bindHint=Kliknij gwiazdę lewym przyciskiem, aby wybrać umiejętność.
+
+# Niebiańska Moc: do której umiejętności ją przypiąć
+skills.bind.title=Do której umiejętności przypiąć „{0}”
+skills.bind.none=Nie przypisano umiejętności
+skills.bind.chosen=(wybrana)
+skills.bind.busy=(zajęta przez: {0})
+skills.bind.fromItem=(z przedmiotu)
+skills.bind.legend=Na czerwono — umiejętności, których postać jeszcze nie nauczyła się: też można je wybrać, a moc zadziała, gdy tylko trafią tam punkty.
+
+# Szczeliny
+skills.portals.tab=Szczeliny
+skills.portals.column=Szczelina
+skills.portals.notBuilt=Lista szczelin nie jest utworzona. Odczytuje się ją z plików świata gry, co trwa około minuty.
+skills.portals.build=Utwórz listę szczelin
+skills.portals.reading=Odczyt plików świata…
+skills.portals.readingWhat=Odczyt plików świata: {0}
+skills.portals.readError=Nie udało się odczytać plików świata: {0}
+skills.portals.layer=Warstwa Riftgates przy {0}: wpisów {1}
+skills.portals.openAll=Otwórz wszystkie szczeliny na wszystkich poziomach trudności
+skills.portals.openDifficulty={0}: otwórz wszystkie ({1} z {2})
+skills.portals.closeAll=Zamknąć wszystkie szczeliny na wszystkich poziomach trudności?\n\nUsunie to także te, które postać znalazła sama. Obok zapisu zostaje kopia zapasowa.
+skills.portals.closeOne=Zamknąć wszystkie szczeliny na poziomie trudności „{0}”?\n\nUsunie to także te, które postać znalazła sama. Obok zapisu zostaje kopia zapasowa.
+skills.portals.title=Szczeliny
+skills.portals.summary=Szczeliny w grze: {0}.   Otwarte: {1}
+skills.portals.source=Lista jest odczytywana z plików świata gry; edytowany jest tylko zapis postaci.
+skills.portals.open=otwarta
+
+# Co przywołuje umiejętność — wiersze pod podpowiedzią umiejętności przywołującej.
+skills.pet.summons=Przywołuje: {0}
+skills.pet.limit=do {0} naraz
+skills.pet.lives=czas życia: {0} s
+skills.pet.permanent=stały
+skills.pet.life=zdrowie: {0}
+skills.pet.lifeNote=zdrowie liczymy według własnych reguł i może się różnić od gry
+
+# Rozdawanie punktów w drzewku: lewy klik dodaje punkt, prawy go zdejmuje
+skills.edit.points=Punkty umiejętności: {0}
+skills.edit.hint=Lewy klik dodaje punkt, prawy go zdejmuje.
+skills.edit.noPoints=Nie ma już wolnych punktów umiejętności. Dodaj je w polu „Punkty umiejętności” w oknie głównym.
+skills.edit.atMax=Umiejętność jest już na maksimum {0}. To, co daje wyposażenie, idzie ponad limit i nie jest zapisywane.
+skills.edit.masteryFirst=Najpierw pasek mistrzostwa: włóż w niego punkt, a drzewko się otworzy.
+skills.edit.tierClosed=Ta kolumna otwiera się na poziomie mistrzostwa {0}, a pasek jest na {1}.
+skills.edit.ownerFirst=Najpierw trzeba wziąć „{0}” — ta umiejętność od niej zależy.
+skills.edit.exclusive=Aktywna może być tylko jedna umiejętność wyłączna, a jest nią już „{0}”.
+skills.edit.empty=W tej umiejętności nie ma punktów.
+skills.edit.ownerBusy=Od tej umiejętności zależy „{0}”, w której wciąż są punkty.
+skills.edit.barLast=Ostatni punkt paska to samo mistrzostwo — zamiast tego zwróć mistrzostwo.
+skills.edit.barHolds=„{0}” stoi w kolumnie, która otwiera się na poziomie mistrzostwa {1}.
+
+# KARTA „REPUTACJA”: frakcje i stopnie. Nazwy frakcji, stopnie i ich kolejność daje gra.
+skills.factions.tab=Reputacja
+skills.factions.column=Frakcja
+skills.factions.rank=Stopień
+skills.factions.value=Reputacja
+skills.factions.boost=Tempo wzrostu
+skills.factions.notes=Uwagi
+skills.factions.summary=Frakcji w grze: {0}.   Wpisów w zapisie: {1}
+skills.factions.short=Zapis zawiera {0} wpisów, a gra zna {1} frakcji: ostatnich jeszcze w nim nie ma. Pojawią się, gdy postać zapisze sama gra.
+skills.factions.source=Nazwy, stopnie i kolejność są odczytywane z plików gry; edytowany jest tylko zapis postaci.
+skills.factions.unreadable=Nie udało się odczytać frakcji z plików gry.
+skills.factions.showHidden=Pokaż także frakcje, których gra nie wyświetla we własnym panelu
+skills.factions.setRank=Stopień:
+skills.factions.exact=Albo liczba:
+skills.factions.apply=Zastosuj do wybranych
+skills.factions.pickFirst=Najpierw wybierz na liście co najmniej jedną frakcję.
+skills.factions.hidden=nie pokazywana w panelu gry
+skills.factions.noGain=reputacja nie rośnie
+skills.factions.boostTimes=×{0}

@@ -1,0 +1,67 @@
+# 「编辑物品」窗口及其子窗口：飞升加成、圣物完成加成。
+# 物品的属性行来自物品提示（部分措辞是游戏自己的）。
+
+edit.title=编辑物品
+edit.stop=停止搜索
+edit.relicBonus=完成加成（圣物）…
+edit.affixes=前缀和后缀…
+edit.ascension=飞升加成…
+edit.reroll=随机重新生成物品
+edit.findMax=搜索最大值
+edit.findValues=按数值搜索
+edit.close=关闭
+edit.notSaved=（已找到，未写入）
+edit.secondEnd=└ 同一行的另一端
+edit.hiddenRolls=已随机但未在提示中显示
+edit.perSecond=（每 1 秒 {0}——栏位中存的就是这个值）
+edit.range={0}…{1} 之间
+
+# 右侧面板：搜索进度和结果
+edit.rerolled=物品已重新生成。\n没有进行任何搜索——随机物品本身就是合法的。\n要写入存档，请按「应用」。
+edit.badNumber=无法读取「{0}」行中的数字：{1}
+edit.busy=正在搜索…
+edit.busyProgress=正在搜索… 已检查 2147 百万中的 {0} 百万
+edit.searching=正在通过尝试数值来搜索物品。\n耗时取决于电脑的速度。
+edit.found=已找到所有选定的数字。按「应用」将物品写入存档。
+edit.impossible=此属性永远不会有这样的数值：
+edit.impossibleHint=请输入该行右侧显示的数值之一。
+edit.cancelled=搜索已停止。
+edit.notFound=无法同时找到这些属性。取消勾选对你不太重要的属性后再试一次。
+edit.hardest=最难的栏位是：{0}。所有可能性都已尝试；游戏中不可能存在这样的物品。
+edit.same=物品已经是这样了。没有需要改变的。
+edit.saved=已写入存档。\n物品本身、词缀、镶嵌物和飞升都未改动——它仍然是游戏可能掉落的物品。
+edit.relicCleared=已移除完成加成。
+edit.relicSet=完成加成：{0}
+edit.ascensionCleared=已移除飞升加成。
+edit.ascensionSet=飞升加成：{0}
+edit.report.scanned={1} 秒内检查了 {0}
+edit.report.found=找到：   ({0})
+edit.report.impossible={0}：此栏位永远不会得到数值 {1}
+
+# 飞升加成窗口
+edit.affixSet=前缀：{0}\n后缀：{1}
+edit.affix.title=前缀和后缀
+edit.affix.head=当前：前缀 — {0};   后缀 — {1}\n只显示游戏会给此类物品的词缀；圆点标记稀有（绿色）。\n列表中的数字是为这件物品随机出的值：词缀是随机的，你在这里看到的就是你会得到的。
+edit.affix.prefix=前缀
+edit.affix.suffix=后缀
+edit.affix.none=无
+edit.affix.gone=（游戏已不再给出——列表中没有它）
+edit.affix.clear=移除这一部分
+edit.affix.level=需要等级 {0}
+edit.affix.building=正在读取游戏的物品表——游戏更新后只需一次。
+
+edit.asc.title=飞升加成
+edit.asc.head=仅显示此类物品可以获得的加成——单手武器不能获得双手武器的加成，反之亦然。
+# edit.asc.unknownClass=未知
+# edit.asc.noPool=未确定
+edit.asc.allPools=所有池，而不只是自己的
+
+# 圣物完成加成窗口
+edit.relic.title=圣物完成加成
+edit.relic.head=圣物：{0}   —   制作等级：{1}\n列表中的数字是为这件物品随机出的值：完成加成是随机的，你在这里看到的就是你会得到的。
+edit.relic.unknown=未知
+edit.relic.noKind=未注明
+# edit.relic.noTable=这件圣物没有任何表——永远不会获得完成加成
+edit.relic.allTables=所有表，而不只是自己的
+edit.relic.noTableList=这件圣物没有加成表——永远不会获得完成加成。
+edit.relic.jitter=（浮动 {0}%）

@@ -1,0 +1,287 @@
+# CHÚ GIẢI VẬT PHẨM VÀ CÁC DÒNG CHỈ SỐ (chú giải vật phẩm, thẻ «Tổng chỉ số»).
+#
+# Phần lớn các dòng chú giải là mẫu câu của chính trò chơi theo ngôn ngữ đã chọn. Ở đây là từ ngữ của chúng tôi:
+# nơi trò chơi không có mẫu câu, và văn bản dự phòng khi không có trò chơi hoặc không tìm thấy nhãn.
+
+# Đuôi thời lượng của sát thương theo thời gian: «+31% Sát Thương Bỏng Băng với +45% thời lượng». Thường là mẫu câu
+# của trò chơi (`ImprovedTimeFormat`); văn bản này chỉ dùng khi thiếu.
+item.durationWith=với {0}% thời lượng
+
+# Tên các loại sát thương trong dòng chuyển hóa («50% chuyển hóa: Sát Thương Sinh Khí thành Sát Thương A-xít»).
+# Thường lấy từ trò chơi (`tagConversion<Loại>`); đây là dự phòng. Trò chơi không có nhãn cho xuất huyết.
+item.conv.Physical=Sát Thương Vật Lý
+item.conv.Pierce=Sát Thương Xuyên Phá
+item.conv.Fire=Sát Thương Lửa
+item.conv.Cold=Sát Thương Băng
+item.conv.Lightning=Sát Thương Sét
+item.conv.Poison=Sát Thương A-xít
+item.conv.Life=Sát Thương Sinh Khí
+item.conv.Aether=Sát Thương Aether
+item.conv.Chaos=Sát Thương Hỗn Nguyên
+item.conv.Bleeding=Xuất Huyết
+
+# ============ NHÃN CÁC DÒNG CHÚ GIẢI ============
+# Dòng vật phẩm được tạo như sau: trước tiên tìm mẫu câu của trò chơi theo ngôn ngữ đã chọn, chỉ khi không có mới
+# lấy nhãn ở đây.
+
+# Loại sát thương: dạng đầy đủ («+31% Sát Thương Băng»), dạng ngắn cho thời lượng.
+item.type.Physical=Sát Thương Vật Lý
+item.type.Pierce=Sát Thương Xuyên Phá
+item.type.Fire=Sát Thương Lửa
+item.type.Cold=Sát Thương Băng
+item.type.Lightning=Sát Thương Sét
+item.type.Poison=Sát Thương A-xít
+item.type.Life=Sát Thương Sinh Khí
+item.type.Aether=Sát Thương Aether
+item.type.Chaos=Sát Thương Hỗn Nguyên
+item.type.Bleeding=Sát Thương Xuất Huyết
+item.type.Elemental=Sát Thương Nguyên Tố
+item.typeShort.Physical=Vật Lý
+item.typeShort.Pierce=Xuyên Phá
+item.typeShort.Fire=Lửa
+item.typeShort.Cold=Băng
+item.typeShort.Lightning=Sét
+item.typeShort.Poison=A-xít
+item.typeShort.Life=Sinh Khí
+item.typeShort.Aether=Aether
+item.typeShort.Chaos=Hỗn Nguyên
+item.typeShort.Bleeding=Xuất Huyết
+item.typeShort.Elemental=Nguyên Tố
+
+# Nhãn ghép từ tên loại.
+item.label.overTime={0} theo thời gian
+item.label.dotDuration=Thời lượng sát thương {0}
+item.label.retaliation=Phản công: {0}
+item.label.resist=Kháng ({0})
+item.label.maxResist=Kháng tối đa ({0})
+item.label.duration=Thời lượng ({0})
+
+# Từ dùng chung cho nhiều trường.
+item.label.action=Thời lượng
+item.label.armour=Giáp
+item.label.cooldown=Hồi chiêu kỹ năng
+item.label.projectiles=Đạn
+item.label.pierceChance=Tỷ lệ xuyên qua kẻ địch
+item.label.radius=Bán kính
+item.label.resCutAll=Giảm kháng của mục tiêu
+item.label.resCutAllOf=Giảm kháng của mục tiêu
+item.label.resCut=Giảm một loại kháng của mục tiêu
+item.label.resCutOf=Giảm một loại kháng của mục tiêu
+item.label.petBaseDamage=Sát thương gốc của thuộc hạ
+item.unit.sec=giây
+item.unit.m=mét
+item.unit.s=giây
+
+# Sát thương, sát thương theo thời gian và cản trở mục tiêu.
+item.stat.offensiveBonusPhysical=Sát Thương Vật Lý
+item.stat.offensivePierceRatio=Tỷ lệ xuyên phá
+item.stat.offensiveLifeLeech=sát thương đòn đánh chuyển thành máu
+item.stat.offensiveManaLeech=sát thương đòn đánh chuyển thành năng lượng
+item.stat.offensivePercentCurrentLife=Giảm máu kẻ địch
+item.stat.offensiveTotalDamageModifier=Toàn bộ sát thương
+item.stat.offensiveCritDamageModifier=Sát thương chí mạng
+item.stat.offensiveDamageMultModifier=Thay đổi tổng sát thương
+item.stat.offensivePierceRatioModifier=Tỷ lệ xuyên phá
+item.stat.offensiveSlowManaLeach=Hút năng lượng
+item.stat.offensiveSlowManaLeachDurationModifier=Thời lượng hút năng lượng
+item.stat.offensiveFumble=Giảm độ chính xác của mục tiêu
+item.stat.offensiveProjectileFumble=Giảm độ chính xác đạn của mục tiêu
+item.stat.offensiveSlowOffensiveAbility=Giảm khả năng tấn công của mục tiêu
+item.stat.offensiveSlowDefensiveAbility=Giảm khả năng phòng thủ của mục tiêu
+item.stat.offensiveSlowRunSpeed=Giảm tốc độ di chuyển của mục tiêu
+item.stat.offensiveSlowAttackSpeed=Giảm tốc độ đánh của mục tiêu
+item.stat.offensiveSlowSpellCastSpeed=Giảm tốc độ thi triển của mục tiêu
+item.stat.offensiveKnockdown=Đánh ngã mục tiêu
+item.stat.offensiveStun=Làm choáng mục tiêu
+item.stat.offensiveStunModifier=Thời lượng choáng
+item.stat.offensiveFreeze=Đóng băng mục tiêu
+item.stat.offensivePetrify=Hóa đá mục tiêu
+item.stat.offensiveSleep=Ru ngủ mục tiêu
+item.stat.offensiveTrap=Trói chân mục tiêu
+item.stat.offensiveConfusion=Làm rối trí mục tiêu
+item.stat.offensiveTaunt=Khiêu khích mục tiêu
+item.stat.offensiveFear=Làm sợ hãi mục tiêu
+item.stat.offensiveConvert=Lôi kéo mục tiêu
+item.stat.offensiveDisruption=Ngắt kỹ năng
+item.stat.offensiveManaBurnDrain=Đốt năng lượng
+item.stat.offensiveManaBurnDamageRatio=năng lượng bị đốt gây thành sát thương
+item.stat.offensiveTotalDamageReductionPercent=Giảm sát thương của mục tiêu
+item.stat.offensiveSlowTotalSpeed=Làm chậm mục tiêu
+
+# Sát thương phản công và cản trở phản công.
+item.stat.retaliationFreeze=Phản công: đóng băng
+item.stat.retaliationConfusion=Phản công: rối trí
+item.stat.retaliationSlowLightning=Phản công: điện giật
+item.stat.retaliationFear=Phản công: sợ hãi
+item.stat.retaliationSlowAttackSpeed=Phản công: giảm tốc độ đánh
+item.stat.retaliationSlowRunSpeed=Phản công: giảm tốc độ di chuyển
+item.stat.retaliationSlowPoison=Phản công: độc
+item.stat.retaliationSlowManaLeach=Phản công: hút năng lượng
+item.stat.retaliationTotalDamageModifier=Toàn bộ sát thương phản công
+
+# Giáp, đỡ đòn và kháng.
+item.stat.defensiveAbsorptionModifier=Hấp thụ giáp
+item.stat.defensiveBlockChance=Tỷ lệ đỡ
+item.stat.defensiveBlock=Sát thương đỡ được
+item.stat.blockRecoveryTime=giây hồi phục đỡ đòn
+item.stat.defensiveBlockModifier=Tỷ lệ đỡ bằng khiên
+item.stat.defensiveBlockAmountModifier=Sát thương khiên đỡ được
+item.stat.blockAbsorption=Hấp thụ khi đỡ
+item.stat.skillComboChargeSpendReduction=Tỷ lệ không tiêu tốn tích tụ đà
+item.stat.characterDefensiveBlockRecoveryReduction=Thời gian hồi phục khiên
+item.stat.defensiveElementalResistance=Kháng nguyên tố
+item.stat.defensiveAllResistance=Mọi loại kháng
+item.stat.defensiveAllMaxResist=Mọi kháng tối đa
+item.stat.defensivePercentReflectionResistance=Sát thương phản lại nhận vào
+item.stat.defensiveSlowLifeLeach=Kháng hút máu
+item.stat.defensiveSlowManaLeach=Kháng hút năng lượng
+item.stat.defensiveBonusProtection=Giáp cộng thêm
+item.stat.defensiveStun=Kháng choáng
+item.stat.defensiveFreeze=Kháng đóng băng
+item.stat.defensivePetrify=Kháng hóa đá
+item.stat.defensiveSleep=Kháng ngủ
+item.stat.defensiveTrap=Kháng trói chân
+item.stat.defensiveDisruption=Kháng ngắt
+item.stat.defensiveKnockdown=Kháng đánh ngã
+item.stat.defensiveConfusion=Kháng rối trí
+item.stat.defensiveFear=Kháng sợ hãi
+item.stat.defensiveTaunt=Kháng khiêu khích
+item.stat.defensiveLifeLeach=Kháng rút máu
+item.stat.defensiveManaLeach=Kháng rút năng lượng
+item.stat.defensiveReflect=Sát thương phản lại
+item.stat.defensiveTotalSpeedResistance=Kháng làm chậm
+item.stat.defensivePercentCurrentLife=Kháng sát thương theo máu hiện tại
+item.stat.defensiveCrowdControl=Giảm thời lượng hiệu ứng khống chế
+item.stat.defensiveConvert=Giảm thời lượng khống chế tâm trí
+
+# Thuộc tính nhân vật — theo số và theo phần trăm.
+item.stat.characterStrength=Thể Chất
+item.stat.characterDexterity=Khéo Léo
+item.stat.characterIntelligence=Tinh Thần
+item.stat.characterLife=Máu
+item.stat.characterMana=Năng Lượng
+item.stat.characterLifeRegen=Hồi máu mỗi giây
+item.stat.characterManaRegen=Hồi năng lượng mỗi giây
+item.stat.characterOffensiveAbility=Khả Năng Tấn Công
+item.stat.characterDefensiveAbility=Khả Năng Phòng Thủ
+item.stat.characterConstitution=Thể lực
+item.stat.characterRunSpeedMax=Tốc độ di chuyển tối đa
+item.stat.characterManaLimitReserve=Năng lượng giữ lại
+item.stat.characterStrengthModifier=Thể Chất
+item.stat.characterDexterityModifier=Khéo Léo
+item.stat.characterIntelligenceModifier=Tinh Thần
+item.stat.characterLifeModifier=Máu
+item.stat.characterManaModifier=Năng Lượng
+item.stat.characterLifeRegenModifier=Hồi máu
+item.stat.characterManaRegenModifier=Hồi năng lượng
+item.stat.characterOffensiveAbilityModifier=Khả Năng Tấn Công
+item.stat.characterDefensiveAbilityModifier=Khả Năng Phòng Thủ
+item.stat.characterAttackSpeedModifier=Tốc Độ Đánh
+item.stat.characterSpellCastSpeedModifier=Tốc Độ Thi Triển
+item.stat.characterRunSpeedModifier=Tốc độ di chuyển
+item.stat.characterTotalSpeedModifier=Tổng tốc độ
+item.stat.characterDodgePercent=Tỷ lệ né đòn cận chiến
+item.stat.characterDeflectProjectile=Tỷ lệ né đạn
+item.stat.characterHealIncreasePercent=Tăng hồi phục
+item.stat.characterEnergyAbsorptionPercent=Năng lượng hấp thụ từ phép của kẻ địch
+item.stat.characterIncreasedExperience=Kinh nghiệm nhận được
+item.stat.characterLightRadius=Bán kính ánh sáng
+item.stat.characterGlobalReqReduction=Giảm yêu cầu thuộc tính
+item.stat.characterLevelReqReduction=Giảm yêu cầu cấp
+item.stat.characterManaLimitReserveReduction=Năng lượng giữ lại
+item.stat.characterConstitutionModifier=Thể lực
+item.stat.characterRunSpeedMaxModifier=Tốc độ di chuyển tối đa
+item.stat.characterAttackSpeedMaxModifier=Tốc độ đánh tối đa
+item.stat.characterSpellCastSpeedMaxModifier=Tốc độ thi triển tối đa
+item.stat.characterArmorStrengthReqReduction=Giảm yêu cầu Thể Chất cho giáp
+item.stat.characterMeleeStrengthReqReduction=Giảm yêu cầu Thể Chất cho vũ khí cận chiến
+item.stat.characterMeleeDexterityReqReduction=Giảm yêu cầu Khéo Léo cho vũ khí cận chiến
+item.stat.characterWeaponStrengthReqReduction=Giảm yêu cầu Thể Chất cho vũ khí
+item.stat.characterHuntingDexterityReqReduction=Giảm yêu cầu Khéo Léo cho vũ khí tầm xa
+item.stat.characterJewelryIntelligenceReqReduction=Giảm yêu cầu Tinh Thần cho trang sức
+item.stat.characterShieldStrengthReqReduction=Giảm yêu cầu Thể Chất cho khiên
+item.stat.skillCooldownReduction=Giảm hồi chiêu kỹ năng
+item.stat.skillManaCostReduction=Năng lượng tiêu tốn của kỹ năng
+
+# Kỹ năng tốn bao nhiêu và vươn xa tới đâu; bên dưới là các trường chỉ có ở biến thể kỹ năng.
+item.stat.skillActiveLifeCost=Máu tiêu tốn mỗi giây
+item.stat.skillActiveManaCost=Năng lượng tiêu tốn mỗi giây
+item.stat.skillManaCost=Năng lượng tiêu tốn
+item.stat.skillActiveDuration=Thời lượng
+item.stat.skillTargetNumber=mục tiêu
+item.stat.weaponDamagePct=Sát thương vũ khí
+item.stat.retaliationDamagePct=sát thương phản công cộng vào đòn đánh
+item.stat.skillChanceWeight=Tỷ lệ được dùng
+item.stat.skillTargetAngle=độ góc tấn công
+item.stat.cooldownCharges=lần tích
+item.stat.petLimit=Giới hạn triệu hồi
+item.stat.damageAbsorptionPercent=Sát thương được hấp thụ
+item.stat.projectileLaunchRotation=Góc bắn
+item.stat.beamAngle=độ góc quét tia sáng
+item.stat.beamNumber=Tia Sáng
+item.stat.spawnObjectsTimeToLive=giây tồn tại
+
+# Đầu vật phẩm: giáp và tốc độ đánh — cùng những dòng trò chơi hiện dưới tên vật phẩm.
+item.head.armour={0} Giáp
+item.head.aps={0} đòn mỗi giây
+
+# Yêu cầu của vật phẩm. Thường lấy từ trò chơi; đây là dự phòng.
+item.need.level=Cấp Nhân Vật
+item.need.strength=Thể Chất
+item.need.dexterity=Khéo Léo
+item.need.intelligence=Tinh Thần
+
+# Tiêu đề các phần của vật phẩm. Trò chơi không có: nó ghi chỉ số các phần thẳng vào danh sách chung, còn chúng tôi
+# cần cho thấy dòng đến từ đâu. «Phụ Kiện» và «Vật Phẩm Nâng Cấp» trò chơi có — hai cái này là dự phòng.
+item.part.prefix=Tiền tố
+item.part.suffix=Hậu tố
+item.part.modifier=Thức tỉnh
+item.part.component=Phụ Kiện
+item.part.relicBonus=Chỉ số hoàn thiện
+item.part.augment=Vật Phẩm Nâng Cấp
+item.part.ascension=Chỉ số thăng hoa
+
+# Độ hiếm của vật phẩm. Thường lấy từ trò chơi; đây là dự phòng.
+item.rarity.common=Thường
+item.rarity.magical=Phép Thuật
+item.rarity.rare=Hiếm
+item.rarity.epic=Hoàn Hảo
+item.rarity.legendary=Huyền Thoại
+item.rarity.quest=Nhiệm Vụ
+
+# Ghi chú dưới chú giải về các số đã gieo, và kích thước vật phẩm theo ô.
+item.rolled.noteDoubt=Các số trong dòng là giá trị gieo được CHÍNH ở vật phẩm NÀY, như trò chơi sẽ hiện. Với các dòng có dấu đỏ, chúng tôi chưa đo vị trí của trường trong thứ tự gieo: ở đó giữ số của bản ghi, còn số tính được ghi thêm là «gieo được N ?» — có thể lệch với trò chơi một bậc.
+item.cells={0} ô
+item.allFields=— mọi trường khác không của bản ghi —
+
+# Các dòng chú giải khác. Nơi trò chơi có mẫu câu riêng thì hiện mẫu đó; đây là dự phòng.
+item.weaponDamageHand={0}% sát thương vũ khí {1}
+item.hand.main=tay chính
+item.hand.off=tay phụ
+item.missing.noGame=chưa kết nối cơ sở dữ liệu trò chơi
+item.missing.noRecord=bản ghi đã bị bản vá trò chơi xóa
+item.restore.life=máu
+item.restore.mana=năng lượng
+item.restore.head=Hồi phục
+item.need.short=— chưa đủ, hiện có {0}
+item.chanceOfOne={0}% tỷ lệ nhận một trong:
+item.chanceOfAll={0}% tỷ lệ nhận:
+item.chanceOf={0}% tỷ lệ
+item.forSeconds=trong {0} giây
+item.petBonusAll=Hỗ trợ tất cả Thuộc Hạ
+item.set=Bộ
+item.setNamed=Bộ: {0}
+item.setWorn=Trang bị ({0}) món
+item.conversionField=chuyển hóa sát thương
+item.conversion={0}% chuyển hóa: {1} thành {2}
+item.noGameWords=(dòng này ở đây không có từ ngữ của trò chơi)
+item.rolledValue=gieo được {0} ?
+item.racial.damage=Sát thương lên:
+item.racial.defence=Giảm sát thương từ:
+item.skillPlus=+{0} cho {1}
+item.masteryPlus=+{0} cho mọi kỹ năng của nghề {1}
+item.allSkillsPlus=+{0} cho mọi kỹ năng
+item.summonCount={0} triệu hồi
+item.activationChance=Tỷ lệ kích hoạt
+item.stat.retaliationDamageMultModifier=Thay đổi tổng sát thương phản công
+item.conversionGone=-{0}% {1}

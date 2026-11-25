@@ -1,0 +1,12 @@
+# UMIEJĘTNOŚCI Z OBRAŻENIAMI: wiersz listy „atakuj przez” i części umiejętności („Z czego składa się ta umiejętność”).
+
+attack.title={0}   ({1}, poz. {2})
+attack.weaponPct={0}% obrażeń od broni
+attack.part={0} (poz. {1})
+attack.transmuter={0} (transmutator, poz. {1})
+attack.transmuterOrphan={0} — transmutator (poz. {1}): nie znaleziono jego umiejętności nadrzędnej
+attack.fromItemInForm=z przedmiotu, w tej postaci: {0}
+attack.fromItem=z przedmiotu: {0}
+attack.pool=(zamiast ataku podstawowego, {0}%)
+attack.poolNoChance=(zamiast ataku podstawowego)
+attack.onHit=(uruchamia się przy trafieniu, {0}%)

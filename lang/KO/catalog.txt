@@ -1,0 +1,44 @@
+# 아이템 카탈로그 (메인 창의 왼쪽 열).
+
+catalog.title=아이템 카탈로그
+catalog.wearable=착용 가능한 모든 것
+catalog.everything=모든 아이템
+catalog.search=이름의 일부…
+catalog.bonus=보너스: 공격 속도…
+catalog.bulkHint=Ctrl + 왼쪽 클릭 — 묶음으로 집기
+catalog.count=아이템 {0}개
+catalog.notBuilt=(카탈로그 없음)
+catalog.hidden=(필터로 숨김 {0})
+catalog.level=Lv. {0}
+
+# 등급
+catalog.rarity.common=일반
+catalog.rarity.magical=마법
+catalog.rarity.rare=레어
+catalog.rarity.epic=에픽
+catalog.rarity.legendary=전설
+catalog.rarity.quest=퀘스트
+
+# 분류
+catalog.category.head=방어구: 머리
+catalog.category.shoulders=방어구: 어깨
+catalog.category.chest=방어구: 상체
+catalog.category.hands=방어구: 손
+catalog.category.waist=방어구: 허리
+catalog.category.legs=방어구: 하체
+catalog.category.feet=방어구: 발
+catalog.category.amulet=장신구: 목걸이
+catalog.category.ring=장신구: 반지
+catalog.category.medal=장신구: 메달
+catalog.category.relic=렐릭
+catalog.category.weapon1h=무기: 한손
+catalog.category.weapon2h=무기: 양손
+catalog.category.ranged1h=무기: 권총
+catalog.category.ranged2h=무기: 소총
+catalog.category.shield=보조 손: 방패
+catalog.category.offhand=보조 손: 시전자용 보조장비
+catalog.category.component=컴포넌트
+catalog.category.augment=증강제
+catalog.category.consumable=소모품
+catalog.category.crafting=재료와 설계도
+catalog.category.other=기타

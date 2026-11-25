@@ -1,0 +1,185 @@
+# IL REGISTRO DELLA SIMULAZIONE DI COMBATTIMENTO (scheda «Simulazione di combattimento»): righe, motivi e note dopo un'esecuzione.
+#
+# I numeri decimali arrivano già scritti (con il punto), dentro {n} non si ricalcola nulla. I segni di confronto
+# «<», «≥», «→», le parentesi e le virgole tra le parti di una riga li mette il programma.
+
+# Cosa fa un'abilità che non colpisce da sola. La parola compare nel registro («potenziamento, nessun danno»),
+# nell'elenco «cosa premiamo» e nelle note dell'esecuzione.
+log.effect.damage=danno
+log.effect.summon=evocazione
+log.effect.buff=potenziamento
+log.effect.debuff=indebolimento
+log.effect.none=nessun danno nel record
+
+# Una riga: «12.34 s  fendente: entrambe le mani   812 e 790   (danno senza bonus 1020 e 990)   [motivo]».
+log.line.at={0} s
+log.line.and=e
+log.line.before=(danno senza bonus {0})
+log.seconds={0} s
+log.from=da «{0}»
+log.target.dummy=fantoccio
+log.target.generic=bersaglio
+
+# Mani. «fendente: entrambe le mani», «critico mano principale, livello 2», «principale 43.1 < 97.0».
+log.hand.both=entrambe le mani
+log.hand.main=mano principale
+log.hand.off=mano secondaria
+log.roll.main=principale
+log.roll.off=secondaria
+log.partial.mainMissed=(mano principale mancata)
+log.partial.offMissed=(mano secondaria mancata)
+
+log.swing=fendente: {0}
+log.swing.hands=mani {0} → {1}
+log.swing.crit=critico {0}, livello {1} ×{2}
+log.miss=mancato
+log.fire.crit=critico {0} ×{1}
+
+# Cosa ha colpito: «abilità: …», «attivazione: Meteora», «al posto dell'attacco: …».
+log.fire.skill=abilità
+log.fire.channel=canalizzazione
+log.fire.spell=magia
+log.fire.pool=al posto dell'attacco
+log.fire.proc=attivazione
+log.fire.devotion=devozione
+log.fire.finale=finale: colpo {0}
+log.fire.attack=attacco
+log.fire.charges=({0} cariche)
+
+# Impulso di danno nel tempo: «impulso di Bruciatura (mano principale, dall'attacco base dell'arma)».
+log.tick=impulso di {0}
+log.tick.from=da {0}
+log.tick.left=restano {0} s
+log.tick.partial=impulso parziale {0}%
+log.tick.autoattack=l'attacco base dell'arma
+log.dot.FireDot=Bruciatura
+log.dot.ColdDot=Gelo
+log.dot.LightningDot=Folgorazione
+log.dot.PoisonDot=Veleno
+log.dot.LifeDot=Decadenza Vitale
+log.dot.BleedingDot=Sanguinamento
+log.dot.PhysicalDot=Trauma Interno
+
+# La salute del bersaglio.
+log.life.killed=bersaglio ucciso
+log.life.killedWhy=TTK {0} s: {1} inflitti contro {2} di salute; da qui contiamo il danno come se fosse vivo, ma non c'è più salute da ridurre
+log.life.cut=riduzione della salute {0}%  da «{1}»
+log.life.cutWhy=salute del bersaglio {0} → {1}
+log.life.cutResist=effetto {0}%, resistenza del bersaglio {1}%
+log.life.gear=equipaggiamento
+
+# Un'aura, un potenziamento secondo la ricarica, un azzeramento della ricarica.
+log.aura=aura: {0}
+log.buff=potenziamento: {0}
+log.buff.holds=dura {0} s
+log.buff.cooldown=ricarica {0} s
+log.buff.shield=scudo di assorbimento {0}: regge finché non viene spezzato
+log.buff.noDuration=nessuna durata nel record
+log.buff.notInQueue=i suoi bonus al danno NON agiscono nella coda
+log.buff.noEffect=non influisce sul nostro danno
+log.reset=ricarica azzerata: «{0}»
+log.reset.why=«{0}», {1}% {2}: per {3} s, pronta a {4} invece di {5}
+log.reset.onCrit=all'attacco critico
+log.reset.onAttack=all'attacco
+
+# Attivato o premuto, ma non colpisce.
+log.silent.fired=attivato
+log.silent.pressed=premuto:
+log.silent.buff=potenziamento, dura {0} s
+log.silent.resists=riduzione delle resistenze
+log.silent.defense=−{0} di capacità difensiva
+log.silent.offense=−{0} di capacità offensiva
+log.silent.absolute=−{0} di resistenze fisse
+log.silent.relative=−{0}% delle resistenze attuali
+log.silent.debuff=indebolimento del bersaglio per {0} s
+log.silent.debuffNothing=non influisce in alcun modo sul nostro danno
+log.silent.summon=evocazione: la creatura entra nella riserva, i suoi colpi sono sotto nelle loro righe
+log.silent.noDamage={0}, nessun danno
+
+# Le evocazioni nel registro.
+log.pet.how.self=da sola
+log.pet.how.pressed=premuta
+log.pet.summonBlocked=evocazione ({0}): {1}
+log.pet.limit=il limite del suo tipo è già raggiunto: {0} × «{1}», non se ne aggiungono altre
+log.pet.summoned=evocata ({0}): «{1}» n. {2}
+log.pet.standing={0} su {1} presenti
+log.pet.lives=vive {0} s
+log.pet.permanent=permanente
+log.pet.aps=attacchi al secondo {0}
+log.pet.gone=andata via: «{0}» n. {1}
+log.pet.goneWhy=tempo di vita di {0} s scaduto, colpi {1}
+log.pet.goneTrap=innescata dal nemico, colpi {0}
+log.pet.onceAt=esplosione dopo {0} s
+log.pet.aura=aura dell'evocazione: «{0}» {1}
+log.pet.auraTarget=aura dell'evocazione: «{0}»
+log.pet.auraAllies=potenzia noi e le altre evocazioni finché è vicina
+log.pet.auraOnTarget=resta sul bersaglio finché è vicina
+log.pet.miss=colpo mancato dell'evocazione: «{0} n. {1}» {2}
+log.pet.hitChance=possibilità di colpire {0}%
+log.pet.hit=evocazione: «{0} n. {1}» {2}
+log.pet.auto=(attacco base)
+log.pet.auraMark=(aura)
+log.pet.perSecond=una volta al secondo
+log.pet.speed=velocità {0} attacchi/s
+log.pet.every=ogni {0} s
+log.pet.crit=critico livello {0} ×{1}
+log.pet.dotApplied=danno nel tempo applicato
+# La fonte del danno nel tempo di un'evocazione in una riga d'impulso: «impulso di Bruciatura (da «<evocazione> n. 1: <abilità>»)».
+log.pet.source={0} n. {1}: {2}
+# Un'abilità di evocazione senza nome nel gioco: la chiamiamo con la parte finale del percorso del suo record.
+log.pet.noName=senza nome: {0}
+
+# Risultato dell'esecuzione: il bonus razziale.
+log.racial.noRace=i bonus contro le razze ({0}) non funzionano su questo bersaglio: NON ha alcuna razza (come il fantoccio)
+log.racial.none=il bersaglio è {0}, e non abbiamo bonus contro di esso (ce ne sono contro altre razze: {1})
+log.racial.has=il bersaglio è {0}, il nostro bonus contro di esso è del {1}% di danno (moltiplicatore ×{2})
+log.racial.flat=il bonus fisso contro la razza «{0}» ({1} di danno) è RACCOLTO MA NON APPLICATO: non si sa con quale tipo di danno arrivi (il suggerimento non nomina un tipo) né in che punto dell'ordine stia. Quello percentuale lo mettiamo secondo la formula dell'articolo; per quello fisso non c'è formula né nell'articolo né nei file: serve una misurazione
+
+# Risultato dell'esecuzione: suggerimenti (cosa è scelto male).
+log.hint.mainNotSpell=«{0}» è scelta come principale, ma non è né una canalizzazione né una magia senza ricarica (o la sua animazione non è stata trovata): attacchiamo con l'arma, come senza scelta
+log.hint.buffPressed=«{0}» è un potenziamento: i suoi bonus si applicano ai colpi finché è attivo, ma non colpisce come un colpo. Spuntalo tra i potenziamenti
+log.hint.channelWithAttack=la canalizzazione «{0}» è premuta INSIEME all'attacco base dell'arma: nel gioco non succede mai, finché si tiene il raggio l'arma non colpisce. Viene premuta secondo la «ricarica» del record, non secondo la velocità di lancio. Sceglila come principale
+log.hint.starHits=la stella «{0}» infligge danni: non la attiviamo come potenziamento; spuntala nell'elenco delle pressioni e colpirà secondo la ricarica
+log.hint.starReplacing=la stella «{0}» è legata a «{1}»: è un ATTACCO SOSTITUTIVO, si assegna a un tasto e colpisce al posto del colpo normale. Sappiamo contarli, ma in QUESTA esecuzione non colpiamo con essa: il salvataggio non conserva l'assegnazione. Sceglila nell'elenco «attacca con» e la stella funzionerà
+log.hint.starIdle=la stella «{0}» è legata all'abilità «{1}», e questa NON COLPISCE in questa esecuzione (non spuntata per la pressione e non nella riserva delle armi): non ci sono attivazioni, e non è sfortuna
+
+# Risultato dell'esecuzione: cosa non è stato letto.
+log.unread.starBuffNoDuration=la stella «{0}» applica un POTENZIAMENTO, ma il record non ha durata: non abbiamo con cosa mantenerlo, quindi la coda mostra solo che si è attivata
+log.unread.starNoDamage=non abbiamo letto il danno della stella «{0}»: l'attivazione è nella coda, il danno no
+log.unread.buffNoDuration=il potenziamento «{0}» cambia il danno, ma il record non ha durata: la coda mostra solo la sua attivazione, i bonus non agiscono
+log.unread.summonNoPet=l'evocazione «{0}» si è attivata, ma nella riserva non c'è una tale creatura: il suo danno non viene contato
+log.unread.petMoveNoRate=l'evocazione «{0}» ha l'abilità «{1}» che infligge danni, ma il record non dice quanto spesso la usa: nella coda non viene usata
+log.unread.petNoSpeed=non è stato possibile leggere la velocità di attacco dell'evocazione «{0}» (nessuna tabella delle animazioni): il suo attacco base non entra nella coda
+log.unread.petNoMoves=non abbiamo letto nessuna abilità con danno dell'evocazione «{0}»: nella coda viene evocata ma non colpisce
+
+# Risultato dell'esecuzione: abilità di oggetti e set, cosa ne è stato di ognuna.
+log.gear.mainSpell=l'abilità principale al posto dell'attacco base dell'arma, colpi {0}
+log.gear.pool=nella riserva delle armi
+log.gear.onlyCrit=estratta solo con un critico;
+log.gear.fired=attivata {0} volte
+log.gear.firedSummon=— evocazione, la creatura entra nella riserva e colpisce
+log.gear.firedDebuff=— indebolimento del bersaglio
+log.gear.firedBuff=— potenziamento su di noi
+log.gear.conditionNotModelled=la condizione non è modellata —
+log.gear.pressed=spuntata per la pressione, premuta secondo la ricarica: premuta {0} volte
+log.gear.notPressed=premibile, non spuntata per la pressione
+log.gear.conditionHits=la condizione non è modellata, c'è danno: spuntala e andrà secondo la ricarica
+log.gear.noHit=non colpisce ({0})
+log.gear.conditionNoHit=la condizione non è modellata, nessun danno ({0}): non partecipa alla coda
+
+# Risultato dell'esecuzione: stelle ed evocazioni per nome.
+log.star.head=«{0}» liv. {1} da «{2}»
+log.star.onlyCrit=(solo con un critico)
+log.star.chance=possibilità {0}%
+log.star.cooldown=ricarica {0} s
+log.star.fired=attivata {0} volte su {1} tiri
+log.star.blocked=bloccata dalla ricarica {0} volte
+log.petLine.auras=aure delle evocazioni per le altre evocazioni finché queste vivono — {0}: {1}
+log.petLine.head=«{0}» ({1}) — evocata {2} volte
+log.petLine.limit=fino a {0} alla volta
+log.petLine.hits=colpi {0}
+log.petLine.misses=mancati {0}
+log.petLine.crits=critici {0}
+log.petLine.damage=danno {0}
+log.petLine.expired=andate via per scadenza {0}
+log.petLine.blocked=evocazioni oltre il limite {0}

@@ -1,0 +1,71 @@
+# NGUỒN CHỈ SỐ: nhãn các thành phần trong chú giải «gồm những gì» ở thẻ «Tổng chỉ số».
+# Đòn đánh tìm thành phần của mình theo chính các nhãn này, vì vậy mỗi nhãn chỉ được tạo ở một chỗ.
+# QUAN TRỌNG KHI DỊCH: nhãn các phần của vật phẩm (totals.part.*) phải khác nhau — nếu không, các dòng của
+# những phần khác nhau sẽ dùng chung một lần gieo sát thương. --langtest kiểm tra điều này.
+
+totals.part.prefix=(tiền tố)
+totals.part.suffix=(hậu tố)
+totals.part.component=(phụ kiện)
+totals.part.relicBonus=(chỉ số hoàn thiện)
+totals.part.augment=(nâng cấp)
+totals.part.modifier=(biến đổi)
+totals.part.ascension=(thăng hoa)
+totals.setShort=bộ: {0}
+totals.fromItem=từ vật phẩm: {0} ({1})
+totals.devotion=tín ngưỡng: {0}
+totals.skill=kỹ năng: {0} (cấp {1})
+totals.toggled=đang bật: {0} (cấp {1})
+totals.skillMod=biến thể kỹ năng: {0}
+totals.toggledMod=đang bật, biến thể kỹ năng: {0}
+totals.chosenOn={0} — bật bằng tay
+totals.chosenOff={0} — tắt bằng tay
+totals.gateItem={0} (từ vật phẩm) — {1}
+totals.gateDevotion={0} (tín ngưỡng) — {1}
+
+totals.gate.needDualAny=không có hai vũ khí cận chiến cũng không có hai vũ khí tầm xa một tay
+totals.gate.needDualMelee=không cầm hai vũ khí
+totals.gate.needDualRanged=không có hai vũ khí tầm xa một tay
+totals.gate.needRanged=không có vũ khí tầm xa
+totals.gate.needGuns=cần hai súng ngắn hoặc một súng trường
+totals.gate.needEmptyHands=đang cầm vũ khí
+totals.gate.wrongWeapon=sai loại vũ khí đang cầm
+
+# TIÊU ĐỀ NHÓM ở thẻ «Tổng chỉ số». «Kháng», «Phản Công», «Phòng Thủ» và «Thuộc Tính» lấy từ trò chơi
+# (bảng nhân vật của nó); bốn dòng này chỉ là dự phòng.
+totals.group.damage=Sát thương
+totals.group.overTime=Sát thương theo thời gian
+totals.group.retaliation=Phản Công
+totals.group.debuff=Những gì bị lấy khỏi mục tiêu
+totals.group.resist=Kháng
+totals.group.defence=Phòng Thủ
+totals.group.attributes=Thuộc Tính
+totals.group.skills=Kỹ Năng
+totals.group.other=Khác
+
+# Vùng giáp. Thường lấy từ trò chơi (bảng giáp của nó); đây là dự phòng.
+totals.zone.head=Đầu
+totals.zone.shoulders=Vai
+totals.zone.chest=Ngực
+totals.zone.arms=Tay
+totals.zone.legs=Chân
+totals.zone.feet=Bàn Chân
+
+# Những gì chạm giới hạn ở thuộc hạ: «… chạm giới hạn: hỗn nguyên 84% (+12% vượt tối đa), choáng …».
+totals.capWord.elemental=nguyên tố
+totals.capWord.stun=choáng
+totals.capWord.freeze=đóng băng
+totals.capWord.trap=trói chân
+totals.capWord.petrify=hóa đá
+totals.capWord.convert=khống chế tâm trí
+
+# Tên các loại kháng. Lấy từ trò chơi (bảng nhân vật); đây là dự phòng, theo lời của trò chơi.
+totals.resist.fire=Lửa
+totals.resist.cold=Băng
+totals.resist.lightning=Sét
+totals.resist.poison=Độc & Axít
+totals.resist.pierce=Xuyên Phá
+totals.resist.aether=Aether
+totals.resist.chaos=Hỗn Nguyên
+totals.resist.life=Sinh Khí
+totals.resist.bleeding=Xuất Huyết
+totals.resist.physical=Vật Lý

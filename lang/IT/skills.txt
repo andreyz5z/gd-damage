@@ -1,0 +1,150 @@
+# FINESTRA «ABILITÀ»: maestrie, suggerimenti delle abilità, devozione, portali.
+# I nomi di maestrie, abilità e costellazioni vengono dal gioco.
+
+skills.title=Abilità — {0}
+skills.levelParen=(livello {0})
+
+# Scegliere e abbandonare una maestria
+skills.choose.first=Prima maestria
+skills.choose.second=Seconda maestria
+skills.choose.intro=Una maestria conta come scelta appena il primo punto entra nella sua barra: è esattamente ciò che facciamo, spendendo un punto abilità. La stessa maestria non si può scegliere due volte.
+skills.choose.opensAt=Nel gioco si sblocca al livello {0}.
+skills.choose.freePoints=Punti abilità liberi: {0}.
+skills.noPoints.text=Non ci sono punti abilità liberi, e una maestria si sceglie mettendo un punto nella sua barra.\n\nAggiungi un punto nel campo «Punti Abilità» della finestra principale, e allora potrai spenderlo qui. Spendere un punto che non esiste non è permesso: il personaggio avrebbe speso più di quanto guadagnato.
+skills.noPoints.title=Punti abilità insufficienti
+skills.take.ask=Scegliere la maestria «{0}»?\n\nUn punto abilità andrà nella sua barra: è così che una maestria viene scelta. Liberi ora: {1}.
+skills.take.undo=Puoi cambiare idea con il pulsante «Abbandona maestria»: i punti tornano.
+skills.take.title=Scelta della maestria
+skills.drop.ask=Abbandonare la maestria «{0}»?\n\nOgni punto messo in essa verrà tolto — {1} in tutto, compreso il punto della barra — e restituito a quelli liberi. Le abilità di questa maestria spariranno, e le stelle di devozione legate a esse resteranno scollegate.
+skills.drop.title=Abbandono della maestria
+skills.drop.button=Abbandona la maestria «{0}»
+skills.drop.secondFirst=Abbandona prima la seconda maestria
+skills.mastery.fallbackName=maestria {0}
+skills.mastery.tooEarlyFirst=Nel gioco la prima maestria si sblocca al livello {0}, e il personaggio è al {1}.
+skills.mastery.tooEarlySecond=Nel gioco la seconda maestria si sblocca al livello {0}, e il personaggio è al {1}.
+
+# Suggerimento di un'abilità
+skills.kind.mastery=maestria
+skills.kind.active=abilità attiva
+skills.kind.weaponPool=attacco base dell'arma (abilità della riserva delle armi)
+skills.kind.modifier=modificatore di abilità
+skills.kind.transmuter=trasmutatore
+skills.kind.passive=abilità passiva
+skills.tip.poolChance=Possibilità di essere usata al posto dell'attacco base dell'arma: {0}%
+skills.tip.poolShared=Attacchi base dell'arma scelti: {0}, le loro possibilità sommano {1}%. Per attacco se ne attiva solo uno.
+skills.tip.poolSharedFull=Attacchi base dell'arma scelti: {0}, le loro possibilità sommano {1}%. Per attacco se ne attiva solo uno; l'attacco semplice con l'arma non avverrà più.
+skills.tip.dependsOn=Sbloccata tramite: {0}
+skills.tip.level=Livello attuale: {0}
+skills.tip.levelWithBonus=Livello attuale: {0} + {1} dagli oggetti
+skills.tip.max=(si può alzare fino a {0})
+skills.tip.maxWithGear=(si può alzare fino a {0}, limite con gli oggetti {1})
+skills.tip.recordNumbers=Questi sono i numeri del record dell'abilità, prima dei bonus del personaggio. Nel proprio suggerimento il gioco li mostra già moltiplicati per tutto il danno che porti: per questo le sue cifre sono più alte. Danno con i bonus: «Calcolo dei danni…» → «Danno per colpo».
+skills.tip.recordNumbersHand=Tranne la riga gialla sulla mano: lì la parentesi contiene già il danno di quella mano, esattamente come lo mostra il gioco.
+skills.tip.celestialPower=Potere Celestiale
+skills.tip.fromItem=Da un oggetto: {0}
+skills.tip.nextLevel=Livello successivo: {0}
+
+# Devozione
+skills.devotion.tab=Devozione
+skills.devotion.spent=Punti devozione spesi: {0} su {1} guadagnati, liberi {2}
+skills.devotion.split=Di questi {0} sono stelle passive (sommate sotto) e {1} stelle con abilità (mostrate a parte).
+skills.devotion.sums=Bonus totali
+skills.devotion.none=nessuno
+skills.devotion.granted=Abilità concesse
+skills.devotion.boundTo=legata a: {0}
+skills.devotion.unbound=non legata a nulla: non si attiverà
+skills.devotion.levels=Cambia il livello delle abilità di devozione
+skills.devotion.starOf={0}, stella {1}
+skills.devotion.total=totale {0}
+skills.devotionLevels.title=Livello delle abilità di devozione — {0}
+skills.devotionLevels.of=su {0}
+skills.devotionLevels.none=Il personaggio non ha stelle di devozione che concedano un'abilità.
+skills.constellations.count=Costellazioni nel gioco: {0}. Complete: {1}, iniziate: {2}.
+skills.constellations.legend=Le stelle prese sono segnate; tra parentesi accanto a una costellazione: quante sue stelle sono prese, cosa dà e cosa richiede.
+skills.constellations.gives=dà: {0}
+skills.constellations.needs=richiede: {0}
+skills.constellations.star=stella {0}
+skills.constellations.notTaken=(non presa)
+
+# La mappa della devozione: mettere punti nelle stelle con il mouse
+skills.devo.hint=Il clic sinistro su una stella aggiunge un punto, il destro lo toglie. La rotella ingrandisce, il trascinamento sposta la mappa.
+skills.devo.fit=Mappa intera
+skills.devo.zoom=scala {0} %
+skills.devo.points=Punti devozione: {0}
+skills.devo.stars=Stelle prese: {0} su {1}
+skills.devo.noPoints=Non ci sono più punti devozione liberi. Aggiungine nel campo «Punti Devozione» della finestra principale.
+skills.devo.already=In questa stella c'è già un punto.
+skills.devo.locked=La costellazione «{0}» è ancora chiusa: manca affinità — {1}.
+skills.devo.parentFirst=Prima bisogna prendere «{0}»: questa stella dipende da essa.
+skills.devo.empty=In questa stella non ci sono punti.
+skills.devo.childFirst=«{0}» dipende da questa stella ed è presa: toglila prima.
+skills.devo.affinityHolds=La costellazione è completa e la sua affinità sorregge «{0}»: senza di essa resterebbe {1}.
+skills.devo.bindHint=Fai clic sinistro sulla stella per scegliere un'abilità.
+
+# Potere Celestiale: a quale abilità legarlo
+skills.bind.title=A quale abilità legare «{0}»
+skills.bind.none=Nessuna abilità assegnata
+skills.bind.chosen=(scelta)
+skills.bind.busy=(occupata da: {0})
+skills.bind.fromItem=(da un oggetto)
+skills.bind.legend=In rosso — abilità che il personaggio non ha ancora imparato: si possono scegliere lo stesso, e il potere funzionerà appena ci saranno messi dei punti.
+
+# Portali
+skills.portals.tab=Portali
+skills.portals.column=Portale
+skills.portals.notBuilt=L'elenco dei portali non è stato creato. Viene letto dai file del mondo del gioco e richiede circa un minuto.
+skills.portals.build=Crea l'elenco dei portali
+skills.portals.reading=Lettura dei file del mondo…
+skills.portals.readingWhat=Lettura dei file del mondo: {0}
+skills.portals.readError=Impossibile leggere i file del mondo: {0}
+skills.portals.layer=Livello Riftgates a {0}: {1} voci
+skills.portals.openAll=Apri tutti i portali a tutte le difficoltà
+skills.portals.openDifficulty={0}: apri tutti ({1} su {2})
+skills.portals.closeAll=Chiudere tutti i portali a tutte le difficoltà?\n\nQuesto toglie anche quelli che il personaggio ha trovato da solo. Accanto al salvataggio resta una copia di sicurezza.
+skills.portals.closeOne=Chiudere tutti i portali alla difficoltà «{0}»?\n\nQuesto toglie anche quelli che il personaggio ha trovato da solo. Accanto al salvataggio resta una copia di sicurezza.
+skills.portals.title=Portali
+skills.portals.summary=Portali nel gioco: {0}.   Aperti: {1}
+skills.portals.source=L'elenco viene letto dai file del mondo del gioco; si modifica solo il salvataggio del personaggio.
+skills.portals.open=aperto
+
+# Cosa evoca l'abilità: le righe sotto il suggerimento di un'abilità di evocazione.
+skills.pet.summons=Evoca: {0}
+skills.pet.limit=fino a {0} alla volta
+skills.pet.lives={0} s di vita
+skills.pet.permanent=permanente
+skills.pet.life={0} di salute
+skills.pet.lifeNote=la salute la calcoliamo con regole nostre, può differire dal gioco
+
+# Assegnare punti nell'albero: clic sinistro aggiunge un punto, clic destro lo toglie
+skills.edit.points=Punti abilità: {0}
+skills.edit.hint=Il clic sinistro aggiunge un punto, il destro lo toglie.
+skills.edit.noPoints=Non ci sono più punti abilità liberi. Aggiungine nel campo «Punti abilità» della finestra principale.
+skills.edit.atMax=L'abilità è già al suo limite di {0}. Ciò che aggiunge l'equipaggiamento va oltre il limite e non viene salvato.
+skills.edit.masteryFirst=Prima la barra di maestria: mettici un punto e l'albero si apre.
+skills.edit.tierClosed=Questa colonna si apre al livello di maestria {0}, e la barra è a {1}.
+skills.edit.ownerFirst=Prima bisogna prendere «{0}»: questa abilità dipende da essa.
+skills.edit.exclusive=Può essere attiva una sola abilità esclusiva, e lo è già «{0}».
+skills.edit.empty=In questa abilità non ci sono punti.
+skills.edit.ownerBusy=«{0}» dipende da questa abilità e contiene ancora punti.
+skills.edit.barLast=L'ultimo punto della barra è la maestria stessa: restituisci invece la maestria.
+skills.edit.barHolds=«{0}» si trova in una colonna che si apre al livello di maestria {1}.
+
+# SCHEDA «REPUTAZIONE»: fazioni e gradi. Nomi, gradi e il loro ordine li dà il gioco.
+skills.factions.tab=Reputazione
+skills.factions.column=Fazione
+skills.factions.rank=Grado
+skills.factions.value=Reputazione
+skills.factions.boost=Velocità di crescita
+skills.factions.notes=Note
+skills.factions.summary=Fazioni nel gioco: {0}.   Voci nel salvataggio: {1}
+skills.factions.short=Il salvataggio contiene {0} voci, mentre il gioco ha {1} fazioni: le ultime non ci sono ancora. Compariranno quando sarà il gioco stesso a salvare il personaggio.
+skills.factions.source=I nomi, i gradi e l'ordine si leggono dai file del gioco; si modifica solo il salvataggio del personaggio.
+skills.factions.unreadable=Non è stato possibile leggere le fazioni dai file del gioco.
+skills.factions.showHidden=Mostra anche le fazioni che il gioco nasconde nel proprio pannello
+skills.factions.setRank=Grado:
+skills.factions.exact=Oppure un numero:
+skills.factions.apply=Applica alla selezione
+skills.factions.pickFirst=Seleziona prima almeno una fazione nell'elenco.
+skills.factions.hidden=non mostrata nel pannello del gioco
+skills.factions.noGain=la reputazione non cresce
+skills.factions.boostTimes=×{0}

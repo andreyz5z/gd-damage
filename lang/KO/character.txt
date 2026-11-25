@@ -1,0 +1,52 @@
+# 캐릭터 패널 (메인 창의 항목)과 능력치 툴팁.
+
+character.name=이름
+character.class=클래스
+character.file=파일
+character.level=레벨
+character.experience=경험치
+character.physique=힘
+character.cunning=민첩
+character.spirit=정신
+character.health=체력
+character.energy=에너지
+character.attributePoints=능력치 포인트
+character.skillPoints=스킬 포인트
+character.devotionPoints=디보션 포인트
+character.totalDevotion=디보션 합계
+character.money=아이언
+character.tributes=트리뷰트
+character.difficulties=난이도
+character.difficulty.normal=노멀, 베테랑
+character.difficulty.elite=엘리트
+character.difficulty.ultimate=얼티밋
+
+# 게임이 직접 계산하는 숫자 편집
+character.freeEdit=능력치 자유 편집
+character.freeEdit.warning=이 다섯 숫자는 사용한 포인트, 착용한 아이템, 스킬로 게임이 직접 계산합니다 — 공식은 밝혀졌으며 게임과 정확히 일치합니다.\n\n여기에 직접 값을 쓰면 세이브가 게임 화면의 표시와 맞지 않게 됩니다: 게임은 자기 규칙으로 체력과 에너지를 다시 계산하고, 능력치는 그대로 둡니다.\n\n그래도 편집을 허용할까요?
+character.keptInSave=게임 화면의 표시와는 별도로 세이브에 저장되어 있습니다.\n최종 체력과 에너지는 사용한 포인트, 능력치, 아이템, 스킬로 게임이 직접 계산하며, 이 숫자와 일치하지 않습니다.\n여기에 정확히 무엇이 저장되는지는 아직 알아내지 못해 편집을 막아 두었습니다.
+
+# 능력치 툴팁
+character.tip.now={0}: 현재 {1}
+character.tip.own=세이브 {0}, 사용한 포인트 {1}
+character.tip.fromGear=아이템과 스킬에서: {0}
+character.tip.gives=효과 (기본값 {0}을 넘는 만큼 계산):
+character.tip.percents=그리고 비율 — 여기서도 기본값 {0}이 계산됩니다:
+character.tip.percentLine=+{0}% {1}
+character.perPoint.life=포인트당 체력 +{0}
+character.perPoint.energy=포인트당 에너지 +{0}
+character.perPoint.defense=포인트당 방어 능력 +{0}
+character.perPoint.offense=포인트당 공격 능력 +{0}
+character.perPoint.lifeRegen=포인트당 체력 재생 +{0}
+character.perPoint.energyRegen=포인트당 에너지 재생 +{0}
+character.divided.physical=물리 데미지와 관통 데미지
+character.divided.bleed=체내 충격 데미지와 출혈 데미지
+character.divided.magic=마법 데미지
+character.divided.dots=그 밖의 지속 데미지
+character.divided.energyRegen=에너지 재생
+character.needs.physique=방어구, 근접 무기, 방패에 필요합니다.
+character.needs.cunning=원거리 무기와 일부 근접 무기에 필요합니다.
+character.needs.spirit=반지, 목걸이, 시전자용 아이템에 필요합니다.
+character.hardcore=하드코어
+character.revive=부활
+character.revive.tip=사망 표시를 지웁니다. 게임에서 캐릭터가 다시 불러와지는지 확인하세요.

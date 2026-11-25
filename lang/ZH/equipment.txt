@@ -1,0 +1,18 @@
+# 装备面板：栏位名称（也出现在「不能装在…栏位」的消息中）。
+
+equipment.weapon1=武器 I
+equipment.offhand1=副手 I
+equipment.weapon2=武器 II
+equipment.offhand2=副手 II
+equipment.head=头部
+equipment.neck=颈部
+equipment.medal=勋章
+equipment.shoulders=肩部
+equipment.chest=胸部
+equipment.hands=手部
+equipment.waist=腰部
+equipment.legs=腿部
+equipment.ring1=戒指 1
+equipment.feet=足部
+equipment.relic=圣物
+equipment.ring2=戒指 2

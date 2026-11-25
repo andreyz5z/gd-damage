@@ -1,0 +1,236 @@
+# CỬA SỔ «TÍNH SÁT THƯƠNG»: thẻ, nút, ô nhập và danh sách chọn.
+# Bên dưới là phần giải thích trên các thẻ và nhật ký mô phỏng.
+
+damage.title=Tính sát thương — {0}
+damage.tab.timeline=Mô phỏng chiến đấu
+damage.tab.totals=Tổng chỉ số
+damage.tab.hit=Sát thương mỗi đòn
+damage.tab.target=Kẻ địch
+damage.seconds={0} giây
+damage.secondsPair={0} và {1}
+
+# Tổng chỉ số
+damage.pickActive=Chọn kỹ năng đang bật…
+damage.activeFromSave=tính theo bản lưu
+damage.activeChosen=đã chọn: {0}
+damage.pickPets=Thuộc hạ đang dùng…
+damage.petsNear=thuộc hạ ở gần
+
+# Sát thương mỗi đòn
+damage.hit.what=Tấn công bằng
+damage.hit.plain=Tấn Công Mặc Định (không kỹ năng)
+
+# Mô phỏng chiến đấu: ô nhập và nút
+damage.run.seconds=Giây
+damage.run.seed=Hạt giống
+damage.run.go=Chạy hàng đợi
+damage.run.press=Bấm gì (theo hồi chiêu)
+damage.run.attack=Tấn công mặc định
+damage.run.weapon=bằng vũ khí
+damage.run.everyLabel=Không hồi chiêu — bấm mỗi
+damage.run.everyTail=giây (0 — theo hoạt ảnh)
+
+# Mô phỏng chiến đấu: mục của danh sách «bấm gì» và «tấn công mặc định»
+damage.press.buff=tăng cường
+damage.press.buffNotRolled=({0} — không gieo)
+damage.press.whenNotRolled={0} — không gieo, bấm theo hồi chiêu
+damage.press.every=không hồi chiêu — bấm mỗi {0} giây
+damage.press.anim=không hồi chiêu — theo hoạt ảnh, mỗi {0} giây
+damage.press.noAnim=không hồi chiêu — không tìm thấy hoạt ảnh, hãy đặt khoảng cách
+damage.press.noCooldown=không hồi chiêu
+damage.press.starHits=sao, gây sát thương
+damage.press.pet=(thuộc hạ «{0}», {1} cùng lúc, {2}, {3} đòn/giây, kỹ năng gây sát thương {4})
+damage.press.petLives=sống {0} giây
+damage.press.petPermanent=vĩnh viễn
+damage.press.none=không có kỹ năng gây sát thương để bấm
+damage.attack.form=hình dạng «{0}»   tấn công bằng kỹ năng «{1}»
+damage.attack.ofForm=(hình dạng «{0}»)
+damage.attack.channel=vận chiêu, mỗi nhịp {0} giây
+damage.attack.finale=một lần mỗi {0} đòn
+damage.attack.charges=tích tụ tới {0}
+damage.attack.byAnimation=không hồi chiêu, theo hoạt ảnh mỗi {0} giây
+
+# Kẻ địch
+damage.target.load=Tải danh sách kẻ địch từ trò chơi
+damage.target.reload=Tạo lại danh sách kẻ địch
+damage.target.find=Tìm theo tên
+damage.target.level=Cấp
+damage.target.difficulty=Độ khó
+damage.target.notLoaded=Danh sách kẻ địch chưa được tải.
+damage.target.pressButton=Bấm nút phía trên — chương trình sẽ tạo danh sách kẻ địch. Chỉ cần tạo lại sau khi trò chơi cập nhật.
+damage.target.nothing=Không tìm thấy gì.
+
+# ─── GIẢI THÍCH TRÊN CÁC THẺ ───
+
+# Tổng chỉ số
+damage.totals.summary=Cộng từ: {0} vật phẩm đang mặc (kèm phụ kiện và nâng cấp), {1} chỉ số bộ, {2} kỹ năng bị động, {3} kỹ năng đang bật, {4} sao tín ngưỡng.
+damage.totals.exact=[chính xác]
+damage.totals.overCap=(+{0}% vượt tối đa)
+damage.totals.resistCap=giới hạn {0}%
+damage.totals.armourRating=trị số giáp {0}
+damage.totals.absorb={0}% hấp thụ
+damage.totals.armourNote=Giáp riêng của vật phẩm vào ô của nó, mọi thứ khác vào cả sáu ô cùng lúc ({0}), rồi mới áp dụng +{1}% giáp. Trị số là trung bình các ô, có trọng số theo tỷ lệ đòn đánh vào vùng đó. Hấp thụ là 70% gốc nhân với «+% hấp thụ giáp», không quá 100%.
+damage.totals.block=tỷ lệ đỡ {0}%   sát thương đỡ được {1}
+damage.totals.blockNote=Tỷ lệ đỡ được cộng dồn — «tỷ lệ đỡ» của khiên cộng «+% tỷ lệ đỡ» từ mọi nguồn, không nhân. Sát thương đỡ được là mức gốc của khiên × (1 + % sát thương đỡ được).
+damage.totals.pets=Hỗ trợ Thuộc Hạ
+damage.totals.petsNote=Chỉ tác dụng lên sinh vật được triệu hồi, không áp dụng cho bạn. Nguồn: {0}.
+damage.totals.petCapItem={0} {1}% (+{2}% vượt tối đa)
+damage.totals.petCapNote=Đã chạm giới hạn {0}%, và bảng của trò chơi hiện con số đã bị cắt: {1}. Phần dư không mất: kẻ địch giảm kháng sẽ trừ vào phần này trước.
+damage.totals.missing=Những gì tổng này còn thiếu
+damage.totals.missingProcs=Kỹ năng kích hoạt theo điều kiện thay vì luôn bật: kích hoạt của nghề, kỹ năng từ vật phẩm và kích hoạt của tín ngưỡng.
+damage.totals.missingPressed=Kỹ năng phải bấm — chỉ số của chúng chỉ kéo dài vài giây.
+damage.totals.skipped=Đã bỏ qua: {0}.
+damage.totals.toggledOff=Kỹ năng bật/tắt đang tắt: {0}. Kỹ năng đang bật đã có trong tổng — bản lưu nhớ cái nào đang bật.
+damage.totals.chosenByHand=Chọn bằng tay (nút «Chọn kỹ năng đang bật»): {0}.
+damage.totals.missingConversion=Chuyển hóa sát thương. Phần trăm cho một loại sát thương được hiện nguyên như vậy, nhưng trong trò chơi chúng áp dụng sau chuyển hóa: «+200% sát thương vật lý» chẳng mang lại gì cho lối chơi chuyển hết sát thương vật lý.
+damage.totals.missingScaling=Tăng sát thương theo thuộc tính: Khéo Léo tăng sát thương vật lý và xuyên phá, Tinh Thần tăng các loại phép thuật. Công thức đã biết, nhưng đó là tầng tiếp theo.
+damage.totals.missingCap=Giới hạn kháng. Ở đây các chỉ số được cộng nguyên như vậy, nên con số có thể vượt 80% — trong trò chơi nó dừng ở giới hạn (80% cộng các chỉ số «tăng tối đa», hiện bên cạnh). Phần vượt giới hạn không vô ích: trùm sẽ giảm kháng.
+damage.totals.missingDifficulty=Mức phạt kháng theo độ khó (−25 ở Cao Cấp, −50 ở Tối Thượng) không bị trừ ở đây: bản lưu không cho biết bạn đang ở độ khó nào.
+damage.totals.notStacked=Những gì không cộng dồn
+damage.totals.notStackedNote=Giảm kháng loại «X giảm» và «X% giảm», giảm sát thương của mục tiêu và giảm độ chính xác của nó không cộng dồn: tại mỗi thời điểm chỉ nguồn mạnh nhất có tác dụng. Ở đây lấy nguồn mạnh nhất, không lấy tổng.
+damage.totals.notStackedItem={0}: {1} nguồn, lấy mạnh nhất {2}
+
+# Chú giải «cộng từ đâu» khi di chuột lên dòng tổng
+damage.terms.pet=(hỗ trợ thuộc hạ)
+damage.terms.byMax=không cộng dồn: lấy mạnh nhất trong {0} nguồn
+damage.terms.summedOne=cộng từ {0} nguồn
+damage.terms.summedMany=cộng từ {0} nguồn
+damage.terms.winner=← có hiệu lực
+damage.terms.total=tổng {0}
+
+# Sát thương mỗi đòn
+damage.hit.plainTitle=Tấn Công Mặc Định
+damage.hit.plainWeapon=Tấn Công Mặc Định: {0}
+damage.hit.skillTitle={0}   ({1}, cấp {2})
+damage.hit.weapon=vũ khí: {0}
+damage.hit.attackSpeed={0} đòn mỗi giây   ({1}% tốc độ đánh)
+damage.hit.castSpeed={0}% tốc độ thi triển
+damage.hit.castCapped=(chạm giới hạn {0}%)
+damage.hit.channel=vận chiêu: mỗi nhịp {0} giây
+damage.hit.perHit={0} – {1} mỗi đòn
+damage.hit.overTime=(mỗi giây, {0} giây)
+damage.hit.none=Không có sát thương.
+damage.hit.bare=Không tính hiệu ứng tạm thời ({0}): {1} – {2} mỗi đòn — đây là con số bảng của trò chơi hiện.
+damage.hit.how=Cách tính
+damage.hit.howBase=Gốc là sát thương vũ khí cộng các chỉ số cộng thẳng của vật phẩm. Sát thương nguyên tố cộng thẳng chia làm ba phần bằng nhau cho lửa, băng và sét.
+damage.hit.howConversion=Chuyển hóa lấy các phần của gốc, và các phần được cộng lại chứ không áp dụng lần lượt. Xuyên giáp là chuyển hóa cuối cùng, từ phần còn lại.
+damage.hit.howMultiplier=Mỗi phần được nhân với (1 + thuộc tính/số chia + % của loại + % nguyên tố + % toàn bộ sát thương). Số chia: Khéo Léo/245 và /215, Tinh Thần/215 và /200.
+damage.hit.howTotal=Bảng nhân vật trong trò chơi hiện «+X% sát thương <loại>» là phần trăm của LOẠI CỘNG «% toàn bộ sát thương» — trong một dòng.
+damage.hit.howTotalSome=Nhân vật này có +{0}% toàn bộ sát thương, nên bảng của trò chơi sẽ hiện phần trăm mỗi loại cao hơn của chúng tôi đúng bấy nhiêu.
+damage.hit.howTotalNone=Nhân vật này không có «% toàn bộ sát thương», nên phần trăm sẽ khớp.
+damage.hit.howAll=«% toàn bộ sát thương» áp dụng cho MỌI loại sát thương, kể cả sát thương theo thời gian — không có ngoại lệ.
+damage.hit.howDots=Sát thương theo thời gian được hiện theo từng giây — bản ghi lưu như vậy, không cần chia. Chỉ số thời lượng không đổi con số này: hiệu ứng kéo dài hơn, nhưng mỗi giây gây như cũ.
+
+# Sát thương mỗi đòn: phản công
+damage.retaliation.title=Phản Công (đánh trả)
+damage.retaliation.note=Đây là BẢNG «Phản Công» trong chỉ số nhân vật, không phải một phần của đòn đánh. Nó được tính khác: thuộc tính và phần trăm theo loại sát thương không ảnh hưởng, chỉ «+% sát thương phản công» — bạn có +{0}%. Nhưng chuyển hóa thì có tác dụng, và giống hệt với sát thương thường.
+damage.retaliation.note2=Đánh trả chỉ hoạt động với đòn cận chiến, chỉ lên kẻ đã đánh bạn và chỉ khi bạn thực sự bị trúng; bản thân nó không thể trượt và không chí mạng. Phản sát thương («X% sát thương nhận vào bị phản lại») là thứ KHÁC, và chỉ số nhân vật không bao giờ có nó: nó phụ thuộc vào sát thương của kẻ đánh bạn.
+
+# Sát thương mỗi đòn: theo tay
+damage.hands.title=Mỗi tay là bao nhiêu
+damage.hands.both=Đây là thứ trò chơi hiện trong chú giải kỹ năng. Phần sát thương vũ khí của hai tay là NHƯ NHAU ({0}%), còn số trong ngoặc khác nhau vì vũ khí trên hai tay khác nhau. Trong ngoặc có cả sát thương theo thời gian của tay đó: bảng của trò chơi cũng tính như vậy.
+damage.hands.oneMain=Chỉ có MỘT dòng vì kỹ năng đánh bằng một tay — tay chính — và trò chơi hiện đúng chừng đó dòng trong chú giải. Tay nào được ghi trong HOẠT ẢNH của kỹ năng: mỗi bộ trang bị có tệp riêng, và các sự kiện đòn đánh trong đó chỉ rõ tay. Đổi sang vũ khí hai tay hoặc mang khiên — dòng có thể thay đổi, trong trò chơi cũng vậy.
+damage.hands.oneOff=Chỉ có MỘT dòng vì kỹ năng đánh bằng một tay — tay phụ — và trò chơi hiện đúng chừng đó dòng trong chú giải. Tay nào được ghi trong HOẠT ẢNH của kỹ năng: mỗi bộ trang bị có tệp riêng, và các sự kiện đòn đánh trong đó chỉ rõ tay. Đổi sang vũ khí hai tay hoặc mang khiên — dòng có thể thay đổi, trong trò chơi cũng vậy.
+damage.hands.single=Chỉ có một tay vì chỉ có một vũ khí. Trong ngoặc có cả sát thương theo thời gian của tay đó: bảng của trò chơi cũng tính như vậy.
+damage.hands.ownShare=chú giải của chính kỹ năng sẽ hiện ít hơn — chỉ phần riêng {0}% của nó:
+damage.hands.lineMain={0}% sát thương vũ khí tay chính ({1} - {2})
+damage.hands.lineOff={0}% sát thương vũ khí tay phụ ({1} - {2})
+
+# Sát thương mỗi đòn: kỹ năng gồm những gì
+damage.parts.title=Kỹ năng này gồm những gì
+damage.parts.temporary=— hiệu ứng tạm thời
+damage.parts.oneHandMain=— đánh bằng một tay, tay chính
+damage.parts.oneHandOff=— đánh bằng một tay, tay phụ
+damage.parts.weaponPct={0}% sát thương vũ khí
+damage.parts.conversion=chuyển hóa {0}%: {1} → {2}   (áp dụng trước các chuyển hóa của nhân vật)
+damage.parts.notCounted=CHƯA CỘNG: {0}
+
+# Sát thương mỗi đòn: đòn của thuộc hạ
+damage.pet.title={0}   (đòn của thuộc hạ «{1}», {2})
+damage.pet.summonedBy=được triệu hồi bằng kỹ năng «{0}»
+damage.pet.withConversion=Sát thương có chuyển hóa — đây là cách nó thực sự đánh
+damage.pet.noNumbers=kỹ năng này không có con số
+damage.pet.asGame=Cách trò chơi hiện — không chuyển hóa
+damage.pet.asGameNote=Trò chơi không hiện chuyển hóa của thuộc hạ ở bất kỳ đâu: đã đo bằng sáu con số và xác nhận bằng ảnh chụp — có hay không có «Ghol's Mark», mô tả kỹ năng vẫn như nhau. Tuy vậy nó vẫn hoạt động như với nhân vật.
+damage.pet.notYours=Đây là đòn của THUỘC HẠ, không so được với đòn của bạn: nó không đến từ vũ khí của bạn, phần trăm sát thương của bạn không áp dụng cho nó, mà áp dụng hỗ trợ thuộc hạ.
+
+# Mô phỏng chiến đấu: hướng dẫn trước lần chạy đầu
+damage.help.title=Hàng đợi đòn đánh theo thời gian
+damage.help.press=Bấm «Chạy hàng đợi»: mỗi cú vung được diễn riêng — trúng hay trượt, tay nào ra đòn, và sát thương của TỪNG dòng với lần gieo riêng trong khoảng của nó. Các dòng hiện ra ngay khi tính. Phía trên là kết quả: sát thương mỗi giây, trung vị tổng mỗi giây, máu mục tiêu và thời gian hạ gục (TTK).
+damage.help.twoNumbers=HAI SỐ TRONG MỘT DÒNG: số đầu là phần ĐÃ TỚI mục tiêu, theo tay; trong ngoặc, «sát thương chưa cộng thưởng» là phần xuất ra từ ta: đã có chí mạng, nhưng chưa có chỉ số chống chủng tộc, giáp (chỉ giảm vật lý) và kháng cùng mức giảm kháng. Số đầu cũng có thể LỚN HƠN số sau: khi mức giảm kháng của ta đẩy kháng của mục tiêu xuống dưới 0, nó không giảm nữa mà khuếch đại. DPS, trung vị, sát thương mỗi lần chạy và TTK được tính theo phần ĐÃ TỚI.
+damage.help.target=Mục tiêu lấy từ thẻ «Kẻ địch» — kẻ được chọn ở đó, với cấp và độ khó của nó. Nếu chưa chọn, dùng bù nhìn tập luyện từ tệp trò chơi.
+damage.help.pets=THUỘC HẠ: những con được đánh dấu được triệu hồi từ đầu rồi theo hồi chiêu triệu hồi, cho tới khi chạm giới hạn loại; những con tự kích hoạt (sao, kỹ năng vật phẩm) đến cả khi không đánh dấu. Mỗi con đánh bằng đòn mặc định và kỹ năng riêng theo tần suất của chúng, trúng và chí mạng được gieo như của bạn.
+damage.help.counted=Được tính: cú vung, kỹ năng đã bấm, vận chiêu, nhóm đòn vũ khí, kích hoạt, sao, hào quang gây sát thương, sát thương theo thời gian, bậc chí mạng, giảm kháng, chỉ số chống chủng tộc, giảm máu, hình dạng và thuộc hạ.
+damage.help.seed=Hạt giống giúp lần chạy lặp lại được: cùng hạt giống cho cùng lần chạy tới chữ số cuối. Chỉ đổi nó — bạn thấy độ dao động; đổi lối chơi mà giữ hạt giống — bạn thấy lối chơi đã thay đổi gì.
+
+# Mô phỏng chiến đấu: trong lúc chạy
+damage.run.building=Đang xây hàng đợi…
+damage.run.buildingNote=mỗi đòn có sát thương riêng với lần gieo riêng, và lần chạy dài có hàng nghìn đòn
+damage.run.progress=Đang xây hàng đợi…   {0} trên {1} giây   ({2} dòng)
+
+# Mô phỏng chiến đấu: kết quả
+damage.run.buffsUp=Đã bật tăng cường: {0}   — chúng vào hàng đợi theo hồi chiêu trong thời lượng riêng (không có thời lượng trong bản ghi — cả lần chạy), và thay đổi chỉ số chứ không đánh thành đòn riêng
+damage.run.target=Mục tiêu: {0}
+damage.run.targetLevel=cấp {0}, độ khó {1}
+damage.run.targetStats=khả năng phòng thủ {0}   giáp {1}
+damage.run.hitChance=tỷ lệ trúng {0}%
+damage.run.mainSpell={0} «{1}» thay cho Tấn Công Mặc Định: tốc độ thi triển {2}%, mỗi {3} giây, số đòn mỗi lần chạy {4}
+damage.run.targetResists=kháng của mục tiêu: {0}
+damage.run.gear=kỹ năng từ vật phẩm và bộ:
+damage.run.queue=Hàng đợi
+damage.run.summary=Kết quả lần chạy
+damage.run.dps=Sát thương mỗi giây (DPS)  {0}     trung vị tổng mỗi giây {1}
+damage.run.total=sát thương mỗi lần chạy {0} trong {1} giây
+damage.run.targetLife=máu mục tiêu {0}
+damage.run.killedAt=hạ gục trong {0} giây (TTK)
+damage.run.dummyNote=— chỉ mang tính tham khảo: bù nhìn trong trò chơi không bao giờ chết
+damage.run.notKilled=chưa hạ gục trong lần chạy — còn {0}%
+damage.run.percentLife=giảm máu đã lấy đi {0} ({1} lần)
+damage.run.percentLifeBlocked=thêm {0} lần kháng {1}% của mục tiêu đã triệt tiêu hoàn toàn
+damage.run.swings=cú vung {0}, trúng {1}, trượt {2}, chí mạng {3}
+damage.run.tier=bậc {0}: {1}
+damage.run.hands=tay: cả hai {0}, tay thứ nhất {1}, tay thứ hai {2}
+damage.run.procs=tự kích hoạt: kích hoạt {0} (sát thương của chúng {1})
+damage.run.pool=nhóm đòn vũ khí {0}
+damage.run.silent=không gây sát thương {0}: {1}
+damage.run.pets=thuộc hạ: đòn {0}, lần triệu hồi {1}, sát thương của chúng {2}
+damage.run.petsShare=— {0}% tổng
+damage.run.stars=sao tín ngưỡng
+damage.run.dots=sát thương theo thời gian: áp dụng {0}, làm mới {1}, sát thương của nó {2} trên {3}
+damage.run.before=sát thương chưa cộng thưởng là {0} — tới được {1}% (chỉ số chống chủng tộc, giáp, kháng cùng mức giảm kháng)
+damage.run.conditions=Điều kiện lần chạy
+damage.run.rolls=Số lần gieo khoảng: {0} — mỗi dòng sát thương trong mỗi đòn một lần.
+damage.run.critNote=Chí mạng có bậc được tính: một lần gieo quyết định cả trúng lẫn bậc, và «+% sát thương chí mạng» được cộng vào hệ số của bậc. Bản thân TỶ LỆ chí mạng khớp với trò chơi khi đánh mục tiêu mạnh và bị cao quá khi đánh mục tiêu yếu — chưa tính chỉ số của quái từ trang bị của chúng.
+damage.run.dotNote=Sát thương theo thời gian được áp dụng và gây theo nhịp: một nguồn chỉ giữ MỘT hiệu ứng — đòn mới kéo dài thời gian và nâng sát thương lên mức tốt nhất, chứ không tạo hiệu ứng thứ hai. Toàn bộ sát thương vũ khí (cả hai tay và các kỹ năng có phần vũ khí) tính là MỘT nguồn; kỹ năng không có phần vũ khí là nguồn riêng.
+damage.run.noteRough=ĐƠN GIẢN HÓA: {0}
+damage.run.noteUnread=CHƯA ĐỌC: {0}
+damage.run.noteHint=GỢI Ý: {0}
+damage.run.pressNote=Các kỹ năng được đánh dấu sẽ được bấm ngay khi hồi xong: lúc đầu bấm tất cả cùng lúc, sau đó mỗi kỹ năng theo hồi chiêu riêng (có giảm từ vật phẩm và biến thể). Kỹ năng đánh bằng hai tay LUÔN đánh bằng cả hai, và mỗi tay trượt theo lần gieo riêng.
+damage.run.procNote=KÍCH HOẠT và kỹ năng «thay cho Tấn Công Mặc Định» cố ý KHÔNG có trong danh sách đánh dấu: không ai bấm chúng. Chúng tự diễn ra — với lần gieo riêng ở mỗi đòn và hồi chiêu riêng.
+damage.run.silentNote=KÍCH HOẠT KHÔNG GÂY SÁT THƯƠNG — sao tín ngưỡng và kỹ năng vật phẩm triệu hồi, gây tăng cường hoặc suy yếu. Lần gieo và hồi chiêu của chúng là thật; tăng cường có tác dụng trong thời lượng của nó, suy yếu đặt lên mục tiêu, còn sinh vật được triệu hồi vào nhóm và đánh bằng các dòng riêng.
+damage.run.failed=Lần chạy thất bại: {0}
+
+# Kẻ địch: bảng kẻ địch
+damage.enemy.title={0}   ({1}, cấp {2}, độ khó {3})
+damage.enemy.variants=Cơ sở dữ liệu có {0} bản ghi cùng tên này — chúng chỉ khác nhau ở cấp gặp phải; ở đây lấy bản đầy đủ nhất, còn cấp được chọn phía trên.
+damage.enemy.combat=Thông số chiến đấu
+damage.enemy.abilities=khả năng phòng thủ {0}   khả năng tấn công {1}
+damage.enemy.life=máu {0}   giáp {1}
+damage.enemy.gearArmour=(trong đó {0} từ trang bị)
+damage.enemy.resists=Kháng
+damage.enemy.none=không có
+damage.enemy.hit=Đánh trúng
+damage.enemy.ourAttack=khả năng tấn công của ta {0}   so với phòng thủ của nó {1}
+damage.enemy.hitChance=tỷ lệ trúng {0}%   tỷ lệ chí mạng {1}%
+damage.enemy.ourDefence=khả năng phòng thủ của ta {0}   so với tấn công của nó {1}
+damage.enemy.getHit=tỷ lệ bị trúng {0}%   tỷ lệ bị chí mạng {1}%
+
+# Hạng kẻ địch trong danh sách và tiêu đề thẻ «Kẻ địch». Trò chơi không có từ riêng cho các hạng.
+damage.enemy.rank.superBoss=kẻ thù truyền kiếp
+damage.enemy.rank.boss=trùm
+damage.enemy.rank.quest=nhiệm vụ
+damage.enemy.rank.hero=anh hùng
+damage.enemy.rank.champion=tinh anh
+damage.enemy.rank.common=thường
+damage.enemy.variantsShort=({0} bản ghi)
+damage.attack.byCooldown=thay cho vũ khí, theo hồi chiêu mỗi {0} giây

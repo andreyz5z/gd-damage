@@ -1,0 +1,14 @@
+# CỬA SỔ «CÀI ĐẶT».
+
+settings.title=Cài đặt
+settings.gameFolder=Thư mục Grim Dawn:
+settings.gameFolder.browse=Thư mục cài đặt Grim Dawn
+settings.savesFolder=Thư mục bản lưu (cho hộp thoại mở):
+settings.savesFolder.browse=Thư mục chứa bản lưu của bạn
+settings.browse=Chọn…
+settings.language=Ngôn ngữ:
+settings.rebuildCatalog=Tạo lại danh mục vật phẩm
+settings.rawFields=Hiện mọi trường của bản ghi trong mô tả vật phẩm
+settings.fileHint=settings.json nằm cạnh chương trình
+settings.ok=OK
+settings.cancel=Hủy

@@ -1,0 +1,185 @@
+# EL REGISTRO DE LA SIMULACIÓN DE COMBATE (pestaña «Simulación de combate»): líneas, motivos y notas tras una ejecución.
+#
+# Los números decimales llegan ya escritos (con punto), dentro de {n} no se recalcula nada. Los signos de
+# comparación «<», «≥», «→», los paréntesis y las comas entre partes de una línea los pone el programa.
+
+# Qué hace una habilidad que no golpea por sí misma. La palabra aparece en el registro («mejora, sin daño»),
+# en la lista «qué pulsamos» y en las notas de la ejecución.
+log.effect.damage=daño
+log.effect.summon=invocación
+log.effect.buff=mejora
+log.effect.debuff=debilitamiento
+log.effect.none=sin daño en el registro
+
+# Una línea: «12.34 s  balanceo: ambas manos   812 y 790   (daño sin bonificaciones 1020 y 990)   [motivo]».
+log.line.at={0} s
+log.line.and=y
+log.line.before=(daño sin bonificaciones {0})
+log.seconds={0} s
+log.from=de «{0}»
+log.target.dummy=muñeco
+log.target.generic=objetivo
+
+# Manos. «balanceo: ambas manos», «crítico mano principal, nivel 2», «principal 43.1 < 97.0».
+log.hand.both=ambas manos
+log.hand.main=mano principal
+log.hand.off=mano izquierda
+log.roll.main=principal
+log.roll.off=izquierda
+log.partial.mainMissed=(falló la mano principal)
+log.partial.offMissed=(falló la mano izquierda)
+
+log.swing=balanceo: {0}
+log.swing.hands=manos {0} → {1}
+log.swing.crit=crítico {0}, nivel {1} ×{2}
+log.miss=fallo
+log.fire.crit=crítico {0} ×{1}
+
+# Qué golpeó: «habilidad: …», «activación: Meteoro», «en lugar del ataque: …».
+log.fire.skill=habilidad
+log.fire.channel=canalización
+log.fire.spell=hechizo
+log.fire.pool=en lugar del ataque
+log.fire.proc=activación
+log.fire.devotion=devoción
+log.fire.finale=final: golpe {0}
+log.fire.attack=ataque
+log.fire.charges=({0} cargas)
+
+# Pulso de daño con el tiempo: «pulso de quemadura (mano principal, del ataque de arma por defecto)».
+log.tick=pulso de {0}
+log.tick.from=de {0}
+log.tick.left=quedan {0} s
+log.tick.partial=pulso incompleto {0}%
+log.tick.autoattack=el ataque de arma por defecto
+log.dot.FireDot=quemadura
+log.dot.ColdDot=quemadura de hielo
+log.dot.LightningDot=quemadura eléctrica
+log.dot.PoisonDot=veneno
+log.dot.LifeDot=vitalidad perdida
+log.dot.BleedingDot=herida sangrante
+log.dot.PhysicalDot=herida interna
+
+# La vida del objetivo.
+log.life.killed=objetivo muerto
+log.life.killedWhy=TTK {0} s: {1} infligido contra {2} de vida; desde aquí contamos el daño como si siguiera vivo, pero ya no queda vida que reducir
+log.life.cut=reducción de vida {0}%  de «{1}»
+log.life.cutWhy=vida del objetivo {0} → {1}
+log.life.cutResist=efecto {0}%, resistencia del objetivo {1}%
+log.life.gear=equipo
+
+# Un aura, una mejora según su recarga, un reinicio de la recarga.
+log.aura=aura: {0}
+log.buff=mejora: {0}
+log.buff.holds=dura {0} s
+log.buff.cooldown=recarga {0} s
+log.buff.shield=escudo de absorción {0}: aguanta hasta que lo rompen
+log.buff.noDuration=sin duración en el registro
+log.buff.notInQueue=sus bonificaciones de daño NO actúan en la cola
+log.buff.noEffect=no afecta a nuestro daño
+log.reset=recarga reiniciada: «{0}»
+log.reset.why=«{0}», {1}% {2}: durante {3} s, lista a los {4} en vez de a los {5}
+log.reset.onCrit=al atacar con crítico
+log.reset.onAttack=al atacar
+
+# Activado o pulsado, pero no golpea.
+log.silent.fired=activado
+log.silent.pressed=pulsado:
+log.silent.buff=mejora, dura {0} s
+log.silent.resists=reducción de resistencias
+log.silent.defense=−{0} de capacidad defensiva
+log.silent.offense=−{0} de capacidad ofensiva
+log.silent.absolute=−{0} de resistencias planas
+log.silent.relative=−{0}% de las resistencias actuales
+log.silent.debuff=debilitamiento del objetivo durante {0} s
+log.silent.debuffNothing=no afecta en nada a nuestro daño
+log.silent.summon=invocación: la mascota entra en la reserva, sus golpes van abajo en sus propias líneas
+log.silent.noDamage={0}, sin daño
+
+# Las mascotas en el registro.
+log.pet.how.self=sola
+log.pet.how.pressed=pulsada
+log.pet.summonBlocked=invocación ({0}): {1}
+log.pet.limit=el límite de su tipo ya está en pie: {0} × «{1}», no se añaden más
+log.pet.summoned=invocada ({0}): «{1}» n.º {2}
+log.pet.standing={0} de {1} en pie
+log.pet.lives=vive {0} s
+log.pet.permanent=permanente
+log.pet.aps=ataques por segundo {0}
+log.pet.gone=se fue: «{0}» n.º {1}
+log.pet.goneWhy=tiempo de vida de {0} s agotado, golpes {1}
+log.pet.goneTrap=activada por el enemigo, golpes {0}
+log.pet.onceAt=explosión tras {0} s
+log.pet.aura=aura de mascota: «{0}» {1}
+log.pet.auraTarget=aura de mascota: «{0}»
+log.pet.auraAllies=nos refuerza a nosotros y a otras mascotas mientras está cerca
+log.pet.auraOnTarget=queda sobre el objetivo mientras está cerca
+log.pet.miss=fallo de mascota: «{0} n.º {1}» {2}
+log.pet.hitChance=probabilidad de acertar {0}%
+log.pet.hit=mascota: «{0} n.º {1}» {2}
+log.pet.auto=(ataque por defecto)
+log.pet.auraMark=(aura)
+log.pet.perSecond=una vez por segundo
+log.pet.speed=velocidad {0} ataques/s
+log.pet.every=cada {0} s
+log.pet.crit=crítico nivel {0} ×{1}
+log.pet.dotApplied=daño con el tiempo aplicado
+# La fuente del daño con el tiempo de una mascota en una línea de pulso: «pulso de quemadura (de «<mascota> n.º 1: <habilidad>»)».
+log.pet.source={0} n.º {1}: {2}
+# Una habilidad de mascota sin nombre en el juego: la llamamos por el final de la ruta de su registro.
+log.pet.noName=sin nombre: {0}
+
+# Resultado de la ejecución: la bonificación racial.
+log.racial.noRace=las bonificaciones contra razas ({0}) no funcionan con este objetivo: NO tiene raza (como el muñeco)
+log.racial.none=el objetivo es {0}, y no tenemos bonificaciones contra él (las hay contra otras razas: {1})
+log.racial.has=el objetivo es {0}, nuestra bonificación contra él es de {1}% de daño (multiplicador ×{2})
+log.racial.flat=la bonificación plana contra la raza «{0}» ({1} de daño) está RECOGIDA PERO NO APLICADA: no se sabe con qué tipo de daño llega (la descripción no nombra tipo) ni en qué lugar del orden está. La porcentual la ponemos según la fórmula del artículo; para la plana no hay fórmula ni en el artículo ni en los archivos: hace falta una medición
+
+# Resultado de la ejecución: consejos (qué está mal elegido).
+log.hint.mainNotSpell=«{0}» está elegida como principal, pero no es ni una canalización ni un hechizo sin recarga (o no se encontró su animación): atacamos con el arma, como sin elección
+log.hint.buffPressed=«{0}» es una mejora: sus bonificaciones se aplican a los golpes mientras está activa, pero no golpea como un golpe. Márcala entre las mejoras
+log.hint.channelWithAttack=la canalización «{0}» está pulsada JUNTO con el ataque de arma por defecto; eso nunca pasa en el juego: mientras se mantiene el rayo, el arma no golpea. Se pulsa según la «recarga» del registro, no según la velocidad de lanzamiento. Elígela como principal
+log.hint.starHits=la estrella «{0}» hace daño: no la activamos como mejora; márcala en la lista de pulsaciones y golpeará según su recarga
+log.hint.starReplacing=la estrella «{0}» está vinculada a «{1}»: es un ATAQUE DE REEMPLAZO; se asigna a un botón y golpea en lugar del golpe normal. Sabemos contarlos, pero en ESTA ejecución no golpeamos con ella: la partida no guarda la asignación. Elígela en la lista «atacar con» y la estrella funcionará
+log.hint.starIdle=la estrella «{0}» está vinculada a la habilidad «{1}», y esta NO GOLPEA en esta ejecución (no está marcada para pulsar ni en la reserva de armas): no hay ninguna activación, y no es mala suerte
+
+# Resultado de la ejecución: lo que no se leyó.
+log.unread.starBuffNoDuration=la estrella «{0}» aplica una MEJORA, pero el registro no tiene duración: no tenemos con qué mantenerla, así que la cola solo muestra que se activó
+log.unread.starNoDamage=no leímos el daño de la estrella «{0}»: la activación está en la cola, el daño no
+log.unread.buffNoDuration=la mejora «{0}» cambia el daño, pero el registro no tiene duración: la cola solo muestra su activación, las bonificaciones no actúan
+log.unread.summonNoPet=la invocación «{0}» se activó, pero no hay tal mascota en la reserva: su daño no se cuenta
+log.unread.petMoveNoRate=la mascota «{0}» tiene la habilidad «{1}», que hace daño, pero el registro no dice con qué frecuencia la usa: en la cola no se usa
+log.unread.petNoSpeed=no se pudo leer la velocidad de ataque de la mascota «{0}» (no hay tabla de animaciones): su ataque por defecto no entra en la cola
+log.unread.petNoMoves=no leímos ninguna habilidad con daño de la mascota «{0}»: en la cola se invoca, pero no golpea
+
+# Resultado de la ejecución: habilidades de objetos y conjuntos, qué fue de cada una.
+log.gear.mainSpell=la habilidad principal en lugar del ataque de arma por defecto, golpes {0}
+log.gear.pool=en la reserva de armas
+log.gear.onlyCrit=solo se sortea con crítico;
+log.gear.fired=activada {0} veces
+log.gear.firedSummon=— invocación, la mascota entra en la reserva y golpea
+log.gear.firedDebuff=— debilitamiento del objetivo
+log.gear.firedBuff=— mejora sobre nosotros
+log.gear.conditionNotModelled=la condición no se modela —
+log.gear.pressed=marcada para pulsar, se pulsa según la recarga: pulsada {0} veces
+log.gear.notPressed=pulsable, no marcada para pulsar
+log.gear.conditionHits=la condición no se modela, tiene daño: márcala y entrará según su recarga
+log.gear.noHit=no golpea ({0})
+log.gear.conditionNoHit=la condición no se modela, sin daño ({0}): no participa en la cola
+
+# Resultado de la ejecución: estrellas y mascotas por nombre.
+log.star.head=«{0}» niv. {1} de «{2}»
+log.star.onlyCrit=(solo con crítico)
+log.star.chance=probabilidad {0}%
+log.star.cooldown=recarga {0} s
+log.star.fired=activada {0} veces de {1} tiradas
+log.star.blocked=bloqueada por la recarga {0} veces
+log.petLine.auras=auras de mascota para otras mascotas mientras estas viven — {0}: {1}
+log.petLine.head=«{0}» ({1}) — invocada {2} veces
+log.petLine.limit=hasta {0} a la vez
+log.petLine.hits=golpes {0}
+log.petLine.misses=fallos {0}
+log.petLine.crits=críticos {0}
+log.petLine.damage=daño {0}
+log.petLine.expired=se fueron por tiempo {0}
+log.petLine.blocked=invocaciones por encima del límite {0}

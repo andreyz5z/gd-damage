@@ -1,0 +1,23 @@
+# «활성 펫» 창과 다른 창의 펫 줄.
+# 펫과 그 스킬의 이름은 게임에서 가져옵니다.
+
+pets.title=활성 펫 — {0}
+pets.checkbox={0}   ({1}, Lv. {2})
+pets.limit=동시에 최대 {0}
+pets.lifetime=지속 {0}초
+pets.life=체력: 기본 {0} × (1 + 자체 {1}% + 우리 {2}%) = {3}
+pets.lifeAura=체력: 기본 {0} × (1 + 자체 {1}% + 우리 {2}% + 오라 {3}%) = {4}
+pets.armour=방어구: 기본 {0} × (1 + 자체 {1}% + 우리 {2}%) = {3}   (게임은 펫 방어구를 표시하지 않습니다 — 이것은 자체 수치입니다)
+pets.auras=오라 영향: {0}
+pets.none=이 캐릭터에게는 펫을 소환하는 스킬이 없습니다.
+pets.note=체력: 기본 × (1 + 자체% + 펫 보너스% + 오라%). 스킬 데미지에는 펫 보너스가 곱해집니다 — 이 규칙은 게임의 숫자 7개로 측정했습니다.
+
+pets.level=Lv. {0}
+pets.levelUnknown=펫 레코드에 레벨이 없습니다
+pets.attack={0}   (펫 «{1}», {2})
+
+# 펫의 변환
+pets.conversion.title=이 펫의 변환
+pets.conversion.capped=한 종류에서 빠져나가는 것은 100%까지입니다: 100%는 받는 쪽의 비율에 따라 나뉩니다. 괄호 안은 아이템에 실제로 적힌 값입니다.
+pets.conversion.line={0}% 변환: {1} → {2}
+pets.conversion.recorded=(레코드상 {0}%)

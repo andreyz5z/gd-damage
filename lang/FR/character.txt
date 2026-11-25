@@ -1,0 +1,52 @@
+# PANNEAU DU PERSONNAGE (champs de la fenêtre principale) et infobulles des attributs.
+
+character.name=Nom
+character.class=Classe
+character.file=Fichier
+character.level=Niveau
+character.experience=Expérience
+character.physique=Physique
+character.cunning=Malice
+character.spirit=Esprit
+character.health=Santé
+character.energy=Énergie
+character.attributePoints=Points d'attributs
+character.skillPoints=Points de compétences
+character.devotionPoints=Points de Dévotion
+character.totalDevotion=Dévotion totale
+character.money=Fer
+character.tributes=Tributs
+character.difficulties=Difficultés
+character.difficulty.normal=Normale, Vétéran
+character.difficulty.elite=Élite
+character.difficulty.ultimate=Ultime
+
+# Modifier les nombres que le jeu calcule lui-même
+character.freeEdit=Modifier librement les attributs
+character.freeEdit.warning=Le jeu calcule lui-même ces cinq nombres à partir des points dépensés, des objets portés et des compétences — les formules sont comprises et correspondent exactement au jeu.\n\nSi vous écrivez vos propres valeurs ici, la sauvegarde ne correspondra plus à ce que le jeu affiche à l'écran : il recalculera la santé et l'énergie selon ses propres règles et gardera vos attributs.\n\nAutoriser quand même la modification ?
+character.keptInSave=Conservé dans la sauvegarde séparément de ce que le jeu affiche à l'écran.\nLa santé et l'énergie finales sont calculées par le jeu lui-même — à partir des points dépensés, des attributs, des objets et des compétences — et ne correspondent pas à ce nombre.\nCe qui est exactement conservé ici, nous ne l'avons pas encore établi, c'est pourquoi la modification est fermée.
+
+# Infobulle d'un attribut
+character.tip.now={0} : actuellement {1}
+character.tip.own=dans la sauvegarde {0}, points dépensés {1}
+character.tip.fromGear=des objets et compétences : {0}
+character.tip.gives=Donne (compté en plus de la base {0}) :
+character.tip.percents=Et les pourcentages — la base {0} compte ici aussi :
+character.tip.percentLine=+{0} % {1}
+character.perPoint.life=+{0} de santé par point
+character.perPoint.energy=+{0} d'énergie par point
+character.perPoint.defense=+{0} de capacité défensive par point
+character.perPoint.offense=+{0} de capacité offensive par point
+character.perPoint.lifeRegen=+{0} de régénération de santé par point
+character.perPoint.energyRegen=+{0} de régénération d'énergie par point
+character.divided.physical=dégâts physiques et perforants
+character.divided.bleed=dégâts de trauma interne et de saignement
+character.divided.magic=dégâts magiques
+character.divided.dots=les autres dégâts sur la durée
+character.divided.energyRegen=régénération d'énergie
+character.needs.physique=Requis pour les armures, les armes de mêlée et les boucliers.
+character.needs.cunning=Requis pour les armes à distance et une partie des armes de mêlée.
+character.needs.spirit=Requis pour les anneaux, les amulettes et les objets de lanceur de sorts.
+character.hardcore=Hardcore
+character.revive=Ressusciter
+character.revive.tip=Efface la marque de mort. Vérifiez dans le jeu que le personnage se charge à nouveau.

@@ -1,0 +1,18 @@
+# EQUIPMENT PANEL: slot labels (they also appear in the "does not go into the … slot" messages).
+
+equipment.weapon1=Weapon I
+equipment.offhand1=Off-hand I
+equipment.weapon2=Weapon II
+equipment.offhand2=Off-hand II
+equipment.head=Head
+equipment.neck=Neck
+equipment.medal=Medal
+equipment.shoulders=Shoulders
+equipment.chest=Chest
+equipment.hands=Hands
+equipment.waist=Waist
+equipment.legs=Legs
+equipment.ring1=Ring 1
+equipment.feet=Feet
+equipment.relic=Relic
+equipment.ring2=Ring 2

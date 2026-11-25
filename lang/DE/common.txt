@@ -1,0 +1,27 @@
+# VON MEHREREN FENSTERN GETEILT: Schaltflächen, Herkunft einer Fähigkeit, Teile eines Gegenstands.
+
+common.apply=Anwenden
+common.cancel=Abbrechen
+common.search=Suche:
+common.nothingFound=Nichts gefunden.
+common.put=Setzen
+common.clearBonus=Bonus entfernen
+
+# Schwierigkeitsgrade des Spiels (Reiter „Riftgates“, Reiter „Gegner“)
+common.difficulty.normal=Normal
+common.difficulty.elite=Elite
+common.difficulty.ultimate=Ultimativ
+
+# Woher eine Fähigkeit stammt (Unterüberschriften in den Fenstern für Kreaturen und aktive Fähigkeiten)
+common.source.mastery=Meisterschaftsfähigkeit
+common.source.devotion=Devotion
+common.source.item=von einem Gegenstand: {0}
+common.source.set=Set: {0} ({1})
+common.source.setName=Set: {0}
+
+# Der Teil des Gegenstands, mit dem die Fähigkeit kam: „von einem Gegenstand: Name (Präfix)“
+common.part.prefix=(Präfix)
+common.part.suffix=(Suffix)
+common.part.component=(Komponente)
+common.part.augment=(Verbesserung)
+common.part.ascension=(Aufstieg)

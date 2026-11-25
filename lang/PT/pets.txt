@@ -1,0 +1,23 @@
+# JANELA «COMPANHEIROS ATIVOS» e linhas de companheiros nas outras janelas.
+# Os nomes dos companheiros e de suas habilidades vêm do jogo.
+
+pets.title=Companheiros ativos — {0}
+pets.checkbox={0}   ({1}, nív. {2})
+pets.limit=até {0} ao mesmo tempo
+pets.lifetime={0} s de vida
+pets.life=saúde: base {0} × (1 + {1}% própria + {2}% nossa) = {3}
+pets.lifeAura=saúde: base {0} × (1 + {1}% própria + {2}% nossa + {3}% auras) = {4}
+pets.armour=armadura: base {0} × (1 + {1}% própria + {2}% nossa) = {3}   (o jogo nunca mostra a armadura dos companheiros — este valor é nosso)
+pets.auras=sob auras: {0}
+pets.none=Este personagem não tem nenhuma habilidade que invoque um companheiro.
+pets.note=Saúde: base × (1 + própria% + bônus de companheiros% + auras%). O dano das habilidades é multiplicado pelos bônus de companheiros — a regra foi medida com sete números do jogo.
+
+pets.level=nív. {0}
+pets.levelUnknown=o registro do companheiro não indica nível
+pets.attack={0}   (companheiro «{1}», {2})
+
+# Conversão do companheiro
+pets.conversion.title=Conversão deste companheiro
+pets.conversion.capped=De um tipo não sai mais de cem por cento: os cem se dividem entre os receptores conforme suas parcelas. Entre parênteses — o que os itens realmente indicam.
+pets.conversion.line={0}% de conversão: {1} em {2}
+pets.conversion.recorded=(o registro diz {0}%)

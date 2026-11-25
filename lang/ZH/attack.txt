@@ -1,0 +1,12 @@
+# 伤害技能：「攻击方式」列表中的行和技能的组成（「此技能的组成」）。
+
+attack.title={0}   ({1}，等级 {2})
+attack.weaponPct={0}% 武器伤害
+attack.part={0}（等级 {1}）
+attack.transmuter={0}（变形技能，等级 {1}）
+attack.transmuterOrphan={0} — 变形技能（等级 {1}）：找不到其父技能
+attack.fromItemInForm=来自物品，此形态下：{0}
+attack.fromItem=来自物品：{0}
+attack.pool=（代替默认武器攻击，{0}%）
+attack.poolNoChance=（代替默认武器攻击）
+attack.onHit=（命中时触发，{0}%）

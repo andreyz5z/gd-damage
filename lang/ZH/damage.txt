@@ -1,0 +1,236 @@
+# 「伤害计算」窗口：标签页、按钮、输入栏和选择列表。
+# 下方是标签页的说明和模拟日志。
+
+damage.title=伤害计算 — {0}
+damage.tab.timeline=战斗模拟
+damage.tab.totals=总加成
+damage.tab.hit=每次攻击伤害
+damage.tab.target=敌人
+damage.seconds={0} 秒
+damage.secondsPair={0} 和 {1}
+
+# 总加成
+damage.pickActive=选择主动技能…
+damage.activeFromSave=按存档计算
+damage.activeChosen=已选：{0}
+damage.pickPets=活动战宠…
+damage.petsNear=附近的战宠
+
+# 每次攻击伤害
+damage.hit.what=攻击方式
+damage.hit.plain=默认武器攻击（无技能）
+
+# 战斗模拟：输入栏和按钮
+damage.run.seconds=秒数
+damage.run.seed=种子
+damage.run.go=运行队列
+damage.run.press=按下什么（按冷却）
+damage.run.attack=默认攻击
+damage.run.weapon=用武器
+damage.run.everyLabel=无冷却——按下间隔
+damage.run.everyTail=秒（0 — 按动画）
+
+# 战斗模拟：「按下什么」和「默认攻击」列表的项目
+damage.press.buff=增益
+damage.press.buffNotRolled=（{0} — 不判定）
+damage.press.whenNotRolled={0} — 不判定，按冷却按下
+damage.press.every=无冷却——每 {0} 秒按一次
+damage.press.anim=无冷却——按动画，每 {0} 秒
+damage.press.noAnim=无冷却——找不到动画，请设定间隔
+damage.press.noCooldown=无冷却
+damage.press.starHits=星，造成伤害
+damage.press.pet=（战宠「{0}」，同时 {1} 个，{2}，每秒 {3} 次攻击，伤害技能 {4}）
+damage.press.petLives=存在 {0} 秒
+damage.press.petPermanent=永久
+damage.press.none=没有可按下的伤害技能
+damage.attack.form=形态「{0}」   用技能「{1}」攻击
+damage.attack.ofForm=（形态「{0}」）
+damage.attack.channel=引导，每 {0} 秒一跳
+damage.attack.finale=每 {0} 次攻击一次
+damage.attack.charges=充能最多 {0}
+damage.attack.byAnimation=无冷却，按动画每 {0} 秒
+
+# 敌人
+damage.target.load=从游戏载入敌人列表
+damage.target.reload=重建敌人列表
+damage.target.find=按名字搜索
+damage.target.level=等级
+damage.target.difficulty=难度
+damage.target.notLoaded=敌人列表尚未载入。
+damage.target.pressButton=按上方的按钮——程序会建立敌人列表。只有在游戏更新后才需要重建。
+damage.target.nothing=什么也没找到。
+
+# ─── 标签页说明 ───
+
+# 总加成
+damage.totals.summary=合计来源：{0} 件已装备物品（含镶嵌物和增幅），{1} 个套装加成，{2} 个被动技能，{3} 个已开启技能，{4} 颗星座信仰之星。
+damage.totals.exact=[精确]
+damage.totals.overCap=（+{0}% 超出最大值）
+damage.totals.resistCap=上限 {0}%
+damage.totals.armourRating=护甲等级 {0}
+damage.totals.absorb={0}% 吸收
+damage.totals.armourNote=物品自身的护甲进入它的栏位，其余全部同时进入六个部位（{0}），之后才计算 +{1}% 护甲。护甲等级是各部位的平均值，按命中该部位的比例加权。吸收为基础 70% 乘以「+% 护甲吸收」，最多 100%。
+damage.totals.block=格挡几率 {0}%   格挡值 {1}
+damage.totals.blockNote=格挡几率是相加的——盾牌的「格挡几率」加上各处的「+% 格挡几率」，而不是相乘。格挡值为盾牌基础值 ×（1 + 格挡值 %）。
+damage.totals.pets=战宠加成
+damage.totals.petsNote=只作用于召唤出的生物，不适用于你。来源：{0}。
+damage.totals.petCapItem={0} {1}%（+{2}% 超出最大值）
+damage.totals.petCapNote=已达到 {0}% 的上限，游戏面板显示的是已截断的数字：{1}。超出部分不会浪费：降低抗性的敌人会先削减这部分。
+damage.totals.missing=这个合计中还没有的内容
+damage.totals.missingProcs=按条件触发而非常驻的技能：专精的触发效果、物品技能和星座信仰的触发效果。
+damage.totals.missingPressed=需要按下的技能——其加成只持续几秒。
+damage.totals.skipped=已跳过：{0}。
+damage.totals.toggledOff=已关闭的可切换技能：{0}。已开启的包含在合计中——存档记得开启了什么。
+damage.totals.chosenByHand=手动选择（「选择主动技能」按钮）：{0}。
+damage.totals.missingConversion=伤害转换。对某种伤害类型的百分比按原样显示，但在游戏中它们在转换之后生效：对于把物理伤害全部转换掉的配装，「+200% 物理伤害」毫无作用。
+damage.totals.missingScaling=属性对伤害的提升：灵巧提升物理和穿刺伤害，精神提升魔法类伤害。公式已知，但那是下一层。
+damage.totals.missingCap=抗性上限。这里的加成按原样相加，所以数字可能超过 80%——在游戏中会停在上限（80% 加上「最大值」加成，显示在旁边）。超出上限的部分并非无用：首领会降低抗性。
+damage.totals.missingDifficulty=难度带来的抗性惩罚（精英 −25，终极 −50）这里没有扣除：存档中没有记录你当前所在的难度。
+damage.totals.notStacked=没有叠加的内容
+damage.totals.notStackedNote=「X 降低」和「X% 降低」类的抗性降低、目标伤害降低和命中降低不会叠加：任何时刻只有最强的来源生效。这里取最强的一个，而不是总和。
+damage.totals.notStackedItem={0}：{1} 个来源，取最强 {2}
+
+# 鼠标悬停在合计行上时的「组成」提示
+damage.terms.pet=（战宠加成）
+damage.terms.byMax=不叠加：取 {0} 个来源中最强的一个
+damage.terms.summedOne=由 {0} 个来源相加
+damage.terms.summedMany=由 {0} 个来源相加
+damage.terms.winner=← 生效
+damage.terms.total=合计 {0}
+
+# 每次攻击伤害
+damage.hit.plainTitle=默认武器攻击
+damage.hit.plainWeapon=默认武器攻击：{0}
+damage.hit.skillTitle={0}   ({1}，等级 {2})
+damage.hit.weapon=武器：{0}
+damage.hit.attackSpeed=每秒 {0} 次攻击   （攻击速度 {1}%）
+damage.hit.castSpeed=施法速度 {0}%
+damage.hit.castCapped=（达到上限 {0}%）
+damage.hit.channel=引导：每 {0} 秒一跳
+damage.hit.perHit=每次攻击 {0} – {1}
+damage.hit.overTime=（每秒，{0} 秒）
+damage.hit.none=没有伤害。
+damage.hit.bare=不含临时效果（{0}）：每次攻击 {1} – {2}——游戏面板显示的就是这个数字。
+damage.hit.how=计算方式
+damage.hit.howBase=基础为武器伤害加上物品的固定加成。固定元素伤害平均分成三份，分给火焰、冰冷和闪电。
+damage.hit.howConversion=转换会拿走基础值的一部分，各部分是相加的，而不是依次生效。护甲穿透是最后一次转换，取自剩余部分。
+damage.hit.howMultiplier=每一部分乘以（1 + 属性/除数 + 该类型 % + 元素 % + 全部伤害 %）。除数：灵巧/245 和 /215，精神/215 和 /200。
+damage.hit.howTotal=游戏的人物面板把「+X% <类型>伤害」显示为该类型的 % 加上「全部伤害 %」——合在一行里。
+damage.hit.howTotalSome=该人物有 +{0}% 全部伤害，所以游戏面板显示的每种类型的百分比会比我们的高出这么多。
+damage.hit.howTotalNone=该人物没有「全部伤害 %」，所以百分比会一致。
+damage.hit.howAll=「全部伤害 %」作用于所有类型的伤害，包括持续伤害——没有例外。
+damage.hit.howDots=持续伤害按每秒显示——记录中就是这样存的，无需再除。持续时间加成不会改变这个数字：效果持续更久，但每秒伤害不变。
+
+# 每次攻击伤害：反击
+damage.retaliation.title=反击（还击）
+damage.retaliation.note=这是人物属性中的「反击」面板，而不是攻击的一部分。它的计算方式不同：属性和伤害类型百分比不影响它，只有「+% 反击伤害」有影响——你有 +{0}%。但转换会生效，而且与普通伤害的转换相同。
+damage.retaliation.note2=还击只对近战攻击有效，只作用于打你的对象，并且只在你真正被击中时生效；还击本身不会落空，也不会暴击。伤害反射（「受到伤害的 X% 被反射」）是另一回事，人物属性中从不出现：它取决于打你的对象的伤害。
+
+# 每次攻击伤害：按手
+damage.hands.title=每只手各是多少
+damage.hands.both=这与游戏在技能提示中显示的内容相同。双手的武器伤害比例相同（{0}%），括号内的数字不同是因为双手的武器不同。括号内也包括该手的持续伤害：游戏面板也是这样计算的。
+damage.hands.oneMain=只有一行，因为技能用一只手——主手——攻击，游戏在提示中显示的行数也完全一样。是哪只手写在技能的动画里：每套装备都有自己的文件，其中的命中事件指定了手。换成双手武器或装备盾牌——这一行可能会变，在游戏中也一样。
+damage.hands.oneOff=只有一行，因为技能用一只手——副手——攻击，游戏在提示中显示的行数也完全一样。是哪只手写在技能的动画里：每套装备都有自己的文件，其中的命中事件指定了手。换成双手武器或装备盾牌——这一行可能会变，在游戏中也一样。
+damage.hands.single=只有一件武器，所以只有一只手。括号内也包括该手的持续伤害：游戏面板也是这样计算的。
+damage.hands.ownShare=技能自身的提示会显示得更少——只有它自己的 {0}% 比例：
+damage.hands.lineMain=主手武器伤害的 {0}%（{1} - {2}）
+damage.hands.lineOff=副手武器伤害的 {0}%（{1} - {2}）
+
+# 每次攻击伤害：技能的组成
+damage.parts.title=此技能的组成
+damage.parts.temporary=— 临时效果
+damage.parts.oneHandMain=— 单手攻击，主手
+damage.parts.oneHandOff=— 单手攻击，副手
+damage.parts.weaponPct={0}% 武器伤害
+damage.parts.conversion=转换 {0}%：{1} → {2}   （先于人物的转换生效）
+damage.parts.notCounted=未计入：{0}
+
+# 每次攻击伤害：战宠的攻击
+damage.pet.title={0}   (战宠「{1}」的攻击，{2})
+damage.pet.summonedBy=由技能「{0}」召唤
+damage.pet.withConversion=含转换的伤害——它实际上就是这样攻击的
+damage.pet.noNumbers=这个技能没有数值
+damage.pet.asGame=游戏的显示——不含转换
+damage.pet.asGameNote=游戏在任何地方都不显示战宠的转换：用六个数值测得并由截图确认——有无「高尔之印」技能说明都一样。但转换的作用与人物相同。
+damage.pet.notYours=这是战宠的攻击，无法与你的攻击比较：它不来自你的武器，你的伤害百分比不作用于它，作用于它的是战宠加成。
+
+# 战斗模拟：首次运行前的帮助
+damage.help.title=按时间排列的攻击队列
+damage.help.press=按「运行队列」：每次挥击单独处理——是否命中、出了哪只手，以及每一行的伤害在其范围内单独判定。各行会随计算立即出现。上方是结果：每秒伤害、每秒合计的中位数、目标生命和击杀所需时间（TTK）。
+damage.help.twoNumbers=一行中有两个数字：第一个是到达目标的部分（按手）；括号内的「未计加成的伤害」是我方打出的部分：已含暴击，但尚未计入种族加成、护甲（只削减物理）以及抗性和抗性降低。第一个数字也可能大于第二个：当我方的抗性降低把目标抗性压到零以下时，它不再减免，而是放大伤害。DPS、中位数、单次运行伤害和 TTK 按到达的部分计算。
+damage.help.target=目标取自「敌人」标签页中所选的那个，按其等级和难度。如果没有选择，就使用游戏文件中的训练假人。
+damage.help.pets=战宠：勾选的会在开始时召唤，之后按召唤的冷却继续召唤，直到达到该类型的上限；自行触发的（星、物品技能）不勾选也会出现。每只战宠按各自的频率使用自己的默认攻击和技能，其命中和暴击与你一样进行判定。
+damage.help.counted=计入：挥击、按下的技能、引导、武器池、触发效果、星、造成伤害的光环、持续伤害、暴击档位、抗性降低、种族加成、生命削减、形态和战宠。
+damage.help.seed=种子让运行可以重现：相同的种子会得到相同的结果，直到最后一位。只改种子——你会看到波动；种子不变而改配装——你会看到配装改变了什么。
+
+# 战斗模拟：运行中
+damage.run.building=正在建立队列…
+damage.run.buildingNote=每次攻击都用自己的判定计算自己的伤害，长时间运行会有成千上万次
+damage.run.progress=正在建立队列…   {1} 秒中的 {0} 秒   （{2} 行）
+
+# 战斗模拟：结果
+damage.run.buffsUp=已开启的增益：{0}   — 它们按冷却进入队列，持续各自的时间（记录中没有持续时间则整个运行期间），改变的是属性，而不是作为单独的攻击造成伤害
+damage.run.target=目标：{0}
+damage.run.targetLevel=等级 {0}，{1}难度
+damage.run.targetStats=防御能力 {0}   护甲 {1}
+damage.run.hitChance=命中几率 {0}%
+damage.run.mainSpell={0}「{1}」代替默认武器攻击：施法速度 {2}%，每 {3} 秒，单次运行 {4} 次
+damage.run.targetResists=目标抗性：{0}
+damage.run.gear=来自物品和套装的技能：
+damage.run.queue=队列
+damage.run.summary=运行结果
+damage.run.dps=每秒伤害（DPS）  {0}     每秒合计的中位数 {1}
+damage.run.total={1} 秒内单次运行伤害 {0}
+damage.run.targetLife=目标生命 {0}
+damage.run.killedAt={0} 秒内击杀（TTK）
+damage.run.dummyNote=— 仅供参考：游戏中假人不会死
+damage.run.notKilled=运行期间未击杀——剩余 {0}%
+damage.run.percentLife=生命削减共削去 {0}（{1} 次）
+damage.run.percentLifeBlocked=另有 {0} 次被目标 {1}% 的抗性完全抵消
+damage.run.swings=挥击 {0}，命中 {1}，未命中 {2}，暴击 {3}
+damage.run.tier=档位 {0}：{1}
+damage.run.hands=手：双手 {0}，第一只 {1}，第二只 {2}
+damage.run.procs=自动触发：触发 {0}（其伤害 {1}）
+damage.run.pool=武器池 {0}
+damage.run.silent=无伤害 {0}：{1}
+damage.run.pets=战宠：攻击 {0}，召唤 {1}，其伤害 {2}
+damage.run.petsShare=— 占总数的 {0}%
+damage.run.stars=星座信仰之星
+damage.run.dots=持续伤害：施加 {0}，刷新 {1}，其伤害 {3} 中的 {2}
+damage.run.before=未计加成的伤害为 {0}——到达 {1}%（种族加成、护甲、抗性和抗性降低）
+damage.run.conditions=运行条件
+damage.run.rolls=范围判定次数：{0}——每次攻击的每一行伤害各一次。
+damage.run.critNote=计入带档位的暴击：一次判定同时决定命中和档位，「+% 暴击伤害」加到档位倍率上。暴击几率本身对强目标与游戏一致，对弱目标偏高——没有计入怪物装备带来的加成。
+damage.run.dotNote=持续伤害会施加并跳伤：一个来源只保留一个效果——新的命中会延长持续时间并把伤害提高到最佳值，而不是开启第二个。所有武器伤害（双手和带武器比例的技能）算作一个来源；没有武器比例的技能各自是独立来源。
+damage.run.noteRough=简化：{0}
+damage.run.noteUnread=未读取：{0}
+damage.run.noteHint=提示：{0}
+damage.run.pressNote=勾选的技能一冷却完毕就按下：开始时全部同时按，之后各按各的冷却（含物品和改造带来的缩短）。双手攻击的技能总是用双手攻击，每只手各自判定是否落空。
+damage.run.procNote=触发效果和「代替默认武器攻击」的技能特意不在可勾选的列表中：没有人会按它们。它们会自行发生——每次攻击各自判定，各有自己的冷却。
+damage.run.silentNote=无伤害触发——召唤、施加增益或减益的星座信仰之星和物品技能。它们的判定和冷却是真实的；增益在持续时间内生效，减益施加到目标上，召唤出的生物加入池中并用自己的行攻击。
+damage.run.failed=运行失败：{0}
+
+# 敌人：敌人面板
+damage.enemy.title={0}   ({1}，等级 {2}，{3}难度)
+damage.enemy.variants=数据库中有 {0} 条同名记录——它们只在出现的等级上不同；这里取最完整的一条，等级在上方选择。
+damage.enemy.combat=战斗参数
+damage.enemy.abilities=防御能力 {0}   攻击能力 {1}
+damage.enemy.life=生命 {0}   护甲 {1}
+damage.enemy.gearArmour=（其中来自装备 {0}）
+damage.enemy.resists=抗性
+damage.enemy.none=无
+damage.enemy.hit=命中
+damage.enemy.ourAttack=我方攻击能力 {0}   对 其防御 {1}
+damage.enemy.hitChance=命中几率 {0}%   暴击几率 {1}%
+damage.enemy.ourDefence=我方防御能力 {0}   对 其攻击 {1}
+damage.enemy.getHit=被命中几率 {0}%   被暴击几率 {1}%
+
+# 列表和「敌人」标签页标题中的敌人等阶。游戏没有专门表示等阶的词。
+damage.enemy.rank.superBoss=复仇者
+damage.enemy.rank.boss=首领
+damage.enemy.rank.quest=任务
+damage.enemy.rank.hero=英雄
+damage.enemy.rank.champion=精英怪
+damage.enemy.rank.common=普通
+damage.enemy.variantsShort=（{0} 条记录）
+damage.attack.byCooldown=代替武器，按冷却每 {0} 秒

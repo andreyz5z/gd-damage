@@ -1,0 +1,18 @@
+# PANEL WYPOSAŻENIA: nazwy miejsc (pojawiają się też w komunikatach „nie pasuje do miejsca …”).
+
+equipment.weapon1=Broń I
+equipment.offhand1=2. ręka I
+equipment.weapon2=Broń II
+equipment.offhand2=2. ręka II
+equipment.head=Głowa
+equipment.neck=Szyja
+equipment.medal=Medal
+equipment.shoulders=Ramiona
+equipment.chest=Tułów
+equipment.hands=Dłonie
+equipment.waist=Pas
+equipment.legs=Nogi
+equipment.ring1=Pierścień 1
+equipment.feet=Stopy
+equipment.relic=Relikt
+equipment.ring2=Pierścień 2

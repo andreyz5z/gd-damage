@@ -1,0 +1,71 @@
+# BONUSQUELLEN: Beschriftungen der Summanden im Tooltip „woraus das besteht“ auf dem Reiter „Gesamtboni“.
+# Ein Treffer findet seinen Summanden an genau diesen Beschriftungen, daher entsteht jede an einer einzigen Stelle.
+# WICHTIG BEIM ÜBERSETZEN: Die Beschriftungen der Gegenstandsteile (totals.part.*) müssen sich voneinander
+# unterscheiden — sonst teilen sich Zeilen verschiedener Teile einen Schadenswurf. Wird von --langtest geprüft.
+
+totals.part.prefix=(Präfix)
+totals.part.suffix=(Suffix)
+totals.part.component=(Komponente)
+totals.part.relicBonus=(Vollendungsbonus)
+totals.part.augment=(Verbesserung)
+totals.part.modifier=(Modifikator)
+totals.part.ascension=(Aufstieg)
+totals.setShort=Set: {0}
+totals.fromItem=von einem Gegenstand: {0} ({1})
+totals.devotion=Devotion: {0}
+totals.skill=Fähigkeit: {0} (St. {1})
+totals.toggled=eingeschaltet: {0} (St. {1})
+totals.skillMod=Fähigkeitsmodifikator: {0}
+totals.toggledMod=eingeschaltet, Fähigkeitsmodifikator: {0}
+totals.chosenOn={0} — von Hand eingeschaltet
+totals.chosenOff={0} — von Hand ausgeschaltet
+totals.gateItem={0} (von einem Gegenstand) — {1}
+totals.gateDevotion={0} (Devotion) — {1}
+
+totals.gate.needDualAny=weder zwei Nahkampfwaffen noch zwei einhändige Fernkampfwaffen
+totals.gate.needDualMelee=keine zwei Waffen geführt
+totals.gate.needDualRanged=keine zwei einhändigen Fernkampfwaffen
+totals.gate.needRanged=keine Fernkampfwaffe
+totals.gate.needGuns=zwei Pistolen oder ein Gewehr nötig
+totals.gate.needEmptyHands=eine Waffe in der Hand
+totals.gate.wrongWeapon=falsche Waffe in der Hand
+
+# GRUPPENÜBERSCHRIFTEN auf dem Reiter „Gesamtboni“. „Resistenzen“, „Vergeltung“, „Verteidigung“ und
+# „Attribute“ kommen aus dem Spiel (seinem Charakterfenster); diese vier Zeilen sind nur der Ersatz.
+totals.group.damage=Schaden
+totals.group.overTime=Schaden über Zeit
+totals.group.retaliation=Vergeltung
+totals.group.debuff=Was dem Ziel abgezogen wird
+totals.group.resist=Resistenzen
+totals.group.defence=Verteidigung
+totals.group.attributes=Attribute
+totals.group.skills=Fähigkeiten
+totals.group.other=Sonstiges
+
+# Rüstungszonen. Normalerweise aus dem Spiel (seinem Rüstungsfenster); das hier ist der Ersatz.
+totals.zone.head=Kopf
+totals.zone.shoulders=Schultern
+totals.zone.chest=Torso
+totals.zone.arms=Arme
+totals.zone.legs=Beine
+totals.zone.feet=Füße
+
+# Was bei Kreaturen an die Grenze stieß: „… begrenzt: Chaos 84% (+12% über Maximum), Betäubung …“.
+totals.capWord.elemental=Elementar
+totals.capWord.stun=Betäubung
+totals.capWord.freeze=Einfrieren
+totals.capWord.trap=Fesselung
+totals.capWord.petrify=Versteinerung
+totals.capWord.convert=Gedankenkontrolle
+
+# Namen der Resistenzen. Aus dem Spiel (seinem Charakterfenster); das hier ist der Ersatz, in seinen Worten.
+totals.resist.fire=Feuer
+totals.resist.cold=Kälte
+totals.resist.lightning=Blitz
+totals.resist.poison=Gift & Säure
+totals.resist.pierce=Durchschlag
+totals.resist.aether=Äther
+totals.resist.chaos=Chaos
+totals.resist.life=Lebenskraft
+totals.resist.bleeding=Blutung
+totals.resist.physical=Physischer

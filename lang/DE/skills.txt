@@ -1,0 +1,150 @@
+# FENSTER „FÄHIGKEITEN“: Meisterschaften, Tooltips der Fähigkeiten, Devotion, Riftgates.
+# Die Namen von Meisterschaften, Fähigkeiten und Sternbildern kommen aus dem Spiel.
+
+skills.title=Fähigkeiten — {0}
+skills.levelParen=(Stufe {0})
+
+# Meisterschaft wählen und ablegen
+skills.choose.first=Erste Meisterschaft
+skills.choose.second=Zweite Meisterschaft
+skills.choose.intro=Eine Meisterschaft gilt als gewählt, sobald der erste Punkt in ihre Leiste geht — genau das tun wir, indem wir einen Fähigkeitspunkt ausgeben. Dieselbe Meisterschaft kann nicht zweimal gewählt werden.
+skills.choose.opensAt=Im Spiel wird sie auf Stufe {0} freigeschaltet.
+skills.choose.freePoints=Freie Fähigkeitspunkte: {0}.
+skills.noPoints.text=Es gibt keine freien Fähigkeitspunkte, und eine Meisterschaft wird gewählt, indem ein Punkt in ihre Leiste geht.\n\nFüge im Feld „Fähigkeitspunkte“ des Hauptfensters einen Punkt hinzu, dann lässt er sich hier ausgeben. Einen nicht vorhandenen Punkt auszugeben ist nicht erlaubt: Der Charakter hätte mehr ausgegeben als verdient.
+skills.noPoints.title=Nicht genug Fähigkeitspunkte
+skills.take.ask=Die Meisterschaft «{0}» wählen?\n\nEin Fähigkeitspunkt geht in ihre Leiste — so wird eine Meisterschaft gewählt. Derzeit frei: {1}.
+skills.take.undo=Umentscheiden kannst du dich mit der Schaltfläche „Meisterschaft ablegen“ — die Punkte kommen zurück.
+skills.take.title=Meisterschaft wählen
+skills.drop.ask=Die Meisterschaft «{0}» ablegen?\n\nJeder hineingesteckte Punkt wird herausgenommen — {1} insgesamt, der Leistenpunkt eingeschlossen — und zu den freien zurückgegeben. Die Fähigkeiten dieser Meisterschaft verschwinden, und die daran gebundenen Devotionssterne bleiben ungebunden.
+skills.drop.title=Meisterschaft ablegen
+skills.drop.button=Meisterschaft «{0}» ablegen
+skills.drop.secondFirst=Lege zuerst die zweite Meisterschaft ab
+skills.mastery.fallbackName=Meisterschaft {0}
+skills.mastery.tooEarlyFirst=Im Spiel wird die erste Meisterschaft auf Stufe {0} freigeschaltet, der Charakter hat {1}.
+skills.mastery.tooEarlySecond=Im Spiel wird die zweite Meisterschaft auf Stufe {0} freigeschaltet, der Charakter hat {1}.
+
+# Tooltip einer Fähigkeit
+skills.kind.mastery=Meisterschaft
+skills.kind.active=aktive Fähigkeit
+skills.kind.weaponPool=Standardwaffenangriff (Fähigkeit des Waffenpools)
+skills.kind.modifier=Fähigkeitsmodifikator
+skills.kind.transmuter=Transmutator
+skills.kind.passive=passive Fähigkeit
+skills.tip.poolChance=Chance, statt des Standardwaffenangriffs eingesetzt zu werden: {0}%
+skills.tip.poolShared=Gewählte Standardwaffenangriffe: {0}, ihre Chancen ergeben zusammen {1}%. Pro Angriff löst nur einer davon aus.
+skills.tip.poolSharedFull=Gewählte Standardwaffenangriffe: {0}, ihre Chancen ergeben zusammen {1}%. Pro Angriff löst nur einer davon aus; der einfache Waffenangriff findet gar nicht mehr statt.
+skills.tip.dependsOn=Freigeschaltet über: {0}
+skills.tip.level=Aktuelle Stufe: {0}
+skills.tip.levelWithBonus=Aktuelle Stufe: {0} + {1} von Gegenständen
+skills.tip.max=(steigerbar bis {0})
+skills.tip.maxWithGear=(steigerbar bis {0}, Grenze mit Gegenständen {1})
+skills.tip.recordNumbers=Das sind die Zahlen des Fähigkeitsdatensatzes, vor den Boni des Charakters. Im eigenen Tooltip zeigt das Spiel sie bereits mit all deinem Schaden multipliziert — deshalb sind seine Zahlen größer. Schaden mit Boni: „Schadensberechnung…“ → „Schaden pro Treffer“.
+skills.tip.recordNumbersHand=Außer der gelben Zeile zur Hand: Die Klammer enthält dort bereits den Schaden dieser Hand, genau wie das Spiel ihn zeigt.
+skills.tip.celestialPower=Himmlische Kraft
+skills.tip.fromItem=Von einem Gegenstand: {0}
+skills.tip.nextLevel=Nächste Stufe: {0}
+
+# Devotion
+skills.devotion.tab=Devotion
+skills.devotion.spent=Vergebene Devotionspunkte: {0} von {1} verdienten, frei {2}
+skills.devotion.split=Davon sind {0} passive Sterne (unten summiert) und {1} Sterne mit Fähigkeit (einzeln gezeigt).
+skills.devotion.sums=Gesamtboni
+skills.devotion.none=keine
+skills.devotion.granted=Verliehene Fähigkeiten
+skills.devotion.boundTo=gebunden an: {0}
+skills.devotion.unbound=an nichts gebunden — löst nicht aus
+skills.devotion.levels=Stufe der Devotionsfähigkeiten ändern
+skills.devotion.starOf={0}, Stern {1}
+skills.devotion.total=gesamt {0}
+skills.devotionLevels.title=Stufe der Devotionsfähigkeiten — {0}
+skills.devotionLevels.of=von {0}
+skills.devotionLevels.none=Der Charakter hat keine Devotionssterne, die eine Fähigkeit verleihen.
+skills.constellations.count=Sternbilder im Spiel: {0}. Vollständig: {1}, begonnen: {2}.
+skills.constellations.legend=Gewählte Sterne sind markiert; in Klammern neben einem Sternbild — wie viele seiner Sterne gewählt sind, was es gibt und was es erfordert.
+skills.constellations.gives=gibt: {0}
+skills.constellations.needs=erfordert: {0}
+skills.constellations.star=Stern {0}
+skills.constellations.notTaken=(nicht gewählt)
+
+# Die Devotionskarte: Punkte mit der Maus in Sterne setzen
+skills.devo.hint=Linksklick auf einen Stern setzt einen Punkt, Rechtsklick nimmt ihn zurück. Das Mausrad zoomt, Ziehen bewegt die Karte.
+skills.devo.fit=Ganze Karte
+skills.devo.zoom=Zoom {0} %
+skills.devo.points=Devotionspunkte: {0}
+skills.devo.stars=Gewählte Sterne: {0} von {1}
+skills.devo.noPoints=Keine freien Devotionspunkte mehr. Fügen Sie welche im Feld „Devotionspunkte“ im Hauptfenster hinzu.
+skills.devo.already=In diesem Stern steckt bereits ein Punkt.
+skills.devo.locked=Das Sternbild „{0}“ ist noch geschlossen: es fehlt Affinität — {1}.
+skills.devo.parentFirst=Zuerst muss „{0}“ gewählt werden — dieser Stern hängt daran.
+skills.devo.empty=In diesem Stern steckt kein Punkt.
+skills.devo.childFirst=An diesem Stern hängt das gewählte „{0}“ — nehmen Sie es zuerst zurück.
+skills.devo.affinityHolds=Das Sternbild ist vollständig, und seine Affinität trägt „{0}“: ohne sie wären es {1}.
+skills.devo.bindHint=Klicken Sie den Stern mit links an, um eine Fertigkeit zu wählen.
+
+# Himmlische Kraft: an welche Fertigkeit sie gehängt wird
+skills.bind.title=An welche Fertigkeit soll „{0}“ gehängt werden
+skills.bind.none=Keine Fertigkeit zugewiesen
+skills.bind.chosen=(gewählt)
+skills.bind.busy=(belegt von: {0})
+skills.bind.fromItem=(von einem Gegenstand)
+skills.bind.legend=Rot — Fertigkeiten, die der Charakter noch nicht gelernt hat: auch sie sind wählbar, die Kraft wirkt, sobald Punkte hineingehen.
+
+# Riftgates
+skills.portals.tab=Riftgates
+skills.portals.column=Riftgate
+skills.portals.notBuilt=Die Liste der Riftgates ist nicht erstellt. Sie wird aus den Weltdateien des Spiels gelesen und dauert etwa eine Minute.
+skills.portals.build=Liste der Riftgates erstellen
+skills.portals.reading=Weltdateien werden gelesen…
+skills.portals.readingWhat=Weltdateien werden gelesen: {0}
+skills.portals.readError=Die Weltdateien konnten nicht gelesen werden: {0}
+skills.portals.layer=Riftgates-Ebene bei {0}: {1} Einträge
+skills.portals.openAll=Alle Riftgates auf allen Schwierigkeitsgraden öffnen
+skills.portals.openDifficulty={0}: alle öffnen ({1} von {2})
+skills.portals.closeAll=Alle Riftgates auf allen Schwierigkeitsgraden schließen?\n\nDas entfernt auch die, die der Charakter selbst gefunden hat. Neben dem Spielstand bleibt eine Sicherungskopie.
+skills.portals.closeOne=Alle Riftgates auf dem Schwierigkeitsgrad «{0}» schließen?\n\nDas entfernt auch die, die der Charakter selbst gefunden hat. Neben dem Spielstand bleibt eine Sicherungskopie.
+skills.portals.title=Riftgates
+skills.portals.summary=Riftgates im Spiel: {0}.   Offen: {1}
+skills.portals.source=Die Liste wird aus den Weltdateien des Spiels gelesen; bearbeitet wird nur der Spielstand des Charakters.
+skills.portals.open=offen
+
+# Was die Fähigkeit beschwört — die Zeilen unter dem Tooltip einer Beschwörungsfähigkeit.
+skills.pet.summons=Beschwört: {0}
+skills.pet.limit=bis zu {0} gleichzeitig
+skills.pet.lives={0} Sek. Lebensdauer
+skills.pet.permanent=dauerhaft
+skills.pet.life={0} Leben
+skills.pet.lifeNote=das Leben berechnen wir nach eigenen Regeln, es kann vom Spiel abweichen
+
+# Punkte im Baum vergeben: Linksklick setzt einen Punkt, Rechtsklick nimmt ihn zurück
+skills.edit.points=Fertigkeitspunkte: {0}
+skills.edit.hint=Linksklick setzt einen Punkt, Rechtsklick nimmt ihn zurück.
+skills.edit.noPoints=Keine freien Fertigkeitspunkte mehr. Fügen Sie welche im Feld „Fertigkeitspunkte“ im Hauptfenster hinzu.
+skills.edit.atMax=Die Fertigkeit ist bereits am Maximum von {0}. Was die Ausrüstung gibt, liegt darüber und steht nicht im Spielstand.
+skills.edit.masteryFirst=Zuerst der Meisterschaftsbalken: ein Punkt hinein, und der Baum öffnet sich.
+skills.edit.tierClosed=Diese Spalte öffnet sich bei Meisterschaftsstufe {0}, der Balken steht bei {1}.
+skills.edit.ownerFirst=„{0}“ muss zuerst gelernt werden — diese Fertigkeit hängt daran.
+skills.edit.exclusive=Nur eine exklusive Fertigkeit kann aktiv sein, und das ist bereits „{0}“.
+skills.edit.empty=In dieser Fertigkeit stecken keine Punkte.
+skills.edit.ownerBusy=An dieser Fertigkeit hängt „{0}“, und darin stecken noch Punkte.
+skills.edit.barLast=Der letzte Punkt des Balkens ist die Meisterschaft selbst — geben Sie stattdessen die Meisterschaft zurück.
+skills.edit.barHolds=„{0}“ steht in einer Spalte, die sich bei Meisterschaftsstufe {1} öffnet.
+
+# REGISTERKARTE „ANSEHEN“: Fraktionen und Ränge. Namen, Ränge und ihre Reihenfolge gibt das Spiel vor.
+skills.factions.tab=Ansehen
+skills.factions.column=Fraktion
+skills.factions.rank=Rang
+skills.factions.value=Ansehen
+skills.factions.boost=Zuwachsrate
+skills.factions.notes=Hinweise
+skills.factions.summary=Fraktionen im Spiel: {0}.   Einträge im Spielstand: {1}
+skills.factions.short=Der Spielstand enthält {0} Einträge, das Spiel kennt aber {1} Fraktionen: die letzten fehlen darin noch. Sie erscheinen, sobald das Spiel selbst den Charakter speichert.
+skills.factions.source=Namen, Ränge und Reihenfolge werden aus den Spieldateien gelesen; bearbeitet wird nur der Spielstand des Charakters.
+skills.factions.unreadable=Die Fraktionen konnten nicht aus den Spieldateien gelesen werden.
+skills.factions.showHidden=Auch die Fraktionen zeigen, die das Spiel in seiner eigenen Ansicht ausblendet
+skills.factions.setRank=Rang:
+skills.factions.exact=Oder eine Zahl:
+skills.factions.apply=Auf die Auswahl anwenden
+skills.factions.pickFirst=Wählen Sie zuerst mindestens eine Fraktion in der Liste aus.
+skills.factions.hidden=in der Spielansicht nicht gezeigt
+skills.factions.noGain=Ansehen wächst nicht
+skills.factions.boostTimes=×{0}

@@ -1,0 +1,110 @@
+# メインウィンドウ: タイトル、メニューボタン、インベントリ、ステータスバー、メッセージ。
+#
+# すべての言語ファイルの形式: キー=テキスト。# で始まる行はコメント。
+# \n は改行。{0}、{1} はプログラムが数値や名前を入れる場所で、
+# 翻訳にも必ず残してください。順序は変えてかまいません。
+# アイテム、クラス、スキルの名前はここにはありません — ゲーム自体が提供します。
+
+main.title=Grim Dawn — キャラクタービューアー
+main.title.character=Grim Dawn — {0}
+
+# メニューボタン
+main.menu.open=セーブを開く
+main.menu.skills=スキル
+main.menu.damage=ダメージ計算
+main.menu.settings=設定
+
+# インベントリとスタッシュ
+main.edit.button=アイテムを編集
+main.edit.armed=アイテムをクリック
+main.trash.idle=アイテムを削除 — 持ち上げてここをクリック
+main.trash.armed=アイテムを削除
+main.stash.title=キャラクターのスタッシュ
+main.stash.none=キャラクターのスタッシュ: タブなし
+main.stash.count=キャラクターのスタッシュ: タブ {0}、アイテム {1}
+main.bags.main=メイン
+main.bags.extra=バッグ {0}
+
+# キャラクター欄の下の行
+main.summary=バッグ {0}、アイテム {1}\nスタッシュ: タブ {2}、アイテム {3}
+main.summary.noInventory=まだインベントリがありません: このキャラクターはメニューで作成され、一度もゲームに入っていません。\n一度でもゲームに入ると、バッグと装備が現れます。\nスタッシュ: タブ {0}、アイテム {1}
+
+# 保存と読み込み
+main.status.saved=保存しました {0}
+main.status.savedBackup=保存しました {0}   バックアップ: {1}
+main.status.saveError=書き込みエラー: {0}
+main.saveError.title=保存できませんでした
+main.open.title=player.gdc を選択
+main.open.filter=Grim Dawn のセーブ (player.gdc)|player.gdc|すべてのファイル|*.*
+main.loadError.title=セーブを読み込めませんでした
+main.noInventory.text=このキャラクターにはまだインベントリがありません。\n\nゲームのメニューで作成され、一度も世界に入っていないため、セーブにはバッグも装備スロットも武器セットもありません — ゲームは最初に世界へ入ったときにそれらを作ります。\n\nこのキャラクターで一度でもゲームに入れば、装備を編集できるようになります。それ以外 — レベル、属性、スキル、祈祷 — はすでに利用できます。
+main.noInventory.title=まだインベントリがありません
+main.status.openFirst=先にセーブを開いてください。
+
+# ゲームフォルダー
+main.status.noGame=Grim Dawn のフォルダーが見つかりません — 「設定…」を開いて指定してください。
+main.status.gameBase=ゲームデータベース: {0}   言語: {1}
+main.status.gameError=ゲームデータベースを開けませんでした: {0}
+main.askGame.text=Grim Dawn のフォルダーが見つかりませんでした。\n\n検索では Steam ライブラリ、レジストリの GOG とインストーラーの項目、全ドライブの一般的なゲームフォルダーを調べます。ゲームが別の場所にある場合は、そのフォルダー — database\\database.arz があるフォルダー — を指定してください。
+main.askGame.title=Grim Dawn はどこにインストールされていますか？
+
+# アイテムカタログ
+main.catalog.title=アイテムカタログ
+main.catalog.stale=カタログ作成後にゲームファイルが変わりました — アップデートが出たようです。\nアイテムカタログを作り直しますか？
+main.catalog.missing=アイテムカタログはまだ作成されていません。\nゲームファイルから作成しますか？ 数秒かかります。
+main.status.catalog=カタログ: アイテム {0}
+main.status.catalogBuilding=アイテムカタログを作成中…
+main.status.catalogBuilt=カタログを作成しました: アイテム {0}
+main.status.catalogError=カタログを作成できませんでした: {0}
+
+# 手に持っているアイテム
+main.status.noIcon=このアイテムはゲームデータベースにアイコンがないため、マス単位のサイズが不明です — 安全に追加できません。
+main.status.bulkLimit={0} 個のスタックを取りました — この種類の上限です。
+main.status.bulkNoLimit={0} 個のスタックを取りました (この種類の上限はゲームで示されていません — 他と同じく 100 個にしました)。
+main.status.newInHand=新しいアイテムを持っています: {0} ({1}x{2})  —  バッグかスタッシュの空き、装備スロット、またはタブ見出しをクリック。Esc で取り消し。
+main.status.inHand=手に持っています: {0} ({1}x{2})  —  バッグかスタッシュの空き、タブ見出し、装備スロット、または「アイテムを削除」バーをクリック。Esc で取り消し。
+main.status.takenOff=手に外しました: {0}  —  バッグ、スタッシュ、別の合うスロットに入れるか、削除してください。Esc で取り消し。
+main.status.sizeUnknown=このアイテムのサイズが不明です (ゲームデータベースにアイコンがありません) — グリッドからはみ出すおそれがあるため移動できません。
+main.status.noRoom=ここには入りません — 空きが {0}x{1} マス必要です。右クリックか Esc で取り消し。
+main.status.noStacking=«{0}» はスタックできません — ここには空きマスが必要です。
+main.status.stackFull=このスタックはすでに満杯です: {0}。別の場所に置いてください。
+main.status.stackFullOf=このスタックはすでに満杯です: {0} / {1}。別の場所に置いてください。
+main.status.merged={0} 個を重ねました: スタックは {1} 個になりました。
+main.status.mergedRest={0} 個を重ねました: スタックは {1} 個になり、手に {2} 個残っています — 空きに置くか削除してください。
+main.status.addedBag=バッグに追加: {0}
+main.status.addedStash=スタッシュに追加: {0}
+main.status.unequippedBag=外してバッグに入れました: {0}
+main.status.unequippedStash=外してスタッシュに入れました: {0}
+main.status.movedBag=バッグへ移動: {0}
+main.status.movedStash=スタッシュへ移動: {0}
+main.status.equipped=装備しました: {0} → {1}
+main.status.reequipped=付け替えました: {0} → {1}
+main.status.discarded=新しいアイテムを破棄しました: {0} (セーブには入っていません)。
+main.status.deleted=削除しました: {0}   (元のファイルは .bak として隣に残しました)
+main.status.noRoomBag=このバッグには {0}x{1} の空きがありません。
+main.status.noRoomStash=このスタッシュタブには {0}x{1} の空きがありません。
+main.status.cancelled=取り消しました: {0} は元の場所に残っています。
+
+# 装備できない理由
+main.why.noInventory=このキャラクターにはまだインベントリがありません: メニューで作成され、一度もゲームに入っていません。一度でもゲームに入れば、ゲームがバッグ、装備スロット、武器セットを自動で作成し、編集できるようになります。
+main.why.sameSlot=アイテムはすでにこのスロットにあります。
+main.why.wrongSlot=«{0}» は «{1}» スロットに装備できません。
+main.why.slotBusy=«{0}» スロットは使用中です — 先に装備しているものを外してください。
+main.why.level=«{0}» にはレベル {1} が必要です。キャラクターは {2} です。
+main.why.twoHanded=両手武器は両手を使います — 先にオフハンドを空けてください。
+main.why.offHandBusy=メインハンドに両手武器があります — オフハンドも使っています。
+
+# アイテムの編集
+main.status.editArmed=アイテムをクリックすると能力値の編集ウィンドウが開きます。もう一度ボタンを押すと取り消します。
+main.status.editCancelled=編集を取り消しました — クリックがアイテムに当たりませんでした。
+main.status.editNoSeed=このアイテムには検索するものがありません: セーブ由来ではありません。
+main.status.editUnchanged=アイテムは変更されていません。
+main.status.editDone=アイテムを変更して保存しました。
+
+# アイテムを装備するのに足りないもの (ステータスバー)。
+main.need.level=レベル {0} (現在 {1})
+
+# 装備にコンポーネントやオーグメントを入れる（10月2日）。何に何が入るかはゲームの記録から。
+main.status.partAttached=入れました: {0} → {1}
+main.status.partReplaced=入れました: {0} → {1}（「{2}」と差し替え）
+main.status.partWrongItem=「{0}」は「{1}」には入りません。

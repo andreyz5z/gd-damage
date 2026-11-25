@@ -1,0 +1,12 @@
+# DOVEDNOSTI SE ZRANĚNÍM: řádek seznamu „útočit čím“ a části dovednosti („Z čeho se skládá tato dovednost“).
+
+attack.title={0}   ({1}, úr. {2})
+attack.weaponPct={0}% zranění zbraní
+attack.part={0} (úr. {1})
+attack.transmuter={0} (transmutátor, úr. {1})
+attack.transmuterOrphan={0} — transmutátor (úr. {1}): jeho nadřazená dovednost nebyla nalezena
+attack.fromItemInForm=z předmětu, v této podobě: {0}
+attack.fromItem=z předmětu: {0}
+attack.pool=(místo výchozího útoku, {0}%)
+attack.poolNoChance=(místo výchozího útoku)
+attack.onHit=(spouští se při zásahu, {0}%)

@@ -1,0 +1,67 @@
+# FENSTER „GEGENSTAND BEARBEITEN“ und seine Unterfenster: Aufstiegsbonus, Vollendungsbonus des Relikts.
+# Die Wertzeilen des Gegenstands kommen aus dem Tooltip (ein Teil des Wortlauts ist der des Spiels).
+
+edit.title=Gegenstand bearbeiten
+edit.stop=Suche anhalten
+edit.relicBonus=Vollendungsbonus (Relikt)…
+edit.affixes=Präfix und Suffix…
+edit.ascension=Aufstiegsbonus…
+edit.reroll=Gegenstand zufällig neu auswürfeln
+edit.findMax=Nach dem Höchstwurf suchen
+edit.findValues=Nach Werten suchen
+edit.close=Schließen
+edit.notSaved=(gefunden, nicht geschrieben)
+edit.secondEnd=└ das andere Ende derselben Zeile
+edit.hiddenRolls=Ausgewürfelt, aber nicht im Tooltip angezeigt
+edit.perSecond=({0} pro 1 Sek. — das steht im Feld)
+edit.range=von {0}…{1}
+
+# Rechte Leiste: wie die Suche verläuft und wie sie endet
+edit.rerolled=Der Gegenstand wurde neu ausgewürfelt.\nEs wurde nichts gesucht — ein zufälliger Gegenstand ist an sich gültig.\nUm ihn in den Spielstand zu schreiben, drücke „Anwenden“.
+edit.badNumber=Die Zahl in der Zeile «{0}» konnte nicht gelesen werden: {1}
+edit.busy=Suche läuft…
+edit.busyProgress=Suche läuft… {0} Millionen von 2147 geprüft
+edit.searching=Der Gegenstand wird durch Ausprobieren von Werten gesucht.\nWie lange das dauert, hängt von der Geschwindigkeit des Computers ab.
+edit.found=Alle gewählten Zahlen wurden gefunden. Drücke „Anwenden“, um den Gegenstand in den Spielstand zu schreiben.
+edit.impossible=Dieser Wert kommt so nie vor:
+edit.impossibleHint=Gib einen der Werte ein, die rechts neben der Zeile stehen.
+edit.cancelled=Die Suche wurde angehalten.
+edit.notFound=Diese Werte lassen sich nicht zusammen finden. Entferne die Häkchen bei den Werten, die dir weniger wichtig sind, und versuche es erneut.
+edit.hardest=Das schwierigste Feld war: {0}. Alle Möglichkeiten wurden probiert; ein solcher Gegenstand kann im Spiel nicht existieren.
+edit.same=Der Gegenstand ist bereits so. Es gibt nichts zu ändern.
+edit.saved=In den Spielstand geschrieben.\nDer Gegenstand selbst, seine Affixe, Komponente und sein Aufstieg blieben unberührt — er ist ein Gegenstand geblieben, den das Spiel hätte fallen lassen können.
+edit.relicCleared=Der Vollendungsbonus wurde entfernt.
+edit.relicSet=Vollendungsbonus: {0}
+edit.ascensionCleared=Der Aufstiegsbonus wurde entfernt.
+edit.ascensionSet=Aufstiegsbonus: {0}
+edit.report.scanned={0} geprüft in {1} s
+edit.report.found=GEFUNDEN:   ({0})
+edit.report.impossible={0}: dieses Feld ergibt nie den Wert {1}
+
+# Fenster des Aufstiegsbonus
+edit.affixSet=Präfix: {0}\nSuffix: {1}
+edit.affix.title=Präfix und Suffix
+edit.affix.head=Jetzt: Präfix — {0};   Suffix — {1}\nGezeigt werden nur die, die das Spiel Gegenständen dieser Art gibt; ein Punkt markiert die seltenen (grünen).\nDie Zahlen in der Liste sind die für diesen Gegenstand AUSGEWÜRFELTEN: Ein Affix wird ausgewürfelt, und was du hier siehst, bekommst du.
+edit.affix.prefix=Präfix
+edit.affix.suffix=Suffix
+edit.affix.none=keins
+edit.affix.gone=(das Spiel vergibt es nicht mehr — in der Liste steht es nicht)
+edit.affix.clear=Diesen Teil entfernen
+edit.affix.level=Erfordert Stufe {0}
+edit.affix.building=Die Gegenstandstabellen des Spiels werden gelesen — einmal nach einem Update.
+
+edit.asc.title=Aufstiegsbonus
+edit.asc.head=Gezeigt werden nur die Boni, die ein Gegenstand dieser Art haben kann — eine Einhandwaffe hat keinen Anspruch auf die zweihändigen und umgekehrt.
+# edit.asc.unknownClass=unbekannt
+# edit.asc.noPool=nicht ermittelt
+edit.asc.allPools=alle Pools, nicht nur die eigenen
+
+# Fenster des Vollendungsbonus eines Relikts
+edit.relic.title=Vollendungsbonus des Relikts
+edit.relic.head=Relikt: {0}   —   Herstellungsstufe: {1}\nDie Zahlen in der Liste sind die für diesen Gegenstand AUSGEWÜRFELTEN: Der Vollendungsbonus wird ausgewürfelt, und was du hier siehst, bekommst du.
+edit.relic.unknown=unbekannt
+edit.relic.noKind=nicht angegeben
+# edit.relic.noTable=dieses Relikt hat KEINE — es bekommt nie einen Vollendungsbonus
+edit.relic.allTables=alle Tabellen, nicht nur die eigene
+edit.relic.noTableList=Dieses Relikt hat keine Bonustabelle — es bekommt nie einen Vollendungsbonus.
+edit.relic.jitter=(Streuung {0}%)

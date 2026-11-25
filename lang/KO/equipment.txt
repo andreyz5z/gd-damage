@@ -1,0 +1,18 @@
+# 장비 패널: 칸 이름 («… 칸에 장착할 수 없습니다» 메시지에도 나옵니다).
+
+equipment.weapon1=무기 I
+equipment.offhand1=보조 손 I
+equipment.weapon2=무기 II
+equipment.offhand2=보조 손 II
+equipment.head=머리
+equipment.neck=목
+equipment.medal=메달
+equipment.shoulders=어깨
+equipment.chest=상체
+equipment.hands=손
+equipment.waist=허리
+equipment.legs=하체
+equipment.ring1=반지 1
+equipment.feet=발
+equipment.relic=렐릭
+equipment.ring2=반지 2

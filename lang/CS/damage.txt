@@ -1,0 +1,236 @@
+# OKNO „VÝPOČET ZRANĚNÍ“: záložky, tlačítka, pole a výběrové seznamy.
+# Níže vysvětlivky na záložkách a záznam simulace.
+
+damage.title=Výpočet zranění — {0}
+damage.tab.timeline=Simulace boje
+damage.tab.totals=Celkové bonusy
+damage.tab.hit=Zranění na zásah
+damage.tab.target=Nepřítel
+damage.seconds={0} s
+damage.secondsPair={0} a {1}
+
+# Celkové bonusy
+damage.pickActive=Vybrat aktivní dovednosti…
+damage.activeFromSave=počítáno podle uložené hry
+damage.activeChosen=vybráno: {0}
+damage.pickPets=Aktivní spojenci…
+damage.petsNear=spojenci poblíž
+
+# Zranění na zásah
+damage.hit.what=Útočit čím
+damage.hit.plain=Výchozí útok (bez dovednosti)
+
+# Simulace boje: pole a tlačítko
+damage.run.seconds=Sekundy
+damage.run.seed=Semínko
+damage.run.go=Spustit frontu
+damage.run.press=Co mačkáme (podle obnovení)
+damage.run.attack=Výchozí útok
+damage.run.weapon=zbraní
+damage.run.everyLabel=Bez obnovení — mačkat každých
+damage.run.everyTail=s (0 — podle animace)
+
+# Simulace boje: položky seznamů „co mačkáme“ a „výchozí útok“
+damage.press.buff=posílení
+damage.press.buffNotRolled=({0} — nelosuje se)
+damage.press.whenNotRolled={0} — nelosuje se, mačká se podle obnovení
+damage.press.every=bez obnovení — mačkat každých {0} s
+damage.press.anim=bez obnovení — podle animace, každých {0} s
+damage.press.noAnim=bez obnovení — animace nenalezena, zadejte interval
+damage.press.noCooldown=bez obnovení
+damage.press.starHits=hvězda, působí zranění
+damage.press.pet=(spojenec „{0}“, najednou {1}, {2}, {3} útoků/s, dovedností se zraněním {4})
+damage.press.petLives=žije {0} s
+damage.press.petPermanent=trvalý
+damage.press.none=žádné dovednosti se zraněním k mačkání
+damage.attack.form=podoba „{0}“   útočí dovedností „{1}“
+damage.attack.ofForm=(podoba „{0}“)
+damage.attack.channel=soustředěná, pulz každých {0} s
+damage.attack.finale=jednou za {0} zásahů
+damage.attack.charges=náboje až {0}
+damage.attack.byAnimation=bez obnovení, podle animace každých {0} s
+
+# Nepřítel
+damage.target.load=Načíst seznam nepřátel ze hry
+damage.target.reload=Znovu vytvořit seznam nepřátel
+damage.target.find=Hledat podle jména
+damage.target.level=Úroveň
+damage.target.difficulty=Obtížnost
+damage.target.notLoaded=Seznam nepřátel zatím není načten.
+damage.target.pressButton=Stiskněte tlačítko nahoře — program vytvoří seznam nepřátel. Znovu ho vytvářet je třeba jen po aktualizaci hry.
+damage.target.nothing=Nic nenalezeno.
+
+# ─── VYSVĚTLIVKY NA ZÁLOŽKÁCH ───
+
+# Celkové bonusy
+damage.totals.summary=Sečteno z: nasazených předmětů {0} (s komponentami a vylepšeními), bonusů setů {1}, pasivních dovedností {2}, zapnutých dovedností {3}, hvězd oddanosti {4}.
+damage.totals.exact=[přesně]
+damage.totals.overCap=(+{0}% nad maximum)
+damage.totals.resistCap=limit {0}%
+damage.totals.armourRating=hodnocení zbroje {0}
+damage.totals.absorb=pohlcení {0}%
+damage.totals.armourNote=Vlastní zbroj předmětu jde na jeho místo, vše ostatní do všech šesti najednou ({0}), a teprve potom působí +{1}% zbroje. Hodnocení je průměr míst vážený podílem zásahů do dané oblasti. Pohlcení je základních 70% vynásobených „+% pohlcení zbroje“, nejvýš 100%.
+damage.totals.block=šance na vykrytí {0}%   vykryté zranění {1}
+damage.totals.blockNote=Šance na vykrytí se sčítá — „šance na vykrytí“ štítu plus „+% šance na vykrytí“ odkudkoli — nenásobí se. Vykryté zranění je základ štítu × (1 + % vykrytého zranění).
+damage.totals.pets=Bonusy spojenců
+damage.totals.petsNote=Působí jen na vyvolané bytosti a na vás se nevztahují. Zdrojů: {0}.
+damage.totals.petCapItem={0} {1}% (+{2}% nad maximum)
+damage.totals.petCapNote=Narazilo to na limit {0}% a panel hry ukazuje už oříznuté číslo: {1}. Přebytek nepropadá: nepřátelé snižující odolnosti ukrajují nejprve z něj.
+damage.totals.missing=Co v tomto součtu ještě chybí
+damage.totals.missingProcs=Dovednosti, které se spouštějí za podmínky místo trvalého působení: procy povolání, dovednosti z předmětů a procy oddanosti.
+damage.totals.missingPressed=Dovednosti, které je třeba mačkat — jejich bonusy trvají jen pár sekund.
+damage.totals.skipped=Vynecháno: {0}.
+damage.totals.toggledOff=Vypnuté přepínatelné dovednosti: {0}. Zapnuté v součtu jsou — uložená hra si pamatuje, co je zapnuto.
+damage.totals.chosenByHand=Vybráno ručně (tlačítko „Vybrat aktivní dovednosti“): {0}.
+damage.totals.missingConversion=Přeměna zranění. Procenta k typu zranění jsou ukázána tak, jak jsou, ale ve hře působí až po přeměně: „+200% fyzického zranění“ nedá nic buildu, který přeměňuje všechno fyzické zranění.
+damage.totals.missingScaling=Škálování zranění atributy: Rafinovanost zvyšuje fyzické a bodné zranění, Duchovno magické typy. Vzorce jsou známé, ale to je další vrstva.
+damage.totals.missingCap=Limit odolností. Bonusy jsou tu sečtené tak, jak jsou, takže číslo může přesáhnout 80% — ve hře se zastaví na limitu (80% plus bonusy „k maximu“, zobrazené vedle). Přebytek nad limitem není zbytečný: bossové odolnosti snižují.
+damage.totals.missingDifficulty=Postih odolností za obtížnost (−25 na Elitní, −50 na Ultimátní) tu odečten není: uložená hra neříká, na jaké obtížnosti právě jste.
+damage.totals.notStacked=Co se nesčítalo
+damage.totals.notStackedNote=Snížení odolností typu „X snížení“ a „X% snížení“, snížení zranění cíle a jeho přesnosti se nesčítají: v každém okamžiku působí nejsilnější zdroj. Zde je vzat nejsilnější, ne součet.
+damage.totals.notStackedItem={0}: zdrojů {1}, vzat nejsilnější {2}
+
+# Nápověda „z čeho je to sečteno“ při najetí na řádek součtu
+damage.terms.pet=(bonus spojenců)
+damage.terms.byMax=nesčítá se: vzat nejsilnější ze zdrojů ({0})
+damage.terms.summedOne=sečteno ze zdrojů: {0}
+damage.terms.summedMany=sečteno ze zdrojů: {0}
+damage.terms.winner=← působí
+damage.terms.total=celkem {0}
+
+# Zranění na zásah
+damage.hit.plainTitle=Výchozí útok
+damage.hit.plainWeapon=Výchozí útok: {0}
+damage.hit.skillTitle={0}   ({1}, úr. {2})
+damage.hit.weapon=zbraň: {0}
+damage.hit.attackSpeed={0} útoků za s   ({1}% útočné rychlosti)
+damage.hit.castSpeed={0}% rychlosti kouzlení
+damage.hit.castCapped=(narazila na limit {0}%)
+damage.hit.channel=soustředěná: pulz každých {0} s
+damage.hit.perHit={0} – {1} na zásah
+damage.hit.overTime=(za sekundu, {0} s)
+damage.hit.none=Žádné zranění.
+damage.hit.bare=Bez dočasných efektů ({0}): {1} – {2} na zásah — právě toto číslo ukazuje panel ve hře.
+damage.hit.how=Jak se to počítá
+damage.hit.howBase=Základ je zranění zbraně plus ploché bonusy předmětů. Ploché zranění živly se dělí na tři stejné díly mezi oheň, chlad a elektrický výboj.
+damage.hit.howConversion=Přeměny berou podíly základu a podíly se sčítají, místo aby působily postupně. Průraz zbroje je poslední přeměna, ze zbytku.
+damage.hit.howMultiplier=Každý podíl se násobí (1 + atribut/dělitel + % typu + % živlů + % veškerého zranění). Dělitelé: Rafinovanost/245 a /215, Duchovno/215 a /200.
+damage.hit.howTotal=Panel postavy ve hře ukazuje „+X% zranění <typ>“ jako procento TYPU PLUS „% veškerého zranění“ — v jednom řádku.
+damage.hit.howTotalSome=Tato postava má +{0}% veškerého zranění, takže panel hry ukáže procento každého typu o tolik vyšší než naše.
+damage.hit.howTotalNone=Tato postava nemá „% veškerého zranění“, takže procenta se shodnou.
+damage.hit.howAll=„% veškerého zranění“ platí pro KAŽDÝ druh zranění, včetně zranění v čase — výjimky nejsou.
+damage.hit.howDots=Zranění v čase je ukázáno za sekundu — tak je v záznamu uloženo, dělit netřeba. Bonus k trvání toto číslo nemění: efekt trvá déle, ale za sekundu působí stejně.
+
+# Zranění na zásah: oplácení
+damage.retaliation.title=Oplácení (protiútok)
+damage.retaliation.note=To je PANEL „Oplácení“ ve vlastnostech postavy, ne část zásahu. Počítá se jinak: atributy a procenta k typům zranění na něj nepůsobí, jen „+% oplácejícího zranění“ — máte +{0}%. Přeměny ale působí, a to tytéž jako u běžného zranění.
+damage.retaliation.note2=Protiútok funguje jen proti útokům zblízka, jen na toho, kdo vás udeřil, a jen když jste skutečně zasaženi; sám nemůže minout a nezasahuje kriticky. Odražení zranění („X% utrženého zranění se odráží“) je NĚCO JINÉHO a ve vlastnostech postavy nikdy není: závisí na zranění toho, kdo vás bije.
+
+# Zranění na zásah: po rukou
+damage.hands.title=Kolik to je v každé ruce
+damage.hands.both=To je totéž, co hra ukazuje v nápovědě dovednosti. Podíl zranění zbraní je pro obě ruce STEJNÝ ({0}%) a čísla v závorkách se liší, protože zbraně v rukou jsou různé. Do závorky patří i zranění v čase této ruky: panel hry ho počítá stejně.
+damage.hands.oneMain=Řádek je JEDEN, protože dovednost útočí jednou rukou — hlavní — a hra v nápovědě ukazuje přesně tolik řádků. Která ruka to je, je zapsáno v ANIMACI dovednosti: každá sada vybavení má svůj soubor a události zásahu v něm určují ruce. Vyměňte zbraň za obouruční nebo nasaďte štít — řádek se může změnit, i ve hře.
+damage.hands.oneOff=Řádek je JEDEN, protože dovednost útočí jednou rukou — druhou — a hra v nápovědě ukazuje přesně tolik řádků. Která ruka to je, je zapsáno v ANIMACI dovednosti: každá sada vybavení má svůj soubor a události zásahu v něm určují ruce. Vyměňte zbraň za obouruční nebo nasaďte štít — řádek se může změnit, i ve hře.
+damage.hands.single=Ruka je jedna, protože zbraň je jedna. Do závorky patří i zranění v čase této ruky: panel hry ho počítá stejně.
+damage.hands.ownShare=v nápovědě samotné dovednosti bude méně — jen její vlastní podíl {0}%:
+damage.hands.lineMain={0}% zranění zbraní v hlavní ruce ({1} - {2})
+damage.hands.lineOff={0}% zranění zbraní ve druhé ruce ({1} - {2})
+
+# Zranění na zásah: z čeho se dovednost skládá
+damage.parts.title=Z čeho se skládá tato dovednost
+damage.parts.temporary=— dočasný efekt
+damage.parts.oneHandMain=— útočí jednou rukou, hlavní
+damage.parts.oneHandOff=— útočí jednou rukou, druhou
+damage.parts.weaponPct={0}% zranění zbraní
+damage.parts.conversion=přeměna {0}%: {1} → {2}   (působí před přeměnami postavy)
+damage.parts.notCounted=NESEČTENO: {0}
+
+# Zranění na zásah: zásah spojence
+damage.pet.title={0}   (zásah spojence „{1}“, {2})
+damage.pet.summonedBy=vyvolán dovedností „{0}“
+damage.pet.withConversion=Zranění s přeměnou — tak doopravdy útočí
+damage.pet.noNumbers=tato dovednost nemá čísla
+damage.pet.asGame=Jak to ukazuje hra — bez přeměny
+damage.pet.asGameNote=Hra přeměnu spojence nikde neukazuje: změřeno šesti čísly a potvrzeno snímky — s „Gholovým znakem“ i bez něj je popis dovednosti stejný. Působí přitom stejně jako u postavy.
+damage.pet.notYours=Toto je zásah SPOJENCE a s vaším zásahem se srovnat nedá: nepochází z vaší zbraně, vaše procenta zranění se na něj nevztahují, vztahují se na něj bonusy spojenců.
+
+# Simulace boje: nápověda před prvním spuštěním
+damage.help.title=Fronta zásahů v čase
+damage.help.press=Stiskněte „Spustit frontu“: každý švih se odehraje zvlášť — zásah, které ruce vyšly, a zranění KAŽDÉHO řádku vlastním hodem v jeho rozsahu. Řádky se objevují hned, jak se počítá. Nahoře je výsledek: zranění za sekundu, medián sekundových součtů, zdraví cíle a čas jeho zabití (TTK).
+damage.help.twoNumbers=DVĚ ČÍSLA V ŘÁDKU: první je to, co k cíli DOŠLO, po rukou; v závorce „zranění bez bonusů“ je to, co od nás vyšlo: už s kritickým zásahem, ale ještě bez rasového bonusu, zbroje (snižuje jen fyzické) a odolností se sníženími. První číslo může být i VĚTŠÍ než druhé: jakmile naše snížení srazí odolnost cíle pod nulu, už nesnižuje, ale zesiluje. DPS, medián, zranění za běh a TTK se počítají podle DOŠLÉHO.
+damage.help.target=Cíl se bere ze záložky „Nepřítel“ — ten tam vybraný, s jeho úrovní a obtížností. Není-li vybrán žádný, použije se tréninková atrapa ze souborů hry.
+damage.help.pets=SPOJENCI: zaškrtnutí se vyvolají na začátku a dál podle obnovení vyvolání, dokud nenarazí na limit svého druhu; ti, kteří se spouštějí sami (hvězda, dovednost předmětu), přicházejí i bez zaškrtnutí. Každý útočí svým výchozím útokem a svými dovednostmi s jejich četností a jeho zásah a kritický zásah se losují jako vaše.
+damage.help.counted=Počítají se: švihy, zmáčknuté dovednosti, soustředění, zásoba zbraní, procy, hvězdy, zraňující aury, zranění v čase, stupně kritického zásahu, snížení odolností, rasový bonus, snížení zdraví, podoby a spojenci.
+damage.help.seed=Semínko dělá běh opakovatelným: stejné semínko dá stejný běh až do poslední číslice. Změňte jen je — uvidíte rozptyl; změňte build při stejném semínku — uvidíte, co build změnil.
+
+# Simulace boje: během běhu
+damage.run.building=Sestavuje se fronta…
+damage.run.buildingNote=každý zásah dostává vlastní zranění s vlastními hody a dlouhý běh jich má tisíce
+damage.run.progress=Sestavuje se fronta…   {0} z {1} s   (řádků {2})
+
+# Simulace boje: výsledek
+damage.run.buffsUp=Aktivovaná posílení: {0}   — jdou do fronty podle obnovení na vlastní dobu (bez doby v záznamu — celý běh) a mění vlastnosti, místo aby útočila samostatným zásahem
+damage.run.target=Cíl: {0}
+damage.run.targetLevel=úroveň {0}, obtížnost {1}
+damage.run.targetStats=obranná schopnost {0}   zbroj {1}
+damage.run.hitChance=šance zasáhnout {0}%
+damage.run.mainSpell={0} „{1}“ místo výchozího útoku: rychlost kouzlení {2}%, každých {3} s, zásahů za běh {4}
+damage.run.targetResists=odolnosti cíle: {0}
+damage.run.gear=dovednosti z předmětů a setů:
+damage.run.queue=Fronta
+damage.run.summary=Výsledek běhu
+damage.run.dps=Zranění za sekundu (DPS)  {0}     medián sekundových součtů {1}
+damage.run.total=zranění za běh {0} za {1} s
+damage.run.targetLife=zdraví cíle {0}
+damage.run.killedAt=zabit za {0} s (TTK)
+damage.run.dummyNote=— jen orientačně: atrapa ve hře nikdy neumře
+damage.run.notKilled=za běh nezabit — zbývá {0}%
+damage.run.percentLife=snížení zdraví ubralo {0} (krát {1})
+damage.run.percentLifeBlocked=dalších {0}krát ho odolnost cíle {1}% zcela zrušila
+damage.run.swings=švihy {0}, zásahy {1}, minutí {2}, kritické {3}
+damage.run.tier=stupeň {0}: {1}
+damage.run.hands=ruce: obě {0}, první {1}, druhá {2}
+damage.run.procs=samospouštěcí: procy {0} (jejich zranění {1})
+damage.run.pool=zásoba zbraní {0}
+damage.run.silent=bez zranění {0}: {1}
+damage.run.pets=spojenci: zásahy {0}, vyvolání {1}, jejich zranění {2}
+damage.run.petsShare=— {0}% celku
+damage.run.stars=hvězdy oddanosti
+damage.run.dots=zranění v čase: nasazeno {0}, obnoveno {1}, jeho zranění {2} z {3}
+damage.run.before=zranění bez bonusů bylo {0} — došlo {1}% (rasový bonus, zbroj, odolnosti se sníženími)
+damage.run.conditions=Podmínky běhu
+damage.run.rolls=Provedeno hodů v rozsazích: {0} — jeden na každý řádek zranění v každém zásahu.
+damage.run.critNote=Kritické zásahy se stupni se počítají: jeden hod rozhoduje o zásahu i stupni a „+% kritického zranění“ se přičítá k násobku stupně. Samotná ŠANCE na kritický zásah se s hrou shoduje u silných cílů a je nadsazená u slabých — bonusy nestvůr z jejich vybavení nejsou započteny.
+damage.run.dotNote=Zranění v čase se nasazují a pulzují: jeden zdroj má JEDEN takový efekt — nový zásah prodlouží dobu a zvedne zranění na nejlepší, místo aby začal druhý. Veškeré zranění zbraní (obě ruce a dovednosti s podílem zbraně) se počítá jako JEDEN zdroj; dovednosti bez podílu zbraně jsou vlastní zdroje.
+damage.run.noteRough=ZJEDNODUŠENO: {0}
+damage.run.noteUnread=NEPŘEČTENO: {0}
+damage.run.noteHint=TIP: {0}
+damage.run.pressNote=Zaškrtnuté dovednosti se mačkají, jakmile se obnoví: na začátku všechny najednou, dál každá podle vlastního obnovení (se zkrácením od předmětů a modifikátorů). Dovednost útočící oběma rukama útočí VŽDY oběma a každá ruka míjí vlastním hodem.
+damage.run.procNote=PROCY a dovednosti „místo výchozího útoku“ v seznamu zaškrtávaných záměrně NEJSOU: nikdo je nemačká. Odehrávají se samy — vlastním hodem při každém zásahu a vlastním obnovením.
+damage.run.silentNote=SPUŠTĚNO BEZ ZRANĚNÍ — hvězdy oddanosti a dovednosti předmětů, které vyvolávají, nasazují posílení nebo oslabení. Jejich hod a obnovení jsou skutečné; posílení působí svou dobu, oslabení jde na cíl a vyvolaná bytost vstoupí do zásoby a útočí vlastními řádky.
+damage.run.failed=Běh se nezdařil: {0}
+
+# Nepřítel: panel nepřítele
+damage.enemy.title={0}   ({1}, úroveň {2}, obtížnost {3})
+damage.enemy.variants=V databázi je záznamů s tímto jménem: {0} — liší se jen úrovní, na které se potkávají; vzat je nejúplnější a úroveň se volí výše.
+damage.enemy.combat=Bojové parametry
+damage.enemy.abilities=obranná schopnost {0}   útočná schopnost {1}
+damage.enemy.life=zdraví {0}   zbroj {1}
+damage.enemy.gearArmour=(z toho {0} z vybavení)
+damage.enemy.resists=Odolnosti
+damage.enemy.none=žádné
+damage.enemy.hit=Zasažení
+damage.enemy.ourAttack=naše útočná schopnost {0}   proti jeho obraně {1}
+damage.enemy.hitChance=šance zasáhnout {0}%   šance na kritický zásah {1}%
+damage.enemy.ourDefence=naše obranná schopnost {0}   proti jeho útoku {1}
+damage.enemy.getHit=šance být zasažen {0}%   šance obdržet kritický zásah {1}%
+
+# Hodnost nepřítele v seznamu a v záhlaví záložky „Nepřítel“. Hra pro hodnosti vlastní slova nemá.
+damage.enemy.rank.superBoss=nemesis
+damage.enemy.rank.boss=boss
+damage.enemy.rank.quest=úkolový
+damage.enemy.rank.hero=hrdina
+damage.enemy.rank.champion=šampion
+damage.enemy.rank.common=běžný
+damage.enemy.variantsShort=(záznamů {0})
+damage.attack.byCooldown=místo zbraně, podle obnovení každých {0} s

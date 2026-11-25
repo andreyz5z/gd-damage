@@ -1,0 +1,12 @@
+# SCHADENSFÄHIGKEITEN: die Zeile in der Liste „Angreifen mit“ und die Teile einer Fähigkeit („Woraus diese Fähigkeit besteht“).
+
+attack.title={0}   ({1}, St. {2})
+attack.weaponPct={0}% Waffenschaden
+attack.part={0} (St. {1})
+attack.transmuter={0} (Transmutator, St. {1})
+attack.transmuterOrphan={0} — Transmutator (St. {1}): seine Stammfähigkeit wurde nicht gefunden
+attack.fromItemInForm=von einem Gegenstand, in dieser Gestalt: {0}
+attack.fromItem=von einem Gegenstand: {0}
+attack.pool=(statt des Standardwaffenangriffs, {0}%)
+attack.poolNoChance=(statt des Standardwaffenangriffs)
+attack.onHit=(löst bei Treffer aus, {0}%)

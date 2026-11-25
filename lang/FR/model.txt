@@ -1,0 +1,36 @@
+# NOTES SUR LE CALCUL DU COUP (onglet « Dégâts par coup », section « Comment c'est calculé »).
+
+model.bareHands=Il n'y a pas d'arme dans la main principale. Les dégâts du poing lui-même ne sont pas comptés — seulement ce que donnent les compétences, la dévotion et les objets ; dans le jeu, un personnage à mains nues a quelques points de dégâts physiques en plus.
+model.dualDot=Avec deux armes, les dégâts sur la durée ne sont pas répartis par main : {0} vaut 0,75 de la somme des dégâts sur la durée des DEUX mains et de ceux du personnage, chaque source étant comptée UNE fois. Par main, le jeu affiche « dégâts sur la durée de cette main + ceux du personnage » en entier, donc la ligne « par coup » peut être plus grande comme plus petite qu'une main. Seuls les dégâts sur la durée portés par l'arme elle-même sont traités ainsi (un composant à l'intérieur ne compte pas).
+model.plainAttack=C'est l'attaque armée par défaut avec l'arme de la main principale. Une compétence peut être choisie dans la liste ci-dessus.
+model.skill=Compétence « {0} », niveau {1}.
+model.skillNoWeapon=Elle n'a pas de part de dégâts de l'arme — l'arme n'entre donc pas du tout dans ce coup, ni les bonus fixes des objets : seuls les dégâts propres de la compétence sont comptés.
+model.skillWeapon={0} % des dégâts de l'arme : ce multiplicateur s'applique aux dégâts de l'arme avec ses dégâts sur la durée, mais pas aux dégâts fixes propres de la compétence.
+model.charge=La compétence se charge : {0} % à la dernière charge. Le panneau du jeu compte avec ce chiffre même sans charges accumulées, et le multiplicateur ne s'applique qu'à la part de dégâts de l'arme — les dégâts fixes propres de la compétence restent intacts. L'infobulle de la compétence elle-même ne porte pas ce multiplicateur : la part y est affichée comme {1} %.
+model.modifiers=Modificateurs de compétence intégrés à ce coup : {0}. Leurs pourcentages appartiennent à l'attaque, pas au personnage — c'est pourquoi ils sont absents de l'onglet des bonus totaux. Le jeu les intègre aussi : pour « Cadence », il affiche 210 degrés et 5 cibles, et ce sont les nombres d'« Esprit combatif ».
+model.temporaryIn=Un effet temporaire de la compétence est intégré ici : {0}. Il s'applique quand la compétence touche et dure quelques secondes — tant que vous continuez à attaquer, il reste donc actif. Mais le panneau du jeu montre la compétence SANS lui, comparez donc le panneau au chiffre sans effets temporaires (ci-dessous).
+model.temporaryOut=Les effets temporaires ({0}) ne sont pas intégrés ici.
+model.retaliation=La compétence ajoute au coup {0} % des dégâts de représailles du personnage — c'est compté et réparti par type. RESTE : pour « Rempart de Menhir », la règle donne 1089 de feu contre les 1092 nécessaires, soit 0,28 % d'écart ; d'où viennent ces trois points n'est pas établi.
+model.notCounted=Non intégré : {0}.
+model.notModelled=Non pris en compte : le cumul des dégâts sur la durée de sources différentes, les coups critiques, les bonus contre un type de monstre (ils multiplient tout à la fin) et les résistances de la cible.
+
+# Noms des types de dégâts dans les lignes « Dégâts par coup » et de représailles : « 1234 dégâts de feu ».
+model.type.Physical=dégâts physiques
+model.type.Pierce=dégâts perforants
+model.type.Fire=dégâts de feu
+model.type.Cold=dégâts de froid
+model.type.Lightning=dégâts de foudre
+model.type.Poison=dégâts d'acide
+model.type.Life=dégâts de vitalité
+model.type.Aether=dégâts d'éther
+model.type.Chaos=dégâts de chaos
+model.type.Bleeding=saignement
+
+# Noms des dégâts sur la durée : « 2072 de brûlure par seconde ».
+model.dot.Physical=trauma interne
+model.dot.Fire=brûlure
+model.dot.Cold=brûlure gel
+model.dot.Lightning=électrocution
+model.dot.Poison=poison
+model.dot.Life=perte de vitalité
+model.dot.Bleeding=saignement

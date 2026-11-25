@@ -1,0 +1,14 @@
+# FINESTRA «IMPOSTAZIONI».
+
+settings.title=Impostazioni
+settings.gameFolder=Cartella di Grim Dawn:
+settings.gameFolder.browse=La cartella in cui è installato Grim Dawn
+settings.savesFolder=Cartella dei salvataggi (per la finestra di apertura):
+settings.savesFolder.browse=La cartella con i tuoi salvataggi
+settings.browse=Scegli…
+settings.language=Lingua:
+settings.rebuildCatalog=Ricrea il catalogo degli oggetti
+settings.rawFields=Mostra tutti i campi del record nella descrizione dell'oggetto
+settings.fileHint=settings.json si trova accanto al programma
+settings.ok=OK
+settings.cancel=Annulla

@@ -1,0 +1,44 @@
+# アイテムカタログ (メインウィンドウの左列)。
+
+catalog.title=アイテムカタログ
+catalog.wearable=装備できるものすべて
+catalog.everything=すべてのアイテム
+catalog.search=名前の一部…
+catalog.bonus=ボーナス: 攻撃速度…
+catalog.bulkHint=Ctrl + 左クリック — スタックで取る
+catalog.count=アイテム {0}
+catalog.notBuilt=(カタログ未作成)
+catalog.hidden=(フィルターで非表示 {0})
+catalog.level=Lv. {0}
+
+# レアリティ
+catalog.rarity.common=コモン
+catalog.rarity.magical=マジック
+catalog.rarity.rare=レア
+catalog.rarity.epic=エピック
+catalog.rarity.legendary=レジェンダリー
+catalog.rarity.quest=クエスト
+
+# 区分
+catalog.category.head=防具: 頭
+catalog.category.shoulders=防具: 肩
+catalog.category.chest=防具: 胸
+catalog.category.hands=防具: 手
+catalog.category.waist=防具: 腰
+catalog.category.legs=防具: 脚
+catalog.category.feet=防具: 足
+catalog.category.amulet=装身具: アミュレット
+catalog.category.ring=装身具: 指輪
+catalog.category.medal=装身具: メダル
+catalog.category.relic=レリック
+catalog.category.weapon1h=武器: 片手
+catalog.category.weapon2h=武器: 両手
+catalog.category.ranged1h=武器: ピストル
+catalog.category.ranged2h=武器: ライフル
+catalog.category.shield=オフハンド: 盾
+catalog.category.offhand=オフハンド: 呪具
+catalog.category.component=構成材
+catalog.category.augment=増強剤
+catalog.category.consumable=消耗品
+catalog.category.crafting=素材と設計図
+catalog.category.other=その他

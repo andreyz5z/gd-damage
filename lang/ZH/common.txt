@@ -1,0 +1,27 @@
+# 多个窗口共用：按钮、技能来源、物品部件。
+
+common.apply=应用
+common.cancel=取消
+common.search=搜索：
+common.nothingFound=什么也没找到。
+common.put=设置
+common.clearBonus=移除加成
+
+# 游戏难度（「裂缝之门」标签页、敌人标签页）
+common.difficulty.normal=普通
+common.difficulty.elite=精英
+common.difficulty.ultimate=终极
+
+# 技能来源（战宠和主动技能窗口中的小标题）
+common.source.mastery=专精技能
+common.source.devotion=星座信仰
+common.source.item=来自物品：{0}
+common.source.set=套装：{0}（{1}）
+common.source.setName=套装：{0}
+
+# 技能随附的物品部件：「来自物品：名称（前缀）」
+common.part.prefix=（前缀）
+common.part.suffix=（后缀）
+common.part.component=（镶嵌物）
+common.part.augment=（增幅）
+common.part.ascension=（飞升）

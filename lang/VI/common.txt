@@ -1,0 +1,27 @@
+# DÙNG CHUNG CHO NHIỀU CỬA SỔ: nút, nguồn gốc kỹ năng, các phần của vật phẩm.
+
+common.apply=Áp Dụng
+common.cancel=Hủy
+common.search=Tìm:
+common.nothingFound=Không tìm thấy gì.
+common.put=Đặt
+common.clearBonus=Bỏ chỉ số thưởng
+
+# Độ khó trò chơi (thẻ «Cổng Biến», thẻ kẻ địch)
+common.difficulty.normal=Bình Thường
+common.difficulty.elite=Cao Cấp
+common.difficulty.ultimate=Tối Thượng
+
+# Nguồn gốc kỹ năng (tiêu đề phụ trong cửa sổ thuộc hạ và kỹ năng đang bật)
+common.source.mastery=kỹ năng nghề
+common.source.devotion=tín ngưỡng
+common.source.item=từ vật phẩm: {0}
+common.source.set=bộ: {0} ({1})
+common.source.setName=bộ: {0}
+
+# Phần của vật phẩm mà kỹ năng đi kèm: «từ vật phẩm: Tên (tiền tố)»
+common.part.prefix=(tiền tố)
+common.part.suffix=(hậu tố)
+common.part.component=(phụ kiện)
+common.part.augment=(nâng cấp)
+common.part.ascension=(thăng hoa)

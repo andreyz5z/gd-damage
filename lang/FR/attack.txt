@@ -1,0 +1,12 @@
+# COMPÉTENCES À DÉGÂTS : la ligne de la liste « attaquer avec » et les parties d'une compétence (« De quoi est faite cette compétence »).
+
+attack.title={0}   ({1}, niv. {2})
+attack.weaponPct={0} % des dégâts de l'arme
+attack.part={0} (niv. {1})
+attack.transmuter={0} (transmutateur, niv. {1})
+attack.transmuterOrphan={0} — transmutateur (niv. {1}) : sa compétence parente est introuvable
+attack.fromItemInForm=d'un objet, sous cette forme : {0}
+attack.fromItem=d'un objet : {0}
+attack.pool=(au lieu de l'attaque armée par défaut, {0} %)
+attack.poolNoChance=(au lieu de l'attaque armée par défaut)
+attack.onHit=(se déclenche au coup, {0} %)

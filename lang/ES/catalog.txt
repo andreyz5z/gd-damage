@@ -1,0 +1,44 @@
+# EL CATÁLOGO DE OBJETOS (columna izquierda de la ventana principal).
+
+catalog.title=Catálogo de objetos
+catalog.wearable=Todo lo equipable
+catalog.everything=Todos los objetos
+catalog.search=parte de un nombre…
+catalog.bonus=bonificación: velocidad de ataque…
+catalog.bulkHint=Ctrl + clic izquierdo — coger un montón
+catalog.count={0} objetos
+catalog.notBuilt=(catálogo no creado)
+catalog.hidden=({0} ocultos por los filtros)
+catalog.level=niv. {0}
+
+# Rareza
+catalog.rarity.common=Común
+catalog.rarity.magical=Mágico
+catalog.rarity.rare=Raro
+catalog.rarity.epic=Épico
+catalog.rarity.legendary=Legendario
+catalog.rarity.quest=Misión
+
+# Secciones
+catalog.category.head=Armadura: cabeza
+catalog.category.shoulders=Armadura: hombros
+catalog.category.chest=Armadura: pecho
+catalog.category.hands=Armadura: manos
+catalog.category.waist=Armadura: cintura
+catalog.category.legs=Armadura: piernas
+catalog.category.feet=Armadura: pies
+catalog.category.amulet=Joyería: amuletos
+catalog.category.ring=Joyería: anillos
+catalog.category.medal=Joyería: medallas
+catalog.category.relic=Reliquias
+catalog.category.weapon1h=Armas: a una mano
+catalog.category.weapon2h=Armas: a dos manos
+catalog.category.ranged1h=Armas: pistolas
+catalog.category.ranged2h=Armas: rifles
+catalog.category.shield=Mano izquierda: escudos
+catalog.category.offhand=Mano izquierda: objetos de concentración
+catalog.category.component=Componentes
+catalog.category.augment=Potenciadores
+catalog.category.consumable=Consumibles
+catalog.category.crafting=Ingredientes y planos
+catalog.category.other=Otros

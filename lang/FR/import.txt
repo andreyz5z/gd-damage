@@ -1,0 +1,57 @@
+# Importer un personnage depuis GrimTools (le relevé est MECHANICS 106)
+import.button=Importer un personnage depuis GrimTools
+import.warning=Nous allons essayer d'équiper votre personnage d'après les données de GrimTools. Votre équipement porté actuel sera détruit et toutes les caractéristiques du personnage réécrites à partir de l'import. Si un élément de votre lien n'est pas reconnu, cet emplacement ne sera pas modifié. Voulez-vous vraiment continuer ?
+import.title=Importer un personnage depuis GrimTools
+import.paste=Collez un lien vers un build — par exemple, https://www.grimtools.com/calc/2ELApkPN
+import.go=Importer
+import.close=Fermer
+import.seedNote=Les objets seront exactement les mêmes, mais les nombres à l'intérieur de leurs fourchettes seront les nôtres : le build ne contient aucun tirage. Chaque objet peut ensuite être ajusté dans la fenêtre d'édition.
+import.badLink=Cela ne ressemble pas à un lien vers un build GrimTools.
+import.err.build=La page s'est ouverte, mais elle ne contient aucun build. Vérifiez le lien : il doit mener à la page d'un build.
+import.err.other=Cela n'a pas marché : {0}
+import.step.page=Lecture de la page du build…
+import.step.database=Téléchargement de la base de GrimTools…
+import.step.match=Rapprochement avec les enregistrements du jeu…
+import.result.gear=Objets portés : {0} ; emplacements vidés : {1}
+import.result.skills=Compétences : {0}, étoiles de dévotion : {1}, liens de pouvoirs célestes : {2}
+import.result.bio=Niveau {0} ; constitution {1}, ruse {2}, esprit {3}
+import.missed.items=Objets non reconnus : {0} — ces emplacements ont été laissés tels quels ({1})
+
+# Le déroulement et sa fin. 2 octobre : l'utilisateur ne voyait ni l'un ni l'autre.
+import.step.reading=Dépouillement de la base de GrimTools…
+import.step.haveDatabase=La base de GrimTools est déjà dépouillée — rien à télécharger.
+import.step.dress=Équipement du personnage…
+import.status.database=Téléchargement de la base de GrimTools, fichier {0} sur {1} : {2} sur {3} Mo
+import.status.databaseSoFar=Téléchargement de la base de GrimTools, fichier {0} sur {1} : {2} Mo
+import.status.done=Terminé. Le personnage est équipé — fermez la fenêtre pour le voir.
+import.status.donePartly=Terminé, mais tout n'est pas passé — voyez les détails ci-dessus.
+import.status.failed=Cela n'a pas marché.
+# Les ennuis, chacun sous son propre nom au lieu d'un seul « cela n'a pas marché ».
+import.err.network=Pas de liaison avec le site GrimTools. Vérifiez votre internet et réessayez.
+import.err.page=La page du build ne s'est pas ouverte — le site a répondu {0}. Vérifiez le lien ; le site est peut-être indisponible en ce moment.
+import.err.timeout=Le site GrimTools n'a pas répondu. Vérifiez votre connexion internet — le site est peut-être indisponible en ce moment.
+import.err.database=La base de GrimTools n'a pas pu être lue — il n'y a rien à reprendre. Réessayez.
+import.err.catalog=Le catalogue des objets du jeu n'a pas pu être construit. Vérifiez que le dossier du jeu est bien indiqué.
+# Ce qui n'est pas passé, en nombre : leurs numéros ne diraient rien à personne.
+import.missed.parts=Parties d'objets non reconnues : {0} — les objets sont portés, mais sans elles.
+import.missed.skills=Compétences non reconnues : {0}
+import.missed.powers=Pouvoirs célestes non reconnus : {0}
+import.missed.shapes=Liens sur des compétences de métamorphose non reconnus : {0}
+import.missed.repeats=Enregistrements venus deux fois : {0} — les répétitions ont été laissées de côté.
+# Les noms des emplacements. Un build les appelle weapon1Alt et amulet : pas des noms pour une personne.
+import.slot.head=Tête
+import.slot.amulet=Cou
+import.slot.chest=Torse
+import.slot.legs=Jambes
+import.slot.feet=Pieds
+import.slot.hands=Mains
+import.slot.ring1=Anneau 1
+import.slot.ring2=Anneau 2
+import.slot.waist=Ceinture
+import.slot.shoulders=Épaules
+import.slot.medal=Médaille
+import.slot.relic=Relique
+import.slot.weapon1=Arme
+import.slot.weapon2=Bouclier ou seconde main
+import.slot.weapon1Alt=Arme (second jeu)
+import.slot.weapon2Alt=Bouclier ou seconde main (second jeu)

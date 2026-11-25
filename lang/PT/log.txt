@@ -1,0 +1,185 @@
+# O REGISTRO DA SIMULAÇÃO DE COMBATE (aba «Simulação de combate»): linhas, motivos e notas após uma execução.
+#
+# Os números decimais chegam já escritos (com ponto), dentro de {n} nada é recalculado. Os sinais de comparação
+# «<», «≥», «→», os parênteses e as vírgulas entre as partes de uma linha são colocados pelo programa.
+
+# O que faz uma habilidade que não golpeia sozinha. A palavra aparece no registro («aprimoramento, sem dano»),
+# na lista «o que apertamos» e nas notas da execução.
+log.effect.damage=dano
+log.effect.summon=invocação
+log.effect.buff=aprimoramento
+log.effect.debuff=enfraquecimento
+log.effect.none=sem dano no registro
+
+# Uma linha: «12.34 s  golpe: as duas mãos   812 e 790   (dano sem bônus 1020 e 990)   [motivo]».
+log.line.at={0} s
+log.line.and=e
+log.line.before=(dano sem bônus {0})
+log.seconds={0} s
+log.from=de «{0}»
+log.target.dummy=boneco
+log.target.generic=alvo
+
+# Mãos. «golpe: as duas mãos», «crítico mão principal, nível 2», «principal 43.1 < 97.0».
+log.hand.both=as duas mãos
+log.hand.main=mão principal
+log.hand.off=mão secundária
+log.roll.main=principal
+log.roll.off=secundária
+log.partial.mainMissed=(mão principal errou)
+log.partial.offMissed=(mão secundária errou)
+
+log.swing=golpe: {0}
+log.swing.hands=mãos {0} → {1}
+log.swing.crit=crítico {0}, nível {1} ×{2}
+log.miss=erro
+log.fire.crit=crítico {0} ×{1}
+
+# O que golpeou: «habilidade: …», «ativação: Meteoro», «no lugar do ataque: …».
+log.fire.skill=habilidade
+log.fire.channel=canalização
+log.fire.spell=feitiço
+log.fire.pool=no lugar do ataque
+log.fire.proc=ativação
+log.fire.devotion=devoção
+log.fire.finale=final: golpe {0}
+log.fire.attack=ataque
+log.fire.charges=({0} cargas)
+
+# Pulso de dano ao longo do tempo: «pulso de Queimadura (mão principal, do ataque de arma padrão)».
+log.tick=pulso de {0}
+log.tick.from=do {0}
+log.tick.left=restam {0} s
+log.tick.partial=pulso parcial {0}%
+log.tick.autoattack=ataque de arma padrão
+log.dot.FireDot=Queimadura
+log.dot.ColdDot=Queimadura de Gelo
+log.dot.LightningDot=Eletrocussão
+log.dot.PoisonDot=Veneno
+log.dot.LifeDot=Queda de Vitalidade
+log.dot.BleedingDot=Sangramento
+log.dot.PhysicalDot=Trauma Interno
+
+# A saúde do alvo.
+log.life.killed=alvo morto
+log.life.killedWhy=TTK {0} s: {1} causados contra {2} de saúde; daqui em diante contamos o dano como se estivesse vivo, mas não há mais saúde a reduzir
+log.life.cut=redução de saúde {0}%  de «{1}»
+log.life.cutWhy=saúde do alvo {0} → {1}
+log.life.cutResist=efeito {0}%, resistência do alvo {1}%
+log.life.gear=equipamento
+
+# Uma aura, um aprimoramento pela recarga, uma recarga zerada.
+log.aura=aura: {0}
+log.buff=aprimoramento: {0}
+log.buff.holds=dura {0} s
+log.buff.cooldown=recarga {0} s
+log.buff.shield=escudo de absorção {0} — dura até ser rompido
+log.buff.noDuration=sem duração no registro
+log.buff.notInQueue=seus bônus de dano NÃO agem na fila
+log.buff.noEffect=não afeta nosso dano
+log.reset=recarga zerada: «{0}»
+log.reset.why=«{0}», {1}% {2} — por {3} s, pronta aos {4} em vez de {5}
+log.reset.onCrit=ao atacar com crítico
+log.reset.onAttack=ao atacar
+
+# Ativado ou apertado, mas não golpeia.
+log.silent.fired=ativado
+log.silent.pressed=apertado:
+log.silent.buff=aprimoramento, dura {0} s
+log.silent.resists=redução de resistências
+log.silent.defense=−{0} de capacidade defensiva
+log.silent.offense=−{0} de capacidade ofensiva
+log.silent.absolute=−{0} de resistências fixas
+log.silent.relative=−{0}% das resistências atuais
+log.silent.debuff=enfraquecimento do alvo por {0} s
+log.silent.debuffNothing=não afeta nosso dano de forma alguma
+log.silent.summon=invocação — o companheiro entra na reserva, seus golpes estão abaixo em linhas próprias
+log.silent.noDamage={0}, sem dano
+
+# Os companheiros no registro.
+log.pet.how.self=sozinho
+log.pet.how.pressed=apertado
+log.pet.summonBlocked=invocação ({0}): {1}
+log.pet.limit=o limite do seu tipo já está em campo — {0} × «{1}», nenhum outro é adicionado
+log.pet.summoned=invocado ({0}): «{1}» nº {2}
+log.pet.standing={0} de {1} em campo
+log.pet.lives=vive {0} s
+log.pet.permanent=permanente
+log.pet.aps=ataques por segundo {0}
+log.pet.gone=foi embora: «{0}» nº {1}
+log.pet.goneWhy=tempo de vida de {0} s esgotado, golpes {1}
+log.pet.goneTrap=acionada pelo inimigo, golpes {0}
+log.pet.onceAt=explosão após {0} s
+log.pet.aura=aura de companheiro: «{0}» {1}
+log.pet.auraTarget=aura de companheiro: «{0}»
+log.pet.auraAllies=fortalece a nós e aos outros companheiros enquanto estiver por perto
+log.pet.auraOnTarget=fica sobre o alvo enquanto estiver por perto
+log.pet.miss=erro do companheiro: «{0} nº {1}» {2}
+log.pet.hitChance=chance de acertar {0}%
+log.pet.hit=companheiro: «{0} nº {1}» {2}
+log.pet.auto=(ataque padrão)
+log.pet.auraMark=(aura)
+log.pet.perSecond=uma vez por segundo
+log.pet.speed=velocidade {0} ataques/s
+log.pet.every=a cada {0} s
+log.pet.crit=crítico nível {0} ×{1}
+log.pet.dotApplied=dano ao longo do tempo aplicado
+# A fonte do dano ao longo do tempo de um companheiro numa linha de pulso: «pulso de Queimadura (de «<companheiro> nº 1: <habilidade>»)».
+log.pet.source={0} nº {1}: {2}
+# Uma habilidade de companheiro sem nome no jogo — chamamos pelo fim do caminho do registro dela.
+log.pet.noName=sem nome: {0}
+
+# Resultado da execução: o bônus racial.
+log.racial.noRace=os bônus contra raças ({0}) não funcionam neste alvo: ele NÃO tem raça nenhuma (como o boneco)
+log.racial.none=o alvo é {0}, e não temos bônus contra ele (há contra outras raças: {1})
+log.racial.has=o alvo é {0}, nosso bônus contra ele é de {1}% de dano (multiplicador ×{2})
+log.racial.flat=o bônus fixo contra a raça «{0}» ({1} de dano) foi COLETADO MAS NÃO APLICADO: não se sabe com que tipo de dano ele vem (a dica não diz o tipo) nem em que ponto da ordem fica. O percentual colocamos pela fórmula do artigo; para o fixo não há fórmula nem no artigo nem nos arquivos — é preciso uma medição
+
+# Resultado da execução: dicas (o que foi escolhido errado).
+log.hint.mainNotSpell=«{0}» foi escolhida como principal, mas não é nem canalização nem feitiço sem recarga (ou a animação dela não foi encontrada) — atacamos com a arma, como sem escolha
+log.hint.buffPressed=«{0}» é um aprimoramento: seus bônus se aplicam aos golpes enquanto estiver ativo, mas ele não golpeia como um golpe. Marque-o entre os aprimoramentos
+log.hint.channelWithAttack=a canalização «{0}» está apertada JUNTO com o ataque de arma padrão — isso nunca acontece no jogo: enquanto o raio é mantido, a arma não golpeia. Ela é apertada pela «recarga» do registro, não pela velocidade de lançamento. Escolha-a como principal
+log.hint.starHits=a estrela «{0}» causa dano — não a ativamos como aprimoramento; marque-a na lista de acionamentos e ela golpeará pela recarga
+log.hint.starReplacing=a estrela «{0}» está vinculada a «{1}» — é um ATAQUE SUBSTITUTO: ele é atribuído a um botão e golpeia no lugar do golpe normal. Sabemos contá-los, mas NESTA execução não golpeamos com ela — o jogo salvo não guarda a atribuição. Escolha-a na lista «atacar com» e a estrela funcionará
+log.hint.starIdle=a estrela «{0}» está vinculada à habilidade «{1}», e esta NÃO GOLPEIA nesta execução (não marcada para acionar nem na reserva de armas) — não há ativações, e não é azar
+
+# Resultado da execução: o que não foi lido.
+log.unread.starBuffNoDuration=a estrela «{0}» aplica um APRIMORAMENTO, mas o registro não tem duração — não temos como mantê-lo, então a fila mostra só que ela foi ativada
+log.unread.starNoDamage=não lemos o dano da estrela «{0}»: a ativação está na fila, o dano não
+log.unread.buffNoDuration=o aprimoramento «{0}» muda o dano, mas o registro não tem duração — a fila mostra só a ativação dele, os bônus não agem
+log.unread.summonNoPet=a invocação «{0}» foi ativada, mas não há tal companheiro na reserva — o dano dele não é contado
+log.unread.petMoveNoRate=o companheiro «{0}» tem a habilidade «{1}», que causa dano, mas o registro não diz com que frequência ele a usa — na fila ela não é usada
+log.unread.petNoSpeed=não foi possível ler a velocidade de ataque do companheiro «{0}» (sem tabela de animações) — o ataque padrão dele não entra na fila
+log.unread.petNoMoves=não lemos nenhuma habilidade com dano do companheiro «{0}» — na fila ele é invocado, mas não golpeia
+
+# Resultado da execução: habilidades de itens e conjuntos — o que aconteceu com cada uma.
+log.gear.mainSpell=a habilidade principal no lugar do ataque de arma padrão, golpes {0}
+log.gear.pool=na reserva de armas
+log.gear.onlyCrit=sorteada só no crítico;
+log.gear.fired=ativada {0} vezes
+log.gear.firedSummon=— invocação, o companheiro entra na reserva e golpeia
+log.gear.firedDebuff=— enfraquecimento do alvo
+log.gear.firedBuff=— aprimoramento em nós
+log.gear.conditionNotModelled=a condição não é modelada —
+log.gear.pressed=marcada para acionar, apertada pela recarga: apertada {0} vezes
+log.gear.notPressed=acionável — não marcada para acionar
+log.gear.conditionHits=a condição não é modelada, há dano — marque-a e ela entrará pela recarga
+log.gear.noHit=não golpeia ({0})
+log.gear.conditionNoHit=a condição não é modelada, sem dano ({0}) — não participa da fila
+
+# Resultado da execução: estrelas e companheiros por nome.
+log.star.head=«{0}» nív. {1} de «{2}»
+log.star.onlyCrit=(só no crítico)
+log.star.chance=chance {0}%
+log.star.cooldown=recarga {0} s
+log.star.fired=ativada {0} vezes em {1} sorteios
+log.star.blocked=bloqueada pela recarga {0} vezes
+log.petLine.auras=auras de companheiros para outros companheiros enquanto estes vivem — {0}: {1}
+log.petLine.head=«{0}» ({1}) — invocado {2} vezes
+log.petLine.limit=até {0} ao mesmo tempo
+log.petLine.hits=golpes {0}
+log.petLine.misses=erros {0}
+log.petLine.crits=críticos {0}
+log.petLine.damage=dano {0}
+log.petLine.expired=foram embora por tempo {0}
+log.petLine.blocked=invocações acima do limite {0}

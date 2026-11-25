@@ -1,0 +1,185 @@
+# ZÁZNAM SIMULACE BOJE (záložka „Simulace boje“): řádky, důvody a poznámky po běhu.
+#
+# Desetinná čísla přicházejí už zapsaná (s tečkou), v {n} se nic nepřepočítává. Znaky porovnání
+# „<“, „≥“, „→“, závorky a čárky mezi částmi řádku vkládá program.
+
+# Co dělá dovednost, která sama neútočí. Slovo se objevuje v záznamu („posílení, žádné zranění“),
+# v seznamu „co mačkáme“ a v poznámkách běhu.
+log.effect.damage=zranění
+log.effect.summon=vyvolání
+log.effect.buff=posílení
+log.effect.debuff=oslabení
+log.effect.none=v záznamu žádné zranění
+
+# Řádek záznamu: „12.34 s  švih: obě ruce   812 a 790   (zranění bez bonusů 1020 a 990)   [důvod]“.
+log.line.at={0} s
+log.line.and=a
+log.line.before=(zranění bez bonusů {0})
+log.seconds={0} s
+log.from=od „{0}“
+log.target.dummy=atrapa
+log.target.generic=cíl
+
+# Ruce. „švih: obě ruce“, „kritický zásah hlavní ruka, stupeň 2“, „hlavní 43.1 < 97.0“.
+log.hand.both=obě ruce
+log.hand.main=hlavní ruka
+log.hand.off=druhá ruka
+log.roll.main=hlavní
+log.roll.off=druhá
+log.partial.mainMissed=(hlavní ruka minula)
+log.partial.offMissed=(druhá ruka minula)
+
+log.swing=švih: {0}
+log.swing.hands=ruce {0} → {1}
+log.swing.crit=kritický zásah: {0}, stupeň {1} ×{2}
+log.miss=minutí
+log.fire.crit=kritický zásah: {0} ×{1}
+
+# Co zasáhlo: „dovednost: …“, „proc: Meteor“, „místo útoku: …“.
+log.fire.skill=dovednost
+log.fire.channel=soustředění
+log.fire.spell=kouzlo
+log.fire.pool=místo útoku
+log.fire.proc=proc
+log.fire.devotion=oddanost
+log.fire.finale=finále: zásah {0}
+log.fire.attack=útok
+log.fire.charges=(nábojů {0})
+
+# Pulz zranění v čase: „pulz: popáleniny (hlavní ruka, od výchozího útoku)“.
+log.tick=pulz: {0}
+log.tick.from=od {0}
+log.tick.left=zbývá {0} s
+log.tick.partial=neúplný pulz {0}%
+log.tick.autoattack=výchozího útoku
+log.dot.FireDot=popáleniny
+log.dot.ColdDot=omrzliny
+log.dot.LightningDot=elektrický šok
+log.dot.PoisonDot=otrava
+log.dot.LifeDot=chřadnutí
+log.dot.BleedingDot=krvácení
+log.dot.PhysicalDot=vnitřní krvácení
+
+# Zdraví cíle.
+log.life.killed=cíl zabit
+log.life.killedWhy=TTK {0} s: způsobeno {1} při zdraví {2}; dál počítáme zranění, jako by žil, ale už není co snižovat
+log.life.cut=snížení zdraví {0}%  od „{1}“
+log.life.cutWhy=zdraví cíle {0} → {1}
+log.life.cutResist=efekt {0}%, odolnost cíle {1}%
+log.life.gear=vybavení
+
+# Aura, posílení podle obnovení, vynulování obnovení.
+log.aura=aura: {0}
+log.buff=posílení: {0}
+log.buff.holds=trvá {0} s
+log.buff.cooldown=obnovení {0} s
+log.buff.shield=štít pohlcení {0} — drží, dokud ho neprorazí
+log.buff.noDuration=v záznamu není doba trvání
+log.buff.notInQueue=jeho přídavky ke zranění ve frontě NEPŮSOBÍ
+log.buff.noEffect=na naše zranění nepůsobí
+log.reset=obnovení vynulováno: „{0}“
+log.reset.why=„{0}“, {1}% {2} — na {3} s, připraveno v {4} místo {5}
+log.reset.onCrit=při kritickém útoku
+log.reset.onAttack=při útoku
+
+# Spuštěno nebo zmáčknuto, ale neútočí.
+log.silent.fired=spuštěno
+log.silent.pressed=zmáčknuto:
+log.silent.buff=posílení, trvá {0} s
+log.silent.resists=snížení odolností
+log.silent.defense=−{0} obranné schopnosti
+log.silent.offense=−{0} útočné schopnosti
+log.silent.absolute=−{0} odolností číselně
+log.silent.relative=−{0}% současných odolností
+log.silent.debuff=oslabení cíle na {0} s
+log.silent.debuffNothing=na naše zranění nijak nepůsobí
+log.silent.summon=vyvolání — spojenec vstoupí do zásoby, jeho zásahy jsou níže ve vlastních řádcích
+log.silent.noDamage={0}, žádné zranění
+
+# Spojenci v záznamu.
+log.pet.how.self=sám
+log.pet.how.pressed=zmáčknuto
+log.pet.summonBlocked=vyvolání ({0}): {1}
+log.pet.limit=limit druhu už stojí — {0} × „{1}“, další nepřibývají
+log.pet.summoned=vyvolán ({0}): „{1}“ č. {2}
+log.pet.standing=stojí {0} z {1}
+log.pet.lives=žije {0} s
+log.pet.permanent=trvalý
+log.pet.aps=útoků za sekundu {0}
+log.pet.gone=odešel: „{0}“ č. {1}
+log.pet.goneWhy=doba života {0} s vypršela, zásahů {1}
+log.pet.goneTrap=spuštěna nepřítelem, zásahů {0}
+log.pet.onceAt=výbuch po {0} s
+log.pet.aura=aura spojence: „{0}“ {1}
+log.pet.auraTarget=aura spojence: „{0}“
+log.pet.auraAllies=posiluje nás i ostatní spojence, dokud je poblíž
+log.pet.auraOnTarget=visí na cíli, dokud je poblíž
+log.pet.miss=minutí spojence: „{0} č. {1}“ {2}
+log.pet.hitChance=šance zasáhnout {0}%
+log.pet.hit=spojenec: „{0} č. {1}“ {2}
+log.pet.auto=(výchozí útok)
+log.pet.auraMark=(aura)
+log.pet.perSecond=jednou za sekundu
+log.pet.speed=rychlost {0} útoků/s
+log.pet.every=každých {0} s
+log.pet.crit=kritický zásah stupně {0} ×{1}
+log.pet.dotApplied=zranění v čase nasazeno
+# Zdroj zranění v čase spojence v řádku pulzu: „pulz: popáleniny (od „<spojenec> č. 1: <dovednost>“)“.
+log.pet.source={0} č. {1}: {2}
+# Dovednost spojence bez názvu ve hře — nazýváme ji koncem cesty jejího záznamu.
+log.pet.noName=bez názvu: {0}
+
+# Výsledek běhu: rasový bonus.
+log.racial.noRace=bonusy proti rasám (počet: {0}) na tento cíl nepůsobí: nemá vůbec ŽÁDNOU rasu (jako atrapa)
+log.racial.none=cíl je {0} a proti němu bonusy nemáme (proti jiným rasám ano: {1})
+log.racial.has=cíl je {0}, náš bonus proti němu je {1}% zranění (násobek ×{2})
+log.racial.flat=plochý bonus proti rase „{0}“ ({1} zranění) je SEBRÁN, ALE NEPOUŽIT: není známo, jakým typem zranění přichází (nápověda typ neuvádí), ani na kterém místě pořadí stojí. Procentní dáváme podle vzorce z článku; pro plochý vzorec není ani v článku, ani v souborech — je třeba měření
+
+# Výsledek běhu: tipy (co je zvoleno špatně).
+log.hint.mainNotSpell=„{0}“ je zvolena jako hlavní, ale není to soustředění ani kouzlo bez obnovení (nebo se nenašla jeho animace) — útočíme zbraní, jako bez volby
+log.hint.buffPressed=„{0}“ je posílení: jeho přídavky působí na zásahy, dokud trvá, ale samo jako zásah neútočí. Zaškrtněte ho mezi posíleními
+log.hint.channelWithAttack=soustředění „{0}“ je zmáčknuto SPOLU s výchozím útokem — tak to ve hře nebývá: dokud se drží paprsek, zbraň neútočí. Mačká se podle „obnovení“ záznamu, ne podle rychlosti kouzlení. Zvolte ho jako hlavní
+log.hint.starHits=hvězda „{0}“ působí zranění — jako posílení ji nezapínáme; zaškrtněte ji v seznamu mačkání a bude útočit podle obnovení
+log.hint.starReplacing=hvězda „{0}“ je navázána na „{1}“ — je to NÁHRADNÍ ÚTOK: přiřazuje se k tlačítku a útočí místo běžného zásahu. Takové počítat umíme, ale v TOMTO běhu jím neútočíme — uložená hra přiřazení neuchovává. Zvolte ho v seznamu „útočit čím“ a hvězda začne fungovat
+log.hint.starIdle=hvězda „{0}“ je navázána na dovednost „{1}“ a ta v tomto běhu NEÚTOČÍ (není zaškrtnutá k mačkání ani v zásobě zbraní) — spuštění nejsou vůbec, a není to smůla
+
+# Výsledek běhu: co se nepřečetlo.
+log.unread.starBuffNoDuration=hvězda „{0}“ nasazuje POSÍLENÍ, ale záznam nemá dobu trvání — nemáme čím ho držet, proto fronta ukazuje jen samotné spuštění
+log.unread.starNoDamage=zranění hvězdy „{0}“ jsme nepřečetli: spuštění ve frontě je, zranění ne
+log.unread.buffNoDuration=posílení „{0}“ mění zranění, ale záznam nemá dobu trvání — fronta ukazuje jen jeho spuštění, přídavky nepůsobí
+log.unread.summonNoPet=vyvolání „{0}“ se spustilo, ale takový spojenec v zásobě není — jeho zranění se nepočítá
+log.unread.petMoveNoRate=spojenec „{0}“ má dovednost „{1}“, která zraňuje, ale záznam neříká, jak často ji používá — ve frontě se nepoužívá
+log.unread.petNoSpeed=útočnou rychlost spojence „{0}“ se nepodařilo přečíst (chybí tabulka animací) — jeho výchozí útok se do fronty nedává
+log.unread.petNoMoves=u spojence „{0}“ jsme nepřečetli jedinou dovednost se zraněním — ve frontě se vyvolá, ale neútočí
+
+# Výsledek běhu: dovednosti z předmětů a setů — co se s kterou stalo.
+log.gear.mainSpell=hlavní dovednost místo výchozího útoku, zásahů {0}
+log.gear.pool=v zásobě zbraní
+log.gear.onlyCrit=losuje se jen při kritickém zásahu;
+log.gear.fired=spuštěno {0}krát
+log.gear.firedSummon=— vyvolání, spojenec vstoupí do zásoby a útočí
+log.gear.firedDebuff=— oslabení cíle
+log.gear.firedBuff=— posílení na nás
+log.gear.conditionNotModelled=podmínku nemodelujeme —
+log.gear.pressed=zaškrtnuto k mačkání, mačká se podle obnovení: zmáčknuto {0}krát
+log.gear.notPressed=mačkatelné — nezaškrtnuto k mačkání
+log.gear.conditionHits=podmínku nemodelujeme, zranění je — zaškrtněte a půjde podle obnovení
+log.gear.noHit=neútočí ({0})
+log.gear.conditionNoHit=podmínku nemodelujeme, žádné zranění ({0}) — ve frontě se neúčastní
+
+# Výsledek běhu: hvězdy a spojenci jménem.
+log.star.head=„{0}“ úr. {1} od „{2}“
+log.star.onlyCrit=(jen při kritickém zásahu)
+log.star.chance=šance {0}%
+log.star.cooldown=obnovení {0} s
+log.star.fired=spuštěna {0}krát z {1} hodů
+log.star.blocked=obnovení zabránilo {0}krát
+log.petLine.auras=aury spojenců pro ostatní spojence, dokud tito žijí — {0}: {1}
+log.petLine.head=„{0}“ ({1}) — vyvolán {2}krát
+log.petLine.limit=najednou až {0}
+log.petLine.hits=zásahy {0}
+log.petLine.misses=minutí {0}
+log.petLine.crits=kritické {0}
+log.petLine.damage=zranění {0}
+log.petLine.expired=odešlo po uplynutí doby {0}
+log.petLine.blocked=vyvolání nad limit {0}

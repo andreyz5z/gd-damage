@@ -1,0 +1,67 @@
+# OKNO „UPRAVIT PŘEDMĚT“ a jeho podokna: bonus povznesení, bonus dokončení relikvie.
+# Řádky vlastností předmětu pocházejí z nápovědy (část znění je ze samotné hry).
+
+edit.title=Upravit předmět
+edit.stop=Zastavit hledání
+edit.relicBonus=Bonus dokončení (relikvie)…
+edit.affixes=Předpona a přípona…
+edit.ascension=Bonus povznesení…
+edit.reroll=Vylosovat předmět znovu náhodně
+edit.findMax=Hledat nejvyšší hod
+edit.findValues=Hledat podle hodnot
+edit.close=Zavřít
+edit.notSaved=(nalezeno, nezapsáno)
+edit.secondEnd=└ druhý konec téhož řádku
+edit.hiddenRolls=Vylosováno, ale nezobrazeno v nápovědě
+edit.perSecond=({0} za 1 s — to obsahuje pole)
+edit.range=z {0}…{1}
+
+# Pravý panel: jak hledání probíhá a jak končí
+edit.rerolled=Předmět byl znovu vylosován.\nNic se nehledalo — náhodný předmět je platný sám o sobě.\nChcete-li ho zapsat do uložené hry, stiskněte „Použít“.
+edit.badNumber=Číslo v řádku „{0}“ se nepodařilo přečíst: {1}
+edit.busy=Hledá se…
+edit.busyProgress=Hledá se… prověřeno {0} milionů z 2147
+edit.searching=Předmět se hledá zkoušením hodnot.\nJak dlouho to potrvá, záleží na rychlosti počítače.
+edit.found=Všechna zvolená čísla byla nalezena. Stiskněte „Použít“ a předmět se zapíše do uložené hry.
+edit.impossible=Tato vlastnost nikdy nemá takovou hodnotu:
+edit.impossibleHint=Zadejte jednu z hodnot zobrazených vpravo od řádku.
+edit.cancelled=Hledání bylo zastaveno.
+edit.notFound=Tyto vlastnosti nelze najít současně. Zrušte zaškrtnutí u těch, na kterých vám záleží méně, a zkuste to znovu.
+edit.hardest=Nejobtížnější pole bylo: {0}. Vyzkoušely se všechny možnosti; takový předmět ve hře nemůže existovat.
+edit.same=Předmět už takový je. Není co měnit.
+edit.saved=Zapsáno do uložené hry.\nSamotný předmět, jeho afixy, komponenta a povznesení zůstaly nedotčené — je to pořád předmět, který mohla hra vyhodit.
+edit.relicCleared=Bonus dokončení byl odebrán.
+edit.relicSet=Bonus dokončení: {0}
+edit.ascensionCleared=Bonus povznesení byl odebrán.
+edit.ascensionSet=Bonus povznesení: {0}
+edit.report.scanned=prověřeno {0} za {1} s
+edit.report.found=NALEZENO:   ({0})
+edit.report.impossible={0}: toto pole nikdy nedává hodnotu {1}
+
+# Okno bonusu povznesení
+edit.affixSet=Předpona: {0}\nPřípona: {1}
+edit.affix.title=Předpona a přípona
+edit.affix.head=Nyní: předpona — {0};   přípona — {1}\nZobrazeny jsou jen ty, které hra dává předmětům tohoto druhu; tečka značí vzácné (zelené).\nČísla v seznamu jsou VYLOSOVANÁ pro tento předmět: přívlastek se losuje, a co tu vidíte, to dostanete.
+edit.affix.prefix=Předpona
+edit.affix.suffix=Přípona
+edit.affix.none=žádná
+edit.affix.gone=(hra ji už nepřiděluje — v seznamu není)
+edit.affix.clear=Odebrat tuto část
+edit.affix.level=Vyžaduje úroveň {0}
+edit.affix.building=Čteme tabulky předmětů hry — jednou po aktualizaci hry.
+
+edit.asc.title=Bonus povznesení
+edit.asc.head=Zobrazeny jsou jen bonusy, na které má předmět tohoto druhu nárok — jednoruční zbraň nemá nárok na obouruční a naopak.
+# edit.asc.unknownClass=neznámá
+# edit.asc.noPool=nezjištěna
+edit.asc.allPools=všechny zásoby, nejen vlastní
+
+# Okno bonusu dokončení relikvie
+edit.relic.title=Bonus dokončení relikvie
+edit.relic.head=Relikvie: {0}   —   úroveň výroby: {1}\nČísla v seznamu jsou VYLOSOVANÁ pro tento předmět: bonus dokončení se losuje, a co tu vidíte, to dostanete.
+edit.relic.unknown=neznámý
+edit.relic.noKind=neuvedeno
+# edit.relic.noTable=tato relikvie ŽÁDNOU nemá — bonus dokončení nikdy nedostane
+edit.relic.allTables=všechny tabulky, nejen vlastní
+edit.relic.noTableList=Tato relikvie nemá tabulku bonusů — bonus dokončení nikdy nedostane.
+edit.relic.jitter=(rozptyl {0}%)

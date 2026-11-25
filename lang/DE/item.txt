@@ -1,0 +1,287 @@
+# GEGENSTANDS-TOOLTIP UND BONUSZEILEN (Tooltips von Gegenständen, Reiter „Gesamtboni“).
+#
+# Die meisten Tooltipzeilen sind Vorlagen des Spiels selbst in der gewählten Sprache. Hier stehen unsere Wörter:
+# dort, wo das Spiel keine Vorlage hat, und der Ersatztext, wenn kein Spiel da ist oder das Tag fehlt.
+
+# Dauer-Anhang eines Schadens über Zeit: „+31% Frostbrandschaden mit +45% erhöhter Dauer“. Normalerweise die
+# Vorlage des Spiels (`ImprovedTimeFormat`); dieser Text nur, wenn sie fehlt.
+item.durationWith=mit {0}% erhöhter Dauer
+
+# Namen der Schadensarten in einer Umwandlungszeile („50% Umwandlung: Lebenskraftschaden in Säureschaden“).
+# Normalerweise aus dem Spiel (`tagConversion<Art>`); das hier ist der Ersatz. Für Blutung hat das Spiel kein Tag.
+item.conv.Physical=Physischer Schaden
+item.conv.Pierce=Durchschlagsschaden
+item.conv.Fire=Feuerschaden
+item.conv.Cold=Kälteschaden
+item.conv.Lightning=Blitzschaden
+item.conv.Poison=Säureschaden
+item.conv.Life=Lebenskraftschaden
+item.conv.Aether=Ätherschaden
+item.conv.Chaos=Chaosschaden
+item.conv.Bleeding=Blutung
+
+# ============ BESCHRIFTUNGEN DER TOOLTIPZEILEN ============
+# Eine Gegenstandszeile entsteht so: Zuerst wird die Vorlage des Spiels in der gewählten Sprache gesucht, und nur
+# wenn es keine gibt, wird die Beschriftung von hier genommen.
+
+# Schadensarten: volle Form („+31% Kälteschaden“), kurze für die Dauer.
+item.type.Physical=Physischer Schaden
+item.type.Pierce=Durchschlagsschaden
+item.type.Fire=Feuerschaden
+item.type.Cold=Kälteschaden
+item.type.Lightning=Blitzschaden
+item.type.Poison=Säureschaden
+item.type.Life=Lebenskraftschaden
+item.type.Aether=Ätherschaden
+item.type.Chaos=Chaosschaden
+item.type.Bleeding=Blutungsschaden
+item.type.Elemental=Elementarschaden
+item.typeShort.Physical=Physisch
+item.typeShort.Pierce=Durchschlag
+item.typeShort.Fire=Feuer
+item.typeShort.Cold=Kälte
+item.typeShort.Lightning=Blitz
+item.typeShort.Poison=Säure
+item.typeShort.Life=Lebenskraft
+item.typeShort.Aether=Äther
+item.typeShort.Chaos=Chaos
+item.typeShort.Bleeding=Blutung
+item.typeShort.Elemental=Elementar
+
+# Aus dem Namen einer Art gebildete Beschriftungen.
+item.label.overTime={0} über Zeit
+item.label.dotDuration=Schadensdauer {0}
+item.label.retaliation={0}-Vergeltung
+item.label.resist=Resistenz gegen {0}
+item.label.maxResist=Maximale Resistenz gegen {0}
+item.label.duration=Dauer {0}
+
+# Wörter, die bei mehreren Feldern vorkommen.
+item.label.action=Dauer
+item.label.armour=Rüstung
+item.label.cooldown=Fähigkeitsabklingzeit
+item.label.projectiles=Projektil(e)
+item.label.pierceChance=Chance, Gegner zu durchdringen
+item.label.radius=Radius
+item.label.resCutAll=Resistenzen des Ziels gesenkt
+item.label.resCutAllOf=Resistenzen des Ziels gesenkt
+item.label.resCut=Resistenz des Ziels gesenkt
+item.label.resCutOf=Resistenz des Ziels gesenkt
+item.label.petBaseDamage=Basisschaden der Kreatur
+item.unit.sec=Sekunde(n)
+item.unit.m=Meter
+item.unit.s=Sekunde(n)
+
+# Schaden, Schaden über Zeit und Behinderungen des Ziels.
+item.stat.offensiveBonusPhysical=Physischer Schaden
+item.stat.offensivePierceRatio=Durchschlagsanteil
+item.stat.offensiveLifeLeech=des Angriffsschadens in Leben umgewandelt
+item.stat.offensiveManaLeech=des Angriffsschadens in Energie umgewandelt
+item.stat.offensivePercentCurrentLife=Lebenssenkung des Gegners
+item.stat.offensiveTotalDamageModifier=auf allen Schaden
+item.stat.offensiveCritDamageModifier=Kritischer Schaden
+item.stat.offensiveDamageMultModifier=Gesamtschaden geändert um
+item.stat.offensivePierceRatioModifier=Durchschlagsanteil
+item.stat.offensiveSlowManaLeach=Energieentzug
+item.stat.offensiveSlowManaLeachDurationModifier=Dauer des Energieentzugs
+item.stat.offensiveFumble=Treffgenauigkeit des Ziels gesenkt
+item.stat.offensiveProjectileFumble=Projektilgenauigkeit des Ziels gesenkt
+item.stat.offensiveSlowOffensiveAbility=Angriffsqualität des Ziels gesenkt
+item.stat.offensiveSlowDefensiveAbility=Verteidigungsqualität des Ziels gesenkt
+item.stat.offensiveSlowRunSpeed=Bewegungsgeschwindigkeit des Ziels gesenkt
+item.stat.offensiveSlowAttackSpeed=Angriffsgeschwindigkeit des Ziels gesenkt
+item.stat.offensiveSlowSpellCastSpeed=Zaubergeschwindigkeit des Ziels gesenkt
+item.stat.offensiveKnockdown=Ziel niederwerfen
+item.stat.offensiveStun=Ziel betäuben
+item.stat.offensiveStunModifier=Betäubungsdauer
+item.stat.offensiveFreeze=Ziel einfrieren
+item.stat.offensivePetrify=Ziel versteinern
+item.stat.offensiveSleep=Ziel einschläfern
+item.stat.offensiveTrap=Ziel festsetzen
+item.stat.offensiveConfusion=Ziel verwirren
+item.stat.offensiveTaunt=Ziel verspotten
+item.stat.offensiveFear=Ziel erschrecken
+item.stat.offensiveConvert=Ziel bekehren
+item.stat.offensiveDisruption=Fähigkeitsunterbrechung
+item.stat.offensiveManaBurnDrain=Energieverbrennung
+item.stat.offensiveManaBurnDamageRatio=der verbrannten Energie als Schaden
+item.stat.offensiveTotalDamageReductionPercent=Schaden des Ziels gesenkt
+item.stat.offensiveSlowTotalSpeed=Ziel verlangsamen
+
+# Vergeltungsschaden und Vergeltungsbehinderungen.
+item.stat.retaliationFreeze=Einfrier-Vergeltung
+item.stat.retaliationConfusion=Verwirrungs-Vergeltung
+item.stat.retaliationSlowLightning=Stromschlag-Vergeltung
+item.stat.retaliationFear=Furcht-Vergeltung
+item.stat.retaliationSlowAttackSpeed=Vergeltung: gesenkte Angriffsgeschwindigkeit
+item.stat.retaliationSlowRunSpeed=Vergeltung: gesenkte Bewegungsgeschwindigkeit
+item.stat.retaliationSlowPoison=Gift-Vergeltung
+item.stat.retaliationSlowManaLeach=Energieentzug-Vergeltung
+item.stat.retaliationTotalDamageModifier=auf allen Vergeltungsschaden
+
+# Rüstung, Blocken und Resistenzen.
+item.stat.defensiveAbsorptionModifier=Rüstungsabsorption
+item.stat.defensiveBlockChance=Blockwahrscheinlichkeit
+item.stat.defensiveBlock=Geblockter Schaden
+item.stat.blockRecoveryTime=Sekunde(n) Blockerholung
+item.stat.defensiveBlockModifier=Schild-Blockwahrscheinlichkeit
+item.stat.defensiveBlockAmountModifier=Mit Schild geblockter Schaden
+item.stat.blockAbsorption=Blockabsorption
+item.stat.skillComboChargeSpendReduction=Chance, keine Schwungladungen zu verbrauchen
+item.stat.characterDefensiveBlockRecoveryReduction=Schild-Erholungszeit
+item.stat.defensiveElementalResistance=Elementarresistenz
+item.stat.defensiveAllResistance=Alle Resistenzen
+item.stat.defensiveAllMaxResist=auf alle maximalen Resistenzen
+item.stat.defensivePercentReflectionResistance=Erlittener reflektierter Schaden
+item.stat.defensiveSlowLifeLeach=Resistenz gegen Lebensentzug
+item.stat.defensiveSlowManaLeach=Resistenz gegen Energieentzug
+item.stat.defensiveBonusProtection=Bonusrüstung
+item.stat.defensiveStun=Betäubungsresistenz
+item.stat.defensiveFreeze=Einfrierresistenz
+item.stat.defensivePetrify=Versteinerungsresistenz
+item.stat.defensiveSleep=Schlafresistenz
+item.stat.defensiveTrap=Fesselungsresistenz
+item.stat.defensiveDisruption=Unterbrechungsresistenz
+item.stat.defensiveKnockdown=Niederwerfresistenz
+item.stat.defensiveConfusion=Verwirrungsresistenz
+item.stat.defensiveFear=Furchtresistenz
+item.stat.defensiveTaunt=Spottresistenz
+item.stat.defensiveLifeLeach=Resistenz gegen Lebensraub
+item.stat.defensiveManaLeach=Resistenz gegen Energieraub
+item.stat.defensiveReflect=Reflektierter Schaden
+item.stat.defensiveTotalSpeedResistance=Verlangsamungsresistenz
+item.stat.defensivePercentCurrentLife=Resistenz gegen Schaden am aktuellen Leben
+item.stat.defensiveCrowdControl=Verringerte Dauer von Kontrolleffekten
+item.stat.defensiveConvert=Verringerte Dauer von Gedankenkontrolle
+
+# Charakterattribute — als Zahl und als Prozent.
+item.stat.characterStrength=Konstitution
+item.stat.characterDexterity=Raffinesse
+item.stat.characterIntelligence=Geist
+item.stat.characterLife=Leben
+item.stat.characterMana=Energie
+item.stat.characterLifeRegen=Lebensregeneration pro Sekunde
+item.stat.characterManaRegen=Energieregeneration pro Sekunde
+item.stat.characterOffensiveAbility=Angriffsqualität
+item.stat.characterDefensiveAbility=Verteidigungsqualität
+item.stat.characterConstitution=Konstitution (Ausdauer)
+item.stat.characterRunSpeedMax=Maximale Bewegungsgeschwindigkeit
+item.stat.characterManaLimitReserve=Reservierte Energie
+item.stat.characterStrengthModifier=Konstitution
+item.stat.characterDexterityModifier=Raffinesse
+item.stat.characterIntelligenceModifier=Geist
+item.stat.characterLifeModifier=Leben
+item.stat.characterManaModifier=Energie
+item.stat.characterLifeRegenModifier=Lebensregeneration
+item.stat.characterManaRegenModifier=Energieregeneration
+item.stat.characterOffensiveAbilityModifier=Angriffsqualität
+item.stat.characterDefensiveAbilityModifier=Verteidigungsqualität
+item.stat.characterAttackSpeedModifier=Angriffsgeschwindigkeit
+item.stat.characterSpellCastSpeedModifier=Zaubergeschwindigkeit
+item.stat.characterRunSpeedModifier=Bewegungsgeschwindigkeit
+item.stat.characterTotalSpeedModifier=Gesamtgeschwindigkeit
+item.stat.characterDodgePercent=Chance, Nahkampfangriffen auszuweichen
+item.stat.characterDeflectProjectile=Chance, Projektilen auszuweichen
+item.stat.characterHealIncreasePercent=Erhöhte Heilung
+item.stat.characterEnergyAbsorptionPercent=Von gegnerischen Zaubern absorbierte Energie
+item.stat.characterIncreasedExperience=Erhaltene Erfahrung
+item.stat.characterLightRadius=Lichtradius
+item.stat.characterGlobalReqReduction=Verringerte Attributanforderungen
+item.stat.characterLevelReqReduction=Verringerte Stufenanforderung
+item.stat.characterManaLimitReserveReduction=Energiereservierung
+item.stat.characterConstitutionModifier=Konstitution (Ausdauer)
+item.stat.characterRunSpeedMaxModifier=Maximale Bewegungsgeschwindigkeit
+item.stat.characterAttackSpeedMaxModifier=Maximale Angriffsgeschwindigkeit
+item.stat.characterSpellCastSpeedMaxModifier=Maximale Zaubergeschwindigkeit
+item.stat.characterArmorStrengthReqReduction=Verringerte Konstitutionsanforderung für Rüstung
+item.stat.characterMeleeStrengthReqReduction=Verringerte Konstitutionsanforderung für Nahkampfwaffen
+item.stat.characterMeleeDexterityReqReduction=Verringerte Raffinesseanforderung für Nahkampfwaffen
+item.stat.characterWeaponStrengthReqReduction=Verringerte Konstitutionsanforderung für Waffen
+item.stat.characterHuntingDexterityReqReduction=Verringerte Raffinesseanforderung für Fernkampfwaffen
+item.stat.characterJewelryIntelligenceReqReduction=Verringerte Geistanforderung für Schmuck
+item.stat.characterShieldStrengthReqReduction=Verringerte Konstitutionsanforderung für Schilde
+item.stat.skillCooldownReduction=Verringerung der Fähigkeitsabklingzeit
+item.stat.skillManaCostReduction=Energiekosten von Fähigkeiten
+
+# Was eine Fähigkeit kostet und wie weit sie reicht; darunter Felder, die es nur bei einem Fähigkeitsmodifikator gibt.
+item.stat.skillActiveLifeCost=Lebenskosten pro Sekunde
+item.stat.skillActiveManaCost=Energiekosten pro Sekunde
+item.stat.skillManaCost=Energiekosten
+item.stat.skillActiveDuration=Dauer
+item.stat.skillTargetNumber=Ziel(e)
+item.stat.weaponDamagePct=Waffenschaden
+item.stat.retaliationDamagePct=des Vergeltungsschadens zum Angriff addiert
+item.stat.skillChanceWeight=auf die Einsatzchance
+item.stat.skillTargetAngle=Grad Angriffswinkel
+item.stat.cooldownCharges=Ladung(en)
+item.stat.petLimit=Beschwörungsgrenze
+item.stat.damageAbsorptionPercent=Absorbierter Schaden
+item.stat.projectileLaunchRotation=Schussbogen
+item.stat.beamAngle=Grad Strahlenbogen
+item.stat.beamNumber=Strahl(en)
+item.stat.spawnObjectsTimeToLive=Sekunde(n) Lebensdauer
+
+# Kopf des Gegenstands: Rüstung und Angriffsgeschwindigkeit — dieselben Zeilen, die das Spiel unter dem Namen zeigt.
+item.head.armour={0} Rüstung
+item.head.aps={0} Angriffe pro Sekunde
+
+# Anforderungen des Gegenstands. Normalerweise aus dem Spiel; das hier ist der Ersatz.
+item.need.level=Spielerstufe
+item.need.strength=Konstitution
+item.need.dexterity=Raffinesse
+item.need.intelligence=Geist
+
+# Überschriften der Gegenstandsteile. Das Spiel hat keine: Es schreibt die Boni der Teile direkt in die gemeinsame
+# Liste, und wir müssen zeigen, woher eine Zeile stammt. „Komponente“ und „Verbesserung“ hat das Spiel — Ersatz.
+item.part.prefix=Präfix
+item.part.suffix=Suffix
+item.part.modifier=Erweckung
+item.part.component=Komponente
+item.part.relicBonus=Vollendungsbonus
+item.part.augment=Verbesserung
+item.part.ascension=Aufstiegsbonus
+
+# Seltenheit des Gegenstands. Normalerweise aus dem Spiel; das hier ist der Ersatz.
+item.rarity.common=Gewöhnlich
+item.rarity.magical=Magisch
+item.rarity.rare=Selten
+item.rarity.epic=Episch
+item.rarity.legendary=Legendär
+item.rarity.quest=Quest
+
+# Hinweis unter dem Tooltip zu den ausgewürfelten Zahlen und die Größe des Gegenstands in Feldern.
+item.rolled.noteDoubt=Die Zahlen in den Zeilen sind das, was bei GENAU DIESEM Gegenstand ausgewürfelt wurde, so wie das Spiel sie zeigen würde. Bei Zeilen mit roter Markierung haben wir die Stelle des Felds in der Würfelreihenfolge noch nicht gemessen: Dort steht die Zahl des Datensatzes, und die berechnete ist als „gewürfelt N ?“ angefügt — sie kann um eine Stufe vom Spiel abweichen.
+item.cells={0} Felder
+item.allFields=— alle Felder des Datensatzes ungleich null —
+
+# Weitere Tooltipzeilen. Wo das Spiel eine eigene Vorlage hat, wird diese gezeigt; das hier ist der Ersatz.
+item.weaponDamageHand={0}% Waffenschaden der {1}
+item.hand.main=Haupthand
+item.hand.off=Nebenhand
+item.missing.noGame=die Spieldatenbank ist nicht verbunden
+item.missing.noRecord=der Datensatz wurde durch einen Spielpatch entfernt
+item.restore.life=Leben
+item.restore.mana=Energie
+item.restore.head=Stellt wieder her
+item.need.short=— nicht genug, vorhanden {0}
+item.chanceOfOne={0}% Chance auf eines von:
+item.chanceOfAll={0}% Chance auf:
+item.chanceOf={0}% Chance auf
+item.forSeconds=über {0} Sekunden
+item.petBonusAll=Bonus für alle Kreaturen
+item.set=Set
+item.setNamed=Set: {0}
+item.setWorn=({0}) Set
+item.conversionField=Schadensumwandlung
+item.conversion={0}% Umwandlung: {1} in {2}
+item.noGameWords=(diese Zeile hat hier keine Wörter des Spiels)
+item.rolledValue=gewürfelt {0} ?
+item.racial.damage=Schaden gegen:
+item.racial.defence=Weniger Schaden von:
+item.skillPlus=+{0} auf {1}
+item.masteryPlus=+{0} auf alle Fähigkeiten der Meisterschaft {1}
+item.allSkillsPlus=+{0} auf alle Fähigkeiten
+item.summonCount={0} beschworen
+item.activationChance=Aktivierungschance
+item.stat.retaliationDamageMultModifier=Gesamter Vergeltungsschaden geändert um
+item.conversionGone=-{0}% {1}

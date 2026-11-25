@@ -1,0 +1,52 @@
+# THE CHARACTER PANEL (fields of the main window) and the attribute tooltips.
+
+character.name=Name
+character.class=Class
+character.file=File
+character.level=Level
+character.experience=Experience
+character.physique=Physique
+character.cunning=Cunning
+character.spirit=Spirit
+character.health=Health
+character.energy=Energy
+character.attributePoints=Attribute points
+character.skillPoints=Skill points
+character.devotionPoints=Devotion points
+character.totalDevotion=Devotion total
+character.money=Iron
+character.tributes=Tributes
+character.difficulties=Difficulties
+character.difficulty.normal=Normal, Veteran
+character.difficulty.elite=Elite
+character.difficulty.ultimate=Ultimate
+
+# Editing the numbers the game works out by itself
+character.freeEdit=Edit attributes freely
+character.freeEdit.warning=The game works these five numbers out by itself from spent points, worn items and skills — the equations are understood and match the game to the point.\n\nIf you write your own values here, the save will start to disagree with what the game shows on screen: it will recompute health and energy by its own rules and keep your attributes.\n\nAllow editing anyway?
+character.keptInSave=Kept in the save separately from what the game shows on screen.\nThe final health and energy are worked out by the game itself — from spent points, attributes, items and skills — and they do not match this number.\nWhat exactly is kept here we have not worked out yet, which is why editing is closed.
+
+# Attribute tooltip
+character.tip.now={0}: now {1}
+character.tip.own=in the save {0}, points spent {1}
+character.tip.fromGear=from items and skills: {0}
+character.tip.gives=Gives (counted on top of the base {0}):
+character.tip.percents=And the percentages — the base {0} counts here as well:
+character.tip.percentLine=+{0}% {1}
+character.perPoint.life=+{0} health per point
+character.perPoint.energy=+{0} energy per point
+character.perPoint.defense=+{0} defensive ability per point
+character.perPoint.offense=+{0} offensive ability per point
+character.perPoint.lifeRegen=+{0} health regeneration per point
+character.perPoint.energyRegen=+{0} energy regeneration per point
+character.divided.physical=physical and piercing damage
+character.divided.bleed=internal trauma and bleeding damage
+character.divided.magic=magical damage
+character.divided.dots=the other damage over time
+character.divided.energyRegen=energy regeneration
+character.needs.physique=Required for armor, melee weapons and shields.
+character.needs.cunning=Required for ranged weapons and part of the melee weapons.
+character.needs.spirit=Required for rings, amulets and caster items.
+character.hardcore=Hardcore
+character.revive=Revive
+character.revive.tip=Clears the death mark. Check in the game that the character loads again.

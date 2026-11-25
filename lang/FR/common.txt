@@ -1,0 +1,27 @@
+# PARTAGÉ PAR PLUSIEURS FENÊTRES : boutons, origine d'une compétence, parties d'un objet.
+
+common.apply=Appliquer
+common.cancel=Annuler
+common.search=Chercher :
+common.nothingFound=Rien trouvé.
+common.put=Placer
+common.clearBonus=Retirer le bonus
+
+# Difficultés du jeu (onglet « Failles », onglet de l'ennemi)
+common.difficulty.normal=Normale
+common.difficulty.elite=Élite
+common.difficulty.ultimate=Ultime
+
+# Origine d'une compétence (sous-titres dans les fenêtres des familiers et des compétences actives)
+common.source.mastery=compétence de maîtrise
+common.source.devotion=dévotion
+common.source.item=d'un objet : {0}
+common.source.set=ensemble : {0} ({1})
+common.source.setName=ensemble : {0}
+
+# La partie de l'objet avec laquelle la compétence est venue : « d'un objet : Nom (préfixe) »
+common.part.prefix=(préfixe)
+common.part.suffix=(suffixe)
+common.part.component=(composant)
+common.part.augment=(augmentation)
+common.part.ascension=(ascension)

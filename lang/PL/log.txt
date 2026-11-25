@@ -1,0 +1,185 @@
+# DZIENNIK SYMULACJI WALKI (zakładka „Symulacja walki”): wiersze, przyczyny i uwagi po przebiegu.
+#
+# Liczby dziesiętne przychodzą już zapisane (z kropką), w {n} nic się nie przelicza. Znaki porównania
+# „<”, „≥”, „→”, nawiasy i przecinki między częściami wiersza wstawia program.
+
+# Co robi umiejętność, która sama nie uderza. Słowo pojawia się w dzienniku („wzmocnienie, brak obrażeń”),
+# na liście „co naciskamy” i w uwagach przebiegu.
+log.effect.damage=obrażenia
+log.effect.summon=przywołanie
+log.effect.buff=wzmocnienie
+log.effect.debuff=osłabienie
+log.effect.none=brak obrażeń w zapisie
+
+# Wiersz dziennika: „12.34 s  zamach: obie ręce   812 i 790   (obrażenia bez premii 1020 i 990)   [przyczyna]”.
+log.line.at={0} s
+log.line.and=i
+log.line.before=(obrażenia bez premii {0})
+log.seconds={0} s
+log.from=od „{0}”
+log.target.dummy=manekin
+log.target.generic=cel
+
+# Ręce. „zamach: obie ręce”, „krytyk główna ręka, stopień 2”, „główna 43.1 < 97.0”.
+log.hand.both=obie ręce
+log.hand.main=główna ręka
+log.hand.off=druga ręka
+log.roll.main=główna
+log.roll.off=druga
+log.partial.mainMissed=(główna ręka chybiła)
+log.partial.offMissed=(druga ręka chybiła)
+
+log.swing=zamach: {0}
+log.swing.hands=ręce {0} → {1}
+log.swing.crit=krytyk: {0}, stopień {1} ×{2}
+log.miss=chybienie
+log.fire.crit=krytyk: {0} ×{1}
+
+# Co uderzyło: „umiejętność: …”, „proc: Meteor”, „zamiast ataku: …”.
+log.fire.skill=umiejętność
+log.fire.channel=kanał
+log.fire.spell=czar
+log.fire.pool=zamiast ataku
+log.fire.proc=proc
+log.fire.devotion=poświęcenie
+log.fire.finale=finał: trafienie {0}
+log.fire.attack=atak
+log.fire.charges=(ładunki: {0})
+
+# Tyknięcie obrażeń w czasie: „tyknięcie: podpalenie (główna ręka, od ataku podstawowego)”.
+log.tick=tyknięcie: {0}
+log.tick.from=od {0}
+log.tick.left=zostało {0} s
+log.tick.partial=niepełne tyknięcie {0}%
+log.tick.autoattack=ataku podstawowego
+log.dot.FireDot=podpalenie
+log.dot.ColdDot=odmrożenie
+log.dot.LightningDot=porażenie
+log.dot.PoisonDot=trucizna
+log.dot.LifeDot=rozkład
+log.dot.BleedingDot=krwawienie
+log.dot.PhysicalDot=wewnętrzna trauma
+
+# Zdrowie celu.
+log.life.killed=cel zabity
+log.life.killedWhy=TTK {0} s: zadano {1} przy zdrowiu {2}; dalej liczymy obrażenia, jakby żył, ale nie ma już czego obniżać
+log.life.cut=obniżenie zdrowia {0}%  od „{1}”
+log.life.cutWhy=zdrowie celu {0} → {1}
+log.life.cutResist=efekt {0}%, odporność celu {1}%
+log.life.gear=wyposażenie
+
+# Aura, wzmocnienie wg odnowienia, zresetowanie odnowienia.
+log.aura=aura: {0}
+log.buff=wzmocnienie: {0}
+log.buff.holds=trwa {0} s
+log.buff.cooldown=odnowienie {0} s
+log.buff.shield=tarcza absorpcji {0} — trzyma, dopóki jej nie przebiją
+log.buff.noDuration=brak czasu trwania w zapisie
+log.buff.notInQueue=jego premie do obrażeń w kolejce NIE działają
+log.buff.noEffect=nie wpływa na nasze obrażenia
+log.reset=odnowienie zresetowane: „{0}”
+log.reset.why=„{0}”, {1}% {2} — na {3} s, gotowe w {4} zamiast {5}
+log.reset.onCrit=przy ataku krytycznym
+log.reset.onAttack=przy ataku
+
+# Uruchomione lub naciśnięte, ale nie uderza.
+log.silent.fired=uruchomiono
+log.silent.pressed=naciśnięto:
+log.silent.buff=wzmocnienie, trwa {0} s
+log.silent.resists=obniżenie odporności
+log.silent.defense=−{0} zdolności defensywnych
+log.silent.offense=−{0} zdolności ofensywnych
+log.silent.absolute=−{0} odporności liczbowo
+log.silent.relative=−{0}% obecnych odporności
+log.silent.debuff=osłabienie celu na {0} s
+log.silent.debuffNothing=w żaden sposób nie wpływa na nasze obrażenia
+log.silent.summon=przywołanie — przywołaniec wchodzi do puli, jego trafienia są niżej we własnych wierszach
+log.silent.noDamage={0}, brak obrażeń
+
+# Przywołańce w dzienniku.
+log.pet.how.self=samo
+log.pet.how.pressed=naciśnięte
+log.pet.summonBlocked=przywołanie ({0}): {1}
+log.pet.limit=limit rodzaju już osiągnięty — {0} × „{1}”, więcej nie przybywa
+log.pet.summoned=przywołano ({0}): „{1}” nr {2}
+log.pet.standing=obecnych {0} z {1}
+log.pet.lives=żyje {0} s
+log.pet.permanent=stały
+log.pet.aps=ataków na sekundę {0}
+log.pet.gone=odszedł: „{0}” nr {1}
+log.pet.goneWhy=czas życia {0} s minął, trafienia: {1}
+log.pet.goneTrap=wyzwolona przez wroga, trafienia: {0}
+log.pet.onceAt=wybuch po {0} s
+log.pet.aura=aura przywołańca: „{0}” {1}
+log.pet.auraTarget=aura przywołańca: „{0}”
+log.pet.auraAllies=wzmacnia nas i inne przywołańce, dopóki jest w pobliżu
+log.pet.auraOnTarget=wisi na celu, dopóki jest w pobliżu
+log.pet.miss=chybienie przywołańca: „{0} nr {1}” {2}
+log.pet.hitChance=szansa trafienia {0}%
+log.pet.hit=przywołaniec: „{0} nr {1}” {2}
+log.pet.auto=(atak podstawowy)
+log.pet.auraMark=(aura)
+log.pet.perSecond=raz na sekundę
+log.pet.speed=szybkość {0} ataków/s
+log.pet.every=co {0} s
+log.pet.crit=krytyk stopnia {0} ×{1}
+log.pet.dotApplied=nałożono obrażenia w czasie
+# Źródło obrażeń w czasie przywołańca w wierszu tyknięcia: „tyknięcie: podpalenie (od „<przywołaniec> nr 1: <umiejętność>”)”.
+log.pet.source={0} nr {1}: {2}
+# Umiejętność przywołańca bez nazwy w grze — nazywamy ją końcówką ścieżki jej zapisu.
+log.pet.noName=bez nazwy: {0}
+
+# Wynik przebiegu: bonus rasowy.
+log.racial.noRace=bonusy przeciw rasom (liczba: {0}) nie działają na ten cel: nie ma on ŻADNEJ rasy (tak jak manekin)
+log.racial.none=cel to {0}, a bonusów przeciw niemu nie mamy (są przeciw innym rasom: {1})
+log.racial.has=cel to {0}, nasz bonus przeciw niemu to {1}% obrażeń (mnożnik ×{2})
+log.racial.flat=płaski bonus przeciw rasie „{0}” ({1} obrażeń) ZEBRANO, ALE NIE ZASTOSOWANO: nie wiadomo, jakim typem obrażeń przychodzi (podpowiedź nie podaje typu), ani w którym miejscu kolejności stoi. Procentowy stawiamy według wzoru z artykułu; dla płaskiego wzoru nie ma ani w artykule, ani w plikach — potrzebny pomiar
+
+# Wynik przebiegu: wskazówki (co wybrano źle).
+log.hint.mainNotSpell=„{0}” wybrano jako główną, ale nie jest ani kanałem, ani czarem bez odnowienia (lub nie znaleziono jej animacji) — atakujemy bronią, jak bez wyboru
+log.hint.buffPressed=„{0}” to wzmocnienie: jego premie działają na trafienia, dopóki trwa, ale samo nie uderza. Zaznacz je wśród wzmocnień
+log.hint.channelWithAttack=kanał „{0}” naciśnięto RAZEM z atakiem podstawowym — w grze tak nie bywa: dopóki trzyma się promień, broń nie uderza. Naciska się go wg „odnowienia” zapisu, a nie wg szybkości rzucania czarów. Wybierz go jako główny
+log.hint.starHits=gwiazda „{0}” zadaje obrażenia — nie włączamy jej jako wzmocnienia; zaznacz ją na liście naciśnięć, a będzie uderzać wg odnowienia
+log.hint.starReplacing=gwiazda „{0}” jest przypisana do „{1}” — to ATAK ZASTĘPUJĄCY: przypisuje się go do przycisku i uderza zamiast zwykłego ciosu. Umiemy takie liczyć, ale w TYM przebiegu nie uderzamy nim — zapis nie przechowuje przypisania. Wybierz go na liście „atakuj przez”, a gwiazda zadziała
+log.hint.starIdle=gwiazda „{0}” jest przypisana do umiejętności „{1}”, a ta w tym przebiegu NIE UDERZA (nie zaznaczona do naciskania i nie w puli broni) — uruchomień nie ma wcale, i to nie przypadek
+
+# Wynik przebiegu: czego nie odczytano.
+log.unread.starBuffNoDuration=gwiazda „{0}” nakłada WZMOCNIENIE, ale zapis nie ma czasu trwania — nie mamy czym go utrzymać, więc kolejka pokazuje tylko samo uruchomienie
+log.unread.starNoDamage=nie odczytaliśmy obrażeń gwiazdy „{0}”: uruchomienie w kolejce jest, obrażeń nie ma
+log.unread.buffNoDuration=wzmocnienie „{0}” zmienia obrażenia, ale zapis nie ma czasu trwania — kolejka pokazuje tylko jego uruchomienie, premie nie działają
+log.unread.summonNoPet=przywołanie „{0}” uruchomiło się, ale takiego przywołańca nie ma w puli — jego obrażenia nie są liczone
+log.unread.petMoveNoRate=przywołaniec „{0}” ma umiejętność „{1}” zadającą obrażenia, ale zapis nie mówi, jak często jej używa — w kolejce nie jest używana
+log.unread.petNoSpeed=nie udało się odczytać szybkości ataku przywołańca „{0}” (brak tabeli animacji) — jego atak podstawowy nie trafia do kolejki
+log.unread.petNoMoves=nie odczytaliśmy żadnej umiejętności z obrażeniami przywołańca „{0}” — w kolejce jest przywoływany, ale nie uderza
+
+# Wynik przebiegu: umiejętności z przedmiotów i zestawów — co się z każdą stało.
+log.gear.mainSpell=główna umiejętność zamiast ataku podstawowego, trafienia: {0}
+log.gear.pool=w puli broni
+log.gear.onlyCrit=losowane tylko przy krytyku;
+log.gear.fired=uruchomiono razy: {0}
+log.gear.firedSummon=— przywołanie, przywołaniec wchodzi do puli i uderza
+log.gear.firedDebuff=— osłabienie celu
+log.gear.firedBuff=— wzmocnienie na nas
+log.gear.conditionNotModelled=warunku nie modelujemy —
+log.gear.pressed=zaznaczone do naciskania, naciskane wg odnowienia: naciśnięto razy: {0}
+log.gear.notPressed=naciskalne — nie zaznaczone do naciskania
+log.gear.conditionHits=warunku nie modelujemy, obrażenia są — zaznacz, a pójdzie wg odnowienia
+log.gear.noHit=nie uderza ({0})
+log.gear.conditionNoHit=warunku nie modelujemy, brak obrażeń ({0}) — nie bierze udziału w kolejce
+
+# Wynik przebiegu: gwiazdy i przywołańce z nazwy.
+log.star.head=„{0}” poz. {1} od „{2}”
+log.star.onlyCrit=(tylko przy krytyku)
+log.star.chance=szansa {0}%
+log.star.cooldown=odnowienie {0} s
+log.star.fired=uruchomiono {0} razy na {1} rzutów
+log.star.blocked=odnowienie przeszkodziło razy: {0}
+log.petLine.auras=aury przywołańców dla innych przywołańców, dopóki te żyją — {0}: {1}
+log.petLine.head=„{0}” ({1}) — przywołano razy: {2}
+log.petLine.limit=naraz do {0}
+log.petLine.hits=trafienia {0}
+log.petLine.misses=chybienia {0}
+log.petLine.crits=krytyki {0}
+log.petLine.damage=obrażenia {0}
+log.petLine.expired=odeszły po czasie {0}
+log.petLine.blocked=przywołania ponad limit {0}

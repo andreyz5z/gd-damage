@@ -1,0 +1,150 @@
+# «스킬» 창: 마스터리, 스킬 툴팁, 디보션, 리프트.
+# 마스터리, 스킬, 별자리 이름은 게임에서 가져옵니다.
+
+skills.title=스킬 — {0}
+skills.levelParen=(레벨 {0})
+
+# 마스터리 선택과 포기
+skills.choose.first=첫 번째 마스터리
+skills.choose.second=두 번째 마스터리
+skills.choose.intro=마스터리는 막대에 첫 포인트가 들어가는 순간 선택된 것으로 봅니다 — 바로 그것을 스킬 포인트 1개를 써서 합니다. 같은 마스터리를 두 번 고를 수는 없습니다.
+skills.choose.opensAt=게임에서는 레벨 {0}에 열립니다.
+skills.choose.freePoints=남은 스킬 포인트: {0}.
+skills.noPoints.text=남은 스킬 포인트가 없습니다. 마스터리는 막대에 포인트를 넣어 선택합니다.\n\n메인 창의 «스킬 포인트» 항목에서 포인트를 더하면 여기서 쓸 수 있습니다. 없는 포인트를 쓸 수는 없습니다: 번 것보다 더 쓴 셈이 됩니다.
+skills.noPoints.title=스킬 포인트가 부족합니다
+skills.take.ask=마스터리 «{0}»을(를) 선택할까요?\n\n스킬 포인트 1개가 막대에 들어갑니다 — 이렇게 마스터리가 선택됩니다. 현재 남은 포인트: {1}.
+skills.take.undo=«마스터리 포기» 버튼으로 되돌릴 수 있습니다 — 포인트가 돌아옵니다.
+skills.take.title=마스터리 선택
+skills.drop.ask=마스터리 «{0}»을(를) 포기할까요?\n\n넣은 포인트가 모두 빠지고 — 막대 포인트를 포함해 총 {1}개 — 남은 포인트로 돌아갑니다. 이 마스터리의 스킬은 사라지고, 거기에 연결된 디보션 별은 연결 없이 남습니다.
+skills.drop.title=마스터리 포기
+skills.drop.button=마스터리 «{0}» 포기
+skills.drop.secondFirst=먼저 두 번째 마스터리를 포기하세요
+skills.mastery.fallbackName=마스터리 {0}
+skills.mastery.tooEarlyFirst=게임에서 첫 번째 마스터리는 레벨 {0}에 열리지만, 캐릭터는 {1}입니다.
+skills.mastery.tooEarlySecond=게임에서 두 번째 마스터리는 레벨 {0}에 열리지만, 캐릭터는 {1}입니다.
+
+# 스킬 툴팁
+skills.kind.mastery=마스터리
+skills.kind.active=액티브 스킬
+skills.kind.weaponPool=기본 무기 공격 (무기 풀 스킬)
+skills.kind.modifier=스킬 변형
+skills.kind.transmuter=변환 스킬
+skills.kind.passive=패시브 스킬
+skills.tip.poolChance=기본 무기 공격 대신 사용될 확률: {0}%
+skills.tip.poolShared=선택한 기본 무기 공격 스킬: {0}, 확률 합계 {1}%. 한 번의 공격에 그중 하나만 발동합니다.
+skills.tip.poolSharedFull=선택한 기본 무기 공격 스킬: {0}, 확률 합계 {1}%. 한 번의 공격에 그중 하나만 발동하며, 단순한 무기 공격은 전혀 일어나지 않습니다.
+skills.tip.dependsOn=해금 경로: {0}
+skills.tip.level=현재 레벨: {0}
+skills.tip.levelWithBonus=현재 레벨: {0} + 아이템 {1}
+skills.tip.max=({0}까지 올릴 수 있음)
+skills.tip.maxWithGear=({0}까지 올릴 수 있음, 아이템 포함 한도 {1})
+skills.tip.recordNumbers=이것은 캐릭터 보너스가 적용되기 전의 스킬 레코드 수치입니다. 게임은 자체 툴팁에서 당신이 가진 모든 데미지를 곱한 값을 보여 주므로 게임의 수치가 더 큽니다. 보너스를 포함한 데미지: «데미지 계산…» → «공격당 데미지».
+skills.tip.recordNumbersHand=손에 대한 노란 줄은 예외입니다: 거기 괄호 안은 이미 그 손의 데미지로, 게임 표시와 같습니다.
+skills.tip.celestialPower=천상의 힘
+skills.tip.fromItem=아이템에서: {0}
+skills.tip.nextLevel=다음 레벨: {0}
+
+# 디보션
+skills.devotion.tab=디보션
+skills.devotion.spent=사용한 디보션 포인트: 획득한 {1} 중 {0}, 남음 {2}
+skills.devotion.split=그중 {0}개는 패시브 별 (아래에 합산), {1}개는 스킬이 있는 별 (따로 표시)입니다.
+skills.devotion.sums=합계 보너스
+skills.devotion.none=없음
+skills.devotion.granted=부여된 스킬
+skills.devotion.boundTo=연결: {0}
+skills.devotion.unbound=아무것에도 연결되지 않음 — 발동하지 않습니다
+skills.devotion.levels=디보션 스킬 레벨 변경
+skills.devotion.starOf={0}, 별 {1}
+skills.devotion.total=합계 {0}
+skills.devotionLevels.title=디보션 스킬 레벨 — {0}
+skills.devotionLevels.of=/ {0}
+skills.devotionLevels.none=캐릭터에게 스킬을 부여하는 디보션 별이 없습니다.
+skills.constellations.count=게임의 별자리: {0}. 완성: {1}, 시작: {2}.
+skills.constellations.legend=선택한 별은 표시되어 있습니다. 별자리 옆 괄호 안은 선택한 별의 수, 주는 것, 요구하는 것입니다.
+skills.constellations.gives=효과: {0}
+skills.constellations.needs=요구: {0}
+skills.constellations.star=별 {0}
+skills.constellations.notTaken=(선택 안 함)
+
+# 디보션 성도: 마우스로 별에 포인트 넣기
+skills.devo.hint=별을 좌클릭하면 포인트가 들어가고, 우클릭하면 되돌립니다. 휠로 확대하고, 끌면 성도가 움직입니다.
+skills.devo.fit=전체 보기
+skills.devo.zoom=배율 {0}%
+skills.devo.points=디보션 포인트: {0}
+skills.devo.stars=선택한 별: {1} 중 {0}
+skills.devo.noPoints=남은 디보션 포인트가 없습니다. 메인 창의 "디보션 포인트" 칸에서 늘리세요.
+skills.devo.already=이 별에는 이미 포인트가 들어 있습니다.
+skills.devo.locked=별자리 "{0}"은(는) 아직 잠겨 있습니다. 친화도가 부족합니다 — {1}.
+skills.devo.parentFirst=먼저 "{0}"을(를) 찍어야 합니다. 이 별은 거기에 달려 있습니다.
+skills.devo.empty=이 별에는 포인트가 없습니다.
+skills.devo.childFirst=이 별에 선택된 "{0}"이(가) 달려 있습니다. 그것부터 되돌리세요.
+skills.devo.affinityHolds=별자리가 완성되어 있고 그 친화도가 "{0}"을(를) 떠받치고 있습니다. 없으면 {1}이(가) 됩니다.
+skills.devo.bindHint=별을 좌클릭하여 스킬을 고르세요.
+
+# 천상의 힘: 어느 스킬에 연결할지
+skills.bind.title="{0}"을(를) 어느 스킬에 연결할까요
+skills.bind.none=스킬 지정 안 함
+skills.bind.chosen=(선택됨)
+skills.bind.busy=(사용 중: {0})
+skills.bind.fromItem=(장비에서)
+skills.bind.legend=빨간색은 캐릭터가 아직 배우지 않은 스킬입니다. 그래도 고를 수 있으며, 포인트가 들어가는 즉시 힘이 작동합니다.
+
+# 리프트
+skills.portals.tab=리프트
+skills.portals.column=리프트
+skills.portals.notBuilt=리프트 목록이 없습니다. 게임의 월드 파일에서 읽으며 약 1분 걸립니다.
+skills.portals.build=리프트 목록 만들기
+skills.portals.reading=월드 파일을 읽는 중…
+skills.portals.readingWhat=월드 파일을 읽는 중: {0}
+skills.portals.readError=월드 파일을 읽지 못했습니다: {0}
+skills.portals.layer={0}의 Riftgates 레이어: {1}개 항목
+skills.portals.openAll=모든 난이도에서 모든 리프트 열기
+skills.portals.openDifficulty={0}: 모두 열기 ({2} 중 {1})
+skills.portals.closeAll=모든 난이도에서 모든 리프트를 닫을까요?\n\n캐릭터가 직접 찾은 것도 지워집니다. 세이브 옆에 백업이 남습니다.
+skills.portals.closeOne=난이도 «{0}»의 모든 리프트를 닫을까요?\n\n캐릭터가 직접 찾은 것도 지워집니다. 세이브 옆에 백업이 남습니다.
+skills.portals.title=리프트
+skills.portals.summary=게임의 리프트: {0}.   열림: {1}
+skills.portals.source=목록은 게임의 월드 파일에서 읽습니다. 편집하는 것은 캐릭터의 세이브뿐입니다.
+skills.portals.open=열림
+
+# 스킬이 소환하는 것 — 소환 스킬 툴팁 아래의 줄.
+skills.pet.summons=소환: {0}
+skills.pet.limit=동시에 최대 {0}
+skills.pet.lives=지속 {0}초
+skills.pet.permanent=영구
+skills.pet.life=체력 {0}
+skills.pet.lifeNote=체력은 자체 규칙으로 계산하며 게임과 다를 수 있습니다
+
+# 트리에서 포인트 투자: 좌클릭은 1포인트 투자, 우클릭은 회수
+skills.edit.points=스킬 포인트: {0}
+skills.edit.hint=좌클릭은 포인트를 넣고, 우클릭은 되돌립니다.
+skills.edit.noPoints=남은 스킬 포인트가 없습니다. 메인 창의 "스킬 포인트" 칸에서 늘리세요.
+skills.edit.atMax=이 스킬은 이미 상한 {0}입니다. 장비가 주는 몫은 상한 위로 올라가며 세이브에 저장되지 않습니다.
+skills.edit.masteryFirst=먼저 숙련도 바입니다. 포인트를 하나 넣으면 트리가 열립니다.
+skills.edit.tierClosed=이 열은 숙련도 {0}레벨에서 열리며, 바는 {1}입니다.
+skills.edit.ownerFirst=먼저 "{0}"을(를) 찍어야 합니다. 이 스킬은 거기에 달려 있습니다.
+skills.edit.exclusive=배타 스킬은 하나만 활성화할 수 있으며, 이미 "{0}"이(가) 그렇습니다.
+skills.edit.empty=이 스킬에는 포인트가 없습니다.
+skills.edit.ownerBusy=이 스킬에 "{0}"이(가) 달려 있고 아직 포인트가 남아 있습니다.
+skills.edit.barLast=바의 마지막 포인트는 숙련도 자체입니다. 대신 숙련도를 되돌리세요.
+skills.edit.barHolds="{0}"은(는) 숙련도 {1}레벨에서 열리는 열에 있습니다.
+
+# 「명성」 탭: 세력과 등급. 세력 이름과 등급, 그 순서는 게임에서 읽습니다.
+skills.factions.tab=명성
+skills.factions.column=세력
+skills.factions.rank=등급
+skills.factions.value=명성치
+skills.factions.boost=상승 배율
+skills.factions.notes=비고
+skills.factions.summary=게임의 세력: {0}.   세이브의 항목: {1}
+skills.factions.short=세이브에는 항목이 {0}개 있지만 게임에는 세력이 {1}개 있습니다. 마지막 세력들은 아직 들어 있지 않으며, 게임이 직접 캐릭터를 저장하면 나타납니다.
+skills.factions.source=이름과 등급, 순서는 게임의 파일에서 읽습니다. 편집하는 것은 캐릭터의 세이브뿐입니다.
+skills.factions.unreadable=게임의 파일에서 세력을 읽지 못했습니다.
+skills.factions.showHidden=게임이 자기 패널에 보여 주지 않는 세력도 표시
+skills.factions.setRank=등급:
+skills.factions.exact=또는 수치:
+skills.factions.apply=선택한 세력에 적용
+skills.factions.pickFirst=먼저 목록에서 세력을 하나 이상 선택하세요.
+skills.factions.hidden=게임 패널에 표시되지 않음
+skills.factions.noGain=명성이 오르지 않음
+skills.factions.boostTimes=×{0}

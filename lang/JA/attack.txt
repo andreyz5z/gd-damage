@@ -1,0 +1,12 @@
+# ダメージスキル: 「攻撃手段」リストの行とスキルの構成 (「このスキルの構成」)。
+
+attack.title={0}   ({1}, Lv. {2})
+attack.weaponPct=武器ダメージの {0}%
+attack.part={0} (Lv. {1})
+attack.transmuter={0} (トランスミューター, Lv. {1})
+attack.transmuterOrphan={0} — トランスミューター (Lv. {1}): 親スキルが見つかりません
+attack.fromItemInForm=アイテムから、この形態で: {0}
+attack.fromItem=アイテムから: {0}
+attack.pool=(通常の武器攻撃の代わりに、{0}%)
+attack.poolNoChance=(通常の武器攻撃の代わりに)
+attack.onHit=(命中時に発動、{0}%)

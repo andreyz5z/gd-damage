@@ -1,0 +1,19 @@
+# 「アクティブスキル」ウィンドウ。
+
+active.title=アクティブスキル — {0}
+active.none=このキャラクターには切り替え式のスキルも、アイテムから得たスキルもありません。
+active.source.devotionOn=«{0}» に結びついた祈祷
+
+# スキルの発動条件、短く (「«ブロック時» の条件は抽選しません」)。
+active.trigger.attack=攻撃時
+active.trigger.attackCrit=クリティカル攻撃時
+active.trigger.lowHealth=ヘルス低下時
+active.trigger.lowMana=エナジー低下時
+active.trigger.hitByEnemy=被弾時
+active.trigger.hitByMelee=近接攻撃を受けたとき
+active.trigger.hitByProjectile=飛び道具を受けたとき
+active.trigger.hitByCrit=クリティカルを受けたとき
+active.trigger.block=ブロック時
+active.trigger.onKill=撃破時
+active.trigger.castBuff=強化を使ったとき
+active.trigger.onEquip=装備時

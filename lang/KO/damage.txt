@@ -1,0 +1,236 @@
+# «데미지 계산» 창: 탭, 버튼, 입력란, 선택 목록.
+# 아래에 탭 설명과 시뮬레이션 로그가 있습니다.
+
+damage.title=데미지 계산 — {0}
+damage.tab.timeline=전투 시뮬레이션
+damage.tab.totals=합계 보너스
+damage.tab.hit=공격당 데미지
+damage.tab.target=적
+damage.seconds={0}초
+damage.secondsPair={0} 및 {1}
+
+# 합계 보너스
+damage.pickActive=활성 스킬 선택…
+damage.activeFromSave=세이브 기준으로 계산
+damage.activeChosen=선택: {0}
+damage.pickPets=활성 펫…
+damage.petsNear=근처의 펫
+
+# 공격당 데미지
+damage.hit.what=공격 수단
+damage.hit.plain=기본 무기 공격 (스킬 없음)
+
+# 전투 시뮬레이션: 입력란과 버튼
+damage.run.seconds=초
+damage.run.seed=시드
+damage.run.go=대기열 실행
+damage.run.press=누를 것 (재사용 대기시간 기준)
+damage.run.attack=기본 공격
+damage.run.weapon=무기로
+damage.run.everyLabel=재사용 대기시간 없음 — 누르는 간격
+damage.run.everyTail=초 (0 — 애니메이션대로)
+
+# 전투 시뮬레이션: «누를 것»과 «기본 공격» 목록의 항목
+damage.press.buff=강화
+damage.press.buffNotRolled=({0} — 추첨 안 함)
+damage.press.whenNotRolled={0} — 추첨 안 함, 재사용 대기시간마다 누름
+damage.press.every=재사용 대기시간 없음 — {0}초마다 누름
+damage.press.anim=재사용 대기시간 없음 — 애니메이션대로, {0}초마다
+damage.press.noAnim=재사용 대기시간 없음 — 애니메이션을 찾지 못함, 간격을 지정하세요
+damage.press.noCooldown=재사용 대기시간 없음
+damage.press.starHits=별, 데미지 있음
+damage.press.pet=(펫 «{0}», 동시에 {1}, {2}, 초당 {3}회 공격, 데미지 스킬 {4})
+damage.press.petLives=지속 {0}초
+damage.press.petPermanent=영구
+damage.press.none=누를 수 있는 데미지 스킬이 없습니다
+damage.attack.form=형태 «{0}»   스킬 «{1}»(으)로 공격
+damage.attack.ofForm=(형태 «{0}»)
+damage.attack.channel=채널링, {0}초마다 틱
+damage.attack.finale={0}회마다 1번
+damage.attack.charges=충전 최대 {0}
+damage.attack.byAnimation=재사용 대기시간 없음, 애니메이션대로 {0}초마다
+
+# 적
+damage.target.load=게임에서 적 목록 불러오기
+damage.target.reload=적 목록 다시 만들기
+damage.target.find=이름으로 검색
+damage.target.level=레벨
+damage.target.difficulty=난이도
+damage.target.notLoaded=적 목록을 아직 불러오지 않았습니다.
+damage.target.pressButton=위 버튼을 누르면 프로그램이 적 목록을 만듭니다. 다시 만들 필요는 게임 업데이트 후에만 있습니다.
+damage.target.nothing=찾지 못했습니다.
+
+# ─── 탭 설명 ───
+
+# 합계 보너스
+damage.totals.summary=합산 출처: 착용 아이템 {0}개 (컴포넌트와 증강제 포함), 세트 보너스 {1}개, 패시브 스킬 {2}개, 켜진 스킬 {3}개, 디보션 별 {4}개.
+damage.totals.exact=[정확]
+damage.totals.overCap=(+{0}% 최대치 초과)
+damage.totals.resistCap=한도 {0}%
+damage.totals.armourRating=방어구 등급 {0}
+damage.totals.absorb=흡수 {0}%
+damage.totals.armourNote=아이템 자체의 방어구는 그 칸에, 나머지는 모두 여섯 칸에 동시에 들어가며 ({0}), 그 뒤에 방어구 +{1}%가 적용됩니다. 등급은 칸들의 평균이며, 그 부위에 맞는 비율로 가중합니다. 흡수는 기본 70%에 «방어구 흡수력 +%»를 곱한 값이며 최대 100%입니다.
+damage.totals.block=차단 확률 {0}%   차단되는 데미지 {1}
+damage.totals.blockNote=차단 확률은 더해집니다 — 방패의 «차단 확률»에 모든 곳의 «차단 확률 +%»를 더하며, 곱하지 않습니다. 차단되는 데미지는 방패 기본값 × (1 + 차단 데미지 %)입니다.
+damage.totals.pets=펫 보너스
+damage.totals.petsNote=소환된 생물에게만 적용되며 당신에게는 해당되지 않습니다. 출처: {0}.
+damage.totals.petCapItem={0} {1}% (+{2}% 최대치 초과)
+damage.totals.petCapNote={0}% 한도에 닿았고, 게임 패널은 이미 잘린 수치를 보여 줍니다: {1}. 남은 분량은 사라지지 않습니다: 저항력을 낮추는 적이 먼저 거기서 깎아 갑니다.
+damage.totals.missing=이 합계에 아직 없는 것
+damage.totals.missingProcs=항상 켜져 있지 않고 조건으로 발동하는 스킬: 마스터리 발동 효과, 아이템 스킬, 디보션 발동 효과.
+damage.totals.missingPressed=눌러야 하는 스킬 — 그 보너스는 몇 초만 유지됩니다.
+damage.totals.skipped=건너뜀: {0}.
+damage.totals.toggledOff=꺼져 있는 켜고 끄는 스킬: {0}. 켜진 것은 합계에 들어 있습니다 — 세이브가 무엇이 켜져 있는지 기억합니다.
+damage.totals.chosenByHand=수동 선택 («활성 스킬 선택» 버튼): {0}.
+damage.totals.missingConversion=데미지 변환. 데미지 종류에 대한 비율은 그대로 보여 주지만, 게임에서는 변환 뒤에 적용됩니다: 물리 데미지를 모두 변환하는 빌드에서 «물리 데미지 +200%»는 아무것도 주지 않습니다.
+damage.totals.missingScaling=능력치에 따른 데미지 증가: 민첩은 물리와 관통 데미지를, 정신은 마법 계열을 늘립니다. 공식은 알려져 있지만 그것은 다음 단계입니다.
+damage.totals.missingCap=저항력 한도. 여기서는 보너스를 그대로 더하므로 80%를 넘을 수 있습니다 — 게임에서는 한도 (80%에 «최대치» 보너스를 더한 값, 옆에 표시)에서 멈춥니다. 한도를 넘는 분량도 쓸모없지 않습니다: 보스가 저항력을 낮춥니다.
+damage.totals.missingDifficulty=난이도에 따른 저항력 페널티 (엘리트 −25, 얼티밋 −50)는 여기서 빼지 않았습니다: 지금 어느 난이도에 있는지 세이브에 없습니다.
+damage.totals.notStacked=중첩되지 않은 것
+damage.totals.notStackedNote=«X 감소»와 «X% 감소» 형태의 저항력 감소, 대상의 데미지 감소와 명중 감소는 중첩되지 않습니다: 언제나 가장 강한 출처만 작용합니다. 여기서는 합계가 아니라 가장 강한 것을 택했습니다.
+damage.totals.notStackedItem={0}: 출처 {1}개, 가장 강한 것 선택 {2}
+
+# 합계 줄에 마우스를 올렸을 때의 «구성» 툴팁
+damage.terms.pet=(펫 보너스)
+damage.terms.byMax=중첩되지 않음: 출처 {0}개 중 가장 강한 것 선택
+damage.terms.summedOne=출처 {0}개에서 합산
+damage.terms.summedMany=출처 {0}개에서 합산
+damage.terms.winner=← 적용 중
+damage.terms.total=합계 {0}
+
+# 공격당 데미지
+damage.hit.plainTitle=기본 무기 공격
+damage.hit.plainWeapon=기본 무기 공격: {0}
+damage.hit.skillTitle={0}   ({1}, Lv. {2})
+damage.hit.weapon=무기: {0}
+damage.hit.attackSpeed=초당 {0}회 공격   (공격 속도 {1}%)
+damage.hit.castSpeed=시전속도 {0}%
+damage.hit.castCapped=(한도 {0}%에 도달)
+damage.hit.channel=채널링: {0}초마다 틱
+damage.hit.perHit=공격당 {0} – {1}
+damage.hit.overTime=(초당, {0}초)
+damage.hit.none=데미지 없음.
+damage.hit.bare=일시 효과 없음 ({0}): 공격당 {1} – {2} — 게임 패널이 보여 주는 것이 바로 이 수치입니다.
+damage.hit.how=계산 방법
+damage.hit.howBase=기본은 무기의 데미지에 아이템의 고정 보너스를 더한 것입니다. 고정 원소 데미지는 화염, 냉기, 번개에 3등분됩니다.
+damage.hit.howConversion=변환은 기본값의 일부를 가져가며, 그 비율은 차례로 적용되지 않고 더해집니다. 방어구 관통은 마지막 변환으로, 남은 것에서 가져갑니다.
+damage.hit.howMultiplier=각 부분에 (1 + 능력치/제수 + 종류 % + 원소 % + 전체 데미지 %)를 곱합니다. 제수: 민첩/245와 /215, 정신/215와 /200.
+damage.hit.howTotal=게임의 캐릭터 패널은 «<종류> 데미지 +X%»를 종류의 %에 «전체 데미지 %»를 더한 값으로 한 줄에 표시합니다.
+damage.hit.howTotalSome=이 캐릭터는 전체 데미지 +{0}%를 가지므로, 게임 패널은 각 종류의 %를 우리보다 그만큼 높게 표시합니다.
+damage.hit.howTotalNone=이 캐릭터에게는 «전체 데미지 %»가 없으므로 비율이 일치합니다.
+damage.hit.howAll=«전체 데미지 %»는 지속 데미지를 포함한 모든 종류의 데미지에 적용됩니다 — 예외는 없습니다.
+damage.hit.howDots=지속 데미지는 초당으로 표시합니다 — 레코드에 그렇게 들어 있어 나눌 필요가 없습니다. 지속시간 보너스는 이 수치를 바꾸지 않습니다: 효과가 더 오래 가지만 초당 데미지는 같습니다.
+
+# 공격당 데미지: 보복
+damage.retaliation.title=보복 (반격)
+damage.retaliation.note=이것은 캐릭터 능력치의 «보복» 패널이며 공격의 일부가 아닙니다. 계산 방식이 다릅니다: 능력치와 데미지 종류 비율은 영향을 주지 않고, «보복 데미지 +%»만 영향을 줍니다 — 당신은 +{0}%입니다. 반면 변환은 작용하며, 일반 데미지와 같은 것이 적용됩니다.
+damage.retaliation.note2=반격은 근접 공격에 대해서만, 당신을 때린 상대에게만, 실제로 맞았을 때만 작동합니다. 반격 자체는 빗나가지 않고 치명타도 없습니다. 데미지 반사 («받은 데미지의 X% 반사»)는 다른 것이며 캐릭터 능력치에는 나오지 않습니다: 때리는 상대의 데미지에 따라 달라집니다.
+
+# 공격당 데미지: 손별
+damage.hands.title=각 손에서 얼마인가
+damage.hands.both=게임이 스킬 툴팁에 표시하는 것과 같습니다. 무기 데미지 비율은 두 손 모두 같고 ({0}%), 괄호 안 숫자가 다른 것은 손에 든 무기가 다르기 때문입니다. 괄호에는 그 손의 지속 데미지도 들어갑니다: 게임 패널도 같은 방식으로 셉니다.
+damage.hands.oneMain=줄이 하나인 이유는 스킬이 한 손 — 주 손 — 으로 공격하기 때문이며, 게임도 툴팁에 정확히 같은 수의 줄을 표시합니다. 어느 손인지는 스킬의 애니메이션에 적혀 있습니다: 장비 세트마다 파일이 있고, 그 안의 적중 이벤트가 손을 지정합니다. 양손 무기로 바꾸거나 방패를 들면 줄이 바뀔 수 있으며, 게임에서도 마찬가지입니다.
+damage.hands.oneOff=줄이 하나인 이유는 스킬이 한 손 — 보조 손 — 으로 공격하기 때문이며, 게임도 툴팁에 정확히 같은 수의 줄을 표시합니다. 어느 손인지는 스킬의 애니메이션에 적혀 있습니다: 장비 세트마다 파일이 있고, 그 안의 적중 이벤트가 손을 지정합니다. 양손 무기로 바꾸거나 방패를 들면 줄이 바뀔 수 있으며, 게임에서도 마찬가지입니다.
+damage.hands.single=무기가 하나이므로 손도 하나입니다. 괄호에는 그 손의 지속 데미지도 들어갑니다: 게임 패널도 같은 방식으로 셉니다.
+damage.hands.ownShare=스킬 자체의 툴팁에는 더 적게 나옵니다 — 스킬 자신의 비율 {0}%만:
+damage.hands.lineMain=주 손 무기 데미지의 {0}% ({1} - {2})
+damage.hands.lineOff=보조 손 무기 데미지의 {0}% ({1} - {2})
+
+# 공격당 데미지: 스킬의 구성
+damage.parts.title=이 스킬의 구성
+damage.parts.temporary=— 일시적 효과
+damage.parts.oneHandMain=— 한 손으로 공격, 주 손
+damage.parts.oneHandOff=— 한 손으로 공격, 보조 손
+damage.parts.weaponPct=무기 데미지의 {0}%
+damage.parts.conversion=변환 {0}%: {1} → {2}   (캐릭터의 변환보다 먼저 적용)
+damage.parts.notCounted=합산 안 됨: {0}
+
+# 공격당 데미지: 펫의 공격
+damage.pet.title={0}   (펫 «{1}»의 공격, {2})
+damage.pet.summonedBy=스킬 «{0}»(으)로 소환
+damage.pet.withConversion=변환이 적용된 데미지 — 실제로는 이렇게 공격합니다
+damage.pet.noNumbers=이 스킬에는 수치가 없습니다
+damage.pet.asGame=게임의 표시 — 변환 없음
+damage.pet.asGameNote=게임은 펫의 변환을 어디에도 표시하지 않습니다: 숫자 6개로 측정하고 스크린샷으로 확인했습니다 — «골의 표식»이 있든 없든 스킬 설명은 같습니다. 그래도 변환은 캐릭터와 똑같이 작동합니다.
+damage.pet.notYours=이것은 펫의 공격이며 당신의 공격과 비교할 수 없습니다: 당신의 무기에서 나오지 않고, 당신의 데미지 비율이 아니라 펫 보너스가 적용됩니다.
+
+# 전투 시뮬레이션: 첫 실행 전 도움말
+damage.help.title=시간에 따른 공격 대기열
+damage.help.press=«대기열 실행»을 누르세요: 휘두를 때마다 따로 처리합니다 — 적중, 어느 손이 나갔는지, 그리고 각 줄의 데미지를 그 범위 안에서 따로 추첨합니다. 줄은 계산되는 대로 바로 나타납니다. 위에는 결과: 초당 데미지, 초별 합계의 중앙값, 대상의 체력, 처치까지의 시간 (TTK).
+damage.help.twoNumbers=한 줄에 숫자 두 개: 첫 번째는 대상에게 도달한 양 (손별). 괄호 안의 «보너스 미적용 피해»는 우리에게서 나간 양으로, 치명타는 포함하지만 종족 보너스, 방어구 (물리만 깎음), 저항력과 그 감소는 아직 포함하지 않습니다. 첫 번째 숫자가 두 번째보다 클 수도 있습니다: 감소로 대상의 저항력이 0 아래로 내려가면 깎는 대신 증폭합니다. DPS, 중앙값, 1회 실행 데미지, TTK는 도달한 양으로 셉니다.
+damage.help.target=대상은 «적» 탭에서 선택한 것을 그 레벨과 난이도로 사용합니다. 선택하지 않았다면 게임 파일의 연습용 인형을 씁니다.
+damage.help.pets=펫: 체크한 것은 시작할 때 소환되고, 이후에는 소환의 재사용 대기시간마다 종류의 한도에 닿을 때까지 소환됩니다. 스스로 발동하는 것 (별, 아이템 스킬)은 체크 없이도 옵니다. 각각 자기 기본 공격과 스킬을 그 빈도로 쓰며, 적중과 치명타는 당신과 똑같이 추첨됩니다.
+damage.help.counted=세는 것: 휘두르기, 누른 스킬, 채널링, 무기 풀, 발동 효과, 별, 데미지를 주는 오라, 지속 데미지, 치명타 단계, 저항력 감소, 종족 보너스, 체력 감소, 형태, 펫.
+damage.help.seed=시드는 실행을 반복 가능하게 합니다: 같은 시드는 마지막 자리까지 같은 결과를 줍니다. 시드만 바꾸면 편차가, 같은 시드로 빌드를 바꾸면 빌드가 무엇을 바꿨는지가 보입니다.
+
+# 전투 시뮬레이션: 실행 중
+damage.run.building=대기열을 만드는 중…
+damage.run.buildingNote=공격마다 자기 추첨으로 자기 데미지를 계산하며, 긴 실행에는 수천 번이 있습니다
+damage.run.progress=대기열을 만드는 중…   {1}초 중 {0}초   ({2}줄)
+
+# 전투 시뮬레이션: 결과
+damage.run.buffsUp=켜진 강화: {0}   — 재사용 대기시간마다 각자의 지속시간 (레코드에 지속시간이 없으면 실행 전체) 동안 대기열에 들어가며, 별도 공격이 아니라 능력치를 바꿉니다
+damage.run.target=대상: {0}
+damage.run.targetLevel=레벨 {0}, 난이도 {1}
+damage.run.targetStats=방어 능력 {0}   방어구 {1}
+damage.run.hitChance=적중 확률 {0}%
+damage.run.mainSpell=기본 무기 공격 대신 {0} «{1}»: 시전속도 {2}%, {3}초마다, 1회 실행당 {4}회
+damage.run.targetResists=대상의 저항력: {0}
+damage.run.gear=아이템과 세트의 스킬:
+damage.run.queue=대기열
+damage.run.summary=실행 결과
+damage.run.dps=초당 데미지 (DPS)  {0}     초별 합계의 중앙값 {1}
+damage.run.total={1}초 동안 1회 실행 데미지 {0}
+damage.run.targetLife=대상의 체력 {0}
+damage.run.killedAt={0}초에 처치 (TTK)
+damage.run.dummyNote=— 참고용: 게임에서 인형은 죽지 않습니다
+damage.run.notKilled=실행 중 처치 못함 — {0}% 남음
+damage.run.percentLife=체력 감소로 {0} 깎음 ({1}회)
+damage.run.percentLifeBlocked=추가로 {0}회는 대상의 저항력 {1}%가 완전히 무효화
+damage.run.swings=휘두르기 {0}, 적중 {1}, 빗나감 {2}, 치명타 {3}
+damage.run.tier=단계 {0}: {1}
+damage.run.hands=손: 양손 {0}, 첫째 {1}, 둘째 {2}
+damage.run.procs=자동 발동: 발동 {0} (그 데미지 {1})
+damage.run.pool=무기 풀 {0}
+damage.run.silent=데미지 없음 {0}: {1}
+damage.run.pets=펫: 공격 {0}, 소환 {1}, 그 데미지 {2}
+damage.run.petsShare=— 전체의 {0}%
+damage.run.stars=디보션 별
+damage.run.dots=지속 데미지: 부여 {0}, 갱신 {1}, 그 데미지 {3} 중 {2}
+damage.run.before=보너스 미적용 피해는 {0} — 도달한 것은 {1}% (종족 보너스, 방어구, 저항력과 그 감소)
+damage.run.conditions=실행 조건
+damage.run.rolls=범위 추첨 횟수: {0} — 각 공격의 각 데미지 줄마다 1회.
+damage.run.critNote=단계가 있는 치명타를 셉니다: 한 번의 추첨으로 적중과 단계가 정해지고, «치명타 데미지 +%»는 단계 배율에 더해집니다. 치명타 확률 자체는 강한 대상에서는 게임과 일치하고 약한 대상에서는 너무 높습니다 — 몬스터 장비의 보너스는 세지 않았습니다.
+damage.run.dotNote=지속 데미지는 부여되어 틱으로 들어갑니다: 한 출처가 가지는 효과는 하나뿐입니다 — 새 적중은 지속시간을 늘리고 데미지를 최고값으로 올리며, 두 번째를 만들지 않습니다. 무기 데미지 전체 (양손과 무기 비율이 있는 스킬)는 하나의 출처로 세고, 무기 비율이 없는 스킬은 별도 출처입니다.
+damage.run.noteRough=단순화: {0}
+damage.run.noteUnread=읽지 못함: {0}
+damage.run.noteHint=도움말: {0}
+damage.run.pressNote=체크한 스킬은 재사용 대기시간이 끝나는 대로 누릅니다: 처음에는 모두 동시에, 이후에는 각자의 재사용 대기시간 (아이템과 변형에 의한 단축 포함)마다. 두 손으로 공격하는 스킬은 항상 두 손으로 공격하며, 각 손은 따로 추첨해 빗나갑니다.
+damage.run.procNote=발동 효과와 «기본 무기 공격 대신» 스킬은 일부러 체크 목록에 넣지 않았습니다: 아무도 누르지 않기 때문입니다. 그것들은 알아서 처리됩니다 — 공격마다 자기 추첨과 자기 재사용 대기시간으로.
+damage.run.silentNote=데미지 없이 발동 — 소환하거나 강화나 약화를 거는 디보션 별과 아이템 스킬. 추첨과 재사용 대기시간은 진짜입니다. 강화는 지속시간 동안 작용하고, 약화는 대상에게 걸리며, 소환된 생물은 풀에 합류해 자기 줄로 공격합니다.
+damage.run.failed=실행에 실패했습니다: {0}
+
+# 적: 적 패널
+damage.enemy.title={0}   ({1}, 레벨 {2}, 난이도 {3})
+damage.enemy.variants=데이터베이스에 이 이름의 레코드가 {0}개 있습니다 — 등장하는 레벨만 다릅니다. 여기서는 가장 완전한 것을 쓰고, 레벨은 위에서 고릅니다.
+damage.enemy.combat=전투 매개변수
+damage.enemy.abilities=방어 능력 {0}   공격 능력 {1}
+damage.enemy.life=체력 {0}   방어구 {1}
+damage.enemy.gearArmour=(그중 장비에서 {0})
+damage.enemy.resists=저항력
+damage.enemy.none=없음
+damage.enemy.hit=적중
+damage.enemy.ourAttack=우리 공격 능력 {0}   대 상대 방어 {1}
+damage.enemy.hitChance=적중 확률 {0}%   치명타 확률 {1}%
+damage.enemy.ourDefence=우리 방어 능력 {0}   대 상대 공격 {1}
+damage.enemy.getHit=피격 확률 {0}%   치명타 피격 확률 {1}%
+
+# 목록과 «적» 탭 제목의 적 등급. 게임에는 등급을 나타내는 고유한 말이 없습니다.
+damage.enemy.rank.superBoss=네메시스
+damage.enemy.rank.boss=보스
+damage.enemy.rank.quest=퀘스트
+damage.enemy.rank.hero=영웅
+damage.enemy.rank.champion=챔피언
+damage.enemy.rank.common=일반
+damage.enemy.variantsShort=(레코드 {0}개)
+damage.attack.byCooldown=무기 대신, 재사용 대기시간마다 {0}초

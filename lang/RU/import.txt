@@ -1,0 +1,57 @@
+# Импорт персонажа из GrimTools (разбор — MECHANICS 106)
+import.button=Импортировать персонажа из GrimTools
+import.warning=Мы попытаемся одеть вашего персонажа по данным из GrimTools. Ваша текущая одетая экипировка будет уничтожена и все характеристики персонажа перезаписаны на основе данных импорта. Если какой-либо элемент из вашей ссылки не распознается, этот слот не будет изменен. Вы действительно хотите продолжить?
+import.title=Импорт персонажа из GrimTools
+import.paste=Вставьте ссылку на билд — например, https://www.grimtools.com/calc/2ELApkPN
+import.go=Перенести
+import.close=Закрыть
+import.seedNote=Вещи встанут те же самые, но числа внутри вилок будут свои: бросков в билде нет вовсе. Любую вещь потом можно докрутить в окне правки.
+import.badLink=Это не похоже на ссылку на билд GrimTools.
+import.err.build=Страница открылась, но билда на ней нет. Проверьте ссылку — она должна вести на страницу билда.
+import.err.other=Не получилось: {0}
+import.step.page=Читаем страницу билда…
+import.step.database=Качаем базу GrimTools…
+import.step.match=Сверяем с записями игры…
+import.result.gear=Надето вещей: {0}; снято пустых слотов: {1}
+import.result.skills=Умений: {0}, звёзд набожности: {1}, привязок небесных сил: {2}
+import.result.bio=Уровень {0}; телосложение {1}, хитрость {2}, дух {3}
+import.missed.items=Не распознано вещей: {0} — эти слоты оставлены как были ({1})
+
+# Ход работы и её конец. 2 октября: пользователь не видел ни прогресса, ни завершения.
+import.step.reading=Разбираем базу GrimTools…
+import.step.haveDatabase=База GrimTools уже разобрана — качать не надо.
+import.step.dress=Одеваем персонажа…
+import.status.database=Качаем базу GrimTools, файл {0} из {1}: {2} из {3} МБ
+import.status.databaseSoFar=Качаем базу GrimTools, файл {0} из {1}: {2} МБ
+import.status.done=Готово. Персонаж одет — закройте окно, чтобы его увидеть.
+import.status.donePartly=Готово, но перенеслось не всё — подробности выше.
+import.status.failed=Не получилось.
+# Ошибки: каждая своим именем, а не одно «не получилось» на все случаи.
+import.err.network=Нет связи с сайтом GrimTools. Проверьте интернет и попробуйте снова.
+import.err.page=Страница билда не открылась — сайт ответил {0}. Проверьте ссылку; может быть, сайт сейчас недоступен.
+import.err.timeout=Сайт GrimTools не ответил. Проверьте соединение с интернетом — возможно, сайт сейчас недоступен.
+import.err.database=База GrimTools не прочиталась — переносить нечего. Попробуйте ещё раз.
+import.err.catalog=Не удалось собрать каталог вещей игры. Проверьте, верно ли указана папка игры.
+# Что не перенеслось — числом: номера вещей и умений человеку ничего не говорят.
+import.missed.parts=Не распознано частей вещей: {0} — вещи надеты, но без них.
+import.missed.skills=Не распознано умений: {0}
+import.missed.powers=Не распознано небесных сил: {0}
+import.missed.shapes=Не распознано привязок у умений облика: {0}
+import.missed.repeats=Записей пришло дважды: {0} — повторы пропущены.
+# Названия слотов. Билд зовёт их weapon1Alt и amulet — такое человеку не показывают.
+import.slot.head=Голова
+import.slot.amulet=Шея
+import.slot.chest=Торс
+import.slot.legs=Ноги
+import.slot.feet=Ступни
+import.slot.hands=Кисти
+import.slot.ring1=Кольцо 1
+import.slot.ring2=Кольцо 2
+import.slot.waist=Пояс
+import.slot.shoulders=Плечи
+import.slot.medal=Медаль
+import.slot.relic=Реликвия
+import.slot.weapon1=Оружие
+import.slot.weapon2=Щит или вторая рука
+import.slot.weapon1Alt=Оружие (второй набор)
+import.slot.weapon2Alt=Щит или вторая рука (второй набор)

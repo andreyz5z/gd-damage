@@ -1,0 +1,27 @@
+# COMPARTIDO POR VARIAS VENTANAS: botones, origen de una habilidad, partes de un objeto.
+
+common.apply=Aplicar
+common.cancel=Cancelar
+common.search=Buscar:
+common.nothingFound=No se encontró nada.
+common.put=Poner
+common.clearBonus=Quitar bonificación
+
+# Dificultades del juego (pestaña «Portales», pestaña del enemigo)
+common.difficulty.normal=Normal
+common.difficulty.elite=Épica
+common.difficulty.ultimate=Legendaria
+
+# Origen de una habilidad (subtítulos en las ventanas de mascotas y de habilidades activas)
+common.source.mastery=habilidad de maestría
+common.source.devotion=devoción
+common.source.item=de un objeto: {0}
+common.source.set=conjunto: {0} ({1})
+common.source.setName=conjunto: {0}
+
+# La parte del objeto con la que llegó la habilidad: «de un objeto: Nombre (prefijo)»
+common.part.prefix=(prefijo)
+common.part.suffix=(sufijo)
+common.part.component=(componente)
+common.part.augment=(potenciador)
+common.part.ascension=(ascensión)

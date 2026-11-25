@@ -1,0 +1,236 @@
+# FENÊTRE « CALCUL DES DÉGÂTS » : onglets, boutons, champs et listes de choix.
+# Plus bas, les explications des onglets et le journal de simulation.
+
+damage.title=Calcul des dégâts — {0}
+damage.tab.timeline=Simulation de combat
+damage.tab.totals=Bonus totaux
+damage.tab.hit=Dégâts par coup
+damage.tab.target=Ennemi
+damage.seconds={0} s
+damage.secondsPair={0} et {1}
+
+# Bonus totaux
+damage.pickActive=Choisir les compétences actives…
+damage.activeFromSave=compté d'après la sauvegarde
+damage.activeChosen=choisies : {0}
+damage.pickPets=Familiers actifs…
+damage.petsNear=familiers à proximité
+
+# Dégâts par coup
+damage.hit.what=Attaquer avec
+damage.hit.plain=Attaque armée par défaut (sans compétence)
+
+# Simulation de combat : champs et bouton
+damage.run.seconds=Secondes
+damage.run.seed=Graine
+damage.run.go=Lancer la file
+damage.run.press=Ce que nous activons (selon le temps de recharge)
+damage.run.attack=Attaque armée par défaut
+damage.run.weapon=avec l'arme
+damage.run.everyLabel=Sans temps de recharge — activer toutes les
+damage.run.everyTail=s (0 — selon l'animation)
+
+# Simulation de combat : éléments des listes « ce que nous activons » et « attaque armée par défaut »
+damage.press.buff=renforcement
+damage.press.buffNotRolled=({0} — non tiré au sort)
+damage.press.whenNotRolled={0} — non tiré au sort, activé selon le temps de recharge
+damage.press.every=sans temps de recharge — activer toutes les {0} s
+damage.press.anim=sans temps de recharge — selon l'animation, toutes les {0} s
+damage.press.noAnim=sans temps de recharge — animation introuvable, indiquez l'intervalle
+damage.press.noCooldown=sans temps de recharge
+damage.press.starHits=étoile, inflige des dégâts
+damage.press.pet=(familier « {0} », {1} à la fois, {2}, {3} attaques/s, compétences à dégâts {4})
+damage.press.petLives=vit {0} s
+damage.press.petPermanent=permanent
+damage.press.none=aucune compétence activable à dégâts
+damage.attack.form=forme « {0} »   attaque avec la compétence « {1} »
+damage.attack.ofForm=(forme « {0} »)
+damage.attack.channel=canalisée, un tick toutes les {0} s
+damage.attack.finale=une fois tous les {0} coups
+damage.attack.charges=charges jusqu'à {0}
+damage.attack.byAnimation=sans temps de recharge, selon l'animation toutes les {0} s
+
+# Ennemi
+damage.target.load=Charger la liste des ennemis depuis le jeu
+damage.target.reload=Recréer la liste des ennemis
+damage.target.find=Recherche par nom
+damage.target.level=Niveau
+damage.target.difficulty=Difficulté
+damage.target.notLoaded=La liste des ennemis n'est pas encore chargée.
+damage.target.pressButton=Appuyez sur le bouton ci-dessus — le programme créera la liste des ennemis. Il ne faut la recréer qu'après une mise à jour du jeu.
+damage.target.nothing=Rien trouvé.
+
+# ─── EXPLICATIONS DES ONGLETS ───
+
+# Bonus totaux
+damage.totals.summary=Additionné à partir de : {0} objets équipés (avec composants et augmentations), {1} bonus d'ensemble, {2} compétences passives, {3} compétences activées, {4} étoiles de dévotion.
+damage.totals.exact=[exact]
+damage.totals.overCap=(+{0} % au-delà du maximum)
+damage.totals.resistCap=plafond {0} %
+damage.totals.armourRating=taux d'armure {0}
+damage.totals.absorb={0} % d'absorption
+damage.totals.armourNote=L'armure propre d'un objet va dans son emplacement, tout le reste dans les six à la fois ({0}), et seulement ensuite s'applique +{1} % d'armure. Le taux est la moyenne des emplacements, pondérée par la part des coups reçus dans cette zone. L'absorption vaut les 70 % de base multipliés par « +% d'absorption d'armure », pas plus de 100 %.
+damage.totals.block=chance de bloquer {0} %   dégâts bloqués {1}
+damage.totals.blockNote=La chance de blocage s'additionne — la « chance de blocage » du bouclier plus les « +% de chance de blocage » de partout, elle ne se multiplie pas. Les dégâts bloqués valent la base du bouclier × (1 + % de dégâts bloqués).
+damage.totals.pets=Bonus des familiers
+damage.totals.petsNote=Ils n'agissent que sur les créatures invoquées et ne s'appliquent pas à vous. Sources : {0}.
+damage.totals.petCapItem={0} {1} % (+{2} % au-delà du maximum)
+damage.totals.petCapNote=Le plafond de {0} % est atteint, et le panneau du jeu affiche le nombre déjà plafonné : {1}. Le surplus n'est pas perdu : les ennemis qui réduisent les résistances l'entament en premier.
+damage.totals.missing=Ce qui manque encore dans cette somme
+damage.totals.missingProcs=Les compétences qui se déclenchent sous condition au lieu de rester actives en permanence : déclenchements de maîtrises, compétences d'objets et déclenchements de dévotion.
+damage.totals.missingPressed=Les compétences qu'il faut activer — leurs bonus ne durent que quelques secondes.
+damage.totals.skipped=Ignoré : {0}.
+damage.totals.toggledOff=Compétences à activer désactivées : {0}. Celles qui sont activées sont dans la somme — la sauvegarde se souvient de ce qui est activé.
+damage.totals.chosenByHand=Choisi à la main (bouton « Choisir les compétences actives ») : {0}.
+damage.totals.missingConversion=Conversion des dégâts. Les pourcentages d'un type de dégâts sont montrés tels quels, mais dans le jeu ils s'appliquent après la conversion : « +200 % de dégâts physiques » ne donne rien sur un build qui convertit tous les dégâts physiques.
+damage.totals.missingScaling=Mise à l'échelle des dégâts par les attributs : la Malice augmente les dégâts physiques et perforants, l'Esprit les types magiques. Les formules sont connues, mais c'est la couche suivante.
+damage.totals.missingCap=Le plafond des résistances. Les bonus sont ici additionnés tels quels, le nombre peut donc dépasser 80 % — dans le jeu, il s'arrête au plafond (80 % plus les bonus « au maximum », montrés à côté). Le surplus au-delà du plafond n'est pas inutile : les boss réduisent les résistances.
+damage.totals.missingDifficulty=La pénalité de résistance due à la difficulté (−25 en Élite, −50 en Ultime) n'est pas soustraite ici : la sauvegarde n'indique pas dans quelle difficulté vous êtes en ce moment.
+damage.totals.notStacked=Ce qui ne s'est pas cumulé
+damage.totals.notStackedNote=La réduction de résistance des types « X de réduction » et « X % de réduction », la réduction des dégâts de la cible et de sa précision ne se cumulent pas : à tout moment, la source la plus forte agit. C'est la plus forte qui est prise ici, pas la somme.
+damage.totals.notStackedItem={0} : {1} sources, la plus forte prise {2}
+
+# Infobulle « de quoi c'est additionné » au survol d'une ligne de la somme
+damage.terms.pet=(bonus des familiers)
+damage.terms.byMax=ne se cumule pas : la plus forte de {0} sources est prise
+damage.terms.summedOne=additionné à partir de {0} source
+damage.terms.summedMany=additionné à partir de {0} sources
+damage.terms.winner=← en vigueur
+damage.terms.total=total {0}
+
+# Dégâts par coup
+damage.hit.plainTitle=Attaque armée par défaut
+damage.hit.plainWeapon=Attaque armée par défaut : {0}
+damage.hit.skillTitle={0}   ({1}, niv. {2})
+damage.hit.weapon=arme : {0}
+damage.hit.attackSpeed={0} attaques par s   ({1} % de vitesse d'attaque)
+damage.hit.castSpeed={0} % de vitesse de lancer
+damage.hit.castCapped=(plafond de {0} % atteint)
+damage.hit.channel=canalisée : un tick toutes les {0} s
+damage.hit.perHit={0} – {1} par coup
+damage.hit.overTime=(par seconde, {0} s)
+damage.hit.none=Pas de dégâts.
+damage.hit.bare=Sans effets temporaires ({0}) : {1} – {2} par coup — c'est ce nombre que montre le panneau du jeu.
+damage.hit.how=Comment c'est calculé
+damage.hit.howBase=La base est constituée des dégâts de l'arme plus les bonus fixes des objets. Les dégâts élémentaires fixes sont répartis en trois parts égales entre feu, froid et foudre.
+damage.hit.howConversion=Les conversions prennent des parts de la base, et les parts s'additionnent au lieu de s'appliquer l'une après l'autre. La pénétration d'armure est la dernière conversion, sur ce qui reste.
+damage.hit.howMultiplier=Chaque part est multipliée par (1 + attribut/diviseur + % du type + % élémentaire + % de tous les dégâts). Diviseurs : Malice/245 et /215, Esprit/215 et /200.
+damage.hit.howTotal=Le panneau du personnage dans le jeu affiche « +X % de dégâts <type> » comme le pourcentage du TYPE PLUS « % de tous les dégâts » — en une seule ligne.
+damage.hit.howTotalSome=Ce personnage a +{0} % à tous les dégâts, donc le panneau du jeu affichera le pourcentage de chaque type d'autant plus élevé que le nôtre.
+damage.hit.howTotalNone=Ce personnage n'a pas de « % de tous les dégâts », donc les pourcentages correspondront.
+damage.hit.howAll=Les « % de tous les dégâts » vont à TOUS les types de dégâts, dégâts sur la durée compris — il n'y a pas d'exception.
+damage.hit.howDots=Les dégâts sur la durée sont montrés par seconde — c'est ainsi que la fiche les contient, pas besoin de diviser. Un bonus de durée ne change pas ce nombre : l'effet dure plus longtemps, mais inflige autant par seconde.
+
+# Dégâts par coup : représailles
+damage.retaliation.title=Représailles (contre-attaque)
+damage.retaliation.note=C'est le PANNEAU « Représailles » des statistiques du personnage, pas une partie du coup. Il est calculé autrement : les attributs et les pourcentages des types de dégâts ne l'affectent pas, seuls les « +% de dégâts de représailles » — vous en avez +{0} %. Les conversions agissent en revanche, et ce sont les mêmes que pour les dégâts normaux.
+damage.retaliation.note2=La contre-attaque ne fonctionne que contre les attaques de mêlée, seulement sur celui qui vous a frappé et seulement quand vous avez réellement été touché ; elle-même ne peut pas manquer et ne fait pas de critique. La réflexion des dégâts (« X % des dégâts subis sont renvoyés ») est AUTRE chose, et les statistiques du personnage ne la contiennent jamais : elle dépend des dégâts de celui qui vous frappe.
+
+# Dégâts par coup : par main
+damage.hands.title=Combien cela fait dans chaque main
+damage.hands.both=C'est la même chose que ce que le jeu affiche dans l'infobulle de la compétence. La part de dégâts de l'arme est la MÊME pour les deux mains ({0} %), et les nombres entre parenthèses diffèrent parce que les armes en main diffèrent. La parenthèse inclut aussi les dégâts sur la durée de cette main : le panneau du jeu les compte de la même façon.
+damage.hands.oneMain=Il y a UNE ligne parce que la compétence frappe d'une main — la principale —, et le jeu affiche exactement autant de lignes dans l'infobulle. Quelle main c'est, c'est écrit dans l'ANIMATION de la compétence : chaque jeu d'équipement a son propre fichier, et les événements de coup qu'il contient nomment les mains. Passez à une arme à deux mains ou mettez un bouclier — la ligne peut changer, dans le jeu aussi.
+damage.hands.oneOff=Il y a UNE ligne parce que la compétence frappe d'une main — la main gauche —, et le jeu affiche exactement autant de lignes dans l'infobulle. Quelle main c'est, c'est écrit dans l'ANIMATION de la compétence : chaque jeu d'équipement a son propre fichier, et les événements de coup qu'il contient nomment les mains. Passez à une arme à deux mains ou mettez un bouclier — la ligne peut changer, dans le jeu aussi.
+damage.hands.single=Il y a une main parce qu'il y a une arme. La parenthèse inclut aussi les dégâts sur la durée de cette main : le panneau du jeu les compte de la même façon.
+damage.hands.ownShare=l'infobulle de la compétence elle-même affichera moins — seulement sa propre part de {0} % :
+damage.hands.lineMain={0} % des dégâts de l'arme principale ({1} - {2})
+damage.hands.lineOff={0} % des dégâts de l'arme de main gauche ({1} - {2})
+
+# Dégâts par coup : de quoi est faite la compétence
+damage.parts.title=De quoi est faite cette compétence
+damage.parts.temporary=— effet temporaire
+damage.parts.oneHandMain=— frappe d'une main, la principale
+damage.parts.oneHandOff=— frappe d'une main, la main gauche
+damage.parts.weaponPct={0} % des dégâts de l'arme
+damage.parts.conversion=conversion {0} % : {1} → {2}   (s'applique avant les conversions du personnage)
+damage.parts.notCounted=NON ADDITIONNÉ : {0}
+
+# Dégâts par coup : le coup du familier
+damage.pet.title={0}   (coup du familier « {1} », {2})
+damage.pet.summonedBy=invoqué par la compétence « {0} »
+damage.pet.withConversion=Dégâts avec conversion — c'est ainsi qu'il frappe vraiment
+damage.pet.noNumbers=cette compétence n'a pas de nombres
+damage.pet.asGame=Comment le jeu l'affiche — sans conversion
+damage.pet.asGameNote=Le jeu n'affiche nulle part la conversion d'un familier : mesuré sur six nombres et confirmé par des captures d'écran — avec et sans « Marque de Ghol », la description de la compétence est la même. Elle agit pourtant comme pour le personnage.
+damage.pet.notYours=C'est le coup du FAMILIER, et il n'est pas comparable au vôtre : il ne vient pas de votre arme, vos pourcentages de dégâts ne s'y appliquent pas, ce sont les bonus des familiers qui s'y appliquent.
+
+# Simulation de combat : aide avant le premier lancement
+damage.help.title=La file des coups dans le temps
+damage.help.press=Appuyez sur « Lancer la file » : chaque élan est joué séparément — le coup, quelles mains sont sorties, et les dégâts de CHAQUE ligne avec leur propre tirage dans leur fourchette. Les lignes apparaissent tout de suite, au fil du calcul. En haut, le résultat : dégâts par seconde, médiane des sommes par seconde, santé de la cible et temps pour la tuer (TTK).
+damage.help.twoNumbers=DEUX NOMBRES PAR LIGNE : le premier est ce qui a ATTEINT la cible, par main ; entre parenthèses, « dégâts sans bonus » est ce qui est parti de nous : déjà avec le critique, mais encore sans le bonus racial, l'armure (elle ne réduit que le physique) et les résistances avec leurs réductions. Le premier nombre peut aussi être PLUS GRAND que le second : dès que nos réductions font passer la résistance de la cible sous zéro, elle ne réduit plus mais amplifie. Le DPS, la médiane, les dégâts par lancement et le TTK sont comptés d'après ce qui a ATTEINT.
+damage.help.target=La cible est prise dans l'onglet « Ennemi » — celle qui y est choisie, avec son niveau et sa difficulté. Si aucune n'est choisie, c'est le mannequin d'entraînement des fichiers du jeu qui est utilisé.
+damage.help.pets=FAMILIERS : ceux qui sont cochés sont invoqués au départ puis selon le temps de recharge de l'invocation, jusqu'à atteindre la limite de leur type ; ceux qui se déclenchent d'eux-mêmes (une étoile, une compétence d'objet) viennent aussi sans case cochée. Chacun frappe avec sa propre attaque par défaut et ses propres compétences à leur fréquence, et son coup et son critique sont tirés au sort comme les vôtres.
+damage.help.counted=Sont comptés : élans, compétences activées, canalisations, réserve d'armes, déclenchements, étoiles, auras offensives, dégâts sur la durée, paliers de critique, réduction de résistance, bonus racial, réduction de santé, formes et familiers.
+damage.help.seed=La graine rend un lancement reproductible : la même graine donne le même lancement jusqu'au dernier chiffre. Changez-la seule — vous verrez la dispersion ; changez le build avec la même graine — vous verrez ce que le build a changé.
+
+# Simulation de combat : pendant le lancement
+damage.run.building=Construction de la file…
+damage.run.buildingNote=chaque coup reçoit ses propres dégâts avec ses propres tirages, et un long lancement en compte des milliers
+damage.run.progress=Construction de la file…   {0} sur {1} s   ({2} lignes)
+
+# Simulation de combat : résultat
+damage.run.buffsUp=Renforcements actifs : {0}   — ils entrent dans la file selon leur temps de recharge pour leur propre durée (sans durée dans la fiche — tout le lancement), et modifient les statistiques au lieu de frapper comme un coup séparé
+damage.run.target=Cible : {0}
+damage.run.targetLevel=niveau {0}, difficulté {1}
+damage.run.targetStats=capacité défensive {0}   armure {1}
+damage.run.hitChance=chance de toucher {0} %
+damage.run.mainSpell={0} « {1} » au lieu de l'attaque armée par défaut : vitesse de lancer {2} %, toutes les {3} s, coups par lancement {4}
+damage.run.targetResists=résistances de la cible : {0}
+damage.run.gear=compétences des objets et ensembles :
+damage.run.queue=File
+damage.run.summary=Résultat du lancement
+damage.run.dps=Dégâts par seconde (DPS)  {0}     médiane des sommes par seconde {1}
+damage.run.total=dégâts par lancement {0} en {1} s
+damage.run.targetLife=santé de la cible {0}
+damage.run.killedAt=tuée en {0} s (TTK)
+damage.run.dummyNote=— à titre indicatif : le mannequin ne meurt jamais dans le jeu
+damage.run.notKilled=non tuée pendant le lancement — il reste {0} %
+damage.run.percentLife=la réduction de santé a retiré {0} ({1} fois)
+damage.run.percentLifeBlocked={0} fois de plus, la résistance de la cible de {1} % l'a annulée entièrement
+damage.run.swings=élans {0}, coups {1}, ratés {2}, critiques {3}
+damage.run.tier=palier {0} : {1}
+damage.run.hands=mains : les deux {0}, première {1}, seconde {2}
+damage.run.procs=autodéclenchés : déclenchements {0} (leurs dégâts {1})
+damage.run.pool=réserve d'armes {0}
+damage.run.silent=sans dégâts {0} : {1}
+damage.run.pets=familiers : coups {0}, invocations {1}, leurs dégâts {2}
+damage.run.petsShare=— {0} % du total
+damage.run.stars=étoiles de dévotion
+damage.run.dots=dégâts sur la durée : appliqués {0}, renouvelés {1}, leurs dégâts {2} sur {3}
+damage.run.before=les dégâts sans bonus étaient {0} — {1} % sont arrivés (bonus racial, armure, résistances avec leurs réductions)
+damage.run.conditions=Conditions du lancement
+damage.run.rolls=Tirages de fourchette effectués : {0} — un pour chaque ligne de dégâts dans chaque coup.
+damage.run.critNote=Les critiques avec paliers sont comptés : un seul tirage décide du coup et du palier, et les « +% de dégâts critiques » s'ajoutent au multiplicateur du palier. La CHANCE de critique elle-même correspond au jeu contre les cibles fortes et est trop élevée contre les faibles — les bonus des monstres issus de leur équipement ne sont pas comptés.
+damage.run.dotNote=Les dégâts sur la durée s'appliquent et tiquent : une source garde UN seul effet — un nouveau coup prolonge la durée et monte les dégâts au meilleur, au lieu d'en lancer un second. Tous les dégâts de l'arme (les deux mains et les compétences avec une part d'arme) comptent comme UNE seule source ; les compétences sans part d'arme sont des sources à part.
+damage.run.noteRough=SIMPLIFIÉ : {0}
+damage.run.noteUnread=NON LU : {0}
+damage.run.noteHint=CONSEIL : {0}
+damage.run.pressNote=Les compétences cochées sont activées dès que leur temps de recharge est écoulé : toutes à la fois au départ, puis chacune selon son propre temps de recharge (avec la réduction des objets et des modificateurs). Une compétence qui frappe des deux mains frappe TOUJOURS des deux, et chaque main rate avec son propre tirage.
+damage.run.procNote=Les DÉCLENCHEMENTS et les compétences « au lieu de l'attaque armée par défaut » ne sont volontairement PAS dans la liste des compétences à cocher : personne ne les active. Ils se jouent d'eux-mêmes — avec leur propre tirage à chaque coup et leur propre temps de recharge.
+damage.run.silentNote=DÉCLENCHÉ SANS DÉGÂTS — étoiles de dévotion et compétences d'objets qui invoquent, appliquent un renforcement ou un affaiblissement. Leur tirage et leur temps de recharge sont réels ; un renforcement agit pendant sa durée, un affaiblissement va sur la cible, et la créature invoquée rejoint la réserve et frappe avec ses propres lignes.
+damage.run.failed=Le lancement a échoué : {0}
+
+# Ennemi : le panneau de l'ennemi
+damage.enemy.title={0}   ({1}, niveau {2}, difficulté {3})
+damage.enemy.variants=La base contient {0} fiches portant ce nom — elles ne diffèrent que par le niveau auquel on les rencontre ; la plus complète est prise ici, et le niveau se choisit ci-dessus.
+damage.enemy.combat=Paramètres de combat
+damage.enemy.abilities=capacité défensive {0}   capacité offensive {1}
+damage.enemy.life=santé {0}   armure {1}
+damage.enemy.gearArmour=(dont {0} de l'équipement)
+damage.enemy.resists=Résistances
+damage.enemy.none=aucune
+damage.enemy.hit=Toucher
+damage.enemy.ourAttack=notre capacité offensive {0}   contre sa défense {1}
+damage.enemy.hitChance=chance de toucher {0} %   chance de critique {1} %
+damage.enemy.ourDefence=notre capacité défensive {0}   contre son attaque {1}
+damage.enemy.getHit=risque d'être touché {0} %   risque de subir un critique {1} %
+
+# Rang de l'ennemi dans la liste et dans l'en-tête de l'onglet « Ennemi ». Le jeu n'a pas ses propres mots pour les rangs.
+damage.enemy.rank.superBoss=némésis
+damage.enemy.rank.boss=boss
+damage.enemy.rank.quest=quête
+damage.enemy.rank.hero=héros
+damage.enemy.rank.champion=champion
+damage.enemy.rank.common=ordinaire
+damage.enemy.variantsShort=({0} fiches)
+damage.attack.byCooldown=au lieu de l'arme, selon le temps de recharge toutes les {0} s

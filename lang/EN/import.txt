@@ -1,0 +1,57 @@
+# Importing a character from GrimTools (the write-up is MECHANICS 106)
+import.button=Import a character from GrimTools
+import.warning=We will try to dress your character from the GrimTools data. Your current worn equipment will be destroyed and every attribute of the character overwritten from the import. If some part of your link is not recognised, that slot will be left unchanged. Do you really want to go on?
+import.title=Import a character from GrimTools
+import.paste=Paste a link to a build — for example, https://www.grimtools.com/calc/2ELApkPN
+import.go=Import
+import.close=Close
+import.seedNote=The items will be the very same ones, but the numbers inside their ranges will be ours: the build holds no rolls at all. Any item can be turned up afterwards in the edit window.
+import.badLink=That does not look like a link to a GrimTools build.
+import.err.build=The page opened but holds no build. Check the link — it has to point at a build's page.
+import.err.other=It did not work out: {0}
+import.step.page=Reading the build's page…
+import.step.database=Downloading the GrimTools database…
+import.step.match=Matching against the game's records…
+import.result.gear=Items worn: {0}; empty slots cleared: {1}
+import.result.skills=Skills: {0}, devotion stars: {1}, celestial power ties: {2}
+import.result.bio=Level {0}; physique {1}, cunning {2}, spirit {3}
+import.missed.items=Items not recognised: {0} — those slots were left as they were ({1})
+
+# The progress and the end of it. 2 October: the user could see neither.
+import.step.reading=Reading the GrimTools database…
+import.step.haveDatabase=The GrimTools database is already read — nothing to download.
+import.step.dress=Dressing the character…
+import.status.database=Downloading the GrimTools database, file {0} of {1}: {2} of {3} MB
+import.status.databaseSoFar=Downloading the GrimTools database, file {0} of {1}: {2} MB
+import.status.done=Done. The character is dressed — close the window to see them.
+import.status.donePartly=Done, but not everything came over — see above.
+import.status.failed=It did not work out.
+# The troubles, each by its own name instead of one «it did not work out» for all.
+import.err.network=No connection to the GrimTools site. Check your internet and try again.
+import.err.page=The build's page would not open — the site answered {0}. Check the link; the site may be down just now.
+import.err.timeout=The GrimTools site did not answer. Check your internet connection — the site may be down right now.
+import.err.database=The GrimTools database would not read — there is nothing to bring over. Try once more.
+import.err.catalog=The game's item catalogue could not be built. Check that the game's folder is set correctly.
+# What did not come over, by the count: their numbers would tell nobody anything.
+import.missed.parts=Parts of items not recognised: {0} — the items are worn, but without them.
+import.missed.skills=Skills not recognised: {0}
+import.missed.powers=Celestial powers not recognised: {0}
+import.missed.shapes=Ties on shapeshift skills not recognised: {0}
+import.missed.repeats=Records that came twice: {0} — the repeats were left out.
+# The names of the slots. A build calls them weapon1Alt and amulet — not names for a person.
+import.slot.head=Head
+import.slot.amulet=Neck
+import.slot.chest=Chest
+import.slot.legs=Legs
+import.slot.feet=Feet
+import.slot.hands=Hands
+import.slot.ring1=Ring 1
+import.slot.ring2=Ring 2
+import.slot.waist=Waist
+import.slot.shoulders=Shoulders
+import.slot.medal=Medal
+import.slot.relic=Relic
+import.slot.weapon1=Weapon
+import.slot.weapon2=Shield or off-hand
+import.slot.weapon1Alt=Weapon (second set)
+import.slot.weapon2Alt=Shield or off-hand (second set)

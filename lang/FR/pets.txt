@@ -1,0 +1,23 @@
+# FENÊTRE « FAMILIERS ACTIFS » et lignes de familiers dans les autres fenêtres.
+# Les noms des familiers et de leurs compétences viennent du jeu.
+
+pets.title=Familiers actifs — {0}
+pets.checkbox={0}   ({1}, niv. {2})
+pets.limit=jusqu'à {0} à la fois
+pets.lifetime={0} s de durée de vie
+pets.life=santé : base {0} × (1 + {1} % propre + {2} % nôtre) = {3}
+pets.lifeAura=santé : base {0} × (1 + {1} % propre + {2} % nôtre + {3} % auras) = {4}
+pets.armour=armure : base {0} × (1 + {1} % propre + {2} % nôtre) = {3}   (le jeu n'affiche jamais l'armure des familiers — c'est notre propre chiffre)
+pets.auras=sous auras : {0}
+pets.none=Ce personnage n'a aucune compétence qui invoque un familier.
+pets.note=Santé : base × (1 + propre % + bonus des familiers % + auras %). Les dégâts des compétences sont multipliés par les bonus des familiers — la règle a été mesurée sur sept nombres du jeu.
+
+pets.level=niv. {0}
+pets.levelUnknown=la fiche du familier n'indique pas de niveau
+pets.attack={0}   (familier « {1} », {2})
+
+# Conversion du familier
+pets.conversion.title=Conversion de ce familier
+pets.conversion.capped=Pas plus de cent pour cent ne quittent un type : les cent sont répartis entre les receveurs selon leurs parts. Entre parenthèses — ce que les objets indiquent réellement.
+pets.conversion.line={0} % de conversion : {1} en {2}
+pets.conversion.recorded=(la fiche indique {0} %)

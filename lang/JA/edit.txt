@@ -1,0 +1,67 @@
+# 「アイテムを編集」ウィンドウとそのサブウィンドウ: アセンションボーナス、レリックの完成ボーナス。
+# アイテムの能力値の行はツールチップから来ています (文言の一部はゲーム自身のもの)。
+
+edit.title=アイテムを編集
+edit.stop=検索を停止
+edit.relicBonus=完成ボーナス (レリック)…
+edit.affixes=接頭辞と接尾辞…
+edit.ascension=アセンションボーナス…
+edit.reroll=アイテムをランダムに振り直す
+edit.findMax=最大値を検索
+edit.findValues=値で検索
+edit.close=閉じる
+edit.notSaved=(発見、未書き込み)
+edit.secondEnd=└ 同じ行のもう一方の端
+edit.hiddenRolls=抽選済みだがツールチップに表示されない
+edit.perSecond=(1 秒あたり {0} — 欄にはこの値が入っています)
+edit.range={0}…{1} のうち
+
+# 右パネル: 検索の進み具合と結果
+edit.rerolled=アイテムを振り直しました。\n何も検索していません — ランダムなアイテムはそれ自体で正当です。\nセーブに書き込むには「適用」を押してください。
+edit.badNumber=«{0}» 行の数値を読み取れませんでした: {1}
+edit.busy=検索中…
+edit.busyProgress=検索中… 2147 百万のうち {0} 百万を確認
+edit.searching=値を試しながらアイテムを検索しています。\nかかる時間はコンピューターの速さ次第です。
+edit.found=選んだ数値がすべて見つかりました。「適用」を押すとアイテムがセーブに書き込まれます。
+edit.impossible=この能力値がその値になることはありません:
+edit.impossibleHint=行の右に表示された値のどれかを入力してください。
+edit.cancelled=検索を停止しました。
+edit.notFound=これらの能力値を同時に満たすことはできません。重要度の低い能力値のチェックを外して、もう一度試してください。
+edit.hardest=最も難しい欄: {0}。すべての可能性を試しました。このようなアイテムはゲームに存在し得ません。
+edit.same=アイテムはすでにその状態です。変更するものはありません。
+edit.saved=セーブに書き込みました。\nアイテム本体、接辞、構成材、アセンションはそのままです — ゲームがドロップし得たアイテムのままです。
+edit.relicCleared=完成ボーナスを外しました。
+edit.relicSet=完成ボーナス: {0}
+edit.ascensionCleared=アセンションボーナスを外しました。
+edit.ascensionSet=アセンションボーナス: {0}
+edit.report.scanned={0} を {1} 秒で確認
+edit.report.found=発見:   ({0})
+edit.report.impossible={0}: この欄が値 {1} になることはありません
+
+# アセンションボーナスのウィンドウ
+edit.affixSet=接頭辞: {0}\n接尾辞: {1}
+edit.affix.title=接頭辞と接尾辞
+edit.affix.head=現在: 接頭辞 — {0};   接尾辞 — {1}\nこの種類のアイテムにゲームが付けるものだけを表示します。丸印はレア(緑)です。\nリストの数値はこのアイテムで抽選された値です: 接辞は抽選され、ここに見える値がそのまま得られます。
+edit.affix.prefix=接頭辞
+edit.affix.suffix=接尾辞
+edit.affix.none=なし
+edit.affix.gone=(ゲームはもう付与しません — リストにはありません)
+edit.affix.clear=この部分を外す
+edit.affix.level=レベル{0}が必要
+edit.affix.building=ゲームのアイテム表を読み込んでいます — 更新後に一度だけ。
+
+edit.asc.title=アセンションボーナス
+edit.asc.head=この種類のアイテムが受け取れるボーナスだけを表示します — 片手武器は両手武器のものを受け取れず、その逆も同様です。
+# edit.asc.unknownClass=不明
+# edit.asc.noPool=未確定
+edit.asc.allPools=自分のものだけでなくすべてのプール
+
+# レリックの完成ボーナスのウィンドウ
+edit.relic.title=レリックの完成ボーナス
+edit.relic.head=レリック: {0}   —   作製レベル: {1}\nリストの数値はこのアイテムで抽選された値です: 完成ボーナスは抽選され、ここに見える値がそのまま得られます。
+edit.relic.unknown=不明
+edit.relic.noKind=記載なし
+# edit.relic.noTable=このレリックにはテーブルがありません — 完成ボーナスは付きません
+edit.relic.allTables=自分のものだけでなくすべてのテーブル
+edit.relic.noTableList=このレリックにはボーナステーブルがありません — 完成ボーナスは付きません。
+edit.relic.jitter=(ばらつき {0}%)

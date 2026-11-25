@@ -1,0 +1,18 @@
+# PANNELLO DELL'EQUIPAGGIAMENTO: nomi degli slot (compaiono anche nei messaggi «non va nello slot …»).
+
+equipment.weapon1=Arma I
+equipment.offhand1=Mano sec. I
+equipment.weapon2=Arma II
+equipment.offhand2=Mano sec. II
+equipment.head=Testa
+equipment.neck=Collo
+equipment.medal=Medaglia
+equipment.shoulders=Spalle
+equipment.chest=Torace
+equipment.hands=Mani
+equipment.waist=Vita
+equipment.legs=Gambe
+equipment.ring1=Anello 1
+equipment.feet=Piedi
+equipment.relic=Reliquia
+equipment.ring2=Anello 2

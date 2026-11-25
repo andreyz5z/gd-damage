@@ -1,0 +1,14 @@
+# VENTANA «AJUSTES».
+
+settings.title=Ajustes
+settings.gameFolder=Carpeta de Grim Dawn:
+settings.gameFolder.browse=La carpeta donde está instalado Grim Dawn
+settings.savesFolder=Carpeta de partidas (para el diálogo de abrir):
+settings.savesFolder.browse=La carpeta con tus partidas
+settings.browse=Elegir…
+settings.language=Idioma:
+settings.rebuildCatalog=Volver a crear el catálogo de objetos
+settings.rawFields=Mostrar todos los campos del registro en la descripción del objeto
+settings.fileHint=settings.json está junto al programa
+settings.ok=Aceptar
+settings.cancel=Cancelar

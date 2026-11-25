@@ -1,0 +1,57 @@
+# 从 GrimTools 导入角色（分析见 MECHANICS 106）
+import.button=从 GrimTools 导入角色
+import.warning=我们会按照 GrimTools 的数据给你的角色穿装备。你当前穿着的装备将被销毁，角色的所有属性都会按导入的数据改写。如果链接中有某个部件无法识别，该栏位将保持不变。确定要继续吗？
+import.title=从 GrimTools 导入角色
+import.paste=粘贴一个 build 链接 — 例如 https://www.grimtools.com/calc/2ELApkPN
+import.go=导入
+import.close=关闭
+import.seedNote=装备会是同一件，但区间内的数值用的是我们这边的：build 里根本没有随机值。之后可以在编辑窗口里逐件调整。
+import.badLink=这看起来不像 GrimTools 的 build 链接。
+import.err.build=页面已打开，但里面没有 build。请检查链接，它应当指向某个 build 的页面。
+import.err.other=没有成功：{0}
+import.step.page=正在读取 build 页面…
+import.step.database=正在下载 GrimTools 数据库…
+import.step.match=正在与游戏记录比对…
+import.result.gear=已穿装备：{0}；清空栏位：{1}
+import.result.skills=技能：{0}，虔诚星：{1}，信仰之力绑定：{2}
+import.result.bio=等级 {0}；体能 {1}，狡诈 {2}，精神 {3}
+import.missed.items=未识别的装备：{0} — 这些栏位保持原样（{1}）
+
+# 进度与结束。10 月 2 日：这两样用户都看不到。
+import.step.reading=正在解析 GrimTools 数据库…
+import.step.haveDatabase=GrimTools 数据库已解析过 — 无需下载。
+import.step.dress=正在为角色穿装备…
+import.status.database=正在下载 GrimTools 数据库，第 {0} 个文件（共 {1} 个）：{2} MB / {3} MB
+import.status.databaseSoFar=正在下载 GrimTools 数据库，第 {0} 个文件（共 {1} 个）：{2} MB
+import.status.done=完成。角色已穿好装备 — 关闭本窗口即可看到。
+import.status.donePartly=完成，但并非全部都搬了过来 — 详情见上方。
+import.status.failed=没有成功。
+# 各类问题各用自己的名字，而不是一句“没有成功”了事。
+import.err.network=连不上 GrimTools 网站。请检查网络后重试。
+import.err.page=build 页面没有打开 — 网站的应答是 {0}。请检查链接；也可能该网站此刻无法访问。
+import.err.timeout=GrimTools 网站没有应答。请检查网络连接——该网站现在可能无法访问。
+import.err.database=GrimTools 数据库没有读出来 — 没有可搬的内容。请再试一次。
+import.err.catalog=没能建立游戏的装备目录。请检查游戏文件夹是否指定正确。
+# 没有搬过来的东西只报数目：对方的编号对谁都说明不了什么。
+import.missed.parts=未识别的装备部件：{0} — 装备已穿上，但缺少这些部件。
+import.missed.skills=未识别的技能：{0}
+import.missed.powers=未识别的信仰之力：{0}
+import.missed.shapes=未识别的变形技能绑定：{0}
+import.missed.repeats=重复到来的记录：{0} — 重复的已略去。
+# 栏位的名字。build 把它们叫作 weapon1Alt 和 amulet，这不是给人看的名字。
+import.slot.head=头部
+import.slot.amulet=颈部
+import.slot.chest=躯干
+import.slot.legs=腿部
+import.slot.feet=脚部
+import.slot.hands=手部
+import.slot.ring1=戒指 1
+import.slot.ring2=戒指 2
+import.slot.waist=腰部
+import.slot.shoulders=肩部
+import.slot.medal=勋章
+import.slot.relic=遗物
+import.slot.weapon1=武器
+import.slot.weapon2=盾牌或副手
+import.slot.weapon1Alt=武器（第二套）
+import.slot.weapon2Alt=盾牌或副手（第二套）

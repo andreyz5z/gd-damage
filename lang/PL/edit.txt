@@ -1,0 +1,67 @@
+# OKNO „EDYTUJ PRZEDMIOT” i jego okna podrzędne: bonus wyniesienia, bonus ukończenia reliktu.
+# Wiersze cech przedmiotu pochodzą z podpowiedzi (część sformułowań to słowa samej gry).
+
+edit.title=Edytuj przedmiot
+edit.stop=Zatrzymaj wyszukiwanie
+edit.relicBonus=Bonus ukończenia (relikt)…
+edit.affixes=Prefiks i sufiks…
+edit.ascension=Bonus wyniesienia…
+edit.reroll=Wylosuj przedmiot od nowa
+edit.findMax=Szukaj najwyższego losowania
+edit.findValues=Szukaj według wartości
+edit.close=Zamknij
+edit.notSaved=(znaleziono, nie zapisano)
+edit.secondEnd=└ drugi koniec tego samego wiersza
+edit.hiddenRolls=Wylosowane, ale niepokazane w podpowiedzi
+edit.perSecond=({0} na 1 s — tyle zawiera pole)
+edit.range=z {0}…{1}
+
+# Prawy panel: jak idzie wyszukiwanie i jak się kończy
+edit.rerolled=Przedmiot wylosowano od nowa.\nNiczego nie szukano — losowy przedmiot jest poprawny sam w sobie.\nAby zapisać go do pliku, naciśnij „Akceptuj”.
+edit.badNumber=Nie udało się odczytać liczby w wierszu „{0}”: {1}
+edit.busy=Wyszukiwanie…
+edit.busyProgress=Wyszukiwanie… sprawdzono {0} mln z 2147
+edit.searching=Szukanie przedmiotu przez próbowanie wartości.\nCzas zależy od szybkości komputera.
+edit.found=Znaleziono wszystkie wybrane liczby. Naciśnij „Akceptuj”, aby zapisać przedmiot.
+edit.impossible=Ta cecha nigdy nie ma takiej wartości:
+edit.impossibleHint=Wpisz jedną z wartości pokazanych na prawo od wiersza.
+edit.cancelled=Wyszukiwanie zatrzymano.
+edit.notFound=Tych cech nie da się znaleźć razem. Odznacz te, które są dla ciebie mniej ważne, i spróbuj ponownie.
+edit.hardest=Najtrudniejsze pole: {0}. Wypróbowano wszystkie możliwości; taki przedmiot nie może istnieć w grze.
+edit.same=Przedmiot już taki jest. Nie ma czego zmieniać.
+edit.saved=Zapisano.\nSam przedmiot, jego afiksy, składnik i wyniesienie pozostały nietknięte — nadal jest przedmiotem, który gra mogła upuścić.
+edit.relicCleared=Usunięto bonus ukończenia.
+edit.relicSet=Bonus ukończenia: {0}
+edit.ascensionCleared=Usunięto bonus wyniesienia.
+edit.ascensionSet=Bonus wyniesienia: {0}
+edit.report.scanned=sprawdzono {0} w {1} s
+edit.report.found=ZNALEZIONO:   ({0})
+edit.report.impossible={0}: to pole nigdy nie daje wartości {1}
+
+# Okno bonusu wyniesienia
+edit.affixSet=Prefiks: {0}\nSufiks: {1}
+edit.affix.title=Prefiks i sufiks
+edit.affix.head=Teraz: prefiks — {0};   sufiks — {1}\nPokazano tylko te, które gra daje przedmiotom tego rodzaju; kropką oznaczono rzadkie (zielone).\nLiczby na liście to te WYLOSOWANE dla tego przedmiotu: afiks jest losowany, a to, co tu widzisz, dostajesz.
+edit.affix.prefix=Prefiks
+edit.affix.suffix=Sufiks
+edit.affix.none=brak
+edit.affix.gone=(gra już go nie przydziela — nie ma go na liście)
+edit.affix.clear=Zdejmij tę część
+edit.affix.level=Wymaga poziomu {0}
+edit.affix.building=Czytamy tabele przedmiotów gry — raz po aktualizacji gry.
+
+edit.asc.title=Bonus wyniesienia
+edit.asc.head=Pokazano tylko bonusy, do których ma prawo przedmiot tego rodzaju — broń jednoręczna nie ma prawa do dwuręcznych i odwrotnie.
+# edit.asc.unknownClass=nieznana
+# edit.asc.noPool=nieustalona
+edit.asc.allPools=wszystkie pule, nie tylko własne
+
+# Okno bonusu ukończenia reliktu
+edit.relic.title=Bonus ukończenia reliktu
+edit.relic.head=Relikt: {0}   —   poziom wytwarzania: {1}\nLiczby na liście to te WYLOSOWANE dla tego przedmiotu: bonus ukończenia jest losowany, a to, co tu widzisz, dostajesz.
+edit.relic.unknown=nieznany
+edit.relic.noKind=nie podano
+# edit.relic.noTable=ten relikt nie ma ŻADNEJ — nigdy nie dostaje bonusu ukończenia
+edit.relic.allTables=wszystkie tabele, nie tylko własna
+edit.relic.noTableList=Ten relikt nie ma tabeli bonusów — nigdy nie dostaje bonusu ukończenia.
+edit.relic.jitter=(rozrzut {0}%)

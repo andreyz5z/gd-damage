@@ -1,0 +1,57 @@
+# Charakter aus GrimTools einlesen (die Aufschreibung ist MECHANICS 106)
+import.button=Charakter aus GrimTools einlesen
+import.warning=Wir versuchen, Ihren Charakter nach den Daten von GrimTools auszurüsten. Ihre derzeit getragene Ausrüstung wird vernichtet und alle Werte des Charakters aus dem Import überschrieben. Wird ein Teil Ihres Links nicht erkannt, bleibt dieser Platz unverändert. Wollen Sie wirklich fortfahren?
+import.title=Charakter aus GrimTools einlesen
+import.paste=Fügen Sie einen Link zu einem Build ein — zum Beispiel https://www.grimtools.com/calc/2ELApkPN
+import.go=Übernehmen
+import.close=Schließen
+import.seedNote=Die Gegenstände werden genau dieselben sein, die Zahlen innerhalb ihrer Spannen aber unsere: im Build stehen überhaupt keine Würfe. Jeder Gegenstand lässt sich danach im Bearbeitungsfenster nachstellen.
+import.badLink=Das sieht nicht nach einem Link zu einem GrimTools-Build aus.
+import.err.build=Die Seite wurde geöffnet, enthält aber keinen Build. Prüfen Sie den Link — er muss auf die Seite eines Builds zeigen.
+import.err.other=Hat nicht geklappt: {0}
+import.step.page=Die Seite des Builds wird gelesen…
+import.step.database=Die GrimTools-Datenbank wird geladen…
+import.step.match=Abgleich mit den Aufzeichnungen des Spiels…
+import.result.gear=Angelegte Gegenstände: {0}; geleerte Plätze: {1}
+import.result.skills=Fertigkeiten: {0}, Devotionssterne: {1}, Bindungen Himmlischer Kräfte: {2}
+import.result.bio=Stufe {0}; Körperkraft {1}, Gerissenheit {2}, Geist {3}
+import.missed.items=Nicht erkannte Gegenstände: {0} — diese Plätze blieben, wie sie waren ({1})
+
+# Der Hergang und sein Ende. 2. Oktober: der Nutzer sah weder das eine noch das andere.
+import.step.reading=Die GrimTools-Datenbank wird ausgewertet…
+import.step.haveDatabase=Die GrimTools-Datenbank ist bereits ausgewertet — es ist nichts zu laden.
+import.step.dress=Der Charakter wird ausgerüstet…
+import.status.database=Die GrimTools-Datenbank wird geladen, Datei {0} von {1}: {2} von {3} MB
+import.status.databaseSoFar=Die GrimTools-Datenbank wird geladen, Datei {0} von {1}: {2} MB
+import.status.done=Fertig. Der Charakter ist ausgerüstet — schließen Sie das Fenster, um ihn zu sehen.
+import.status.donePartly=Fertig, aber nicht alles ist übernommen worden — Einzelheiten oben.
+import.status.failed=Hat nicht geklappt.
+# Die Fehler, jeder mit eigenem Namen statt eines einzigen „hat nicht geklappt“.
+import.err.network=Keine Verbindung zur GrimTools-Seite. Prüfen Sie Ihr Internet und versuchen Sie es erneut.
+import.err.page=Die Seite des Builds ließ sich nicht öffnen — die Seite antwortete {0}. Prüfen Sie den Link; vielleicht ist die Seite gerade nicht erreichbar.
+import.err.timeout=Die GrimTools-Seite hat nicht geantwortet. Prüfen Sie Ihre Internetverbindung — die Seite ist möglicherweise gerade nicht erreichbar.
+import.err.database=Die GrimTools-Datenbank ließ sich nicht lesen — es ist nichts zu übernehmen. Versuchen Sie es noch einmal.
+import.err.catalog=Der Gegenstandskatalog des Spiels ließ sich nicht aufbauen. Prüfen Sie, ob der Ordner des Spiels richtig angegeben ist.
+# Was nicht übernommen wurde, als Anzahl: ihre Nummern würden niemandem etwas sagen.
+import.missed.parts=Nicht erkannte Teile von Gegenständen: {0} — die Gegenstände sind angelegt, aber ohne sie.
+import.missed.skills=Nicht erkannte Fertigkeiten: {0}
+import.missed.powers=Nicht erkannte Himmlische Kräfte: {0}
+import.missed.shapes=Nicht erkannte Bindungen an Verwandlungsfertigkeiten: {0}
+import.missed.repeats=Zweimal gekommene Aufzeichnungen: {0} — die Wiederholungen wurden weggelassen.
+# Die Namen der Plätze. Ein Build nennt sie weapon1Alt und amulet — keine Namen für einen Menschen.
+import.slot.head=Kopf
+import.slot.amulet=Hals
+import.slot.chest=Brust
+import.slot.legs=Beine
+import.slot.feet=Füße
+import.slot.hands=Hände
+import.slot.ring1=Ring 1
+import.slot.ring2=Ring 2
+import.slot.waist=Gürtel
+import.slot.shoulders=Schultern
+import.slot.medal=Medaille
+import.slot.relic=Relikt
+import.slot.weapon1=Waffe
+import.slot.weapon2=Schild oder zweite Hand
+import.slot.weapon1Alt=Waffe (zweiter Satz)
+import.slot.weapon2Alt=Schild oder zweite Hand (zweiter Satz)

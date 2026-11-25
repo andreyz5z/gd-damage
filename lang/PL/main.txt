@@ -1,0 +1,110 @@
+# OKNO GŁÓWNE: tytuł, przyciski menu, ekwipunek, pasek stanu, komunikaty.
+#
+# Format wszystkich plików językowych: klucz=tekst. Wiersz zaczynający się od # to komentarz.
+# \n to nowy wiersz. {0}, {1} to miejsca, w które program wstawia liczbę lub nazwę;
+# muszą zostać w tłumaczeniu, ich kolejność może się zmieniać.
+# Nazw przedmiotów, klas i umiejętności tu nie ma — podaje je sama gra.
+
+main.title=Grim Dawn — podgląd postaci
+main.title.character=Grim Dawn — {0}
+
+# Przyciski menu
+main.menu.open=Otwórz zapis
+main.menu.skills=Umiejętności
+main.menu.damage=Obliczanie obrażeń
+main.menu.settings=Ustawienia
+
+# Ekwipunek i schowek
+main.edit.button=Edytuj przedmiot
+main.edit.armed=Kliknij przedmiot
+main.trash.idle=Usuń przedmiot — weź go i kliknij tutaj
+main.trash.armed=Usuń przedmiot
+main.stash.title=Schowek postaci
+main.stash.none=Schowek postaci: brak zakładek
+main.stash.count=Schowek postaci: zakładki: {0}, przedmioty: {1}
+main.bags.main=Główna
+main.bags.extra=Torba {0}
+
+# Wiersz pod polami postaci
+main.summary=Torby: {0}, przedmioty: {1}\nSchowek: zakładki: {2}, przedmioty: {3}
+main.summary.noInventory=BRAK JESZCZE EKWIPUNKU: postać utworzono w menu i nigdy nie weszła do gry.\nWejdź nią do gry przynajmniej raz — wtedy pojawią się torby i wyposażenie.\nSchowek: zakładki: {0}, przedmioty: {1}
+
+# Zapisywanie i otwieranie
+main.status.saved=Zapisano {0}
+main.status.savedBackup=Zapisano {0}   kopia zapasowa: {1}
+main.status.saveError=BŁĄD ZAPISU: {0}
+main.saveError.title=Nie udało się zapisać
+main.open.title=Wybierz player.gdc
+main.open.filter=Zapis Grim Dawn (player.gdc)|player.gdc|Wszystkie pliki|*.*
+main.loadError.title=Nie udało się odczytać zapisu
+main.noInventory.text=Ta postać nie ma jeszcze ekwipunku.\n\nUtworzono ją w menu gry i nigdy nie weszła do świata, więc zapis nie zawiera ani toreb, ani miejsc na wyposażenie, ani zestawów broni — gra tworzy je przy pierwszym wejściu do świata.\n\nWejdź tą postacią do gry przynajmniej raz, a wtedy wyposażenie będzie można edytować. Wszystko inne — poziom, atrybuty, umiejętności, poświęcenie — jest dostępne już teraz.
+main.noInventory.title=Brak jeszcze ekwipunku
+main.status.openFirst=Najpierw otwórz zapis.
+
+# Folder gry
+main.status.noGame=Nie znaleziono folderu Grim Dawn — otwórz „Ustawienia…” i wskaż go.
+main.status.gameBase=Baza danych gry: {0}   język: {1}
+main.status.gameError=Nie udało się otworzyć bazy danych gry: {0}
+main.askGame.text=Nie znaleziono folderu Grim Dawn.\n\nWyszukiwanie przegląda biblioteki Steam, wpisy GOG i instalatorów w rejestrze oraz zwykłe foldery gier na wszystkich dyskach. Jeśli gra jest gdzie indziej, wskaż jej folder — ten, w którym leży database\\database.arz.
+main.askGame.title=Gdzie zainstalowano Grim Dawn?
+
+# Katalog przedmiotów
+main.catalog.title=Katalog przedmiotów
+main.catalog.stale=Pliki gry zmieniły się po utworzeniu katalogu — wygląda na to, że wyszła aktualizacja.\nUtworzyć katalog przedmiotów ponownie?
+main.catalog.missing=Katalog przedmiotów nie jest jeszcze utworzony.\nUtworzyć go z plików gry? To potrwa kilka sekund.
+main.status.catalog=Katalog: przedmioty: {0}
+main.status.catalogBuilding=Tworzenie katalogu przedmiotów…
+main.status.catalogBuilt=Katalog utworzony: przedmioty: {0}
+main.status.catalogError=Nie udało się utworzyć katalogu: {0}
+
+# Przedmiot w ręce
+main.status.noIcon=Ten przedmiot nie ma ikony w bazie danych gry, więc jego rozmiar w polach jest nieznany — nie można go bezpiecznie dodać.
+main.status.bulkLimit=Wzięto stos: {0} — to limit dla tego rodzaju.
+main.status.bulkNoLimit=Wzięto stos: {0} (gra nie podaje limitu dla tego rodzaju — wzięliśmy sto, jak dla innych).
+main.status.newInHand=Nowy przedmiot w ręce: {0} ({1}x{2})  —  kliknij wolne miejsce w torbie lub schowku, miejsce na wyposażenie albo nagłówek zakładki. Esc anuluje.
+main.status.inHand=W ręce: {0} ({1}x{2})  —  kliknij wolne miejsce w torbie lub schowku, nagłówek zakładki, miejsce na wyposażenie albo pasek „Usuń przedmiot”. Esc anuluje.
+main.status.takenOff=Zdjęto do ręki: {0}  —  włóż go do torby, do schowka, w inne pasujące miejsce albo usuń. Esc anuluje.
+main.status.sizeUnknown=Rozmiar tego przedmiotu jest nieznany (brak ikony w bazie danych gry) — nie można go przenieść, bo mógłby wystawać poza siatkę.
+main.status.noRoom=Tu się nie mieści — potrzeba {0}x{1} wolnych pól. Prawy przycisk lub Esc anuluje.
+main.status.noStacking=„{0}” nie łączy się w stosy — tutaj potrzebne jest wolne pole.
+main.status.stackFull=Ten stos jest już pełny: {0}. Połóż go gdzie indziej.
+main.status.stackFullOf=Ten stos jest już pełny: {0} z {1}. Połóż go gdzie indziej.
+main.status.merged=Dołożono: {0}; w stosie jest teraz {1}.
+main.status.mergedRest=Dołożono: {0}; w stosie jest teraz {1}, w ręce zostało {2} — połóż je na wolnym miejscu albo usuń.
+main.status.addedBag=Dodano do torby: {0}
+main.status.addedStash=Dodano do schowka: {0}
+main.status.unequippedBag=Zdjęto i włożono do torby: {0}
+main.status.unequippedStash=Zdjęto i włożono do schowka: {0}
+main.status.movedBag=Przeniesiono do torby: {0}
+main.status.movedStash=Przeniesiono do schowka: {0}
+main.status.equipped=Założono: {0} → {1}
+main.status.reequipped=Przełożono: {0} → {1}
+main.status.discarded=Nowy przedmiot odrzucono: {0} (nie trafił do zapisu).
+main.status.deleted=Usunięto: {0}   (oryginalny plik zachowano obok jako .bak)
+main.status.noRoomBag=W tej torbie nie ma miejsca {0}x{1}.
+main.status.noRoomStash=W tej zakładce schowka nie ma miejsca {0}x{1}.
+main.status.cancelled=Anulowano: {0} został na swoim miejscu.
+
+# Dlaczego nie można założyć
+main.why.noInventory=Ta postać nie ma jeszcze ekwipunku: utworzono ją w menu i nigdy nie weszła do gry. Wejdź nią do gry przynajmniej raz — gra sama utworzy torby, miejsca na wyposażenie i zestawy broni, a wtedy będzie można je edytować.
+main.why.sameSlot=Przedmiot jest już w tym miejscu.
+main.why.wrongSlot=„{0}” nie pasuje do miejsca „{1}”.
+main.why.slotBusy=Miejsce „{0}” jest zajęte — najpierw zdejmij to, co w nim jest.
+main.why.level=„{0}” wymaga poziomu {1}, postać ma {2}.
+main.why.twoHanded=Broń dwuręczna zajmuje obie ręce — najpierw zwolnij drugą rękę.
+main.why.offHandBusy=W głównej ręce jest broń dwuręczna — zajmuje ona także drugą rękę.
+
+# Edycja przedmiotu
+main.status.editArmed=Kliknij przedmiot — otworzy się okno edycji cech. Ponowne kliknięcie przycisku anuluje.
+main.status.editCancelled=Edycję anulowano — kliknięcie nie trafiło w przedmiot.
+main.status.editNoSeed=W tym przedmiocie nie ma czego szukać: nie pochodzi z zapisu.
+main.status.editUnchanged=Przedmiot się nie zmienił.
+main.status.editDone=Przedmiot zmieniono i zapisano.
+
+# Czego brakuje, by założyć przedmiot (pasek stanu).
+main.need.level=poziom {0} (jest {1})
+
+# Wstawianie komponentu lub domieszki do przedmiotu (2 października). Zgodność bierze się z zapisów gry.
+main.status.partAttached=Wstawiono: {0} → {1}
+main.status.partReplaced=Wstawiono: {0} → {1}, zamiast „{2}”
+main.status.partWrongItem=„{0}” nie wchodzi do „{1}”.

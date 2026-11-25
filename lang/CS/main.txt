@@ -1,0 +1,110 @@
+# HLAVNÍ OKNO: titulek, tlačítka nabídky, inventář, stavový řádek, zprávy.
+#
+# Formát všech jazykových souborů: klíč=text. Řádek začínající # je komentář.
+# \n je zalomení řádku. {0}, {1} jsou místa, kam program vloží číslo nebo název;
+# v překladu musí zůstat, jejich pořadí se může měnit.
+# Názvy předmětů, tříd a dovedností tu nejsou — dodává je samotná hra.
+
+main.title=Grim Dawn — prohlížeč postavy
+main.title.character=Grim Dawn — {0}
+
+# Tlačítka nabídky
+main.menu.open=Otevřít uloženou hru
+main.menu.skills=Dovednosti
+main.menu.damage=Výpočet zranění
+main.menu.settings=Nastavení
+
+# Inventář a úschovna
+main.edit.button=Upravit předmět
+main.edit.armed=Klikněte na předmět
+main.trash.idle=Smazat předmět — vezměte ho a klikněte sem
+main.trash.armed=Smazat předmět
+main.stash.title=Úschovna postavy
+main.stash.none=Úschovna postavy: žádné záložky
+main.stash.count=Úschovna postavy: záložek {0}, předmětů {1}
+main.bags.main=Hlavní
+main.bags.extra=Brašna {0}
+
+# Řádek pod poli postavy
+main.summary=Brašen {0}, předmětů {1}\nÚschovna: záložek {2}, předmětů {3}
+main.summary.noInventory=ZATÍM ŽÁDNÝ INVENTÁŘ: postava byla vytvořena v nabídce a nikdy nevstoupila do hry.\nVstupte s ní do hry aspoň jednou — pak se objeví brašny a vybavení.\nÚschovna: záložek {0}, předmětů {1}
+
+# Ukládání a otevírání
+main.status.saved=Uloženo {0}
+main.status.savedBackup=Uloženo {0}   záložní kopie: {1}
+main.status.saveError=CHYBA ZÁPISU: {0}
+main.saveError.title=Uložení se nezdařilo
+main.open.title=Vyberte player.gdc
+main.open.filter=Uložená hra Grim Dawn (player.gdc)|player.gdc|Všechny soubory|*.*
+main.loadError.title=Uloženou hru se nepodařilo přečíst
+main.noInventory.text=Tato postava zatím nemá inventář.\n\nByla vytvořena v nabídce hry a nikdy nevstoupila do světa, takže uložená hra neobsahuje brašny, místa pro vybavení ani sady zbraní — hra je vytvoří při prvním vstupu do světa.\n\nVstupte s touto postavou do hry aspoň jednou a pak půjde vybavení upravovat. Všechno ostatní — úroveň, atributy, dovednosti, oddanost — je dostupné už teď.
+main.noInventory.title=Zatím žádný inventář
+main.status.openFirst=Nejprve otevřete uloženou hru.
+
+# Složka hry
+main.status.noGame=Složka Grim Dawn nebyla nalezena — otevřete „Nastavení…“ a zadejte ji.
+main.status.gameBase=Databáze hry: {0}   jazyk: {1}
+main.status.gameError=Databázi hry se nepodařilo otevřít: {0}
+main.askGame.text=Složka Grim Dawn nebyla nalezena.\n\nHledání prochází knihovny Steamu, záznamy GOG a instalátorů v registru a obvyklé složky her na všech discích. Pokud je hra jinde, zadejte její složku — tu, ve které leží database\\database.arz.
+main.askGame.title=Kde je Grim Dawn nainstalován?
+
+# Katalog předmětů
+main.catalog.title=Katalog předmětů
+main.catalog.stale=Soubory hry se po vytvoření katalogu změnily — zřejmě vyšla aktualizace.\nVytvořit katalog předmětů znovu?
+main.catalog.missing=Katalog předmětů ještě není vytvořen.\nVytvořit ho ze souborů hry? Potrvá to několik sekund.
+main.status.catalog=Katalog: předmětů {0}
+main.status.catalogBuilding=Vytváří se katalog předmětů…
+main.status.catalogBuilt=Katalog vytvořen: předmětů {0}
+main.status.catalogError=Katalog se nepodařilo vytvořit: {0}
+
+# Předmět v ruce
+main.status.noIcon=Tento předmět nemá v databázi hry ikonu, takže jeho velikost v políčkách je neznámá — nelze ho bezpečně přidat.
+main.status.bulkLimit=Vzat stoh {0} ks — to je limit pro tento druh.
+main.status.bulkNoLimit=Vzat stoh {0} ks (hra pro tento druh neuvádí limit — vzali jsme sto, jako u ostatních).
+main.status.newInHand=Nový předmět v ruce: {0} ({1}x{2})  —  klikněte na volné místo v brašně nebo úschovně, na místo pro vybavení nebo na záhlaví záložky. Esc zruší.
+main.status.inHand=V ruce: {0} ({1}x{2})  —  klikněte na volné místo v brašně nebo úschovně, na záhlaví záložky, na místo pro vybavení nebo na lištu „Smazat předmět“. Esc zruší.
+main.status.takenOff=Sundáno do ruky: {0}  —  vložte ho do brašny, do úschovny, na jiné vhodné místo, nebo ho smažte. Esc zruší.
+main.status.sizeUnknown=Velikost tohoto předmětu je neznámá (v databázi hry nemá ikonu) — nelze ho přesunout, jinak by mohl přesahovat mřížku.
+main.status.noRoom=Sem se nevejde — je potřeba {0}x{1} volných políček. Pravé tlačítko nebo Esc zruší.
+main.status.noStacking=„{0}“ se neskládá do stohů — tady je potřeba volné políčko.
+main.status.stackFull=Tento stoh je už plný: {0}. Položte ho jinam.
+main.status.stackFullOf=Tento stoh je už plný: {0} z {1}. Položte ho jinam.
+main.status.merged=Přidáno {0} ks: ve stohu je teď {1}.
+main.status.mergedRest=Přidáno {0} ks: ve stohu je teď {1}, v ruce zbylo {2} — položte je na volné místo nebo je smažte.
+main.status.addedBag=Přidáno do brašny: {0}
+main.status.addedStash=Přidáno do úschovny: {0}
+main.status.unequippedBag=Sundáno a uloženo do brašny: {0}
+main.status.unequippedStash=Sundáno a uloženo do úschovny: {0}
+main.status.movedBag=Přesunuto do brašny: {0}
+main.status.movedStash=Přesunuto do úschovny: {0}
+main.status.equipped=Nasazeno: {0} → {1}
+main.status.reequipped=Přemístěno: {0} → {1}
+main.status.discarded=Nový předmět byl zahozen: {0} (do uložené hry se nedostal).
+main.status.deleted=Smazáno: {0}   (původní soubor zůstal vedle jako .bak)
+main.status.noRoomBag=V této brašně není místo {0}x{1}.
+main.status.noRoomStash=V této záložce úschovny není místo {0}x{1}.
+main.status.cancelled=Zrušeno: {0} zůstal na svém místě.
+
+# Proč nejde nasadit
+main.why.noInventory=Tato postava zatím nemá inventář: byla vytvořena v nabídce a nikdy nevstoupila do hry. Vstupte s ní do hry aspoň jednou — hra sama vytvoří brašny, místa pro vybavení a sady zbraní, a pak je půjde upravovat.
+main.why.sameSlot=Předmět už je na tomto místě.
+main.why.wrongSlot=„{0}“ nepatří na místo „{1}“.
+main.why.slotBusy=Místo „{0}“ je obsazené — nejprve sundejte, co je tam nasazeno.
+main.why.level=„{0}“ vyžaduje úroveň {1}, postava má {2}.
+main.why.twoHanded=Obouruční zbraň zabírá obě ruce — nejprve uvolněte druhou ruku.
+main.why.offHandBusy=V hlavní ruce je obouruční zbraň — zabírá i druhou ruku.
+
+# Úprava předmětu
+main.status.editArmed=Klikněte na předmět — otevře se okno úpravy vlastností. Dalším kliknutím na tlačítko zrušíte.
+main.status.editCancelled=Úprava zrušena — kliknutí minulo předmět.
+main.status.editNoSeed=U tohoto předmětu není co hledat: nepochází z uložené hry.
+main.status.editUnchanged=Předmět se nezměnil.
+main.status.editDone=Předmět byl změněn a uložen.
+
+# Co chybí k nasazení předmětu (stavový řádek).
+main.need.level=úroveň {0} (je {1})
+
+# Vložení komponenty nebo příměsi do předmětu (2. října). Slučitelnost se bere ze záznamů hry.
+main.status.partAttached=Vloženo: {0} → {1}
+main.status.partReplaced=Vloženo: {0} → {1}, místo „{2}“
+main.status.partWrongItem=„{0}“ do „{1}“ nejde vložit.

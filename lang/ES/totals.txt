@@ -1,0 +1,71 @@
+# FUENTES DE BONIFICACIÓN: etiquetas de los sumandos en la descripción «de qué está hecho» de la pestaña «Bonificaciones totales».
+# Un golpe encuentra su sumando por estas mismas etiquetas, por eso cada una se construye en un único sitio.
+# IMPORTANTE AL TRADUCIR: las etiquetas de las partes del objeto (totals.part.*) deben ser distintas entre sí; si no,
+# líneas de partes distintas compartirían una misma tirada de daño. Lo vigila --langtest.
+
+totals.part.prefix=(prefijo)
+totals.part.suffix=(sufijo)
+totals.part.component=(componente)
+totals.part.relicBonus=(bonificación de finalización)
+totals.part.augment=(potenciador)
+totals.part.modifier=(modificador)
+totals.part.ascension=(ascensión)
+totals.setShort=conjunto: {0}
+totals.fromItem=de un objeto: {0} ({1})
+totals.devotion=devoción: {0}
+totals.skill=habilidad: {0} (niv. {1})
+totals.toggled=activada: {0} (niv. {1})
+totals.skillMod=modificador de habilidad: {0}
+totals.toggledMod=activado, modificador de habilidad: {0}
+totals.chosenOn={0} — activado a mano
+totals.chosenOff={0} — desactivado a mano
+totals.gateItem={0} (de un objeto) — {1}
+totals.gateDevotion={0} (devoción) — {1}
+
+totals.gate.needDualAny=ni dos armas cuerpo a cuerpo ni dos a distancia de una mano
+totals.gate.needDualMelee=no hay dos armas empuñadas
+totals.gate.needDualRanged=no hay dos armas a distancia de una mano
+totals.gate.needRanged=no hay arma a distancia
+totals.gate.needGuns=se necesitan dos pistolas o un rifle
+totals.gate.needEmptyHands=hay un arma en la mano
+totals.gate.wrongWeapon=arma incorrecta en la mano
+
+# TÍTULOS DE GRUPO de la pestaña «Bonificaciones totales». «Resistencias», «Contrataque», «Defensa» y «Atributos»
+# se toman del juego (su panel de personaje); estas cuatro líneas son solo el respaldo.
+totals.group.damage=Daño
+totals.group.overTime=Daño con el tiempo
+totals.group.retaliation=Contrataque
+totals.group.debuff=Qué se le quita al objetivo
+totals.group.resist=Resistencias
+totals.group.defence=Defensa
+totals.group.attributes=Atributos
+totals.group.skills=Habilidades
+totals.group.other=Otros
+
+# Zonas de armadura. Normalmente del juego (su panel de armadura); este es el respaldo.
+totals.zone.head=Cabeza
+totals.zone.shoulders=Hombros
+totals.zone.chest=Pecho
+totals.zone.arms=Brazos
+totals.zone.legs=Piernas
+totals.zone.feet=Pies
+
+# Lo que llegó al límite en las mascotas: «… en el límite: caos 84% (+12% por encima del máximo), aturdimiento …».
+totals.capWord.elemental=elemental
+totals.capWord.stun=aturdimiento
+totals.capWord.freeze=congelación
+totals.capWord.trap=inmovilización
+totals.capWord.petrify=petrificación
+totals.capWord.convert=control mental
+
+# Nombres de las resistencias. Del juego (su panel de personaje); este es el respaldo, con sus palabras.
+totals.resist.fire=Fuego
+totals.resist.cold=Frío
+totals.resist.lightning=Electricidad
+totals.resist.poison=Veneno o Ácido
+totals.resist.pierce=Perforaciones
+totals.resist.aether=Éter
+totals.resist.chaos=Caos
+totals.resist.life=Vitalidad
+totals.resist.bleeding=Sangrado
+totals.resist.physical=Física

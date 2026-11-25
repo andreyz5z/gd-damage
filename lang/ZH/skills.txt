@@ -1,0 +1,150 @@
+# 「技能」窗口：专精、技能提示、星座信仰、裂缝之门。
+# 专精、技能和星座的名称来自游戏。
+
+skills.title=技能 — {0}
+skills.levelParen=（等级 {0}）
+
+# 选择和放弃专精
+skills.choose.first=第一专精
+skills.choose.second=第二专精
+skills.choose.intro=专精条中投入第一点后，专精即视为已选择——我们正是这样做的，花费一个技能点。同一个专精不能选两次。
+skills.choose.opensAt=在游戏中于等级 {0} 解锁。
+skills.choose.freePoints=未使用的技能点：{0}。
+skills.noPoints.text=没有未使用的技能点，而专精是通过往专精条投入一点来选择的。\n\n在主窗口的「技能点」栏中加一点，之后就能在这里花费。不允许花费不存在的点数：那样人物花费的就会比获得的多。
+skills.noPoints.title=技能点不足
+skills.take.ask=选择专精「{0}」吗？\n\n一个技能点会投入其专精条——专精就是这样被选择的。当前未使用：{1}。
+skills.take.undo=可以用「放弃专精」按钮反悔——点数会返还。
+skills.take.title=选择专精
+skills.drop.ask=放弃专精「{0}」吗？\n\n投入其中的所有点数都会被取出——共 {1} 点，包括专精条的那一点——并返还为未使用。该专精的技能会消失，绑定到这些技能的星座信仰之星将失去绑定。
+skills.drop.title=放弃专精
+skills.drop.button=放弃专精「{0}」
+skills.drop.secondFirst=请先放弃第二专精
+skills.mastery.fallbackName=专精 {0}
+skills.mastery.tooEarlyFirst=在游戏中第一专精于等级 {0} 解锁，而人物为 {1} 级。
+skills.mastery.tooEarlySecond=在游戏中第二专精于等级 {0} 解锁，而人物为 {1} 级。
+
+# 技能提示
+skills.kind.mastery=专精
+skills.kind.active=主动技能
+skills.kind.weaponPool=默认武器攻击（武器池技能）
+skills.kind.modifier=技能改造
+skills.kind.transmuter=变形技能
+skills.kind.passive=被动技能
+skills.tip.poolChance=代替默认武器攻击的几率：{0}%
+skills.tip.poolShared=已选择的默认武器攻击技能：{0}，几率合计 {1}%。每次攻击只触发其中一个。
+skills.tip.poolSharedFull=已选择的默认武器攻击技能：{0}，几率合计 {1}%。每次攻击只触发其中一个；普通的武器攻击将完全不会发生。
+skills.tip.dependsOn=解锁来源：{0}
+skills.tip.level=当前等级：{0}
+skills.tip.levelWithBonus=当前等级：{0} + 物品 {1}
+skills.tip.max=（可提升到 {0}）
+skills.tip.maxWithGear=（可提升到 {0}，含物品上限 {1}）
+skills.tip.recordNumbers=这些是技能记录中的数值，未计入人物加成。游戏在自己的提示中会显示乘上你所有伤害后的数值——所以游戏的数字更大。含加成的伤害：「伤害计算…」→「每次攻击伤害」。
+skills.tip.recordNumbersHand=关于手的黄色行除外：那里括号内已经是该手的伤害，与游戏显示的完全一样。
+skills.tip.celestialPower=信仰之力
+skills.tip.fromItem=来自物品：{0}
+skills.tip.nextLevel=下一级：{0}
+
+# 星座信仰
+skills.devotion.tab=星座信仰
+skills.devotion.spent=已花费的虔诚点数：获得的 {1} 点中花了 {0} 点，剩余 {2}
+skills.devotion.split=其中 {0} 颗是被动之星（在下方合计），{1} 颗是带技能的星（单独显示）。
+skills.devotion.sums=总加成
+skills.devotion.none=无
+skills.devotion.granted=赋予的技能
+skills.devotion.boundTo=绑定到：{0}
+skills.devotion.unbound=未绑定任何技能——不会触发
+skills.devotion.levels=更改星座信仰技能的等级
+skills.devotion.starOf={0}，第 {1} 颗星
+skills.devotion.total=合计 {0}
+skills.devotionLevels.title=星座信仰技能等级 — {0}
+skills.devotionLevels.of=/ {0}
+skills.devotionLevels.none=该人物没有赋予技能的星座信仰之星。
+skills.constellations.count=游戏中的星座：{0}。已完成：{1}，已开始：{2}。
+skills.constellations.legend=已点亮的星有标记；星座旁的括号内是已点亮的星数、提供的内容和所需条件。
+skills.constellations.gives=提供：{0}
+skills.constellations.needs=需要：{0}
+skills.constellations.star=第 {0} 颗星
+skills.constellations.notTaken=（未点亮）
+
+# 星座信仰星图：用鼠标给星星加点
+skills.devo.hint=左键点击星星加一点，右键退回一点。滚轮缩放，拖动移动星图。
+skills.devo.fit=整张星图
+skills.devo.zoom=缩放 {0}%
+skills.devo.points=虔诚点数：{0}
+skills.devo.stars=已点亮的星：{1} 颗中的 {0} 颗
+skills.devo.noPoints=没有空余的虔诚点数了。请在主窗口的“虔诚点数”一栏中增加。
+skills.devo.already=这颗星已经加过点了。
+skills.devo.locked=星座“{0}”尚未开启：亲和度不足——{1}。
+skills.devo.parentFirst=需要先点亮“{0}”，这颗星挂在它下面。
+skills.devo.empty=这颗星没有加点。
+skills.devo.childFirst=已点亮的“{0}”挂在这颗星下面，请先退回它。
+skills.devo.affinityHolds=该星座已点满，它的亲和度撑着“{0}”：去掉之后只剩 {1}。
+skills.devo.bindHint=左键点击这颗星来选择技能。
+
+# 信仰之力：挂在哪个技能上
+skills.bind.title=把“{0}”挂在哪个技能上
+skills.bind.none=未指定技能
+skills.bind.chosen=（已选）
+skills.bind.busy=（已被占用：{0}）
+skills.bind.fromItem=（来自装备）
+skills.bind.legend=红色是角色尚未学会的技能：同样可以选择，一旦加点，该力量就会生效。
+
+# 裂缝之门
+skills.portals.tab=裂缝之门
+skills.portals.column=裂缝之门
+skills.portals.notBuilt=裂缝之门列表尚未建立。它从游戏的世界文件读取，约需一分钟。
+skills.portals.build=建立裂缝之门列表
+skills.portals.reading=正在读取世界文件…
+skills.portals.readingWhat=正在读取世界文件：{0}
+skills.portals.readError=无法读取世界文件：{0}
+skills.portals.layer={0} 处的 Riftgates 图层：{1} 条
+skills.portals.openAll=在所有难度下开启所有裂缝之门
+skills.portals.openDifficulty={0}：全部开启（{2} 个中的 {1} 个）
+skills.portals.closeAll=在所有难度下关闭所有裂缝之门吗？\n\n人物自己找到的也会被移除。存档旁会保留一份备份。
+skills.portals.closeOne=关闭「{0}」难度下的所有裂缝之门吗？\n\n人物自己找到的也会被移除。存档旁会保留一份备份。
+skills.portals.title=裂缝之门
+skills.portals.summary=游戏中的裂缝之门：{0}。   已开启：{1}
+skills.portals.source=列表从游戏的世界文件读取；只修改人物的存档。
+skills.portals.open=已开启
+
+# 技能召唤的对象——召唤技能提示下方的行。
+skills.pet.summons=召唤：{0}
+skills.pet.limit=最多同时 {0} 个
+skills.pet.lives=存在 {0} 秒
+skills.pet.permanent=永久
+skills.pet.life={0} 生命
+skills.pet.lifeNote=生命按我们自己的规则计算，可能与游戏不同
+
+# 在技能树中加点：左键加一点，右键退回一点
+skills.edit.points=技能点：{0}
+skills.edit.hint=左键加一点，右键退回一点。
+skills.edit.noPoints=没有空余的技能点了。请在主窗口的“技能点”一栏中增加。
+skills.edit.atMax=该技能已达上限 {0}。装备加成在上限之外，不会存入存档。
+skills.edit.masteryFirst=先点专精条：往里加一点，技能树就打开了。
+skills.edit.tierClosed=这一列在专精等级 {0} 开启，而专精条为 {1}。
+skills.edit.ownerFirst=需要先学会“{0}”，这个技能挂在它下面。
+skills.edit.exclusive=专属技能只能激活一个，而“{0}”已经是了。
+skills.edit.empty=该技能没有加点。
+skills.edit.ownerBusy=“{0}”挂在该技能下面，并且还有技能点。
+skills.edit.barLast=专精条的最后一点就是专精本身，请改用退还专精。
+skills.edit.barHolds=“{0}”所在的这一列在专精等级 {1} 才开启。
+
+# “声望”选项卡：阵营与等级。阵营名称、等级及其顺序均由游戏提供。
+skills.factions.tab=声望
+skills.factions.column=阵营
+skills.factions.rank=等级
+skills.factions.value=声望值
+skills.factions.boost=增长倍率
+skills.factions.notes=备注
+skills.factions.summary=游戏中的阵营：{0}。   存档中的条目：{1}
+skills.factions.short=存档中有 {0} 个条目，而游戏共有 {1} 个阵营：最后几个还不在其中。等游戏自己保存人物后，它们就会出现。
+skills.factions.source=名称、等级和顺序从游戏的文件读取；只修改人物的存档。
+skills.factions.unreadable=无法从游戏的文件读取阵营。
+skills.factions.showHidden=同时显示游戏自己面板中不显示的阵营
+skills.factions.setRank=等级：
+skills.factions.exact=或填数值：
+skills.factions.apply=应用于所选阵营
+skills.factions.pickFirst=请先在列表中选择至少一个阵营。
+skills.factions.hidden=游戏面板中不显示
+skills.factions.noGain=声望不会增长
+skills.factions.boostTimes=×{0}

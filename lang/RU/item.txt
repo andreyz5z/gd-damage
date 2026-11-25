@@ -1,0 +1,288 @@
+# ПОДСКАЗКА ВЕЩИ И СТРОКИ БОНУСОВ (подсказки предметов, вкладка «Суммарные бонусы»).
+#
+# Большинство строк подсказки — шаблоны самой игры на выбранном языке. Здесь — наши слова: там,
+# где у игры шаблона нет, и запасной текст на случай, когда игры нет или тег не нашёлся.
+
+# Хвост длительности дота: «+31% урона обморожением с +45% продолжительности». Обычно — шаблон игры
+# (`ImprovedTimeFormat`); этот текст — только если его нет.
+item.durationWith=с {0}% продолжительности
+
+# Названия типов урона в строке конверсии («50% конверсия: урон здоровью в урон кислотой»).
+# Обычно берутся у игры (`tagConversion<Тип>`); эти — запасные. У кровотечения тега у игры нет.
+item.conv.Physical=физический урон
+item.conv.Pierce=проникающий урон
+item.conv.Fire=урон огнём
+item.conv.Cold=урон холодом
+item.conv.Lightning=урон молнией
+item.conv.Poison=урон кислотой
+item.conv.Life=урон здоровью
+item.conv.Aether=урон эфиром
+item.conv.Chaos=урон хаосом
+item.conv.Bleeding=кровотечение
+
+# ============ ПОДПИСИ СТРОК ПОДСКАЗКИ ============
+# Строка вещи собирается так: сперва ищется шаблон игры на выбранном языке, и только если его нет —
+# берётся подпись отсюда. Поэтому эти слова видны там, где игра строку не переводит (в русском паке,
+# например, нет «104-137 физического урона»), и на языках, где у игры перевода нет.
+
+# Типы урона: полная форма («+31% урона холодом»), короткая для длительности и слово для конверсий.
+item.type.Physical=физического урона
+item.type.Pierce=пронзающего урона
+item.type.Fire=урона огнём
+item.type.Cold=урона холодом
+item.type.Lightning=урона молнией
+item.type.Poison=кислотного урона
+item.type.Life=урона здоровью
+item.type.Aether=урона эфиром
+item.type.Chaos=урона хаосом
+item.type.Bleeding=урона кровотечением
+item.type.Elemental=урона стихиями
+item.typeShort.Physical=физического урона
+item.typeShort.Pierce=пронзающего урона
+item.typeShort.Fire=огнём
+item.typeShort.Cold=холодом
+item.typeShort.Lightning=молнией
+item.typeShort.Poison=кислотного урона
+item.typeShort.Life=здоровью
+item.typeShort.Aether=эфиром
+item.typeShort.Chaos=хаосом
+item.typeShort.Bleeding=кровотечением
+item.typeShort.Elemental=стихиями
+
+# Подписи, собранные из названия типа.
+item.label.overTime={0} со временем
+item.label.dotDuration=длительности урона {0}
+item.label.retaliation=ответного {0}
+item.label.resist=сопротивления: {0}
+item.label.maxResist=предела сопротивления: {0}
+item.label.duration=длительности: {0}
+
+# Слова, которые встречаются у нескольких полей.
+item.label.action=действия
+item.label.armour=брони
+item.label.cooldown=перезарядка умения
+item.label.projectiles=снаряд(ов)
+item.label.pierceChance=шанс пробить навылет
+item.label.radius=радиус
+item.label.resCutAll=снижение сопротивлений цели
+item.label.resCutAllOf=снижения сопротивлений цели
+item.label.resCut=снижение сопротивления цели
+item.label.resCutOf=снижения сопротивления цели
+item.label.petBaseDamage=базовый урон питомца
+item.unit.sec=сек.
+item.unit.m=м
+item.unit.s=с
+
+# Урон, доты и помехи цели.
+item.stat.offensiveBonusPhysical=физического урона
+item.stat.offensivePierceRatio=доля пронзающего урона
+item.stat.offensiveLifeLeech=урона восполняется здоровьем
+item.stat.offensiveManaLeech=урона восполняется энергией
+item.stat.offensivePercentCurrentLife=текущего здоровья цели
+item.stat.offensiveTotalDamageModifier=ко всему урону
+item.stat.offensiveCritDamageModifier=урона от критических ударов
+item.stat.offensiveDamageMultModifier=изменяется общий урон
+item.stat.offensivePierceRatioModifier=доли пронзающего урона
+item.stat.offensiveSlowManaLeach=кражи энергии
+item.stat.offensiveSlowManaLeachDurationModifier=длительности кражи энергии
+item.stat.offensiveFumble=шанса промаха у цели
+item.stat.offensiveProjectileFumble=шанса промаха снарядом у цели
+item.stat.offensiveSlowOffensiveAbility=навыка атаки у цели
+item.stat.offensiveSlowDefensiveAbility=навыка защиты у цели
+item.stat.offensiveSlowRunSpeed=скорости бега у цели
+item.stat.offensiveSlowAttackSpeed=скорости атаки у цели
+item.stat.offensiveSlowSpellCastSpeed=скорости заклинаний у цели
+item.stat.offensiveKnockdown=опрокидывание цели
+item.stat.offensiveStun=оглушение цели
+item.stat.offensiveStunModifier=длительность оглушения
+item.stat.offensiveFreeze=заморозка цели
+item.stat.offensivePetrify=окаменение цели
+item.stat.offensiveSleep=сон цели
+item.stat.offensiveTrap=обездвиживание цели
+item.stat.offensiveConfusion=смятение цели
+item.stat.offensiveTaunt=провокация цели
+item.stat.offensiveFear=страх у цели
+item.stat.offensiveConvert=переманивание цели
+item.stat.offensiveDisruption=прерывание умений цели
+item.stat.offensiveManaBurnDrain=сожжения энергии цели
+item.stat.offensiveManaBurnDamageRatio=сожжённой энергии наносит урон
+item.stat.offensiveTotalDamageReductionPercent=снижения урона цели
+item.stat.offensiveSlowTotalSpeed=общего замедления у цели
+
+# Ответный урон и ответные помехи.
+item.stat.retaliationFreeze=ответной заморозки
+item.stat.retaliationConfusion=ответного замешательства
+item.stat.retaliationSlowLightning=ответного урона электрошоком
+item.stat.retaliationFear=ответного запугивания
+item.stat.retaliationSlowAttackSpeed=ответного снижения скорости атаки
+item.stat.retaliationSlowRunSpeed=ответного снижения скорости бега
+item.stat.retaliationSlowPoison=ответного урона ядом
+item.stat.retaliationSlowManaLeach=ответной кражи энергии
+item.stat.retaliationTotalDamageModifier=ко всему ответному урону
+
+# Броня, блок и сопротивления.
+item.stat.defensiveAbsorptionModifier=поглощения бронёй
+item.stat.defensiveBlockChance=шанс блока
+item.stat.defensiveBlock=урона поглощает блок
+item.stat.blockRecoveryTime=секунд восстановления блока
+item.stat.defensiveBlockModifier=шанса блока
+item.stat.defensiveBlockAmountModifier=силы блока
+item.stat.blockAbsorption=поглощения при блоке
+item.stat.skillComboChargeSpendReduction=к шансу не применить заряды натиска
+item.stat.characterDefensiveBlockRecoveryReduction=времени восстановления блока
+item.stat.defensiveElementalResistance=сопротивления стихиям
+item.stat.defensiveAllResistance=общего сопротивления
+item.stat.defensiveAllMaxResist=ко всем пределам сопротивлений
+item.stat.defensivePercentReflectionResistance=получаемого отражённого урона
+item.stat.defensiveSlowLifeLeach=сопротивления краже здоровья
+item.stat.defensiveSlowManaLeach=сопротивления краже энергии
+item.stat.defensiveBonusProtection=бонус брони
+item.stat.defensiveStun=сопротивления оглушению
+item.stat.defensiveFreeze=сопротивления заморозке
+item.stat.defensivePetrify=сопротивления окаменению
+item.stat.defensiveSleep=сопротивления сну
+item.stat.defensiveTrap=сопротивления обездвиживанию
+item.stat.defensiveDisruption=сопротивления разрушению чар
+item.stat.defensiveKnockdown=сопротивления отбрасыванию
+item.stat.defensiveConfusion=сопротивления замешательству
+item.stat.defensiveFear=сопротивления страху
+item.stat.defensiveTaunt=сопротивления провокации
+item.stat.defensiveLifeLeach=сопротивления вытягиванию здоровья
+item.stat.defensiveManaLeach=сопротивления вытягиванию энергии
+item.stat.defensiveReflect=отражения урона
+item.stat.defensiveTotalSpeedResistance=сопротивления замедлению
+item.stat.defensivePercentCurrentLife=сопротивления урону по текущему здоровью
+item.stat.defensiveCrowdControl=снижения длительности эффектов контроля
+item.stat.defensiveConvert=снижения длительности контроля разума
+
+# Характеристики персонажа — числом и процентом.
+item.stat.characterStrength=телосложения
+item.stat.characterDexterity=искусности
+item.stat.characterIntelligence=духа
+item.stat.characterLife=здоровья
+item.stat.characterMana=энергии
+item.stat.characterLifeRegen=регенерации здоровья
+item.stat.characterManaRegen=регенерации энергии
+item.stat.characterOffensiveAbility=навыка атаки
+item.stat.characterDefensiveAbility=навыка защиты
+item.stat.characterConstitution=телесной крепости
+item.stat.characterRunSpeedMax=предела скорости бега
+item.stat.characterManaLimitReserve=энергии занято
+item.stat.characterStrengthModifier=телосложения
+item.stat.characterDexterityModifier=искусности
+item.stat.characterIntelligenceModifier=духа
+item.stat.characterLifeModifier=здоровья
+item.stat.characterManaModifier=энергии
+item.stat.characterLifeRegenModifier=регенерации здоровья
+item.stat.characterManaRegenModifier=регенерации энергии
+item.stat.characterOffensiveAbilityModifier=навыка атаки
+item.stat.characterDefensiveAbilityModifier=навыка защиты
+item.stat.characterAttackSpeedModifier=скорости атаки
+item.stat.characterSpellCastSpeedModifier=скорости заклинаний
+item.stat.characterRunSpeedModifier=скорости бега
+item.stat.characterTotalSpeedModifier=общей скорости
+item.stat.characterDodgePercent=уклонения от ближних атак
+item.stat.characterDeflectProjectile=уклонения от снарядов
+item.stat.characterHealIncreasePercent=получаемого лечения
+item.stat.characterEnergyAbsorptionPercent=поглощения энергии заклинаний
+item.stat.characterIncreasedExperience=получаемого опыта
+item.stat.characterLightRadius=радиуса света
+item.stat.characterGlobalReqReduction=к требованиям характеристик
+item.stat.characterLevelReqReduction=к требованию уровня
+item.stat.characterManaLimitReserveReduction=резерва энергии
+item.stat.characterConstitutionModifier=телесной крепости
+item.stat.characterRunSpeedMaxModifier=предела скорости бега
+item.stat.characterAttackSpeedMaxModifier=предела скорости атаки
+item.stat.characterSpellCastSpeedMaxModifier=предела скорости колдовства
+item.stat.characterArmorStrengthReqReduction=к требованию телосложения для брони
+item.stat.characterMeleeStrengthReqReduction=к требованию телосложения для ближнего оружия
+item.stat.characterMeleeDexterityReqReduction=к требованию искусности для ближнего оружия
+item.stat.characterWeaponStrengthReqReduction=к требованию телосложения для оружия
+item.stat.characterHuntingDexterityReqReduction=к требованию искусности для дальнего оружия
+item.stat.characterJewelryIntelligenceReqReduction=к требованию духа для украшений
+item.stat.characterShieldStrengthReqReduction=к требованию телосложения для щитов
+item.stat.skillCooldownReduction=перезарядки умений
+item.stat.skillManaCostReduction=стоимости умений в энергии
+
+# Чего стоит умение и как далеко бьёт; ниже — поля, бывающие только у правки умения.
+item.stat.skillActiveLifeCost=затраты здоровья в сек.
+item.stat.skillActiveManaCost=затраты энергии в сек.
+item.stat.skillManaCost=затраты энергии
+item.stat.skillActiveDuration=длительность
+item.stat.skillTargetNumber=цель(ей)
+item.stat.weaponDamagePct=урона оружием
+item.stat.retaliationDamagePct=ответного урона добавляется к атаке
+item.stat.skillChanceWeight=к шансу применения
+item.stat.skillTargetAngle=градусов угол атаки
+item.stat.cooldownCharges=заряд(ов)
+item.stat.petLimit=максимум призванных
+item.stat.damageAbsorptionPercent=урона поглощается
+item.stat.projectileLaunchRotation=сектор обстрела
+item.stat.beamAngle=градусов угол луча
+item.stat.beamNumber=луч(ей)
+item.stat.spawnObjectsTimeToLive=сек. жизни
+
+# Заголовок вещи: броня и скорость атаки — теми же строками, что печатает игра под именем вещи.
+item.head.armour={0} брони
+item.head.aps={0} атак в сек.
+
+# Требования вещи. Обычно берутся у игры; эти — запасные.
+item.need.level=Уровень игрока
+item.need.strength=Телосложение
+item.need.dexterity=Ловкость
+item.need.intelligence=Дух
+
+# Заголовки частей вещи. У игры их нет: она вписывает бонусы частей прямо в общий список, а нам
+# надо показать, откуда строка. «Компонент» и «Аугмент» у игры есть — эти два запасные.
+item.part.prefix=Префикс
+item.part.suffix=Суффикс
+item.part.modifier=Пробуждение
+item.part.component=Компонент
+item.part.relicBonus=Бонус завершения
+item.part.augment=Аугмент
+item.part.ascension=Вознесённый бонус
+
+# Редкость вещи. Обычно берётся у игры; эти — запасные.
+item.rarity.common=Обычный
+item.rarity.magical=Магический
+item.rarity.rare=Редкий
+item.rarity.epic=Эпический
+item.rarity.legendary=Легендарный
+item.rarity.quest=Квестовый
+
+# Пояснение под подсказкой вещи про выпавшие числа и размер вещи в клетках.
+item.rolled.noteDoubt=Числа в строках — то, что выпало ИМЕННО У ЭТОЙ вещи, как их показала бы игра. У строк с красной меткой место поля в порядке обхода мы ещё не замерили: там оставлено число записи, а расчётное приписано как «выпало N ?» — оно может разойтись с игрой на ступень.
+item.cells={0} кл.
+item.allFields=— все ненулевые поля записи —
+
+# Прочие строки подсказки. Где у игры есть свой шаблон, он и печатается; это — запасные.
+item.weaponDamageHand={0}% урона {1} оружием
+item.hand.main=основным
+item.hand.off=дополнительным
+item.missing.noGame=база игры не подключена
+item.missing.noRecord=запись удалена патчем игры
+item.restore.life=здоровья
+item.restore.mana=энергии
+item.restore.head=Восстанавливается
+item.need.short=— не хватает, есть {0}
+item.chanceOfOne={0}% шанс на одно из:
+item.chanceOfAll={0}% шанс на:
+item.chanceOf={0}% шанс на
+item.forSeconds=за {0} сек.
+item.petBonusAll=Бонус всем питомцам
+item.set=Комплект
+item.setNamed=Комплект: {0}
+item.setWorn=({0}) Набор
+item.conversionField=конверсия урона
+item.conversion={0}% конверсия: {1} в {2}
+item.noGameWords=(эта строка у нас без слов игры)
+item.rolledValue=выпало {0} ?
+item.racial.damage=урона против:
+item.racial.defence=меньше урона от:
+item.skillPlus=+{0} к умению {1}
+item.masteryPlus=+{0} ко всем умениям мастерства {1}
+item.allSkillsPlus=+{0} ко всем умениям
+item.summonCount={0} призванных
+item.activationChance=шанс активации
+item.stat.retaliationDamageMultModifier=изменяется общий ответный урон
+item.conversionGone=-{0}% {1}

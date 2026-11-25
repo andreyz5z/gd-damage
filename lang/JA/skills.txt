@@ -1,0 +1,150 @@
+# 「スキル」ウィンドウ: マスタリー、スキルのツールチップ、祈祷、リフトゲート。
+# マスタリー、スキル、星座の名前はゲームから取っています。
+
+skills.title=スキル — {0}
+skills.levelParen=(レベル {0})
+
+# マスタリーの選択と放棄
+skills.choose.first=第 1 マスタリー
+skills.choose.second=第 2 マスタリー
+skills.choose.intro=マスタリーは、そのバーに最初のポイントが入った時点で選択済みとみなされます — まさにそれを、スキルポイントを 1 つ使って行います。同じマスタリーを二度選ぶことはできません。
+skills.choose.opensAt=ゲームではレベル {0} で解放されます。
+skills.choose.freePoints=未使用のスキルポイント: {0}。
+skills.noPoints.text=未使用のスキルポイントがありません。マスタリーはバーにポイントを入れることで選択します。\n\nメインウィンドウの「スキルポイント」欄でポイントを足せば、ここで使えるようになります。存在しないポイントを使うことはできません: 稼いだ以上を使ったことになってしまいます。
+skills.noPoints.title=スキルポイントが足りません
+skills.take.ask=マスタリー «{0}» を選びますか？\n\nスキルポイント 1 つがそのバーに入ります — これでマスタリーが選択されます。現在の未使用: {1}。
+skills.take.undo=「マスタリーを放棄」ボタンで取り消せます — ポイントは戻ります。
+skills.take.title=マスタリーの選択
+skills.drop.ask=マスタリー «{0}» を放棄しますか？\n\n入れたポイントはすべて抜かれ — バーのポイントを含め合計 {1} — 未使用に戻ります。このマスタリーのスキルは消え、それに結びついた祈祷の星は結びつきのないまま残ります。
+skills.drop.title=マスタリーの放棄
+skills.drop.button=マスタリー «{0}» を放棄
+skills.drop.secondFirst=先に第 2 マスタリーを放棄してください
+skills.mastery.fallbackName=マスタリー {0}
+skills.mastery.tooEarlyFirst=ゲームでは第 1 マスタリーはレベル {0} で解放されますが、キャラクターは {1} です。
+skills.mastery.tooEarlySecond=ゲームでは第 2 マスタリーはレベル {0} で解放されますが、キャラクターは {1} です。
+
+# スキルのツールチップ
+skills.kind.mastery=マスタリー
+skills.kind.active=アクティブスキル
+skills.kind.weaponPool=通常の武器攻撃 (武器プールのスキル)
+skills.kind.modifier=スキル修飾
+skills.kind.transmuter=トランスミューター
+skills.kind.passive=パッシブスキル
+skills.tip.poolChance=通常の武器攻撃の代わりに使われる確率: {0}%
+skills.tip.poolShared=選択した通常武器攻撃スキル: {0}、確率の合計 {1}%。1 回の攻撃で発動するのはそのうち 1 つだけです。
+skills.tip.poolSharedFull=選択した通常武器攻撃スキル: {0}、確率の合計 {1}%。1 回の攻撃で発動するのはそのうち 1 つだけで、素の武器攻撃はまったく起こりません。
+skills.tip.dependsOn=解放元: {0}
+skills.tip.level=現在のレベル: {0}
+skills.tip.levelWithBonus=現在のレベル: {0} + アイテムから {1}
+skills.tip.max=({0} まで上げられます)
+skills.tip.maxWithGear=({0} まで上げられます。アイテム込みの上限 {1})
+skills.tip.recordNumbers=これはスキルのレコードの数値で、キャラクターのボーナス適用前です。ゲームは自身のツールチップで、あなたが持つすべてのダメージを掛けた値を表示するため、その数値はより大きくなります。ボーナス込みのダメージ: 「ダメージ計算…」→「一撃あたりのダメージ」。
+skills.tip.recordNumbersHand=手についての黄色い行は例外です: そこの括弧内はすでにその手のダメージで、ゲームの表示と同じです。
+skills.tip.celestialPower=セレスチャル パワー
+skills.tip.fromItem=アイテムから: {0}
+skills.tip.nextLevel=次のレベル: {0}
+
+# 祈祷
+skills.devotion.tab=祈祷
+skills.devotion.spent=使った祈祷ポイント: 獲得 {1} のうち {0}、未使用 {2}
+skills.devotion.split=そのうち {0} はパッシブの星 (下で合計)、{1} はスキル付きの星 (別に表示) です。
+skills.devotion.sums=合計ボーナス
+skills.devotion.none=なし
+skills.devotion.granted=付与されたスキル
+skills.devotion.boundTo=結びつき: {0}
+skills.devotion.unbound=何にも結びついていません — 発動しません
+skills.devotion.levels=祈祷スキルのレベルを変更
+skills.devotion.starOf={0}、星 {1}
+skills.devotion.total=合計 {0}
+skills.devotionLevels.title=祈祷スキルのレベル — {0}
+skills.devotionLevels.of=/ {0}
+skills.devotionLevels.none=キャラクターにはスキルを付与する祈祷の星がありません。
+skills.constellations.count=ゲームの星座: {0}。完成: {1}、着手: {2}。
+skills.constellations.legend=取得した星には印を付けています。星座の横の括弧内は、取得した星の数、得られるもの、必要なものです。
+skills.constellations.gives=効果: {0}
+skills.constellations.needs=必要: {0}
+skills.constellations.star=星 {0}
+skills.constellations.notTaken=(未取得)
+
+# 祈祷の星図：マウスで星にポイントを入れる
+skills.devo.hint=星を左クリックでポイントを入れ、右クリックで戻します。ホイールで拡大、ドラッグで星図が動きます。
+skills.devo.fit=全体表示
+skills.devo.zoom=倍率 {0}%
+skills.devo.points=祈祷ポイント: {0}
+skills.devo.stars=取得した星: {1} 中 {0}
+skills.devo.noPoints=空きの祈祷ポイントがありません。メイン画面の「祈祷ポイント」欄で増やしてください。
+skills.devo.already=この星にはすでにポイントが入っています。
+skills.devo.locked=星座「{0}」はまだ閉じています。適性が足りません — {1}。
+skills.devo.parentFirst=先に「{0}」を取る必要があります。この星はそれに付くものです。
+skills.devo.empty=この星にはポイントが入っていません。
+skills.devo.childFirst=この星には取得済みの「{0}」が付いています。先にそちらを戻してください。
+skills.devo.affinityHolds=この星座は完成しており、その適性が「{0}」を支えています。外すと {1} になります。
+skills.devo.bindHint=星を左クリックしてスキルを選んでください。
+
+# セレスチャル パワー：どのスキルに付けるか
+skills.bind.title=「{0}」をどのスキルに付けるか
+skills.bind.none=スキル未割り当て
+skills.bind.chosen=(選択中)
+skills.bind.busy=(使用中: {0})
+skills.bind.fromItem=(装備から)
+skills.bind.legend=赤はキャラクターがまだ習得していないスキルです。選ぶこともでき、ポイントが入り次第そのパワーが働きます。
+
+# リフトゲート
+skills.portals.tab=リフトゲート
+skills.portals.column=リフトゲート
+skills.portals.notBuilt=リフトゲートの一覧は作成されていません。ゲームのワールドファイルから読み取り、約 1 分かかります。
+skills.portals.build=リフトゲートの一覧を作成
+skills.portals.reading=ワールドファイルを読み込み中…
+skills.portals.readingWhat=ワールドファイルを読み込み中: {0}
+skills.portals.readError=ワールドファイルを読み込めませんでした: {0}
+skills.portals.layer={0} の Riftgates レイヤー: {1} 件
+skills.portals.openAll=すべての難易度ですべてのリフトゲートを開く
+skills.portals.openDifficulty={0}: すべて開く ({2} 中 {1})
+skills.portals.closeAll=すべての難易度ですべてのリフトゲートを閉じますか？\n\nキャラクターが自分で見つけたものも削除されます。セーブの隣にバックアップが残ります。
+skills.portals.closeOne=難易度 «{0}» のすべてのリフトゲートを閉じますか？\n\nキャラクターが自分で見つけたものも削除されます。セーブの隣にバックアップが残ります。
+skills.portals.title=リフトゲート
+skills.portals.summary=ゲームのリフトゲート: {0}。   開放済み: {1}
+skills.portals.source=一覧はゲームのワールドファイルから読み取ります。編集するのはキャラクターのセーブだけです。
+skills.portals.open=開放
+
+# スキルが召喚するもの — 召喚スキルのツールチップの下の行。
+skills.pet.summons=召喚: {0}
+skills.pet.limit=同時に最大 {0}
+skills.pet.lives=存続 {0} 秒
+skills.pet.permanent=永続
+skills.pet.life=ヘルス {0}
+skills.pet.lifeNote=ヘルスは独自の規則で計算しており、ゲームと異なる場合があります
+
+# ツリーでのポイント割り振り: 左クリックで1ポイント追加、右クリックで戻す
+skills.edit.points=スキルポイント: {0}
+skills.edit.hint=左クリックでポイントを入れ、右クリックで戻します。
+skills.edit.noPoints=空きスキルポイントがありません。メイン画面の「スキルポイント」欄で増やしてください。
+skills.edit.atMax=このスキルはすでに上限 {0} です。装備による上乗せは上限の外で、セーブには保存されません。
+skills.edit.masteryFirst=まずマスタリーバーです。ポイントを1つ入れるとツリーが開きます。
+skills.edit.tierClosed=この列はマスタリーレベル {0} で開きます。バーは {1} です。
+skills.edit.ownerFirst=先に「{0}」を取る必要があります。このスキルはそれに付くものです。
+skills.edit.exclusive=排他スキルは1つしか有効にできません。すでに「{0}」が有効です。
+skills.edit.empty=このスキルにはポイントが入っていません。
+skills.edit.ownerBusy=このスキルには「{0}」が付いており、そちらにまだポイントが残っています。
+skills.edit.barLast=バーの最後の1ポイントはマスタリーそのものです。代わりにマスタリーを返してください。
+skills.edit.barHolds=「{0}」はマスタリーレベル {1} で開く列にあります。
+
+# 「評判」タブ: 勢力と評価。勢力名・評価・その並び順はゲームから読み取ります。
+skills.factions.tab=評判
+skills.factions.column=勢力
+skills.factions.rank=評価
+skills.factions.value=評判値
+skills.factions.boost=上昇倍率
+skills.factions.notes=備考
+skills.factions.summary=ゲームの勢力: {0}。   セーブ内の項目: {1}
+skills.factions.short=セーブには {0} 件の項目がありますが、ゲームには {1} の勢力があります。最後の勢力はまだ含まれていません。ゲーム自身がキャラクターを保存すると現れます。
+skills.factions.source=名前・評価・並び順はゲームのファイルから読み取ります。編集するのはキャラクターのセーブだけです。
+skills.factions.unreadable=ゲームのファイルから勢力を読み取れませんでした。
+skills.factions.showHidden=ゲームが自身のパネルに表示しない勢力も表示する
+skills.factions.setRank=評価:
+skills.factions.exact=または数値:
+skills.factions.apply=選択した勢力に適用
+skills.factions.pickFirst=先に一覧で勢力を一つ以上選んでください。
+skills.factions.hidden=ゲームのパネルには表示されない
+skills.factions.noGain=評判は上がらない
+skills.factions.boostTimes=×{0}

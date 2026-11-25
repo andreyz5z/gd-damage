@@ -1,0 +1,18 @@
+# PANEL DE EQUIPO: nombres de los huecos (también aparecen en los mensajes «no va en el hueco …»).
+
+equipment.weapon1=Arma I
+equipment.offhand1=Mano izq. I
+equipment.weapon2=Arma II
+equipment.offhand2=Mano izq. II
+equipment.head=Cabeza
+equipment.neck=Cuello
+equipment.medal=Medalla
+equipment.shoulders=Hombros
+equipment.chest=Pecho
+equipment.hands=Manos
+equipment.waist=Cintura
+equipment.legs=Piernas
+equipment.ring1=Anillo 1
+equipment.feet=Pies
+equipment.relic=Reliquia
+equipment.ring2=Anillo 2

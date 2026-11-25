@@ -1,0 +1,185 @@
+# 戦闘シミュレーションのログ (「戦闘シミュレーション」タブ): ログの行、理由、実行後の注記。
+#
+# 小数はすでに書かれた形 (ピリオド区切り) で届き、{n} の中では何も計算し直しません。比較記号
+# 「<」「≥」「→」、括弧、行の各部分の間のカンマはプログラムが入れます。
+
+# 自分では攻撃しないスキルが何をするか。この語はログ (「強化、ダメージなし」)、
+# 「押すもの」リスト、実行の注記に出ます。
+log.effect.damage=ダメージ
+log.effect.summon=召喚
+log.effect.buff=強化
+log.effect.debuff=弱体化
+log.effect.none=レコードにダメージなし
+
+# ログの 1 行: 「12.34 秒  一振り: 両手   812 と 790   (ボーナス未計算のダメージ 1020 と 990)   [理由]」。
+log.line.at={0} 秒
+log.line.and=と
+log.line.before=(ボーナス未計算のダメージ {0})
+log.seconds={0} 秒
+log.from=«{0}» から
+log.target.dummy=ダミー
+log.target.generic=対象
+
+# 手。「一振り: 両手」「メインハンドのクリティカル、段階 2」「メイン 43.1 < 97.0」(手ごとの命中抽選)。
+log.hand.both=両手
+log.hand.main=メインハンド
+log.hand.off=オフハンド
+log.roll.main=メイン
+log.roll.off=オフ
+log.partial.mainMissed=(メインハンドはミス)
+log.partial.offMissed=(オフハンドはミス)
+
+log.swing=一振り: {0}
+log.swing.hands=手 {0} → {1}
+log.swing.crit={0}のクリティカル、段階 {1} ×{2}
+log.miss=ミス
+log.fire.crit={0}のクリティカル ×{1}
+
+# 何が当たったか: 「スキル: …」「発動: メテオ」「攻撃の代わり: …」。
+log.fire.skill=スキル
+log.fire.channel=チャネリング
+log.fire.spell=呪文
+log.fire.pool=攻撃の代わり
+log.fire.proc=発動
+log.fire.devotion=祈祷
+log.fire.finale=フィナーレ: {0} 撃目
+log.fire.attack=攻撃
+log.fire.charges=(チャージ {0})
+
+# 継続ダメージのティック: 「燃焼のティック (メインハンド、通常の武器攻撃から)」。
+log.tick={0}のティック
+log.tick.from={0}から
+log.tick.left=残り {0} 秒
+log.tick.partial=不完全なティック {0}%
+log.tick.autoattack=通常の武器攻撃
+log.dot.FireDot=燃焼
+log.dot.ColdDot=凍傷
+log.dot.LightningDot=感電
+log.dot.PoisonDot=毒
+log.dot.LifeDot=生命力減衰
+log.dot.BleedingDot=出血
+log.dot.PhysicalDot=体内損傷
+
+# 対象のヘルス。
+log.life.killed=対象を撃破
+log.life.killedWhy=TTK {0} 秒: ヘルス {2} に対し {1} を与えた。以後も生きているものとしてダメージを数えるが、減らすヘルスはもうない
+log.life.cut=ヘルス低下 {0}%  «{1}» から
+log.life.cutWhy=対象のヘルス {0} → {1}
+log.life.cutResist=効果 {0}%、対象の耐性 {1}%
+log.life.gear=装備
+
+# オーラ、クールダウンごとの強化、クールダウンのリセット。
+log.aura=オーラ: {0}
+log.buff=強化: {0}
+log.buff.holds=持続 {0} 秒
+log.buff.cooldown=クールダウン {0} 秒
+log.buff.shield=吸収シールド {0} — 破られるまで持続
+log.buff.noDuration=レコードに持続時間なし
+log.buff.notInQueue=そのダメージボーナスはキューでは効きません
+log.buff.noEffect=こちらのダメージには影響しません
+log.reset=クールダウンリセット: «{0}»
+log.reset.why=«{0}»、{1}% {2} — {3} 秒間、{5} ではなく {4} に準備完了
+log.reset.onCrit=クリティカル攻撃時
+log.reset.onAttack=攻撃時
+
+# 発動した、または押したが、攻撃しない。
+log.silent.fired=発動
+log.silent.pressed=押下:
+log.silent.buff=強化、持続 {0} 秒
+log.silent.resists=耐性低下
+log.silent.defense=防御能力 −{0}
+log.silent.offense=攻撃能力 −{0}
+log.silent.absolute=耐性を数値で −{0}
+log.silent.relative=現在の耐性の −{0}%
+log.silent.debuff=対象を {0} 秒間弱体化
+log.silent.debuffNothing=こちらのダメージにはまったく影響しません
+log.silent.summon=召喚 — ペットがプールに加わり、その攻撃は下の専用の行にあります
+log.silent.noDamage={0}、ダメージなし
+
+# ログ内のペット。
+log.pet.how.self=自動
+log.pet.how.pressed=押下
+log.pet.summonBlocked=召喚 ({0}): {1}
+log.pet.limit=種類の上限に達しています — {0} × «{1}»、これ以上は増えません
+log.pet.summoned=召喚 ({0}): «{1}» #{2}
+log.pet.standing={1} 体中 {0} 体が存在
+log.pet.lives=存続 {0} 秒
+log.pet.permanent=永続
+log.pet.aps=毎秒攻撃回数 {0}
+log.pet.gone=退場: «{0}» #{1}
+log.pet.goneWhy=存続時間 {0} 秒が終了、攻撃 {1} 回
+log.pet.goneTrap=敵により起動、攻撃 {0} 回
+log.pet.onceAt={0} 秒後に爆発
+log.pet.aura=ペットのオーラ: «{0}» {1}
+log.pet.auraTarget=ペットのオーラ: «{0}»
+log.pet.auraAllies=近くにいる間、こちらと他のペットを強化
+log.pet.auraOnTarget=近くにいる間、対象にかかり続ける
+log.pet.miss=ペットのミス: «{0} #{1}» {2}
+log.pet.hitChance=命中率 {0}%
+log.pet.hit=ペット: «{0} #{1}» {2}
+log.pet.auto=(通常攻撃)
+log.pet.auraMark=(オーラ)
+log.pet.perSecond=毎秒 1 回
+log.pet.speed=速度 毎秒 {0} 回攻撃
+log.pet.every={0} 秒ごと
+log.pet.crit=クリティカル段階 {0} ×{1}
+log.pet.dotApplied=継続ダメージを付与
+# ティックの行でのペットの継続ダメージの出どころ: 「燃焼のティック («<ペット> #1: <スキル>» から)」。
+log.pet.source={0} #{1}: {2}
+# ゲーム内で名前のないペットのスキル — レコードのパスの末尾で呼びます。
+log.pet.noName=名前なし: {0}
+
+# 実行の結果: 種族ボーナス。
+log.racial.noRace=種族へのボーナス ({0} 個) はこの対象には効きません: 種族がまったくありません (ダミーと同じ)
+log.racial.none=対象は {0} で、それに対するボーナスはありません (他の種族へのものはあります: {1})
+log.racial.has=対象は {0} で、それに対するこちらのボーナスはダメージ {1}% (倍率 ×{2})
+log.racial.flat=種族 «{0}» への固定ボーナス ({1} ダメージ) は集めましたが適用していません: どの種類のダメージとして来るのか (ツールチップに種類の記載なし)、順序のどこに入るのかが不明です。割合のものは記事の式で入れていますが、固定のものは記事にもファイルにも式がありません — 測定が必要です
+
+# 実行の結果: ヒント (選び方の誤り)。
+log.hint.mainNotSpell=«{0}» がメインに選ばれていますが、チャネリングでもクールダウンなしの呪文でもありません (またはアニメーションが見つかりません) — 選択なしと同じく武器で攻撃します
+log.hint.buffPressed=«{0}» は強化です: 有効な間は一撃にボーナスが乗りますが、それ自体は一撃として攻撃しません。強化の中でチェックしてください
+log.hint.channelWithAttack=チャネリング «{0}» が通常の武器攻撃と一緒に押されています — ゲームではあり得ません: ビームを維持している間は武器で攻撃しません。押すタイミングは詠唱速度ではなくレコードの「クールダウン」です。メインとして選んでください
+log.hint.starHits=星 «{0}» はダメージを与えます — 強化としては有効にしません。押すものの一覧でチェックすると、クールダウンごとに攻撃します
+log.hint.starReplacing=星 «{0}» は «{1}» に結びついています — これは置き換え攻撃です: ボタンに割り当てられ、通常の一撃の代わりに攻撃します。こうしたものは数えられますが、この実行ではそれで攻撃しません — セーブは割り当てを保存しないからです。「攻撃手段」リストで選ぶと星が働きます
+log.hint.starIdle=星 «{0}» はスキル «{1}» に結びついていますが、そのスキルはこの実行で攻撃しません (押すものにチェックされておらず、武器プールにもない) — 発動はまったくなく、運が悪いわけではありません
+
+# 実行の結果: 読み取れなかったもの。
+log.unread.starBuffNoDuration=星 «{0}» は強化をかけますが、レコードに持続時間がありません — 維持する手段がないため、キューには発動したことだけが表示されます
+log.unread.starNoDamage=星 «{0}» のダメージを読み取れませんでした: 発動はキューにありますが、ダメージはありません
+log.unread.buffNoDuration=強化 «{0}» はダメージを変えますが、レコードに持続時間がありません — キューには発動だけが表示され、ボーナスは効きません
+log.unread.summonNoPet=召喚 «{0}» が発動しましたが、そのペットはプールにいません — そのダメージは数えません
+log.unread.petMoveNoRate=ペット «{0}» にはダメージを与えるスキル «{1}» がありますが、どのくらいの頻度で使うかがレコードにありません — キューでは使いません
+log.unread.petNoSpeed=ペット «{0}» の攻撃速度を読み取れませんでした (アニメーション表なし) — その通常攻撃はキューに入れません
+log.unread.petNoMoves=ペット «{0}» のダメージスキルを 1 つも読み取れませんでした — キューでは召喚されますが攻撃しません
+
+# 実行の結果: アイテムとセットのスキル — それぞれどうなったか。
+log.gear.mainSpell=通常の武器攻撃の代わりのメインスキル、攻撃 {0} 回
+log.gear.pool=武器プール内
+log.gear.onlyCrit=クリティカル時のみ抽選;
+log.gear.fired={0} 回発動
+log.gear.firedSummon=— 召喚、ペットがプールに加わって攻撃
+log.gear.firedDebuff=— 対象を弱体化
+log.gear.firedBuff=— こちらを強化
+log.gear.conditionNotModelled=条件はモデル化していません —
+log.gear.pressed=押すものにチェック済み、クールダウンごとに押下: {0} 回押下
+log.gear.notPressed=押せる — 押すものにチェックされていません
+log.gear.conditionHits=条件はモデル化していませんが、ダメージがあります — チェックするとクールダウンごとに使います
+log.gear.noHit=攻撃しない ({0})
+log.gear.conditionNoHit=条件はモデル化しておらず、ダメージなし ({0}) — キューに参加しません
+
+# 実行の結果: 星とペットの名前別。
+log.star.head=«{0}» Lv. {1} («{2}» から)
+log.star.onlyCrit=(クリティカル時のみ)
+log.star.chance=確率 {0}%
+log.star.cooldown=クールダウン {0} 秒
+log.star.fired={1} 回の抽選で {0} 回発動
+log.star.blocked=クールダウンで {0} 回阻止
+log.petLine.auras=他のペットへのペットのオーラ (次のペットが生きている間) — {0}: {1}
+log.petLine.head=«{0}» ({1}) — {2} 回召喚
+log.petLine.limit=同時に最大 {0}
+log.petLine.hits=攻撃 {0}
+log.petLine.misses=ミス {0}
+log.petLine.crits=クリティカル {0}
+log.petLine.damage=ダメージ {0}
+log.petLine.expired=時間切れで退場 {0}
+log.petLine.blocked=上限を超えた召喚 {0}

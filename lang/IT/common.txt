@@ -1,0 +1,27 @@
+# CONDIVISO DA PIÙ FINESTRE: pulsanti, provenienza di un'abilità, parti di un oggetto.
+
+common.apply=Applica
+common.cancel=Annulla
+common.search=Cerca:
+common.nothingFound=Nessun risultato.
+common.put=Imposta
+common.clearBonus=Rimuovi bonus
+
+# Difficoltà del gioco (scheda «Portali», scheda del nemico)
+common.difficulty.normal=Normale
+common.difficulty.elite=Elite
+common.difficulty.ultimate=Suprema
+
+# Provenienza di un'abilità (sottotitoli nelle finestre delle evocazioni e delle abilità attive)
+common.source.mastery=abilità della maestria
+common.source.devotion=devozione
+common.source.item=da un oggetto: {0}
+common.source.set=set: {0} ({1})
+common.source.setName=set: {0}
+
+# La parte dell'oggetto con cui è arrivata l'abilità: «da un oggetto: Nome (prefisso)»
+common.part.prefix=(prefisso)
+common.part.suffix=(suffisso)
+common.part.component=(componente)
+common.part.augment=(aumento)
+common.part.ascension=(ascensione)

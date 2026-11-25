@@ -1,0 +1,44 @@
+# KATALOG PŘEDMĚTŮ (levý sloupec hlavního okna).
+
+catalog.title=Katalog předmětů
+catalog.wearable=Vše k nasazení
+catalog.everything=Všechny předměty
+catalog.search=část názvu…
+catalog.bonus=bonus: útočná rychlost…
+catalog.bulkHint=Ctrl + levé tlačítko — vzít stoh
+catalog.count=předmětů: {0}
+catalog.notBuilt=(katalog nevytvořen)
+catalog.hidden=(skryto filtry: {0})
+catalog.level=úr. {0}
+
+# Vzácnost
+catalog.rarity.common=Běžná
+catalog.rarity.magical=Magická
+catalog.rarity.rare=Vzácná
+catalog.rarity.epic=Epická
+catalog.rarity.legendary=Legendární
+catalog.rarity.quest=Úkolová
+
+# Oddíly
+catalog.category.head=Zbroj: hlava
+catalog.category.shoulders=Zbroj: ramena
+catalog.category.chest=Zbroj: hruď
+catalog.category.hands=Zbroj: ruce
+catalog.category.waist=Zbroj: pás
+catalog.category.legs=Zbroj: nohy
+catalog.category.feet=Zbroj: chodidla
+catalog.category.amulet=Šperky: amulety
+catalog.category.ring=Šperky: prsteny
+catalog.category.medal=Šperky: medaile
+catalog.category.relic=Relikvie
+catalog.category.weapon1h=Zbraně: jednoruční
+catalog.category.weapon2h=Zbraně: obouruční
+catalog.category.ranged1h=Zbraně: pistole
+catalog.category.ranged2h=Zbraně: pušky
+catalog.category.shield=Druhá ruka: štíty
+catalog.category.offhand=Druhá ruka: příruční předměty
+catalog.category.component=Komponenty
+catalog.category.augment=Vylepšení
+catalog.category.consumable=Spotřební předměty
+catalog.category.crafting=Suroviny a plány
+catalog.category.other=Ostatní

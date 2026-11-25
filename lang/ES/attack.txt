@@ -1,0 +1,12 @@
+# HABILIDADES CON DAÑO: la línea de la lista «atacar con» y las partes de una habilidad («De qué está hecha esta habilidad»).
+
+attack.title={0}   ({1}, niv. {2})
+attack.weaponPct={0}% del daño del arma
+attack.part={0} (niv. {1})
+attack.transmuter={0} (transmutador, niv. {1})
+attack.transmuterOrphan={0} — transmutador (niv. {1}): no se encontró su habilidad principal
+attack.fromItemInForm=de un objeto, en esta forma: {0}
+attack.fromItem=de un objeto: {0}
+attack.pool=(en lugar del ataque de arma por defecto, {0}%)
+attack.poolNoChance=(en lugar del ataque de arma por defecto)
+attack.onHit=(se activa al golpear, {0}%)

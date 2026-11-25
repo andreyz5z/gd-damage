@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>gdc-gui</AssemblyName>
+    <RootNamespace>Gdc.Gui</RootNamespace>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <ApplicationDefaultFont>Segoe UI, 9pt</ApplicationDefaultFont>
+    <!-- Application icon with sizes from 16 to 256 pixels. -->
+    <ApplicationIcon>gdc-gui.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Embed the icon so the windows can load it. ApplicationIcon sets the icon for the executable. -->
+    <EmbeddedResource Include="gdc-gui.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Copy interface translations next to the executable and embed English and Russian.
+         See Lang.cs for the loading order. -->
+    <None Update="lang\**\*.txt" CopyToOutputDirectory="PreserveNewest" />
+    <EmbeddedResource Include="lang\EN\*.txt" LogicalName="lang/EN/%(Filename)%(Extension)" />
+    <EmbeddedResource Include="lang\RU\*.txt" LogicalName="lang/RU/%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(IncludeLocalChecks)' != 'false' And Exists('../local-checks/Program.Local.cs')">
+    <!-- Set IncludeLocalChecks=false to build the standalone editor in the working tree. -->
+    <Compile Include="../local-checks/*.cs" />
+  </ItemGroup>
+
+  <!-- THE BUILD NUMBER GROWS BY ITSELF, ONE PER COMPILE.
+
+       `build-number.txt` holds a single number and nothing else. The target below reads it,
+       adds one, writes it back and stamps the result into the assembly, so every rebuild is
+       told apart from the one before it. The window title shows it (see AppVersion.cs).
+
+       `BeforeTargets` names the two targets that READ the version — the attribute generator
+       and the one that hands the version to the compiler. Hanging this on `BeforeBuild` is
+       not enough: that runs after the version has already been taken, and the number would
+       lag one build behind.
+
+       THE NUMBER GROWS ON EVERY `dotnet build`, INCLUDING ONE THAT COMPILES NOTHING — checked,
+       not assumed: three builds in a row with no source changed gave 1.0.1, 1.0.2, 1.0.3.
+       MSBuild skips `CoreCompile` when the project is up to date, but the targets around it
+       still run. So the number counts BUILDS, not changes; if it is ever wanted to count only
+       real compiles, this target has to hang on `CoreCompile` itself with its own
+       `Inputs`/`Outputs`, and that is a different job.
+
+       MAJOR and MINOR are set by hand, here. Only the third number counts builds. -->
+  <PropertyGroup>
+    <VersionMajorMinor>1.0</VersionMajorMinor>
+    <BuildNumberFile>$(MSBuildProjectDirectory)\build-number.txt</BuildNumberFile>
+  </PropertyGroup>
+
+  <Target Name="BumpBuildNumber"
+          BeforeTargets="GetAssemblyVersion;CoreGenerateAssemblyInfo">
+    <ReadLinesFromFile File="$(BuildNumberFile)" Condition="Exists('$(BuildNumberFile)')">
+      <Output TaskParameter="Lines" PropertyName="PreviousBuildNumber" />
+    </ReadLinesFromFile>
+    <PropertyGroup>
+      <!-- An absent or unreadable file starts the count from scratch rather than failing the
+           build: the version is a convenience, and it must not be able to stop a compile. -->
+      <PreviousBuildNumber Condition="'$(PreviousBuildNumber)' == ''">0</PreviousBuildNumber>
+      <CurrentBuildNumber>$([MSBuild]::Add($(PreviousBuildNumber), 1))</CurrentBuildNumber>
+      <Version>$(VersionMajorMinor).$(CurrentBuildNumber)</Version>
+      <FileVersion>$(VersionMajorMinor).$(CurrentBuildNumber).0</FileVersion>
+      <AssemblyVersion>$(VersionMajorMinor).$(CurrentBuildNumber).0</AssemblyVersion>
+      <InformationalVersion>$(VersionMajorMinor).$(CurrentBuildNumber)</InformationalVersion>
+    </PropertyGroup>
+    <WriteLinesToFile File="$(BuildNumberFile)" Lines="$(CurrentBuildNumber)" Overwrite="true" WriteOnlyWhenDifferent="true" />
+    <Message Importance="high" Text="gdc-gui $(Version)" />
+  </Target>
+
+</Project>

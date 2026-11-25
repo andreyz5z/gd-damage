@@ -1,0 +1,67 @@
+# CỬA SỔ «SỬA VẬT PHẨM» và các cửa sổ con: chỉ số thăng hoa, chỉ số hoàn thiện thánh vật.
+# Các dòng chỉ số của vật phẩm lấy từ chú giải (một phần câu chữ là của chính trò chơi).
+
+edit.title=Sửa vật phẩm
+edit.stop=Dừng tìm kiếm
+edit.relicBonus=Chỉ số hoàn thiện (thánh vật)…
+edit.affixes=Tiền tố và hậu tố…
+edit.ascension=Chỉ số thăng hoa…
+edit.reroll=Gieo lại vật phẩm ngẫu nhiên
+edit.findMax=Tìm giá trị gieo cao nhất
+edit.findValues=Tìm theo giá trị
+edit.close=Đóng
+edit.notSaved=(đã tìm thấy, chưa ghi)
+edit.secondEnd=└ đầu kia của cùng dòng
+edit.hiddenRolls=Đã gieo nhưng không hiện trong chú giải
+edit.perSecond=({0} mỗi 1 giây — đó là giá trị trong ô)
+edit.range=trong {0}…{1}
+
+# Bảng bên phải: quá trình tìm và kết quả
+edit.rerolled=Vật phẩm đã được gieo lại.\nKhông tìm gì cả — vật phẩm ngẫu nhiên tự nó đã hợp lệ.\nĐể ghi vào bản lưu, hãy bấm «Áp Dụng».
+edit.badNumber=Không đọc được số trong dòng «{0}»: {1}
+edit.busy=Đang tìm…
+edit.busyProgress=Đang tìm… đã kiểm {0} triệu trên 2147
+edit.searching=Đang tìm vật phẩm bằng cách thử các giá trị.\nThời gian tùy tốc độ máy tính.
+edit.found=Đã tìm thấy mọi con số đã chọn. Bấm «Áp Dụng» để ghi vật phẩm vào bản lưu.
+edit.impossible=Chỉ số này không bao giờ có giá trị như vậy:
+edit.impossibleHint=Hãy nhập một trong các giá trị hiện bên phải dòng.
+edit.cancelled=Đã dừng tìm kiếm.
+edit.notFound=Không thể tìm thấy các chỉ số này cùng lúc. Hãy bỏ chọn những chỉ số kém quan trọng với bạn rồi thử lại.
+edit.hardest=Ô khó nhất là: {0}. Đã thử mọi khả năng; vật phẩm như vậy không thể tồn tại trong trò chơi.
+edit.same=Vật phẩm vốn đã như vậy. Không có gì để đổi.
+edit.saved=Đã ghi vào bản lưu.\nBản thân vật phẩm, các tiền tố hậu tố, phụ kiện và thăng hoa được giữ nguyên — nó vẫn là vật phẩm mà trò chơi có thể rơi ra.
+edit.relicCleared=Đã bỏ chỉ số hoàn thiện.
+edit.relicSet=Chỉ số hoàn thiện: {0}
+edit.ascensionCleared=Đã bỏ chỉ số thăng hoa.
+edit.ascensionSet=Chỉ số thăng hoa: {0}
+edit.report.scanned=đã kiểm {0} trong {1} giây
+edit.report.found=TÌM THẤY:   ({0})
+edit.report.impossible={0}: ô này không bao giờ cho giá trị {1}
+
+# Cửa sổ chỉ số thăng hoa
+edit.affixSet=Tiền tố: {0}\nHậu tố: {1}
+edit.affix.title=Tiền tố và hậu tố
+edit.affix.head=Hiện tại: tiền tố — {0};   hậu tố — {1}\nChỉ hiện những cái trò chơi gắn cho vật phẩm loại này; chấm tròn đánh dấu loại hiếm (xanh lá).\nCác con số trong danh sách là ĐÃ GIEO cho vật phẩm này: phụ tố được gieo ngẫu nhiên, và thứ bạn thấy ở đây là thứ bạn nhận.
+edit.affix.prefix=Tiền tố
+edit.affix.suffix=Hậu tố
+edit.affix.none=không có
+edit.affix.gone=(trò chơi không còn cấp nó nữa — không có trong danh sách)
+edit.affix.clear=Bỏ phần này
+edit.affix.level=Yêu cầu cấp {0}
+edit.affix.building=Đang đọc các bảng vật phẩm của trò chơi — một lần sau khi trò chơi cập nhật.
+
+edit.asc.title=Chỉ số thăng hoa
+edit.asc.head=Chỉ hiện các chỉ số mà vật phẩm loại này được nhận — vũ khí một tay không được nhận chỉ số của vũ khí hai tay, và ngược lại.
+# edit.asc.unknownClass=không rõ
+# edit.asc.noPool=chưa xác định
+edit.asc.allPools=mọi nhóm, không chỉ nhóm của nó
+
+# Cửa sổ chỉ số hoàn thiện thánh vật
+edit.relic.title=Chỉ số hoàn thiện thánh vật
+edit.relic.head=Thánh vật: {0}   —   cấp chế tạo: {1}\nCác con số trong danh sách là ĐÃ GIEO cho vật phẩm này: chỉ số hoàn thiện được gieo ngẫu nhiên, và thứ bạn thấy ở đây là thứ bạn nhận.
+edit.relic.unknown=không rõ
+edit.relic.noKind=không ghi
+# edit.relic.noTable=thánh vật này KHÔNG có bảng nào — không bao giờ nhận chỉ số hoàn thiện
+edit.relic.allTables=mọi bảng, không chỉ bảng của nó
+edit.relic.noTableList=Thánh vật này không có bảng chỉ số — không bao giờ nhận chỉ số hoàn thiện.
+edit.relic.jitter=(dao động {0}%)

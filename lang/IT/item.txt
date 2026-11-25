@@ -1,0 +1,287 @@
+# SUGGERIMENTO DELL'OGGETTO E RIGHE DI BONUS (suggerimenti degli oggetti, scheda «Bonus totali»).
+#
+# La maggior parte delle righe sono modelli del gioco stesso nella lingua scelta. Qui ci sono le nostre parole: dove
+# il gioco non ha un modello, e il testo di riserva per quando manca il gioco o l'etichetta non è stata trovata.
+
+# Coda di durata di un danno nel tempo: «+31% Danni da Gelo con +45% di durata». Normalmente il modello del gioco
+# (`ImprovedTimeFormat`); questo testo solo se manca.
+item.durationWith=con {0}% di durata
+
+# Nomi dei tipi di danno in una riga di conversione («50% di conversione: Danno alla Salute in Danno da Veleno»).
+# Normalmente dal gioco (`tagConversion<Tipo>`); questa è la riserva. Per il sanguinamento il gioco non ha un'etichetta.
+item.conv.Physical=Danno Fisico
+item.conv.Pierce=Danno Perforante
+item.conv.Fire=Danno da Fuoco
+item.conv.Cold=Danno da Freddo
+item.conv.Lightning=Danno da Elettricità
+item.conv.Poison=Danno da Veleno
+item.conv.Life=Danno alla Salute
+item.conv.Aether=Danno da Etere
+item.conv.Chaos=Danno da Caos
+item.conv.Bleeding=Sanguinamento
+
+# ============ ETICHETTE DELLE RIGHE DEL SUGGERIMENTO ============
+# Una riga d'oggetto si costruisce così: prima si cerca il modello del gioco nella lingua scelta, e solo se non c'è
+# si prende l'etichetta da qui.
+
+# Tipi di danno: forma completa («+31% Danno da Freddo»), forma breve per la durata.
+item.type.Physical=Danno Fisico
+item.type.Pierce=Danno Perforante
+item.type.Fire=Danno da Fuoco
+item.type.Cold=Danno da Freddo
+item.type.Lightning=Danno da Elettricità
+item.type.Poison=Danno da Veleno
+item.type.Life=Danno alla Salute
+item.type.Aether=Danno da Etere
+item.type.Chaos=Danno da Caos
+item.type.Bleeding=Danno da Sanguinamento
+item.type.Elemental=Danno Elementale
+item.typeShort.Physical=Fisico
+item.typeShort.Pierce=Perforante
+item.typeShort.Fire=da Fuoco
+item.typeShort.Cold=da Freddo
+item.typeShort.Lightning=da Elettricità
+item.typeShort.Poison=da Veleno
+item.typeShort.Life=alla Salute
+item.typeShort.Aether=da Etere
+item.typeShort.Chaos=da Caos
+item.typeShort.Bleeding=da Sanguinamento
+item.typeShort.Elemental=Elementale
+
+# Etichette costruite dal nome di un tipo.
+item.label.overTime={0} nel Tempo
+item.label.dotDuration=Durata del Danno {0}
+item.label.retaliation=Ritorsione: {0}
+item.label.resist=Resistenza ({0})
+item.label.maxResist=Resistenza Massima ({0})
+item.label.duration=Durata ({0})
+
+# Parole comuni a più campi.
+item.label.action=Durata
+item.label.armour=Armatura
+item.label.cooldown=Ricarica dell'Abilità
+item.label.projectiles=Proiettile/i
+item.label.pierceChance=Possibilità di Trapassare i Nemici
+item.label.radius=Raggio
+item.label.resCutAll=Riduzione delle Resistenze del Bersaglio
+item.label.resCutAllOf=Riduzione delle Resistenze del Bersaglio
+item.label.resCut=Riduzione della Resistenza del Bersaglio
+item.label.resCutOf=Riduzione della Resistenza del Bersaglio
+item.label.petBaseDamage=Danno Base dell'Evocazione
+item.unit.sec=Secondo/i
+item.unit.m=Metri
+item.unit.s=Secondo/i
+
+# Danno, danno nel tempo e ostacoli al bersaglio.
+item.stat.offensiveBonusPhysical=Danno Fisico
+item.stat.offensivePierceRatio=Rapporto Perforante
+item.stat.offensiveLifeLeech=del Danno da Attacco Convertito in Salute
+item.stat.offensiveManaLeech=del Danno da Attacco Convertito in Energia
+item.stat.offensivePercentCurrentLife=Riduzione della Salute del Nemico
+item.stat.offensiveTotalDamageModifier=a Tutti i Danni
+item.stat.offensiveCritDamageModifier=Danno Critico
+item.stat.offensiveDamageMultModifier=Modifica del Danno Totale
+item.stat.offensivePierceRatioModifier=Rapporto Perforante
+item.stat.offensiveSlowManaLeach=Furto di Energia
+item.stat.offensiveSlowManaLeachDurationModifier=Durata del Furto di Energia
+item.stat.offensiveFumble=Riduzione della Precisione del Bersaglio
+item.stat.offensiveProjectileFumble=Riduzione della Precisione dei Proiettili del Bersaglio
+item.stat.offensiveSlowOffensiveAbility=Riduzione della Capacità Offensiva del Bersaglio
+item.stat.offensiveSlowDefensiveAbility=Riduzione della Capacità Difensiva del Bersaglio
+item.stat.offensiveSlowRunSpeed=Riduzione della Velocità di Movimento del Bersaglio
+item.stat.offensiveSlowAttackSpeed=Riduzione della Velocità di Attacco del Bersaglio
+item.stat.offensiveSlowSpellCastSpeed=Riduzione della Velocità di Lancio del Bersaglio
+item.stat.offensiveKnockdown=Atterramento del Bersaglio
+item.stat.offensiveStun=Stordimento del Bersaglio
+item.stat.offensiveStunModifier=Durata dello Stordimento
+item.stat.offensiveFreeze=Congelamento del Bersaglio
+item.stat.offensivePetrify=Pietrificazione del Bersaglio
+item.stat.offensiveSleep=Sonno del Bersaglio
+item.stat.offensiveTrap=Immobilizzazione del Bersaglio
+item.stat.offensiveConfusion=Confusione del Bersaglio
+item.stat.offensiveTaunt=Provocazione del Bersaglio
+item.stat.offensiveFear=Terrore del Bersaglio
+item.stat.offensiveConvert=Conversione del Bersaglio
+item.stat.offensiveDisruption=Interruzione delle Abilità
+item.stat.offensiveManaBurnDrain=Bruciatura di Energia
+item.stat.offensiveManaBurnDamageRatio=dell'Energia Bruciata Inflitta come Danno
+item.stat.offensiveTotalDamageReductionPercent=Riduzione del Danno del Bersaglio
+item.stat.offensiveSlowTotalSpeed=Rallentamento del Bersaglio
+
+# Danno da ritorsione e ostacoli di ritorsione.
+item.stat.retaliationFreeze=Ritorsione: Congelamento
+item.stat.retaliationConfusion=Ritorsione: Confusione
+item.stat.retaliationSlowLightning=Ritorsione: Folgorazione
+item.stat.retaliationFear=Ritorsione: Paura
+item.stat.retaliationSlowAttackSpeed=Ritorsione: Riduzione della Velocità di Attacco
+item.stat.retaliationSlowRunSpeed=Ritorsione: Riduzione della Velocità di Movimento
+item.stat.retaliationSlowPoison=Ritorsione: Veleno
+item.stat.retaliationSlowManaLeach=Ritorsione: Furto di Energia
+item.stat.retaliationTotalDamageModifier=a Tutti i Danni da Ritorsione
+
+# Armatura, blocco e resistenze.
+item.stat.defensiveAbsorptionModifier=Assorbimento Armatura
+item.stat.defensiveBlockChance=Possibilità di Blocco
+item.stat.defensiveBlock=Danno Bloccato
+item.stat.blockRecoveryTime=Secondo/i di Recupero del Blocco
+item.stat.defensiveBlockModifier=Possibilità di Blocco con lo Scudo
+item.stat.defensiveBlockAmountModifier=Danno Bloccato con lo Scudo
+item.stat.blockAbsorption=Assorbimento al Blocco
+item.stat.skillComboChargeSpendReduction=Possibilità di non Consumare Cariche di Slancio
+item.stat.characterDefensiveBlockRecoveryReduction=Tempo di Recupero dello Scudo
+item.stat.defensiveElementalResistance=Resistenza Elementale
+item.stat.defensiveAllResistance=a Tutte le Resistenze
+item.stat.defensiveAllMaxResist=a Tutte le Resistenze Massime
+item.stat.defensivePercentReflectionResistance=Danno Riflesso Subito
+item.stat.defensiveSlowLifeLeach=Resistenza al Furto di Salute
+item.stat.defensiveSlowManaLeach=Resistenza al Furto di Energia
+item.stat.defensiveBonusProtection=Armatura Bonus
+item.stat.defensiveStun=Resistenza allo Stordimento
+item.stat.defensiveFreeze=Resistenza al Congelamento
+item.stat.defensivePetrify=Resistenza alla Pietrificazione
+item.stat.defensiveSleep=Resistenza al Sonno
+item.stat.defensiveTrap=Resistenza all'Immobilizzazione
+item.stat.defensiveDisruption=Resistenza all'Interruzione
+item.stat.defensiveKnockdown=Resistenza all'Atterramento
+item.stat.defensiveConfusion=Resistenza alla Confusione
+item.stat.defensiveFear=Resistenza alla Paura
+item.stat.defensiveTaunt=Resistenza alla Provocazione
+item.stat.defensiveLifeLeach=Resistenza al Risucchio di Salute
+item.stat.defensiveManaLeach=Resistenza al Risucchio di Energia
+item.stat.defensiveReflect=Danno Riflesso
+item.stat.defensiveTotalSpeedResistance=Resistenza al Rallentamento
+item.stat.defensivePercentCurrentLife=Resistenza al Danno sulla Salute Attuale
+item.stat.defensiveCrowdControl=Riduzione della Durata degli Effetti di Controllo
+item.stat.defensiveConvert=Riduzione della Durata del Controllo Mentale
+
+# Attributi del personaggio, come numero e come percentuale.
+item.stat.characterStrength=Fisico
+item.stat.characterDexterity=Acume
+item.stat.characterIntelligence=Spirito
+item.stat.characterLife=Salute
+item.stat.characterMana=Energia
+item.stat.characterLifeRegen=Salute Rigenerata al Secondo
+item.stat.characterManaRegen=Energia Rigenerata al Secondo
+item.stat.characterOffensiveAbility=Capacità Offensiva
+item.stat.characterDefensiveAbility=Capacità Difensiva
+item.stat.characterConstitution=Costituzione
+item.stat.characterRunSpeedMax=Velocità di Movimento Massima
+item.stat.characterManaLimitReserve=Energia Riservata
+item.stat.characterStrengthModifier=Fisico
+item.stat.characterDexterityModifier=Acume
+item.stat.characterIntelligenceModifier=Spirito
+item.stat.characterLifeModifier=Salute
+item.stat.characterManaModifier=Energia
+item.stat.characterLifeRegenModifier=Rigenerazione della Salute
+item.stat.characterManaRegenModifier=Rigenerazione dell'Energia
+item.stat.characterOffensiveAbilityModifier=Capacità Offensiva
+item.stat.characterDefensiveAbilityModifier=Capacità Difensiva
+item.stat.characterAttackSpeedModifier=Velocità di Attacco
+item.stat.characterSpellCastSpeedModifier=Velocità Lancio Magie
+item.stat.characterRunSpeedModifier=Velocità di Movimento
+item.stat.characterTotalSpeedModifier=Velocità Totale
+item.stat.characterDodgePercent=Possibilità di Schivare gli Attacchi in Mischia
+item.stat.characterDeflectProjectile=Possibilità di Schivare i Proiettili
+item.stat.characterHealIncreasePercent=Cure Aumentate
+item.stat.characterEnergyAbsorptionPercent=Energia Assorbita dalle Magie Nemiche
+item.stat.characterIncreasedExperience=Esperienza Ottenuta
+item.stat.characterLightRadius=Raggio di Luce
+item.stat.characterGlobalReqReduction=Riduzione dei Requisiti di Attributo
+item.stat.characterLevelReqReduction=Riduzione del Requisito di Livello
+item.stat.characterManaLimitReserveReduction=Riserva di Energia
+item.stat.characterConstitutionModifier=Costituzione
+item.stat.characterRunSpeedMaxModifier=Velocità di Movimento Massima
+item.stat.characterAttackSpeedMaxModifier=Velocità di Attacco Massima
+item.stat.characterSpellCastSpeedMaxModifier=Velocità Lancio Magie Massima
+item.stat.characterArmorStrengthReqReduction=Riduzione del Requisito di Fisico per le Armature
+item.stat.characterMeleeStrengthReqReduction=Riduzione del Requisito di Fisico per le Armi da Mischia
+item.stat.characterMeleeDexterityReqReduction=Riduzione del Requisito di Acume per le Armi da Mischia
+item.stat.characterWeaponStrengthReqReduction=Riduzione del Requisito di Fisico per le Armi
+item.stat.characterHuntingDexterityReqReduction=Riduzione del Requisito di Acume per le Armi a Distanza
+item.stat.characterJewelryIntelligenceReqReduction=Riduzione del Requisito di Spirito per i Gioielli
+item.stat.characterShieldStrengthReqReduction=Riduzione del Requisito di Fisico per gli Scudi
+item.stat.skillCooldownReduction=Riduzione della Ricarica delle Abilità
+item.stat.skillManaCostReduction=Costo in Energia delle Abilità
+
+# Quanto costa un'abilità e fin dove arriva; sotto, campi presenti solo nei modificatori di abilità.
+item.stat.skillActiveLifeCost=Costo in Salute al Secondo
+item.stat.skillActiveManaCost=Costo in Energia al Secondo
+item.stat.skillManaCost=Costo in Energia
+item.stat.skillActiveDuration=Durata
+item.stat.skillTargetNumber=Bersaglio/i
+item.stat.weaponDamagePct=del Danno dell'Arma
+item.stat.retaliationDamagePct=del Danno da Ritorsione Aggiunto all'Attacco
+item.stat.skillChanceWeight=alla Possibilità d'Uso
+item.stat.skillTargetAngle=Gradi di Angolo d'Attacco
+item.stat.cooldownCharges=Carica/he
+item.stat.petLimit=Limite di Evocazioni
+item.stat.damageAbsorptionPercent=del Danno Assorbito
+item.stat.projectileLaunchRotation=Arco di Tiro
+item.stat.beamAngle=Gradi Raggio ad Arco
+item.stat.beamNumber=Raggio/i
+item.stat.spawnObjectsTimeToLive=Secondo/i di Vita
+
+# Intestazione dell'oggetto: armatura e velocità di attacco, le stesse righe che il gioco mostra sotto il nome.
+item.head.armour={0} Armatura
+item.head.aps={0} Attacchi al Secondo
+
+# Requisiti dell'oggetto. Normalmente dal gioco; questa è la riserva.
+item.need.level=Livello del Personaggio
+item.need.strength=Fisico
+item.need.dexterity=Acume
+item.need.intelligence=Spirito
+
+# Titoli delle parti dell'oggetto. Il gioco non li ha: scrive i bonus delle parti direttamente nell'elenco comune, e noi
+# dobbiamo mostrare da dove viene una riga. «Componente» e «Aumento» esistono nel gioco: questi due sono di riserva.
+item.part.prefix=Prefisso
+item.part.suffix=Suffisso
+item.part.modifier=Risveglio
+item.part.component=Componente
+item.part.relicBonus=Bonus di Completamento
+item.part.augment=Aumento
+item.part.ascension=Bonus di Ascensione
+
+# Rarità dell'oggetto. Normalmente dal gioco; questa è la riserva.
+item.rarity.common=Comune
+item.rarity.magical=Magico
+item.rarity.rare=Raro
+item.rarity.epic=Epico
+item.rarity.legendary=Leggendario
+item.rarity.quest=Missione
+
+# La nota sotto il suggerimento sui numeri estratti, e la dimensione dell'oggetto in caselle.
+item.rolled.noteDoubt=I numeri nelle righe sono ciò che è uscito proprio SU QUESTO oggetto, come li mostrerebbe il gioco. Per le righe con il segno rosso non abbiamo ancora misurato il posto del campo nell'ordine di estrazione: lì resta il numero del record, e quello calcolato è aggiunto come «uscito N ?»; può differire dal gioco di un passo.
+item.cells={0} caselle
+item.allFields=— tutti i campi non nulli del record —
+
+# Altre righe del suggerimento. Dove il gioco ha un suo modello, viene mostrato quello; questa è la riserva.
+item.weaponDamageHand={0}% del Danno dell'Arma della {1}
+item.hand.main=Mano Principale
+item.hand.off=Mano Secondaria
+item.missing.noGame=il database del gioco non è collegato
+item.missing.noRecord=il record è stato rimosso da una patch del gioco
+item.restore.life=di Salute
+item.restore.mana=di Energia
+item.restore.head=Ripristina
+item.need.short=— insufficiente, attuale {0}
+item.chanceOfOne={0}% di possibilità di uno tra:
+item.chanceOfAll={0}% di possibilità di:
+item.chanceOf={0}% di possibilità di
+item.forSeconds=per {0} secondi
+item.petBonusAll=Bonus a Tutte le Evocazioni
+item.set=Set
+item.setNamed=Set: {0}
+item.setWorn=Set: ({0})
+item.conversionField=conversione del danno
+item.conversion={0}% di conversione: {1} in {2}
+item.noGameWords=(questa riga qui non ha parole del gioco)
+item.rolledValue=uscito {0} ?
+item.racial.damage=Danno contro:
+item.racial.defence=Danno Ridotto da:
+item.skillPlus=+{0} a {1}
+item.masteryPlus=+{0} a tutte le abilità della maestria {1}
+item.allSkillsPlus=+{0} a tutte le abilità
+item.summonCount={0} Evocati
+item.activationChance=Possibilità di Attivazione
+item.stat.retaliationDamageMultModifier=Modifica del Danno Totale da Ritorsione
+item.conversionGone=-{0}% {1}

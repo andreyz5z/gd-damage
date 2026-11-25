@@ -1,0 +1,110 @@
+# 主窗口：标题、菜单按钮、背包、状态栏、消息。
+#
+# 所有语言文件的格式：键=文本。以 # 开头的行是注释。
+# \n 表示换行。{0}、{1} 是程序填入数字或名称的位置，
+# 翻译中必须保留，顺序可以改变。
+# 物品、职业和技能的名称不在这里——由游戏本身提供。
+
+main.title=Grim Dawn — 人物查看器
+main.title.character=Grim Dawn — {0}
+
+# 菜单按钮
+main.menu.open=打开存档
+main.menu.skills=技能
+main.menu.damage=伤害计算
+main.menu.settings=设置
+
+# 背包与仓库
+main.edit.button=编辑物品
+main.edit.armed=请点击物品
+main.trash.idle=删除物品——拿起后点击这里
+main.trash.armed=删除物品
+main.stash.title=人物仓库
+main.stash.none=人物仓库：没有标签页
+main.stash.count=人物仓库：{0} 个标签页，{1} 件物品
+main.bags.main=主背包
+main.bags.extra=背包 {0}
+
+# 人物栏下方的一行
+main.summary=背包 {0}，物品 {1}\n仓库：标签页 {2}，物品 {3}
+main.summary.noInventory=还没有背包：该人物在菜单中创建，从未进入过游戏。\n用它进入一次游戏——背包和装备就会出现。\n仓库：标签页 {0}，物品 {1}
+
+# 保存与打开
+main.status.saved=已保存 {0}
+main.status.savedBackup=已保存 {0}   备份：{1}
+main.status.saveError=写入错误：{0}
+main.saveError.title=无法保存
+main.open.title=选择 player.gdc
+main.open.filter=Grim Dawn 存档 (player.gdc)|player.gdc|所有文件|*.*
+main.loadError.title=无法读取存档
+main.noInventory.text=该人物还没有背包。\n\n它是在游戏菜单中创建的，从未进入过世界，所以存档里没有背包、装备栏和武器组——游戏会在第一次进入世界时创建它们。\n\n用这个人物进入一次游戏，之后就能编辑装备。其余内容——等级、属性、技能、星座信仰——现在就可以使用。
+main.noInventory.title=还没有背包
+main.status.openFirst=请先打开存档。
+
+# 游戏文件夹
+main.status.noGame=找不到 Grim Dawn 文件夹——请打开「设置…」并指定它。
+main.status.gameBase=游戏数据库：{0}   语言：{1}
+main.status.gameError=无法打开游戏数据库：{0}
+main.askGame.text=找不到 Grim Dawn 文件夹。\n\n搜索会查看 Steam 库、注册表中的 GOG 和安装程序条目，以及所有磁盘上常见的游戏文件夹。如果游戏在别处，请指定它的文件夹——即包含 database\\database.arz 的文件夹。
+main.askGame.title=Grim Dawn 安装在哪里？
+
+# 物品目录
+main.catalog.title=物品目录
+main.catalog.stale=物品目录建立后游戏文件发生了变化——似乎有更新。\n要重建物品目录吗？
+main.catalog.missing=物品目录尚未建立。\n要从游戏文件建立吗？需要几秒钟。
+main.status.catalog=目录：{0} 件物品
+main.status.catalogBuilding=正在建立物品目录…
+main.status.catalogBuilt=目录已建立：{0} 件物品
+main.status.catalogError=无法建立目录：{0}
+
+# 手中的物品
+main.status.noIcon=此物品在游戏数据库中没有图标，因此不知道它占几格——无法安全添加。
+main.status.bulkLimit=拿起了一叠 {0} 个——这是此类物品的上限。
+main.status.bulkNoLimit=拿起了一叠 {0} 个（游戏没有给出此类物品的上限——我们和其他物品一样取一百个）。
+main.status.newInHand=手中的新物品：{0} ({1}x{2})  —  点击背包或仓库的空位、装备栏或标签页标题。Esc 取消。
+main.status.inHand=手中：{0} ({1}x{2})  —  点击背包或仓库的空位、标签页标题、装备栏或「删除物品」条。Esc 取消。
+main.status.takenOff=已取下到手中：{0}  —  放进背包、仓库、其他合适的装备栏，或删除。Esc 取消。
+main.status.sizeUnknown=不知道此物品的尺寸（游戏数据库中没有图标）——无法移动，否则可能超出网格。
+main.status.noRoom=这里放不下——需要 {0}x{1} 个空格。右键或 Esc 取消。
+main.status.noStacking=「{0}」不能堆叠——这里需要一个空格。
+main.status.stackFull=这一叠已经满了：{0}。请放到别处。
+main.status.stackFullOf=这一叠已经满了：{0} / {1}。请放到别处。
+main.status.merged=已叠加 {0} 个：这一叠现在有 {1} 个。
+main.status.mergedRest=已叠加 {0} 个：这一叠现在有 {1} 个，手中还剩 {2} 个——请放到空位或删除。
+main.status.addedBag=已放入背包：{0}
+main.status.addedStash=已放入仓库：{0}
+main.status.unequippedBag=已取下并放入背包：{0}
+main.status.unequippedStash=已取下并放入仓库：{0}
+main.status.movedBag=已移到背包：{0}
+main.status.movedStash=已移到仓库：{0}
+main.status.equipped=已装备：{0} → {1}
+main.status.reequipped=已换位：{0} → {1}
+main.status.discarded=新物品已丢弃：{0}（它从未进入存档）。
+main.status.deleted=已删除：{0}   （原文件已作为 .bak 保留在旁边）
+main.status.noRoomBag=这个背包没有 {0}x{1} 的空位。
+main.status.noRoomStash=这个仓库标签页没有 {0}x{1} 的空位。
+main.status.cancelled=已取消：{0} 留在原处。
+
+# 为什么不能装备
+main.why.noInventory=该人物还没有背包：它在菜单中创建，从未进入过游戏。用它进入一次游戏——游戏会自行创建背包、装备栏和武器组，之后就能编辑。
+main.why.sameSlot=物品已经在这个栏位中。
+main.why.wrongSlot=「{0}」不能装在「{1}」栏位。
+main.why.slotBusy=「{0}」栏位已被占用——请先取下那里的装备。
+main.why.level=「{0}」需要等级 {1}，人物为 {2} 级。
+main.why.twoHanded=双手武器占用双手——请先空出副手。
+main.why.offHandBusy=主手持有双手武器——副手也被占用。
+
+# 编辑物品
+main.status.editArmed=点击物品——会打开属性编辑窗口。再次点击按钮可取消。
+main.status.editCancelled=已取消编辑——点击没有落在物品上。
+main.status.editNoSeed=这件物品没有可搜索的内容：它不是来自存档。
+main.status.editUnchanged=物品没有改变。
+main.status.editDone=物品已修改并保存。
+
+# 穿戴物品还缺什么（状态栏）。
+main.need.level=等级 {0}（当前 {1}）
+
+# 把组件或增幅装进装备（10 月 2 日）。什么能装进什么，取自游戏记录。
+main.status.partAttached=已装入：{0} → {1}
+main.status.partReplaced=已装入：{0} → {1}，替换了「{2}」
+main.status.partWrongItem=「{0}」装不进「{1}」。

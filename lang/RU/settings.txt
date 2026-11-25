@@ -1,0 +1,14 @@
+# ОКНО «НАСТРОЙКИ».
+
+settings.title=Настройки
+settings.gameFolder=Папка Grim Dawn:
+settings.gameFolder.browse=Папка с установленной Grim Dawn
+settings.savesFolder=Папка сохранений (для диалога открытия):
+settings.savesFolder.browse=Папка с сохранениями
+settings.browse=Обзор…
+settings.language=Язык:
+settings.rebuildCatalog=Пересобрать каталог предметов
+settings.rawFields=Показывать в описании предмета все поля его записи
+settings.fileHint=settings.json лежит рядом с программой
+settings.ok=OK
+settings.cancel=Отмена

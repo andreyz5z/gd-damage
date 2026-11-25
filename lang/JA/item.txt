@@ -1,0 +1,287 @@
+# アイテムのツールチップとボーナスの行 (アイテムのツールチップ、「合計ボーナス」タブ)。
+#
+# ツールチップの行の大半は、選んだ言語でのゲーム自身のテンプレートです。ここにあるのは独自の言葉です:
+# ゲームにテンプレートがない箇所と、ゲームがないかタグが見つからないときの代替テキスト。
+
+# 継続ダメージの持続時間の末尾: 「凍傷ダメージ +31% (持続時間 +45%)」。通常はゲームのテンプレート
+# (`ImprovedTimeFormat`)。このテキストはそれがないときだけ使います。
+item.durationWith=(持続時間 {0}%)
+
+# 変換の行でのダメージ種類名 (「50% 変換: 生命力ダメージ → 酸ダメージ」)。
+# 通常はゲーム (`tagConversion<種類>`) から取ります。これは代替です。出血のタグはゲームにありません。
+item.conv.Physical=物理ダメージ
+item.conv.Pierce=刺突ダメージ
+item.conv.Fire=火炎ダメージ
+item.conv.Cold=冷気ダメージ
+item.conv.Lightning=雷ダメージ
+item.conv.Poison=酸ダメージ
+item.conv.Life=生命力ダメージ
+item.conv.Aether=イーサーダメージ
+item.conv.Chaos=カオスダメージ
+item.conv.Bleeding=出血
+
+# ============ ツールチップの行のラベル ============
+# アイテムの行は次のように作ります: まず選んだ言語でのゲームのテンプレートを探し、ない場合だけここの
+# ラベルを使います。
+
+# ダメージの種類: 完全な形 (「+31% 冷気ダメージ」)、持続時間用の短い形。
+item.type.Physical=物理ダメージ
+item.type.Pierce=刺突ダメージ
+item.type.Fire=火炎ダメージ
+item.type.Cold=冷気ダメージ
+item.type.Lightning=雷ダメージ
+item.type.Poison=酸ダメージ
+item.type.Life=生命力ダメージ
+item.type.Aether=イーサーダメージ
+item.type.Chaos=カオスダメージ
+item.type.Bleeding=出血ダメージ
+item.type.Elemental=元素ダメージ
+item.typeShort.Physical=物理
+item.typeShort.Pierce=刺突
+item.typeShort.Fire=火炎
+item.typeShort.Cold=冷気
+item.typeShort.Lightning=雷
+item.typeShort.Poison=酸
+item.typeShort.Life=生命力
+item.typeShort.Aether=イーサー
+item.typeShort.Chaos=カオス
+item.typeShort.Bleeding=出血
+item.typeShort.Elemental=元素
+
+# 種類名から作るラベル。
+item.label.overTime={0} (継続)
+item.label.dotDuration={0}ダメージの持続時間
+item.label.retaliation={0}報復
+item.label.resist={0}耐性
+item.label.maxResist={0}最大耐性
+item.label.duration={0}の持続時間
+
+# 複数の項目で使う言葉。
+item.label.action=持続時間
+item.label.armour=装甲
+item.label.cooldown=スキルのクールダウン
+item.label.projectiles=発射物
+item.label.pierceChance=敵を貫通する確率
+item.label.radius=範囲
+item.label.resCutAll=対象の耐性低下
+item.label.resCutAllOf=対象の耐性低下
+item.label.resCut=対象の個別耐性低下
+item.label.resCutOf=対象の個別耐性低下
+item.label.petBaseDamage=ペットの基本ダメージ
+item.unit.sec=秒
+item.unit.m=メートル
+item.unit.s=秒
+
+# ダメージ、継続ダメージ、対象への妨害。
+item.stat.offensiveBonusPhysical=物理ダメージ
+item.stat.offensivePierceRatio=刺突の割合
+item.stat.offensiveLifeLeech=攻撃ダメージをヘルスに変換
+item.stat.offensiveManaLeech=攻撃ダメージをエナジーに変換
+item.stat.offensivePercentCurrentLife=敵のヘルス低下
+item.stat.offensiveTotalDamageModifier=全ダメージ
+item.stat.offensiveCritDamageModifier=クリティカルダメージ
+item.stat.offensiveDamageMultModifier=総ダメージの変化
+item.stat.offensivePierceRatioModifier=刺突の割合
+item.stat.offensiveSlowManaLeach=エナジー吸収
+item.stat.offensiveSlowManaLeachDurationModifier=エナジー吸収の持続時間
+item.stat.offensiveFumble=対象の命中精度低下
+item.stat.offensiveProjectileFumble=対象の射撃精度低下
+item.stat.offensiveSlowOffensiveAbility=対象の攻撃能力低下
+item.stat.offensiveSlowDefensiveAbility=対象の防御能力低下
+item.stat.offensiveSlowRunSpeed=対象の移動速度低下
+item.stat.offensiveSlowAttackSpeed=対象の攻撃速度低下
+item.stat.offensiveSlowSpellCastSpeed=対象の詠唱速度低下
+item.stat.offensiveKnockdown=対象をノックダウン
+item.stat.offensiveStun=対象をスタン
+item.stat.offensiveStunModifier=スタンの持続時間
+item.stat.offensiveFreeze=対象を凍結
+item.stat.offensivePetrify=対象を石化
+item.stat.offensiveSleep=対象を睡眠
+item.stat.offensiveTrap=対象を拘束
+item.stat.offensiveConfusion=対象を混乱
+item.stat.offensiveTaunt=対象を挑発
+item.stat.offensiveFear=対象を恐怖
+item.stat.offensiveConvert=対象を寝返らせる
+item.stat.offensiveDisruption=スキル妨害
+item.stat.offensiveManaBurnDrain=エナジー焼却
+item.stat.offensiveManaBurnDamageRatio=焼却したエナジーをダメージに
+item.stat.offensiveTotalDamageReductionPercent=対象のダメージ低下
+item.stat.offensiveSlowTotalSpeed=対象を減速
+
+# 報復ダメージと報復による妨害。
+item.stat.retaliationFreeze=凍結報復
+item.stat.retaliationConfusion=混乱報復
+item.stat.retaliationSlowLightning=感電報復
+item.stat.retaliationFear=恐怖報復
+item.stat.retaliationSlowAttackSpeed=攻撃速度低下の報復
+item.stat.retaliationSlowRunSpeed=移動速度低下の報復
+item.stat.retaliationSlowPoison=毒報復
+item.stat.retaliationSlowManaLeach=エナジー吸収の報復
+item.stat.retaliationTotalDamageModifier=全報復ダメージ
+
+# 装甲、ブロック、耐性。
+item.stat.defensiveAbsorptionModifier=装甲吸収率
+item.stat.defensiveBlockChance=ブロック率
+item.stat.defensiveBlock=ダメージブロック
+item.stat.blockRecoveryTime=秒のブロック回復
+item.stat.defensiveBlockModifier=盾のブロック率
+item.stat.defensiveBlockAmountModifier=盾のダメージブロック
+item.stat.blockAbsorption=ブロック時の吸収
+item.stat.skillComboChargeSpendReduction=モメンタムのチャージを消費しない確率
+item.stat.characterDefensiveBlockRecoveryReduction=盾の回復時間
+item.stat.defensiveElementalResistance=元素耐性
+item.stat.defensiveAllResistance=全耐性
+item.stat.defensiveAllMaxResist=全最大耐性
+item.stat.defensivePercentReflectionResistance=受ける反射ダメージ
+item.stat.defensiveSlowLifeLeach=ヘルス吸収耐性
+item.stat.defensiveSlowManaLeach=エナジー吸収耐性
+item.stat.defensiveBonusProtection=追加装甲
+item.stat.defensiveStun=スタン耐性
+item.stat.defensiveFreeze=凍結耐性
+item.stat.defensivePetrify=石化耐性
+item.stat.defensiveSleep=睡眠耐性
+item.stat.defensiveTrap=拘束耐性
+item.stat.defensiveDisruption=妨害耐性
+item.stat.defensiveKnockdown=ノックダウン耐性
+item.stat.defensiveConfusion=混乱耐性
+item.stat.defensiveFear=恐怖耐性
+item.stat.defensiveTaunt=挑発耐性
+item.stat.defensiveLifeLeach=ヘルス流出耐性
+item.stat.defensiveManaLeach=エナジー流出耐性
+item.stat.defensiveReflect=反射ダメージ
+item.stat.defensiveTotalSpeedResistance=減速耐性
+item.stat.defensivePercentCurrentLife=現在ヘルスへのダメージ耐性
+item.stat.defensiveCrowdControl=行動阻害効果の持続時間短縮
+item.stat.defensiveConvert=精神支配の持続時間短縮
+
+# キャラクターの属性 — 数値と割合。
+item.stat.characterStrength=体格
+item.stat.characterDexterity=狡猾性
+item.stat.characterIntelligence=精神力
+item.stat.characterLife=ヘルス
+item.stat.characterMana=エナジー
+item.stat.characterLifeRegen=毎秒ヘルス回復
+item.stat.characterManaRegen=毎秒エナジー回復
+item.stat.characterOffensiveAbility=攻撃能力
+item.stat.characterDefensiveAbility=防御能力
+item.stat.characterConstitution=体力
+item.stat.characterRunSpeedMax=最大移動速度
+item.stat.characterManaLimitReserve=予約エナジー
+item.stat.characterStrengthModifier=体格
+item.stat.characterDexterityModifier=狡猾性
+item.stat.characterIntelligenceModifier=精神力
+item.stat.characterLifeModifier=ヘルス
+item.stat.characterManaModifier=エナジー
+item.stat.characterLifeRegenModifier=ヘルス回復
+item.stat.characterManaRegenModifier=エナジー回復
+item.stat.characterOffensiveAbilityModifier=攻撃能力
+item.stat.characterDefensiveAbilityModifier=防御能力
+item.stat.characterAttackSpeedModifier=攻撃速度
+item.stat.characterSpellCastSpeedModifier=詠唱速度
+item.stat.characterRunSpeedModifier=移動速度
+item.stat.characterTotalSpeedModifier=総合速度
+item.stat.characterDodgePercent=近接攻撃の回避率
+item.stat.characterDeflectProjectile=飛び道具の回避率
+item.stat.characterHealIncreasePercent=回復量増加
+item.stat.characterEnergyAbsorptionPercent=敵の呪文からのエナジー吸収
+item.stat.characterIncreasedExperience=獲得経験値
+item.stat.characterLightRadius=光の範囲
+item.stat.characterGlobalReqReduction=属性要件の低下
+item.stat.characterLevelReqReduction=レベル要件の低下
+item.stat.characterManaLimitReserveReduction=エナジーの予約量
+item.stat.characterConstitutionModifier=体力
+item.stat.characterRunSpeedMaxModifier=最大移動速度
+item.stat.characterAttackSpeedMaxModifier=最大攻撃速度
+item.stat.characterSpellCastSpeedMaxModifier=最大詠唱速度
+item.stat.characterArmorStrengthReqReduction=防具の体格要件の低下
+item.stat.characterMeleeStrengthReqReduction=近接武器の体格要件の低下
+item.stat.characterMeleeDexterityReqReduction=近接武器の狡猾性要件の低下
+item.stat.characterWeaponStrengthReqReduction=武器の体格要件の低下
+item.stat.characterHuntingDexterityReqReduction=遠隔武器の狡猾性要件の低下
+item.stat.characterJewelryIntelligenceReqReduction=装身具の精神力要件の低下
+item.stat.characterShieldStrengthReqReduction=盾の体格要件の低下
+item.stat.skillCooldownReduction=スキルのクールダウン短縮
+item.stat.skillManaCostReduction=スキルのエナジー消費
+
+# スキルのコストと届く距離。下はスキル修飾にだけある項目です。
+item.stat.skillActiveLifeCost=毎秒ヘルス消費
+item.stat.skillActiveManaCost=毎秒エナジー消費
+item.stat.skillManaCost=エナジー消費
+item.stat.skillActiveDuration=持続時間
+item.stat.skillTargetNumber=体の対象
+item.stat.weaponDamagePct=武器ダメージ
+item.stat.retaliationDamagePct=報復ダメージを攻撃に加算
+item.stat.skillChanceWeight=使用確率
+item.stat.skillTargetAngle=度の攻撃角
+item.stat.cooldownCharges=チャージ
+item.stat.petLimit=召喚上限
+item.stat.damageAbsorptionPercent=ダメージ吸収
+item.stat.projectileLaunchRotation=射撃範囲
+item.stat.beamAngle=度ビーム角度
+item.stat.beamNumber=ビーム
+item.stat.spawnObjectsTimeToLive=秒の存続
+
+# アイテムの見出し: 装甲と攻撃速度 — ゲームがアイテム名の下に表示するのと同じ行。
+item.head.armour=装甲 {0}
+item.head.aps=毎秒 {0} 回攻撃
+
+# アイテムの要件。通常はゲームから取ります。これは代替です。
+item.need.level=プレイヤー レベル
+item.need.strength=体格
+item.need.dexterity=狡猾性
+item.need.intelligence=精神力
+
+# アイテムの部位の見出し。ゲームにはありません: 部位のボーナスを共通の一覧に直接書くため、こちらは行の出どころを
+# 示す必要があります。「構成材」と「増強剤」はゲームにあります — この 2 つは代替です。
+item.part.prefix=接頭辞
+item.part.suffix=接尾辞
+item.part.modifier=覚醒
+item.part.component=構成材
+item.part.relicBonus=完成ボーナス
+item.part.augment=増強剤
+item.part.ascension=アセンションボーナス
+
+# アイテムのレアリティ。通常はゲームから取ります。これは代替です。
+item.rarity.common=コモン
+item.rarity.magical=マジック
+item.rarity.rare=レア
+item.rarity.epic=エピック
+item.rarity.legendary=レジェンダリー
+item.rarity.quest=クエスト
+
+# ツールチップの下の、抽選された数値についての注記と、マス単位のアイテムのサイズ。
+item.rolled.noteDoubt=行の数値は、ゲームが表示するであろう、まさにこのアイテムで抽選された値です。赤い印の行は、抽選順序における項目の位置をまだ測定していません: そこにはレコードの数値を残し、計算した値を「抽選 N ?」として添えています — ゲームと 1 段階ずれることがあります。
+item.cells={0} マス
+item.allFields=— レコードのゼロでない全項目 —
+
+# ツールチップのその他の行。ゲームに独自のテンプレートがある場合はそちらを表示します。これは代替です。
+item.weaponDamageHand={1}武器ダメージの {0}%
+item.hand.main=メインハンド
+item.hand.off=オフハンド
+item.missing.noGame=ゲームデータベースに接続していません
+item.missing.noRecord=レコードはゲームのパッチで削除されました
+item.restore.life=ヘルス
+item.restore.mana=エナジー
+item.restore.head=回復
+item.need.short=— 不足、現在 {0}
+item.chanceOfOne={0}% の確率で次のいずれか:
+item.chanceOfAll={0}% の確率で:
+item.chanceOf={0}% の確率で
+item.forSeconds={0} 秒間
+item.petBonusAll=すべてのペットへのボーナス
+item.set=セット
+item.setNamed=セット: {0}
+item.setWorn=({0}) セット
+item.conversionField=ダメージ変換
+item.conversion={0}% 変換: {1} → {2}
+item.noGameWords=(この行にはここでゲームの言葉がありません)
+item.rolledValue=抽選 {0} ?
+item.racial.damage=ダメージ対象:
+item.racial.defence=被ダメージ軽減:
+item.skillPlus={1} +{0}
+item.masteryPlus=マスタリー {1} の全スキル +{0}
+item.allSkillsPlus=全スキル +{0}
+item.summonCount=召喚数 {0}
+item.activationChance=発動率
+item.stat.retaliationDamageMultModifier=総報復ダメージの変化
+item.conversionGone=-{0}% {1}

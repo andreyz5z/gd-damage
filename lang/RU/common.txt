@@ -1,0 +1,27 @@
+# ОБЩЕЕ ДЛЯ НЕСКОЛЬКИХ ОКОН: кнопки, откуда взято умение, части вещи.
+
+common.apply=Применить
+common.cancel=Отмена
+common.search=Поиск:
+common.nothingFound=Ничего не нашлось.
+common.put=Поставить
+common.clearBonus=Снять бонус
+
+# Сложности игры (вкладка «Порталы», противник)
+common.difficulty.normal=Обычная
+common.difficulty.elite=Элита
+common.difficulty.ultimate=Абсолют
+
+# Откуда взято умение (подзаголовки в окнах питомцев и активных умений)
+common.source.mastery=умение мастерства
+common.source.devotion=набожность
+common.source.item=с вещи: {0}
+common.source.set=комплект: {0} ({1})
+common.source.setName=комплект: {0}
+
+# Часть вещи, с которой пришло умение: «с вещи: Имя (префикс)»
+common.part.prefix=(префикс)
+common.part.suffix=(суффикс)
+common.part.component=(компонент)
+common.part.augment=(примесь)
+common.part.ascension=(вознесение)

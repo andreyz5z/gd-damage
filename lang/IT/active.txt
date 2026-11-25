@@ -1,0 +1,19 @@
+# FINESTRA «ABILITÀ ATTIVE».
+
+active.title=Abilità attive — {0}
+active.none=Questo personaggio non ha abilità attivabili né abilità concesse da oggetti.
+active.source.devotionOn=devozione legata a «{0}»
+
+# Condizioni di attivazione, in breve («la condizione «al blocco» non viene estratta»).
+active.trigger.attack=all'attacco
+active.trigger.attackCrit=all'attacco critico
+active.trigger.lowHealth=con salute bassa
+active.trigger.lowMana=con energia bassa
+active.trigger.hitByEnemy=quando veniamo colpiti
+active.trigger.hitByMelee=quando colpiti in mischia
+active.trigger.hitByProjectile=quando colpiti da un proiettile
+active.trigger.hitByCrit=quando colpiti da un critico
+active.trigger.block=al blocco
+active.trigger.onKill=all'uccisione
+active.trigger.castBuff=al lancio di un potenziamento
+active.trigger.onEquip=all'equipaggiamento

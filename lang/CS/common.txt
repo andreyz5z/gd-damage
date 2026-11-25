@@ -1,0 +1,27 @@
+# SPOLEČNÉ PRO VÍCE OKEN: tlačítka, původ dovednosti, části předmětu.
+
+common.apply=Použít
+common.cancel=Zrušit
+common.search=Hledat:
+common.nothingFound=Nic nenalezeno.
+common.put=Nastavit
+common.clearBonus=Odebrat bonus
+
+# Obtížnosti hry (záložka „Brány“, záložka nepřítele)
+common.difficulty.normal=Normální
+common.difficulty.elite=Elitní
+common.difficulty.ultimate=Ultimátní
+
+# Odkud dovednost pochází (podnadpisy v oknech spojenců a aktivních dovedností)
+common.source.mastery=dovednost povolání
+common.source.devotion=oddanost
+common.source.item=z předmětu: {0}
+common.source.set=set: {0} ({1})
+common.source.setName=set: {0}
+
+# Část předmětu, se kterou dovednost přišla: „z předmětu: Název (předpona)“
+common.part.prefix=(předpona)
+common.part.suffix=(přípona)
+common.part.component=(komponenta)
+common.part.augment=(vylepšení)
+common.part.ascension=(povznesení)

@@ -1,0 +1,44 @@
+# IL CATALOGO DEGLI OGGETTI (colonna sinistra della finestra principale).
+
+catalog.title=Catalogo degli oggetti
+catalog.wearable=Tutto ciò che si indossa
+catalog.everything=Tutti gli oggetti
+catalog.search=parte di un nome…
+catalog.bonus=bonus: velocità di attacco…
+catalog.bulkHint=Ctrl + clic sinistro — prendi una pila
+catalog.count={0} oggetti
+catalog.notBuilt=(catalogo non creato)
+catalog.hidden=({0} nascosti dai filtri)
+catalog.level=liv. {0}
+
+# Rarità
+catalog.rarity.common=Comune
+catalog.rarity.magical=Magico
+catalog.rarity.rare=Raro
+catalog.rarity.epic=Epico
+catalog.rarity.legendary=Leggendario
+catalog.rarity.quest=Missione
+
+# Sezioni
+catalog.category.head=Armatura: testa
+catalog.category.shoulders=Armatura: spalle
+catalog.category.chest=Armatura: torace
+catalog.category.hands=Armatura: mani
+catalog.category.waist=Armatura: vita
+catalog.category.legs=Armatura: gambe
+catalog.category.feet=Armatura: piedi
+catalog.category.amulet=Gioielli: amuleti
+catalog.category.ring=Gioielli: anelli
+catalog.category.medal=Gioielli: medaglie
+catalog.category.relic=Reliquie
+catalog.category.weapon1h=Armi: a una mano
+catalog.category.weapon2h=Armi: a due mani
+catalog.category.ranged1h=Armi: pistole
+catalog.category.ranged2h=Armi: fucili
+catalog.category.shield=Mano secondaria: scudi
+catalog.category.offhand=Mano secondaria: catalizzatori
+catalog.category.component=Componenti
+catalog.category.augment=Aumenti
+catalog.category.consumable=Consumabili
+catalog.category.crafting=Ingredienti e progetti
+catalog.category.other=Altro

@@ -1,0 +1,19 @@
+# FENÊTRE « COMPÉTENCES ACTIVES ».
+
+active.title=Compétences actives — {0}
+active.none=Ce personnage n'a ni compétences à activer ni compétences accordées par des objets.
+active.source.devotionOn=dévotion liée à « {0} »
+
+# Conditions de déclenchement, en bref (« la condition « au blocage » n'est pas tirée au sort »).
+active.trigger.attack=à l'attaque
+active.trigger.attackCrit=à l'attaque critique
+active.trigger.lowHealth=à santé basse
+active.trigger.lowMana=à énergie basse
+active.trigger.hitByEnemy=quand nous sommes touchés
+active.trigger.hitByMelee=quand touché en mêlée
+active.trigger.hitByProjectile=quand touché par un projectile
+active.trigger.hitByCrit=quand touché par un coup critique
+active.trigger.block=au blocage
+active.trigger.onKill=en tuant
+active.trigger.castBuff=au lancement d'un renforcement
+active.trigger.onEquip=à l'équipement

@@ -1,0 +1,11 @@
+/bin/
+/obj/
+/.vs/
+/build-number.txt
+/settings.json
+*.gdd
+*.gdc
+*.gst
+*.gsh
+*.user
+*.suo

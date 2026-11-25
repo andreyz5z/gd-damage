@@ -1,0 +1,185 @@
+# LE JOURNAL DE SIMULATION DE COMBAT (onglet « Simulation de combat ») : lignes, raisons et notes après un lancement.
+#
+# Les nombres décimaux arrivent déjà écrits (avec un point), rien n'est recalculé dans {n}. Les signes de
+# comparaison « < », « ≥ », « → », les parenthèses et les virgules entre les parties d'une ligne sont placés par le programme.
+
+# Ce que fait une compétence qui ne frappe pas elle-même. Le mot est affiché dans le journal (« renforcement, pas de
+# dégâts »), dans la liste « ce que nous activons » et dans les notes du lancement.
+log.effect.damage=dégâts
+log.effect.summon=invocation
+log.effect.buff=renforcement
+log.effect.debuff=affaiblissement
+log.effect.none=pas de dégâts dans la fiche
+
+# Une ligne : « 12.34 s  élan : les deux mains   812 et 790   (dégâts sans bonus 1020 et 990)   [raison] ».
+log.line.at={0} s
+log.line.and=et
+log.line.before=(dégâts sans bonus {0})
+log.seconds={0} s
+log.from=de « {0} »
+log.target.dummy=mannequin
+log.target.generic=cible
+
+# Mains. « élan : les deux mains », « critique main principale, palier 2 », « principale 43.1 < 97.0 ».
+log.hand.both=les deux mains
+log.hand.main=main principale
+log.hand.off=main gauche
+log.roll.main=principale
+log.roll.off=gauche
+log.partial.mainMissed=(main principale ratée)
+log.partial.offMissed=(main gauche ratée)
+
+log.swing=élan : {0}
+log.swing.hands=mains {0} → {1}
+log.swing.crit=critique {0}, palier {1} ×{2}
+log.miss=raté
+log.fire.crit=critique {0} ×{1}
+
+# Ce qui a frappé : « compétence : … », « déclenchement : Météore », « au lieu de l'attaque : … ».
+log.fire.skill=compétence
+log.fire.channel=canalisation
+log.fire.spell=sort
+log.fire.pool=au lieu de l'attaque
+log.fire.proc=déclenchement
+log.fire.devotion=dévotion
+log.fire.finale=final : coup {0}
+log.fire.attack=attaque
+log.fire.charges=({0} charges)
+
+# Tick de dégâts sur la durée : « tick de brûlure (main principale, de l'attaque armée par défaut) ».
+log.tick=tick de {0}
+log.tick.from=de {0}
+log.tick.left=reste {0} s
+log.tick.partial=tick partiel {0} %
+log.tick.autoattack=l'attaque armée par défaut
+log.dot.FireDot=brûlure
+log.dot.ColdDot=brûlure gel
+log.dot.LightningDot=électrocution
+log.dot.PoisonDot=poison
+log.dot.LifeDot=perte de vitalité
+log.dot.BleedingDot=saignement
+log.dot.PhysicalDot=trauma interne
+
+# La santé de la cible.
+log.life.killed=cible tuée
+log.life.killedWhy=TTK {0} s : {1} infligés contre {2} de santé ; à partir d'ici, nous comptons les dégâts comme si elle vivait, mais il n'y a plus de santé à réduire
+log.life.cut=réduction de santé {0} %  de « {1} »
+log.life.cutWhy=santé de la cible {0} → {1}
+log.life.cutResist=effet {0} %, résistance de la cible {1} %
+log.life.gear=équipement
+
+# Une aura, un renforcement selon le temps de recharge, une réinitialisation du temps de recharge.
+log.aura=aura : {0}
+log.buff=renforcement : {0}
+log.buff.holds=dure {0} s
+log.buff.cooldown=recharge {0} s
+log.buff.shield=bouclier d'absorption {0} — tient jusqu'à être brisé
+log.buff.noDuration=pas de durée dans la fiche
+log.buff.notInQueue=ses bonus de dégâts n'agissent PAS dans la file
+log.buff.noEffect=n'affecte pas nos dégâts
+log.reset=recharge réinitialisée : « {0} »
+log.reset.why=« {0} », {1} % {2} — pour {3} s, prêt à {4} au lieu de {5}
+log.reset.onCrit=à l'attaque critique
+log.reset.onAttack=à l'attaque
+
+# Déclenché ou activé, mais ne frappe pas.
+log.silent.fired=déclenché
+log.silent.pressed=activé :
+log.silent.buff=renforcement, dure {0} s
+log.silent.resists=réduction de résistances
+log.silent.defense=−{0} de capacité défensive
+log.silent.offense=−{0} de capacité offensive
+log.silent.absolute=−{0} de résistances en valeur fixe
+log.silent.relative=−{0} % des résistances actuelles
+log.silent.debuff=affaiblissement de la cible pour {0} s
+log.silent.debuffNothing=n'affecte nos dégâts d'aucune façon
+log.silent.summon=invocation — le familier rejoint la réserve, ses coups sont plus bas sur leurs propres lignes
+log.silent.noDamage={0}, pas de dégâts
+
+# Les familiers dans le journal.
+log.pet.how.self=de lui-même
+log.pet.how.pressed=activé
+log.pet.summonBlocked=invocation ({0}) : {1}
+log.pet.limit=la limite de son type est déjà atteinte — {0} × « {1} », aucun autre n'est ajouté
+log.pet.summoned=invoqué ({0}) : « {1} » #{2}
+log.pet.standing={0} sur {1} présents
+log.pet.lives=vit {0} s
+log.pet.permanent=permanent
+log.pet.aps=attaques par seconde {0}
+log.pet.gone=parti : « {0} » #{1}
+log.pet.goneWhy=durée de vie de {0} s écoulée, coups {1}
+log.pet.goneTrap=déclenchée par l'ennemi, coups {0}
+log.pet.onceAt=explosion après {0} s
+log.pet.aura=aura de familier : « {0} » {1}
+log.pet.auraTarget=aura de familier : « {0} »
+log.pet.auraAllies=nous renforce, nous et les autres familiers, tant qu'il est proche
+log.pet.auraOnTarget=reste sur la cible tant qu'il est proche
+log.pet.miss=raté du familier : « {0} #{1} » {2}
+log.pet.hitChance=chance de toucher {0} %
+log.pet.hit=familier : « {0} #{1} » {2}
+log.pet.auto=(attaque par défaut)
+log.pet.auraMark=(aura)
+log.pet.perSecond=une fois par seconde
+log.pet.speed=vitesse {0} attaques/s
+log.pet.every=toutes les {0} s
+log.pet.crit=critique palier {0} ×{1}
+log.pet.dotApplied=dégâts sur la durée appliqués
+# La source des dégâts sur la durée d'un familier dans une ligne de tick : « tick de brûlure (de « <familier> #1 : <compétence> ») ».
+log.pet.source={0} #{1} : {2}
+# Une compétence de familier sans nom dans le jeu — nous l'appelons par la fin du chemin de sa fiche.
+log.pet.noName=sans nom : {0}
+
+# Résultat du lancement : le bonus racial.
+log.racial.noRace=les bonus contre les races ({0}) ne fonctionnent pas sur cette cible : elle n'a AUCUNE race (comme le mannequin)
+log.racial.none=la cible est {0}, et nous n'avons aucun bonus contre elle (il y en a contre d'autres races : {1})
+log.racial.has=la cible est {0}, notre bonus contre elle est de {1} % de dégâts (multiplicateur ×{2})
+log.racial.flat=le bonus fixe contre la race « {0} » ({1} de dégâts) est COLLECTÉ MAIS NON APPLIQUÉ : on ne sait ni sous quel type de dégâts il arrive (l'infobulle ne nomme pas de type), ni à quelle place de l'ordre il se trouve. Le bonus en pourcentage est placé selon la formule de l'article ; pour le fixe, il n'y a de formule ni dans l'article ni dans les fichiers — une mesure est nécessaire
+
+# Résultat du lancement : conseils (ce qui est mal choisi).
+log.hint.mainNotSpell=« {0} » est choisie comme principale, mais ce n'est ni une canalisation ni un sort sans temps de recharge (ou son animation est introuvable) — nous attaquons avec l'arme, comme sans choix
+log.hint.buffPressed=« {0} » est un renforcement : ses bonus s'appliquent aux coups tant qu'il est actif, mais il ne frappe pas comme un coup. Cochez-le parmi les renforcements
+log.hint.channelWithAttack=la canalisation « {0} » est activée EN MÊME TEMPS que l'attaque armée par défaut — cela n'arrive jamais dans le jeu : tant que le rayon est maintenu, l'arme ne frappe pas. Elle est activée selon le « temps de recharge » de la fiche, pas selon la vitesse de lancer. Choisissez-la comme principale
+log.hint.starHits=l'étoile « {0} » inflige des dégâts — nous ne l'activons pas comme renforcement ; cochez-la dans la liste des activations, et elle frappera selon son temps de recharge
+log.hint.starReplacing=l'étoile « {0} » est liée à « {1} » — c'est une ATTAQUE DE REMPLACEMENT : on l'assigne à une touche et elle frappe à la place du coup normal. Nous savons les compter, mais dans CE lancement nous ne frappons pas avec — la sauvegarde ne garde pas l'assignation. Choisissez-la dans la liste « attaquer avec », et l'étoile fonctionnera
+log.hint.starIdle=l'étoile « {0} » est liée à la compétence « {1} », et celle-ci NE FRAPPE PAS dans ce lancement (non cochée pour activation et pas dans la réserve d'armes) — il n'y a aucun déclenchement, et ce n'est pas de la malchance
+
+# Résultat du lancement : ce qui n'a pas été lu.
+log.unread.starBuffNoDuration=l'étoile « {0} » applique un RENFORCEMENT, mais la fiche n'a pas de durée — nous n'avons rien pour le maintenir, donc la file ne montre que le fait qu'elle s'est déclenchée
+log.unread.starNoDamage=nous n'avons pas lu les dégâts de l'étoile « {0} » : le déclenchement est dans la file, les dégâts non
+log.unread.buffNoDuration=le renforcement « {0} » modifie les dégâts, mais la fiche n'a pas de durée — la file ne montre que son déclenchement, les bonus n'agissent pas
+log.unread.summonNoPet=l'invocation « {0} » s'est déclenchée, mais il n'y a pas de tel familier dans la réserve — ses dégâts ne sont pas comptés
+log.unread.petMoveNoRate=le familier « {0} » a la compétence « {1} » qui inflige des dégâts, mais la fiche ne dit pas à quelle fréquence il l'utilise — elle n'est pas utilisée dans la file
+log.unread.petNoSpeed=la vitesse d'attaque du familier « {0} » n'a pas pu être lue (pas de table d'animation) — son attaque par défaut n'est pas mise dans la file
+log.unread.petNoMoves=nous n'avons lu aucune compétence à dégâts du familier « {0} » — dans la file, il est invoqué mais ne frappe pas
+
+# Résultat du lancement : compétences des objets et ensembles — ce qu'il est advenu de chacune.
+log.gear.mainSpell=la compétence principale au lieu de l'attaque armée par défaut, coups {0}
+log.gear.pool=dans la réserve d'armes
+log.gear.onlyCrit=tirée seulement sur un critique ;
+log.gear.fired=déclenchée {0} fois
+log.gear.firedSummon=— invocation, le familier rejoint la réserve et frappe
+log.gear.firedDebuff=— affaiblissement de la cible
+log.gear.firedBuff=— renforcement sur nous
+log.gear.conditionNotModelled=la condition n'est pas modélisée —
+log.gear.pressed=cochée pour activation, activée selon le temps de recharge : activée {0} fois
+log.gear.notPressed=activable — non cochée pour activation
+log.gear.conditionHits=la condition n'est pas modélisée, il y a des dégâts — cochez-la, et elle passera selon son temps de recharge
+log.gear.noHit=ne frappe pas ({0})
+log.gear.conditionNoHit=la condition n'est pas modélisée, pas de dégâts ({0}) — ne participe pas à la file
+
+# Résultat du lancement : étoiles et familiers par nom.
+log.star.head=« {0} » niv. {1} de « {2} »
+log.star.onlyCrit=(seulement sur un critique)
+log.star.chance=chance {0} %
+log.star.cooldown=recharge {0} s
+log.star.fired=déclenchée {0} fois sur {1} tirages
+log.star.blocked=bloquée par la recharge {0} fois
+log.petLine.auras=auras de familiers pour les autres familiers tant que ceux-ci vivent — {0} : {1}
+log.petLine.head=« {0} » ({1}) — invoqué {2} fois
+log.petLine.limit=jusqu'à {0} à la fois
+log.petLine.hits=coups {0}
+log.petLine.misses=ratés {0}
+log.petLine.crits=critiques {0}
+log.petLine.damage=dégâts {0}
+log.petLine.expired=partis par expiration {0}
+log.petLine.blocked=invocations au-delà de la limite {0}

@@ -1,0 +1,286 @@
+# 物品提示和加成行（物品提示、「总加成」标签页）。
+#
+# 提示中的大部分行是游戏自己在所选语言下的模板。这里是我们自己的措辞：游戏没有模板的地方，以及没有游戏或
+# 找不到标签时的备用文本。
+
+# 持续伤害的持续时间尾注：「+31% 霜燃伤害（持续时间 +45%）」。通常用游戏的模板
+# （`ImprovedTimeFormat`）；只有缺少时才用这段文本。
+item.durationWith=（持续时间 {0}%）
+
+# 转换行中的伤害类型名称（「50% 转换：活力伤害 → 酸性伤害」）。
+# 通常取自游戏（`tagConversion<类型>`）；这是备用。游戏没有流血的标签。
+item.conv.Physical=物理伤害
+item.conv.Pierce=穿刺伤害
+item.conv.Fire=火焰伤害
+item.conv.Cold=冰冷伤害
+item.conv.Lightning=闪电伤害
+item.conv.Poison=酸性伤害
+item.conv.Life=活力伤害
+item.conv.Aether=虚化伤害
+item.conv.Chaos=混乱伤害
+item.conv.Bleeding=流血
+
+# ============ 提示行的标签 ============
+# 物品行这样生成：先查找所选语言的游戏模板，只有找不到时才使用这里的标签。
+
+# 伤害类型：完整形式（「+31% 冰冷伤害」），持续时间用的简短形式。
+item.type.Physical=物理伤害
+item.type.Pierce=穿刺伤害
+item.type.Fire=火焰伤害
+item.type.Cold=冰冷伤害
+item.type.Lightning=闪电伤害
+item.type.Poison=酸性伤害
+item.type.Life=活力伤害
+item.type.Aether=虚化伤害
+item.type.Chaos=混乱伤害
+item.type.Bleeding=流血伤害
+item.type.Elemental=元素伤害
+item.typeShort.Physical=物理
+item.typeShort.Pierce=穿刺
+item.typeShort.Fire=火焰
+item.typeShort.Cold=冰冷
+item.typeShort.Lightning=闪电
+item.typeShort.Poison=酸性
+item.typeShort.Life=活力
+item.typeShort.Aether=虚化
+item.typeShort.Chaos=混乱
+item.typeShort.Bleeding=流血
+item.typeShort.Elemental=元素
+
+# 由类型名称组成的标签。
+item.label.overTime={0}（持续）
+item.label.dotDuration={0}伤害持续时间
+item.label.retaliation={0}反击
+item.label.resist={0}抗性
+item.label.maxResist={0}最大抗性
+item.label.duration={0}持续时间
+
+# 多个字段共用的词。
+item.label.action=持续时间
+item.label.armour=护甲
+item.label.cooldown=技能冷却
+item.label.projectiles=投射物
+item.label.pierceChance=穿透敌人的几率
+item.label.radius=半径
+item.label.resCutAll=降低目标抗性
+item.label.resCutAllOf=降低目标抗性
+item.label.resCut=降低目标单项抗性
+item.label.resCutOf=降低目标单项抗性
+item.label.petBaseDamage=战宠基础伤害
+item.unit.sec=秒
+item.unit.m=米
+item.unit.s=秒
+
+# 伤害、持续伤害和对目标的妨碍。
+item.stat.offensiveBonusPhysical=物理伤害
+item.stat.offensivePierceRatio=穿刺比例
+item.stat.offensiveLifeLeech=攻击伤害转化为生命
+item.stat.offensiveManaLeech=攻击伤害转化为能量
+item.stat.offensivePercentCurrentLife=削减敌人生命
+item.stat.offensiveTotalDamageModifier=全部伤害
+item.stat.offensiveCritDamageModifier=暴击伤害
+item.stat.offensiveDamageMultModifier=总伤害变化
+item.stat.offensivePierceRatioModifier=穿刺比例
+item.stat.offensiveSlowManaLeach=能量吸取
+item.stat.offensiveSlowManaLeachDurationModifier=能量吸取持续时间
+item.stat.offensiveFumble=降低目标命中
+item.stat.offensiveProjectileFumble=降低目标投射物命中
+item.stat.offensiveSlowOffensiveAbility=降低目标攻击能力
+item.stat.offensiveSlowDefensiveAbility=降低目标防御能力
+item.stat.offensiveSlowRunSpeed=降低目标移动速度
+item.stat.offensiveSlowAttackSpeed=降低目标攻击速度
+item.stat.offensiveSlowSpellCastSpeed=降低目标施法速度
+item.stat.offensiveKnockdown=击倒目标
+item.stat.offensiveStun=眩晕目标
+item.stat.offensiveStunModifier=眩晕持续时间
+item.stat.offensiveFreeze=冻结目标
+item.stat.offensivePetrify=石化目标
+item.stat.offensiveSleep=催眠目标
+item.stat.offensiveTrap=束缚目标
+item.stat.offensiveConfusion=混乱目标
+item.stat.offensiveTaunt=嘲讽目标
+item.stat.offensiveFear=恐惧目标
+item.stat.offensiveConvert=策反目标
+item.stat.offensiveDisruption=打断技能
+item.stat.offensiveManaBurnDrain=能量燃烧
+item.stat.offensiveManaBurnDamageRatio=燃烧的能量转为伤害
+item.stat.offensiveTotalDamageReductionPercent=降低目标伤害
+item.stat.offensiveSlowTotalSpeed=减速目标
+
+# 反击伤害和反击妨碍。
+item.stat.retaliationFreeze=冻结反击
+item.stat.retaliationConfusion=混乱反击
+item.stat.retaliationSlowLightning=电击反击
+item.stat.retaliationFear=恐惧反击
+item.stat.retaliationSlowAttackSpeed=降低攻击速度反击
+item.stat.retaliationSlowRunSpeed=降低移动速度反击
+item.stat.retaliationSlowPoison=毒素反击
+item.stat.retaliationSlowManaLeach=能量吸取反击
+item.stat.retaliationTotalDamageModifier=全部反击伤害
+
+# 护甲、格挡和抗性。
+item.stat.defensiveAbsorptionModifier=护甲吸收
+item.stat.defensiveBlockChance=格挡几率
+item.stat.defensiveBlock=格挡值
+item.stat.blockRecoveryTime=秒格挡恢复
+item.stat.defensiveBlockModifier=盾牌格挡几率
+item.stat.defensiveBlockAmountModifier=盾牌格挡值
+item.stat.blockAbsorption=格挡时吸收
+item.stat.skillComboChargeSpendReduction=不消耗气势充能的几率
+item.stat.characterDefensiveBlockRecoveryReduction=盾牌恢复时间
+item.stat.defensiveElementalResistance=元素抗性
+item.stat.defensiveAllResistance=全部抗性
+item.stat.defensiveAllMaxResist=全部最大抗性
+item.stat.defensivePercentReflectionResistance=受到的反射伤害
+item.stat.defensiveSlowLifeLeach=生命吸取抗性
+item.stat.defensiveSlowManaLeach=能量吸取抗性
+item.stat.defensiveBonusProtection=额外护甲
+item.stat.defensiveStun=眩晕抗性
+item.stat.defensiveFreeze=冻结抗性
+item.stat.defensivePetrify=石化抗性
+item.stat.defensiveSleep=催眠抗性
+item.stat.defensiveTrap=束缚抗性
+item.stat.defensiveDisruption=打断抗性
+item.stat.defensiveKnockdown=击倒抗性
+item.stat.defensiveConfusion=混乱抗性
+item.stat.defensiveFear=恐惧抗性
+item.stat.defensiveTaunt=嘲讽抗性
+item.stat.defensiveLifeLeach=生命流失抗性
+item.stat.defensiveManaLeach=能量流失抗性
+item.stat.defensiveReflect=伤害反射
+item.stat.defensiveTotalSpeedResistance=减速抗性
+item.stat.defensivePercentCurrentLife=当前生命伤害抗性
+item.stat.defensiveCrowdControl=缩短控制效果持续时间
+item.stat.defensiveConvert=缩短心灵控制持续时间
+
+# 人物属性——数值和百分比。
+item.stat.characterStrength=体格
+item.stat.characterDexterity=灵巧
+item.stat.characterIntelligence=精神
+item.stat.characterLife=生命
+item.stat.characterMana=能量
+item.stat.characterLifeRegen=每秒生命回复
+item.stat.characterManaRegen=每秒能量回复
+item.stat.characterOffensiveAbility=攻击能力
+item.stat.characterDefensiveAbility=防御能力
+item.stat.characterConstitution=体力
+item.stat.characterRunSpeedMax=最大移动速度
+item.stat.characterManaLimitReserve=预留能量
+item.stat.characterStrengthModifier=体格
+item.stat.characterDexterityModifier=灵巧
+item.stat.characterIntelligenceModifier=精神
+item.stat.characterLifeModifier=生命
+item.stat.characterManaModifier=能量
+item.stat.characterLifeRegenModifier=生命回复
+item.stat.characterManaRegenModifier=能量回复
+item.stat.characterOffensiveAbilityModifier=攻击能力
+item.stat.characterDefensiveAbilityModifier=防御能力
+item.stat.characterAttackSpeedModifier=攻击速度
+item.stat.characterSpellCastSpeedModifier=施法速度
+item.stat.characterRunSpeedModifier=移动速度
+item.stat.characterTotalSpeedModifier=总速度
+item.stat.characterDodgePercent=躲避近战攻击的几率
+item.stat.characterDeflectProjectile=躲避投射物的几率
+item.stat.characterHealIncreasePercent=治疗量提高
+item.stat.characterEnergyAbsorptionPercent=从敌人法术吸收的能量
+item.stat.characterIncreasedExperience=获得的经验
+item.stat.characterLightRadius=光照半径
+item.stat.characterGlobalReqReduction=降低属性需求
+item.stat.characterLevelReqReduction=降低等级需求
+item.stat.characterManaLimitReserveReduction=能量预留
+item.stat.characterConstitutionModifier=体力
+item.stat.characterRunSpeedMaxModifier=最大移动速度
+item.stat.characterAttackSpeedMaxModifier=最大攻击速度
+item.stat.characterSpellCastSpeedMaxModifier=最大施法速度
+item.stat.characterArmorStrengthReqReduction=降低护甲的体格需求
+item.stat.characterMeleeStrengthReqReduction=降低近战武器的体格需求
+item.stat.characterMeleeDexterityReqReduction=降低近战武器的灵巧需求
+item.stat.characterWeaponStrengthReqReduction=降低武器的体格需求
+item.stat.characterHuntingDexterityReqReduction=降低远程武器的灵巧需求
+item.stat.characterJewelryIntelligenceReqReduction=降低饰品的精神需求
+item.stat.characterShieldStrengthReqReduction=降低盾牌的体格需求
+item.stat.skillCooldownReduction=技能冷却缩短
+item.stat.skillManaCostReduction=技能能量消耗
+
+# 技能的消耗和作用距离；下面是只有技能改造才有的字段。
+item.stat.skillActiveLifeCost=每秒生命消耗
+item.stat.skillActiveManaCost=每秒能量消耗
+item.stat.skillManaCost=能量消耗
+item.stat.skillActiveDuration=持续时间
+item.stat.skillTargetNumber=个目标
+item.stat.weaponDamagePct=武器伤害
+item.stat.retaliationDamagePct=反击伤害加到攻击上
+item.stat.skillChanceWeight=使用几率
+item.stat.skillTargetAngle=度攻击角度
+item.stat.cooldownCharges=次充能
+item.stat.petLimit=召唤上限
+item.stat.damageAbsorptionPercent=伤害吸收
+item.stat.projectileLaunchRotation=射击扇区
+item.stat.beamAngle=射线弧度
+item.stat.beamNumber=射线
+item.stat.spawnObjectsTimeToLive=秒存在时间
+
+# 物品标题：护甲和攻击速度——与游戏在物品名称下方显示的行相同。
+item.head.armour=护甲 {0}
+item.head.aps=每秒 {0} 次攻击
+
+# 物品需求。通常取自游戏；这是备用。
+item.need.level=玩家等级
+item.need.strength=体格
+item.need.dexterity=灵巧
+item.need.intelligence=精神
+
+# 物品部件标题。游戏没有：它把部件的加成直接写进公共列表，而我们需要说明一行来自哪里。
+# 「镶嵌物」和「增幅」游戏里有——这两个是备用。
+item.part.prefix=前缀
+item.part.suffix=后缀
+item.part.modifier=觉醒
+item.part.component=镶嵌物
+item.part.relicBonus=完成加成
+item.part.augment=增幅
+item.part.ascension=飞升加成
+
+# 物品稀有度。通常取自游戏；这是备用。
+item.rarity.common=普通
+item.rarity.magical=魔法
+item.rarity.rare=稀有
+item.rarity.epic=史诗
+item.rarity.legendary=传奇
+item.rarity.quest=任务
+
+# 提示下方关于随机数值的说明，以及物品占用的格数。
+item.rolled.noteDoubt=各行中的数字是这件物品实际随机出的值，与游戏会显示的一致。带红色标记的行，我们还没测出该字段在随机顺序中的位置：那里保留记录中的数字，计算出的值附注为「随机 N ?」——可能与游戏相差一档。
+item.cells={0} 格
+item.allFields=— 记录中所有非零字段 —
+
+# 提示中的其他行。游戏有自己模板的地方显示游戏模板；这是备用。
+item.weaponDamageHand={1}武器伤害的 {0}%
+item.hand.main=主手
+item.hand.off=副手
+item.missing.noGame=未连接游戏数据库
+item.missing.noRecord=该记录已被游戏补丁删除
+item.restore.life=生命
+item.restore.mana=能量
+item.restore.head=恢复
+item.need.short=— 不足，当前 {0}
+item.chanceOfOne={0}% 几率获得以下之一：
+item.chanceOfAll={0}% 几率获得：
+item.chanceOf={0}% 几率
+item.forSeconds=持续 {0} 秒
+item.petBonusAll=所有战宠加成
+item.set=套装
+item.setNamed=套装：{0}
+item.setWorn=({0}) 套装
+item.conversionField=伤害转换
+item.conversion={0}% 转换：{1} → {2}
+item.noGameWords=（此行在这里没有游戏的措辞）
+item.rolledValue=随机 {0} ?
+item.racial.damage=伤害对象：
+item.racial.defence=受到伤害降低：
+item.skillPlus={1} +{0}
+item.masteryPlus=专精{1}的所有技能 +{0}
+item.allSkillsPlus=所有技能 +{0}
+item.summonCount=召唤数 {0}
+item.activationChance=触发几率
+item.stat.retaliationDamageMultModifier=总反击伤害变化
+item.conversionGone=-{0}% {1}

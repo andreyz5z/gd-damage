@@ -1,0 +1,52 @@
+# PANEL POSTAVY (pole hlavního okna) a nápovědy atributů.
+
+character.name=Jméno
+character.class=Třída
+character.file=Soubor
+character.level=Úroveň
+character.experience=Zkušenosti
+character.physique=Fyzická kondice
+character.cunning=Rafinovanost
+character.spirit=Duchovno
+character.health=Zdraví
+character.energy=Magická energie
+character.attributePoints=Body atributů
+character.skillPoints=Body dovedností
+character.devotionPoints=Body oddanosti
+character.totalDevotion=Oddanost celkem
+character.money=Železné mince
+character.tributes=Body cti
+character.difficulties=Obtížnosti
+character.difficulty.normal=Normální, Veterán
+character.difficulty.elite=Elitní
+character.difficulty.ultimate=Ultimátní
+
+# Úprava čísel, která hra počítá sama
+character.freeEdit=Volná úprava atributů
+character.freeEdit.warning=Těchto pět čísel počítá hra sama z utracených bodů, nošených předmětů a dovedností — vzorce jsou známé a s hrou se shodují přesně.\n\nPokud sem zapíšete vlastní hodnoty, uložená hra se přestane shodovat s tím, co hra ukazuje na obrazovce: přepočítá zdraví a energii podle svých pravidel a vaše atributy ponechá.\n\nPřesto úpravu povolit?
+character.keptInSave=Uloženo v uložené hře odděleně od toho, co hra ukazuje na obrazovce.\nKonečné zdraví a energii počítá hra sama — z utracených bodů, atributů, předmětů a dovedností — a s tímto číslem se neshodují.\nCo přesně je tu uloženo, jsme zatím nezjistili, proto je úprava uzavřená.
+
+# Nápověda atributu
+character.tip.now={0}: nyní {1}
+character.tip.own=v uložené hře {0}, utracené body {1}
+character.tip.fromGear=z předmětů a dovedností: {0}
+character.tip.gives=Dává (počítáno nad základ {0}):
+character.tip.percents=A procenta — základ {0} se počítá i tady:
+character.tip.percentLine=+{0}% {1}
+character.perPoint.life=+{0} zdraví za bod
+character.perPoint.energy=+{0} energie za bod
+character.perPoint.defense=+{0} obranné schopnosti za bod
+character.perPoint.offense=+{0} útočné schopnosti za bod
+character.perPoint.lifeRegen=+{0} regenerace zdraví za bod
+character.perPoint.energyRegen=+{0} regenerace energie za bod
+character.divided.physical=fyzické a bodné zranění
+character.divided.bleed=zranění vnitřním krvácením a krvácením
+character.divided.magic=magické zranění
+character.divided.dots=ostatní zranění v čase
+character.divided.energyRegen=regenerace energie
+character.needs.physique=Vyžadována pro zbroj, zbraně na blízko a štíty.
+character.needs.cunning=Vyžadována pro zbraně na dálku a část zbraní na blízko.
+character.needs.spirit=Vyžadováno pro prsteny, amulety a předměty kouzelníků.
+character.hardcore=Hardcore
+character.revive=Oživit
+character.revive.tip=Odstraní označení smrti. Ověřte ve hře, že se postava znovu načte.

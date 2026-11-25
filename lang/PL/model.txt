@@ -1,0 +1,36 @@
+# UWAGI O OBLICZANIU TRAFIENIA (zakładka „Obrażenia na trafienie”, sekcja „Jak to obliczono”).
+
+model.bareHands=W głównej ręce nie ma broni. Obrażeń samej pięści nie liczymy — tylko to, co dają umiejętności, poświęcenie i przedmioty; w grze postać z gołymi rękami ma kilka punktów obrażeń fizycznych więcej.
+model.dualDot=Przy dwóch broniach obrażenia w czasie nie dzielą się na ręce: {0} to 0,75 sumy obrażeń w czasie OBU rąk i własnych obrażeń postaci, przy czym każde źródło liczy się RAZ. Na rękę gra pokazuje „obrażenia w czasie tej ręki + postaci” w całości, więc wiersz „na trafienie” może być zarówno większy, jak i mniejszy od ręki. Tak traktowane są tylko obrażenia w czasie niesione przez samą broń (składnik w niej się nie liczy).
+model.plainAttack=To atak podstawowy bronią z głównej ręki. Umiejętność można wybrać na liście powyżej.
+model.skill=Umiejętność „{0}”, poziom {1}.
+model.skillNoWeapon=Nie ma udziału obrażeń od broni — więc broń w ogóle nie wchodzi w to trafienie, podobnie jak płaskie bonusy przedmiotów: liczą się tylko własne obrażenia umiejętności.
+model.skillWeapon={0}% obrażeń od broni: ten mnożnik działa na obrażenia broni razem z jej obrażeniami w czasie, ale nie na własne płaskie obrażenia umiejętności.
+model.charge=Umiejętność się ładuje: {0}% przy ostatnim ładunku. Panel gry liczy według tej wartości nawet bez zebranych ładunków, a mnożnik działa tylko na udział obrażeń od broni — własne płaskie obrażenia umiejętności pozostają bez zmian. Podpowiedź samej umiejętności nie zawiera tego mnożnika: tam udział podano jako {1}%.
+model.modifiers=Modyfikatory umiejętności wliczone w to trafienie: {0}. Ich procenty należą do ataku, nie do postaci — dlatego nie ma ich na zakładce łącznych bonusów. Gra także je wlicza: dla „Rytmu” pokazuje 210 stopni i 5 celów, a to liczby „Bitewnego Ducha”.
+model.temporaryIn=Wliczono tu tymczasowy efekt umiejętności: {0}. Działa, gdy umiejętność trafi, i trwa kilka sekund — czyli dopóki atakujesz, utrzymuje się. Panel gry pokazuje jednak umiejętność BEZ niego, więc porównuj panel z liczbą bez efektów tymczasowych (poniżej).
+model.temporaryOut=Efektów tymczasowych ({0}) tu nie wliczono.
+model.retaliation=Umiejętność dodaje do trafienia {0}% obrażeń odbicia postaci — jest to liczone i dzielone według typu. RESZTA: dla „Bastionu Menhira” reguła daje 1089 ognia wobec potrzebnych 1092, czyli 0,28% różnicy; skąd te trzy punkty — nie ustalono.
+model.notCounted=Nie wliczono: {0}.
+model.notModelled=Nie uwzględniono: sumowania obrażeń w czasie z różnych źródeł, trafień krytycznych, bonusów przeciw rodzajowi potworów (mnożą na samym końcu) i odporności celu.
+
+# Nazwy typów obrażeń w wierszach „Obrażenia na trafienie” i odbicia: „1234 obraż. od ognia”.
+model.type.Physical=obraż. fizyczne
+model.type.Pierce=obraż. przebijające
+model.type.Fire=obraż. od ognia
+model.type.Cold=obraż. od zimna
+model.type.Lightning=obraż. od błyskawic
+model.type.Poison=obraż. od trucizn
+model.type.Life=obraż. od witalności
+model.type.Aether=obraż. od aetheru
+model.type.Chaos=obraż. od chaosu
+model.type.Bleeding=krwawienie
+
+# Nazwy obrażeń w czasie: „2072 podpalenia na sekundę”.
+model.dot.Physical=wewnętrzna trauma
+model.dot.Fire=podpalenie
+model.dot.Cold=odmrożenie
+model.dot.Lightning=porażenie
+model.dot.Poison=trucizna
+model.dot.Life=rozkład
+model.dot.Bleeding=krwawienie

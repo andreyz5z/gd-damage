@@ -1,0 +1,8 @@
+# ERROS AO GRAVAR O JOGO SALVO (na barra de status «Erro ao salvar: …» e na janela «Não foi possível salvar»).
+
+save.error.unparsed=jogo salvo não gravado: o bloco {0} não foi decomposto em campos (jogo salvo de uma versão desconhecida do jogo)
+save.error.writtenUnparsed=o arquivo gravado contém um bloco {0} não decomposto
+save.error.reread=o arquivo gravado não é lido de volta corretamente
+save.error.rekey=o arquivo não sobrevive a uma troca da chave de criptografia
+save.error.length={0} (comprimento {1} em vez de {2})
+save.error.offset={0}: diferença no deslocamento {1}

@@ -1,0 +1,12 @@
+# DAMAGING SKILLS: the line in the "what we attack with" list and the parts of a skill ("What this skill is made of").
+
+attack.title={0}   ({1}, lv. {2})
+attack.weaponPct={0}% weapon damage
+attack.part={0} (lv. {1})
+attack.transmuter={0} (transmuter, lv. {1})
+attack.transmuterOrphan={0} — transmuter (lv. {1}): its parent skill was not found
+attack.fromItemInForm=from an item, in this form: {0}
+attack.fromItem=from an item: {0}
+attack.pool=(instead of the default weapon attack, {0}%)
+attack.poolNoChance=(instead of the default weapon attack)
+attack.onHit=(triggers on hit, {0}%)

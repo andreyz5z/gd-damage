@@ -1,0 +1,236 @@
+# 「ダメージ計算」ウィンドウ: タブ、ボタン、入力欄、選択リスト。
+# 下にタブの説明とシミュレーションのログがあります。
+
+damage.title=ダメージ計算 — {0}
+damage.tab.timeline=戦闘シミュレーション
+damage.tab.totals=合計ボーナス
+damage.tab.hit=一撃あたりのダメージ
+damage.tab.target=敵
+damage.seconds={0} 秒
+damage.secondsPair={0}と{1}
+
+# 合計ボーナス
+damage.pickActive=アクティブスキルを選ぶ…
+damage.activeFromSave=セーブに基づいて計算
+damage.activeChosen=選択: {0}
+damage.pickPets=アクティブペット…
+damage.petsNear=近くのペット
+
+# 一撃あたりのダメージ
+damage.hit.what=攻撃手段
+damage.hit.plain=通常の武器攻撃 (スキルなし)
+
+# 戦闘シミュレーション: 入力欄とボタン
+damage.run.seconds=秒数
+damage.run.seed=シード
+damage.run.go=キューを実行
+damage.run.press=押すもの (クールダウン順)
+damage.run.attack=通常攻撃
+damage.run.weapon=武器で
+damage.run.everyLabel=クールダウンなし — 押す間隔
+damage.run.everyTail=秒 (0 — アニメーション通り)
+
+# 戦闘シミュレーション: 「押すもの」と「通常攻撃」リストの項目
+damage.press.buff=強化
+damage.press.buffNotRolled=({0} — 抽選しない)
+damage.press.whenNotRolled={0} — 抽選しない、クールダウンごとに押す
+damage.press.every=クールダウンなし — {0} 秒ごとに押す
+damage.press.anim=クールダウンなし — アニメーション通り、{0} 秒ごと
+damage.press.noAnim=クールダウンなし — アニメーションが見つかりません、間隔を指定してください
+damage.press.noCooldown=クールダウンなし
+damage.press.starHits=星、ダメージあり
+damage.press.pet=(ペット «{0}», 同時に {1}, {2}, 毎秒 {3} 回攻撃, ダメージスキル {4})
+damage.press.petLives=存続 {0} 秒
+damage.press.petPermanent=永続
+damage.press.none=押せるダメージスキルはありません
+damage.attack.form=形態 «{0}»   スキル «{1}» で攻撃
+damage.attack.ofForm=(形態 «{0}»)
+damage.attack.channel=チャネリング、{0} 秒ごとにティック
+damage.attack.finale={0} 回に 1 回
+damage.attack.charges=チャージ最大 {0}
+damage.attack.byAnimation=クールダウンなし、アニメーション通り {0} 秒ごと
+
+# 敵
+damage.target.load=ゲームから敵の一覧を読み込む
+damage.target.reload=敵の一覧を作り直す
+damage.target.find=名前で検索
+damage.target.level=レベル
+damage.target.difficulty=難易度
+damage.target.notLoaded=敵の一覧はまだ読み込まれていません。
+damage.target.pressButton=上のボタンを押すと、プログラムが敵の一覧を作成します。作り直しが必要なのはゲームのアップデート後だけです。
+damage.target.nothing=見つかりませんでした。
+
+# ─── タブの説明 ───
+
+# 合計ボーナス
+damage.totals.summary=合計の内訳: 装備中のアイテム {0} (構成材と増強剤を含む)、セットボーナス {1}、パッシブスキル {2}、オンのスキル {3}、祈祷の星 {4}。
+damage.totals.exact=[正確]
+damage.totals.overCap=(+{0}% 最大値超過)
+damage.totals.resistCap=上限 {0}%
+damage.totals.armourRating=装甲値 {0}
+damage.totals.absorb=吸収 {0}%
+damage.totals.armourNote=アイテム自身の装甲はそのスロットに、それ以外はすべて 6 か所すべてに同時に入り ({0})、その後で +{1}% の装甲が掛かります。装甲値は各スロットの平均で、その部位に当たる割合で重み付けしています。吸収は基本 70% に「装甲吸収 +%」を掛けたもので、最大 100% です。
+damage.totals.block=ブロック率 {0}%   ブロックするダメージ {1}
+damage.totals.blockNote=ブロック率は足し算です — 盾の「ブロック率」に各所の「ブロック率 +%」を加え、掛け算にはなりません。ブロックするダメージは盾の基本値 × (1 + ブロックダメージ %) です。
+damage.totals.pets=ペット ボーナス
+damage.totals.petsNote=召喚された生物にだけ作用し、あなたには適用されません。出どころ: {0}。
+damage.totals.petCapItem={0} {1}% (+{2}% 最大値超過)
+damage.totals.petCapNote={0}% の上限に達しており、ゲームのパネルは上限で切った値を表示します: {1}。余剰は無駄になりません: 耐性を下げる敵はまずそこから削ります。
+damage.totals.missing=この合計にまだ含まれていないもの
+damage.totals.missingProcs=常時ではなく条件で発動するスキル: マスタリーの発動効果、アイテムのスキル、祈祷の発動効果。
+damage.totals.missingPressed=押す必要のあるスキル — そのボーナスは数秒しか続きません。
+damage.totals.skipped=スキップ: {0}。
+damage.totals.toggledOff=オフになっている切り替え式スキル: {0}。オンのものは合計に入っています — セーブが何をオンにしたか覚えています。
+damage.totals.chosenByHand=手動で選択 (「アクティブスキルを選ぶ」ボタン): {0}。
+damage.totals.missingConversion=ダメージ変換。ダメージ種類への割合はそのまま表示していますが、ゲームでは変換後に適用されます: 物理ダメージをすべて変換するビルドでは「物理ダメージ +200%」は何も与えません。
+damage.totals.missingScaling=属性によるダメージの伸び: 狡猾性は物理と刺突ダメージを、精神力は魔法系を伸ばします。計算式は分かっていますが、それは次の段階です。
+damage.totals.missingCap=耐性の上限。ここではボーナスをそのまま足しているので 80% を超えることがあります — ゲームでは上限 (80% に「最大値」ボーナスを加えたもの、横に表示) で止まります。上限を超えた分も無駄ではありません: ボスは耐性を下げます。
+damage.totals.missingDifficulty=難易度による耐性ペナルティ (エリートで −25、アルティメットで −50) はここでは引いていません: 今どの難易度にいるかはセーブに記録されていません。
+damage.totals.notStacked=重ならなかったもの
+damage.totals.notStackedNote=「X 低下」と「X% 低下」型の耐性低下、対象のダメージ低下と命中精度低下は重なりません: 常に最も強い出どころだけが作用します。ここでは合計ではなく最も強いものを取っています。
+damage.totals.notStackedItem={0}: 出どころ {1}、最も強いものを採用 {2}
+
+# 合計の行にカーソルを合わせたときの「内訳」ツールチップ
+damage.terms.pet=(ペット ボーナス)
+damage.terms.byMax=重なりません: {0} 個の出どころのうち最も強いものを採用
+damage.terms.summedOne={0} 個の出どころの合計
+damage.terms.summedMany={0} 個の出どころの合計
+damage.terms.winner=← 有効
+damage.terms.total=合計 {0}
+
+# 一撃あたりのダメージ
+damage.hit.plainTitle=通常の武器攻撃
+damage.hit.plainWeapon=通常の武器攻撃: {0}
+damage.hit.skillTitle={0}   ({1}, Lv. {2})
+damage.hit.weapon=武器: {0}
+damage.hit.attackSpeed=毎秒 {0} 回攻撃   (攻撃速度 {1}%)
+damage.hit.castSpeed=詠唱速度 {0}%
+damage.hit.castCapped=(上限 {0}% に到達)
+damage.hit.channel=チャネリング: {0} 秒ごとにティック
+damage.hit.perHit=一撃あたり {0} – {1}
+damage.hit.overTime=(毎秒、{0} 秒)
+damage.hit.none=ダメージなし。
+damage.hit.bare=一時効果なし ({0}): 一撃あたり {1} – {2} — ゲームのパネルが表示するのはこの数値です。
+damage.hit.how=計算方法
+damage.hit.howBase=基本は武器のダメージにアイテムの固定ボーナスを加えたものです。固定の元素ダメージは火炎、冷気、雷に 3 等分されます。
+damage.hit.howConversion=変換は基本値の一部を持っていき、その割合は順番に適用されるのではなく足し合わされます。装甲貫通は最後の変換で、残った分から取ります。
+damage.hit.howMultiplier=各部分に (1 + 属性/除数 + 種類の % + 元素の % + 全ダメージの %) を掛けます。除数: 狡猾性/245 と /215、精神力/215 と /200。
+damage.hit.howTotal=ゲームのキャラクターパネルは「<種類>ダメージ +X%」を、種類の % に「全ダメージ %」を足した値として 1 行で表示します。
+damage.hit.howTotalSome=このキャラクターは全ダメージ +{0}% を持つので、ゲームのパネルは各種類の % をこちらよりその分だけ高く表示します。
+damage.hit.howTotalNone=このキャラクターには「全ダメージ %」がないので、割合は一致します。
+damage.hit.howAll=「全ダメージ %」は継続ダメージを含むすべての種類のダメージに掛かります — 例外はありません。
+damage.hit.howDots=継続ダメージは毎秒で表示しています — レコードにそのまま入っている値で、割る必要はありません。持続時間ボーナスはこの数値を変えません: 効果は長く続きますが、毎秒のダメージは同じです。
+
+# 一撃あたりのダメージ: 報復
+damage.retaliation.title=報復 (反撃)
+damage.retaliation.note=これはキャラクター能力値の「報復」パネルで、一撃の一部ではありません。計算方法が異なります: 属性やダメージ種類への割合は影響せず、「報復ダメージ +%」だけが影響します — あなたは +{0}%。一方で変換は作用し、通常のダメージと同じものが掛かります。
+damage.retaliation.note2=反撃は近接攻撃に対してだけ、あなたを殴った相手にだけ、実際に被弾したときだけ働きます。反撃自体は外れず、クリティカルにもなりません。ダメージ反射 (「受けたダメージの X% を反射」) は別物で、キャラクター能力値には現れません: 殴ってくる相手のダメージに依存します。
+
+# 一撃あたりのダメージ: 手ごと
+damage.hands.title=それぞれの手でどれだけか
+damage.hands.both=これはゲームがスキルのツールチップで表示するものと同じです。武器ダメージの割合は両手で同じ ({0}%) で、括弧内の数値が違うのは手にしている武器が違うためです。括弧にはその手の継続ダメージも入ります: ゲームのパネルも同じように数えます。
+damage.hands.oneMain=行が 1 つなのは、スキルが片手 — メインハンド — で攻撃するためで、ゲームもツールチップにちょうど同じ数の行を表示します。どちらの手かはスキルのアニメーションに書かれています: 装備セットごとにファイルがあり、その中の命中イベントが手を指定します。両手武器に替えたり盾を装備したりすると行が変わることがあり、ゲームでも同様です。
+damage.hands.oneOff=行が 1 つなのは、スキルが片手 — オフハンド — で攻撃するためで、ゲームもツールチップにちょうど同じ数の行を表示します。どちらの手かはスキルのアニメーションに書かれています: 装備セットごとにファイルがあり、その中の命中イベントが手を指定します。両手武器に替えたり盾を装備したりすると行が変わることがあり、ゲームでも同様です。
+damage.hands.single=武器が 1 つなので手も 1 つです。括弧にはその手の継続ダメージも入ります: ゲームのパネルも同じように数えます。
+damage.hands.ownShare=スキル自身のツールチップではもっと少なくなります — そのスキル自身の割合 {0}% だけです:
+damage.hands.lineMain=メインハンド武器ダメージの {0}% ({1} - {2})
+damage.hands.lineOff=オフハンド武器ダメージの {0}% ({1} - {2})
+
+# 一撃あたりのダメージ: スキルの構成
+damage.parts.title=このスキルの構成
+damage.parts.temporary=— 一時的な効果
+damage.parts.oneHandMain=— 片手で攻撃、メインハンド
+damage.parts.oneHandOff=— 片手で攻撃、オフハンド
+damage.parts.weaponPct=武器ダメージの {0}%
+damage.parts.conversion=変換 {0}%: {1} → {2}   (キャラクターの変換より先に適用)
+damage.parts.notCounted=未集計: {0}
+
+# 一撃あたりのダメージ: ペットの一撃
+damage.pet.title={0}   (ペット «{1}» の一撃, {2})
+damage.pet.summonedBy=スキル «{0}» で召喚
+damage.pet.withConversion=変換込みのダメージ — 実際にはこのように攻撃します
+damage.pet.noNumbers=このスキルには数値がありません
+damage.pet.asGame=ゲームの表示 — 変換なし
+damage.pet.asGameNote=ゲームはペットの変換をどこにも表示しません: 6 つの数値で測定しスクリーンショットで確認しました — «グルの標章» の有無でスキル説明は変わりません。それでも変換はキャラクターと同じように働きます。
+damage.pet.notYours=これはペットの一撃で、あなたの一撃とは比べられません: あなたの武器から出るものではなく、あなたのダメージ割合は適用されず、ペット ボーナスが適用されます。
+
+# 戦闘シミュレーション: 最初の実行前のヘルプ
+damage.help.title=時間に沿った攻撃のキュー
+damage.help.press=「キューを実行」を押してください: 一振りごとに個別に処理します — 命中、どの手が出たか、そして各行のダメージをその範囲内で個別に抽選。行は計算しながらすぐに表示されます。上には結果: 毎秒ダメージ、秒ごとの合計の中央値、対象のヘルス、撃破までの時間 (TTK)。
+damage.help.twoNumbers=1 行に数値が 2 つ: 1 つ目は対象に届いた分 (手ごと)。括弧内の「ボーナス未計算のダメージ」はこちらから出た分で、クリティカルは含みますが、種族ボーナス、装甲 (物理だけを削る)、耐性とその低下はまだ含みません。1 つ目が 2 つ目より大きくなることもあります: 低下によって対象の耐性がマイナスになると、軽減ではなく増幅になります。DPS、中央値、1 回の実行のダメージ、TTK は届いた分で数えます。
+damage.help.target=対象は「敵」タブで選んだものを、そのレベルと難易度で使います。何も選んでいなければ、ゲームファイルの訓練用ダミーを使います。
+damage.help.pets=ペット: チェックしたものは最初に召喚され、以後は召喚のクールダウンごとに、種類の上限に達するまで召喚されます。自動で発動するもの (星、アイテムのスキル) はチェックなしでも来ます。それぞれが自身の通常攻撃とスキルをその頻度で使い、命中とクリティカルはあなたと同じように抽選されます。
+damage.help.counted=数えるもの: 一振り、押したスキル、チャネリング、武器プール、発動効果、星、ダメージを与えるオーラ、継続ダメージ、クリティカル段階、耐性低下、種族ボーナス、ヘルス低下、形態、ペット。
+damage.help.seed=シードは実行を再現可能にします: 同じシードなら最後の桁まで同じ結果になります。シードだけを変えればばらつきが、同じシードでビルドを変えればビルドが何を変えたかが分かります。
+
+# 戦闘シミュレーション: 実行中
+damage.run.building=キューを作成中…
+damage.run.buildingNote=一撃ごとに独自の抽選で独自のダメージを計算し、長い実行では数千回になります
+damage.run.progress=キューを作成中…   {1} 秒中 {0} 秒   ({2} 行)
+
+# 戦闘シミュレーション: 結果
+damage.run.buffsUp=有効にした強化: {0}   — クールダウンごとにそれぞれの持続時間 (レコードに持続時間がなければ実行全体) でキューに入り、別の一撃として攻撃するのではなく能力値を変えます
+damage.run.target=対象: {0}
+damage.run.targetLevel=レベル {0}、難易度 {1}
+damage.run.targetStats=防御能力 {0}   装甲 {1}
+damage.run.hitChance=命中率 {0}%
+damage.run.mainSpell=通常の武器攻撃の代わりに {0} «{1}»: 詠唱速度 {2}%、{3} 秒ごと、1 回の実行で {4} 回
+damage.run.targetResists=対象の耐性: {0}
+damage.run.gear=アイテムとセットのスキル:
+damage.run.queue=キュー
+damage.run.summary=実行の結果
+damage.run.dps=毎秒ダメージ (DPS)  {0}     秒ごとの合計の中央値 {1}
+damage.run.total={1} 秒で 1 回の実行のダメージ {0}
+damage.run.targetLife=対象のヘルス {0}
+damage.run.killedAt={0} 秒で撃破 (TTK)
+damage.run.dummyNote=— 参考値: ゲームではダミーは死にません
+damage.run.notKilled=実行中に撃破できず — 残り {0}%
+damage.run.percentLife=ヘルス低下で {0} を削った ({1} 回)
+damage.run.percentLifeBlocked=さらに {0} 回は対象の耐性 {1}% により完全に打ち消された
+damage.run.swings=一振り {0}、命中 {1}、ミス {2}、クリティカル {3}
+damage.run.tier=段階 {0}: {1}
+damage.run.hands=手: 両手 {0}、第 1 {1}、第 2 {2}
+damage.run.procs=自動発動: 発動 {0} (そのダメージ {1})
+damage.run.pool=武器プール {0}
+damage.run.silent=ダメージなし {0}: {1}
+damage.run.pets=ペット: 攻撃 {0}、召喚 {1}、そのダメージ {2}
+damage.run.petsShare=— 全体の {0}%
+damage.run.stars=祈祷の星
+damage.run.dots=継続ダメージ: 付与 {0}、更新 {1}、そのダメージ {3} のうち {2}
+damage.run.before=ボーナス未計算のダメージは {0} — 届いたのは {1}% (種族ボーナス、装甲、耐性とその低下)
+damage.run.conditions=実行の条件
+damage.run.rolls=範囲の抽選回数: {0} — 各一撃の各ダメージ行につき 1 回。
+damage.run.critNote=段階付きのクリティカルを数えています: 1 回の抽選で命中と段階が決まり、「クリティカルダメージ +%」は段階の倍率に加算されます。クリティカルの確率そのものは強い対象ではゲームと一致し、弱い対象では高すぎます — モンスターの装備によるボーナスは数えていません。
+damage.run.dotNote=継続ダメージは付与されてティックします: 1 つの出どころが持つ効果は 1 つだけ — 新しい命中は持続時間を延ばしダメージを最良値に引き上げ、2 つ目は作りません。武器ダメージ全体 (両手と武器割合のあるスキル) は 1 つの出どころとして数え、武器割合のないスキルは別の出どころです。
+damage.run.noteRough=簡略化: {0}
+damage.run.noteUnread=未読込: {0}
+damage.run.noteHint=ヒント: {0}
+damage.run.pressNote=チェックしたスキルはクールダウンが明け次第押します: 最初は全部同時に、以後はそれぞれのクールダウン (アイテムと修飾による短縮込み) ごとに。両手で攻撃するスキルは必ず両手で攻撃し、それぞれの手が個別の抽選で外れます。
+damage.run.procNote=発動効果と「通常の武器攻撃の代わり」のスキルは、あえてチェックできる一覧に入れていません: 誰も押さないからです。それらは自動で処理されます — 一撃ごとの独自の抽選と独自のクールダウンで。
+damage.run.silentNote=ダメージなしで発動 — 召喚したり、強化や弱体化をかけたりする祈祷の星とアイテムのスキル。抽選とクールダウンは本物です。強化はその持続時間だけ効き、弱体化は対象にかかり、召喚された生物はプールに加わって自分の行で攻撃します。
+damage.run.failed=実行に失敗しました: {0}
+
+# 敵: 敵のパネル
+damage.enemy.title={0}   ({1}, レベル {2}, 難易度 {3})
+damage.enemy.variants=データベースにはこの名前のレコードが {0} 件あります — 出現するレベルだけが違います。ここでは最も完全なものを使い、レベルは上で選びます。
+damage.enemy.combat=戦闘パラメーター
+damage.enemy.abilities=防御能力 {0}   攻撃能力 {1}
+damage.enemy.life=ヘルス {0}   装甲 {1}
+damage.enemy.gearArmour=(うち装備から {0})
+damage.enemy.resists=耐性
+damage.enemy.none=なし
+damage.enemy.hit=命中
+damage.enemy.ourAttack=こちらの攻撃能力 {0}   対 相手の防御 {1}
+damage.enemy.hitChance=命中率 {0}%   クリティカル率 {1}%
+damage.enemy.ourDefence=こちらの防御能力 {0}   対 相手の攻撃 {1}
+damage.enemy.getHit=被弾率 {0}%   被クリティカル率 {1}%
+
+# 一覧と「敵」タブ見出しでの敵の格付け。ゲームには格付けを表す独自の言葉がありません。
+damage.enemy.rank.superBoss=ネメシス
+damage.enemy.rank.boss=ボス
+damage.enemy.rank.quest=クエスト
+damage.enemy.rank.hero=ヒーロー
+damage.enemy.rank.champion=チャンピオン
+damage.enemy.rank.common=通常
+damage.enemy.variantsShort=(レコード {0} 件)
+damage.attack.byCooldown=武器の代わりに、クールダウン通り {0} 秒ごと

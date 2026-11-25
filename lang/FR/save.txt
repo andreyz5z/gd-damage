@@ -1,0 +1,8 @@
+# ERREURS D'ÉCRITURE DE LA SAUVEGARDE (dans la barre d'état « Erreur d'enregistrement : … » et la fenêtre « Échec de l'enregistrement »).
+
+save.error.unparsed=sauvegarde non écrite : le bloc {0} n'a pas été décomposé en champs (sauvegarde d'une version inconnue du jeu)
+save.error.writtenUnparsed=le fichier écrit contient un bloc non décomposé {0}
+save.error.reread=le fichier écrit ne se relit pas correctement
+save.error.rekey=le fichier ne survit pas à un changement de clé de chiffrement
+save.error.length={0} (longueur {1} au lieu de {2})
+save.error.offset={0} : différence au décalage {1}

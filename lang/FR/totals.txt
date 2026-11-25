@@ -1,0 +1,71 @@
+# SOURCES DE BONUS : libellés des termes dans l'infobulle « de quoi c'est fait » de l'onglet « Bonus totaux ».
+# Un coup retrouve son terme par ces libellés mêmes, c'est pourquoi chacun est construit à un seul endroit.
+# IMPORTANT EN TRADUISANT : les libellés des parties d'objet (totals.part.*) doivent différer entre eux — sinon
+# des lignes de parties différentes partageraient un même tirage de dégâts. Contrôlé par --langtest.
+
+totals.part.prefix=(préfixe)
+totals.part.suffix=(suffixe)
+totals.part.component=(composant)
+totals.part.relicBonus=(bonus d'achèvement)
+totals.part.augment=(augmentation)
+totals.part.modifier=(modificateur)
+totals.part.ascension=(ascension)
+totals.setShort=ensemble : {0}
+totals.fromItem=d'un objet : {0} ({1})
+totals.devotion=dévotion : {0}
+totals.skill=compétence : {0} (niv. {1})
+totals.toggled=activée : {0} (niv. {1})
+totals.skillMod=modificateur de compétence : {0}
+totals.toggledMod=activé, modificateur de compétence : {0}
+totals.chosenOn={0} — activé à la main
+totals.chosenOff={0} — désactivé à la main
+totals.gateItem={0} (d'un objet) — {1}
+totals.gateDevotion={0} (dévotion) — {1}
+
+totals.gate.needDualAny=ni deux armes de mêlée ni deux armes à distance à une main
+totals.gate.needDualMelee=pas de deux armes en main
+totals.gate.needDualRanged=pas de deux armes à distance à une main
+totals.gate.needRanged=pas d'arme à distance
+totals.gate.needGuns=deux pistolets ou un fusil sont nécessaires
+totals.gate.needEmptyHands=une arme en main
+totals.gate.wrongWeapon=mauvaise arme en main
+
+# TITRES DE GROUPES de l'onglet « Bonus totaux ». « Résistances », « Représailles », « Défense » et « Attributs »
+# viennent du jeu (son panneau de personnage) ; ces quatre lignes ne sont qu'un secours.
+totals.group.damage=Dégâts
+totals.group.overTime=Dégâts sur la durée
+totals.group.retaliation=Représailles
+totals.group.debuff=Ce qui est retiré à la cible
+totals.group.resist=Résistances
+totals.group.defence=Défense
+totals.group.attributes=Attributs
+totals.group.skills=Compétences
+totals.group.other=Autres
+
+# Zones d'armure. Normalement prises du jeu (son panneau d'armure) ; voici le secours.
+totals.zone.head=Tête
+totals.zone.shoulders=Épaules
+totals.zone.chest=Torse
+totals.zone.arms=Bras
+totals.zone.legs=Jambes
+totals.zone.feet=Pieds
+
+# Ce qui a atteint la limite chez les familiers : « … plafonné : chaos 84 % (+12 % au-delà du maximum), étourdissement … ».
+totals.capWord.elemental=élémentaire
+totals.capWord.stun=étourdissement
+totals.capWord.freeze=gel
+totals.capWord.trap=immobilisation
+totals.capWord.petrify=pétrification
+totals.capWord.convert=contrôle mental
+
+# Noms des résistances. Pris du jeu (son panneau de personnage) ; voici le secours, dans ses mots.
+totals.resist.fire=Feu
+totals.resist.cold=Froid
+totals.resist.lightning=Foudre
+totals.resist.poison=Poison et Acide
+totals.resist.pierce=Perforation
+totals.resist.aether=Éther
+totals.resist.chaos=Chaos
+totals.resist.life=Vitalité
+totals.resist.bleeding=Saignement
+totals.resist.physical=Physique

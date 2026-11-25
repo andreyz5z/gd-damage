@@ -1,0 +1,185 @@
+# 战斗模拟日志（「战斗模拟」标签页）：日志行、原因和运行后的备注。
+#
+# 小数以已写好的形式（点号分隔）传入，{n} 中不做任何重新计算。比较符号
+# 「<」「≥」「→」、括号以及行中各部分之间的逗号由程序添加。
+
+# 自身不攻击的技能做什么。这个词出现在日志中（「增益，无伤害」）、
+# 「按下什么」列表和运行备注中。
+log.effect.damage=伤害
+log.effect.summon=召唤
+log.effect.buff=增益
+log.effect.debuff=减益
+log.effect.none=记录中没有伤害
+
+# 日志的一行：「12.34 秒  挥击：双手   812 和 790   （未计加成的伤害 1020 和 990）   [原因]」。
+log.line.at={0} 秒
+log.line.and=和
+log.line.before=（未计加成的伤害 {0}）
+log.seconds={0} 秒
+log.from=来自「{0}」
+log.target.dummy=假人
+log.target.generic=目标
+
+# 手。「挥击：双手」「主手暴击，档位 2」「主 43.1 < 97.0」（单手命中判定）。
+log.hand.both=双手
+log.hand.main=主手
+log.hand.off=副手
+log.roll.main=主
+log.roll.off=副
+log.partial.mainMissed=（主手未命中）
+log.partial.offMissed=（副手未命中）
+
+log.swing=挥击：{0}
+log.swing.hands=手 {0} → {1}
+log.swing.crit={0}暴击，档位 {1} ×{2}
+log.miss=未命中
+log.fire.crit={0}暴击 ×{1}
+
+# 命中的是什么：「技能：…」「触发：陨石」「代替攻击：…」。
+log.fire.skill=技能
+log.fire.channel=引导
+log.fire.spell=法术
+log.fire.pool=代替攻击
+log.fire.proc=触发
+log.fire.devotion=星座信仰
+log.fire.finale=终结：第 {0} 击
+log.fire.attack=攻击
+log.fire.charges=（充能 {0}）
+
+# 持续伤害跳伤：「燃烧跳伤（主手，来自默认武器攻击）」。
+log.tick={0}跳伤
+log.tick.from=来自{0}
+log.tick.left=剩余 {0} 秒
+log.tick.partial=不完整跳伤 {0}%
+log.tick.autoattack=默认武器攻击
+log.dot.FireDot=燃烧
+log.dot.ColdDot=霜燃
+log.dot.LightningDot=电击
+log.dot.PoisonDot=毒素
+log.dot.LifeDot=活力衰减
+log.dot.BleedingDot=流血
+log.dot.PhysicalDot=创伤
+
+# 目标的生命。
+log.life.killed=目标被击杀
+log.life.killedWhy=TTK {0} 秒：对 {2} 生命造成了 {1}；此后仍按目标存活计算伤害，但已没有生命可削减
+log.life.cut=生命削减 {0}%  来自「{1}」
+log.life.cutWhy=目标生命 {0} → {1}
+log.life.cutResist=效果 {0}%，目标抗性 {1}%
+log.life.gear=装备
+
+# 光环、按冷却的增益、冷却重置。
+log.aura=光环：{0}
+log.buff=增益：{0}
+log.buff.holds=持续 {0} 秒
+log.buff.cooldown=冷却 {0} 秒
+log.buff.shield=吸收护盾 {0}——在被击破前一直存在
+log.buff.noDuration=记录中没有持续时间
+log.buff.notInQueue=它的伤害加成在队列中不生效
+log.buff.noEffect=不影响我方伤害
+log.reset=冷却重置：「{0}」
+log.reset.why=「{0}」，{1}% {2}——持续 {3} 秒，在 {4} 而非 {5} 就绪
+log.reset.onCrit=暴击攻击时
+log.reset.onAttack=攻击时
+
+# 已触发或已按下，但不攻击。
+log.silent.fired=已触发
+log.silent.pressed=已按下：
+log.silent.buff=增益，持续 {0} 秒
+log.silent.resists=抗性降低
+log.silent.defense=−{0} 防御能力
+log.silent.offense=−{0} 攻击能力
+log.silent.absolute=抗性数值 −{0}
+log.silent.relative=当前抗性的 −{0}%
+log.silent.debuff=目标减益 {0} 秒
+log.silent.debuffNothing=完全不影响我方伤害
+log.silent.summon=召唤——战宠加入池中，它的攻击在下方各自的行中
+log.silent.noDamage={0}，无伤害
+
+# 日志中的战宠。
+log.pet.how.self=自动
+log.pet.how.pressed=按下
+log.pet.summonBlocked=召唤（{0}）：{1}
+log.pet.limit=该类型已达上限——{0} ×「{1}」，不再增加
+log.pet.summoned=已召唤（{0}）：「{1}」#{2}
+log.pet.standing={1} 个中有 {0} 个在场
+log.pet.lives=存在 {0} 秒
+log.pet.permanent=永久
+log.pet.aps=每秒攻击 {0}
+log.pet.gone=离场：「{0}」#{1}
+log.pet.goneWhy={0} 秒存在时间已到，攻击 {1} 次
+log.pet.goneTrap=被敌人触发，攻击 {0} 次
+log.pet.onceAt={0} 秒后引爆
+log.pet.aura=战宠光环：「{0}」{1}
+log.pet.auraTarget=战宠光环：「{0}」
+log.pet.auraAllies=在附近时强化我方和其他战宠
+log.pet.auraOnTarget=在附近时持续作用于目标
+log.pet.miss=战宠未命中：「{0} #{1}」{2}
+log.pet.hitChance=命中几率 {0}%
+log.pet.hit=战宠：「{0} #{1}」{2}
+log.pet.auto=（默认攻击）
+log.pet.auraMark=（光环）
+log.pet.perSecond=每秒一次
+log.pet.speed=速度 每秒 {0} 次攻击
+log.pet.every=每 {0} 秒
+log.pet.crit=暴击档位 {0} ×{1}
+log.pet.dotApplied=已施加持续伤害
+# 跳伤行中战宠持续伤害的来源：「燃烧跳伤（来自「<战宠> #1：<技能>」）」。
+log.pet.source={0} #{1}：{2}
+# 游戏中没有名字的战宠技能——用其记录路径的末尾称呼。
+log.pet.noName=无名：{0}
+
+# 运行结果：种族加成。
+log.racial.noRace=针对种族的加成（{0} 个）对这个目标无效：它完全没有种族（与假人一样）
+log.racial.none=目标是{0}，我们没有针对它的加成（有针对其他种族的：{1}）
+log.racial.has=目标是{0}，我们对它的加成为 {1}% 伤害（倍率 ×{2}）
+log.racial.flat=针对种族「{0}」的固定加成（{1} 伤害）已收集但未应用：不知道它以哪种伤害类型出现（提示中没有写类型），也不知道它在顺序中的位置。百分比加成我们按文章中的公式处理；固定加成在文章和文件中都没有公式——需要实测
+
+# 运行结果：提示（选错了什么）。
+log.hint.mainNotSpell=「{0}」被选为主技能，但它既不是引导也不是无冷却的法术（或找不到其动画）——我们像没有选择一样用武器攻击
+log.hint.buffPressed=「{0}」是增益：它生效期间加成会作用于攻击，但它本身不作为攻击造成伤害。请在增益中勾选它
+log.hint.channelWithAttack=引导「{0}」与默认武器攻击一起被按下——游戏中不会这样：维持光束时武器不会攻击。它按记录的「冷却」按下，而不是按施法速度。请把它选为主技能
+log.hint.starHits=星「{0}」会造成伤害——我们不把它作为增益开启；在按下列表中勾选它，它就会按冷却攻击
+log.hint.starReplacing=星「{0}」绑定到「{1}」——这是替代攻击：它被分配到一个按键上，代替普通攻击出手。我们能计算这类攻击，但本次运行中不用它攻击——存档不保存按键分配。在「攻击方式」列表中选择它，星就会生效
+log.hint.starIdle=星「{0}」绑定到技能「{1}」，而该技能在本次运行中不攻击（未勾选按下，也不在武器池中）——完全没有触发，这不是运气不好
+
+# 运行结果：未读取的内容。
+log.unread.starBuffNoDuration=星「{0}」施加增益，但记录中没有持续时间——我们没法维持它，所以队列中只显示它触发了
+log.unread.starNoDamage=没有读取到星「{0}」的伤害：触发在队列中，伤害没有
+log.unread.buffNoDuration=增益「{0}」改变伤害，但记录中没有持续时间——队列中只显示它的触发，加成不生效
+log.unread.summonNoPet=召唤「{0}」已触发，但池中没有这种战宠——它的伤害不计入
+log.unread.petMoveNoRate=战宠「{0}」有造成伤害的技能「{1}」，但记录没有说明它使用的频率——队列中不使用
+log.unread.petNoSpeed=无法读取战宠「{0}」的攻击速度（没有动画表）——它的默认攻击不进入队列
+log.unread.petNoMoves=没有读取到战宠「{0}」的任何伤害技能——在队列中会被召唤但不攻击
+
+# 运行结果：来自物品和套装的技能——各自的情况。
+log.gear.mainSpell=代替默认武器攻击的主技能，攻击 {0} 次
+log.gear.pool=在武器池中
+log.gear.onlyCrit=只在暴击时判定；
+log.gear.fired=触发 {0} 次
+log.gear.firedSummon=— 召唤，战宠加入池中并攻击
+log.gear.firedDebuff=— 目标减益
+log.gear.firedBuff=— 我方增益
+log.gear.conditionNotModelled=条件未建模 —
+log.gear.pressed=已勾选按下，按冷却按下：按下 {0} 次
+log.gear.notPressed=可按下——未勾选按下
+log.gear.conditionHits=条件未建模，但有伤害——勾选后会按冷却使用
+log.gear.noHit=不攻击（{0}）
+log.gear.conditionNoHit=条件未建模，无伤害（{0}）——不参与队列
+
+# 运行结果：星和战宠按名称列出。
+log.star.head=「{0}」等级 {1}，来自「{2}」
+log.star.onlyCrit=（仅暴击时）
+log.star.chance=几率 {0}%
+log.star.cooldown=冷却 {0} 秒
+log.star.fired={1} 次判定中触发 {0} 次
+log.star.blocked=被冷却阻止 {0} 次
+log.petLine.auras=战宠给其他战宠的光环（在以下战宠存活期间）— {0}：{1}
+log.petLine.head=「{0}」（{1}）— 召唤 {2} 次
+log.petLine.limit=最多同时 {0} 个
+log.petLine.hits=攻击 {0}
+log.petLine.misses=未命中 {0}
+log.petLine.crits=暴击 {0}
+log.petLine.damage=伤害 {0}
+log.petLine.expired=因时间到而离场 {0}
+log.petLine.blocked=超出上限的召唤 {0}

@@ -1,0 +1,19 @@
+# OKNO „AKTIVNÍ DOVEDNOSTI“.
+
+active.title=Aktivní dovednosti — {0}
+active.none=Tato postava nemá přepínatelné dovednosti ani dovednosti z předmětů.
+active.source.devotionOn=oddanost navázaná na „{0}“
+
+# Podmínky spuštění, stručně („podmínka „při vykrytí“ se nelosuje“).
+active.trigger.attack=při útoku
+active.trigger.attackCrit=při kritickém útoku
+active.trigger.lowHealth=při nízkém zdraví
+active.trigger.lowMana=při nízké energii
+active.trigger.hitByEnemy=když jsme zasaženi
+active.trigger.hitByMelee=při zásahu zblízka
+active.trigger.hitByProjectile=při zásahu střelou
+active.trigger.hitByCrit=při kritickém zásahu do nás
+active.trigger.block=při vykrytí
+active.trigger.onKill=při zabití
+active.trigger.castBuff=při seslání posílení
+active.trigger.onEquip=při nasazení

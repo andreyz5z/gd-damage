@@ -1,0 +1,12 @@
+# KỸ NĂNG GÂY SÁT THƯƠNG: dòng trong danh sách «tấn công bằng» và các phần của kỹ năng («Kỹ năng này gồm những gì»).
+
+attack.title={0}   ({1}, cấp {2})
+attack.weaponPct={0}% sát thương vũ khí
+attack.part={0} (cấp {1})
+attack.transmuter={0} (biến thể, cấp {1})
+attack.transmuterOrphan={0} — biến thể (cấp {1}): không tìm thấy kỹ năng gốc
+attack.fromItemInForm=từ vật phẩm, ở hình dạng này: {0}
+attack.fromItem=từ vật phẩm: {0}
+attack.pool=(thay cho Tấn Công Mặc Định, {0}%)
+attack.poolNoChance=(thay cho Tấn Công Mặc Định)
+attack.onHit=(kích hoạt khi đánh trúng, {0}%)

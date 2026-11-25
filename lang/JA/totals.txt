@@ -1,0 +1,71 @@
+# ボーナスの出どころ: 「合計ボーナス」タブの「内訳」ツールチップにある各項のラベル。
+# 一撃はまさにこのラベルで自分の項を見つけるので、各ラベルは 1 か所だけで作られます。
+# 翻訳時の注意: アイテム部位のラベル (totals.part.*) は互いに異なる必要があります — さもないと
+# 異なる部位の行が 1 つのダメージ抽選を共有してしまいます。--langtest が確認します。
+
+totals.part.prefix=(接頭辞)
+totals.part.suffix=(接尾辞)
+totals.part.component=(構成材)
+totals.part.relicBonus=(完成ボーナス)
+totals.part.augment=(増強剤)
+totals.part.modifier=(修飾)
+totals.part.ascension=(アセンション)
+totals.setShort=セット: {0}
+totals.fromItem=アイテムから: {0} ({1})
+totals.devotion=祈祷: {0}
+totals.skill=スキル: {0} (Lv. {1})
+totals.toggled=オン: {0} (Lv. {1})
+totals.skillMod=スキル修飾: {0}
+totals.toggledMod=オン、スキル修飾: {0}
+totals.chosenOn={0} — 手動でオン
+totals.chosenOff={0} — 手動でオフ
+totals.gateItem={0} (アイテムから) — {1}
+totals.gateDevotion={0} (祈祷) — {1}
+
+totals.gate.needDualAny=二刀流の近接武器も片手遠距離武器二丁もない
+totals.gate.needDualMelee=二刀流になっていない
+totals.gate.needDualRanged=片手遠距離武器が二丁ない
+totals.gate.needRanged=遠距離武器がない
+totals.gate.needGuns=拳銃二丁かライフルが必要
+totals.gate.needEmptyHands=武器を持っている
+totals.gate.wrongWeapon=手にしている武器が違う
+
+# 「合計ボーナス」タブのグループ見出し。「耐性」「報復」「防御」「属性」はゲーム (キャラクターパネル) から
+# 取ります。この 4 行は代替用です。
+totals.group.damage=ダメージ
+totals.group.overTime=継続ダメージ
+totals.group.retaliation=報復
+totals.group.debuff=対象から奪うもの
+totals.group.resist=耐性
+totals.group.defence=防御
+totals.group.attributes=属性
+totals.group.skills=スキル
+totals.group.other=その他
+
+# 装甲の部位。通常はゲーム (装甲パネル) から取ります。これは代替用です。
+totals.zone.head=頭
+totals.zone.shoulders=肩
+totals.zone.chest=胸
+totals.zone.arms=腕
+totals.zone.legs=脚
+totals.zone.feet=足
+
+# ペットで上限に達したもの: 「… 上限: カオス 84% (+12% 最大値超過)、スタン …」。
+totals.capWord.elemental=元素
+totals.capWord.stun=スタン
+totals.capWord.freeze=凍結
+totals.capWord.trap=拘束
+totals.capWord.petrify=石化
+totals.capWord.convert=精神支配
+
+# 耐性の名前。ゲーム (キャラクターパネル) から取ります。これは代替用で、ゲームの言葉どおりです。
+totals.resist.fire=火炎
+totals.resist.cold=冷気
+totals.resist.lightning=雷
+totals.resist.poison=毒酸
+totals.resist.pierce=刺突
+totals.resist.aether=イーサー
+totals.resist.chaos=カオス
+totals.resist.life=生命力
+totals.resist.bleeding=出血
+totals.resist.physical=物理

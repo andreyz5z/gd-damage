@@ -1,0 +1,52 @@
+# CHARAKTERFELD (Felder des Hauptfensters) und Tooltips der Attribute.
+
+character.name=Name
+character.class=Klasse
+character.file=Datei
+character.level=Stufe
+character.experience=Erfahrung
+character.physique=Konstitution
+character.cunning=Raffinesse
+character.spirit=Geist
+character.health=Leben
+character.energy=Energie
+character.attributePoints=Attributpunkte
+character.skillPoints=Fähigkeitspunkte
+character.devotionPoints=Devotionspunkte
+character.totalDevotion=Devotion gesamt
+character.money=Eisen
+character.tributes=Tribute
+character.difficulties=Schwierigkeit
+character.difficulty.normal=Normal, Veteran
+character.difficulty.elite=Elite
+character.difficulty.ultimate=Ultimativ
+
+# Die Zahlen bearbeiten, die das Spiel selbst berechnet
+character.freeEdit=Attribute frei bearbeiten
+character.freeEdit.warning=Diese fünf Zahlen berechnet das Spiel selbst aus vergebenen Punkten, getragenen Gegenständen und Fähigkeiten — die Formeln sind verstanden und stimmen mit dem Spiel genau überein.\n\nWenn du hier eigene Werte einträgst, weicht der Spielstand von dem ab, was das Spiel auf dem Bildschirm zeigt: Es berechnet Leben und Energie nach seinen eigenen Regeln neu und behält deine Attribute.\n\nBearbeiten trotzdem erlauben?
+character.keptInSave=Wird im Spielstand getrennt von dem gespeichert, was das Spiel auf dem Bildschirm zeigt.\nDas endgültige Leben und die Energie berechnet das Spiel selbst — aus vergebenen Punkten, Attributen, Gegenständen und Fähigkeiten — und sie stimmen nicht mit dieser Zahl überein.\nWas genau hier gespeichert wird, haben wir noch nicht herausgefunden, daher ist das Bearbeiten gesperrt.
+
+# Tooltip eines Attributs
+character.tip.now={0}: jetzt {1}
+character.tip.own=im Spielstand {0}, vergebene Punkte {1}
+character.tip.fromGear=von Gegenständen und Fähigkeiten: {0}
+character.tip.gives=Gibt (gezählt über der Basis {0}):
+character.tip.percents=Und die Prozente — die Basis {0} zählt auch hier:
+character.tip.percentLine=+{0}% {1}
+character.perPoint.life=+{0} Leben pro Punkt
+character.perPoint.energy=+{0} Energie pro Punkt
+character.perPoint.defense=+{0} Verteidigungsqualität pro Punkt
+character.perPoint.offense=+{0} Angriffsqualität pro Punkt
+character.perPoint.lifeRegen=+{0} Lebensregeneration pro Punkt
+character.perPoint.energyRegen=+{0} Energieregeneration pro Punkt
+character.divided.physical=physischer und Durchschlagsschaden
+character.divided.bleed=Wund- und Blutungsschaden
+character.divided.magic=magischer Schaden
+character.divided.dots=der übrige Schaden über Zeit
+character.divided.energyRegen=Energieregeneration
+character.needs.physique=Erforderlich für Rüstungen, Nahkampfwaffen und Schilde.
+character.needs.cunning=Erforderlich für Fernkampfwaffen und einen Teil der Nahkampfwaffen.
+character.needs.spirit=Erforderlich für Ringe, Amulette und Zaubergegenstände.
+character.hardcore=Hardcore
+character.revive=Wiederbeleben
+character.revive.tip=Entfernt die Todesmarkierung. Prüfen Sie im Spiel, ob der Charakter wieder lädt.

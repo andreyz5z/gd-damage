@@ -1,0 +1,71 @@
+# ZDROJE BONUSŮ: popisky sčítanců v nápovědě „z čeho se to skládá“ na záložce „Celkové bonusy“.
+# Zásah nachází svůj sčítanec právě podle těchto popisků, proto každý vzniká na jediném místě.
+# DŮLEŽITÉ PŘI PŘEKLADU: popisky částí předmětu (totals.part.*) se musí navzájem lišit — jinak by řádky různých
+# částí sdílely jeden hod zranění. Hlídá to --langtest.
+
+totals.part.prefix=(předpona)
+totals.part.suffix=(přípona)
+totals.part.component=(komponenta)
+totals.part.relicBonus=(bonus dokončení)
+totals.part.augment=(vylepšení)
+totals.part.modifier=(modifikátor)
+totals.part.ascension=(povznesení)
+totals.setShort=set: {0}
+totals.fromItem=z předmětu: {0} ({1})
+totals.devotion=oddanost: {0}
+totals.skill=dovednost: {0} (úr. {1})
+totals.toggled=zapnuto: {0} (úr. {1})
+totals.skillMod=modifikátor dovednosti: {0}
+totals.toggledMod=zapnuto, modifikátor dovednosti: {0}
+totals.chosenOn={0} — zapnuto ručně
+totals.chosenOff={0} — vypnuto ručně
+totals.gateItem={0} (z předmětu) — {1}
+totals.gateDevotion={0} (oddanost) — {1}
+
+totals.gate.needDualAny=ani dvě zbraně na blízko, ani dvě jednoruční na dálku
+totals.gate.needDualMelee=nejsou dvě zbraně v rukou
+totals.gate.needDualRanged=nejsou dvě jednoruční zbraně na dálku
+totals.gate.needRanged=žádná zbraň na dálku
+totals.gate.needGuns=jsou potřeba dvě pistole nebo puška
+totals.gate.needEmptyHands=v rukou je zbraň
+totals.gate.wrongWeapon=špatná zbraň v rukou
+
+# NADPISY SKUPIN na záložce „Celkové bonusy“. „Odolnosti“, „Oplácení“, „Obrana“ a „Atributy“ pocházejí ze hry
+# (jejího panelu postavy); tyto čtyři řádky jsou jen náhrada.
+totals.group.damage=Zranění
+totals.group.overTime=Zranění v čase
+totals.group.retaliation=Oplácení
+totals.group.debuff=Co se cíli ubírá
+totals.group.resist=Odolnosti
+totals.group.defence=Obrana
+totals.group.attributes=Atributy
+totals.group.skills=Dovednosti
+totals.group.other=Ostatní
+
+# Zóny zbroje. Obvykle ze hry (jejího panelu zbroje); toto je náhrada.
+totals.zone.head=Hlava
+totals.zone.shoulders=Ramena
+totals.zone.chest=Hruď
+totals.zone.arms=Ruce
+totals.zone.legs=Nohy
+totals.zone.feet=Chodidla
+
+# Co u spojenců narazilo na limit: „… na limitu: chaos 84% (+12% nad maximum), omráčení …“.
+totals.capWord.elemental=živly
+totals.capWord.stun=omráčení
+totals.capWord.freeze=zmrazení
+totals.capWord.trap=znehybnění
+totals.capWord.petrify=zkamenění
+totals.capWord.convert=ovládnutí mysli
+
+# Názvy odolností. Ze hry (jejího panelu postavy); toto je náhrada, jejími slovy.
+totals.resist.fire=Oheň
+totals.resist.cold=Chlad
+totals.resist.lightning=Elektrický výboj
+totals.resist.poison=Jedy a kyseliny
+totals.resist.pierce=Bodná zranění
+totals.resist.aether=Aether
+totals.resist.chaos=Chaos
+totals.resist.life=Životní energie
+totals.resist.bleeding=Krvácení
+totals.resist.physical=Fyzická odolnost

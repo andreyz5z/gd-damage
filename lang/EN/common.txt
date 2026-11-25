@@ -1,0 +1,27 @@
+# SHARED BY SEVERAL WINDOWS: buttons, where a skill came from, parts of an item.
+
+common.apply=Apply
+common.cancel=Cancel
+common.search=Search:
+common.nothingFound=Nothing found.
+common.put=Set
+common.clearBonus=Clear bonus
+
+# Game difficulties (the "Rifts" tab, the enemy tab)
+common.difficulty.normal=Normal
+common.difficulty.elite=Elite
+common.difficulty.ultimate=Ultimate
+
+# Where a skill came from (sub-headings in the pet and active-skill windows)
+common.source.mastery=mastery skill
+common.source.devotion=devotion
+common.source.item=from an item: {0}
+common.source.set=set: {0} ({1})
+common.source.setName=set: {0}
+
+# The part of the item the skill came with: "from an item: Name (prefix)"
+common.part.prefix=(prefix)
+common.part.suffix=(suffix)
+common.part.component=(component)
+common.part.augment=(augment)
+common.part.ascension=(ascension)

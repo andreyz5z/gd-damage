@@ -1,0 +1,19 @@
+# «활성 스킬» 창.
+
+active.title=활성 스킬 — {0}
+active.none=이 캐릭터에게는 켜고 끄는 스킬도, 아이템이 주는 스킬도 없습니다.
+active.source.devotionOn=«{0}»에 연결된 디보션
+
+# 스킬 발동 조건, 짧게 («차단 시» 조건은 추첨하지 않습니다).
+active.trigger.attack=공격 시
+active.trigger.attackCrit=치명타 공격 시
+active.trigger.lowHealth=체력이 낮을 때
+active.trigger.lowMana=에너지가 낮을 때
+active.trigger.hitByEnemy=피격 시
+active.trigger.hitByMelee=근접 공격에 맞았을 때
+active.trigger.hitByProjectile=투사체에 맞았을 때
+active.trigger.hitByCrit=치명타에 맞았을 때
+active.trigger.block=차단 시
+active.trigger.onKill=처치 시
+active.trigger.castBuff=강화 시전 시
+active.trigger.onEquip=장착 시

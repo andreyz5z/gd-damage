@@ -1,0 +1,150 @@
+# ОКНО «НАВЫКИ»: подклассы, подсказки умений, набожность, порталы.
+# Названия мастерств, умений и созвездий даёт игра.
+
+skills.title=Навыки — {0}
+skills.levelParen=(уровень {0})
+
+# Выбор и сброс подкласса
+skills.choose.first=Первый подкласс
+skills.choose.second=Второй подкласс
+skills.choose.intro=Мастерство считается взятым, как только в его полосу вложено первое очко — именно это мы и сделаем, потратив одно очко умений. Взять то же мастерство вторым нельзя.
+skills.choose.opensAt=В игре оно открывается на {0} уровне.
+skills.choose.freePoints=Свободных очков умений: {0}.
+skills.noPoints.text=Свободных очков умений нет, а мастерство берётся вложением очка в его полосу.\n\nДобавьте очко в поле «Очки умений» в главном окне, и тогда его можно будет потратить здесь. Списывать несуществующее очко нельзя: у персонажа стало бы потрачено больше, чем заработано.
+skills.noPoints.title=Не хватает очка умений
+skills.take.ask=Выбрать мастерство «{0}»?\n\nОдно очко умений уйдёт в его полосу — так мастерство и становится взятым. Свободных сейчас {1}.
+skills.take.undo=Передумать можно кнопкой «Сбросить подкласс» — очки вернутся.
+skills.take.title=Выбор подкласса
+skills.drop.ask=Сбросить мастерство «{0}»?\n\nИз него будут вынуты все вложенные очки — {1} шт., включая очко полосы, — и вернутся в свободные. Умения этого мастерства пропадут, а звёзды набожности, привязанные к ним, останутся непривязанными.
+skills.drop.title=Сброс подкласса
+skills.drop.button=Сбросить подкласс «{0}»
+skills.drop.secondFirst=Сначала сбросьте второй подкласс
+skills.mastery.fallbackName=мастерство {0}
+skills.mastery.tooEarlyFirst=В игре первое мастерство открывается на {0} уровне, а у персонажа {1}.
+skills.mastery.tooEarlySecond=В игре второе мастерство открывается на {0} уровне, а у персонажа {1}.
+
+# Подсказка умения
+skills.kind.mastery=мастерство
+skills.kind.active=активируемое умение
+skills.kind.weaponPool=автоатака (приём оружейного пула)
+skills.kind.modifier=улучшение умения
+skills.kind.transmuter=трансмутатор
+skills.kind.passive=пассивное умение
+skills.tip.poolChance=Шанс применения вместо обычной атаки: {0}%
+skills.tip.poolShared=Взято автоатак: {0}, их шансы в сумме {1}%. За одну атаку срабатывает только одна из них.
+skills.tip.poolSharedFull=Взято автоатак: {0}, их шансы в сумме {1}%. За одну атаку срабатывает только одна из них; обычной атаки уже не будет.
+skills.tip.dependsOn=Доступно через: {0}
+skills.tip.level=Текущий уровень: {0}
+skills.tip.levelWithBonus=Текущий уровень: {0} + {1} от вещей
+skills.tip.max=(вложить можно {0})
+skills.tip.maxWithGear=(вложить можно {0}, предел с вещами {1})
+skills.tip.recordNumbers=Это числа записи умения, до бонусов персонажа. Игра в своей подсказке показывает их уже умноженными на весь урон, который вы носите, — поэтому у неё больше. Урон с бонусами: «Расчёт урона…» → «Урон за удар».
+skills.tip.recordNumbersHand=Кроме жёлтой строки про руку: там в скобке уже посчитанный урон этой руки, ровно как у игры.
+skills.tip.celestialPower=Небесная сила
+skills.tip.fromItem=От вещи: {0}
+skills.tip.nextLevel=Следующий уровень: {0}
+
+# Набожность
+skills.devotion.tab=Набожность
+skills.devotion.spent=Вложено очков набожности: {0} из {1} заработанных, свободно {2}
+skills.devotion.split=Из них {0} пассивных звёзд (суммируются ниже) и {1} звёзд с умением (показаны отдельно).
+skills.devotion.sums=Суммарные бонусы
+skills.devotion.none=нет
+skills.devotion.granted=Дарованные умения
+skills.devotion.boundTo=привязано к: {0}
+skills.devotion.unbound=ни к чему не привязано — не сработает
+skills.devotion.levels=Изменить уровень навыков набожности
+skills.devotion.starOf={0}, звезда {1}
+skills.devotion.total=итого {0}
+skills.devotionLevels.title=Уровень навыков набожности — {0}
+skills.devotionLevels.of=из {0}
+skills.devotionLevels.none=У персонажа нет взятых звёзд набожности, дарующих умение.
+skills.constellations.count=Созвездий в игре: {0}. Собрано целиком: {1}, начато: {2}.
+skills.constellations.legend=Взятые звёзды отмечены; в скобках у созвездия — сколько из него взято, что оно даёт и что требует.
+skills.constellations.gives=даёт: {0}
+skills.constellations.needs=требует: {0}
+skills.constellations.star=звезда {0}
+skills.constellations.notTaken=(не взята)
+
+# Карта набожности: прокачка звёзд мышью
+skills.devo.hint=Левый клик по звезде вкладывает очко, правый снимает. Колесо приближает, перетаскивание двигает карту.
+skills.devo.fit=Вся карта
+skills.devo.zoom=масштаб {0}%
+skills.devo.points=Очки набожности: {0}
+skills.devo.stars=Звёзд взято: {0} из {1}
+skills.devo.noPoints=Свободных очков набожности нет. Добавьте их в поле «Очки набожности» в главном окне.
+skills.devo.already=В эту звезду очко уже вложено.
+skills.devo.locked=Созвездие «{0}» ещё закрыто: не хватает сродства — {1}.
+skills.devo.parentFirst=Сначала надо взять «{0}» — эта звезда висит на ней.
+skills.devo.empty=В эту звезду очки не вложены.
+skills.devo.childFirst=На этой звезде висит взятая «{0}» — сначала снимите её.
+skills.devo.affinityHolds=Созвездие стоит целиком, и его сродство держит «{0}»: без него станет {1}.
+skills.devo.bindHint=Нажмите по звезде левой кнопкой, чтобы выбрать умение.
+
+# Небесная сила: на какое умение её повесить
+skills.bind.title=На какое умение повесить «{0}»
+skills.bind.none=Умение не назначено
+skills.bind.chosen=(выбрано)
+skills.bind.busy=(занято: {0})
+skills.bind.fromItem=(с вещи)
+skills.bind.legend=Красным — умения, которые персонаж ещё не выучил: их тоже можно выбрать, сила заработает, как только очки будут вложены.
+
+# Порталы
+skills.portals.tab=Порталы
+skills.portals.column=Разлом
+skills.portals.notBuilt=Список разломов не собран. Он читается из файлов мира игры и занимает около минуты.
+skills.portals.build=Собрать список разломов
+skills.portals.reading=Читаю файлы мира…
+skills.portals.readingWhat=Читаю файлы мира: {0}
+skills.portals.readError=Не удалось прочитать файлы мира: {0}
+skills.portals.layer=слой Riftgates на {0}: {1} записей
+skills.portals.openAll=Открыть все разломы на всех сложностях
+skills.portals.openDifficulty={0}: открыть все ({1} из {2})
+skills.portals.closeAll=Закрыть все разломы на всех сложностях?\n\nЭто уберёт из сохранения и те, которые персонаж нашёл сам. Рядом с сейвом остаётся резервная копия.
+skills.portals.closeOne=Закрыть все разломы на сложности «{0}»?\n\nЭто уберёт из сохранения и те, которые персонаж нашёл сам. Рядом с сейвом остаётся резервная копия.
+skills.portals.title=Разломы
+skills.portals.summary=Разломов в игре: {0}.   Открыто: {1}
+skills.portals.source=Список читается из файлов мира игры; правится только сохранение персонажа.
+skills.portals.open=открыт
+
+# Кого призывает умение — строки под подсказкой умения-призыва.
+skills.pet.summons=Призывает: {0}
+skills.pet.limit=до {0} разом
+skills.pet.lives={0} сек. жизни
+skills.pet.permanent=постоянный
+skills.pet.life={0} здоровья
+skills.pet.lifeNote=здоровье считаем по своим правилам, и оно может разойтись с игрой
+
+# Вложение очков в дереве: левый клик добавляет очко, правый снимает
+skills.edit.points=Очки умений: {0}
+skills.edit.hint=Левый клик вкладывает очко, правый снимает.
+skills.edit.noPoints=Свободных очков умений нет. Добавьте их в поле «Очки умений» в главном окне.
+skills.edit.atMax=Умение уже на пределе — {0}. То, что даёт снаряжение, идёт сверх предела и в сохранении не хранится.
+skills.edit.masteryFirst=Сначала полоса мастерства: вложите в неё очко, и дерево откроется.
+skills.edit.tierClosed=Этот столбец открывается на {0} уровне мастерства, а в полосе {1}.
+skills.edit.ownerFirst=Сначала надо взять «{0}» — это умение висит на нём.
+skills.edit.exclusive=Активным может быть только одно эксклюзивное умение, а им уже стало «{0}».
+skills.edit.empty=В это умение очки не вложены.
+skills.edit.ownerBusy=На этом умении висит «{0}», и в нём ещё есть очки.
+skills.edit.barLast=Последнее очко полосы — это само мастерство, его снимают сбросом подкласса.
+skills.edit.barHolds=«{0}» стоит в столбце, который открывается на {1} уровне мастерства.
+
+# ВКЛАДКА «РЕПУТАЦИЯ»: фракции и звания. Имена фракций, звания и их порядок даёт игра.
+skills.factions.tab=Репутация
+skills.factions.column=Фракция
+skills.factions.rank=Звание
+skills.factions.value=Репутация
+skills.factions.boost=Ускорение роста
+skills.factions.notes=Пометки
+skills.factions.summary=Фракций в игре: {0}.   В сохранении записей: {1}
+skills.factions.short=В сохранении {0} записей, а фракций в игре {1}: последних в нём ещё нет. Они появятся, когда персонажа запишет сама игра.
+skills.factions.source=Имена, звания и порядок читаются из файлов игры; правится только сохранение персонажа.
+skills.factions.unreadable=Не удалось прочитать фракции из файлов игры.
+skills.factions.showHidden=Показать и те фракции, которых игра в своей панели не показывает
+skills.factions.setRank=Звание:
+skills.factions.exact=Или число:
+skills.factions.apply=Применить к выбранным
+skills.factions.pickFirst=Сначала выберите в списке хотя бы одну фракцию.
+skills.factions.hidden=в панели игры не показана
+skills.factions.noGain=репутация не растёт
+skills.factions.boostTimes=×{0}

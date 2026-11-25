@@ -1,0 +1,52 @@
+# ПАНЕЛЬ ПЕРСОНАЖА (поля главного окна) и подсказки к характеристикам.
+
+character.name=Имя
+character.class=Класс
+character.file=Файл
+character.level=Уровень
+character.experience=Опыт
+character.physique=Телосложение
+character.cunning=Искусность
+character.spirit=Дух
+character.health=Здоровье
+character.energy=Энергия
+character.attributePoints=Очки атрибутов
+character.skillPoints=Очки умений
+character.devotionPoints=Очки набожности
+character.totalDevotion=Всего набожности
+character.money=Железо
+character.tributes=Подношения
+character.difficulties=Сложности
+character.difficulty.normal=Обычная, Ветеран
+character.difficulty.elite=Элита
+character.difficulty.ultimate=Абсолют
+
+# Правка чисел, которые игра считает сама
+character.freeEdit=Произвольное редактирование характеристик
+character.freeEdit.warning=Эти пять чисел игра считает сама из вложенных очков, надетых вещей и умений — формулы разобраны и сходятся с игрой до единицы.\n\nЕсли вписать сюда своё, сохранение начнёт расходиться с тем, что игра покажет на экране: она пересчитает здоровье и энергию по своим правилам, а характеристики оставит ваши.\n\nВсё равно разрешить правку?
+character.keptInSave=Хранится в сохранении отдельно от того, что игра показывает на экране.\nИтоговое здоровье и энергию игра считает сама — из вложенных очков, характеристик, вещей и умений, — и с этим числом они не совпадают.\nЧто именно здесь лежит, мы пока не выяснили, поэтому правку и закрыли.
+
+# Подсказка к характеристике
+character.tip.now={0}: сейчас {1}
+character.tip.own=в сохранении {0}, вложено очков {1}
+character.tip.fromGear=от вещей и умений: {0}
+character.tip.gives=Даёт (считается сверх базовых {0}):
+character.tip.percents=И проценты — тут базовые {0} тоже считаются:
+character.tip.percentLine=+{0}% {1}
+character.perPoint.life=+{0} здоровья за очко
+character.perPoint.energy=+{0} энергии за очко
+character.perPoint.defense=+{0} навыка защиты за очко
+character.perPoint.offense=+{0} навыка атаки за очко
+character.perPoint.lifeRegen=+{0} восстановления здоровья за очко
+character.perPoint.energyRegen=+{0} восстановления энергии за очко
+character.divided.physical=физического и проникающего урона
+character.divided.bleed=урона внутренними травмами и кровотечением
+character.divided.magic=магического урона
+character.divided.dots=остальных дотов
+character.divided.energyRegen=восстановления энергии
+character.needs.physique=Требуется для брони, оружия ближнего боя и щитов.
+character.needs.cunning=Требуется для оружия дальнего боя и части оружия ближнего боя.
+character.needs.spirit=Требуется для колец, амулетов и вещей заклинателя.
+character.hardcore=Хардкор
+character.revive=Воскресить
+character.revive.tip=Снимает отметку гибели. Проверьте в игре, что персонаж снова загружается.

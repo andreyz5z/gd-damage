@@ -1,0 +1,236 @@
+# OKNO „OBLICZANIE OBRAŻEŃ”: zakładki, przyciski, pola i listy wyboru.
+# Niżej objaśnienia na zakładkach i dziennik symulacji.
+
+damage.title=Obliczanie obrażeń — {0}
+damage.tab.timeline=Symulacja walki
+damage.tab.totals=Łączne bonusy
+damage.tab.hit=Obrażenia na trafienie
+damage.tab.target=Wróg
+damage.seconds={0} s
+damage.secondsPair={0} i {1}
+
+# Łączne bonusy
+damage.pickActive=Wybierz aktywne umiejętności…
+damage.activeFromSave=liczone według zapisu
+damage.activeChosen=wybrane: {0}
+damage.pickPets=Aktywne przywołańce…
+damage.petsNear=przywołańce w pobliżu
+
+# Obrażenia na trafienie
+damage.hit.what=Atakuj przez
+damage.hit.plain=Atak podstawowy (bez umiejętności)
+
+# Symulacja walki: pola i przycisk
+damage.run.seconds=Sekundy
+damage.run.seed=Ziarno
+damage.run.go=Uruchom kolejkę
+damage.run.press=Co naciskamy (wg odnowienia)
+damage.run.attack=Atak podstawowy
+damage.run.weapon=bronią
+damage.run.everyLabel=Bez odnowienia — naciskaj co
+damage.run.everyTail=s (0 — wg animacji)
+
+# Symulacja walki: pozycje list „co naciskamy” i „atak podstawowy”
+damage.press.buff=wzmocnienie
+damage.press.buffNotRolled=({0} — nie losujemy)
+damage.press.whenNotRolled={0} — nie losujemy, naciskamy wg odnowienia
+damage.press.every=bez odnowienia — naciskaj co {0} s
+damage.press.anim=bez odnowienia — wg animacji, co {0} s
+damage.press.noAnim=bez odnowienia — nie znaleziono animacji, podaj odstęp
+damage.press.noCooldown=bez odnowienia
+damage.press.starHits=gwiazda, zadaje obrażenia
+damage.press.pet=(przywołaniec „{0}”, naraz {1}, {2}, {3} ataków/s, umiejętności z obrażeniami: {4})
+damage.press.petLives=żyje {0} s
+damage.press.petPermanent=stały
+damage.press.none=brak umiejętności z obrażeniami do naciskania
+damage.attack.form=postać „{0}”   atakuje umiejętnością „{1}”
+damage.attack.ofForm=(postać „{0}”)
+damage.attack.channel=kanałowa, impuls co {0} s
+damage.attack.finale=raz na {0} trafień
+damage.attack.charges=ładunki do {0}
+damage.attack.byAnimation=bez odnowienia, wg animacji co {0} s
+
+# Wróg
+damage.target.load=Wczytaj listę wrogów z gry
+damage.target.reload=Utwórz ponownie listę wrogów
+damage.target.find=Szukaj po nazwie
+damage.target.level=Poziom
+damage.target.difficulty=Trudność
+damage.target.notLoaded=Lista wrogów nie jest jeszcze wczytana.
+damage.target.pressButton=Naciśnij przycisk powyżej — program utworzy listę wrogów. Ponowne tworzenie jest potrzebne tylko po aktualizacji gry.
+damage.target.nothing=Nic nie znaleziono.
+
+# ─── OBJAŚNIENIA NA ZAKŁADKACH ───
+
+# Łączne bonusy
+damage.totals.summary=Zsumowano z: założone przedmioty: {0} (ze składnikami i wzmocnieniami), bonusy zestawów: {1}, umiejętności pasywne: {2}, włączone umiejętności: {3}, gwiazdy poświęcenia: {4}.
+damage.totals.exact=[dokładnie]
+damage.totals.overCap=(+{0}% ponad maksimum)
+damage.totals.resistCap=limit {0}%
+damage.totals.armourRating=wartość pancerza {0}
+damage.totals.absorb=absorpcja {0}%
+damage.totals.armourNote=Własny pancerz przedmiotu idzie do jego miejsca, cała reszta do wszystkich sześciu naraz ({0}), a dopiero potem działa +{1}% pancerza. Wartość to średnia miejsc ważona udziałem trafień w danym obszarze. Absorpcja to bazowe 70% pomnożone przez „+% absorpcji pancerza”, nie więcej niż 100%.
+damage.totals.block=szansa na blok {0}%   wartość bloku {1}
+damage.totals.blockNote=Szansa na blok się sumuje — „szansa na blok” tarczy plus „+% szansy na blok” skądkolwiek — nie mnoży się. Wartość bloku to baza tarczy × (1 + % wartości bloku).
+damage.totals.pets=Bonusy do Przywołańców
+damage.totals.petsNote=Działają tylko na przywołane istoty i nie dotyczą ciebie. Źródła: {0}.
+damage.totals.petCapItem={0} {1}% (+{2}% ponad maksimum)
+damage.totals.petCapNote=Osiągnięto limit {0}%, a panel gry pokazuje już obciętą liczbę: {1}. Nadwyżka nie przepada: wrogowie obniżający odporności zjadają ją w pierwszej kolejności.
+damage.totals.missing=Czego jeszcze nie ma w tej sumie
+damage.totals.missingProcs=Umiejętności uruchamiane warunkowo zamiast stale aktywnych: procy mistrzostw, umiejętności z przedmiotów i procy poświęcenia.
+damage.totals.missingPressed=Umiejętności, które trzeba naciskać — ich bonusy trwają tylko kilka sekund.
+damage.totals.skipped=Pominięto: {0}.
+damage.totals.toggledOff=Wyłączone przełączane umiejętności: {0}. Włączone są w sumie — zapis pamięta, co jest włączone.
+damage.totals.chosenByHand=Wybrane ręcznie (przycisk „Wybierz aktywne umiejętności”): {0}.
+damage.totals.missingConversion=Konwersja obrażeń. Procenty do typu obrażeń pokazano tak, jak są, ale w grze działają po konwersji: „+200% obrażeń fizycznych” nic nie daje buildowi, który konwertuje wszystkie obrażenia fizyczne.
+damage.totals.missingScaling=Skalowanie obrażeń od atrybutów: Przebiegłość zwiększa obrażenia fizyczne i przebijające, Duchowość — magiczne. Wzory są znane, ale to kolejna warstwa.
+damage.totals.missingCap=Limit odporności. Bonusy zsumowano tu tak, jak są, więc liczba może przekroczyć 80% — w grze zatrzymuje się na limicie (80% plus bonusy „do maksimum”, pokazane obok). Nadwyżka ponad limit nie jest bezużyteczna: bossowie obniżają odporności.
+damage.totals.missingDifficulty=Kara do odporności za poziom trudności (−25 na Elicie, −50 na Ultimate) nie jest tu odjęta: zapis nie mówi, na jakim poziomie trudności jesteś teraz.
+damage.totals.notStacked=Co się nie sumowało
+damage.totals.notStackedNote=Obniżenie odporności typu „X obniżenia” i „X% obniżenia”, obniżenie obrażeń celu i jego celności nie sumują się: w każdej chwili działa najsilniejsze źródło. Tutaj wzięto najsilniejsze, nie sumę.
+damage.totals.notStackedItem={0}: źródła: {1}, wzięto najsilniejsze {2}
+
+# Podpowiedź „z czego to zsumowano” po najechaniu na wiersz sumy
+damage.terms.pet=(bonus do przywołańców)
+damage.terms.byMax=nie sumuje się: wzięto najsilniejsze ze źródeł ({0})
+damage.terms.summedOne=zsumowano ze źródeł: {0}
+damage.terms.summedMany=zsumowano ze źródeł: {0}
+damage.terms.winner=← działa
+damage.terms.total=łącznie {0}
+
+# Obrażenia na trafienie
+damage.hit.plainTitle=Atak podstawowy
+damage.hit.plainWeapon=Atak podstawowy: {0}
+damage.hit.skillTitle={0}   ({1}, poz. {2})
+damage.hit.weapon=broń: {0}
+damage.hit.attackSpeed={0} ataków na s   ({1}% szybkości ataku)
+damage.hit.castSpeed={0}% szybkości rzucania czarów
+damage.hit.castCapped=(osiągnięto limit {0}%)
+damage.hit.channel=kanałowa: impuls co {0} s
+damage.hit.perHit={0} – {1} na trafienie
+damage.hit.overTime=(na sekundę, {0} s)
+damage.hit.none=Brak obrażeń.
+damage.hit.bare=Bez efektów tymczasowych ({0}): {1} – {2} na trafienie — właśnie tę liczbę pokazuje panel w grze.
+damage.hit.how=Jak to obliczono
+damage.hit.howBase=Baza to obrażenia broni plus płaskie bonusy przedmiotów. Płaskie obrażenia od żywiołów dzielą się na trzy równe części między ogień, zimno i błyskawice.
+damage.hit.howConversion=Konwersje zabierają części bazy, a części się sumują, zamiast działać po kolei. Przebicie pancerza to ostatnia konwersja, z tego, co zostało.
+damage.hit.howMultiplier=Każda część jest mnożona przez (1 + atrybut/dzielnik + % typu + % żywiołów + % wszystkich obrażeń). Dzielniki: Przebiegłość/245 i /215, Duchowość/215 i /200.
+damage.hit.howTotal=Panel postaci w grze pokazuje „+X% obrażeń <typ>” jako procent TYPU PLUS „% wszystkich obrażeń” — w jednym wierszu.
+damage.hit.howTotalSome=Ta postać ma +{0}% wszystkich obrażeń, więc panel gry pokaże procent każdego typu o tyle większy niż nasz.
+damage.hit.howTotalNone=Ta postać nie ma „% wszystkich obrażeń”, więc procenty się zgodzą.
+damage.hit.howAll=„% wszystkich obrażeń” dotyczy KAŻDEGO rodzaju obrażeń, także obrażeń w czasie — nie ma wyjątków.
+damage.hit.howDots=Obrażenia w czasie pokazano na sekundę — tak zapisano je w danych, dzielić nie trzeba. Bonus do czasu trwania nie zmienia tej liczby: efekt trwa dłużej, ale na sekundę zadaje tyle samo.
+
+# Obrażenia na trafienie: odbicia
+damage.retaliation.title=Odbicia (kontratak)
+damage.retaliation.note=To PANEL „Odbicia” w cechach postaci, a nie część trafienia. Liczy się inaczej: atrybuty i procenty do typów obrażeń na niego nie wpływają, tylko „+% obrażeń odbicia” — masz +{0}%. Konwersje za to działają, i to te same co dla zwykłych obrażeń.
+damage.retaliation.note2=Kontratak działa tylko przeciw atakom wręcz, tylko na tego, kto cię uderzył, i tylko gdy naprawdę cię trafiono; sam nie może chybić i nie trafia krytycznie. Odbijanie obrażeń („X% otrzymanych obrażeń jest odbijane”) to COŚ INNEGO i w cechach postaci go nie ma: zależy od obrażeń tego, kto cię bije.
+
+# Obrażenia na trafienie: na rękę
+damage.hands.title=Ile to w każdej ręce
+damage.hands.both=To samo, co gra pokazuje w podpowiedzi umiejętności. Udział obrażeń od broni jest dla obu rąk TEN SAM ({0}%), a liczby w nawiasach się różnią, bo w rękach są różne bronie. W nawiasie są też obrażenia w czasie tej ręki: panel gry liczy je tak samo.
+damage.hands.oneMain=Wiersz jest JEDEN, bo umiejętność uderza jedną ręką — główną — a gra w podpowiedzi pokazuje dokładnie tyle samo wierszy. Która to ręka, zapisano w ANIMACJI umiejętności: każdy zestaw wyposażenia ma własny plik, a zdarzenia trafienia w nim wskazują ręce. Zmień broń na dwuręczną albo załóż tarczę — wiersz może się zmienić, także w grze.
+damage.hands.oneOff=Wiersz jest JEDEN, bo umiejętność uderza jedną ręką — drugą — a gra w podpowiedzi pokazuje dokładnie tyle samo wierszy. Która to ręka, zapisano w ANIMACJI umiejętności: każdy zestaw wyposażenia ma własny plik, a zdarzenia trafienia w nim wskazują ręce. Zmień broń na dwuręczną albo załóż tarczę — wiersz może się zmienić, także w grze.
+damage.hands.single=Ręka jest jedna, bo broń jest jedna. W nawiasie są też obrażenia w czasie tej ręki: panel gry liczy je tak samo.
+damage.hands.ownShare=w podpowiedzi samej umiejętności będzie mniej — tylko jej własny udział {0}%:
+damage.hands.lineMain={0}% obrażeń od broni w głównej ręce ({1} - {2})
+damage.hands.lineOff={0}% obrażeń od broni w drugiej ręce ({1} - {2})
+
+# Obrażenia na trafienie: z czego składa się umiejętność
+damage.parts.title=Z czego składa się ta umiejętność
+damage.parts.temporary=— efekt tymczasowy
+damage.parts.oneHandMain=— uderza jedną ręką, główną
+damage.parts.oneHandOff=— uderza jedną ręką, drugą
+damage.parts.weaponPct={0}% obrażeń od broni
+damage.parts.conversion=konwersja {0}%: {1} → {2}   (działa przed konwersjami postaci)
+damage.parts.notCounted=NIE ZSUMOWANO: {0}
+
+# Obrażenia na trafienie: trafienie przywołańca
+damage.pet.title={0}   (trafienie przywołańca „{1}”, {2})
+damage.pet.summonedBy=przywołany umiejętnością „{0}”
+damage.pet.withConversion=Obrażenia z konwersją — tak naprawdę uderza
+damage.pet.noNumbers=ta umiejętność nie ma liczb
+damage.pet.asGame=Jak pokazuje to gra — bez konwersji
+damage.pet.asGameNote=Gra nigdzie nie pokazuje konwersji przywołańca: zmierzono sześcioma liczbami i potwierdzono zrzutami — z „Znakiem Ghola” i bez niego opis umiejętności jest taki sam. Działa ona jednak tak samo jak u postaci.
+damage.pet.notYours=To trafienie PRZYWOŁAŃCA i nie da się go porównać z twoim: nie pochodzi z twojej broni, twoje procenty obrażeń do niego nie stosują się, stosują się bonusy do przywołańców.
+
+# Symulacja walki: pomoc przed pierwszym uruchomieniem
+damage.help.title=Kolejka trafień w czasie
+damage.help.press=Naciśnij „Uruchom kolejkę”: każdy zamach rozgrywa się osobno — trafienie, które ręce wyszły, i obrażenia KAŻDEGO wiersza własnym rzutem w jego przedziale. Wiersze pojawiają się od razu, w miarę liczenia. Na górze wynik: obrażenia na sekundę, mediana sum sekundowych, zdrowie celu i czas jego zabicia (TTK).
+damage.help.twoNumbers=DWIE LICZBY W WIERSZU: pierwsza to to, co DOTARŁO do celu, na rękę; w nawiasie „obrażenia bez premii” — to, co od nas wyszło: już z krytykiem, ale jeszcze bez bonusu rasowego, pancerza (obcina tylko fizyczne) i odporności z obniżeniami. Pierwsza liczba bywa też WIĘKSZA od drugiej: gdy nasze obniżenia zepchną odporność celu poniżej zera, przestaje ona obcinać i zaczyna wzmacniać. DPS, mediana, obrażenia na przebieg i TTK liczone są według tego, co DOTARŁO.
+damage.help.target=Cel pochodzi z zakładki „Wróg” — ten tam wybrany, z jego poziomem i poziomem trudności. Jeśli żaden nie jest wybrany, używany jest manekin treningowy z plików gry.
+damage.help.pets=PRZYWOŁAŃCE: zaznaczone przywoływane są na starcie, a potem wg odnowienia przywołania, aż dojdą do limitu swojego rodzaju; te, które uruchamiają się same (gwiazda, umiejętność przedmiotu), przychodzą też bez zaznaczenia. Każdy uderza własnym atakiem podstawowym i własnymi umiejętnościami z ich częstotliwością, a jego trafienie i krytyk losowane są tak jak twoje.
+damage.help.counted=Liczone są: zamachy, naciśnięte umiejętności, kanały, pula broni, procy, gwiazdy, raniące aury, obrażenia w czasie, stopnie krytyka, obniżenie odporności, bonus rasowy, obniżenie zdrowia, postacie (formy) i przywołańce.
+damage.help.seed=Ziarno sprawia, że przebieg się powtarza: to samo ziarno daje ten sam przebieg co do ostatniej cyfry. Zmień tylko je — zobaczysz rozrzut; zmień build przy tym samym ziarnie — zobaczysz, co zmienił build.
+
+# Symulacja walki: w trakcie przebiegu
+damage.run.building=Budowanie kolejki…
+damage.run.buildingNote=każde trafienie dostaje własne obrażenia z własnymi rzutami, a długi przebieg ma ich tysiące
+damage.run.progress=Budowanie kolejki…   {0} z {1} s   (wierszy: {2})
+
+# Symulacja walki: wynik
+damage.run.buffsUp=Włączone wzmocnienia: {0}   — trafiają do kolejki wg odnowienia na własny czas (bez czasu w zapisie — na cały przebieg) i zmieniają cechy, zamiast uderzać osobnym trafieniem
+damage.run.target=Cel: {0}
+damage.run.targetLevel=poziom {0}, trudność {1}
+damage.run.targetStats=zdolności defensywne {0}   pancerz {1}
+damage.run.hitChance=szansa trafienia {0}%
+damage.run.mainSpell={0} „{1}” zamiast ataku podstawowego: szybkość rzucania czarów {2}%, co {3} s, trafień na przebieg {4}
+damage.run.targetResists=odporności celu: {0}
+damage.run.gear=umiejętności z przedmiotów i zestawów:
+damage.run.queue=Kolejka
+damage.run.summary=Wynik przebiegu
+damage.run.dps=Obrażenia na sekundę (DPS)  {0}     mediana sum sekundowych {1}
+damage.run.total=obrażenia na przebieg {0} w {1} s
+damage.run.targetLife=zdrowie celu {0}
+damage.run.killedAt=zabity w {0} s (TTK)
+damage.run.dummyNote=— umownie: manekin w grze nie umiera
+damage.run.notKilled=w przebiegu nie zabity — zostało {0}%
+damage.run.percentLife=obniżenie zdrowia zabrało {0} (razy: {1})
+damage.run.percentLifeBlocked=jeszcze {0} razy odporność celu {1}% całkowicie je zniosła
+damage.run.swings=zamachy {0}, trafienia {1}, chybienia {2}, krytyki {3}
+damage.run.tier=stopień {0}: {1}
+damage.run.hands=ręce: obie {0}, pierwsza {1}, druga {2}
+damage.run.procs=samouruchamiające: procy {0} (ich obrażenia {1})
+damage.run.pool=pula broni {0}
+damage.run.silent=bez obrażeń {0}: {1}
+damage.run.pets=przywołańce: trafienia {0}, przywołania {1}, ich obrażenia {2}
+damage.run.petsShare=— {0}% całości
+damage.run.stars=gwiazdy poświęcenia
+damage.run.dots=obrażenia w czasie: nałożone {0}, odnowione {1}, ich obrażenia {2} z {3}
+damage.run.before=obrażenia bez premii wynosiły {0} — dotarło {1}% (bonus rasowy, pancerz, odporności z obniżeniami)
+damage.run.conditions=Warunki przebiegu
+damage.run.rolls=Wykonano rzutów przedziałów: {0} — po jednym na każdy wiersz obrażeń w każdym trafieniu.
+damage.run.critNote=Krytyki ze stopniami są liczone: jeden rzut decyduje o trafieniu i stopniu, a „+% obrażeń krytycznych” dodaje się do mnożnika stopnia. Sama SZANSA na krytyk zgadza się z grą przy silnych celach i jest zawyżona przy słabych — nie uwzględniono bonusów potworów z ich wyposażenia.
+damage.run.dotNote=Obrażenia w czasie nakładają się i tykają: jedno źródło ma JEDEN efekt — nowe trafienie przedłuża czas i podnosi obrażenia do najlepszych, zamiast zaczynać drugi. Wszystkie obrażenia od broni (obie ręce i umiejętności z udziałem broni) liczą się jako JEDNO źródło; umiejętności bez udziału broni są osobnymi źródłami.
+damage.run.noteRough=UPROSZCZONO: {0}
+damage.run.noteUnread=NIE ODCZYTANO: {0}
+damage.run.noteHint=WSKAZÓWKA: {0}
+damage.run.pressNote=Zaznaczone umiejętności naciskane są, gdy tylko się odnowią: na starcie wszystkie naraz, dalej każda wg własnego odnowienia (ze skróceniem od przedmiotów i modyfikatorów). Umiejętność uderzająca dwiema rękami uderza ZAWSZE obiema, a każda ręka chybia własnym rzutem.
+damage.run.procNote=PROCY i umiejętności „zamiast ataku podstawowego” celowo NIE figurują na liście zaznaczanych: nikt ich nie naciska. Rozgrywają się same — własnym rzutem przy każdym trafieniu i własnym odnowieniem.
+damage.run.silentNote=URUCHOMIONE BEZ OBRAŻEŃ — gwiazdy poświęcenia i umiejętności przedmiotów, które przywołują, nakładają wzmocnienie lub osłabienie. Ich rzut i odnowienie są prawdziwe; wzmocnienie działa przez swój czas, osłabienie trafia na cel, a przywołaniec wchodzi do puli i uderza własnymi wierszami.
+damage.run.failed=Przebieg się nie powiódł: {0}
+
+# Wróg: panel wroga
+damage.enemy.title={0}   ({1}, poziom {2}, trudność {3})
+damage.enemy.variants=W bazie jest zapisów o tej nazwie: {0} — różnią się tylko poziomem, na którym się je spotyka; wzięto najpełniejszy, a poziom wybiera się wyżej.
+damage.enemy.combat=Parametry bojowe
+damage.enemy.abilities=zdolności defensywne {0}   zdolności ofensywne {1}
+damage.enemy.life=zdrowie {0}   pancerz {1}
+damage.enemy.gearArmour=(w tym {0} z wyposażenia)
+damage.enemy.resists=Odporności
+damage.enemy.none=brak
+damage.enemy.hit=Trafianie
+damage.enemy.ourAttack=nasze zdolności ofensywne {0}   wobec jego obrony {1}
+damage.enemy.hitChance=szansa trafienia {0}%   szansa na krytyk {1}%
+damage.enemy.ourDefence=nasze zdolności defensywne {0}   wobec jego ataku {1}
+damage.enemy.getHit=szansa otrzymania ciosu {0}%   szansa otrzymania krytyka {1}%
+
+# Ranga wroga na liście i w nagłówku zakładki „Wróg”. Gra nie ma własnych słów dla rang.
+damage.enemy.rank.superBoss=nemezis
+damage.enemy.rank.boss=boss
+damage.enemy.rank.quest=zadaniowy
+damage.enemy.rank.hero=bohater
+damage.enemy.rank.champion=czempion
+damage.enemy.rank.common=zwykły
+damage.enemy.variantsShort=(zapisów: {0})
+damage.attack.byCooldown=zamiast broni, wg odnowienia co {0} s

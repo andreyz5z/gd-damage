@@ -1,0 +1,19 @@
+# ОКНО «АКТИВНЫЕ УМЕНИЯ».
+
+active.title=Активные умения — {0}
+active.none=У этого персонажа нет ни переключаемых умений, ни умений с вещей.
+active.source.devotionOn=набожность на «{0}»
+
+# Условия срабатывания умения — короткой подписью («условие «при блоке» не разыгрываем»).
+active.trigger.attack=при атаке
+active.trigger.attackCrit=при критической атаке
+active.trigger.lowHealth=при низком здоровье
+active.trigger.lowMana=при низкой энергии
+active.trigger.hitByEnemy=когда нас ударили
+active.trigger.hitByMelee=когда ударили в ближнем бою
+active.trigger.hitByProjectile=когда попали снарядом
+active.trigger.hitByCrit=когда по нам попали критом
+active.trigger.block=при блоке
+active.trigger.onKill=при убийстве
+active.trigger.castBuff=при накладывании усиления
+active.trigger.onEquip=при надевании

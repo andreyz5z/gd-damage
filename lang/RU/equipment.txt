@@ -1,0 +1,18 @@
+# ПАНЕЛЬ СНАРЯЖЕНИЯ: подписи слотов (они же встают в сообщения «в слот … не надевается»).
+
+equipment.weapon1=Оружие I
+equipment.offhand1=Щит I / II рука
+equipment.weapon2=Оружие II
+equipment.offhand2=Щит II / II рука
+equipment.head=Голова
+equipment.neck=Шея
+equipment.medal=Медаль
+equipment.shoulders=Плечи
+equipment.chest=Торс
+equipment.hands=Кисти
+equipment.waist=Пояс
+equipment.legs=Ноги
+equipment.ring1=Кольцо 1
+equipment.feet=Ступни
+equipment.relic=Реликвия
+equipment.ring2=Кольцо 2

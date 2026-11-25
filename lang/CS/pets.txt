@@ -1,0 +1,23 @@
+# OKNO „AKTIVNÍ SPOJENCI“ a řádky spojenců v ostatních oknech.
+# Názvy spojenců a jejich dovedností pocházejí ze hry.
+
+pets.title=Aktivní spojenci — {0}
+pets.checkbox={0}   ({1}, úr. {2})
+pets.limit=až {0} najednou
+pets.lifetime=doba života {0} s
+pets.life=zdraví: základ {0} × (1 + {1}% vlastní + {2}% naše) = {3}
+pets.lifeAura=zdraví: základ {0} × (1 + {1}% vlastní + {2}% naše + {3}% aury) = {4}
+pets.armour=zbroj: základ {0} × (1 + {1}% vlastní + {2}% naše) = {3}   (hra zbroj spojenců nikdy neukazuje — toto je naše vlastní číslo)
+pets.auras=pod aurami: {0}
+pets.none=Tato postava nemá dovednost, která by vyvolala spojence.
+pets.note=Zdraví: základ × (1 + vlastní% + bonusy spojenců% + aury%). Zranění dovedností se násobí bonusy spojenců — pravidlo bylo změřeno na sedmi číslech ze hry.
+
+pets.level=úr. {0}
+pets.levelUnknown=záznam spojence neuvádí úroveň
+pets.attack={0}   (spojenec „{1}“, {2})
+
+# Přeměna spojence
+pets.conversion.title=Přeměna tohoto spojence
+pets.conversion.capped=Z jednoho typu neodejde víc než sto procent: stovka se dělí mezi příjemce podle jejich podílů. V závorkách — co je v předmětech skutečně zapsáno.
+pets.conversion.line={0}% přeměna: {1} na {2}
+pets.conversion.recorded=(v záznamu {0}%)

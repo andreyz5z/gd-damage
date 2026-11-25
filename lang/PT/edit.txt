@@ -1,0 +1,67 @@
+# JANELA «EDITAR ITEM» e suas subjanelas: bônus de ascensão, bônus de conclusão da relíquia.
+# As linhas de atributos do item vêm da dica (parte do texto é do próprio jogo).
+
+edit.title=Editar item
+edit.stop=Parar a busca
+edit.relicBonus=Bônus de conclusão (relíquia)…
+edit.affixes=Prefixo e sufixo…
+edit.ascension=Bônus de ascensão…
+edit.reroll=Sortear o item de novo ao acaso
+edit.findMax=Buscar o sorteio máximo
+edit.findValues=Buscar por valores
+edit.close=Fechar
+edit.notSaved=(encontrado, não gravado)
+edit.secondEnd=└ a outra ponta da mesma linha
+edit.hiddenRolls=Sorteado, mas não mostrado na dica
+edit.perSecond=({0} por 1 s — é o que o campo guarda)
+edit.range=de {0}…{1}
+
+# Painel direito: como a busca anda e como termina
+edit.rerolled=O item foi sorteado de novo.\nNada foi buscado — um item aleatório é válido por si só.\nPara gravá-lo no jogo salvo, pressione «Aplicar».
+edit.badNumber=Não foi possível ler o número da linha «{0}»: {1}
+edit.busy=Buscando…
+edit.busyProgress=Buscando… {0} milhões de 2147 verificados
+edit.searching=Buscando o item testando valores.\nO tempo depende da velocidade do computador.
+edit.found=Todos os números escolhidos foram encontrados. Pressione «Aplicar» para gravar o item no jogo salvo.
+edit.impossible=Este atributo nunca tem esse valor:
+edit.impossibleHint=Digite um dos valores mostrados à direita da linha.
+edit.cancelled=A busca foi interrompida.
+edit.notFound=Estes atributos não podem ser encontrados juntos. Desmarque os que importam menos para você e tente de novo.
+edit.hardest=O campo mais difícil foi: {0}. Todas as opções foram testadas; um item assim não pode existir no jogo.
+edit.same=O item já é assim. Não há nada a mudar.
+edit.saved=Gravado no jogo salvo.\nO item em si, seus afixos, componente e ascensão não foram tocados — continua sendo um item que o jogo poderia ter derrubado.
+edit.relicCleared=O bônus de conclusão foi removido.
+edit.relicSet=Bônus de conclusão: {0}
+edit.ascensionCleared=O bônus de ascensão foi removido.
+edit.ascensionSet=Bônus de ascensão: {0}
+edit.report.scanned={0} verificados em {1} s
+edit.report.found=ENCONTRADO:   ({0})
+edit.report.impossible={0}: este campo nunca dá o valor {1}
+
+# Janela do bônus de ascensão
+edit.affixSet=Prefixo: {0}\nSufixo: {1}
+edit.affix.title=Prefixo e sufixo
+edit.affix.head=Agora: prefixo — {0};   sufixo — {1}\nSão mostrados apenas os que o jogo põe em itens deste tipo; um ponto marca os raros (verdes).\nOs números da lista são os SORTEADOS para este item: um afixo é sorteado, e o que você vê aqui é o que recebe.
+edit.affix.prefix=Prefixo
+edit.affix.suffix=Sufixo
+edit.affix.none=nenhum
+edit.affix.gone=(o jogo não o dá mais — não está na lista)
+edit.affix.clear=Remover esta parte
+edit.affix.level=Exige nível {0}
+edit.affix.building=Lendo as tabelas de itens do jogo — uma vez após atualizar o jogo.
+
+edit.asc.title=Bônus de ascensão
+edit.asc.head=São mostrados apenas os bônus a que um item deste tipo tem direito — uma arma de uma mão não tem direito aos de duas mãos, e vice-versa.
+# edit.asc.unknownClass=desconhecida
+# edit.asc.noPool=não determinada
+edit.asc.allPools=todas as reservas, não só as dele
+
+# Janela do bônus de conclusão da relíquia
+edit.relic.title=Bônus de conclusão da relíquia
+edit.relic.head=Relíquia: {0}   —   nível de criação: {1}\nOs números da lista são os SORTEADOS para este item: o bônus de conclusão é sorteado, e o que você vê aqui é o que recebe.
+edit.relic.unknown=desconhecido
+edit.relic.noKind=não indicado
+# edit.relic.noTable=esta relíquia NÃO tem nenhuma — nunca recebe bônus de conclusão
+edit.relic.allTables=todas as tabelas, não só a dela
+edit.relic.noTableList=Esta relíquia não tem tabela de bônus — nunca recebe bônus de conclusão.
+edit.relic.jitter=(dispersão {0}%)

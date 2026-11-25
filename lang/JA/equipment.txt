@@ -1,0 +1,18 @@
+# 装備パネル: スロット名 (「… スロットに装備できません」のメッセージにも出ます)。
+
+equipment.weapon1=武器 I
+equipment.offhand1=オフハンド I
+equipment.weapon2=武器 II
+equipment.offhand2=オフハンド II
+equipment.head=頭
+equipment.neck=首
+equipment.medal=メダル
+equipment.shoulders=肩
+equipment.chest=胸
+equipment.hands=手
+equipment.waist=腰
+equipment.legs=脚
+equipment.ring1=指輪 1
+equipment.feet=足
+equipment.relic=レリック
+equipment.ring2=指輪 2

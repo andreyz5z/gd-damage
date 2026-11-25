@@ -1,0 +1,19 @@
+# 「主动技能」窗口。
+
+active.title=主动技能 — {0}
+active.none=该人物没有可切换的技能，也没有物品赋予的技能。
+active.source.devotionOn=绑定到「{0}」的星座信仰
+
+# 技能触发条件，简写（「«格挡时» 的条件不进行判定」）。
+active.trigger.attack=攻击时
+active.trigger.attackCrit=暴击攻击时
+active.trigger.lowHealth=生命低时
+active.trigger.lowMana=能量低时
+active.trigger.hitByEnemy=被击中时
+active.trigger.hitByMelee=被近战击中时
+active.trigger.hitByProjectile=被投射物击中时
+active.trigger.hitByCrit=被暴击时
+active.trigger.block=格挡时
+active.trigger.onKill=击杀时
+active.trigger.castBuff=施放增益时
+active.trigger.onEquip=装备时

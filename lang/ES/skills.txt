@@ -1,0 +1,150 @@
+# VENTANA «HABILIDADES»: maestrías, descripciones de habilidades, devoción, portales.
+# Los nombres de maestrías, habilidades y constelaciones vienen del juego.
+
+skills.title=Habilidades — {0}
+skills.levelParen=(nivel {0})
+
+# Elegir y abandonar una maestría
+skills.choose.first=Primera maestría
+skills.choose.second=Segunda maestría
+skills.choose.intro=Una maestría cuenta como elegida en cuanto entra el primer punto en su barra, y eso es justo lo que hacemos, gastando un punto de habilidad. La misma maestría no se puede elegir dos veces.
+skills.choose.opensAt=En el juego se desbloquea en el nivel {0}.
+skills.choose.freePoints=Puntos de habilidad libres: {0}.
+skills.noPoints.text=No hay puntos de habilidad libres, y una maestría se elige metiendo un punto en su barra.\n\nAñade un punto en el campo «Puntos de habilidad» de la ventana principal y entonces podrás gastarlo aquí. No se permite gastar un punto que no existe: el personaje habría gastado más de lo que ganó.
+skills.noPoints.title=No hay suficientes puntos de habilidad
+skills.take.ask=¿Elegir la maestría «{0}»?\n\nUn punto de habilidad irá a su barra: así se elige una maestría. Libres ahora: {1}.
+skills.take.undo=Puedes cambiar de opinión con el botón «Abandonar maestría»: los puntos vuelven.
+skills.take.title=Elegir maestría
+skills.drop.ask=¿Abandonar la maestría «{0}»?\n\nSe sacarán todos los puntos que se pusieron en ella —{1} en total, incluido el de la barra— y volverán a los libres. Las habilidades de esta maestría desaparecerán, y las estrellas de devoción vinculadas a ellas quedarán sin vincular.
+skills.drop.title=Abandonar maestría
+skills.drop.button=Abandonar la maestría «{0}»
+skills.drop.secondFirst=Abandona primero la segunda maestría
+skills.mastery.fallbackName=maestría {0}
+skills.mastery.tooEarlyFirst=En el juego la primera maestría se desbloquea en el nivel {0}, y el personaje tiene {1}.
+skills.mastery.tooEarlySecond=En el juego la segunda maestría se desbloquea en el nivel {0}, y el personaje tiene {1}.
+
+# Descripción de una habilidad
+skills.kind.mastery=maestría
+skills.kind.active=habilidad activa
+skills.kind.weaponPool=ataque de arma por defecto (habilidad de la reserva de armas)
+skills.kind.modifier=modificador de habilidad
+skills.kind.transmuter=transmutador
+skills.kind.passive=habilidad pasiva
+skills.tip.poolChance=Probabilidad de usarse en lugar del ataque de arma por defecto: {0}%
+skills.tip.poolShared=Ataques de arma por defecto elegidos: {0}, sus probabilidades suman {1}%. Por ataque solo se activa uno de ellos.
+skills.tip.poolSharedFull=Ataques de arma por defecto elegidos: {0}, sus probabilidades suman {1}%. Por ataque solo se activa uno de ellos; el ataque simple con el arma ya no ocurrirá.
+skills.tip.dependsOn=Se desbloquea mediante: {0}
+skills.tip.level=Nivel actual: {0}
+skills.tip.levelWithBonus=Nivel actual: {0} + {1} de objetos
+skills.tip.max=(se puede subir hasta {0})
+skills.tip.maxWithGear=(se puede subir hasta {0}, límite con objetos {1})
+skills.tip.recordNumbers=Estos son los números del registro de la habilidad, antes de las bonificaciones del personaje. En su propia descripción el juego los muestra ya multiplicados por todo el daño que llevas; por eso sus cifras son mayores. Daño con bonificaciones: «Cálculo de daño…» → «Daño por golpe».
+skills.tip.recordNumbersHand=Salvo la línea amarilla sobre la mano: ahí el paréntesis ya lleva el daño de esa mano, igual que lo muestra el juego.
+skills.tip.celestialPower=Poder Celestial
+skills.tip.fromItem=De un objeto: {0}
+skills.tip.nextLevel=Siguiente nivel: {0}
+
+# Devoción
+skills.devotion.tab=Devoción
+skills.devotion.spent=Puntos de devoción gastados: {0} de {1} ganados, libres {2}
+skills.devotion.split=De ellos, {0} son estrellas pasivas (sumadas abajo) y {1} son estrellas con habilidad (mostradas aparte).
+skills.devotion.sums=Bonificaciones totales
+skills.devotion.none=ninguna
+skills.devotion.granted=Habilidades otorgadas
+skills.devotion.boundTo=vinculada a: {0}
+skills.devotion.unbound=sin vincular: no se activará
+skills.devotion.levels=Cambiar el nivel de las habilidades de devoción
+skills.devotion.starOf={0}, estrella {1}
+skills.devotion.total=total {0}
+skills.devotionLevels.title=Nivel de las habilidades de devoción — {0}
+skills.devotionLevels.of=de {0}
+skills.devotionLevels.none=El personaje no tiene estrellas de devoción que otorguen una habilidad.
+skills.constellations.count=Constelaciones en el juego: {0}. Completas: {1}, empezadas: {2}.
+skills.constellations.legend=Las estrellas tomadas están marcadas; entre paréntesis junto a una constelación: cuántas de sus estrellas están tomadas, qué da y qué requiere.
+skills.constellations.gives=da: {0}
+skills.constellations.needs=requiere: {0}
+skills.constellations.star=estrella {0}
+skills.constellations.notTaken=(no tomada)
+
+# El mapa de devoción: poner puntos en las estrellas con el ratón
+skills.devo.hint=El clic izquierdo en una estrella añade un punto, el derecho lo retira. La rueda acerca, arrastrar mueve el mapa.
+skills.devo.fit=Mapa entero
+skills.devo.zoom=escala {0} %
+skills.devo.points=Puntos de devoción: {0}
+skills.devo.stars=Estrellas tomadas: {0} de {1}
+skills.devo.noPoints=No quedan puntos de devoción libres. Añádelos en el campo «Puntos de devoción» de la ventana principal.
+skills.devo.already=Esta estrella ya tiene un punto.
+skills.devo.locked=La constelación «{0}» sigue cerrada: falta afinidad — {1}.
+skills.devo.parentFirst=Primero hay que tomar «{0}»: esta estrella depende de ella.
+skills.devo.empty=Esta estrella no tiene puntos.
+skills.devo.childFirst=«{0}» depende de esta estrella y está tomada: retírala primero.
+skills.devo.affinityHolds=La constelación está completa y su afinidad sostiene «{0}»: sin ella quedaría {1}.
+skills.devo.bindHint=Haz clic izquierdo en la estrella para elegir una habilidad.
+
+# Poder Celestial: a qué habilidad vincularlo
+skills.bind.title=A qué habilidad vincular «{0}»
+skills.bind.none=Ninguna habilidad asignada
+skills.bind.chosen=(elegida)
+skills.bind.busy=(ocupada por: {0})
+skills.bind.fromItem=(de un objeto)
+skills.bind.legend=En rojo — habilidades que el personaje aún no ha aprendido: también se pueden elegir, y el poder funcionará en cuanto se les pongan puntos.
+
+# Portales
+skills.portals.tab=Portales
+skills.portals.column=Portal
+skills.portals.notBuilt=La lista de portales no está creada. Se lee de los archivos del mundo del juego y tarda alrededor de un minuto.
+skills.portals.build=Crear la lista de portales
+skills.portals.reading=Leyendo los archivos del mundo…
+skills.portals.readingWhat=Leyendo los archivos del mundo: {0}
+skills.portals.readError=No se pudieron leer los archivos del mundo: {0}
+skills.portals.layer=Capa Riftgates en {0}: {1} entradas
+skills.portals.openAll=Abrir todos los portales en todas las dificultades
+skills.portals.openDifficulty={0}: abrir todos ({1} de {2})
+skills.portals.closeAll=¿Cerrar todos los portales en todas las dificultades?\n\nEsto también quita los que el personaje encontró por su cuenta. Junto a la partida queda una copia de seguridad.
+skills.portals.closeOne=¿Cerrar todos los portales en la dificultad «{0}»?\n\nEsto también quita los que el personaje encontró por su cuenta. Junto a la partida queda una copia de seguridad.
+skills.portals.title=Portales
+skills.portals.summary=Portales en el juego: {0}.   Abiertos: {1}
+skills.portals.source=La lista se lee de los archivos del mundo del juego; solo se edita la partida del personaje.
+skills.portals.open=abierto
+
+# Lo que invoca la habilidad: las líneas bajo la descripción de una habilidad de invocación.
+skills.pet.summons=Invoca: {0}
+skills.pet.limit=hasta {0} a la vez
+skills.pet.lives={0} s de vida
+skills.pet.permanent=permanente
+skills.pet.life={0} de vida
+skills.pet.lifeNote=la vida la calculamos con nuestras propias reglas y puede diferir del juego
+
+# Repartir puntos en el árbol: clic izquierdo añade un punto, clic derecho lo retira
+skills.edit.points=Puntos de habilidad: {0}
+skills.edit.hint=El clic izquierdo añade un punto, el derecho lo retira.
+skills.edit.noPoints=No quedan puntos de habilidad libres. Añádelos en el campo «Puntos de habilidad» de la ventana principal.
+skills.edit.atMax=La habilidad ya está en su tope de {0}. Lo que añade el equipo va por encima del tope y no se guarda en la partida.
+skills.edit.masteryFirst=Primero la barra de maestría: pon un punto en ella y el árbol se abrirá.
+skills.edit.tierClosed=Esta columna se abre en el nivel de maestría {0}, y la barra está en {1}.
+skills.edit.ownerFirst=Primero hay que tomar «{0}»: esta habilidad depende de ella.
+skills.edit.exclusive=Solo puede estar activa una habilidad exclusiva, y ya lo está «{0}».
+skills.edit.empty=Esta habilidad no tiene puntos.
+skills.edit.ownerBusy=«{0}» depende de esta habilidad y todavía tiene puntos.
+skills.edit.barLast=El último punto de la barra es la maestría misma: devuelve la maestría en su lugar.
+skills.edit.barHolds=«{0}» está en una columna que se abre en el nivel de maestría {1}.
+
+# PESTAÑA «REPUTACIÓN»: facciones y rangos. Los nombres, los rangos y su orden los da el juego.
+skills.factions.tab=Reputación
+skills.factions.column=Facción
+skills.factions.rank=Rango
+skills.factions.value=Reputación
+skills.factions.boost=Ritmo de aumento
+skills.factions.notes=Notas
+skills.factions.summary=Facciones en el juego: {0}.   Registros en la partida: {1}
+skills.factions.short=La partida guarda {0} registros, mientras que el juego tiene {1} facciones: las últimas todavía no están en ella. Aparecerán cuando el propio juego guarde el personaje.
+skills.factions.source=Los nombres, los rangos y el orden se leen de los archivos del juego; solo se edita la partida del personaje.
+skills.factions.unreadable=No se han podido leer las facciones de los archivos del juego.
+skills.factions.showHidden=Mostrar también las facciones que el juego oculta en su propio panel
+skills.factions.setRank=Rango:
+skills.factions.exact=O un número:
+skills.factions.apply=Aplicar a lo seleccionado
+skills.factions.pickFirst=Seleccione primero al menos una facción de la lista.
+skills.factions.hidden=no se muestra en el panel del juego
+skills.factions.noGain=la reputación no aumenta
+skills.factions.boostTimes=×{0}

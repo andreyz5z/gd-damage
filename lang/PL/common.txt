@@ -1,0 +1,27 @@
+# WSPÓLNE DLA KILKU OKIEN: przyciski, skąd pochodzi umiejętność, części przedmiotu.
+
+common.apply=Akceptuj
+common.cancel=Anuluj
+common.search=Szukaj:
+common.nothingFound=Nic nie znaleziono.
+common.put=Ustaw
+common.clearBonus=Usuń bonus
+
+# Poziomy trudności gry (zakładka „Szczeliny”, zakładka wroga)
+common.difficulty.normal=Prosty
+common.difficulty.elite=Elita
+common.difficulty.ultimate=Ultimate
+
+# Skąd pochodzi umiejętność (podtytuły w oknach przywołańców i aktywnych umiejętności)
+common.source.mastery=umiejętność mistrzostwa
+common.source.devotion=poświęcenie
+common.source.item=z przedmiotu: {0}
+common.source.set=zestaw: {0} ({1})
+common.source.setName=zestaw: {0}
+
+# Część przedmiotu, z którą przyszła umiejętność: „z przedmiotu: Nazwa (prefiks)”
+common.part.prefix=(prefiks)
+common.part.suffix=(sufiks)
+common.part.component=(składnik)
+common.part.augment=(wzmocnienie)
+common.part.ascension=(wyniesienie)

@@ -1,0 +1,57 @@
+# GrimTools からのキャラクター取り込み（調べは MECHANICS 106）
+import.button=GrimTools からキャラクターを取り込む
+import.warning=GrimTools のデータに合わせてキャラクターを装備させます。現在身に着けている装備は破棄され、キャラクターの数値はすべて取り込んだデータで上書きされます。リンクの中に認識できない要素があった場合、その枠は変更されません。本当に続けますか？
+import.title=GrimTools からのキャラクター取り込み
+import.paste=ビルドのリンクを貼ってください — 例: https://www.grimtools.com/calc/2ELApkPN
+import.go=取り込む
+import.close=閉じる
+import.seedNote=装備は同じものが入りますが、幅のある数値はこちらのものになります。ビルドには振れ幅の値が一切ありません。各装備は後から編集画面で調整できます。
+import.badLink=GrimTools のビルドのリンクには見えません。
+import.err.build=ページは開きましたが、ビルドが入っていません。ビルドのページを指すリンクかどうか確かめてください。
+import.err.other=うまくいきませんでした: {0}
+import.step.page=ビルドのページを読んでいます…
+import.step.database=GrimTools のデータベースを取得中…
+import.step.match=ゲームの記録と突き合わせています…
+import.result.gear=装備した数: {0}、空にした枠: {1}
+import.result.skills=スキル: {0}、祈祷の星: {1}、セレスチャル パワーの結びつき: {2}
+import.result.bio=レベル {0}、体力 {1}、狡猾 {2}、精神 {3}
+import.missed.items=認識できなかった装備: {0} — これらの枠はそのままにしました（{1}）
+
+# 作業の進みぐあいと終わり。10月2日、利用者はそのどちらも見えなかった。
+import.step.reading=GrimTools のデータベースを読み解いています…
+import.step.haveDatabase=GrimTools のデータベースは読み解き済みです — 取得の必要はありません。
+import.step.dress=キャラクターに装備させています…
+import.status.database=GrimTools のデータベースを取得中、{1} 件のうち {0} 件目: {3} MB のうち {2} MB
+import.status.databaseSoFar=GrimTools のデータベースを取得中、{1} 件のうち {0} 件目: {2} MB
+import.status.done=終わりました。装備が済みました — この窓を閉じるとキャラクターが見えます。
+import.status.donePartly=終わりましたが、すべては移せませんでした — 詳しくは上をご覧ください。
+import.status.failed=うまくいきませんでした。
+# 不具合はそれぞれの名前で。「うまくいきませんでした」ひとつで片づけない。
+import.err.network=GrimTools のサイトにつながりません。インターネットの状態を確かめて、もう一度お試しください。
+import.err.page=ビルドのページが開きませんでした — サイトの返事は {0} です。リンクを確かめてください。サイトが今つながらないのかもしれません。
+import.err.timeout=GrimTools のサイトから応答がありません。インターネット接続を確認してください。サイトが停止している可能性もあります。
+import.err.database=GrimTools のデータベースが読めませんでした — 移すものがありません。もう一度お試しください。
+import.err.catalog=ゲームの装備目録を組み立てられませんでした。ゲームのフォルダーの指定が正しいか確かめてください。
+# 移せなかったものは件数で。向こうの番号は誰にも何も伝えません。
+import.missed.parts=認識できなかった装備の部品: {0} — 装備は着けましたが、それらは入っていません。
+import.missed.skills=認識できなかったスキル: {0}
+import.missed.powers=認識できなかったセレスチャル パワー: {0}
+import.missed.shapes=認識できなかった変身スキルの結びつき: {0}
+import.missed.repeats=二度来た記録: {0} — 重なった分は省きました。
+# 枠の名前。ビルドは weapon1Alt や amulet と呼ぶが、人に見せる名前ではない。
+import.slot.head=頭
+import.slot.amulet=首
+import.slot.chest=胴
+import.slot.legs=脚
+import.slot.feet=足
+import.slot.hands=手
+import.slot.ring1=指輪 1
+import.slot.ring2=指輪 2
+import.slot.waist=腰
+import.slot.shoulders=肩
+import.slot.medal=メダル
+import.slot.relic=レリック
+import.slot.weapon1=武器
+import.slot.weapon2=盾または左手
+import.slot.weapon1Alt=武器（第二の組）
+import.slot.weapon2Alt=盾または左手（第二の組）

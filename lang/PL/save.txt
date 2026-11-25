@@ -1,0 +1,8 @@
+# BŁĘDY ZAPISU (w pasku stanu „Błąd zapisu: …” i w oknie „Nie udało się zapisać”).
+
+save.error.unparsed=nie zapisano: bloku {0} nie rozłożono na pola (zapis z nieznanej wersji gry)
+save.error.writtenUnparsed=zapisany plik zawiera nierozłożony blok {0}
+save.error.reread=zapisanego pliku nie da się poprawnie odczytać
+save.error.rekey=plik nie przetrwa zmiany klucza szyfrowania
+save.error.length={0} (długość {1} zamiast {2})
+save.error.offset={0}: różnica przy przesunięciu {1}

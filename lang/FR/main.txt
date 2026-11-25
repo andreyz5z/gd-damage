@@ -1,0 +1,110 @@
+# FENÊTRE PRINCIPALE : titre, boutons du menu, inventaire, barre d'état, messages.
+#
+# Format de tous les fichiers de langue : clé=texte. Une ligne commençant par # est un commentaire.
+# \n est un saut de ligne. {0}, {1} sont les endroits où le programme insère un nombre ou un nom ;
+# ils doivent rester dans la traduction, leur ordre peut changer.
+# Les noms des objets, des classes et des compétences ne sont pas ici — c'est le jeu qui les fournit.
+
+main.title=Grim Dawn — visualiseur de personnage
+main.title.character=Grim Dawn — {0}
+
+# Boutons du menu
+main.menu.open=Ouvrir une sauvegarde
+main.menu.skills=Compétences
+main.menu.damage=Calcul des dégâts
+main.menu.settings=Paramètres
+
+# Inventaire et cache
+main.edit.button=Modifier l'objet
+main.edit.armed=Cliquez sur un objet
+main.trash.idle=Supprimer un objet — prenez-le et cliquez ici
+main.trash.armed=Supprimer l'objet
+main.stash.title=Cache du personnage
+main.stash.none=Cache du personnage : aucun onglet
+main.stash.count=Cache du personnage : {0} onglets, {1} objets
+main.bags.main=Principal
+main.bags.extra=Sac {0}
+
+# La ligne sous les champs du personnage
+main.summary=Sacs {0}, objets {1}\nCache : onglets {2}, objets {3}
+main.summary.noInventory=PAS ENCORE D'INVENTAIRE : le personnage a été créé dans le menu et n'est jamais entré dans le jeu.\nEntrez dans le jeu avec lui au moins une fois — les sacs et l'équipement apparaîtront alors.\nCache : onglets {0}, objets {1}
+
+# Enregistrer et ouvrir
+main.status.saved=Enregistré {0}
+main.status.savedBackup=Enregistré {0}   copie de secours : {1}
+main.status.saveError=ERREUR D'ENREGISTREMENT : {0}
+main.saveError.title=Échec de l'enregistrement
+main.open.title=Choisissez player.gdc
+main.open.filter=Sauvegarde Grim Dawn (player.gdc)|player.gdc|Tous les fichiers|*.*
+main.loadError.title=Impossible de lire la sauvegarde
+main.noInventory.text=Ce personnage n'a pas encore d'inventaire.\n\nIl a été créé dans le menu du jeu et n'est jamais entré dans le monde, donc la sauvegarde ne contient ni sacs, ni emplacements d'équipement, ni jeux d'armes — le jeu les crée à la première entrée dans le monde.\n\nEntrez dans le jeu avec ce personnage au moins une fois, et l'équipement pourra alors être modifié. Tout le reste — niveau, attributs, compétences, dévotion — est déjà disponible.
+main.noInventory.title=Pas encore d'inventaire
+main.status.openFirst=Ouvrez d'abord une sauvegarde.
+
+# Le dossier du jeu
+main.status.noGame=Le dossier de Grim Dawn est introuvable — ouvrez « Paramètres… » et indiquez-le.
+main.status.gameBase=Base de données du jeu : {0}   langue : {1}
+main.status.gameError=Impossible d'ouvrir la base de données du jeu : {0}
+main.askGame.text=Le dossier de Grim Dawn est introuvable.\n\nLa recherche parcourt les bibliothèques Steam, les entrées GOG et des installateurs dans le registre, ainsi que les dossiers de jeux habituels sur tous les disques. Si le jeu est ailleurs, indiquez son dossier — celui qui contient database\\database.arz.
+main.askGame.title=Où Grim Dawn est-il installé ?
+
+# Le catalogue d'objets
+main.catalog.title=Catalogue d'objets
+main.catalog.stale=Les fichiers du jeu ont changé après la création du catalogue — une mise à jour semble être sortie.\nRecréer le catalogue d'objets ?
+main.catalog.missing=Le catalogue d'objets n'est pas encore créé.\nLe créer à partir des fichiers du jeu ? Cela prend quelques secondes.
+main.status.catalog=Catalogue : {0} objets
+main.status.catalogBuilding=Création du catalogue d'objets…
+main.status.catalogBuilt=Catalogue créé : {0} objets
+main.status.catalogError=Impossible de créer le catalogue : {0}
+
+# L'objet en main
+main.status.noIcon=Cet objet n'a pas d'icône dans la base de données du jeu, sa taille en cases est donc inconnue — il ne peut pas être ajouté en toute sécurité.
+main.status.bulkLimit=Pile de {0} prise — c'est la limite pour ce type.
+main.status.bulkNoLimit=Pile de {0} prise (le jeu n'indique aucune limite pour ce type — nous en avons pris cent, comme pour les autres).
+main.status.newInHand=Nouvel objet en main : {0} ({1}x{2})  —  cliquez sur une place libre d'un sac ou de la cache, sur un emplacement d'équipement ou sur un en-tête d'onglet. Échap annule.
+main.status.inHand=En main : {0} ({1}x{2})  —  cliquez sur une place libre d'un sac ou de la cache, sur un en-tête d'onglet, sur un emplacement d'équipement ou sur la barre « Supprimer l'objet ». Échap annule.
+main.status.takenOff=Retiré en main : {0}  —  mettez-le dans un sac, dans la cache, dans un autre emplacement adapté, ou supprimez-le. Échap annule.
+main.status.sizeUnknown=La taille de cet objet est inconnue (pas d'icône dans la base de données du jeu) — il ne peut pas être déplacé, sinon il risquerait de dépasser de la grille.
+main.status.noRoom=Ça ne rentre pas ici — il faut {0}x{1} cases libres. Clic droit ou Échap annule.
+main.status.noStacking=« {0} » ne s'empile pas — une case libre est nécessaire ici.
+main.status.stackFull=Cette pile est déjà pleine : {0}. Posez-le ailleurs.
+main.status.stackFullOf=Cette pile est déjà pleine : {0} sur {1}. Posez-le ailleurs.
+main.status.merged={0} empilés : la pile contient maintenant {1}.
+main.status.mergedRest={0} empilés : la pile contient maintenant {1}, {2} restent en main — posez-les sur une place libre ou supprimez-les.
+main.status.addedBag=Ajouté dans un sac : {0}
+main.status.addedStash=Ajouté dans la cache : {0}
+main.status.unequippedBag=Retiré et rangé dans un sac : {0}
+main.status.unequippedStash=Retiré et rangé dans la cache : {0}
+main.status.movedBag=Déplacé dans un sac : {0}
+main.status.movedStash=Déplacé dans la cache : {0}
+main.status.equipped=Équipé : {0} → {1}
+main.status.reequipped=Déplacé : {0} → {1}
+main.status.discarded=Le nouvel objet a été abandonné : {0} (il n'a jamais été dans la sauvegarde).
+main.status.deleted=Supprimé : {0}   (le fichier d'origine a été gardé à côté en .bak)
+main.status.noRoomBag=Pas de place {0}x{1} dans ce sac.
+main.status.noRoomStash=Pas de place {0}x{1} dans cet onglet de la cache.
+main.status.cancelled=Annulé : {0} est resté à sa place.
+
+# Pourquoi ça ne s'équipe pas
+main.why.noInventory=Ce personnage n'a pas encore d'inventaire : il a été créé dans le menu et n'est jamais entré dans le jeu. Entrez dans le jeu avec lui au moins une fois — le jeu créera lui-même les sacs, les emplacements d'équipement et les jeux d'armes, et ils pourront alors être modifiés.
+main.why.sameSlot=L'objet est déjà dans cet emplacement.
+main.why.wrongSlot=« {0} » ne va pas dans l'emplacement « {1} ».
+main.why.slotBusy=L'emplacement « {0} » est occupé — retirez d'abord ce qui y est équipé.
+main.why.level=« {0} » requiert le niveau {1}, le personnage est au niveau {2}.
+main.why.twoHanded=Une arme à deux mains occupe les deux mains — libérez d'abord la main gauche.
+main.why.offHandBusy=Une arme à deux mains est dans la main principale — elle occupe aussi la main gauche.
+
+# Modifier un objet
+main.status.editArmed=Cliquez sur un objet — la fenêtre de modification des statistiques s'ouvrira. Cliquez à nouveau sur le bouton pour annuler.
+main.status.editCancelled=Modification annulée — le clic a manqué l'objet.
+main.status.editNoSeed=Il n'y a rien à rechercher sur cet objet : il ne provient pas de la sauvegarde.
+main.status.editUnchanged=L'objet n'a pas été modifié.
+main.status.editDone=L'objet a été modifié et enregistré.
+
+# Ce qui manque pour porter un objet (barre d'état).
+main.need.level=niveau {0} (actuel {1})
+
+# Poser un composant ou un ajout sur un objet (2 octobre). Ce qui va où vient des enregistrements du jeu.
+main.status.partAttached=Posé : {0} → {1}
+main.status.partReplaced=Posé : {0} → {1}, à la place de « {2} »
+main.status.partWrongItem=« {0} » ne se pose pas sur « {1} ».

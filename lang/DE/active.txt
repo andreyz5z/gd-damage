@@ -1,0 +1,19 @@
+# FENSTER „AKTIVE FÄHIGKEITEN“.
+
+active.title=Aktive Fähigkeiten — {0}
+active.none=Dieser Charakter hat weder umschaltbare Fähigkeiten noch Fähigkeiten von Gegenständen.
+active.source.devotionOn=Devotion, gebunden an «{0}»
+
+# Auslösebedingungen von Fähigkeiten, kurz („die Bedingung «beim Blocken» wird nicht ausgewürfelt“).
+active.trigger.attack=bei Angriff
+active.trigger.attackCrit=bei kritischem Angriff
+active.trigger.lowHealth=bei niedrigem Leben
+active.trigger.lowMana=bei niedriger Energie
+active.trigger.hitByEnemy=wenn wir getroffen werden
+active.trigger.hitByMelee=bei Nahkampftreffer
+active.trigger.hitByProjectile=bei Projektiltreffer
+active.trigger.hitByCrit=bei kritischem Treffer gegen uns
+active.trigger.block=beim Blocken
+active.trigger.onKill=beim Töten
+active.trigger.castBuff=beim Wirken einer Verstärkung
+active.trigger.onEquip=beim Anlegen

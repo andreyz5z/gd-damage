@@ -1,0 +1,71 @@
+# FONTI DEI BONUS: etichette degli addendi nel suggerimento «di cosa è fatto» della scheda «Bonus totali».
+# Un colpo ritrova il suo addendo proprio da queste etichette, per questo ognuna è costruita in un solo punto.
+# IMPORTANTE NEL TRADURRE: le etichette delle parti dell'oggetto (totals.part.*) devono essere diverse tra loro,
+# altrimenti righe di parti diverse condividerebbero lo stesso tiro di danno. Lo controlla --langtest.
+
+totals.part.prefix=(prefisso)
+totals.part.suffix=(suffisso)
+totals.part.component=(componente)
+totals.part.relicBonus=(bonus di completamento)
+totals.part.augment=(aumento)
+totals.part.modifier=(modificatore)
+totals.part.ascension=(ascensione)
+totals.setShort=set: {0}
+totals.fromItem=da un oggetto: {0} ({1})
+totals.devotion=devozione: {0}
+totals.skill=abilità: {0} (liv. {1})
+totals.toggled=attivata: {0} (liv. {1})
+totals.skillMod=modificatore di abilità: {0}
+totals.toggledMod=attivato, modificatore di abilità: {0}
+totals.chosenOn={0} — attivato a mano
+totals.chosenOff={0} — disattivato a mano
+totals.gateItem={0} (da un oggetto) — {1}
+totals.gateDevotion={0} (devozione) — {1}
+
+totals.gate.needDualAny=né due armi da mischia né due a distanza a una mano
+totals.gate.needDualMelee=nessuna doppia arma impugnata
+totals.gate.needDualRanged=nessuna coppia di armi a distanza a una mano
+totals.gate.needRanged=nessuna arma a distanza
+totals.gate.needGuns=servono due pistole o un fucile
+totals.gate.needEmptyHands=un'arma in mano
+totals.gate.wrongWeapon=arma sbagliata in mano
+
+# TITOLI DEI GRUPPI della scheda «Bonus totali». «Resistenze», «Ritorsioni», «Difese» e «Attributi» vengono dal
+# gioco (il suo pannello del personaggio); queste quattro righe sono solo di riserva.
+totals.group.damage=Danno
+totals.group.overTime=Danno nel tempo
+totals.group.retaliation=Ritorsioni
+totals.group.debuff=Cosa viene tolto al bersaglio
+totals.group.resist=Resistenze
+totals.group.defence=Difese
+totals.group.attributes=Attributi
+totals.group.skills=Abilità
+totals.group.other=Altro
+
+# Zone dell'armatura. Normalmente dal gioco (il suo pannello dell'armatura); questa è la riserva.
+totals.zone.head=Testa
+totals.zone.shoulders=Spalle
+totals.zone.chest=Torace
+totals.zone.arms=Braccia
+totals.zone.legs=Gambe
+totals.zone.feet=Piedi
+
+# Cosa ha raggiunto il limite nelle evocazioni: «… al limite: caos 84% (+12% oltre il massimo), stordimento …».
+totals.capWord.elemental=elementale
+totals.capWord.stun=stordimento
+totals.capWord.freeze=congelamento
+totals.capWord.trap=immobilizzazione
+totals.capWord.petrify=pietrificazione
+totals.capWord.convert=controllo mentale
+
+# Nomi delle resistenze. Dal gioco (il suo pannello del personaggio); questa è la riserva, con le sue parole.
+totals.resist.fire=Fuoco
+totals.resist.cold=Freddo
+totals.resist.lightning=Elettricità
+totals.resist.poison=Veleno e Acido
+totals.resist.pierce=Perforazione
+totals.resist.aether=Etere
+totals.resist.chaos=Caos
+totals.resist.life=Vitalità
+totals.resist.bleeding=Sanguinamento
+totals.resist.physical=Fisica

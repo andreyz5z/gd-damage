@@ -1,0 +1,36 @@
+# ANMERKUNGEN ZUR TREFFERBERECHNUNG (Reiter „Schaden pro Treffer“, Abschnitt „Wie das berechnet wurde“).
+
+model.bareHands=In der Haupthand liegt keine Waffe. Der Schaden der Faust selbst wird nicht gezählt — nur was Fähigkeiten, Devotion und Gegenstände geben; im Spiel hat ein Charakter mit bloßen Händen ein paar Punkte mehr physischen Schaden.
+model.dualDot=Beim Kampf mit zwei Waffen wird der Schaden über Zeit nicht pro Hand aufgeteilt: {0} ist 0,75 der Summe aus dem Schaden über Zeit BEIDER Hände und dem eigenen des Charakters, wobei jede Quelle EINMAL gezählt wird. Pro Hand zeigt das Spiel „Schaden über Zeit dieser Hand + der des Charakters“ vollständig, daher kann die Zeile „pro Treffer“ sowohl größer als auch kleiner als eine Hand sein. So wird nur der Schaden über Zeit behandelt, den die Waffe selbst trägt (eine Komponente darin zählt nicht).
+model.plainAttack=Das ist der Standardwaffenangriff mit der Waffe der Haupthand. Eine Fähigkeit lässt sich in der Liste oben wählen.
+model.skill=Fähigkeit «{0}», Stufe {1}.
+model.skillNoWeapon=Sie hat keinen Waffenschadensanteil — daher geht die Waffe gar nicht in diesen Treffer ein, und die flachen Boni der Gegenstände auch nicht: Gezählt wird nur der eigene Schaden der Fähigkeit.
+model.skillWeapon={0}% Waffenschaden: Dieser Faktor wirkt auf den Schaden der Waffe samt ihrem Schaden über Zeit, aber nicht auf den eigenen flachen Schaden der Fähigkeit.
+model.charge=Die Fähigkeit wird aufgeladen: {0}% bei der letzten Ladung. Das Spielfenster rechnet mit diesem Wert auch ohne aufgebaute Ladungen, und der Faktor wirkt nur auf den Waffenschadensanteil — der eigene flache Schaden der Fähigkeit bleibt unberührt. Der Tooltip der Fähigkeit selbst trägt diesen Faktor nicht: Dort steht der Anteil als {1}%.
+model.modifiers=In diesen Treffer eingerechnete Fähigkeitsmodifikatoren: {0}. Ihre Prozente gehören zum Angriff, nicht zum Charakter — deshalb fehlen sie im Reiter der Gesamtboni. Das Spiel rechnet sie ebenfalls ein: Für «Schlagfrequenz» zeigt es 210 Grad und 5 Ziele, und das sind die Zahlen von «Kampfgeist».
+model.temporaryIn=Hier ist ein vorübergehender Effekt der Fähigkeit eingerechnet: {0}. Er wirkt, wenn die Fähigkeit trifft, und hält einige Sekunden — solange du weiter angreifst, bleibt er also aktiv. Das Spielfenster zeigt die Fähigkeit aber OHNE ihn, vergleiche das Fenster also mit dem Wert ohne vorübergehende Effekte (unten).
+model.temporaryOut=Vorübergehende Effekte ({0}) sind hier nicht eingerechnet.
+model.retaliation=Die Fähigkeit fügt dem Treffer {0}% des Vergeltungsschadens des Charakters hinzu — das wird gezählt und nach Typ aufgeteilt. REST: Für «Menhirs Bollwerk» ergibt die Regel 1089 Feuer statt der nötigen 1092, also 0,28% daneben; woher diese drei Punkte kommen, ist nicht geklärt.
+model.notCounted=Nicht eingerechnet: {0}.
+model.notModelled=Nicht berücksichtigt: das Stapeln von Schaden über Zeit aus verschiedenen Quellen, kritische Treffer, Boni gegen eine Monsterart (sie multiplizieren ganz am Ende) und die Resistenzen des Ziels.
+
+# Namen der Schadensarten in den Zeilen „Schaden pro Treffer“ und Vergeltung: „1234 Feuerschaden“.
+model.type.Physical=Physischer Schaden
+model.type.Pierce=Durchschlagsschaden
+model.type.Fire=Feuerschaden
+model.type.Cold=Kälteschaden
+model.type.Lightning=Blitzschaden
+model.type.Poison=Säureschaden
+model.type.Life=Lebenskraftschaden
+model.type.Aether=Ätherschaden
+model.type.Chaos=Chaosschaden
+model.type.Bleeding=Blutung
+
+# Namen des Schadens über Zeit: „2072 Verbrennung pro Sekunde“.
+model.dot.Physical=Wundschaden
+model.dot.Fire=Verbrennung
+model.dot.Cold=Frostbrand
+model.dot.Lightning=Stromschlag
+model.dot.Poison=Gift
+model.dot.Life=Lebenskraftverfall
+model.dot.Bleeding=Blutung

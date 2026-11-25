@@ -1,0 +1,71 @@
+# 보너스 출처: «합계 보너스» 탭의 «구성» 툴팁에 나오는 항목 라벨.
+# 공격은 바로 이 라벨로 자기 항목을 찾으므로, 각 라벨은 한 곳에서만 만듭니다.
+# 번역 시 주의: 아이템 부위 라벨 (totals.part.*)은 서로 달라야 합니다 — 그렇지 않으면 서로 다른
+# 부위의 줄이 하나의 데미지 추첨을 공유하게 됩니다. --langtest가 확인합니다.
+
+totals.part.prefix=(접두사)
+totals.part.suffix=(접미사)
+totals.part.component=(컴포넌트)
+totals.part.relicBonus=(완성 보너스)
+totals.part.augment=(증강제)
+totals.part.modifier=(변형)
+totals.part.ascension=(승천)
+totals.setShort=세트: {0}
+totals.fromItem=아이템에서: {0} ({1})
+totals.devotion=디보션: {0}
+totals.skill=스킬: {0} (Lv. {1})
+totals.toggled=켜짐: {0} (Lv. {1})
+totals.skillMod=스킬 변형: {0}
+totals.toggledMod=켜짐, 스킬 변형: {0}
+totals.chosenOn={0} — 수동으로 켬
+totals.chosenOff={0} — 수동으로 끔
+totals.gateItem={0} (아이템에서) — {1}
+totals.gateDevotion={0} (디보션) — {1}
+
+totals.gate.needDualAny=쌍수 근접 무기도, 한손 원거리 무기 두 자루도 없음
+totals.gate.needDualMelee=쌍수 무기가 아님
+totals.gate.needDualRanged=한손 원거리 무기가 두 자루가 아님
+totals.gate.needRanged=원거리 무기가 없음
+totals.gate.needGuns=권총 두 자루나 소총이 필요함
+totals.gate.needEmptyHands=무기를 들고 있음
+totals.gate.wrongWeapon=들고 있는 무기가 맞지 않음
+
+# «합계 보너스» 탭의 그룹 제목. «저항력», «보복», «방어», «능력치»는 게임 (캐릭터 패널)에서 가져옵니다.
+# 이 네 줄은 대체용입니다.
+totals.group.damage=데미지
+totals.group.overTime=지속 데미지
+totals.group.retaliation=보복
+totals.group.debuff=대상에게서 빼앗는 것
+totals.group.resist=저항력
+totals.group.defence=방어
+totals.group.attributes=능력치
+totals.group.skills=스킬
+totals.group.other=기타
+
+# 방어구 부위. 보통 게임 (방어구 패널)에서 가져옵니다. 이것은 대체용입니다.
+totals.zone.head=머리
+totals.zone.shoulders=어깨
+totals.zone.chest=가슴
+totals.zone.arms=팔
+totals.zone.legs=다리
+totals.zone.feet=신발
+
+# 펫에서 한도에 닿은 것: «… 한도: 혼돈 84% (+12% 최대치 초과), 기절 …».
+totals.capWord.elemental=원소
+totals.capWord.stun=기절
+totals.capWord.freeze=빙결
+totals.capWord.trap=속박
+totals.capWord.petrify=석화
+totals.capWord.convert=정신 지배
+
+# 저항력 이름. 게임 (캐릭터 패널)에서 가져옵니다. 이것은 대체용이며, 게임의 말 그대로입니다.
+totals.resist.fire=화염
+totals.resist.cold=냉기
+totals.resist.lightning=번개
+totals.resist.poison=독과 산
+totals.resist.pierce=관통
+totals.resist.aether=에테르
+totals.resist.chaos=혼돈
+totals.resist.life=생기
+totals.resist.bleeding=출혈
+totals.resist.physical=물리

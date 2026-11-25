@@ -1,0 +1,12 @@
+# УМЕНИЯ С УРОНОМ: строка в списке «чем бьём» и части умения («Из чего состоит это умение»).
+
+attack.title={0}   ({1}, ур. {2})
+attack.weaponPct={0}% урона оружием
+attack.part={0} (ур. {1})
+attack.transmuter={0} (трансмутер, ур. {1})
+attack.transmuterOrphan={0} — трансмутер (ур. {1}): родителя найти не удалось
+attack.fromItemInForm=от вещи в облике: {0}
+attack.fromItem=от вещи: {0}
+attack.pool=(вместо обычной атаки, {0}%)
+attack.poolNoChance=(вместо обычной атаки)
+attack.onHit=(срабатывает при ударе, {0}%)

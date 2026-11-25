@@ -1,0 +1,150 @@
+# FENÊTRE « COMPÉTENCES » : maîtrises, infobulles des compétences, dévotion, failles.
+# Les noms des maîtrises, des compétences et des constellations viennent du jeu.
+
+skills.title=Compétences — {0}
+skills.levelParen=(niveau {0})
+
+# Choisir et abandonner une maîtrise
+skills.choose.first=Première maîtrise
+skills.choose.second=Deuxième maîtrise
+skills.choose.intro=Une maîtrise compte comme choisie dès que le premier point entre dans sa barre — c'est exactement ce que nous faisons, en dépensant un point de compétence. La même maîtrise ne peut pas être choisie deux fois.
+skills.choose.opensAt=Dans le jeu, elle s'ouvre au niveau {0}.
+skills.choose.freePoints=Points de compétences libres : {0}.
+skills.noPoints.text=Il n'y a pas de point de compétence libre, et une maîtrise se choisit en mettant un point dans sa barre.\n\nAjoutez un point dans le champ « Points de compétences » de la fenêtre principale, et il pourra alors être dépensé ici. Dépenser un point qui n'existe pas n'est pas permis : le personnage aurait dépensé plus qu'il n'a gagné.
+skills.noPoints.title=Pas assez de points de compétences
+skills.take.ask=Choisir la maîtrise « {0} » ?\n\nUn point de compétence ira dans sa barre — c'est ainsi qu'une maîtrise devient choisie. Libres en ce moment : {1}.
+skills.take.undo=Vous pouvez changer d'avis avec le bouton « Abandonner la maîtrise » — les points reviennent.
+skills.take.title=Choix d'une maîtrise
+skills.drop.ask=Abandonner la maîtrise « {0} » ?\n\nChaque point qui y a été mis sera retiré — {1} au total, point de la barre compris — et rendu aux points libres. Les compétences de cette maîtrise disparaîtront, et les étoiles de dévotion qui y sont liées resteront sans lien.
+skills.drop.title=Abandon d'une maîtrise
+skills.drop.button=Abandonner la maîtrise « {0} »
+skills.drop.secondFirst=Abandonnez d'abord la deuxième maîtrise
+skills.mastery.fallbackName=maîtrise {0}
+skills.mastery.tooEarlyFirst=Dans le jeu, la première maîtrise s'ouvre au niveau {0}, et le personnage est au niveau {1}.
+skills.mastery.tooEarlySecond=Dans le jeu, la deuxième maîtrise s'ouvre au niveau {0}, et le personnage est au niveau {1}.
+
+# Infobulle d'une compétence
+skills.kind.mastery=maîtrise
+skills.kind.active=compétence active
+skills.kind.weaponPool=attaque armée par défaut (compétence de la réserve d'armes)
+skills.kind.modifier=modificateur de compétence
+skills.kind.transmuter=transmutateur
+skills.kind.passive=compétence passive
+skills.tip.poolChance=Chance d'être utilisée au lieu de l'attaque armée par défaut : {0} %
+skills.tip.poolShared=Attaques armées par défaut choisies : {0}, leurs chances totalisent {1} %. Une seule d'entre elles se déclenche par attaque.
+skills.tip.poolSharedFull=Attaques armées par défaut choisies : {0}, leurs chances totalisent {1} %. Une seule d'entre elles se déclenche par attaque ; l'attaque armée simple n'aura plus lieu du tout.
+skills.tip.dependsOn=Débloquée par : {0}
+skills.tip.level=Niveau actuel : {0}
+skills.tip.levelWithBonus=Niveau actuel : {0} + {1} des objets
+skills.tip.max=(peut monter jusqu'à {0})
+skills.tip.maxWithGear=(peut monter jusqu'à {0}, plafond avec les objets {1})
+skills.tip.recordNumbers=Ce sont les nombres de la fiche de la compétence, avant les bonus du personnage. Dans sa propre infobulle, le jeu les montre déjà multipliés par tous les dégâts que vous portez — c'est pourquoi ses chiffres sont plus grands. Dégâts avec les bonus : « Calcul des dégâts… » → « Dégâts par coup ».
+skills.tip.recordNumbersHand=Sauf la ligne jaune sur la main : la parenthèse contient déjà les dégâts de cette main, exactement comme le jeu les montre.
+skills.tip.celestialPower=Pouvoir céleste
+skills.tip.fromItem=D'un objet : {0}
+skills.tip.nextLevel=Niveau suivant : {0}
+
+# Dévotion
+skills.devotion.tab=Dévotion
+skills.devotion.spent=Points de Dévotion dépensés : {0} sur {1} gagnés, libres {2}
+skills.devotion.split=Dont {0} étoiles passives (additionnées ci-dessous) et {1} étoiles avec une compétence (montrées à part).
+skills.devotion.sums=Bonus totaux
+skills.devotion.none=aucun
+skills.devotion.granted=Compétences accordées
+skills.devotion.boundTo=liée à : {0}
+skills.devotion.unbound=liée à rien — ne se déclenchera pas
+skills.devotion.levels=Changer le niveau des compétences de dévotion
+skills.devotion.starOf={0}, étoile {1}
+skills.devotion.total=total {0}
+skills.devotionLevels.title=Niveau des compétences de dévotion — {0}
+skills.devotionLevels.of=sur {0}
+skills.devotionLevels.none=Le personnage n'a aucune étoile de dévotion qui accorde une compétence.
+skills.constellations.count=Constellations dans le jeu : {0}. Complètes : {1}, commencées : {2}.
+skills.constellations.legend=Les étoiles prises sont marquées ; entre parenthèses à côté d'une constellation — combien de ses étoiles sont prises, ce qu'elle donne et ce qu'elle requiert.
+skills.constellations.gives=donne : {0}
+skills.constellations.needs=requiert : {0}
+skills.constellations.star=étoile {0}
+skills.constellations.notTaken=(non prise)
+
+# La carte de dévotion : placer des points dans les étoiles à la souris
+skills.devo.hint=Le clic gauche sur une étoile place un point, le clic droit le reprend. La molette zoome, le glisser déplace la carte.
+skills.devo.fit=Carte entière
+skills.devo.zoom=zoom {0} %
+skills.devo.points=Points de Dévotion : {0}
+skills.devo.stars=Étoiles prises : {0} sur {1}
+skills.devo.noPoints=Plus aucun point de Dévotion libre. Ajoutez-en dans le champ « Points de Dévotion » de la fenêtre principale.
+skills.devo.already=Cette étoile a déjà un point.
+skills.devo.locked=La constellation « {0} » est encore fermée : il manque de l'affinité — {1}.
+skills.devo.parentFirst=Il faut d'abord prendre « {0} » — cette étoile en dépend.
+skills.devo.empty=Aucun point n'est placé dans cette étoile.
+skills.devo.childFirst=« {0} » dépend de cette étoile et est prise — reprenez-la d'abord.
+skills.devo.affinityHolds=La constellation est complète, et son affinité soutient « {0} » : sans elle il resterait {1}.
+skills.devo.bindHint=Cliquez sur l'étoile avec le bouton gauche pour choisir une compétence.
+
+# Pouvoir céleste : à quelle compétence l'accrocher
+skills.bind.title=À quelle compétence accrocher « {0} »
+skills.bind.none=Aucune compétence assignée
+skills.bind.chosen=(choisie)
+skills.bind.busy=(occupée par : {0})
+skills.bind.fromItem=(d'un objet)
+skills.bind.legend=En rouge — les compétences que le personnage n'a pas encore apprises : elles sont choisissables aussi, et le pouvoir fonctionnera dès que des points y seront placés.
+
+# Failles
+skills.portals.tab=Failles
+skills.portals.column=Faille
+skills.portals.notBuilt=La liste des failles n'est pas créée. Elle est lue dans les fichiers du monde du jeu et prend environ une minute.
+skills.portals.build=Créer la liste des failles
+skills.portals.reading=Lecture des fichiers du monde…
+skills.portals.readingWhat=Lecture des fichiers du monde : {0}
+skills.portals.readError=Impossible de lire les fichiers du monde : {0}
+skills.portals.layer=Couche Riftgates à {0} : {1} entrées
+skills.portals.openAll=Ouvrir toutes les failles dans toutes les difficultés
+skills.portals.openDifficulty={0} : tout ouvrir ({1} sur {2})
+skills.portals.closeAll=Fermer toutes les failles dans toutes les difficultés ?\n\nCela retire aussi celles que le personnage a trouvées lui-même. Une copie de secours reste à côté de la sauvegarde.
+skills.portals.closeOne=Fermer toutes les failles de la difficulté « {0} » ?\n\nCela retire aussi celles que le personnage a trouvées lui-même. Une copie de secours reste à côté de la sauvegarde.
+skills.portals.title=Failles
+skills.portals.summary=Failles dans le jeu : {0}.   Ouvertes : {1}
+skills.portals.source=La liste est lue dans les fichiers du monde du jeu ; seule la sauvegarde du personnage est modifiée.
+skills.portals.open=ouverte
+
+# Ce que la compétence invoque — les lignes sous l'infobulle d'une compétence d'invocation.
+skills.pet.summons=Invoque : {0}
+skills.pet.limit=jusqu'à {0} à la fois
+skills.pet.lives={0} s de durée de vie
+skills.pet.permanent=permanent
+skills.pet.life={0} de santé
+skills.pet.lifeNote=nous calculons la santé selon nos propres règles, elle peut différer du jeu
+
+# Placer des points dans l'arbre : clic gauche ajoute un point, clic droit le reprend
+skills.edit.points=Points de compétence : {0}
+skills.edit.hint=Le clic gauche place un point, le clic droit le reprend.
+skills.edit.noPoints=Plus aucun point de compétence libre. Ajoutez-en dans le champ « Points de compétence » de la fenêtre principale.
+skills.edit.atMax=La compétence est déjà à son maximum de {0}. Ce que l'équipement ajoute passe au-dessus et n'est pas conservé dans la sauvegarde.
+skills.edit.masteryFirst=La barre de maîtrise d'abord : placez-y un point et l'arbre s'ouvre.
+skills.edit.tierClosed=Cette colonne s'ouvre au niveau de maîtrise {0}, et la barre est à {1}.
+skills.edit.ownerFirst=Il faut d'abord prendre « {0} » — cette compétence en dépend.
+skills.edit.exclusive=Une seule compétence exclusive peut être active, et c'est déjà « {0} ».
+skills.edit.empty=Aucun point n'est placé dans cette compétence.
+skills.edit.ownerBusy=« {0} » dépend de cette compétence et contient encore des points.
+skills.edit.barLast=Le dernier point de la barre est la maîtrise elle-même — rendez plutôt la maîtrise.
+skills.edit.barHolds=« {0} » se trouve dans une colonne qui s'ouvre au niveau de maîtrise {1}.
+
+# ONGLET « RÉPUTATION » : factions et rangs. Les noms, les rangs et leur ordre viennent du jeu.
+skills.factions.tab=Réputation
+skills.factions.column=Faction
+skills.factions.rank=Rang
+skills.factions.value=Réputation
+skills.factions.boost=Vitesse de gain
+skills.factions.notes=Remarques
+skills.factions.summary=Factions dans le jeu : {0}.   Entrées dans la sauvegarde : {1}
+skills.factions.short=La sauvegarde contient {0} entrées alors que le jeu compte {1} factions : les dernières n'y sont pas encore. Elles apparaîtront quand le jeu lui-même enregistrera le personnage.
+skills.factions.source=Les noms, les rangs et l'ordre sont lus dans les fichiers du jeu ; seule la sauvegarde du personnage est modifiée.
+skills.factions.unreadable=Impossible de lire les factions dans les fichiers du jeu.
+skills.factions.showHidden=Afficher aussi les factions que le jeu masque dans son propre panneau
+skills.factions.setRank=Rang :
+skills.factions.exact=Ou un nombre :
+skills.factions.apply=Appliquer à la sélection
+skills.factions.pickFirst=Sélectionnez d'abord au moins une faction dans la liste.
+skills.factions.hidden=non affichée dans le panneau du jeu
+skills.factions.noGain=la réputation n'augmente pas
+skills.factions.boostTimes=×{0}

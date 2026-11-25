@@ -1,0 +1,52 @@
+# PANEL DEL PERSONAJE (campos de la ventana principal) y descripciones emergentes de los atributos.
+
+character.name=Nombre
+character.class=Clase
+character.file=Archivo
+character.level=Nivel
+character.experience=Experiencia
+character.physique=Constitución
+character.cunning=Astucia
+character.spirit=Espíritu
+character.health=Vida
+character.energy=Energía
+character.attributePoints=Puntos de atributo
+character.skillPoints=Puntos de habilidad
+character.devotionPoints=Puntos de devoción
+character.totalDevotion=Devoción total
+character.money=Hierro
+character.tributes=Tributos
+character.difficulties=Dificultades
+character.difficulty.normal=Normal, Veterana
+character.difficulty.elite=Épica
+character.difficulty.ultimate=Legendaria
+
+# Editar los números que el juego calcula por sí mismo
+character.freeEdit=Editar atributos libremente
+character.freeEdit.warning=El juego calcula por sí mismo estos cinco números a partir de los puntos gastados, los objetos equipados y las habilidades; las fórmulas se conocen y coinciden exactamente con el juego.\n\nSi escribes aquí tus propios valores, la partida dejará de coincidir con lo que el juego muestra en pantalla: recalculará la vida y la energía según sus propias reglas y conservará tus atributos.\n\n¿Permitir la edición de todos modos?
+character.keptInSave=Se guarda en la partida aparte de lo que el juego muestra en pantalla.\nLa vida y la energía finales las calcula el propio juego —a partir de los puntos gastados, los atributos, los objetos y las habilidades— y no coinciden con este número.\nQué se guarda exactamente aquí aún no lo hemos averiguado, por eso la edición está cerrada.
+
+# Descripción emergente de un atributo
+character.tip.now={0}: ahora {1}
+character.tip.own=en la partida {0}, puntos gastados {1}
+character.tip.fromGear=de objetos y habilidades: {0}
+character.tip.gives=Otorga (contado sobre la base {0}):
+character.tip.percents=Y los porcentajes; la base {0} también cuenta aquí:
+character.tip.percentLine=+{0}% {1}
+character.perPoint.life=+{0} de vida por punto
+character.perPoint.energy=+{0} de energía por punto
+character.perPoint.defense=+{0} de capacidad defensiva por punto
+character.perPoint.offense=+{0} de capacidad ofensiva por punto
+character.perPoint.lifeRegen=+{0} de regeneración de vida por punto
+character.perPoint.energyRegen=+{0} de regeneración de energía por punto
+character.divided.physical=daño físico y de perforación
+character.divided.bleed=daño por herida interna y sangrante
+character.divided.magic=daño mágico
+character.divided.dots=el resto del daño con el tiempo
+character.divided.energyRegen=regeneración de energía
+character.needs.physique=Necesaria para armaduras, armas cuerpo a cuerpo y escudos.
+character.needs.cunning=Necesaria para armas a distancia y parte de las armas cuerpo a cuerpo.
+character.needs.spirit=Necesario para anillos, amuletos y objetos de lanzador de hechizos.
+character.hardcore=Hardcore
+character.revive=Revivir
+character.revive.tip=Borra la marca de muerte. Comprueba en el juego que el personaje vuelve a cargarse.

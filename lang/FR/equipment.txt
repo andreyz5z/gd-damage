@@ -1,0 +1,18 @@
+# PANNEAU D'ÉQUIPEMENT : noms des emplacements (ils apparaissent aussi dans les messages « ne va pas dans l'emplacement … »).
+
+equipment.weapon1=Arme I
+equipment.offhand1=Main gauche I
+equipment.weapon2=Arme II
+equipment.offhand2=Main gauche II
+equipment.head=Tête
+equipment.neck=Cou
+equipment.medal=Médaille
+equipment.shoulders=Épaules
+equipment.chest=Torse
+equipment.hands=Mains
+equipment.waist=Taille
+equipment.legs=Jambes
+equipment.ring1=Anneau 1
+equipment.feet=Pieds
+equipment.relic=Relique
+equipment.ring2=Anneau 2

@@ -1,0 +1,23 @@
+# FENSTER „AKTIVE KREATUREN“ und Kreaturenzeilen in den anderen Fenstern.
+# Die Namen der Kreaturen und ihrer Fähigkeiten kommen aus dem Spiel.
+
+pets.title=Aktive Kreaturen — {0}
+pets.checkbox={0}   ({1}, St. {2})
+pets.limit=bis zu {0} gleichzeitig
+pets.lifetime={0} Sek. Lebensdauer
+pets.life=Leben: Basis {0} × (1 + {1}% eigene + {2}% unsere) = {3}
+pets.lifeAura=Leben: Basis {0} × (1 + {1}% eigene + {2}% unsere + {3}% Auren) = {4}
+pets.armour=Rüstung: Basis {0} × (1 + {1}% eigene + {2}% unsere) = {3}   (das Spiel zeigt die Rüstung von Kreaturen nie an — das ist unsere eigene Zahl)
+pets.auras=unter Auren: {0}
+pets.none=Dieser Charakter hat keine Fähigkeit, die eine Kreatur beschwört.
+pets.note=Leben: Basis × (1 + eigene% + Kreaturen-Boni% + Auren%). Der Fähigkeitsschaden wird mit den Kreaturen-Boni multipliziert — die Regel wurde an sieben Zahlen aus dem Spiel gemessen.
+
+pets.level=St. {0}
+pets.levelUnknown=der Datensatz der Kreatur nennt keine Stufe
+pets.attack={0}   (Kreatur «{1}», {2})
+
+# Umwandlung der Kreatur
+pets.conversion.title=Umwandlung dieser Kreatur
+pets.conversion.capped=Aus einem Typ gehen nicht mehr als hundert Prozent ab: Die hundert werden nach ihren Anteilen auf die Empfänger verteilt. In Klammern — was die Gegenstände tatsächlich angeben.
+pets.conversion.line={0}% Umwandlung: {1} in {2}
+pets.conversion.recorded=(laut Datensatz {0}%)

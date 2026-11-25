@@ -1,0 +1,74 @@
+# BONUS SOURCES: the labels of the terms in the "what this is made of" tooltip on the "Total bonuses" tab.
+# A hit finds its own term by these very labels, which is why each label is built in a single place.
+# IMPORTANT WHEN TRANSLATING: the item part labels (totals.part.*) must differ from each other — otherwise
+# lines of different parts start sharing one damage roll. Guarded by --langtest.
+
+totals.part.prefix=(prefix)
+totals.part.suffix=(suffix)
+totals.part.component=(component)
+totals.part.relicBonus=(completion bonus)
+totals.part.augment=(augment)
+totals.part.modifier=(modifier)
+totals.part.ascension=(ascension)
+totals.setShort=set: {0}
+totals.fromItem=from an item: {0} ({1})
+totals.devotion=devotion: {0}
+totals.skill=skill: {0} (lv. {1})
+totals.toggled=toggled on: {0} (lv. {1})
+totals.skillMod=skill modifier: {0}
+totals.toggledMod=toggled on, skill modifier: {0}
+totals.chosenOn={0} — switched on by hand
+totals.chosenOff={0} — switched off by hand
+totals.gateItem={0} (from an item) — {1}
+totals.gateDevotion={0} (devotion) — {1}
+
+# WHY A SKILL IS NOT COUNTED: the weapons in hand are not the ones it requires. The words are
+# ours, not the game's: the game states the requirement in the skill's description, while these
+# say what is missing RIGHT NOW.
+totals.gate.needDualAny=neither dual melee nor two one-handed ranged
+totals.gate.needDualMelee=no dual-wielded weapons
+totals.gate.needDualRanged=no two one-handed ranged weapons
+totals.gate.needRanged=no ranged weapon
+totals.gate.needGuns=two pistols or a rifle are needed
+totals.gate.needEmptyHands=a weapon is in hand
+totals.gate.wrongWeapon=the wrong weapon in hand
+
+# GROUP HEADINGS on the "Total bonuses" tab. "Resistances", "Retaliation", "Defense" and
+# "Attributes" are taken from the game (its character panel); these four lines are only the fallback.
+totals.group.damage=Damage
+totals.group.overTime=Damage over time
+totals.group.retaliation=Retaliation
+totals.group.debuff=What is taken off the target
+totals.group.resist=Resistances
+totals.group.defence=Defense
+totals.group.attributes=Attributes
+totals.group.skills=Skills
+totals.group.other=Other
+
+# Armor zones. Normally taken from the game (its armor panel); these are the fallback.
+totals.zone.head=Head
+totals.zone.shoulders=Shoulders
+totals.zone.chest=Chest
+totals.zone.arms=Arms
+totals.zone.legs=Legs
+totals.zone.feet=Feet
+
+# What hit the cap on pets: "… capped: chaos 84% (+12% over maximum), stun …".
+totals.capWord.elemental=elemental
+totals.capWord.stun=stun
+totals.capWord.freeze=freeze
+totals.capWord.trap=entrapment
+totals.capWord.petrify=petrify
+totals.capWord.convert=mind control
+
+# Resistance names. Taken from the game (its character panel); these are the fallback, in its words.
+totals.resist.fire=Fire
+totals.resist.cold=Cold
+totals.resist.lightning=Lightning
+totals.resist.poison=Poison & Acid
+totals.resist.pierce=Piercing
+totals.resist.aether=Aether
+totals.resist.chaos=Chaos
+totals.resist.life=Vitality
+totals.resist.bleeding=Bleeding
+totals.resist.physical=Physical

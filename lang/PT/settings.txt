@@ -1,0 +1,14 @@
+# JANELA «CONFIGURAÇÕES».
+
+settings.title=Configurações
+settings.gameFolder=Pasta do Grim Dawn:
+settings.gameFolder.browse=A pasta onde o Grim Dawn está instalado
+settings.savesFolder=Pasta dos jogos salvos (para a janela de abrir):
+settings.savesFolder.browse=A pasta com seus jogos salvos
+settings.browse=Escolher…
+settings.language=Idioma:
+settings.rebuildCatalog=Recriar o catálogo de itens
+settings.rawFields=Mostrar todos os campos do registro na descrição do item
+settings.fileHint=settings.json fica ao lado do programa
+settings.ok=OK
+settings.cancel=Cancelar

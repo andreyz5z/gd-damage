@@ -1,0 +1,27 @@
+# 여러 창에서 공통: 버튼, 스킬의 출처, 아이템의 부위.
+
+common.apply=적용
+common.cancel=취소
+common.search=검색:
+common.nothingFound=찾지 못했습니다.
+common.put=설정
+common.clearBonus=보너스 제거
+
+# 게임 난이도 («리프트» 탭, 적 탭)
+common.difficulty.normal=노멀
+common.difficulty.elite=엘리트
+common.difficulty.ultimate=얼티밋
+
+# 스킬의 출처 (펫 창과 활성 스킬 창의 소제목)
+common.source.mastery=마스터리 스킬
+common.source.devotion=디보션
+common.source.item=아이템에서: {0}
+common.source.set=세트: {0} ({1})
+common.source.setName=세트: {0}
+
+# 스킬이 따라온 아이템 부위: «아이템에서: 이름 (접두사)»
+common.part.prefix=(접두사)
+common.part.suffix=(접미사)
+common.part.component=(컴포넌트)
+common.part.augment=(증강제)
+common.part.ascension=(승천)

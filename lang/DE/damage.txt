@@ -1,0 +1,236 @@
+# FENSTER „SCHADENSBERECHNUNG“: Reiter, Schaltflächen, Felder und Auswahllisten.
+# Weiter unten die Erläuterungen auf den Reitern und das Simulationsprotokoll.
+
+damage.title=Schadensberechnung — {0}
+damage.tab.timeline=Kampfsimulation
+damage.tab.totals=Gesamtboni
+damage.tab.hit=Schaden pro Treffer
+damage.tab.target=Gegner
+damage.seconds={0} Sek.
+damage.secondsPair={0} und {1}
+
+# Gesamtboni
+damage.pickActive=Aktive Fähigkeiten wählen…
+damage.activeFromSave=nach dem Spielstand gezählt
+damage.activeChosen=gewählt: {0}
+damage.pickPets=Aktive Kreaturen…
+damage.petsNear=Kreaturen in der Nähe
+
+# Schaden pro Treffer
+damage.hit.what=Angreifen mit
+damage.hit.plain=Standardwaffenangriff (ohne Fähigkeit)
+
+# Kampfsimulation: Felder und Schaltfläche
+damage.run.seconds=Sekunden
+damage.run.seed=Seed
+damage.run.go=Warteschlange durchspielen
+damage.run.press=Was wir drücken (nach Abklingzeit)
+damage.run.attack=Standardwaffenangriff
+damage.run.weapon=mit der Waffe
+damage.run.everyLabel=Ohne Abklingzeit — drücken alle
+damage.run.everyTail=Sek. (0 — nach Animation)
+
+# Kampfsimulation: Einträge der Listen „was wir drücken“ und „Standardwaffenangriff“
+damage.press.buff=Verstärkung
+damage.press.buffNotRolled=({0} — nicht ausgewürfelt)
+damage.press.whenNotRolled={0} — nicht ausgewürfelt, nach Abklingzeit gedrückt
+damage.press.every=ohne Abklingzeit — alle {0} Sek. drücken
+damage.press.anim=ohne Abklingzeit — nach Animation, alle {0} Sek.
+damage.press.noAnim=ohne Abklingzeit — keine Animation gefunden, Abstand angeben
+damage.press.noCooldown=ohne Abklingzeit
+damage.press.starHits=Stern, verursacht Schaden
+damage.press.pet=(Kreatur «{0}», {1} gleichzeitig, {2}, {3} Angriffe/Sek., Fähigkeiten mit Schaden {4})
+damage.press.petLives=lebt {0} Sek.
+damage.press.petPermanent=dauerhaft
+damage.press.none=keine drückbaren Fähigkeiten mit Schaden
+damage.attack.form=Gestalt «{0}»   greift mit der Fähigkeit «{1}» an
+damage.attack.ofForm=(Gestalt «{0}»)
+damage.attack.channel=kanalisiert, ein Tick alle {0} Sek.
+damage.attack.finale=einmal alle {0} Treffer
+damage.attack.charges=Ladungen bis {0}
+damage.attack.byAnimation=ohne Abklingzeit, nach Animation alle {0} Sek.
+
+# Gegner
+damage.target.load=Gegnerliste aus dem Spiel laden
+damage.target.reload=Gegnerliste neu erstellen
+damage.target.find=Suche nach Namen
+damage.target.level=Stufe
+damage.target.difficulty=Schwierigkeitsgrad
+damage.target.notLoaded=Die Gegnerliste ist noch nicht geladen.
+damage.target.pressButton=Drücke die Schaltfläche oben — das Programm erstellt die Liste der Gegner. Neu erstellen muss man sie nur nach einem Spielupdate.
+damage.target.nothing=Nichts gefunden.
+
+# ─── ERLÄUTERUNGEN AUF DEN REITERN ───
+
+# Gesamtboni
+damage.totals.summary=Summiert aus: {0} angelegten Gegenständen (mit Komponenten und Verbesserungen), {1} Set-Boni, {2} passiven Fähigkeiten, {3} eingeschalteten Fähigkeiten, {4} Devotionssternen.
+damage.totals.exact=[genau]
+damage.totals.overCap=(+{0}% über Maximum)
+damage.totals.resistCap=Grenze {0}%
+damage.totals.armourRating=Rüstungswert {0}
+damage.totals.absorb={0}% Absorption
+damage.totals.armourNote=Die eigene Rüstung eines Gegenstands geht in seinen Platz, alles andere in alle sechs zugleich ({0}), und erst danach wirkt +{1}% Rüstung. Der Wert ist der Mittelwert der Plätze, gewichtet nach dem Anteil der Treffer in diesem Bereich. Absorption ist die Basis von 70%, multipliziert mit „+% Rüstungsabsorption“, höchstens 100%.
+damage.totals.block=Blockwahrscheinlichkeit {0}%   geblockter Schaden {1}
+damage.totals.blockNote=Die Blockwahrscheinlichkeit addiert sich — „Blockwahrscheinlichkeit“ des Schilds plus „+% Blockwahrscheinlichkeit“ von überall, sie wird nicht multipliziert. Geblockter Schaden ist die Basis des Schilds × (1 + % geblockter Schaden).
+damage.totals.pets=Kreaturen-Boni
+damage.totals.petsNote=Sie wirken nur auf beschworene Kreaturen und gelten nicht für dich. Quellen: {0}.
+damage.totals.petCapItem={0} {1}% (+{2}% über Maximum)
+damage.totals.petCapNote=An die Grenze von {0}% gestoßen, und das Spielfenster zeigt die bereits begrenzte Zahl: {1}. Der Überschuss geht nicht verloren: Gegner, die Resistenzen senken, zehren zuerst davon.
+damage.totals.missing=Was in dieser Summe noch fehlt
+damage.totals.missingProcs=Fähigkeiten, die unter einer Bedingung auslösen, statt ständig aktiv zu sein: Meisterschafts-Procs, Fähigkeiten von Gegenständen und Devotions-Procs.
+damage.totals.missingPressed=Fähigkeiten, die gedrückt werden müssen — ihre Boni halten nur wenige Sekunden.
+damage.totals.skipped=Übersprungen: {0}.
+damage.totals.toggledOff=Ausgeschaltete umschaltbare Fähigkeiten: {0}. Die eingeschalteten sind in der Summe — der Spielstand merkt sich, was eingeschaltet ist.
+damage.totals.chosenByHand=Von Hand gewählt (Schaltfläche „Aktive Fähigkeiten wählen“): {0}.
+damage.totals.missingConversion=Schadensumwandlung. Prozente zu einer Schadensart werden so gezeigt, wie sie sind, im Spiel wirken sie aber nach der Umwandlung: „+200% physischer Schaden“ bringt bei einem Build, der allen physischen Schaden umwandelt, nichts.
+damage.totals.missingScaling=Schadenskalierung durch Attribute: Raffinesse erhöht physischen und Durchschlagsschaden, Geist die magischen Arten. Die Formeln sind bekannt, aber das ist die nächste Ebene.
+damage.totals.missingCap=Die Resistenzgrenze. Die Boni sind hier so summiert, wie sie sind, daher kann die Zahl über 80% liegen — im Spiel endet sie an der Grenze (80% plus die Boni „zum Maximum“, daneben gezeigt). Der Überschuss über der Grenze ist nicht nutzlos: Bosse senken Resistenzen.
+damage.totals.missingDifficulty=Der Resistenzabzug für den Schwierigkeitsgrad (−25 auf Elite, −50 auf Ultimativ) ist hier nicht abgezogen: Der Spielstand sagt nicht, auf welchem Schwierigkeitsgrad du gerade bist.
+damage.totals.notStacked=Was sich nicht addiert hat
+damage.totals.notStackedNote=Resistenzsenkung der Arten „X Senkung“ und „X% Senkung“, Senkung des Zielschadens und seiner Treffgenauigkeit addieren sich nicht: In jedem Moment wirkt die stärkste Quelle. Hier ist die stärkste genommen, nicht die Summe.
+damage.totals.notStackedItem={0}: {1} Quellen, die stärkste genommen {2}
+
+# Tooltip „woraus das summiert ist“ beim Überfahren einer Summenzeile
+damage.terms.pet=(Kreaturenbonus)
+damage.terms.byMax=addiert sich nicht: die stärkste von {0} Quellen ist genommen
+damage.terms.summedOne=summiert aus {0} Quelle
+damage.terms.summedMany=summiert aus {0} Quellen
+damage.terms.winner=← wirkt
+damage.terms.total=gesamt {0}
+
+# Schaden pro Treffer
+damage.hit.plainTitle=Standardwaffenangriff
+damage.hit.plainWeapon=Standardwaffenangriff: {0}
+damage.hit.skillTitle={0}   ({1}, St. {2})
+damage.hit.weapon=Waffe: {0}
+damage.hit.attackSpeed={0} Angriffe pro Sek.   ({1}% Angriffsgeschwindigkeit)
+damage.hit.castSpeed={0}% Zaubergeschwindigkeit
+damage.hit.castCapped=(an die Grenze von {0}% gestoßen)
+damage.hit.channel=kanalisiert: ein Tick alle {0} Sek.
+damage.hit.perHit={0} – {1} pro Treffer
+damage.hit.overTime=(pro Sekunde, {0} s)
+damage.hit.none=Kein Schaden.
+damage.hit.bare=Ohne vorübergehende Effekte ({0}): {1} – {2} pro Treffer — diese Zahl zeigt das Spielfenster.
+damage.hit.how=Wie das berechnet wird
+damage.hit.howBase=Die Basis ist der Schaden der Waffe plus die flachen Boni der Gegenstände. Flacher Elementarschaden wird in drei gleiche Teile auf Feuer, Kälte und Blitz aufgeteilt.
+damage.hit.howConversion=Umwandlungen nehmen Anteile der Basis, und die Anteile addieren sich, statt nacheinander zu wirken. Rüstungsdurchdringung ist die letzte Umwandlung, vom Rest.
+damage.hit.howMultiplier=Jeder Anteil wird mit (1 + Attribut/Teiler + % der Art + % Elementar + % allen Schadens) multipliziert. Teiler: Raffinesse/245 und /215, Geist/215 und /200.
+damage.hit.howTotal=Das Charakterfenster im Spiel zeigt „+X% <Art>schaden“ als Prozent der ART PLUS „% aller Schaden“ — in einer Zeile.
+damage.hit.howTotalSome=Dieser Charakter hat +{0}% allen Schaden, daher zeigt das Spielfenster den Prozentsatz jeder Art um so viel höher als unseren.
+damage.hit.howTotalNone=Dieser Charakter hat keinen „% aller Schaden“, daher stimmen die Prozente überein.
+damage.hit.howAll=„% aller Schaden“ gilt für JEDE Schadensart, Schaden über Zeit eingeschlossen — Ausnahmen gibt es nicht.
+damage.hit.howDots=Schaden über Zeit wird pro Sekunde gezeigt — so steht er im Datensatz, teilen ist nicht nötig. Ein Dauerbonus ändert diese Zahl nicht: Der Effekt hält länger, verursacht pro Sekunde aber gleich viel.
+
+# Schaden pro Treffer: Vergeltung
+damage.retaliation.title=Vergeltung (Gegenangriff)
+damage.retaliation.note=Das ist das FENSTER „Vergeltung“ der Charakterwerte, kein Teil des Treffers. Es wird anders berechnet: Attribute und Prozente zu Schadensarten wirken nicht darauf, nur „+% Vergeltungsschaden“ — du hast +{0}%. Umwandlungen wirken aber, und zwar dieselben wie beim normalen Schaden.
+damage.retaliation.note2=Der Gegenangriff wirkt nur gegen Nahkampfangriffe, nur auf den, der dich geschlagen hat, und nur wenn du tatsächlich getroffen wurdest; er selbst kann nicht verfehlen und nicht kritisch treffen. Schadensreflexion („X% des erlittenen Schadens werden reflektiert“) ist etwas ANDERES und steht nie in den Charakterwerten: Sie hängt vom Schaden dessen ab, der dich trifft.
+
+# Schaden pro Treffer: pro Hand
+damage.hands.title=Wie viel das in jeder Hand ist
+damage.hands.both=Das ist dasselbe, was das Spiel im Tooltip der Fähigkeit zeigt. Der Waffenschadensanteil ist für beide Hände DERSELBE ({0}%), und die Zahlen in Klammern unterscheiden sich, weil die Waffen in den Händen verschieden sind. In der Klammer ist auch der Schaden über Zeit dieser Hand enthalten: Das Spielfenster zählt ihn genauso.
+damage.hands.oneMain=Es gibt EINE Zeile, weil die Fähigkeit mit einer Hand zuschlägt — der Haupthand —, und das Spiel zeigt im Tooltip genau so viele Zeilen. Welche Hand es ist, steht in der ANIMATION der Fähigkeit: Jeder Ausrüstungssatz hat seine eigene Datei, und die Treffer-Ereignisse darin benennen die Hände. Wechsle zu einer Zweihandwaffe oder lege einen Schild an — die Zeile kann sich ändern, auch im Spiel.
+damage.hands.oneOff=Es gibt EINE Zeile, weil die Fähigkeit mit einer Hand zuschlägt — der Nebenhand —, und das Spiel zeigt im Tooltip genau so viele Zeilen. Welche Hand es ist, steht in der ANIMATION der Fähigkeit: Jeder Ausrüstungssatz hat seine eigene Datei, und die Treffer-Ereignisse darin benennen die Hände. Wechsle zu einer Zweihandwaffe oder lege einen Schild an — die Zeile kann sich ändern, auch im Spiel.
+damage.hands.single=Es gibt eine Hand, weil es eine Waffe gibt. In der Klammer ist auch der Schaden über Zeit dieser Hand enthalten: Das Spielfenster zählt ihn genauso.
+damage.hands.ownShare=im eigenen Tooltip der Fähigkeit steht weniger — nur ihr eigener Anteil von {0}%:
+damage.hands.lineMain={0}% Waffenschaden der Haupthand ({1} - {2})
+damage.hands.lineOff={0}% Waffenschaden der Nebenhand ({1} - {2})
+
+# Schaden pro Treffer: woraus die Fähigkeit besteht
+damage.parts.title=Woraus diese Fähigkeit besteht
+damage.parts.temporary=— vorübergehender Effekt
+damage.parts.oneHandMain=— schlägt mit einer Hand zu, der Haupthand
+damage.parts.oneHandOff=— schlägt mit einer Hand zu, der Nebenhand
+damage.parts.weaponPct={0}% Waffenschaden
+damage.parts.conversion=Umwandlung {0}%: {1} → {2}   (wirkt vor den Umwandlungen des Charakters)
+damage.parts.notCounted=NICHT SUMMIERT: {0}
+
+# Schaden pro Treffer: der Treffer der Kreatur
+damage.pet.title={0}   (Treffer der Kreatur «{1}», {2})
+damage.pet.summonedBy=beschworen durch die Fähigkeit «{0}»
+damage.pet.withConversion=Schaden mit Umwandlung — so trifft sie wirklich
+damage.pet.noNumbers=diese Fähigkeit hat keine Zahlen
+damage.pet.asGame=Wie das Spiel es zeigt — ohne Umwandlung
+damage.pet.asGameNote=Das Spiel zeigt die Umwandlung einer Kreatur nirgends: gemessen an sechs Zahlen und durch Screenshots bestätigt — mit und ohne «Ghols Zeichen» ist die Beschreibung der Fähigkeit gleich. Wirken tut sie aber genauso wie beim Charakter.
+damage.pet.notYours=Das ist der Treffer der KREATUR, und mit deinem ist er nicht vergleichbar: Er kommt nicht von deiner Waffe, deine Schadensprozente wirken nicht darauf, sondern die Kreaturen-Boni.
+
+# Kampfsimulation: Hilfe vor dem ersten Durchlauf
+damage.help.title=Die Warteschlange der Treffer über die Zeit
+damage.help.press=Drücke „Warteschlange durchspielen“: Jeder Schwung wird einzeln ausgespielt — der Treffer, welche Hände herauskamen, und der Schaden JEDER Zeile mit eigenem Wurf in ihrem Bereich. Die Zeilen erscheinen sofort, während gerechnet wird. Oben steht das Ergebnis: Schaden pro Sekunde, Median der Sekundensummen, das Leben des Ziels und die Zeit bis zu seinem Tod (TTK).
+damage.help.twoNumbers=ZWEI ZAHLEN IN EINER ZEILE: Die erste ist, was beim Ziel ANKAM, pro Hand; in Klammern „Schaden ohne Boni“ ist, was von uns ausging: bereits mit Kritisch, aber noch ohne Rassenbonus, Rüstung (sie senkt nur physischen) und Resistenzen samt Senkungen. Die erste Zahl kann auch GRÖSSER sein als die zweite: sobald unsere Senkungen die Resistenz des Ziels unter null drücken, senkt sie nicht mehr, sondern verstärkt. DPS, Median, Schaden pro Durchlauf und TTK werden nach dem ANGEKOMMENEN gezählt.
+damage.help.target=Das Ziel kommt vom Reiter „Gegner“ — das dort gewählte, mit seiner Stufe und seinem Schwierigkeitsgrad. Ist keines gewählt, wird der Trainingsdummy aus den Spieldateien verwendet.
+damage.help.pets=KREATUREN: Die angehakten werden am Anfang beschworen und dann nach der Abklingzeit der Beschwörung, bis sie die Grenze ihrer Art erreichen; die, die von selbst auslösen (ein Stern, eine Gegenstandsfähigkeit), kommen auch ohne Häkchen. Jede greift mit ihrem eigenen Standardangriff und ihren eigenen Fähigkeiten in deren Takt an, und ihr Treffer und Kritisch werden wie deine ausgewürfelt.
+damage.help.counted=Gezählt werden: Schwünge, gedrückte Fähigkeiten, Kanalisierungen, der Waffenpool, Procs, Sterne, schadende Auren, Schaden über Zeit, Kritisch-Stufen, Resistenzsenkung, Rassenbonus, Lebenssenkung, Gestalten und Kreaturen.
+damage.help.seed=Der Seed macht einen Durchlauf wiederholbar: Derselbe Seed ergibt denselben Durchlauf bis zur letzten Ziffer. Ändere nur ihn — du siehst die Streuung; ändere den Build bei gleichem Seed — du siehst, was der Build geändert hat.
+
+# Kampfsimulation: während des Durchlaufs
+damage.run.building=Warteschlange wird aufgebaut…
+damage.run.buildingNote=jeder Treffer bekommt seinen eigenen Schaden mit eigenen Würfen, und ein langer Durchlauf hat Tausende davon
+damage.run.progress=Warteschlange wird aufgebaut…   {0} von {1} Sek.   ({2} Zeilen)
+
+# Kampfsimulation: Ergebnis
+damage.run.buffsUp=Aktivierte Verstärkungen: {0}   — sie gehen nach Abklingzeit für ihre eigene Dauer in die Warteschlange (ohne Dauer im Datensatz — den ganzen Durchlauf) und ändern die Werte, statt als eigener Treffer zuzuschlagen
+damage.run.target=Ziel: {0}
+damage.run.targetLevel=Stufe {0}, Schwierigkeitsgrad {1}
+damage.run.targetStats=Verteidigungsqualität {0}   Rüstung {1}
+damage.run.hitChance=Trefferchance {0}%
+damage.run.mainSpell={0} «{1}» statt des Standardwaffenangriffs: Zaubergeschwindigkeit {2}%, alle {3} Sek., Treffer pro Durchlauf {4}
+damage.run.targetResists=Resistenzen des Ziels: {0}
+damage.run.gear=Fähigkeiten von Gegenständen und Sets:
+damage.run.queue=Warteschlange
+damage.run.summary=Ergebnis des Durchlaufs
+damage.run.dps=Schaden pro Sekunde (DPS)  {0}     Median der Sekundensummen {1}
+damage.run.total=Schaden pro Durchlauf {0} in {1} Sek.
+damage.run.targetLife=Leben des Ziels {0}
+damage.run.killedAt=getötet in {0} Sek. (TTK)
+damage.run.dummyNote=— nur formal: der Dummy stirbt im Spiel nie
+damage.run.notKilled=im Durchlauf nicht getötet — {0}% übrig
+damage.run.percentLife=Lebenssenkung nahm {0} ({1}-mal)
+damage.run.percentLifeBlocked=weitere {0}-mal hat die Resistenz des Ziels von {1}% sie vollständig aufgehoben
+damage.run.swings=Schwünge {0}, Treffer {1}, Fehlschläge {2}, Kritisch {3}
+damage.run.tier=Stufe {0}: {1}
+damage.run.hands=Hände: beide {0}, erste {1}, zweite {2}
+damage.run.procs=selbstauslösend: Procs {0} (ihr Schaden {1})
+damage.run.pool=Waffenpool {0}
+damage.run.silent=ohne Schaden {0}: {1}
+damage.run.pets=Kreaturen: Treffer {0}, Beschwörungen {1}, ihr Schaden {2}
+damage.run.petsShare=— {0}% des Gesamten
+damage.run.stars=Devotionssterne
+damage.run.dots=Schaden über Zeit: angewendet {0}, erneuert {1}, sein Schaden {2} von {3}
+damage.run.before=Schaden ohne Boni waren es {0} — {1}% kamen an (Rassenbonus, Rüstung, Resistenzen samt Senkungen)
+damage.run.conditions=Bedingungen des Durchlaufs
+damage.run.rolls=Bereichswürfe: {0} — einer für jede Schadenszeile in jedem Treffer.
+damage.run.critNote=Kritische Treffer mit Stufen werden gezählt: Ein Wurf entscheidet über Treffer und Stufe, und „+% kritischer Schaden“ wird zum Faktor der Stufe addiert. Die kritische CHANCE selbst stimmt bei starken Zielen mit dem Spiel überein und ist bei schwachen zu hoch — die Boni der Monster aus ihrer Ausrüstung sind nicht gezählt.
+damage.run.dotNote=Schaden über Zeit wird angewendet und tickt: Eine Quelle hat EINEN solchen Effekt — ein neuer Treffer verlängert die Dauer und hebt den Schaden auf den besten, statt einen zweiten zu beginnen. Aller Waffenschaden (beide Hände und Fähigkeiten mit Waffenanteil) zählt als EINE Quelle; Fähigkeiten ohne Waffenanteil sind eigene.
+damage.run.noteRough=VEREINFACHT: {0}
+damage.run.noteUnread=NICHT GELESEN: {0}
+damage.run.noteHint=HINWEIS: {0}
+damage.run.pressNote=Die angehakten Fähigkeiten werden gedrückt, sobald ihre Abklingzeit abgelaufen ist: am Anfang alle zugleich, danach jede nach ihrer eigenen Abklingzeit (mit der Senkung durch Gegenstände und Modifikatoren). Eine Fähigkeit, die mit zwei Händen zuschlägt, schlägt IMMER mit beiden zu, und jede Hand verfehlt mit ihrem eigenen Wurf.
+damage.run.procNote=PROCS und Fähigkeiten „statt des Standardwaffenangriffs“ stehen absichtlich NICHT in der Liste der anhakbaren Fähigkeiten: Niemand drückt sie. Sie spielen sich selbst aus — mit eigenem Wurf bei jedem Treffer und eigener Abklingzeit.
+damage.run.silentNote=OHNE SCHADEN AUSGELÖST — Devotionssterne und Gegenstandsfähigkeiten, die beschwören, eine Verstärkung oder eine Schwächung anwenden. Ihr Wurf und ihre Abklingzeit sind echt; eine Verstärkung wirkt ihre Dauer lang, eine Schwächung kommt aufs Ziel, und die beschworene Kreatur tritt in den Pool und trifft mit eigenen Zeilen.
+damage.run.failed=Der Durchlauf ist fehlgeschlagen: {0}
+
+# Gegner: das Gegnerfeld
+damage.enemy.title={0}   ({1}, Stufe {2}, Schwierigkeitsgrad {3})
+damage.enemy.variants=Die Datenbank hat {0} Datensätze mit diesem Namen — sie unterscheiden sich nur in der Stufe, auf der man sie trifft; hier ist der vollständigste genommen, die Stufe wird oben gewählt.
+damage.enemy.combat=Kampfwerte
+damage.enemy.abilities=Verteidigungsqualität {0}   Angriffsqualität {1}
+damage.enemy.life=Leben {0}   Rüstung {1}
+damage.enemy.gearArmour=(davon {0} von der Ausrüstung)
+damage.enemy.resists=Resistenzen
+damage.enemy.none=keine
+damage.enemy.hit=Treffen
+damage.enemy.ourAttack=unsere Angriffsqualität {0}   gegen seine Verteidigung {1}
+damage.enemy.hitChance=Trefferchance {0}%   kritische Chance {1}%
+damage.enemy.ourDefence=unsere Verteidigungsqualität {0}   gegen seinen Angriff {1}
+damage.enemy.getHit=Chance, getroffen zu werden {0}%   Chance, kritisch getroffen zu werden {1}%
+
+# Rang des Gegners in der Liste und im Kopf des Reiters „Gegner“. Eigene Wörter für die Ränge hat das Spiel nicht.
+damage.enemy.rank.superBoss=Nemesis
+damage.enemy.rank.boss=Boss
+damage.enemy.rank.quest=Quest
+damage.enemy.rank.hero=Held
+damage.enemy.rank.champion=Champion
+damage.enemy.rank.common=gewöhnlich
+damage.enemy.variantsShort=({0} Datensätze)
+damage.attack.byCooldown=statt der Waffe, nach Abklingzeit alle {0} Sek.

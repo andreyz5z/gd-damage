@@ -1,0 +1,236 @@
+# FINESTRA «CALCOLO DEI DANNI»: schede, pulsanti, campi ed elenchi di scelta.
+# Più sotto, le spiegazioni delle schede e il registro della simulazione.
+
+damage.title=Calcolo dei danni — {0}
+damage.tab.timeline=Simulazione di combattimento
+damage.tab.totals=Bonus totali
+damage.tab.hit=Danno per colpo
+damage.tab.target=Nemico
+damage.seconds={0} s
+damage.secondsPair={0} e {1}
+
+# Bonus totali
+damage.pickActive=Scegli le abilità attive…
+damage.activeFromSave=calcolato dal salvataggio
+damage.activeChosen=scelte: {0}
+damage.pickPets=Evocazioni attive…
+damage.petsNear=evocazioni vicine
+
+# Danno per colpo
+damage.hit.what=Attacca con
+damage.hit.plain=Attacco base dell'arma (senza abilità)
+
+# Simulazione di combattimento: campi e pulsante
+damage.run.seconds=Secondi
+damage.run.seed=Seme
+damage.run.go=Esegui la coda
+damage.run.press=Cosa premiamo (secondo la ricarica)
+damage.run.attack=Attacco base
+damage.run.weapon=con l'arma
+damage.run.everyLabel=Senza ricarica: premi ogni
+damage.run.everyTail=s (0 = secondo l'animazione)
+
+# Simulazione di combattimento: voci degli elenchi «cosa premiamo» e «attacco base»
+damage.press.buff=potenziamento
+damage.press.buffNotRolled=({0}: non estratto)
+damage.press.whenNotRolled={0}: non estratto, premuto secondo la ricarica
+damage.press.every=senza ricarica: premi ogni {0} s
+damage.press.anim=senza ricarica: secondo l'animazione, ogni {0} s
+damage.press.noAnim=senza ricarica: animazione non trovata, indica l'intervallo
+damage.press.noCooldown=senza ricarica
+damage.press.starHits=stella, infligge danni
+damage.press.pet=(evocazione «{0}», {1} alla volta, {2}, {3} attacchi/s, abilità con danno {4})
+damage.press.petLives=vive {0} s
+damage.press.petPermanent=permanente
+damage.press.none=nessuna abilità premibile con danno
+damage.attack.form=forma «{0}»   attacca con l'abilità «{1}»
+damage.attack.ofForm=(forma «{0}»)
+damage.attack.channel=canalizzata, un impulso ogni {0} s
+damage.attack.finale=una volta ogni {0} colpi
+damage.attack.charges=cariche fino a {0}
+damage.attack.byAnimation=senza ricarica, secondo l'animazione ogni {0} s
+
+# Nemico
+damage.target.load=Carica l'elenco dei nemici dal gioco
+damage.target.reload=Ricrea l'elenco dei nemici
+damage.target.find=Cerca per nome
+damage.target.level=Livello
+damage.target.difficulty=Difficoltà
+damage.target.notLoaded=L'elenco dei nemici non è ancora caricato.
+damage.target.pressButton=Premi il pulsante qui sopra: il programma creerà l'elenco dei nemici. Va ricreato solo dopo un aggiornamento del gioco.
+damage.target.nothing=Nessun risultato.
+
+# ─── SPIEGAZIONI DELLE SCHEDE ───
+
+# Bonus totali
+damage.totals.summary=Sommato da: {0} oggetti indossati (con componenti e aumenti), {1} bonus dei set, {2} abilità passive, {3} abilità attivate, {4} stelle di devozione.
+damage.totals.exact=[esatto]
+damage.totals.overCap=(+{0}% oltre il massimo)
+damage.totals.resistCap=limite {0}%
+damage.totals.armourRating=valore dell'armatura {0}
+damage.totals.absorb={0}% di assorbimento
+damage.totals.armourNote=L'armatura propria di un oggetto va nel suo slot, tutto il resto in tutti e sei insieme ({0}), e solo dopo si applica il +{1}% di armatura. Il valore è la media degli slot, pesata sulla quota di colpi che arrivano in quella zona. L'assorbimento è il 70% di base moltiplicato per «+% assorbimento armatura», non oltre il 100%.
+damage.totals.block=possibilità di blocco {0}%   danno bloccato {1}
+damage.totals.blockNote=La possibilità di blocco si somma — la «possibilità di blocco» dello scudo più i «+% possibilità di blocco» da ogni fonte — non si moltiplica. Il danno bloccato è la base dello scudo × (1 + % danno bloccato).
+damage.totals.pets=Bonus alle Evocazioni
+damage.totals.petsNote=Agiscono solo sulle creature evocate e non si applicano a te. Fonti: {0}.
+damage.totals.petCapItem={0} {1}% (+{2}% oltre il massimo)
+damage.totals.petCapNote=Raggiunto il limite del {0}%, e il pannello del gioco mostra il numero già limitato: {1}. L'eccedenza non va persa: i nemici che riducono le resistenze la consumano per prima.
+damage.totals.missing=Cosa manca ancora in questa somma
+damage.totals.missingProcs=Abilità che si attivano a una condizione invece di restare sempre attive: attivazioni delle maestrie, abilità degli oggetti e attivazioni della devozione.
+damage.totals.missingPressed=Abilità da premere: i loro bonus durano solo pochi secondi.
+damage.totals.skipped=Saltato: {0}.
+damage.totals.toggledOff=Abilità attivabili disattivate: {0}. Quelle attive sono nella somma: il salvataggio ricorda cosa è attivo.
+damage.totals.chosenByHand=Scelto a mano (pulsante «Scegli le abilità attive»): {0}.
+damage.totals.missingConversion=Conversione del danno. Le percentuali a un tipo di danno sono mostrate così come sono, ma nel gioco si applicano dopo la conversione: «+200% Danno Fisico» non dà nulla a una build che converte tutto il danno fisico.
+damage.totals.missingScaling=Scalatura del danno dagli attributi: l'Acume aumenta il danno fisico e perforante, lo Spirito i tipi magici. Le formule sono note, ma questo è il livello successivo.
+damage.totals.missingCap=Il limite delle resistenze. Qui i bonus sono sommati così come sono, quindi il numero può superare l'80%; nel gioco si ferma al limite (80% più i bonus «al massimo», mostrati accanto). L'eccedenza oltre il limite non è inutile: i boss riducono le resistenze.
+damage.totals.missingDifficulty=La penalità alle resistenze per la difficoltà (−25 a Elite, −50 a Suprema) qui non è sottratta: il salvataggio non dice a quale difficoltà sei ora.
+damage.totals.notStacked=Cosa non si è sommato
+damage.totals.notStackedNote=La riduzione delle resistenze dei tipi «X di riduzione» e «X% di riduzione», la riduzione del danno del bersaglio e della sua precisione non si sommano: in ogni momento agisce la fonte più forte. Qui è presa la più forte, non la somma.
+damage.totals.notStackedItem={0}: {1} fonti, presa la più forte {2}
+
+# Suggerimento «di cosa è sommato» passando su una riga della somma
+damage.terms.pet=(bonus alle evocazioni)
+damage.terms.byMax=non si somma: presa la più forte di {0} fonti
+damage.terms.summedOne=sommato da {0} fonte
+damage.terms.summedMany=sommato da {0} fonti
+damage.terms.winner=← attiva
+damage.terms.total=totale {0}
+
+# Danno per colpo
+damage.hit.plainTitle=Attacco base dell'arma
+damage.hit.plainWeapon=Attacco base dell'arma: {0}
+damage.hit.skillTitle={0}   ({1}, liv. {2})
+damage.hit.weapon=arma: {0}
+damage.hit.attackSpeed={0} attacchi al s   ({1}% velocità di attacco)
+damage.hit.castSpeed={0}% velocità lancio magie
+damage.hit.castCapped=(raggiunto il limite del {0}%)
+damage.hit.channel=canalizzata: un impulso ogni {0} s
+damage.hit.perHit={0} – {1} per colpo
+damage.hit.overTime=(al secondo, {0} s)
+damage.hit.none=Nessun danno.
+damage.hit.bare=Senza effetti temporanei ({0}): {1} – {2} per colpo; è questo il numero che mostra il pannello del gioco.
+damage.hit.how=Come è calcolato
+damage.hit.howBase=La base è il danno dell'arma più i bonus fissi degli oggetti. Il danno elementale fisso si divide in tre parti uguali tra fuoco, freddo ed elettricità.
+damage.hit.howConversion=Le conversioni prendono quote della base, e le quote si sommano invece di applicarsi una dopo l'altra. La penetrazione dell'armatura è l'ultima conversione, su ciò che resta.
+damage.hit.howMultiplier=Ogni quota è moltiplicata per (1 + attributo/divisore + % del tipo + % elementale + % di tutti i danni). Divisori: Acume/245 e /215, Spirito/215 e /200.
+damage.hit.howTotal=Il pannello del personaggio nel gioco mostra «+X% Danno <tipo>» come la percentuale del TIPO PIÙ «% a tutti i danni», in una sola riga.
+damage.hit.howTotalSome=Questo personaggio ha +{0}% a tutti i danni, quindi il pannello del gioco mostrerà la percentuale di ogni tipo più alta della nostra di altrettanto.
+damage.hit.howTotalNone=Questo personaggio non ha «% a tutti i danni», quindi le percentuali coincideranno.
+damage.hit.howAll=«% a tutti i danni» vale per OGNI tipo di danno, danno nel tempo compreso: non ci sono eccezioni.
+damage.hit.howDots=Il danno nel tempo è mostrato al secondo: così lo contiene il record, non serve dividere. Un bonus alla durata non cambia questo numero: l'effetto dura di più, ma al secondo infligge lo stesso.
+
+# Danno per colpo: ritorsioni
+damage.retaliation.title=Ritorsioni (contrattacco)
+damage.retaliation.note=Questo è il PANNELLO «Ritorsioni» delle statistiche del personaggio, non una parte del colpo. Si calcola in altro modo: gli attributi e le percentuali ai tipi di danno non lo influenzano, solo «+% danno da ritorsione»; tu hai +{0}%. Le conversioni invece agiscono, e sono le stesse del danno normale.
+damage.retaliation.note2=Il contrattacco funziona solo contro gli attacchi in mischia, solo su chi ti ha colpito e solo quando sei stato davvero colpito; lui stesso non può mancare e non fa critici. La riflessione del danno («X% del danno subito viene riflesso») è un'ALTRA cosa e non compare mai nelle statistiche del personaggio: dipende dal danno di chi ti colpisce.
+
+# Danno per colpo: per mano
+damage.hands.title=Quanto fa in ogni mano
+damage.hands.both=È la stessa cosa che il gioco mostra nel suggerimento dell'abilità. La quota di danno dell'arma è la STESSA per entrambe le mani ({0}%), e i numeri tra parentesi differiscono perché le armi nelle mani sono diverse. Nella parentesi entra anche il danno nel tempo di quella mano: il pannello del gioco lo conta allo stesso modo.
+damage.hands.oneMain=C'è UNA riga perché l'abilità colpisce con una mano — la principale — e il gioco mostra esattamente altrettante righe nel suggerimento. Quale mano sia è scritto nell'ANIMAZIONE dell'abilità: ogni set di equipaggiamento ha il suo file, e gli eventi di colpo al suo interno nominano le mani. Passa a un'arma a due mani o metti uno scudo: la riga può cambiare, anche nel gioco.
+damage.hands.oneOff=C'è UNA riga perché l'abilità colpisce con una mano — la secondaria — e il gioco mostra esattamente altrettante righe nel suggerimento. Quale mano sia è scritto nell'ANIMAZIONE dell'abilità: ogni set di equipaggiamento ha il suo file, e gli eventi di colpo al suo interno nominano le mani. Passa a un'arma a due mani o metti uno scudo: la riga può cambiare, anche nel gioco.
+damage.hands.single=C'è una mano perché c'è un'arma. Nella parentesi entra anche il danno nel tempo di quella mano: il pannello del gioco lo conta allo stesso modo.
+damage.hands.ownShare=il suggerimento dell'abilità stessa mostrerà meno, solo la sua quota del {0}%:
+damage.hands.lineMain={0}% del danno dell'arma della mano principale ({1} - {2})
+damage.hands.lineOff={0}% del danno dell'arma della mano secondaria ({1} - {2})
+
+# Danno per colpo: di cosa è fatta l'abilità
+damage.parts.title=Di cosa è fatta questa abilità
+damage.parts.temporary=— effetto temporaneo
+damage.parts.oneHandMain=— colpisce con una mano, la principale
+damage.parts.oneHandOff=— colpisce con una mano, la secondaria
+damage.parts.weaponPct={0}% del danno dell'arma
+damage.parts.conversion=conversione {0}%: {1} → {2}   (si applica prima delle conversioni del personaggio)
+damage.parts.notCounted=NON SOMMATO: {0}
+
+# Danno per colpo: il colpo dell'evocazione
+damage.pet.title={0}   (colpo dell'evocazione «{1}», {2})
+damage.pet.summonedBy=evocata dall'abilità «{0}»
+damage.pet.withConversion=Danno con conversione: così colpisce davvero
+damage.pet.noNumbers=questa abilità non ha numeri
+damage.pet.asGame=Come lo mostra il gioco: senza conversione
+damage.pet.asGameNote=Il gioco non mostra da nessuna parte la conversione di un'evocazione: misurato con sei numeri e confermato da schermate; con e senza «Marchio di Ghol» la descrizione dell'abilità è la stessa. Funziona però come per il personaggio.
+damage.pet.notYours=Questo è il colpo dell'EVOCAZIONE e non è confrontabile con il tuo: non viene dalla tua arma, le tue percentuali di danno non vi si applicano, vi si applicano i bonus alle evocazioni.
+
+# Simulazione di combattimento: aiuto prima della prima esecuzione
+damage.help.title=La coda dei colpi nel tempo
+damage.help.press=Premi «Esegui la coda»: ogni fendente è giocato a parte — il colpo, quali mani sono uscite, e il danno di OGNI riga con il suo tiro nel suo intervallo. Le righe compaiono subito, man mano che si calcola. In alto c'è il risultato: danno al secondo, mediana delle somme al secondo, salute del bersaglio e tempo per ucciderlo (TTK).
+damage.help.twoNumbers=DUE NUMERI IN UNA RIGA: il primo è ciò che è ARRIVATO al bersaglio, per mano; tra parentesi «danno senza bonus» è ciò che è partito da noi: già con il critico, ma ancora senza il bonus razziale, l'armatura (riduce solo il fisico) e le resistenze con le loro riduzioni. Il primo numero può anche essere MAGGIORE del secondo: quando le nostre riduzioni portano la resistenza del bersaglio sotto zero, non riduce più ma amplifica. DPS, mediana, danno per esecuzione e TTK si contano su ciò che è ARRIVATO.
+damage.help.target=Il bersaglio viene preso dalla scheda «Nemico»: quello scelto lì, con il suo livello e la sua difficoltà. Se non è scelto nessuno, si usa il fantoccio da addestramento dei file del gioco.
+damage.help.pets=EVOCAZIONI: quelle spuntate vengono evocate all'inizio e poi secondo la ricarica dell'evocazione, finché non raggiungono il limite del loro tipo; quelle che si attivano da sole (una stella, un'abilità d'oggetto) arrivano anche senza spunta. Ognuna colpisce con il proprio attacco base e le proprie abilità con la loro frequenza, e il suo colpo e il suo critico si estraggono come i tuoi.
+damage.help.counted=Si contano: fendenti, abilità premute, canalizzazioni, la riserva delle armi, attivazioni, stelle, aure dannose, danno nel tempo, livelli del critico, riduzione delle resistenze, bonus razziale, riduzione della salute, forme ed evocazioni.
+damage.help.seed=Il seme rende un'esecuzione ripetibile: lo stesso seme dà la stessa esecuzione fino all'ultima cifra. Cambia solo lui e vedrai la dispersione; cambia la build con lo stesso seme e vedrai cosa ha cambiato la build.
+
+# Simulazione di combattimento: durante l'esecuzione
+damage.run.building=Costruzione della coda…
+damage.run.buildingNote=ogni colpo ha il suo danno con i suoi tiri, e un'esecuzione lunga ne ha migliaia
+damage.run.progress=Costruzione della coda…   {0} su {1} s   ({2} righe)
+
+# Simulazione di combattimento: risultato
+damage.run.buffsUp=Potenziamenti attivi: {0}   — entrano nella coda secondo la ricarica per la loro durata (senza durata nel record, per tutta l'esecuzione), e cambiano le statistiche invece di colpire come un colpo a parte
+damage.run.target=Bersaglio: {0}
+damage.run.targetLevel=livello {0}, difficoltà {1}
+damage.run.targetStats=capacità difensiva {0}   armatura {1}
+damage.run.hitChance=possibilità di colpire {0}%
+damage.run.mainSpell={0} «{1}» al posto dell'attacco base dell'arma: velocità lancio magie {2}%, ogni {3} s, colpi per esecuzione {4}
+damage.run.targetResists=resistenze del bersaglio: {0}
+damage.run.gear=abilità di oggetti e set:
+damage.run.queue=Coda
+damage.run.summary=Risultato dell'esecuzione
+damage.run.dps=Danno al secondo (DPS)  {0}     mediana delle somme al secondo {1}
+damage.run.total=danno per esecuzione {0} in {1} s
+damage.run.targetLife=salute del bersaglio {0}
+damage.run.killedAt=ucciso in {0} s (TTK)
+damage.run.dummyNote=— indicativo: il fantoccio nel gioco non muore mai
+damage.run.notKilled=non ucciso nell'esecuzione: resta il {0}%
+damage.run.percentLife=la riduzione della salute ha tolto {0} ({1} volte)
+damage.run.percentLifeBlocked=altre {0} volte la resistenza del bersaglio del {1}% l'ha annullata del tutto
+damage.run.swings=fendenti {0}, colpi {1}, mancati {2}, critici {3}
+damage.run.tier=livello {0}: {1}
+damage.run.hands=mani: entrambe {0}, prima {1}, seconda {2}
+damage.run.procs=autoattivati: attivazioni {0} (il loro danno {1})
+damage.run.pool=riserva delle armi {0}
+damage.run.silent=senza danno {0}: {1}
+damage.run.pets=evocazioni: colpi {0}, evocazioni {1}, il loro danno {2}
+damage.run.petsShare=— {0}% del totale
+damage.run.stars=stelle di devozione
+damage.run.dots=danno nel tempo: applicato {0}, rinnovato {1}, il suo danno {2} su {3}
+damage.run.before=il danno senza bonus era {0}; è arrivato il {1}% (bonus razziale, armatura, resistenze con le loro riduzioni)
+damage.run.conditions=Condizioni dell'esecuzione
+damage.run.rolls=Tiri di intervallo fatti: {0}, uno per ogni riga di danno in ogni colpo.
+damage.run.critNote=I critici con livelli sono contati: un solo tiro decide il colpo e il livello, e il «+% danno critico» si aggiunge al moltiplicatore del livello. La POSSIBILITÀ di critico in sé coincide con il gioco contro bersagli forti ed è troppo alta contro quelli deboli: i bonus dei mostri dal loro equipaggiamento non sono contati.
+damage.run.dotNote=Il danno nel tempo si applica e pulsa: una fonte mantiene UN solo effetto; un nuovo colpo prolunga la durata e alza il danno al migliore, invece di avviarne un secondo. Tutto il danno dell'arma (entrambe le mani e le abilità con quota d'arma) conta come UNA fonte; le abilità senza quota d'arma sono fonti a sé.
+damage.run.noteRough=SEMPLIFICATO: {0}
+damage.run.noteUnread=NON LETTO: {0}
+damage.run.noteHint=SUGGERIMENTO: {0}
+damage.run.pressNote=Le abilità spuntate vengono premute appena finisce la ricarica: all'inizio tutte insieme, poi ognuna secondo la propria ricarica (con la riduzione di oggetti e modificatori). Un'abilità che colpisce con due mani colpisce SEMPRE con entrambe, e ogni mano manca con il proprio tiro.
+damage.run.procNote=Le ATTIVAZIONI e le abilità «al posto dell'attacco base dell'arma» NON sono di proposito nell'elenco delle abilità spuntabili: nessuno le preme. Si giocano da sole, con il proprio tiro a ogni colpo e la propria ricarica.
+damage.run.silentNote=ATTIVATO SENZA DANNO: stelle di devozione e abilità di oggetti che evocano, applicano un potenziamento o un indebolimento. Il loro tiro e la loro ricarica sono reali; un potenziamento agisce per la sua durata, un indebolimento va sul bersaglio, e la creatura evocata entra nella riserva e colpisce con le proprie righe.
+damage.run.failed=L'esecuzione non è riuscita: {0}
+
+# Nemico: il pannello del nemico
+damage.enemy.title={0}   ({1}, livello {2}, difficoltà {3})
+damage.enemy.variants=Il database ha {0} record con questo nome: differiscono solo nel livello a cui si incontrano; qui è preso il più completo, e il livello si sceglie sopra.
+damage.enemy.combat=Parametri di combattimento
+damage.enemy.abilities=capacità difensiva {0}   capacità offensiva {1}
+damage.enemy.life=salute {0}   armatura {1}
+damage.enemy.gearArmour=(di cui {0} dall'equipaggiamento)
+damage.enemy.resists=Resistenze
+damage.enemy.none=nessuna
+damage.enemy.hit=Colpire
+damage.enemy.ourAttack=la nostra capacità offensiva {0}   contro la sua difesa {1}
+damage.enemy.hitChance=possibilità di colpire {0}%   possibilità di critico {1}%
+damage.enemy.ourDefence=la nostra capacità difensiva {0}   contro il suo attacco {1}
+damage.enemy.getHit=possibilità di essere colpiti {0}%   possibilità di subire un critico {1}%
+
+# Rango del nemico nell'elenco e nel titolo della scheda «Nemico». Il gioco non ha parole proprie per i ranghi.
+damage.enemy.rank.superBoss=nemesi
+damage.enemy.rank.boss=boss
+damage.enemy.rank.quest=di missione
+damage.enemy.rank.hero=eroe
+damage.enemy.rank.champion=campione
+damage.enemy.rank.common=comune
+damage.enemy.variantsShort=({0} record)
+damage.attack.byCooldown=al posto dell'arma, per ricarica ogni {0} s

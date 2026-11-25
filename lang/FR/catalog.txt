@@ -1,0 +1,44 @@
+# LE CATALOGUE D'OBJETS (colonne de gauche de la fenêtre principale).
+
+catalog.title=Catalogue d'objets
+catalog.wearable=Tout ce qui se porte
+catalog.everything=Tous les objets
+catalog.search=partie d'un nom…
+catalog.bonus=bonus : vitesse d'attaque…
+catalog.bulkHint=Ctrl + clic gauche — prendre une pile
+catalog.count={0} objets
+catalog.notBuilt=(catalogue non créé)
+catalog.hidden=({0} masqués par les filtres)
+catalog.level=niv. {0}
+
+# Rareté
+catalog.rarity.common=Ordinaire
+catalog.rarity.magical=Magique
+catalog.rarity.rare=Rare
+catalog.rarity.epic=Épique
+catalog.rarity.legendary=Légendaire
+catalog.rarity.quest=Quête
+
+# Sections
+catalog.category.head=Armure : tête
+catalog.category.shoulders=Armure : épaules
+catalog.category.chest=Armure : torse
+catalog.category.hands=Armure : mains
+catalog.category.waist=Armure : taille
+catalog.category.legs=Armure : jambes
+catalog.category.feet=Armure : pieds
+catalog.category.amulet=Bijoux : amulettes
+catalog.category.ring=Bijoux : anneaux
+catalog.category.medal=Bijoux : médailles
+catalog.category.relic=Reliques
+catalog.category.weapon1h=Armes : à une main
+catalog.category.weapon2h=Armes : à deux mains
+catalog.category.ranged1h=Armes : pistolets
+catalog.category.ranged2h=Armes : fusils
+catalog.category.shield=Main gauche : boucliers
+catalog.category.offhand=Main gauche : focalisateurs
+catalog.category.component=Composants
+catalog.category.augment=Augmentations
+catalog.category.consumable=Consommables
+catalog.category.crafting=Ingrédients et plans
+catalog.category.other=Autres

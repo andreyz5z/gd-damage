@@ -1,0 +1,44 @@
+# DER GEGENSTANDSKATALOG (linke Spalte des Hauptfensters).
+
+catalog.title=Gegenstandskatalog
+catalog.wearable=Alles Tragbare
+catalog.everything=Alle Gegenstände
+catalog.search=Teil eines Namens…
+catalog.bonus=Bonus: Angriffsgeschwindigkeit…
+catalog.bulkHint=Strg + Linksklick — einen Stapel nehmen
+catalog.count={0} Gegenstände
+catalog.notBuilt=(Katalog nicht erstellt)
+catalog.hidden=({0} durch Filter ausgeblendet)
+catalog.level=St. {0}
+
+# Seltenheit
+catalog.rarity.common=Gewöhnlich
+catalog.rarity.magical=Magisch
+catalog.rarity.rare=Selten
+catalog.rarity.epic=Episch
+catalog.rarity.legendary=Legendär
+catalog.rarity.quest=Quest
+
+# Abschnitte
+catalog.category.head=Rüstung: Kopf
+catalog.category.shoulders=Rüstung: Schultern
+catalog.category.chest=Rüstung: Torso
+catalog.category.hands=Rüstung: Hände
+catalog.category.waist=Rüstung: Taille
+catalog.category.legs=Rüstung: Beine
+catalog.category.feet=Rüstung: Füße
+catalog.category.amulet=Schmuck: Amulette
+catalog.category.ring=Schmuck: Ringe
+catalog.category.medal=Schmuck: Medaillen
+catalog.category.relic=Relikte
+catalog.category.weapon1h=Waffen: einhändig
+catalog.category.weapon2h=Waffen: zweihändig
+catalog.category.ranged1h=Waffen: Pistolen
+catalog.category.ranged2h=Waffen: Gewehre
+catalog.category.shield=Nebenhand: Schilde
+catalog.category.offhand=Nebenhand: Fokusgegenstände
+catalog.category.component=Komponenten
+catalog.category.augment=Verbesserungen
+catalog.category.consumable=Verbrauchsgüter
+catalog.category.crafting=Zutaten und Baupläne
+catalog.category.other=Sonstiges

@@ -1,0 +1,23 @@
+# THE "ACTIVE PETS" WINDOW and pet lines in the other windows.
+# The names of pets and of their skills come from the game.
+
+pets.title=Active pets — {0}
+pets.checkbox={0}   ({1}, lv. {2})
+pets.limit=up to {0} at once
+pets.lifetime={0} sec. lifetime
+pets.life=health: base {0} × (1 + {1}% its own + {2}% ours) = {3}
+pets.lifeAura=health: base {0} × (1 + {1}% its own + {2}% ours + {3}% auras) = {4}
+pets.armour=armor: base {0} × (1 + {1}% its own + {2}% ours) = {3}   (the game never prints pet armor — this is our own figure)
+pets.auras=under auras: {0}
+pets.none=This character has no skill that summons a pet.
+pets.note=Health: base × (1 + its own% + pet bonuses% + auras%). Skill damage is multiplied by the pet bonuses — the rule was measured against seven numbers from the game.
+
+pets.level=lv. {0}
+pets.levelUnknown=the pet record does not state a level
+pets.attack={0}   (pet «{1}», {2})
+
+# Pet conversion
+pets.conversion.title=This pet's conversion
+pets.conversion.capped=No more than a hundred per cent leaves one type: the hundred is split between the receivers by their shares. In brackets — what the items actually record.
+pets.conversion.line={0}% conversion: {1} to {2}
+pets.conversion.recorded=(records say {0}%)

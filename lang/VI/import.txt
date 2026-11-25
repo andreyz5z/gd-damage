@@ -1,0 +1,57 @@
+# Nhập nhân vật từ GrimTools (phần ghi chép ở MECHANICS 106)
+import.button=Nhập nhân vật từ GrimTools
+import.warning=Chúng tôi sẽ thử mặc đồ cho nhân vật của bạn theo dữ liệu từ GrimTools. Trang bị đang mặc hiện giờ sẽ bị huỷ và mọi chỉ số của nhân vật sẽ bị ghi đè theo dữ liệu nhập. Nếu có phần nào trong đường dẫn không nhận ra được, ô đó sẽ được giữ nguyên. Bạn có thật sự muốn tiếp tục không?
+import.title=Nhập nhân vật từ GrimTools
+import.paste=Dán đường dẫn tới một build — ví dụ https://www.grimtools.com/calc/2ELApkPN
+import.go=Nhập
+import.close=Đóng
+import.seedNote=Trang bị sẽ đúng là những món đó, nhưng các con số trong khoảng của chúng là của chúng tôi: build không có giá trị quay nào cả. Sau đó có thể chỉnh từng món trong cửa sổ sửa.
+import.badLink=Cái này không giống đường dẫn tới một build GrimTools.
+import.err.build=Trang đã mở được nhưng không có build nào trong đó. Hãy kiểm tra đường dẫn — nó phải dẫn tới trang của một build.
+import.err.other=Không thành: {0}
+import.step.page=Đang đọc trang của build…
+import.step.database=Đang tải cơ sở dữ liệu GrimTools…
+import.step.match=Đang đối chiếu với các bản ghi của trò chơi…
+import.result.gear=Món đã mặc: {0}; ô đã dọn trống: {1}
+import.result.skills=Kỹ năng: {0}, sao tín ngưỡng: {1}, gắn quyền năng thiên phú: {2}
+import.result.bio=Cấp {0}; thể chất {1}, tinh ranh {2}, tinh thần {3}
+import.missed.items=Món không nhận ra: {0} — các ô đó được giữ nguyên ({1})
+
+# Tiến trình công việc và lúc nó xong. Ngày 2 tháng 10: người dùng không thấy cả hai điều đó.
+import.step.reading=Đang phân tích cơ sở dữ liệu GrimTools…
+import.step.haveDatabase=Cơ sở dữ liệu GrimTools đã được phân tích — không cần tải gì.
+import.step.dress=Đang mặc đồ cho nhân vật…
+import.status.database=Đang tải cơ sở dữ liệu GrimTools, tệp {0} trên {1}: {2} trên {3} MB
+import.status.databaseSoFar=Đang tải cơ sở dữ liệu GrimTools, tệp {0} trên {1}: {2} MB
+import.status.done=Xong. Nhân vật đã được mặc đồ — hãy đóng cửa sổ để xem.
+import.status.donePartly=Xong, nhưng không phải mọi thứ đều chuyển được — chi tiết ở trên.
+import.status.failed=Không thành.
+# Các lỗi, mỗi lỗi gọi đúng tên của nó thay vì một câu «không thành» cho tất cả.
+import.err.network=Không có kết nối tới trang GrimTools. Hãy kiểm tra internet rồi thử lại.
+import.err.page=Trang của build không mở được — trang trả lời {0}. Hãy kiểm tra đường dẫn; có thể trang đang không truy cập được.
+import.err.timeout=Trang GrimTools không trả lời. Hãy kiểm tra kết nối internet — có thể trang đang không truy cập được.
+import.err.database=Không đọc được cơ sở dữ liệu GrimTools — không có gì để chuyển. Hãy thử lại.
+import.err.catalog=Không dựng được danh mục trang bị của trò chơi. Hãy kiểm tra xem thư mục trò chơi có đúng không.
+# Những gì không chuyển được, tính theo số: các số của họ chẳng nói gì với ai.
+import.missed.parts=Phần của trang bị không nhận ra: {0} — trang bị đã mặc, nhưng thiếu chúng.
+import.missed.skills=Kỹ năng không nhận ra: {0}
+import.missed.powers=Quyền năng thiên phú không nhận ra: {0}
+import.missed.shapes=Gắn kết ở kỹ năng biến hình không nhận ra: {0}
+import.missed.repeats=Bản ghi đến hai lần: {0} — các bản trùng đã được bỏ qua.
+# Tên các ô. Build gọi chúng là weapon1Alt và amulet — những tên đó không dành cho người đọc.
+import.slot.head=Đầu
+import.slot.amulet=Cổ
+import.slot.chest=Thân
+import.slot.legs=Chân
+import.slot.feet=Bàn chân
+import.slot.hands=Bàn tay
+import.slot.ring1=Nhẫn 1
+import.slot.ring2=Nhẫn 2
+import.slot.waist=Thắt lưng
+import.slot.shoulders=Vai
+import.slot.medal=Huy hiệu
+import.slot.relic=Cổ vật
+import.slot.weapon1=Vũ khí
+import.slot.weapon2=Khiên hoặc tay phụ
+import.slot.weapon1Alt=Vũ khí (bộ thứ hai)
+import.slot.weapon2Alt=Khiên hoặc tay phụ (bộ thứ hai)

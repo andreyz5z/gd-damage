@@ -1,0 +1,52 @@
+# 人物面板（主窗口的栏位）和属性提示。
+
+character.name=名字
+character.class=职业
+character.file=文件
+character.level=等级
+character.experience=经验
+character.physique=体格
+character.cunning=灵巧
+character.spirit=精神
+character.health=生命
+character.energy=能量
+character.attributePoints=属性点
+character.skillPoints=技能点
+character.devotionPoints=虔诚点数
+character.totalDevotion=虔诚点总数
+character.money=铁币
+character.tributes=贡品
+character.difficulties=难度
+character.difficulty.normal=普通、老兵
+character.difficulty.elite=精英
+character.difficulty.ultimate=终极
+
+# 编辑游戏自己计算的数字
+character.freeEdit=自由编辑属性
+character.freeEdit.warning=这五个数字由游戏根据已花费的点数、穿戴的物品和技能自行计算——公式已经弄清，与游戏完全一致。\n\n如果在这里写入自己的数值，存档将与游戏屏幕上显示的内容不一致：游戏会按自己的规则重新计算生命和能量，而保留你的属性。\n\n仍然允许编辑吗？
+character.keptInSave=与游戏屏幕上显示的内容分开保存在存档中。\n最终的生命和能量由游戏自己根据已花费的点数、属性、物品和技能计算，与这个数字不一致。\n这里具体保存的是什么我们还没弄清楚，所以编辑已关闭。
+
+# 属性提示
+character.tip.now={0}：当前 {1}
+character.tip.own=存档中 {0}，已花费点数 {1}
+character.tip.fromGear=来自物品和技能：{0}
+character.tip.gives=提供（按超出基础值 {0} 的部分计算）：
+character.tip.percents=以及百分比——这里也计入基础值 {0}：
+character.tip.percentLine=+{0}% {1}
+character.perPoint.life=每点 +{0} 生命
+character.perPoint.energy=每点 +{0} 能量
+character.perPoint.defense=每点 +{0} 防御能力
+character.perPoint.offense=每点 +{0} 攻击能力
+character.perPoint.lifeRegen=每点 +{0} 生命回复
+character.perPoint.energyRegen=每点 +{0} 能量回复
+character.divided.physical=物理伤害和穿刺伤害
+character.divided.bleed=创伤伤害和流血伤害
+character.divided.magic=魔法伤害
+character.divided.dots=其余持续伤害
+character.divided.energyRegen=能量回复
+character.needs.physique=穿戴护甲、近战武器和盾牌需要。
+character.needs.cunning=使用远程武器和部分近战武器需要。
+character.needs.spirit=佩戴戒指、项链和施法者物品需要。
+character.hardcore=硬核
+character.revive=复活
+character.revive.tip=清除死亡标记。请在游戏中确认角色能够重新载入。

@@ -1,0 +1,289 @@
+# THE ITEM TOOLTIP AND BONUS LINES (item tooltips, the "Total bonuses" tab).
+#
+# Most tooltip lines are the game's own templates in the chosen language. Here are our words: where
+# the game has no template, and the fallback text for when there is no game or the tag was not found.
+# The labels are in Title Case, as the game writes its own lines, so that they sit well next to them.
+
+# DoT duration tail: "+31% Frostburn Damage with +45% Increased Duration". Normally the game's template
+# (`ImprovedTimeFormat`); this text is used only when it is missing.
+item.durationWith=with {0}% Increased Duration
+
+# Damage type names in a conversion line ("50% conversion: Vitality Damage to Acid Damage").
+# Normally taken from the game (`tagConversion<Type>`); these are the fallback. The game has no tag for bleeding.
+item.conv.Physical=Physical Damage
+item.conv.Pierce=Pierce Damage
+item.conv.Fire=Fire Damage
+item.conv.Cold=Cold Damage
+item.conv.Lightning=Lightning Damage
+item.conv.Poison=Acid Damage
+item.conv.Life=Vitality Damage
+item.conv.Aether=Aether Damage
+item.conv.Chaos=Chaos Damage
+item.conv.Bleeding=Bleeding
+
+# ============ TOOLTIP LINE LABELS ============
+# An item line is built like this: first the game's template in the chosen language is looked up, and only
+# if there is none is the label taken from here. So these words show where the game does not translate a
+# line, and in languages the game has no translation for.
+
+# Damage types: the full form ("+31% Cold Damage"), the short one for duration, and the word for conversions.
+item.type.Physical=Physical Damage
+item.type.Pierce=Pierce Damage
+item.type.Fire=Fire Damage
+item.type.Cold=Cold Damage
+item.type.Lightning=Lightning Damage
+item.type.Poison=Acid Damage
+item.type.Life=Vitality Damage
+item.type.Aether=Aether Damage
+item.type.Chaos=Chaos Damage
+item.type.Bleeding=Bleeding Damage
+item.type.Elemental=Elemental Damage
+item.typeShort.Physical=Physical
+item.typeShort.Pierce=Pierce
+item.typeShort.Fire=Fire
+item.typeShort.Cold=Cold
+item.typeShort.Lightning=Lightning
+item.typeShort.Poison=Acid
+item.typeShort.Life=Vitality
+item.typeShort.Aether=Aether
+item.typeShort.Chaos=Chaos
+item.typeShort.Bleeding=Bleeding
+item.typeShort.Elemental=Elemental
+
+# Labels built from a type name.
+item.label.overTime={0} over Time
+item.label.dotDuration={0} Damage Duration
+item.label.retaliation={0} Retaliation
+item.label.resist=Resistance to {0}
+item.label.maxResist=Maximum Resistance to {0}
+item.label.duration={0} Duration
+
+# Words shared by several fields.
+item.label.action=Duration
+item.label.armour=Armor
+item.label.cooldown=Skill Recharge
+item.label.projectiles=Projectile(s)
+item.label.pierceChance=Chance to Pass Through Enemies
+item.label.radius=Radius
+item.label.resCutAll=Reduced Target's Resistances
+item.label.resCutAllOf=Reduced Target's Resistances
+item.label.resCut=Reduced Target's Resistance
+item.label.resCutOf=Reduced Target's Resistance
+item.label.petBaseDamage=Pet Base Damage
+item.unit.sec=Second
+item.unit.m=Meter
+item.unit.s=Second
+
+# Damage, DoTs and hindrances to the target.
+item.stat.offensiveBonusPhysical=Physical Damage
+item.stat.offensivePierceRatio=Pierce Ratio
+item.stat.offensiveLifeLeech=of Attack Damage converted to Health
+item.stat.offensiveManaLeech=of Attack Damage converted to Energy
+item.stat.offensivePercentCurrentLife=Reduction to Enemy's Health
+item.stat.offensiveTotalDamageModifier=to All Damage
+item.stat.offensiveCritDamageModifier=Crit Damage
+item.stat.offensiveDamageMultModifier=Total Damage Modified by
+item.stat.offensivePierceRatioModifier=Pierce Ratio
+item.stat.offensiveSlowManaLeach=Energy Leech
+item.stat.offensiveSlowManaLeachDurationModifier=Energy Leech Duration
+item.stat.offensiveFumble=Reduced Target's Accuracy
+item.stat.offensiveProjectileFumble=Reduced Target's Projectile Accuracy
+item.stat.offensiveSlowOffensiveAbility=Reduced Target's Offensive Ability
+item.stat.offensiveSlowDefensiveAbility=Reduced Target's Defensive Ability
+item.stat.offensiveSlowRunSpeed=Reduced Target's Movement Speed
+item.stat.offensiveSlowAttackSpeed=Reduced Target's Attack Speed
+item.stat.offensiveSlowSpellCastSpeed=Reduced Target's Casting Speed
+item.stat.offensiveKnockdown=Knockdown target
+item.stat.offensiveStun=Stun target
+item.stat.offensiveStunModifier=Stun Duration
+item.stat.offensiveFreeze=Freeze target
+item.stat.offensivePetrify=Petrify target
+item.stat.offensiveSleep=Sleep target
+item.stat.offensiveTrap=Immobilize target
+item.stat.offensiveConfusion=Confuse target
+item.stat.offensiveTaunt=Taunt target
+item.stat.offensiveFear=Terrify target
+item.stat.offensiveConvert=Convert target
+item.stat.offensiveDisruption=Skill Disruption
+item.stat.offensiveManaBurnDrain=Energy Burn
+item.stat.offensiveManaBurnDamageRatio=of Burned Energy dealt as Damage
+item.stat.offensiveTotalDamageReductionPercent=Reduced Target's Damage
+item.stat.offensiveSlowTotalSpeed=Slow target
+
+# Retaliation damage and retaliation hindrances.
+item.stat.retaliationFreeze=Freeze Retaliation
+item.stat.retaliationConfusion=Confusion Retaliation
+item.stat.retaliationSlowLightning=Electrocute Retaliation
+item.stat.retaliationFear=Fear Retaliation
+item.stat.retaliationSlowAttackSpeed=Attack Speed Reduction Retaliation
+item.stat.retaliationSlowRunSpeed=Movement Speed Reduction Retaliation
+item.stat.retaliationSlowPoison=Poison Retaliation
+item.stat.retaliationSlowManaLeach=Energy Leech Retaliation
+item.stat.retaliationTotalDamageModifier=to All Retaliation Damage
+
+# Armor, block and resistances.
+item.stat.defensiveAbsorptionModifier=Armor Absorption
+item.stat.defensiveBlockChance=Chance to Block
+item.stat.defensiveBlock=Damage Blocked
+item.stat.blockRecoveryTime=second Block Recovery
+item.stat.defensiveBlockModifier=Shield Block Chance
+item.stat.defensiveBlockAmountModifier=Shield Damage Blocked
+item.stat.blockAbsorption=Block Absorption
+item.stat.skillComboChargeSpendReduction=Chance to not consume Momentum charges
+item.stat.characterDefensiveBlockRecoveryReduction=Shield Recovery Time
+item.stat.defensiveElementalResistance=Elemental Resistance
+item.stat.defensiveAllResistance=All Resistances
+item.stat.defensiveAllMaxResist=to All Maximum Resistances
+item.stat.defensivePercentReflectionResistance=Reflected Damage Taken
+item.stat.defensiveSlowLifeLeach=Life Leech Resistance
+item.stat.defensiveSlowManaLeach=Energy Leech Resistance
+item.stat.defensiveBonusProtection=Bonus Armor
+item.stat.defensiveStun=Stun Resistance
+item.stat.defensiveFreeze=Freeze Resistance
+item.stat.defensivePetrify=Petrify Resistance
+item.stat.defensiveSleep=Sleep Resistance
+item.stat.defensiveTrap=Entrapment Resistance
+item.stat.defensiveDisruption=Disruption Resistance
+item.stat.defensiveKnockdown=Knockdown Resistance
+item.stat.defensiveConfusion=Confusion Resistance
+item.stat.defensiveFear=Fear Resistance
+item.stat.defensiveTaunt=Taunt Resistance
+item.stat.defensiveLifeLeach=Life Drain Resistance
+item.stat.defensiveManaLeach=Energy Drain Resistance
+item.stat.defensiveReflect=Damage Reflected
+item.stat.defensiveTotalSpeedResistance=Slow Resistance
+item.stat.defensivePercentCurrentLife=Resistance to Current Health Damage
+item.stat.defensiveCrowdControl=Reduced Crowd Control Duration
+item.stat.defensiveConvert=Reduced Mind Control Duration
+
+# Character attributes — as a number and as a percentage.
+item.stat.characterStrength=Physique
+item.stat.characterDexterity=Cunning
+item.stat.characterIntelligence=Spirit
+item.stat.characterLife=Health
+item.stat.characterMana=Energy
+item.stat.characterLifeRegen=Health Regenerated per Second
+item.stat.characterManaRegen=Energy Regenerated per Second
+item.stat.characterOffensiveAbility=Offensive Ability
+item.stat.characterDefensiveAbility=Defensive Ability
+item.stat.characterConstitution=Constitution
+item.stat.characterRunSpeedMax=Maximum Movement Speed
+item.stat.characterManaLimitReserve=Energy Reserved
+item.stat.characterStrengthModifier=Physique
+item.stat.characterDexterityModifier=Cunning
+item.stat.characterIntelligenceModifier=Spirit
+item.stat.characterLifeModifier=Health
+item.stat.characterManaModifier=Energy
+item.stat.characterLifeRegenModifier=Health Regeneration
+item.stat.characterManaRegenModifier=Energy Regeneration
+item.stat.characterOffensiveAbilityModifier=Offensive Ability
+item.stat.characterDefensiveAbilityModifier=Defensive Ability
+item.stat.characterAttackSpeedModifier=Attack Speed
+item.stat.characterSpellCastSpeedModifier=Casting Speed
+item.stat.characterRunSpeedModifier=Movement Speed
+item.stat.characterTotalSpeedModifier=Total Speed
+item.stat.characterDodgePercent=Chance to Avoid Melee Attacks
+item.stat.characterDeflectProjectile=Chance to Avoid Projectiles
+item.stat.characterHealIncreasePercent=Healing Increased
+item.stat.characterEnergyAbsorptionPercent=Energy Absorbed from Enemy Spells
+item.stat.characterIncreasedExperience=Experience Gained
+item.stat.characterLightRadius=Light Radius
+item.stat.characterGlobalReqReduction=Reduced Attribute Requirements
+item.stat.characterLevelReqReduction=Reduced Level Requirement
+item.stat.characterManaLimitReserveReduction=Energy Reservation
+item.stat.characterConstitutionModifier=Constitution
+item.stat.characterRunSpeedMaxModifier=Maximum Movement Speed
+item.stat.characterAttackSpeedMaxModifier=Maximum Attack Speed
+item.stat.characterSpellCastSpeedMaxModifier=Maximum Casting Speed
+item.stat.characterArmorStrengthReqReduction=Reduced Physique Requirement for Armor
+item.stat.characterMeleeStrengthReqReduction=Reduced Physique Requirement for Melee Weapons
+item.stat.characterMeleeDexterityReqReduction=Reduced Cunning Requirement for Melee Weapons
+item.stat.characterWeaponStrengthReqReduction=Reduced Physique Requirement for Weapons
+item.stat.characterHuntingDexterityReqReduction=Reduced Cunning Requirement for Ranged Weapons
+item.stat.characterJewelryIntelligenceReqReduction=Reduced Spirit Requirement for Jewelry
+item.stat.characterShieldStrengthReqReduction=Reduced Physique Requirement for Shields
+item.stat.skillCooldownReduction=Skill Cooldown Reduction
+item.stat.skillManaCostReduction=Skill Energy Cost
+
+# What a skill costs and how far it reaches; below are fields found only on a skill modifier.
+item.stat.skillActiveLifeCost=Health Cost per Second
+item.stat.skillActiveManaCost=Energy Cost per Second
+item.stat.skillManaCost=Energy Cost
+item.stat.skillActiveDuration=Duration
+item.stat.skillTargetNumber=Target(s)
+item.stat.weaponDamagePct=Weapon Damage
+item.stat.retaliationDamagePct=of Retaliation Damage added to Attack
+item.stat.skillChanceWeight=to Chance of Use
+item.stat.skillTargetAngle=Degree Attack Angle
+item.stat.cooldownCharges=Charge(s)
+item.stat.petLimit=Summon Limit
+item.stat.damageAbsorptionPercent=Damage Absorbed
+item.stat.projectileLaunchRotation=Firing Arc
+item.stat.beamAngle=Degree Beam Arc
+item.stat.beamNumber=Beam(s)
+item.stat.spawnObjectsTimeToLive=Second Lifetime
+
+# Item header: armor and attack speed — the same lines the game prints under the item's name.
+item.head.armour={0} Armor
+item.head.aps={0} Attacks per Second
+
+# Item requirements. Normally taken from the game; these are the fallback.
+item.need.level=Required Player Level
+item.need.strength=Required Physique
+item.need.dexterity=Required Cunning
+item.need.intelligence=Required Spirit
+
+# Headings of the item's parts. The game has none: it writes the parts' bonuses straight into the common
+# list, and we need to show where a line comes from. The game has "Component" and "Augment" — those two are fallback.
+item.part.prefix=Prefix
+item.part.suffix=Suffix
+item.part.modifier=Awakening
+item.part.component=Component
+item.part.relicBonus=Completion Bonus
+item.part.augment=Augment
+item.part.ascension=Ascended Bonus
+
+# Item rarity. Normally taken from the game; these are the fallback.
+item.rarity.common=Common
+item.rarity.magical=Magical
+item.rarity.rare=Rare
+item.rarity.epic=Epic
+item.rarity.legendary=Legendary
+item.rarity.quest=Quest
+
+# The note under the item tooltip about the rolled numbers, and the item's size in cells.
+item.rolled.noteDoubt=The numbers in the lines are what rolled on THIS PARTICULAR item, as the game would show them. For lines with the red mark we have not yet measured the field's place in the rolling order: the record's number is kept there, and the calculated one is added as "rolled N ?" — it may differ from the game by one step.
+item.cells={0} cells
+item.allFields=— all non-zero fields of the record —
+
+# Other tooltip lines. Where the game has its own template, that one is printed; these are the fallback.
+item.weaponDamageHand={0}% {1} Weapon Damage
+item.hand.main=Main Hand
+item.hand.off=Off-hand
+item.missing.noGame=the game database is not connected
+item.missing.noRecord=the record was removed by a game patch
+item.restore.life=Health
+item.restore.mana=Energy
+item.restore.head=Restores
+item.need.short=— not enough, have {0}
+item.chanceOfOne={0}% chance of one of:
+item.chanceOfAll={0}% chance of:
+item.chanceOf={0}% chance of
+item.forSeconds=over {0} Seconds
+item.petBonusAll=Bonus to All Pets
+item.set=Set
+item.setNamed=Set: {0}
+item.setWorn=({0}) Set
+item.conversionField=damage conversion
+item.conversion={0}% conversion: {1} to {2}
+item.noGameWords=(this line has no game words here)
+item.rolledValue=rolled {0} ?
+item.racial.damage=Damage to:
+item.racial.defence=Less Damage from:
+item.skillPlus=+{0} to {1}
+item.masteryPlus=+{0} to all skills of the {1} mastery
+item.allSkillsPlus=+{0} to all Skills
+item.summonCount={0} Summoned
+item.activationChance=Activation Chance
+item.stat.retaliationDamageMultModifier=Total Retaliation Damage Modified by
+item.conversionGone=-{0}% {1}

@@ -1,0 +1,36 @@
+# NOTE SUL CALCOLO DEL COLPO (scheda «Danno per colpo», sezione «Come è calcolato»).
+
+model.bareHands=Nella mano principale non c'è un'arma. Il danno del pugno in sé non è contato, solo ciò che danno abilità, devozione e oggetti; nel gioco un personaggio a mani nude ha qualche punto di danno fisico in più.
+model.dualDot=Con due armi il danno nel tempo non si divide per mano: {0} è 0,75 della somma del danno nel tempo di ENTRAMBE le mani e di quello del personaggio, contando ogni fonte UNA volta. Per mano, il gioco mostra «danno nel tempo di questa mano + quello del personaggio» per intero, quindi la riga «per colpo» può essere sia maggiore sia minore di una mano. Viene trattato così solo il danno nel tempo portato dall'arma stessa (un componente al suo interno non conta).
+model.plainAttack=Questo è l'attacco base dell'arma con l'arma della mano principale. Nell'elenco sopra si può scegliere un'abilità.
+model.skill=Abilità «{0}», livello {1}.
+model.skillNoWeapon=Non ha una quota di danno dell'arma: quindi l'arma non entra affatto in questo colpo, e nemmeno i bonus fissi degli oggetti; conta solo il danno proprio dell'abilità.
+model.skillWeapon={0}% del danno dell'arma: questo moltiplicatore si applica al danno dell'arma insieme al suo danno nel tempo, ma non al danno fisso proprio dell'abilità.
+model.charge=L'abilità si carica: {0}% all'ultima carica. Il pannello del gioco calcola con questa cifra anche senza cariche accumulate, e il moltiplicatore si applica solo alla quota di danno dell'arma; il danno fisso proprio dell'abilità resta invariato. Il suggerimento dell'abilità stessa non porta questo moltiplicatore: lì la quota è indicata come {1}%.
+model.modifiers=Modificatori di abilità inclusi in questo colpo: {0}. Le loro percentuali appartengono all'attacco, non al personaggio; per questo mancano nella scheda dei bonus totali. Anche il gioco li include: per «Cadenza» mostra 210 gradi e 5 bersagli, e sono i numeri di «Spirito Combattivo».
+model.temporaryIn=Qui è incluso un effetto temporaneo dell'abilità: {0}. Si applica quando l'abilità colpisce e dura qualche secondo, cioè finché continui ad attaccare resta attivo. Ma il pannello del gioco mostra l'abilità SENZA di esso, quindi confronta il pannello con la cifra senza effetti temporanei (sotto).
+model.temporaryOut=Gli effetti temporanei ({0}) qui non sono inclusi.
+model.retaliation=L'abilità aggiunge al colpo il {0}% del danno da ritorsione del personaggio: viene contato e diviso per tipo. RESTO: per «Bastione di Menhir» la regola dà 1089 di fuoco contro i 1092 necessari, cioè lo 0,28% di scarto; da dove vengano questi tre punti non è chiarito.
+model.notCounted=Non incluso: {0}.
+model.notModelled=Non considerati: il cumulo del danno nel tempo da fonti diverse, i colpi critici, i bonus contro un tipo di mostro (moltiplicano alla fine) e le resistenze del bersaglio.
+
+# Nomi dei tipi di danno nelle righe «Danno per colpo» e di ritorsione: «1234 Danno da Fuoco».
+model.type.Physical=Danno Fisico
+model.type.Pierce=Danno Perforante
+model.type.Fire=Danno da Fuoco
+model.type.Cold=Danno da Freddo
+model.type.Lightning=Danno da Elettricità
+model.type.Poison=Danno da Veleno
+model.type.Life=Danno alla Salute
+model.type.Aether=Danno da Etere
+model.type.Chaos=Danno da Caos
+model.type.Bleeding=Sanguinamento
+
+# Nomi del danno nel tempo: «2072 di Bruciatura al secondo».
+model.dot.Physical=Trauma Interno
+model.dot.Fire=Bruciatura
+model.dot.Cold=Gelo
+model.dot.Lightning=Folgorazione
+model.dot.Poison=Veleno
+model.dot.Life=Decadenza Vitale
+model.dot.Bleeding=Sanguinamento

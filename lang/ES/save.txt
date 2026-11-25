@@ -1,0 +1,8 @@
+# ERRORES AL ESCRIBIR LA PARTIDA (en la barra de estado «Error al guardar: …» y en la ventana «No se pudo guardar»).
+
+save.error.unparsed=partida no escrita: el bloque {0} no se descompuso en campos (partida de una versión desconocida del juego)
+save.error.writtenUnparsed=el archivo escrito contiene un bloque {0} sin descomponer
+save.error.reread=el archivo escrito no se vuelve a leer correctamente
+save.error.rekey=el archivo no resiste un cambio de la clave de cifrado
+save.error.length={0} (longitud {1} en lugar de {2})
+save.error.offset={0}: diferencia en el desplazamiento {1}

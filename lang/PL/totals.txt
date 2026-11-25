@@ -1,0 +1,71 @@
+# ŹRÓDŁA BONUSÓW: etykiety składników w podpowiedzi „z czego to się składa” na zakładce „Łączne bonusy”.
+# Trafienie odnajduje swój składnik właśnie po tych etykietach, dlatego każda powstaje w jednym miejscu.
+# WAŻNE PRZY TŁUMACZENIU: etykiety części przedmiotu (totals.part.*) muszą się między sobą różnić — inaczej
+# wiersze różnych części dzieliłyby jeden rzut obrażeń. Pilnuje tego --langtest.
+
+totals.part.prefix=(prefiks)
+totals.part.suffix=(sufiks)
+totals.part.component=(składnik)
+totals.part.relicBonus=(bonus ukończenia)
+totals.part.augment=(wzmocnienie)
+totals.part.modifier=(modyfikator)
+totals.part.ascension=(wyniesienie)
+totals.setShort=zestaw: {0}
+totals.fromItem=z przedmiotu: {0} ({1})
+totals.devotion=poświęcenie: {0}
+totals.skill=umiejętność: {0} (poz. {1})
+totals.toggled=włączona: {0} (poz. {1})
+totals.skillMod=modyfikator umiejętności: {0}
+totals.toggledMod=włączony, modyfikator umiejętności: {0}
+totals.chosenOn={0} — włączone ręcznie
+totals.chosenOff={0} — wyłączone ręcznie
+totals.gateItem={0} (z przedmiotu) — {1}
+totals.gateDevotion={0} (poświęcenie) — {1}
+
+totals.gate.needDualAny=ani dwóch broni do walki wręcz, ani dwóch jednoręcznych dystansowych
+totals.gate.needDualMelee=brak dwóch broni w rękach
+totals.gate.needDualRanged=brak dwóch jednoręcznych broni dystansowych
+totals.gate.needRanged=brak broni dystansowej
+totals.gate.needGuns=potrzebne dwa pistolety lub strzelba
+totals.gate.needEmptyHands=broń w rękach
+totals.gate.wrongWeapon=niewłaściwa broń w rękach
+
+# NAGŁÓWKI GRUP na zakładce „Łączne bonusy”. „Odporności”, „Odbicia”, „Obrona” i „Atrybuty” pochodzą z gry
+# (jej panelu postaci); te cztery wiersze to tylko zapas.
+totals.group.damage=Obrażenia
+totals.group.overTime=Obrażenia w czasie
+totals.group.retaliation=Odbicia
+totals.group.debuff=Co odbiera się celowi
+totals.group.resist=Odporności
+totals.group.defence=Obrona
+totals.group.attributes=Atrybuty
+totals.group.skills=Umiejętności
+totals.group.other=Inne
+
+# Strefy pancerza. Zwykle z gry (jej panelu pancerza); to jest zapas.
+totals.zone.head=Głowa
+totals.zone.shoulders=Ramiona
+totals.zone.chest=Klatka piersiowa
+totals.zone.arms=Ręce
+totals.zone.legs=Nogi
+totals.zone.feet=Stopy
+
+# Co u przywołańców doszło do limitu: „… na limicie: chaos 84% (+12% ponad maksimum), ogłuszenie …”.
+totals.capWord.elemental=żywioły
+totals.capWord.stun=ogłuszenie
+totals.capWord.freeze=zamrożenie
+totals.capWord.trap=unieruchomienie
+totals.capWord.petrify=spetryfikowanie
+totals.capWord.convert=kontrola umysłu
+
+# Nazwy odporności. Z gry (jej panelu postaci); to jest zapas, jej słowami.
+totals.resist.fire=Ogień
+totals.resist.cold=Zimno
+totals.resist.lightning=Błyskawice
+totals.resist.poison=Trucizny i kwasy
+totals.resist.pierce=Przebijające
+totals.resist.aether=Aether
+totals.resist.chaos=Chaos
+totals.resist.life=Witalność
+totals.resist.bleeding=Krwawienie
+totals.resist.physical=Fizyczne

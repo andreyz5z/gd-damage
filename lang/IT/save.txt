@@ -1,0 +1,8 @@
+# ERRORI DI SCRITTURA DEL SALVATAGGIO (nella barra di stato «Errore di scrittura: …» e nella finestra «Salvataggio non riuscito»).
+
+save.error.unparsed=salvataggio non scritto: il blocco {0} non è stato scomposto in campi (salvataggio di una versione sconosciuta del gioco)
+save.error.writtenUnparsed=il file scritto contiene un blocco {0} non scomposto
+save.error.reread=il file scritto non si rilegge correttamente
+save.error.rekey=il file non sopravvive a un cambio della chiave di cifratura
+save.error.length={0} (lunghezza {1} invece di {2})
+save.error.offset={0}: differenza all'offset {1}

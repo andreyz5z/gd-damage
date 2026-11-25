@@ -1,0 +1,8 @@
+# FEHLER BEIM SCHREIBEN DES SPIELSTANDS (in der Statuszeile „Speicherfehler: …“ und im Fenster „Speichern fehlgeschlagen“).
+
+save.error.unparsed=Spielstand nicht geschrieben: Block {0} wurde nicht in Felder zerlegt (Spielstand einer unbekannten Spielversion)
+save.error.writtenUnparsed=die geschriebene Datei enthält einen nicht zerlegten Block {0}
+save.error.reread=die geschriebene Datei lässt sich nicht korrekt zurücklesen
+save.error.rekey=die Datei übersteht keinen Wechsel des Verschlüsselungsschlüssels
+save.error.length={0} (Länge {1} statt {2})
+save.error.offset={0}: Abweichung bei Versatz {1}

@@ -1,0 +1,14 @@
+# OKNO „NASTAVENÍ“.
+
+settings.title=Nastavení
+settings.gameFolder=Složka Grim Dawn:
+settings.gameFolder.browse=Složka, ve které je Grim Dawn nainstalován
+settings.savesFolder=Složka uložených her (pro okno otevření):
+settings.savesFolder.browse=Složka s vašimi uloženými hrami
+settings.browse=Vybrat…
+settings.language=Jazyk:
+settings.rebuildCatalog=Znovu vytvořit katalog předmětů
+settings.rawFields=Zobrazit všechna pole záznamu v popisu předmětu
+settings.fileHint=settings.json leží vedle programu
+settings.ok=OK
+settings.cancel=Zrušit

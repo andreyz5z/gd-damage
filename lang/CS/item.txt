@@ -1,0 +1,287 @@
+# NÁPOVĚDA PŘEDMĚTU A ŘÁDKY BONUSŮ (nápovědy předmětů, záložka „Celkové bonusy“).
+#
+# Většina řádků nápovědy jsou šablony samotné hry ve zvoleném jazyce. Tady jsou naše slova: tam, kde hra šablonu
+# nemá, a náhradní text pro případ, že hra chybí nebo se štítek nenašel.
+
+# Dovětek doby trvání zranění v čase: „+31% zranění omrzlinami s +45% delším trváním“. Obvykle šablona hry
+# (`ImprovedTimeFormat`); tento text jen tehdy, když chybí.
+item.durationWith=s {0}% delším trváním
+
+# Názvy typů zranění v řádku přeměny („50% přeměna: zranění životní energie na zranění jedem“).
+# Obvykle ze hry (`tagConversion<Typ>`); toto je náhrada. Pro krvácení hra štítek nemá.
+item.conv.Physical=fyzické zranění
+item.conv.Pierce=bodné zranění
+item.conv.Fire=ohnivé zranění
+item.conv.Cold=zranění chladem
+item.conv.Lightning=zranění elektrickým výbojem
+item.conv.Poison=zranění jedem
+item.conv.Life=zranění životní energie
+item.conv.Aether=zranění Aetherem
+item.conv.Chaos=zranění Chaosem
+item.conv.Bleeding=krvácení
+
+# ============ POPISKY ŘÁDKŮ NÁPOVĚDY ============
+# Řádek předmětu vzniká takto: nejprve se hledá šablona hry ve zvoleném jazyce, a teprve když není, bere se popisek
+# odsud.
+
+# Typy zranění: plný tvar („+31% zranění chladem“), krátký pro dobu trvání.
+item.type.Physical=fyzického zranění
+item.type.Pierce=bodného zranění
+item.type.Fire=ohnivého zranění
+item.type.Cold=zranění chladem
+item.type.Lightning=zranění elektrickým výbojem
+item.type.Poison=zranění jedem
+item.type.Life=zranění životní energie
+item.type.Aether=zranění Aetherem
+item.type.Chaos=zranění Chaosem
+item.type.Bleeding=zranění krvácením
+item.type.Elemental=zranění živly
+item.typeShort.Physical=fyzického
+item.typeShort.Pierce=bodného
+item.typeShort.Fire=ohněm
+item.typeShort.Cold=chladem
+item.typeShort.Lightning=elektrickým výbojem
+item.typeShort.Poison=jedem
+item.typeShort.Life=životní energie
+item.typeShort.Aether=Aetherem
+item.typeShort.Chaos=Chaosem
+item.typeShort.Bleeding=krvácením
+item.typeShort.Elemental=živly
+
+# Popisky složené z názvu typu.
+item.label.overTime={0} v čase
+item.label.dotDuration=trvání zranění {0}
+item.label.retaliation=oplácení: {0}
+item.label.resist=odolnosti ({0})
+item.label.maxResist=maximální odolnosti ({0})
+item.label.duration=trvání ({0})
+
+# Slova společná více polím.
+item.label.action=trvání
+item.label.armour=zbroje
+item.label.cooldown=obnovení dovednosti
+item.label.projectiles=střela/y
+item.label.pierceChance=šance prostřelit nepřátele
+item.label.radius=poloměru
+item.label.resCutAll=snížení odolností cíle
+item.label.resCutAllOf=snížení odolností cíle
+item.label.resCut=snížení odolnosti cíle
+item.label.resCutOf=snížení odolnosti cíle
+item.label.petBaseDamage=základní zranění spojence
+item.unit.sec=s
+item.unit.m=m
+item.unit.s=s
+
+# Zranění, zranění v čase a překážky pro cíl.
+item.stat.offensiveBonusPhysical=fyzického zranění
+item.stat.offensivePierceRatio=podílu průrazu
+item.stat.offensiveLifeLeech=zranění z útoku se mění ve zdraví
+item.stat.offensiveManaLeech=zranění z útoku se mění v energii
+item.stat.offensivePercentCurrentLife=snížení zdraví nepřítele
+item.stat.offensiveTotalDamageModifier=k veškerému zranění
+item.stat.offensiveCritDamageModifier=kritického zranění
+item.stat.offensiveDamageMultModifier=změny celkového zranění
+item.stat.offensivePierceRatioModifier=podílu průrazu
+item.stat.offensiveSlowManaLeach=krádeže energie
+item.stat.offensiveSlowManaLeachDurationModifier=trvání krádeže energie
+item.stat.offensiveFumble=snížení přesnosti cíle
+item.stat.offensiveProjectileFumble=snížení přesnosti střel cíle
+item.stat.offensiveSlowOffensiveAbility=snížení útočné schopnosti cíle
+item.stat.offensiveSlowDefensiveAbility=snížení obranné schopnosti cíle
+item.stat.offensiveSlowRunSpeed=snížení rychlosti pohybu cíle
+item.stat.offensiveSlowAttackSpeed=snížení útočné rychlosti cíle
+item.stat.offensiveSlowSpellCastSpeed=snížení rychlosti kouzlení cíle
+item.stat.offensiveKnockdown=sražení cíle
+item.stat.offensiveStun=omráčení cíle
+item.stat.offensiveStunModifier=trvání omráčení
+item.stat.offensiveFreeze=zmrazení cíle
+item.stat.offensivePetrify=zkamenění cíle
+item.stat.offensiveSleep=uspání cíle
+item.stat.offensiveTrap=znehybnění cíle
+item.stat.offensiveConfusion=zmatení cíle
+item.stat.offensiveTaunt=vyprovokování cíle
+item.stat.offensiveFear=vyděšení cíle
+item.stat.offensiveConvert=přetažení cíle
+item.stat.offensiveDisruption=přerušení dovedností
+item.stat.offensiveManaBurnDrain=spálení energie
+item.stat.offensiveManaBurnDamageRatio=spálené energie jako zranění
+item.stat.offensiveTotalDamageReductionPercent=snížení zranění cíle
+item.stat.offensiveSlowTotalSpeed=zpomalení cíle
+
+# Oplácející zranění a oplácející překážky.
+item.stat.retaliationFreeze=oplácení: zmrazení
+item.stat.retaliationConfusion=oplácení: zmatení
+item.stat.retaliationSlowLightning=oplácení: elektrický šok
+item.stat.retaliationFear=oplácení: strach
+item.stat.retaliationSlowAttackSpeed=oplácení: snížení útočné rychlosti
+item.stat.retaliationSlowRunSpeed=oplácení: snížení rychlosti pohybu
+item.stat.retaliationSlowPoison=oplácení: otrava
+item.stat.retaliationSlowManaLeach=oplácení: krádež energie
+item.stat.retaliationTotalDamageModifier=k veškerému oplácejícímu zranění
+
+# Zbroj, vykrytí a odolnosti.
+item.stat.defensiveAbsorptionModifier=pohlcení zbroje
+item.stat.defensiveBlockChance=šance na vykrytí
+item.stat.defensiveBlock=vykrytí zranění
+item.stat.blockRecoveryTime=s zotavení z vykrytí
+item.stat.defensiveBlockModifier=šance na vykrytí štítem
+item.stat.defensiveBlockAmountModifier=zranění vykrytého štítem
+item.stat.blockAbsorption=pohlcení při vykrytí
+item.stat.skillComboChargeSpendReduction=šance nespotřebovat náboje náporu
+item.stat.characterDefensiveBlockRecoveryReduction=doby zotavení štítu
+item.stat.defensiveElementalResistance=odolnosti vůči živlům
+item.stat.defensiveAllResistance=ke všem odolnostem
+item.stat.defensiveAllMaxResist=ke všem maximálním odolnostem
+item.stat.defensivePercentReflectionResistance=utrženého odraženého zranění
+item.stat.defensiveSlowLifeLeach=odolnosti vůči krádeži zdraví
+item.stat.defensiveSlowManaLeach=odolnosti vůči krádeži energie
+item.stat.defensiveBonusProtection=bonusové zbroje
+item.stat.defensiveStun=odolnosti vůči omráčení
+item.stat.defensiveFreeze=odolnosti vůči zmrazení
+item.stat.defensivePetrify=odolnosti vůči zkamenění
+item.stat.defensiveSleep=odolnosti vůči spánku
+item.stat.defensiveTrap=odolnosti vůči znehybnění
+item.stat.defensiveDisruption=odolnosti vůči přerušení
+item.stat.defensiveKnockdown=odolnosti vůči sražení
+item.stat.defensiveConfusion=odolnosti vůči zmatení
+item.stat.defensiveFear=odolnosti vůči strachu
+item.stat.defensiveTaunt=odolnosti vůči provokaci
+item.stat.defensiveLifeLeach=odolnosti vůči vysávání zdraví
+item.stat.defensiveManaLeach=odolnosti vůči vysávání energie
+item.stat.defensiveReflect=odraženého zranění
+item.stat.defensiveTotalSpeedResistance=odolnosti vůči zpomalení
+item.stat.defensivePercentCurrentLife=odolnosti vůči zranění ze současného zdraví
+item.stat.defensiveCrowdControl=zkrácení efektů ovládání
+item.stat.defensiveConvert=zkrácení ovládnutí mysli
+
+# Atributy postavy — číslem a procentem.
+item.stat.characterStrength=fyzické kondice
+item.stat.characterDexterity=rafinovanosti
+item.stat.characterIntelligence=duchovna
+item.stat.characterLife=zdraví
+item.stat.characterMana=energie
+item.stat.characterLifeRegen=regenerace zdraví za sekundu
+item.stat.characterManaRegen=regenerace energie za sekundu
+item.stat.characterOffensiveAbility=útočné schopnosti
+item.stat.characterDefensiveAbility=obranné schopnosti
+item.stat.characterConstitution=výdrže
+item.stat.characterRunSpeedMax=maximální rychlosti pohybu
+item.stat.characterManaLimitReserve=rezervované energie
+item.stat.characterStrengthModifier=fyzické kondice
+item.stat.characterDexterityModifier=rafinovanosti
+item.stat.characterIntelligenceModifier=duchovna
+item.stat.characterLifeModifier=zdraví
+item.stat.characterManaModifier=energie
+item.stat.characterLifeRegenModifier=regenerace zdraví
+item.stat.characterManaRegenModifier=regenerace energie
+item.stat.characterOffensiveAbilityModifier=útočné schopnosti
+item.stat.characterDefensiveAbilityModifier=obranné schopnosti
+item.stat.characterAttackSpeedModifier=útočné rychlosti
+item.stat.characterSpellCastSpeedModifier=rychlosti kouzlení
+item.stat.characterRunSpeedModifier=rychlosti pohybu
+item.stat.characterTotalSpeedModifier=celkové rychlosti
+item.stat.characterDodgePercent=šance uhnout útokům zblízka
+item.stat.characterDeflectProjectile=šance uhnout střelám
+item.stat.characterHealIncreasePercent=zvýšeného léčení
+item.stat.characterEnergyAbsorptionPercent=energie pohlcené z nepřátelských kouzel
+item.stat.characterIncreasedExperience=získaných zkušeností
+item.stat.characterLightRadius=poloměru světla
+item.stat.characterGlobalReqReduction=snížení požadavků na atributy
+item.stat.characterLevelReqReduction=snížení požadované úrovně
+item.stat.characterManaLimitReserveReduction=rezervace energie
+item.stat.characterConstitutionModifier=výdrže
+item.stat.characterRunSpeedMaxModifier=maximální rychlosti pohybu
+item.stat.characterAttackSpeedMaxModifier=maximální útočné rychlosti
+item.stat.characterSpellCastSpeedMaxModifier=maximální rychlosti kouzlení
+item.stat.characterArmorStrengthReqReduction=snížení požadavku fyzické kondice pro zbroj
+item.stat.characterMeleeStrengthReqReduction=snížení požadavku fyzické kondice pro zbraně na blízko
+item.stat.characterMeleeDexterityReqReduction=snížení požadavku rafinovanosti pro zbraně na blízko
+item.stat.characterWeaponStrengthReqReduction=snížení požadavku fyzické kondice pro zbraně
+item.stat.characterHuntingDexterityReqReduction=snížení požadavku rafinovanosti pro zbraně na dálku
+item.stat.characterJewelryIntelligenceReqReduction=snížení požadavku duchovna pro šperky
+item.stat.characterShieldStrengthReqReduction=snížení požadavku fyzické kondice pro štíty
+item.stat.skillCooldownReduction=zkrácení obnovení dovedností
+item.stat.skillManaCostReduction=energetické ceny dovedností
+
+# Kolik dovednost stojí a jak daleko sahá; níže pole, která má jen modifikátor dovednosti.
+item.stat.skillActiveLifeCost=ceny zdraví za sekundu
+item.stat.skillActiveManaCost=ceny energie za sekundu
+item.stat.skillManaCost=ceny energie
+item.stat.skillActiveDuration=trvání
+item.stat.skillTargetNumber=cíl/e
+item.stat.weaponDamagePct=zranění zbraní
+item.stat.retaliationDamagePct=oplácejícího zranění přidaného k útoku
+item.stat.skillChanceWeight=k šanci na použití
+item.stat.skillTargetAngle=stupňů úhlu útoku
+item.stat.cooldownCharges=náboj/e
+item.stat.petLimit=limitu vyvolaných
+item.stat.damageAbsorptionPercent=pohlceného zranění
+item.stat.projectileLaunchRotation=výstřelného oblouku
+item.stat.beamAngle=stupňů úhlu paprsku
+item.stat.beamNumber=paprsek/paprsky
+item.stat.spawnObjectsTimeToLive=s doby života
+
+# Záhlaví předmětu: zbroj a útočná rychlost — tytéž řádky, které hra ukazuje pod názvem předmětu.
+item.head.armour={0} zbroje
+item.head.aps={0} útoků za sekundu
+
+# Požadavky předmětu. Obvykle ze hry; toto je náhrada.
+item.need.level=Úroveň hráče
+item.need.strength=Fyzická kondice
+item.need.dexterity=Rafinovanost
+item.need.intelligence=Duchovno
+
+# Nadpisy částí předmětu. Hra je nemá: bonusy částí zapisuje rovnou do společného seznamu a my musíme ukázat, odkud
+# řádek pochází. „Komponenta“ a „vylepšení“ hra má — tyto dva jsou náhradní.
+item.part.prefix=Předpona
+item.part.suffix=Přípona
+item.part.modifier=Probuzení
+item.part.component=Komponenta
+item.part.relicBonus=Bonus dokončení
+item.part.augment=Vylepšení
+item.part.ascension=Bonus povznesení
+
+# Vzácnost předmětu. Obvykle ze hry; toto je náhrada.
+item.rarity.common=Běžný
+item.rarity.magical=Magický
+item.rarity.rare=Vzácný
+item.rarity.epic=Epický
+item.rarity.legendary=Legendární
+item.rarity.quest=Úkolový
+
+# Poznámka pod nápovědou o vylosovaných číslech a velikost předmětu v políčkách.
+item.rolled.noteDoubt=Čísla v řádcích jsou to, co padlo PRÁVĚ TOMUTO předmětu, jak by je ukázala hra. U řádků s červenou značkou jsme ještě nezměřili místo pole v pořadí losování: je tam ponecháno číslo ze záznamu a vypočtené je připsáno jako „padlo N ?“ — může se od hry lišit o jeden stupeň.
+item.cells=políček: {0}
+item.allFields=— všechna nenulová pole záznamu —
+
+# Další řádky nápovědy. Kde má hra vlastní šablonu, zobrazí se ta; toto je náhrada.
+item.weaponDamageHand={0}% zranění zbraní: {1}
+item.hand.main=hlavní ruka
+item.hand.off=druhá ruka
+item.missing.noGame=databáze hry není připojena
+item.missing.noRecord=záznam byl odstraněn záplatou hry
+item.restore.life=zdraví
+item.restore.mana=energie
+item.restore.head=Obnovuje
+item.need.short=— nestačí, je {0}
+item.chanceOfOne={0}% šance na jedno z:
+item.chanceOfAll={0}% šance na:
+item.chanceOf={0}% šance na
+item.forSeconds=po dobu {0} s
+item.petBonusAll=Bonus pro všechny spojence
+item.set=Set
+item.setNamed=Set: {0}
+item.setWorn={0} části setu
+item.conversionField=přeměna zranění
+item.conversion={0}% přeměna: {1} na {2}
+item.noGameWords=(tento řádek tu nemá slova hry)
+item.rolledValue=padlo {0} ?
+item.racial.damage=zranění proti:
+item.racial.defence=menší zranění od:
+item.skillPlus=+{0} k {1}
+item.masteryPlus=+{0} ke všem dovednostem povolání {1}
+item.allSkillsPlus=+{0} ke všem dovednostem
+item.summonCount=vyvolaných: {0}
+item.activationChance=šance na aktivaci
+item.stat.retaliationDamageMultModifier=změny celkového oplácejícího zranění
+item.conversionGone=-{0}% {1}

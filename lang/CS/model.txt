@@ -1,0 +1,36 @@
+# POZNÁMKY K VÝPOČTU ZÁSAHU (záložka „Zranění na zásah“, oddíl „Jak se to počítá“).
+
+model.bareHands=V hlavní ruce není zbraň. Zranění samotnou pěstí se nepočítá — jen to, co dávají dovednosti, oddanost a předměty; ve hře má postava s holýma rukama o pár bodů fyzického zranění víc.
+model.dualDot=Při dvou zbraních se zranění v čase nedělí podle rukou: {0} je 0,75 součtu zranění v čase OBOU rukou a vlastního zranění postavy, přičemž každý zdroj se počítá JEDNOU. Na ruku hra ukazuje „zranění v čase této ruky + postavy“ celé, takže řádek „na zásah“ může být větší i menší než ruka. Takto se zachází jen se zraněním v čase, které nese sama zbraň (komponenta v ní se nepočítá).
+model.plainAttack=Toto je výchozí útok zbraní v hlavní ruce. Dovednost lze vybrat v seznamu nahoře.
+model.skill=Dovednost „{0}“, úroveň {1}.
+model.skillNoWeapon=Nemá podíl zranění zbraní — takže zbraň do tohoto zásahu vůbec nevstupuje, stejně jako ploché bonusy předmětů: počítá se jen vlastní zranění dovednosti.
+model.skillWeapon={0}% zranění zbraní: tento násobek působí na zranění zbraně spolu s jejím zraněním v čase, ale ne na vlastní ploché zranění dovednosti.
+model.charge=Dovednost se nabíjí: {0}% při posledním náboji. Panel hry počítá s touto hodnotou i bez nasbíraných nábojů a násobek působí jen na podíl zranění zbraní — vlastní ploché zranění dovednosti zůstává beze změny. Nápověda samotné dovednosti tento násobek nenese: podíl je tam uveden jako {1}%.
+model.modifiers=Modifikátory dovedností započtené do tohoto zásahu: {0}. Jejich procenta patří k útoku, ne k postavě — proto chybějí na záložce celkových bonusů. Hra je započítává také: u „Rychlého útoku“ ukazuje 210 stupňů a 5 cílů, a to jsou čísla „Bojového ducha“.
+model.temporaryIn=Je tu započten dočasný efekt dovednosti: {0}. Působí, když dovednost zasáhne, a trvá několik sekund — dokud útočíte, drží se. Panel hry ale ukazuje dovednost BEZ něj, takže panel porovnávejte s hodnotou bez dočasných efektů (níže).
+model.temporaryOut=Dočasné efekty ({0}) zde započteny nejsou.
+model.retaliation=Dovednost přidává k zásahu {0}% oplácejícího zranění postavy — to se počítá a dělí podle typu. ZBYTEK: u „Menhirova valu“ dává pravidlo 1089 ohně oproti potřebným 1092, tedy odchylku 0,28%; odkud jsou ty tři body, zjištěno není.
+model.notCounted=Nezapočteno: {0}.
+model.notModelled=Nezohledněno: sčítání zranění v čase z různých zdrojů, kritické zásahy, bonusy proti druhu nestvůr (násobí až na konci) a odolnosti cíle.
+
+# Názvy typů zranění v řádcích „Zranění na zásah“ a oplácení: „1234 ohnivé zranění“.
+model.type.Physical=fyzické zranění
+model.type.Pierce=bodné zranění
+model.type.Fire=ohnivé zranění
+model.type.Cold=zranění chladem
+model.type.Lightning=zranění elektrickým výbojem
+model.type.Poison=zranění jedem
+model.type.Life=zranění životní energie
+model.type.Aether=zranění Aetherem
+model.type.Chaos=zranění Chaosem
+model.type.Bleeding=krvácení
+
+# Názvy zranění v čase: „2072 popálenin za sekundu“.
+model.dot.Physical=vnitřní krvácení
+model.dot.Fire=popáleniny
+model.dot.Cold=omrzliny
+model.dot.Lightning=elektrický šok
+model.dot.Poison=otrava
+model.dot.Life=chřadnutí
+model.dot.Bleeding=krvácení

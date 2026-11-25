@@ -1,0 +1,67 @@
+# THE "EDIT ITEM" WINDOW and its sub-windows: ascension bonus, relic completion bonus.
+# The item's stat lines come from the tooltip (part of the wording is the game's own).
+
+edit.title=Edit item
+edit.stop=Stop the search
+edit.relicBonus=Completion bonus (relic)…
+edit.affixes=Prefix and suffix…
+edit.ascension=Ascension bonus…
+edit.reroll=Reroll the item at random
+edit.findMax=Search for the maximum roll
+edit.findValues=Search by values
+edit.close=Close
+edit.notSaved=(found, not written)
+edit.secondEnd=└ the other end of the same line
+edit.hiddenRolls=Rolled, but not printed in the tooltip
+edit.perSecond=({0} per 1 sec. — that is what the field holds)
+edit.range=out of {0}…{1}
+
+# The right-hand panel: how the search goes and how it ends
+edit.rerolled=The item has been rerolled.\nNothing was searched for — a random item is legal in itself.\nTo write it into the save press "Apply".
+edit.badNumber=Could not read the number in the line «{0}»: {1}
+edit.busy=Searching…
+edit.busyProgress=Searching… {0} million of 2147 checked
+edit.searching=Searching for the item by trying values.\nHow long it takes depends on how fast the computer is.
+edit.found=Every chosen number was found. Press "Apply" to write the item into the save.
+edit.impossible=This stat never has such a value:
+edit.impossibleHint=Enter one of the values shown to the right of the line.
+edit.cancelled=The search was stopped.
+edit.notFound=These stats cannot be found together. Clear the checkboxes of the stats that matter less to you and try again.
+edit.hardest=The hardest field was: {0}. Every option was tried; such an item cannot exist in the game.
+edit.same=The item is already like that. Nothing to change.
+edit.saved=Written into the save.\nThe item itself, its affixes, component and ascension were left alone — it stayed an item the game could have dropped.
+edit.relicCleared=The completion bonus was cleared.
+edit.relicSet=Completion bonus: {0}
+edit.ascensionCleared=The ascension bonus was cleared.
+edit.ascensionSet=Ascension bonus: {0}
+edit.report.scanned={0} checked in {1} s
+edit.report.found=FOUND:   ({0})
+edit.report.impossible={0}: this field never gives the value {1}
+
+# The ascension bonus window
+edit.affixSet=Prefix: {0}\nSuffix: {1}
+edit.affix.title=Prefix and suffix
+edit.affix.head=Now: prefix — {0};   suffix — {1}\nOnly the ones the game puts on items of this kind are shown; a dot marks the rare (green) ones.\nThe numbers in the list are the ones ROLLED for this item: an affix is rolled, and what you see here is what you get.
+edit.affix.prefix=Prefix
+edit.affix.suffix=Suffix
+edit.affix.none=none
+edit.affix.gone=(the game no longer hands it out — it is not in the list)
+edit.affix.clear=Clear this part
+edit.affix.level=Requires level {0}
+edit.affix.building=Reading the game's item tables — once after a game update.
+
+edit.asc.title=Ascension bonus
+edit.asc.head=Only the bonuses an item of this kind can have are shown — a one-handed weapon has no claim on two-handed ones, and the other way round.
+# edit.asc.unknownClass=unknown
+# edit.asc.noPool=not worked out
+edit.asc.allPools=all pools, not only its own
+
+# The relic completion bonus window
+edit.relic.title=Relic completion bonus
+edit.relic.head=Relic: {0}   —   crafting level: {1}\nThe numbers in the list are the ones ROLLED for this item: the completion bonus is rolled, and what you see here is what you get.
+edit.relic.unknown=unknown
+edit.relic.noKind=not stated
+# edit.relic.noTable=this relic has NONE — it never gets a completion bonus
+edit.relic.allTables=all tables, not only its own
+edit.relic.noTableList=This relic has no bonus table — it never gets a completion bonus.
+edit.relic.jitter=(spread {0}%)

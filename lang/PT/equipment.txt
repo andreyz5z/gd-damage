@@ -1,0 +1,18 @@
+# PAINEL DE EQUIPAMENTO: nomes dos espaços (aparecem também nas mensagens «não vai no espaço …»).
+
+equipment.weapon1=Arma I
+equipment.offhand1=Mão sec. I
+equipment.weapon2=Arma II
+equipment.offhand2=Mão sec. II
+equipment.head=Cabeça
+equipment.neck=Pescoço
+equipment.medal=Medalha
+equipment.shoulders=Ombros
+equipment.chest=Torso
+equipment.hands=Mãos
+equipment.waist=Cintura
+equipment.legs=Pernas
+equipment.ring1=Anel 1
+equipment.feet=Pés
+equipment.relic=Relíquia
+equipment.ring2=Anel 2

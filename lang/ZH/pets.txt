@@ -1,0 +1,23 @@
+# 「活动战宠」窗口及其他窗口中的战宠行。
+# 战宠及其技能的名称来自游戏。
+
+pets.title=活动战宠 — {0}
+pets.checkbox={0}   ({1}，等级 {2})
+pets.limit=最多同时 {0} 个
+pets.lifetime=存在 {0} 秒
+pets.life=生命：基础 {0} × (1 + 自身 {1}% + 我方 {2}%) = {3}
+pets.lifeAura=生命：基础 {0} × (1 + 自身 {1}% + 我方 {2}% + 光环 {3}%) = {4}
+pets.armour=护甲：基础 {0} × (1 + 自身 {1}% + 我方 {2}%) = {3}   （游戏从不显示战宠护甲——这是我们自己算的数值）
+pets.auras=受光环影响：{0}
+pets.none=该人物没有召唤战宠的技能。
+pets.note=生命：基础 × (1 + 自身% + 战宠加成% + 光环%)。技能伤害乘以战宠加成——该规则用游戏中的七个数值测得。
+
+pets.level=等级 {0}
+pets.levelUnknown=战宠记录中没有注明等级
+pets.attack={0}   (战宠「{1}」，{2})
+
+# 战宠的转换
+pets.conversion.title=该战宠的转换
+pets.conversion.capped=从一种类型转出的不超过百分之百：这百分之百按接收方的比例分配。括号内是物品中实际记录的数值。
+pets.conversion.line={0}% 转换：{1} → {2}
+pets.conversion.recorded=（记录为 {0}%）

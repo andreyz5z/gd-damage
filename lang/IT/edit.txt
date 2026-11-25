@@ -1,0 +1,67 @@
+# FINESTRA «MODIFICA OGGETTO» e le sue sottofinestre: bonus di ascensione, bonus di completamento della reliquia.
+# Le righe delle statistiche dell'oggetto vengono dal suggerimento (parte del testo è del gioco stesso).
+
+edit.title=Modifica oggetto
+edit.stop=Ferma la ricerca
+edit.relicBonus=Bonus di completamento (reliquia)…
+edit.affixes=Prefisso e suffisso…
+edit.ascension=Bonus di ascensione…
+edit.reroll=Rigenera l'oggetto a caso
+edit.findMax=Cerca il tiro massimo
+edit.findValues=Cerca per valori
+edit.close=Chiudi
+edit.notSaved=(trovato, non scritto)
+edit.secondEnd=└ l'altro estremo della stessa riga
+edit.hiddenRolls=Estratto, ma non mostrato nel suggerimento
+edit.perSecond=({0} per 1 s: è ciò che contiene il campo)
+edit.range=su {0}…{1}
+
+# Pannello destro: come procede la ricerca e come finisce
+edit.rerolled=L'oggetto è stato rigenerato.\nNon è stato cercato nulla: un oggetto casuale è valido di per sé.\nPer scriverlo nel salvataggio premi «Applica».
+edit.badNumber=Impossibile leggere il numero nella riga «{0}»: {1}
+edit.busy=Ricerca in corso…
+edit.busyProgress=Ricerca in corso… {0} milioni su 2147 verificati
+edit.searching=Ricerca dell'oggetto provando i valori.\nQuanto dura dipende dalla velocità del computer.
+edit.found=Tutti i numeri scelti sono stati trovati. Premi «Applica» per scrivere l'oggetto nel salvataggio.
+edit.impossible=Questa statistica non ha mai un valore simile:
+edit.impossibleHint=Inserisci uno dei valori mostrati a destra della riga.
+edit.cancelled=La ricerca è stata fermata.
+edit.notFound=Queste statistiche non si possono trovare insieme. Togli la spunta a quelle che ti importano meno e riprova.
+edit.hardest=Il campo più difficile era: {0}. Sono state provate tutte le possibilità; un oggetto simile non può esistere nel gioco.
+edit.same=L'oggetto è già così. Non c'è niente da cambiare.
+edit.saved=Scritto nel salvataggio.\nL'oggetto stesso, i suoi affissi, il componente e l'ascensione non sono stati toccati: è rimasto un oggetto che il gioco avrebbe potuto far cadere.
+edit.relicCleared=Il bonus di completamento è stato rimosso.
+edit.relicSet=Bonus di completamento: {0}
+edit.ascensionCleared=Il bonus di ascensione è stato rimosso.
+edit.ascensionSet=Bonus di ascensione: {0}
+edit.report.scanned={0} verificati in {1} s
+edit.report.found=TROVATO:   ({0})
+edit.report.impossible={0}: questo campo non dà mai il valore {1}
+
+# Finestra del bonus di ascensione
+edit.affixSet=Prefisso: {0}\nSuffisso: {1}
+edit.affix.title=Prefisso e suffisso
+edit.affix.head=Ora: prefisso — {0};   suffisso — {1}\nSono mostrati solo quelli che il gioco mette sugli oggetti di questo tipo; un punto segna i rari (verdi).\nI numeri nell'elenco sono quelli ESTRATTI per questo oggetto: un affisso viene estratto, e ciò che vedi qui è ciò che ottieni.
+edit.affix.prefix=Prefisso
+edit.affix.suffix=Suffisso
+edit.affix.none=nessuno
+edit.affix.gone=(il gioco non lo assegna più: nell'elenco non c'è)
+edit.affix.clear=Togli questa parte
+edit.affix.level=Richiede livello {0}
+edit.affix.building=Leggiamo le tabelle degli oggetti del gioco: una volta dopo un aggiornamento.
+
+edit.asc.title=Bonus di ascensione
+edit.asc.head=Sono mostrati solo i bonus a cui ha diritto un oggetto di questo tipo: un'arma a una mano non ha diritto a quelli a due mani, e viceversa.
+# edit.asc.unknownClass=sconosciuta
+# edit.asc.noPool=non determinata
+edit.asc.allPools=tutte le riserve, non solo le sue
+
+# Finestra del bonus di completamento della reliquia
+edit.relic.title=Bonus di completamento della reliquia
+edit.relic.head=Reliquia: {0}   —   livello di creazione: {1}\nI numeri nell'elenco sono quelli ESTRATTI per questo oggetto: il bonus di completamento viene estratto, e ciò che vedi qui è ciò che ottieni.
+edit.relic.unknown=sconosciuto
+edit.relic.noKind=non indicato
+# edit.relic.noTable=questa reliquia non ne ha NESSUNA: non riceve mai un bonus di completamento
+edit.relic.allTables=tutte le tabelle, non solo la sua
+edit.relic.noTableList=Questa reliquia non ha una tabella di bonus: non riceve mai un bonus di completamento.
+edit.relic.jitter=(dispersione {0}%)

@@ -1,0 +1,71 @@
+# FONTES DE BÔNUS: rótulos das parcelas na dica «do que é feito» da aba «Bônus totais».
+# Um golpe encontra sua parcela exatamente por estes rótulos, por isso cada um é montado em um único lugar.
+# IMPORTANTE AO TRADUZIR: os rótulos das partes do item (totals.part.*) devem ser diferentes entre si — senão linhas
+# de partes diferentes passariam a dividir o mesmo sorteio de dano. O --langtest vigia isso.
+
+totals.part.prefix=(prefixo)
+totals.part.suffix=(sufixo)
+totals.part.component=(componente)
+totals.part.relicBonus=(bônus de conclusão)
+totals.part.augment=(aprimoramento)
+totals.part.modifier=(modificador)
+totals.part.ascension=(ascensão)
+totals.setShort=conjunto: {0}
+totals.fromItem=de um item: {0} ({1})
+totals.devotion=devoção: {0}
+totals.skill=habilidade: {0} (nív. {1})
+totals.toggled=ativada: {0} (nív. {1})
+totals.skillMod=modificador de habilidade: {0}
+totals.toggledMod=ativado, modificador de habilidade: {0}
+totals.chosenOn={0} — ativado à mão
+totals.chosenOff={0} — desativado à mão
+totals.gateItem={0} (de um item) — {1}
+totals.gateDevotion={0} (devoção) — {1}
+
+totals.gate.needDualAny=nem duas armas corpo a corpo nem duas de uma mão à distância
+totals.gate.needDualMelee=não há duas armas empunhadas
+totals.gate.needDualRanged=não há duas armas de uma mão à distância
+totals.gate.needRanged=não há arma à distância
+totals.gate.needGuns=são necessárias duas pistolas ou um rifle
+totals.gate.needEmptyHands=há uma arma na mão
+totals.gate.wrongWeapon=arma errada na mão
+
+# TÍTULOS DOS GRUPOS da aba «Bônus totais». «Resistências», «Retaliação», «Defesa» e «Atributos» vêm do jogo (seu
+# painel do personagem); estas quatro linhas são só a reserva.
+totals.group.damage=Dano
+totals.group.overTime=Dano ao longo do tempo
+totals.group.retaliation=Retaliação
+totals.group.debuff=O que é tirado do alvo
+totals.group.resist=Resistências
+totals.group.defence=Defesa
+totals.group.attributes=Atributos
+totals.group.skills=Habilidades
+totals.group.other=Outros
+
+# Zonas de armadura. Normalmente do jogo (seu painel de armadura); esta é a reserva.
+totals.zone.head=Cabeça
+totals.zone.shoulders=Ombros
+totals.zone.chest=Torso
+totals.zone.arms=Braços
+totals.zone.legs=Pernas
+totals.zone.feet=Pés
+
+# O que chegou ao limite nos companheiros: «… no limite: caos 84% (+12% acima do máximo), atordoamento …».
+totals.capWord.elemental=elemental
+totals.capWord.stun=atordoamento
+totals.capWord.freeze=congelamento
+totals.capWord.trap=imobilização
+totals.capWord.petrify=petrificação
+totals.capWord.convert=controle mental
+
+# Nomes das resistências. Do jogo (seu painel do personagem); esta é a reserva, com as palavras dele.
+totals.resist.fire=Fogo
+totals.resist.cold=Frio
+totals.resist.lightning=Eletricidade
+totals.resist.poison=Veneno e Ácido
+totals.resist.pierce=Perfurações
+totals.resist.aether=Éter
+totals.resist.chaos=Caos
+totals.resist.life=Vitalidade
+totals.resist.bleeding=Sangramento
+totals.resist.physical=Físico

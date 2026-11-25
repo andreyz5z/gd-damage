@@ -1,0 +1,36 @@
+# NOTES ON THE HIT CALCULATION (the "Damage per hit" tab, the "How this was worked out" section).
+
+model.bareHands=There is no weapon in the main hand. The damage of the fist itself is not counted — only what skills, devotion and items give; in the game a bare-handed character has a few points more physical damage.
+model.dualDot=With dual wielding the damage over time is not split per hand: {0} is 0.75 of the sum of the dot of BOTH hands and the character's own dot, where every source is counted ONCE. Per hand the game shows "this hand's dot + the character's dot" in full, so the "per hit" line can be both larger and smaller than a hand. Only the dot carried by the weapon itself is treated this way (a component inside it does not count).
+model.plainAttack=This is the default weapon attack with the main-hand weapon. A skill can be picked in the list above.
+model.skill=Skill «{0}», level {1}.
+model.skillNoWeapon=It has no weapon damage share — so the weapon does not enter this hit at all, and neither do the flat bonuses of items: only the skill's own damage is counted.
+model.skillWeapon={0}% weapon damage: this multiplier applies to the weapon's damage together with its dot, but not to the skill's own flat damage.
+model.charge=The skill is charged: {0}% at the last charge. The game's panel counts by that figure even when no charges are built up, and the multiplier applies only to the weapon damage share — the skill's own flat damage is left alone. The skill's own tooltip does not carry this multiplier: there the share is printed as {1}%.
+model.modifiers=Skill modifiers folded into this hit: {0}. Their percentages belong to the attack, not to the character — which is why they are absent from the totals tab. The game folds them in too: for «Cadence» it prints 210 degrees and 5 targets, and those are the numbers of «Fighting Spirit».
+model.temporaryIn=A temporary effect of the skill is folded in here: {0}. It is applied when the skill lands and lasts a few seconds — that is, while you keep attacking it stays up. But the game's panel shows the skill WITHOUT it, so compare the panel against the figure without temporary effects (shown below).
+model.temporaryOut=Temporary effects ({0}) are not folded in here.
+model.retaliation=The skill adds {0}% of the character's retaliation damage to the hit — that is counted and split by type. REMAINDER: for «Menhir's Bulwark» the rule gives 1089 fire against the 1092 needed, that is 0.28% off; where those three points come from is not worked out.
+model.notCounted=Not folded in: {0}.
+model.notModelled=Not taken into account: stacking of dots from different sources, critical hits, bonuses against a monster type (they multiply at the very end) and the target's resistances.
+
+# Damage type names in the "Damage per hit" and retaliation lines: "1234 fire damage".
+model.type.Physical=physical damage
+model.type.Pierce=piercing damage
+model.type.Fire=fire damage
+model.type.Cold=cold damage
+model.type.Lightning=lightning damage
+model.type.Poison=acid damage
+model.type.Life=vitality damage
+model.type.Aether=aether damage
+model.type.Chaos=chaos damage
+model.type.Bleeding=bleeding
+
+# Names of damage over time: "2072 burn per second".
+model.dot.Physical=internal trauma
+model.dot.Fire=burn
+model.dot.Cold=frostburn
+model.dot.Lightning=electrocute
+model.dot.Poison=poison
+model.dot.Life=vitality decay
+model.dot.Bleeding=bleeding

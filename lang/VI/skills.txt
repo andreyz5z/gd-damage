@@ -1,0 +1,150 @@
+# CỬA SỔ «KỸ NĂNG»: nghề, chú giải kỹ năng, tín ngưỡng, cổng biến.
+# Tên nghề, kỹ năng và chòm sao lấy từ trò chơi.
+
+skills.title=Kỹ Năng — {0}
+skills.levelParen=(cấp {0})
+
+# Chọn và bỏ nghề
+skills.choose.first=Nghề thứ nhất
+skills.choose.second=Nghề thứ hai
+skills.choose.intro=Một nghề được tính là đã chọn ngay khi điểm đầu tiên vào thanh của nó — đó chính là việc chúng tôi làm, dùng một điểm kỹ năng. Không thể chọn cùng một nghề hai lần.
+skills.choose.opensAt=Trong trò chơi, nghề này mở ở cấp {0}.
+skills.choose.freePoints=Điểm kỹ năng còn trống: {0}.
+skills.noPoints.text=Không còn điểm kỹ năng trống, mà nghề được chọn bằng cách đặt một điểm vào thanh của nó.\n\nHãy thêm một điểm vào ô «Điểm Kỹ Năng» ở cửa sổ chính, khi đó có thể dùng nó ở đây. Không được dùng điểm không tồn tại: nhân vật sẽ tiêu nhiều hơn số đã kiếm được.
+skills.noPoints.title=Không đủ điểm kỹ năng
+skills.take.ask=Chọn nghề «{0}»?\n\nMột điểm kỹ năng sẽ vào thanh của nghề — đó là cách một nghề được chọn. Hiện còn trống: {1}.
+skills.take.undo=Bạn có thể đổi ý bằng nút «Bỏ nghề» — điểm sẽ được trả lại.
+skills.take.title=Chọn nghề
+skills.drop.ask=Bỏ nghề «{0}»?\n\nMọi điểm đã đặt vào nghề sẽ bị rút ra — tổng cộng {1}, tính cả điểm của thanh — và trả về số điểm trống. Các kỹ năng của nghề này sẽ biến mất, và các ngôi sao tín ngưỡng gắn với chúng sẽ bị bỏ gắn.
+skills.drop.title=Bỏ nghề
+skills.drop.button=Bỏ nghề «{0}»
+skills.drop.secondFirst=Hãy bỏ nghề thứ hai trước
+skills.mastery.fallbackName=nghề {0}
+skills.mastery.tooEarlyFirst=Trong trò chơi, nghề thứ nhất mở ở cấp {0}, còn nhân vật đang cấp {1}.
+skills.mastery.tooEarlySecond=Trong trò chơi, nghề thứ hai mở ở cấp {0}, còn nhân vật đang cấp {1}.
+
+# Chú giải kỹ năng
+skills.kind.mastery=nghề
+skills.kind.active=kỹ năng chủ động
+skills.kind.weaponPool=Tấn Công Mặc Định (kỹ năng trong nhóm đòn vũ khí)
+skills.kind.modifier=biến thể kỹ năng
+skills.kind.transmuter=biến hình
+skills.kind.passive=kỹ năng bị động
+skills.tip.poolChance=Tỷ lệ được dùng thay cho Tấn Công Mặc Định: {0}%
+skills.tip.poolShared=Số đòn Tấn Công Mặc Định đã chọn: {0}, tổng tỷ lệ {1}%. Mỗi lần tấn công chỉ kích hoạt một trong số đó.
+skills.tip.poolSharedFull=Số đòn Tấn Công Mặc Định đã chọn: {0}, tổng tỷ lệ {1}%. Mỗi lần tấn công chỉ kích hoạt một trong số đó; đòn vũ khí thường sẽ không còn xảy ra.
+skills.tip.dependsOn=Mở qua: {0}
+skills.tip.level=Cấp hiện tại: {0}
+skills.tip.levelWithBonus=Cấp hiện tại: {0} + {1} từ vật phẩm
+skills.tip.max=(có thể nâng tới {0})
+skills.tip.maxWithGear=(có thể nâng tới {0}, giới hạn với vật phẩm {1})
+skills.tip.recordNumbers=Đây là các con số của bản ghi kỹ năng, trước chỉ số của nhân vật. Trong chú giải riêng, trò chơi hiện chúng đã nhân với toàn bộ sát thương bạn mang — vì vậy số của nó lớn hơn. Sát thương kèm chỉ số: «Tính sát thương…» → «Sát thương mỗi đòn».
+skills.tip.recordNumbersHand=Trừ dòng màu vàng về tay: ở đó trong ngoặc đã là sát thương của tay đó, đúng như trò chơi hiện.
+skills.tip.celestialPower=Quyền Năng Thiên Phú
+skills.tip.fromItem=Từ vật phẩm: {0}
+skills.tip.nextLevel=Cấp kế tiếp: {0}
+
+# Tín ngưỡng
+skills.devotion.tab=Tín Ngưỡng
+skills.devotion.spent=Điểm tín ngưỡng đã dùng: {0} trên {1} kiếm được, còn trống {2}
+skills.devotion.split=Trong đó {0} là sao bị động (cộng bên dưới) và {1} là sao có kỹ năng (hiện riêng).
+skills.devotion.sums=Tổng chỉ số
+skills.devotion.none=không có
+skills.devotion.granted=Kỹ năng được ban
+skills.devotion.boundTo=gắn với: {0}
+skills.devotion.unbound=không gắn với gì — sẽ không kích hoạt
+skills.devotion.levels=Đổi cấp kỹ năng tín ngưỡng
+skills.devotion.starOf={0}, sao {1}
+skills.devotion.total=tổng {0}
+skills.devotionLevels.title=Cấp kỹ năng tín ngưỡng — {0}
+skills.devotionLevels.of=trên {0}
+skills.devotionLevels.none=Nhân vật không có sao tín ngưỡng nào ban kỹ năng.
+skills.constellations.count=Chòm sao trong trò chơi: {0}. Hoàn thành: {1}, đang làm: {2}.
+skills.constellations.legend=Các sao đã lấy được đánh dấu; trong ngoặc cạnh chòm sao — đã lấy bao nhiêu sao, nó cho gì và cần gì.
+skills.constellations.gives=cho: {0}
+skills.constellations.needs=cần: {0}
+skills.constellations.star=sao {0}
+skills.constellations.notTaken=(chưa lấy)
+
+# Bản đồ tín ngưỡng: cộng điểm vào sao bằng chuột
+skills.devo.hint=Chuột trái vào một ngôi sao để cộng điểm, chuột phải để trả lại. Con lăn phóng to, kéo để di chuyển bản đồ.
+skills.devo.fit=Toàn bản đồ
+skills.devo.zoom=tỉ lệ {0}%
+skills.devo.points=Điểm tín ngưỡng: {0}
+skills.devo.stars=Sao đã lấy: {0} trên {1}
+skills.devo.noPoints=Không còn điểm tín ngưỡng trống. Hãy thêm ở ô «Điểm Tín Ngưỡng» trong cửa sổ chính.
+skills.devo.already=Ngôi sao này đã có điểm rồi.
+skills.devo.locked=Chòm sao «{0}» vẫn đang khoá: thiếu tương hợp — {1}.
+skills.devo.parentFirst=Phải lấy «{0}» trước — ngôi sao này gắn vào nó.
+skills.devo.empty=Ngôi sao này chưa có điểm nào.
+skills.devo.childFirst=«{0}» gắn vào ngôi sao này và đã được lấy — hãy trả lại nó trước.
+skills.devo.affinityHolds=Chòm sao đã đủ, và tương hợp của nó đang giữ «{0}»: không có nó sẽ còn {1}.
+skills.devo.bindHint=Nhấn chuột trái vào ngôi sao để chọn kỹ năng.
+
+# Quyền Năng Thiên Phú: gắn vào kỹ năng nào
+skills.bind.title=Gắn «{0}» vào kỹ năng nào
+skills.bind.none=Chưa gán kỹ năng
+skills.bind.chosen=(đã chọn)
+skills.bind.busy=(đang bận: {0})
+skills.bind.fromItem=(từ trang bị)
+skills.bind.legend=Màu đỏ — những kỹ năng nhân vật chưa học: vẫn chọn được, và quyền năng sẽ chạy ngay khi có điểm trong đó.
+
+# Cổng biến
+skills.portals.tab=Cổng Biến
+skills.portals.column=Cổng Biến
+skills.portals.notBuilt=Chưa tạo danh sách cổng biến. Danh sách được đọc từ tệp thế giới của trò chơi và mất khoảng một phút.
+skills.portals.build=Tạo danh sách cổng biến
+skills.portals.reading=Đang đọc tệp thế giới…
+skills.portals.readingWhat=Đang đọc tệp thế giới: {0}
+skills.portals.readError=Không đọc được tệp thế giới: {0}
+skills.portals.layer=Lớp Riftgates tại {0}: {1} mục
+skills.portals.openAll=Mở mọi cổng biến ở mọi độ khó
+skills.portals.openDifficulty={0}: mở tất cả ({1} trên {2})
+skills.portals.closeAll=Đóng mọi cổng biến ở mọi độ khó?\n\nViệc này cũng xóa cả những cổng nhân vật tự tìm thấy. Bản sao dự phòng được giữ cạnh bản lưu.
+skills.portals.closeOne=Đóng mọi cổng biến ở độ khó «{0}»?\n\nViệc này cũng xóa cả những cổng nhân vật tự tìm thấy. Bản sao dự phòng được giữ cạnh bản lưu.
+skills.portals.title=Cổng Biến
+skills.portals.summary=Cổng biến trong trò chơi: {0}.   Đã mở: {1}
+skills.portals.source=Danh sách được đọc từ tệp thế giới của trò chơi; chỉ bản lưu của nhân vật bị sửa.
+skills.portals.open=đã mở
+
+# Kỹ năng triệu hồi gì — các dòng dưới chú giải của kỹ năng triệu hồi.
+skills.pet.summons=Triệu hồi: {0}
+skills.pet.limit=tối đa {0} cùng lúc
+skills.pet.lives=sống {0} giây
+skills.pet.permanent=vĩnh viễn
+skills.pet.life={0} máu
+skills.pet.lifeNote=máu được tính theo quy tắc của chúng tôi, có thể khác trò chơi
+
+# Cộng điểm trong cây kỹ năng: chuột trái cộng một điểm, chuột phải trả lại
+skills.edit.points=Điểm kỹ năng: {0}
+skills.edit.hint=Chuột trái cộng một điểm, chuột phải trả lại.
+skills.edit.noPoints=Không còn điểm kỹ năng trống. Hãy thêm ở ô «Điểm kỹ năng» trong cửa sổ chính.
+skills.edit.atMax=Kỹ năng đã đạt giới hạn {0}. Phần trang bị cộng thêm nằm trên giới hạn và không được lưu vào tệp lưu.
+skills.edit.masteryFirst=Trước hết là thanh tinh thông: cộng một điểm vào đó và cây kỹ năng sẽ mở.
+skills.edit.tierClosed=Cột này mở ở cấp tinh thông {0}, còn thanh đang ở {1}.
+skills.edit.ownerFirst=Phải học «{0}» trước — kỹ năng này gắn vào nó.
+skills.edit.exclusive=Chỉ một kỹ năng độc quyền được kích hoạt, và «{0}» đã là kỹ năng đó.
+skills.edit.empty=Kỹ năng này chưa có điểm nào.
+skills.edit.ownerBusy=«{0}» gắn vào kỹ năng này và vẫn còn điểm.
+skills.edit.barLast=Điểm cuối cùng của thanh chính là tinh thông — hãy trả lại tinh thông thay vì vậy.
+skills.edit.barHolds=«{0}» nằm ở cột chỉ mở ở cấp tinh thông {1}.
+
+# THẺ «UY TÍN»: các phe và thứ hạng. Tên phe, thứ hạng và trình tự của chúng do trò chơi cung cấp.
+skills.factions.tab=Uy tín
+skills.factions.column=Phe
+skills.factions.rank=Thứ hạng
+skills.factions.value=Uy tín
+skills.factions.boost=Tốc độ tăng
+skills.factions.notes=Ghi chú
+skills.factions.summary=Số phe trong trò chơi: {0}.   Số mục trong bản lưu: {1}
+skills.factions.short=Bản lưu có {0} mục, trong khi trò chơi có {1} phe: những phe cuối chưa có trong đó. Chúng sẽ xuất hiện khi chính trò chơi ghi lại nhân vật.
+skills.factions.source=Tên, thứ hạng và trình tự được đọc từ tệp của trò chơi; chỉ bản lưu của nhân vật bị sửa.
+skills.factions.unreadable=Không đọc được các phe từ tệp của trò chơi.
+skills.factions.showHidden=Hiện cả những phe mà trò chơi không bày trong bảng của nó
+skills.factions.setRank=Thứ hạng:
+skills.factions.exact=Hoặc một số:
+skills.factions.apply=Áp dụng cho mục đã chọn
+skills.factions.pickFirst=Trước tiên hãy chọn ít nhất một phe trong danh sách.
+skills.factions.hidden=không hiện trong bảng của trò chơi
+skills.factions.noGain=uy tín không tăng
+skills.factions.boostTimes=×{0}

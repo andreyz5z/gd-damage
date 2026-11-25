@@ -1,0 +1,110 @@
+# THE MAIN WINDOW: title, menu buttons, inventory, status line, messages.
+#
+# Format of every language file: key=text. A line with # is a comment.
+# \n is a line break. {0}, {1} are the places the program puts a number or a name into;
+# they must stay in the translation, their order may change.
+# Item, class and skill names are not here — the game itself provides them.
+
+main.title=Grim Dawn — character viewer
+main.title.character=Grim Dawn — {0}
+
+# Menu buttons
+main.menu.open=Open save
+main.menu.skills=Skills
+main.menu.damage=Damage calculation
+main.menu.settings=Settings
+
+# Inventory and stash
+main.edit.button=Edit item
+main.edit.armed=Click an item
+main.trash.idle=Delete an item — pick one up and click here
+main.trash.armed=Delete item
+main.stash.title=Character stash
+main.stash.none=Character stash: no tabs
+main.stash.count=Character stash: {0} tabs, {1} items
+main.bags.main=Main
+main.bags.extra=Bag {0}
+
+# The line under the character fields
+main.summary=Bags {0}, items {1}\nStash: tabs {2}, items {3}
+main.summary.noInventory=THERE IS NO INVENTORY YET: the character was made in the menu and has never entered the game.\nEnter the game with them at least once — then the bags and equipment will appear.\nStash: tabs {0}, items {1}
+
+# Saving and opening
+main.status.saved=Saved {0}
+main.status.savedBackup=Saved {0}   backup copy: {1}
+main.status.saveError=SAVE ERROR: {0}
+main.saveError.title=Could not save
+main.open.title=Choose player.gdc
+main.open.filter=Grim Dawn save (player.gdc)|player.gdc|All files|*.*
+main.loadError.title=Could not read the save
+main.noInventory.text=This character has no inventory yet.\n\nThey were made in the game's menu and have never entered the world, so the save holds no bags, no equipment slots and no weapon sets — the game creates those on the first entry into the world.\n\nEnter the game with this character at least once, and then the equipment can be edited. Everything else — level, attributes, skills, devotion — is available already.
+main.noInventory.title=No inventory yet
+main.status.openFirst=Open a save first.
+
+# The game folder
+main.status.noGame=The Grim Dawn folder was not found — open "Settings…" and point at it.
+main.status.gameBase=Game database: {0}   language: {1}
+main.status.gameError=Could not open the game database: {0}
+main.askGame.text=The Grim Dawn folder could not be found.\n\nThe search looks through Steam libraries, GOG and installer entries in the registry and the usual game folders on every drive. If the game sits somewhere else, point at its folder — the one that holds database\\database.arz.
+main.askGame.title=Where is Grim Dawn installed?
+
+# The item catalog
+main.catalog.title=Item catalog
+main.catalog.stale=The game files changed after the catalog was built — it looks like an update came out.\nRebuild the item catalog?
+main.catalog.missing=The item catalog is not built yet.\nBuild it from the game files? It takes a few seconds.
+main.status.catalog=Catalog: {0} items
+main.status.catalogBuilding=Building the item catalog…
+main.status.catalogBuilt=Catalog built: {0} items
+main.status.catalogError=Could not build the catalog: {0}
+
+# The item in hand
+main.status.noIcon=This item has no icon in the game database, so its size in cells is unknown — it cannot be added safely.
+main.status.bulkLimit=Picked up a stack of {0} — that is the limit for this kind.
+main.status.bulkNoLimit=Picked up a stack of {0} (the game states no limit for this kind — we took a hundred, as for the others).
+main.status.newInHand=New item in hand: {0} ({1}x{2})  —  click a free spot in a bag or in the stash, an equipment slot or a tab heading. Esc cancels.
+main.status.inHand=In hand: {0} ({1}x{2})  —  click a free spot in a bag or the stash, a tab heading, an equipment slot or the "Delete item" bar. Esc cancels.
+main.status.takenOff=Taken off into the hand: {0}  —  put it into a bag, into the stash, into another fitting slot, or delete it. Esc cancels.
+main.status.sizeUnknown=The size of this item is unknown (no icon in the game database) — it cannot be moved, or it might stick out of the grid.
+main.status.noRoom=It does not fit here — {0}x{1} free cells are needed. Right click or Esc cancels.
+main.status.noStacking=«{0}» does not stack — a free cell is needed here.
+main.status.stackFull=This stack is already full: {0}. Put it somewhere else.
+main.status.stackFullOf=This stack is already full: {0} of {1}. Put it somewhere else.
+main.status.merged=Merged {0}: the stack now holds {1}.
+main.status.mergedRest=Merged {0}: the stack now holds {1}, {2} left in hand — put them into a free spot or delete them.
+main.status.addedBag=Added to a bag: {0}
+main.status.addedStash=Added to the stash: {0}
+main.status.unequippedBag=Taken off and put into a bag: {0}
+main.status.unequippedStash=Taken off and put into the stash: {0}
+main.status.movedBag=Moved into a bag: {0}
+main.status.movedStash=Moved into the stash: {0}
+main.status.equipped=Equipped: {0} → {1}
+main.status.reequipped=Moved: {0} → {1}
+main.status.discarded=The new item was discarded: {0} (it never reached the save).
+main.status.deleted=Deleted: {0}   (the original file was kept next to it as .bak)
+main.status.noRoomBag=There is no {0}x{1} room in this bag.
+main.status.noRoomStash=There is no {0}x{1} room in this stash tab.
+main.status.cancelled=Cancelled: {0} stayed where it was.
+
+# Why it does not go on
+main.why.noInventory=This character has no inventory yet: they were made in the menu and have never entered the game. Enter the game with them at least once — the game will create the bags, the equipment slots and the weapon sets itself, and then they can be edited.
+main.why.sameSlot=The item is already in this slot.
+main.why.wrongSlot=«{0}» does not go into the «{1}» slot.
+main.why.slotBusy=The «{0}» slot is taken — take off what is in it first.
+main.why.level=«{0}» requires level {1}, the character is {2}.
+main.why.twoHanded=A two-handed weapon takes both hands — free the off-hand first.
+main.why.offHandBusy=There is a two-handed weapon in the main hand — it takes the off-hand as well.
+
+# Editing an item
+main.status.editArmed=Click an item — the stat editing window will open. Click the button again to cancel.
+main.status.editCancelled=Editing cancelled — the click missed the item.
+main.status.editNoSeed=There is nothing to search for on this item: it does not come from the save.
+main.status.editUnchanged=The item was not changed.
+main.status.editDone=The item was changed and saved.
+
+# What is missing to wear an item (the status line).
+main.need.level=level {0} (have {1})
+
+# Putting a component or an augment into an item (2 October). What fits what comes from the game's records.
+main.status.partAttached=Put in: {0} → {1}
+main.status.partReplaced=Put in: {0} → {1}, in place of «{2}»
+main.status.partWrongItem=«{0}» does not go into «{1}».

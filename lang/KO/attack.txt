@@ -1,0 +1,12 @@
+# 데미지 스킬: «공격 수단» 목록의 줄과 스킬의 구성 («이 스킬의 구성»).
+
+attack.title={0}   ({1}, Lv. {2})
+attack.weaponPct=무기 데미지의 {0}%
+attack.part={0} (Lv. {1})
+attack.transmuter={0} (변환 스킬, Lv. {1})
+attack.transmuterOrphan={0} — 변환 스킬 (Lv. {1}): 상위 스킬을 찾지 못했습니다
+attack.fromItemInForm=아이템에서, 이 형태로: {0}
+attack.fromItem=아이템에서: {0}
+attack.pool=(기본 무기 공격 대신, {0}%)
+attack.poolNoChance=(기본 무기 공격 대신)
+attack.onHit=(적중 시 발동, {0}%)

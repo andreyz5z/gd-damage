@@ -1,0 +1,14 @@
+# FENSTER „EINSTELLUNGEN“.
+
+settings.title=Einstellungen
+settings.gameFolder=Grim-Dawn-Ordner:
+settings.gameFolder.browse=Der Ordner, in dem Grim Dawn installiert ist
+settings.savesFolder=Spielstandordner (für den Öffnen-Dialog):
+settings.savesFolder.browse=Der Ordner mit deinen Spielständen
+settings.browse=Suchen…
+settings.language=Sprache:
+settings.rebuildCatalog=Gegenstandskatalog neu erstellen
+settings.rawFields=Alle Datensatzfelder in der Gegenstandsbeschreibung zeigen
+settings.fileHint=settings.json liegt neben dem Programm
+settings.ok=OK
+settings.cancel=Abbrechen

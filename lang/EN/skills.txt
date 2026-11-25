@@ -1,0 +1,150 @@
+# THE "SKILLS" WINDOW: masteries, skill tooltips, devotion, rifts.
+# The names of masteries, skills and constellations come from the game.
+
+skills.title=Skills — {0}
+skills.levelParen=(level {0})
+
+# Choosing and dropping a mastery
+skills.choose.first=First mastery
+skills.choose.second=Second mastery
+skills.choose.intro=A mastery counts as taken as soon as the first point goes into its bar — and that is exactly what we do, spending one skill point. The same mastery cannot be taken twice.
+skills.choose.opensAt=In the game it opens at level {0}.
+skills.choose.freePoints=Free skill points: {0}.
+skills.noPoints.text=There are no free skill points, and a mastery is taken by putting a point into its bar.\n\nAdd a point in the "Skill points" field of the main window, and then it can be spent here. Spending a point that does not exist is not allowed: the character would have spent more than earned.
+skills.noPoints.title=Not enough skill points
+skills.take.ask=Take the mastery «{0}»?\n\nOne skill point will go into its bar — that is how a mastery becomes taken. Free right now: {1}.
+skills.take.undo=You can change your mind with the "Drop mastery" button — the points come back.
+skills.take.title=Choosing a mastery
+skills.drop.ask=Drop the mastery «{0}»?\n\nEvery point put into it will be taken out — {1} of them, the bar point included — and returned to the free ones. The skills of this mastery will be gone, and the devotion stars bound to them will be left unbound.
+skills.drop.title=Dropping a mastery
+skills.drop.button=Drop the mastery «{0}»
+skills.drop.secondFirst=Drop the second mastery first
+skills.mastery.fallbackName=mastery {0}
+skills.mastery.tooEarlyFirst=In the game the first mastery opens at level {0}, and the character is {1}.
+skills.mastery.tooEarlySecond=In the game the second mastery opens at level {0}, and the character is {1}.
+
+# Skill tooltip
+skills.kind.mastery=mastery
+skills.kind.active=active skill
+skills.kind.weaponPool=default weapon attack (weapon pool skill)
+skills.kind.modifier=skill modifier
+skills.kind.transmuter=transmuter
+skills.kind.passive=passive skill
+skills.tip.poolChance=Chance to be used instead of the default weapon attack: {0}%
+skills.tip.poolShared=Default weapon attacks taken: {0}, their chances add up to {1}%. Only one of them fires per attack.
+skills.tip.poolSharedFull=Default weapon attacks taken: {0}, their chances add up to {1}%. Only one of them fires per attack; the plain weapon attack will not happen at all.
+skills.tip.dependsOn=Unlocked through: {0}
+skills.tip.level=Current level: {0}
+skills.tip.levelWithBonus=Current level: {0} + {1} from items
+skills.tip.max=(can be raised to {0})
+skills.tip.maxWithGear=(can be raised to {0}, cap with items {1})
+skills.tip.recordNumbers=These are the numbers of the skill record, before the character's bonuses. In its own tooltip the game shows them already multiplied by all the damage you carry — which is why its figures are larger. Damage with the bonuses: "Damage calculation…" → "Damage per hit".
+skills.tip.recordNumbersHand=Except the yellow line about the hand: the bracket there already holds the damage of that hand, exactly as the game shows it.
+skills.tip.celestialPower=Celestial power
+skills.tip.fromItem=From an item: {0}
+skills.tip.nextLevel=Next level: {0}
+
+# Devotion
+skills.devotion.tab=Devotion
+skills.devotion.spent=Devotion points spent: {0} of {1} earned, free {2}
+skills.devotion.split=Of those {0} are passive stars (summed below) and {1} are stars with a skill (shown separately).
+skills.devotion.sums=Total bonuses
+skills.devotion.none=none
+skills.devotion.granted=Granted skills
+skills.devotion.boundTo=bound to: {0}
+skills.devotion.unbound=bound to nothing — it will not fire
+skills.devotion.levels=Change the level of devotion skills
+skills.devotion.starOf={0}, star {1}
+skills.devotion.total=total {0}
+skills.devotionLevels.title=Level of devotion skills — {0}
+skills.devotionLevels.of=of {0}
+skills.devotionLevels.none=The character has no devotion stars that grant a skill.
+skills.constellations.count=Constellations in the game: {0}. Completed: {1}, started: {2}.
+skills.constellations.legend=Taken stars are marked; in brackets next to a constellation — how many of its stars are taken, what it gives and what it requires.
+skills.constellations.gives=gives: {0}
+skills.constellations.needs=requires: {0}
+skills.constellations.star=star {0}
+skills.constellations.notTaken=(not taken)
+
+# The devotion map: spending points on stars with the mouse
+skills.devo.hint=Left click on a star puts a point in, right click takes one back. The wheel zooms, dragging moves the map.
+skills.devo.fit=Whole map
+skills.devo.zoom=zoom {0}%
+skills.devo.points=Devotion points: {0}
+skills.devo.stars=Stars taken: {0} of {1}
+skills.devo.noPoints=No free devotion points left. Add some in the "Devotion points" field of the main window.
+skills.devo.already=This star already has a point in it.
+skills.devo.locked=The constellation "{0}" is still closed: not enough affinity — {1}.
+skills.devo.parentFirst="{0}" has to be taken first — this star hangs off it.
+skills.devo.empty=There are no points in this star.
+skills.devo.childFirst="{0}" hangs off this star and is taken — give that one back first.
+skills.devo.affinityHolds=The constellation is complete, and its affinity is holding up "{0}": without it there would be {1}.
+skills.devo.bindHint=Left click the star to choose a skill.
+
+# A celestial power: which skill to hang it on
+skills.bind.title=Which skill to hang "{0}" on
+skills.bind.none=No skill assigned
+skills.bind.chosen=(chosen)
+skills.bind.busy=(taken by: {0})
+skills.bind.fromItem=(from an item)
+skills.bind.legend=In red — skills the character has not learned yet: they can be chosen too, and the power starts working as soon as points go in.
+
+# Rifts
+skills.portals.tab=Rifts
+skills.portals.column=Rift
+skills.portals.notBuilt=The list of rifts is not built. It is read from the game's world files and takes about a minute.
+skills.portals.build=Build the list of rifts
+skills.portals.reading=Reading the world files…
+skills.portals.readingWhat=Reading the world files: {0}
+skills.portals.readError=Could not read the world files: {0}
+skills.portals.layer=Riftgates layer in {0}: {1} records
+skills.portals.openAll=Open every rift on every difficulty
+skills.portals.openDifficulty={0}: open all ({1} of {2})
+skills.portals.closeAll=Close every rift on every difficulty?\n\nThis also removes the ones the character found on their own. A backup copy stays next to the save.
+skills.portals.closeOne=Close every rift on the «{0}» difficulty?\n\nThis also removes the ones the character found on their own. A backup copy stays next to the save.
+skills.portals.title=Rifts
+skills.portals.summary=Rifts in the game: {0}.   Open: {1}
+skills.portals.source=The list is read from the game's world files; only the character's save is edited.
+skills.portals.open=open
+
+# What the skill summons — the lines under a summoning skill's tooltip.
+skills.pet.summons=Summons: {0}
+skills.pet.limit=up to {0} at once
+skills.pet.lives={0} sec. lifetime
+skills.pet.permanent=permanent
+skills.pet.life={0} health
+skills.pet.lifeNote=we work health out by our own rules, and it may disagree with the game
+
+# Spending points in the tree: left click adds one, right click takes one back
+skills.edit.points=Skill points: {0}
+skills.edit.hint=Left click puts a point in, right click takes one back.
+skills.edit.noPoints=No free skill points left. Add some in the "Skill points" field of the main window.
+skills.edit.atMax=The skill is already at its cap of {0}. What gear adds goes above the cap and is not kept in the save.
+skills.edit.masteryFirst=The mastery bar comes first: put a point into it and the tree opens.
+skills.edit.tierClosed=This column opens at mastery level {0}, and the bar is at {1}.
+skills.edit.ownerFirst="{0}" has to be taken first — this one hangs off it.
+skills.edit.exclusive=Only one exclusive skill can be active, and "{0}" already is.
+skills.edit.empty=There are no points in this skill.
+skills.edit.ownerBusy="{0}" hangs off this skill and still holds points.
+skills.edit.barLast=The last point of the bar is the mastery itself — give the mastery back instead.
+skills.edit.barHolds="{0}" stands in a column that opens at mastery level {1}.
+
+# THE «REPUTATION» TAB: factions and standings. The names, standings and their order come from the game.
+skills.factions.tab=Reputation
+skills.factions.column=Faction
+skills.factions.rank=Standing
+skills.factions.value=Reputation
+skills.factions.boost=Gain rate
+skills.factions.notes=Notes
+skills.factions.summary=Factions in the game: {0}.   Entries in the save: {1}
+skills.factions.short=The save holds {0} entries while the game has {1} factions: the last ones are not in it yet. They appear once the game itself writes the character.
+skills.factions.source=The names, standings and order are read from the game's files; only the character's save is edited.
+skills.factions.unreadable=Could not read the factions from the game's files.
+skills.factions.showHidden=Also show the factions the game keeps out of its own panel
+skills.factions.setRank=Standing:
+skills.factions.exact=Or a number:
+skills.factions.apply=Apply to the selected
+skills.factions.pickFirst=Select at least one faction in the list first.
+skills.factions.hidden=not shown in the game's panel
+skills.factions.noGain=reputation does not grow
+skills.factions.boostTimes=×{0}

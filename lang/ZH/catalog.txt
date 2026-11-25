@@ -1,0 +1,44 @@
+# 物品目录（主窗口左栏）。
+
+catalog.title=物品目录
+catalog.wearable=所有可穿戴物品
+catalog.everything=所有物品
+catalog.search=名称的一部分…
+catalog.bonus=加成：攻击速度…
+catalog.bulkHint=Ctrl + 左键 — 整叠拿取
+catalog.count={0} 件物品
+catalog.notBuilt=（目录未建立）
+catalog.hidden=（被筛选隐藏 {0} 件）
+catalog.level=等级 {0}
+
+# 稀有度
+catalog.rarity.common=普通
+catalog.rarity.magical=魔法
+catalog.rarity.rare=稀有
+catalog.rarity.epic=史诗
+catalog.rarity.legendary=传奇
+catalog.rarity.quest=任务
+
+# 分类
+catalog.category.head=护甲：头部
+catalog.category.shoulders=护甲：肩部
+catalog.category.chest=护甲：胸部
+catalog.category.hands=护甲：手部
+catalog.category.waist=护甲：腰部
+catalog.category.legs=护甲：腿部
+catalog.category.feet=护甲：足部
+catalog.category.amulet=饰品：项链
+catalog.category.ring=饰品：戒指
+catalog.category.medal=饰品：勋章
+catalog.category.relic=圣物
+catalog.category.weapon1h=武器：单手
+catalog.category.weapon2h=武器：双手
+catalog.category.ranged1h=武器：手枪
+catalog.category.ranged2h=武器：步枪
+catalog.category.shield=副手：盾牌
+catalog.category.offhand=副手：法器
+catalog.category.component=镶嵌物
+catalog.category.augment=增幅
+catalog.category.consumable=消耗品
+catalog.category.crafting=材料与蓝图
+catalog.category.other=其他

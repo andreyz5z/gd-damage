@@ -1,0 +1,52 @@
+# キャラクターパネル (メインウィンドウの欄) と属性のツールチップ。
+
+character.name=名前
+character.class=クラス
+character.file=ファイル
+character.level=レベル
+character.experience=経験
+character.physique=体格
+character.cunning=狡猾性
+character.spirit=精神力
+character.health=ヘルス
+character.energy=エナジー
+character.attributePoints=属性ポイント
+character.skillPoints=スキルポイント
+character.devotionPoints=祈祷ポイント
+character.totalDevotion=祈祷の合計
+character.money=鉄片
+character.tributes=トリビュート
+character.difficulties=難易度
+character.difficulty.normal=ノーマル、ベテラン
+character.difficulty.elite=エリート
+character.difficulty.ultimate=アルティメット
+
+# ゲームが自分で計算する数値の編集
+character.freeEdit=属性を自由に編集
+character.freeEdit.warning=この 5 つの数値は、使ったポイント、装備しているアイテム、スキルからゲームが自分で計算します — 計算式は解明済みで、ゲームと正確に一致します。\n\nここに独自の値を書き込むと、セーブは画面上のゲームの表示と一致しなくなります: ゲームは独自の規則でヘルスとエナジーを計算し直し、あなたの属性はそのまま残します。\n\nそれでも編集を許可しますか？
+character.keptInSave=画面上のゲームの表示とは別に、セーブに保存されています。\n最終的なヘルスとエナジーは、使ったポイント、属性、アイテム、スキルからゲーム自身が計算し、この数値とは一致しません。\nここに何が保存されているのかはまだ解明できていないため、編集は閉じています。
+
+# 属性のツールチップ
+character.tip.now={0}: 現在 {1}
+character.tip.own=セーブ内 {0}、使ったポイント {1}
+character.tip.fromGear=アイテムとスキルから: {0}
+character.tip.gives=効果 (基本値 {0} を超えた分を計算):
+character.tip.percents=そして割合 — ここでも基本値 {0} が数えられます:
+character.tip.percentLine=+{0}% {1}
+character.perPoint.life=1 ポイントごとにヘルス +{0}
+character.perPoint.energy=1 ポイントごとにエナジー +{0}
+character.perPoint.defense=1 ポイントごとに防御能力 +{0}
+character.perPoint.offense=1 ポイントごとに攻撃能力 +{0}
+character.perPoint.lifeRegen=1 ポイントごとにヘルス回復 +{0}
+character.perPoint.energyRegen=1 ポイントごとにエナジー回復 +{0}
+character.divided.physical=物理ダメージと刺突ダメージ
+character.divided.bleed=体内損傷ダメージと出血ダメージ
+character.divided.magic=魔法ダメージ
+character.divided.dots=その他の継続ダメージ
+character.divided.energyRegen=エナジー回復
+character.needs.physique=防具、近接武器、盾に必要です。
+character.needs.cunning=遠隔武器と一部の近接武器に必要です。
+character.needs.spirit=指輪、アミュレット、術者用アイテムに必要です。
+character.hardcore=ハードコア
+character.revive=復活させる
+character.revive.tip=死亡の印を消します。ゲームでキャラクターが再び読み込めるか確認してください。

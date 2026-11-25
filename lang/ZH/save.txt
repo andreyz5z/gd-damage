@@ -1,0 +1,8 @@
+# 写入存档的错误（显示在状态栏「写入错误：…」和「无法保存」窗口中）。
+
+save.error.unparsed=存档未写入：数据块 {0} 未能拆分成字段（未知游戏版本的存档）
+save.error.writtenUnparsed=写入的文件含有未拆分的数据块 {0}
+save.error.reread=写入的文件无法正确读回
+save.error.rekey=更换加密密钥后文件会损坏
+save.error.length={0}（长度 {1}，应为 {2}）
+save.error.offset={0}：在偏移 {1} 处不一致

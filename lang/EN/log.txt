@@ -1,0 +1,185 @@
+# THE COMBAT SIMULATION LOG ("Combat simulation" tab): log lines, reason tails and the notes after a run.
+#
+# Fractional numbers arrive already written (with a dot), nothing is recalculated inside {n}. Comparison
+# signs "<", "≥", "→", brackets and commas between the parts of a line are placed by the program.
+
+# What a skill that does not strike itself does. The word is printed in the log ("buff, no damage"), in the
+# "what we press" list and in the notes of the run.
+log.effect.damage=damage
+log.effect.summon=summon
+log.effect.buff=buff
+log.effect.debuff=debuff
+log.effect.none=no damage in the record
+
+# A log line: "12.34 sec.  swing: both hands   812 and 790   (damage without bonuses 1020 and 990)   [reason]".
+log.line.at={0} sec.
+log.line.and=and
+log.line.before=(damage without bonuses {0})
+log.seconds={0} sec.
+log.from=from «{0}»
+log.target.dummy=dummy
+log.target.generic=target
+
+# Hands. "swing: both hands", "main hand crit, tier 2", "main 43.1 < 97.0" (a hand's hit roll).
+log.hand.both=both hands
+log.hand.main=main hand
+log.hand.off=off-hand
+log.roll.main=main
+log.roll.off=off
+log.partial.mainMissed=(main hand missed)
+log.partial.offMissed=(off-hand missed)
+
+log.swing=swing: {0}
+log.swing.hands=hands {0} → {1}
+log.swing.crit={0} crit, tier {1} ×{2}
+log.miss=miss
+log.fire.crit={0} crit ×{1}
+
+# What struck: "skill: Shadow Strike", "proc: Meteor", "instead of attack: …".
+log.fire.skill=skill
+log.fire.channel=channel
+log.fire.spell=spell
+log.fire.pool=instead of attack
+log.fire.proc=proc
+log.fire.devotion=devotion
+log.fire.finale=finale: hit {0}
+log.fire.attack=attack
+log.fire.charges=({0} charges)
+
+# A DoT tick: "burn tick (main hand, from the default weapon attack)".
+log.tick={0} tick
+log.tick.from=from {0}
+log.tick.left={0} sec. left
+log.tick.partial=partial tick {0}%
+log.tick.autoattack=the default weapon attack
+log.dot.FireDot=burn
+log.dot.ColdDot=frostburn
+log.dot.LightningDot=electrocute
+log.dot.PoisonDot=poison
+log.dot.LifeDot=vitality decay
+log.dot.BleedingDot=bleeding
+log.dot.PhysicalDot=internal trauma
+
+# The target's health.
+log.life.killed=target killed
+log.life.killedWhy=TTK {0} sec.: {1} dealt against {2} health; from here on we count damage as if it were alive, but there is no health left to reduce
+log.life.cut=health reduction {0}%  from «{1}»
+log.life.cutWhy=target's health {0} → {1}
+log.life.cutResist=effect {0}%, target's resistance {1}%
+log.life.gear=equipment
+
+# An aura, a buff on cooldown, a cooldown reset.
+log.aura=aura: {0}
+log.buff=buff: {0}
+log.buff.holds=lasts {0} sec.
+log.buff.cooldown=cooldown {0} sec.
+log.buff.shield=absorption shield {0} — holds until broken
+log.buff.noDuration=no duration in the record
+log.buff.notInQueue=its damage bonuses do NOT act in the queue
+log.buff.noEffect=does not affect our damage
+log.reset=cooldown reset: «{0}»
+log.reset.why=«{0}», {1}% {2} — for {3} sec., ready at {4} instead of {5}
+log.reset.onCrit=on critical attack
+log.reset.onAttack=on attack
+
+# Fired or pressed, but does not strike.
+log.silent.fired=fired
+log.silent.pressed=pressed:
+log.silent.buff=buff, lasts {0} sec.
+log.silent.resists=resistance reduction
+log.silent.defense=−{0} defensive ability
+log.silent.offense=−{0} offensive ability
+log.silent.absolute=−{0} resistances flat
+log.silent.relative=−{0}% of current resistances
+log.silent.debuff=target debuff for {0} sec.
+log.silent.debuffNothing=does not affect our damage in any way
+log.silent.summon=summon — the pet joins the pool, its hits are below in their own lines
+log.silent.noDamage={0}, no damage
+
+# Pets in the log.
+log.pet.how.self=on its own
+log.pet.how.pressed=pressed
+log.pet.summonBlocked=summon ({0}): {1}
+log.pet.limit=the limit of its kind is already standing — {0} × «{1}», no more are added
+log.pet.summoned=summoned ({0}): «{1}» #{2}
+log.pet.standing={0} of {1} standing
+log.pet.lives=lives {0} sec.
+log.pet.permanent=permanent
+log.pet.aps=attacks per second {0}
+log.pet.gone=gone: «{0}» #{1}
+log.pet.goneWhy=lifetime of {0} sec. expired, hits {1}
+log.pet.goneTrap=set off by the enemy, hits {0}
+log.pet.onceAt=blast after {0} sec.
+log.pet.aura=pet aura: «{0}» {1}
+log.pet.auraTarget=pet aura: «{0}»
+log.pet.auraAllies=empowers us and other pets while it is near
+log.pet.auraOnTarget=stays on the target while it is near
+log.pet.miss=pet miss: «{0} #{1}» {2}
+log.pet.hitChance=chance to hit {0}%
+log.pet.hit=pet: «{0} #{1}» {2}
+log.pet.auto=(default attack)
+log.pet.auraMark=(aura)
+log.pet.perSecond=once per second
+log.pet.speed=speed {0} attacks/sec.
+log.pet.every=every {0} sec.
+log.pet.crit=crit tier {0} ×{1}
+log.pet.dotApplied=DoT applied
+# The source of a pet's DoT in a tick line: "burn tick (from «Eldritch Hound #1: Plague Breath»)".
+log.pet.source={0} #{1}: {2}
+# A pet skill that has no name in the game — we call it by the tail of its record path.
+log.pet.noName=unnamed: {0}
+
+# Result of the run: the racial bonus.
+log.racial.noRace=bonuses against races ({0} of them) do not work on this target: it has NO race at all (as the dummy does)
+log.racial.none=the target is {0}, and we have no bonuses against it (there are some against other races: {1})
+log.racial.has=the target is {0}, our bonus against it is {1}% damage (multiplier ×{2})
+log.racial.flat=the flat bonus against the race «{0}» ({1} damage) is COLLECTED BUT NOT APPLIED: it is unknown which damage type it comes as (the tooltip does not name a type) and where in the order it stands. The percentage one we place by the article's formula; for the flat one there is no formula either in the article or in the files — a measurement is needed
+
+# Result of the run: hints (what was chosen wrongly).
+log.hint.mainNotSpell=«{0}» is chosen as the main one, but it is neither a channel nor a spell without a cooldown (or its animation was not found) — we attack with the weapon, as with nothing chosen
+log.hint.buffPressed=«{0}» is a buff: its bonuses apply to hits while it is up, but it does not strike as a hit. Tick it among the buffs
+log.hint.channelWithAttack=the channel «{0}» is pressed TOGETHER with the default weapon attack — that never happens in the game: while the beam is held, the weapon does not strike. It is pressed on the record's "cooldown", not by casting speed. Choose it as the main one
+log.hint.starHits=the star «{0}» deals damage — we do not raise it as a buff; tick it in the list of presses, and it will strike on cooldown
+log.hint.starReplacing=the star «{0}» is bound to «{1}» — it is a REPLACEMENT ATTACK: it is assigned to a button and strikes instead of the normal hit. We can count those, but in THIS run we do not strike with it — the save does not keep the assignment. Choose it in the "attack with" list, and the star will work
+log.hint.starIdle=the star «{0}» is bound to the skill «{1}», and that one does NOT STRIKE in this run (not ticked for pressing and not in the weapon pool) — there are no activations at all, and it is not bad luck
+
+# Result of the run: what was not read.
+log.unread.starBuffNoDuration=the star «{0}» applies a BUFF, but the record has no duration — we have nothing to hold it by, so the queue shows only the fact that it fired
+log.unread.starNoDamage=we did not read the damage of the star «{0}»: the activation is in the queue, the damage is not
+log.unread.buffNoDuration=the buff «{0}» changes damage, but the record has no duration — the queue shows only its activation, the bonuses do not act
+log.unread.summonNoPet=the summon «{0}» fired, but there is no such pet in the pool — its damage is not counted
+log.unread.petMoveNoRate=the pet «{0}» has the skill «{1}» that deals damage, but the record does not say how often it uses it — it is not used in the queue
+log.unread.petNoSpeed=the attack speed of the pet «{0}» could not be read (no animation table) — its default attack is not put into the queue
+log.unread.petNoMoves=we did not read a single damaging skill of the pet «{0}» — it is summoned in the queue but does not strike
+
+# Result of the run: skills from items and sets — what became of each.
+log.gear.mainSpell=the main skill instead of the default weapon attack, hits {0}
+log.gear.pool=in the weapon pool
+log.gear.onlyCrit=rolled only on a crit;
+log.gear.fired=fired {0} times
+log.gear.firedSummon=— summon, the pet joins the pool and strikes
+log.gear.firedDebuff=— target debuff
+log.gear.firedBuff=— buff on us
+log.gear.conditionNotModelled=the condition is not modelled —
+log.gear.pressed=ticked for pressing, pressed on cooldown: pressed {0} times
+log.gear.notPressed=pressable — not ticked for pressing
+log.gear.conditionHits=the condition is not modelled, it has damage — tick it, and it will go on cooldown
+log.gear.noHit=does not strike ({0})
+log.gear.conditionNoHit=the condition is not modelled, no damage ({0}) — takes no part in the queue
+
+# Result of the run: stars and pets by name.
+log.star.head=«{0}» lv. {1} from «{2}»
+log.star.onlyCrit=(only on a crit)
+log.star.chance=chance {0}%
+log.star.cooldown=cooldown {0} sec.
+log.star.fired=fired {0} times out of {1} rolls
+log.star.blocked=blocked by cooldown {0} times
+log.petLine.auras=pet auras for other pets while these are alive — {0}: {1}
+log.petLine.head=«{0}» ({1}) — summoned {2} times
+log.petLine.limit=up to {0} at once
+log.petLine.hits=hits {0}
+log.petLine.misses=misses {0}
+log.petLine.crits=crits {0}
+log.petLine.damage=damage {0}
+log.petLine.expired=expired by time {0}
+log.petLine.blocked=summons over the limit {0}

@@ -1,0 +1,23 @@
+# OKNO „AKTYWNE PRZYWOŁAŃCE” i wiersze przywołańców w innych oknach.
+# Nazwy przywołańców i ich umiejętności pochodzą z gry.
+
+pets.title=Aktywne przywołańce — {0}
+pets.checkbox={0}   ({1}, poz. {2})
+pets.limit=do {0} naraz
+pets.lifetime=czas życia: {0} s
+pets.life=zdrowie: baza {0} × (1 + {1}% własne + {2}% nasze) = {3}
+pets.lifeAura=zdrowie: baza {0} × (1 + {1}% własne + {2}% nasze + {3}% aury) = {4}
+pets.armour=pancerz: baza {0} × (1 + {1}% własny + {2}% nasz) = {3}   (gra nigdy nie pokazuje pancerza przywołańców — to nasza własna liczba)
+pets.auras=pod aurami: {0}
+pets.none=Ta postać nie ma umiejętności przywołującej przywołańca.
+pets.note=Zdrowie: baza × (1 + własne% + bonusy do przywołańców% + aury%). Obrażenia umiejętności mnoży się przez bonusy do przywołańców — regułę zmierzono na siedmiu liczbach z gry.
+
+pets.level=poz. {0}
+pets.levelUnknown=zapis przywołańca nie podaje poziomu
+pets.attack={0}   (przywołaniec „{1}”, {2})
+
+# Konwersja przywołańca
+pets.conversion.title=Konwersja tego przywołańca
+pets.conversion.capped=Z jednego typu nie odchodzi więcej niż sto procent: setka dzieli się między odbiorców według ich udziałów. W nawiasach — to, co faktycznie zapisano w przedmiotach.
+pets.conversion.line={0}% konwersji: {1} w {2}
+pets.conversion.recorded=(w zapisie {0}%)

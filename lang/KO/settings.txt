@@ -1,0 +1,14 @@
+# «설정» 창.
+
+settings.title=설정
+settings.gameFolder=Grim Dawn 폴더:
+settings.gameFolder.browse=Grim Dawn이 설치된 폴더
+settings.savesFolder=세이브 폴더 (열기 대화상자용):
+settings.savesFolder.browse=세이브가 있는 폴더
+settings.browse=찾아보기…
+settings.language=언어:
+settings.rebuildCatalog=아이템 카탈로그 다시 만들기
+settings.rawFields=아이템 설명에 레코드의 모든 항목 표시
+settings.fileHint=settings.json은 프로그램 옆에 있습니다
+settings.ok=확인
+settings.cancel=취소

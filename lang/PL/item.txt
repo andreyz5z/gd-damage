@@ -1,0 +1,287 @@
+# PODPOWIEDŹ PRZEDMIOTU I WIERSZE BONUSÓW (podpowiedzi przedmiotów, zakładka „Łączne bonusy”).
+#
+# Większość wierszy podpowiedzi to szablony samej gry w wybranym języku. Tutaj są nasze słowa: tam, gdzie gra nie ma
+# szablonu, i tekst zapasowy na wypadek, gdy gry nie ma albo nie znaleziono etykiety.
+
+# Końcówka czasu trwania obrażeń w czasie: „+31% obrażeń od odmrożenia z +45% czasu trwania”. Zwykle szablon gry
+# (`ImprovedTimeFormat`); ten tekst tylko wtedy, gdy go brak.
+item.durationWith=z {0}% dłuższym czasem trwania
+
+# Nazwy typów obrażeń w wierszu konwersji („50% konwersji: obraż. od witalności w obraż. od trucizn”).
+# Zwykle z gry (`tagConversion<Typ>`); to jest zapas. Dla krwawienia gra nie ma etykiety.
+item.conv.Physical=obraż. fizyczne
+item.conv.Pierce=obraż. przebijające
+item.conv.Fire=obraż. od ognia
+item.conv.Cold=obraż. od zimna
+item.conv.Lightning=obraż. od błyskawic
+item.conv.Poison=obraż. od trucizn
+item.conv.Life=obraż. od witalności
+item.conv.Aether=obraż. od aetheru
+item.conv.Chaos=obraż. od chaosu
+item.conv.Bleeding=krwawienie
+
+# ============ ETYKIETY WIERSZY PODPOWIEDZI ============
+# Wiersz przedmiotu powstaje tak: najpierw szuka się szablonu gry w wybranym języku, a dopiero gdy go nie ma, bierze
+# się etykietę stąd.
+
+# Typy obrażeń: pełna forma („+31% obrażeń od zimna”), krótka do czasu trwania.
+item.type.Physical=obrażeń fizycznych
+item.type.Pierce=obrażeń przebijających
+item.type.Fire=obrażeń od ognia
+item.type.Cold=obrażeń od zimna
+item.type.Lightning=obrażeń od błyskawic
+item.type.Poison=obrażeń od trucizn
+item.type.Life=obrażeń od witalności
+item.type.Aether=obrażeń od aetheru
+item.type.Chaos=obrażeń od chaosu
+item.type.Bleeding=obrażeń od krwawienia
+item.type.Elemental=obrażeń od żywiołów
+item.typeShort.Physical=fizycznych
+item.typeShort.Pierce=przebijających
+item.typeShort.Fire=od ognia
+item.typeShort.Cold=od zimna
+item.typeShort.Lightning=od błyskawic
+item.typeShort.Poison=od trucizn
+item.typeShort.Life=od witalności
+item.typeShort.Aether=od aetheru
+item.typeShort.Chaos=od chaosu
+item.typeShort.Bleeding=od krwawienia
+item.typeShort.Elemental=od żywiołów
+
+# Etykiety zbudowane z nazwy typu.
+item.label.overTime={0} w czasie
+item.label.dotDuration=czasu trwania obrażeń {0}
+item.label.retaliation=odbicia: {0}
+item.label.resist=odporności ({0})
+item.label.maxResist=maksymalnej odporności ({0})
+item.label.duration=czasu trwania ({0})
+
+# Słowa wspólne dla kilku pól.
+item.label.action=czasu trwania
+item.label.armour=pancerza
+item.label.cooldown=odnowienia umiejętności
+item.label.projectiles=pocisk(i)
+item.label.pierceChance=szansy na przebicie wrogów
+item.label.radius=promienia
+item.label.resCutAll=obniżenia odporności celu
+item.label.resCutAllOf=obniżenia odporności celu
+item.label.resCut=obniżenia odporności celu (jednej)
+item.label.resCutOf=obniżenia odporności celu (jednej)
+item.label.petBaseDamage=obrażenia bazowe przywołańca
+item.unit.sec=sek.
+item.unit.m=m
+item.unit.s=sek.
+
+# Obrażenia, obrażenia w czasie i utrudnienia dla celu.
+item.stat.offensiveBonusPhysical=obrażeń fizycznych
+item.stat.offensivePierceRatio=udziału przebicia
+item.stat.offensiveLifeLeech=obrażeń z ataku zamienia się w zdrowie
+item.stat.offensiveManaLeech=obrażeń z ataku zamienia się w energię
+item.stat.offensivePercentCurrentLife=obniżenia zdrowia wroga
+item.stat.offensiveTotalDamageModifier=do wszystkich obrażeń
+item.stat.offensiveCritDamageModifier=obrażeń krytycznych
+item.stat.offensiveDamageMultModifier=zmiany łącznych obrażeń
+item.stat.offensivePierceRatioModifier=udziału przebicia
+item.stat.offensiveSlowManaLeach=kradzieży energii
+item.stat.offensiveSlowManaLeachDurationModifier=czasu kradzieży energii
+item.stat.offensiveFumble=obniżenia celności celu
+item.stat.offensiveProjectileFumble=obniżenia celności pocisków celu
+item.stat.offensiveSlowOffensiveAbility=obniżenia zdolności ofensywnych celu
+item.stat.offensiveSlowDefensiveAbility=obniżenia zdolności defensywnych celu
+item.stat.offensiveSlowRunSpeed=obniżenia szybkości ruchu celu
+item.stat.offensiveSlowAttackSpeed=obniżenia szybkości ataku celu
+item.stat.offensiveSlowSpellCastSpeed=obniżenia szybkości rzucania czarów celu
+item.stat.offensiveKnockdown=powalenie celu
+item.stat.offensiveStun=ogłuszenie celu
+item.stat.offensiveStunModifier=czasu ogłuszenia
+item.stat.offensiveFreeze=zamrożenie celu
+item.stat.offensivePetrify=spetryfikowanie celu
+item.stat.offensiveSleep=uśpienie celu
+item.stat.offensiveTrap=unieruchomienie celu
+item.stat.offensiveConfusion=dezorientacja celu
+item.stat.offensiveTaunt=prowokacja celu
+item.stat.offensiveFear=przerażenie celu
+item.stat.offensiveConvert=przeciągnięcie celu
+item.stat.offensiveDisruption=przerwanie umiejętności
+item.stat.offensiveManaBurnDrain=spalenia energii
+item.stat.offensiveManaBurnDamageRatio=spalonej energii jako obrażenia
+item.stat.offensiveTotalDamageReductionPercent=obniżenia obrażeń celu
+item.stat.offensiveSlowTotalSpeed=spowolnienie celu
+
+# Obrażenia odbicia i utrudnienia odbicia.
+item.stat.retaliationFreeze=odbicia: zamrożenie
+item.stat.retaliationConfusion=odbicia: dezorientacja
+item.stat.retaliationSlowLightning=odbicia: porażenie
+item.stat.retaliationFear=odbicia: strach
+item.stat.retaliationSlowAttackSpeed=odbicia: obniżenie szybkości ataku
+item.stat.retaliationSlowRunSpeed=odbicia: obniżenie szybkości ruchu
+item.stat.retaliationSlowPoison=odbicia: trucizna
+item.stat.retaliationSlowManaLeach=odbicia: kradzież energii
+item.stat.retaliationTotalDamageModifier=do wszystkich obrażeń odbicia
+
+# Pancerz, blok i odporności.
+item.stat.defensiveAbsorptionModifier=absorpcji pancerza
+item.stat.defensiveBlockChance=szansy na blok
+item.stat.defensiveBlock=wartości bloku
+item.stat.blockRecoveryTime=sek. regeneracji bloku
+item.stat.defensiveBlockModifier=szansy na blok tarczą
+item.stat.defensiveBlockAmountModifier=wartości bloku tarczą
+item.stat.blockAbsorption=absorpcji przy bloku
+item.stat.skillComboChargeSpendReduction=szansy na niezużycie ładunków rozpędu
+item.stat.characterDefensiveBlockRecoveryReduction=czasu regeneracji tarczy
+item.stat.defensiveElementalResistance=odporności na żywioły
+item.stat.defensiveAllResistance=do wszystkich odporności
+item.stat.defensiveAllMaxResist=do wszystkich maksymalnych odporności
+item.stat.defensivePercentReflectionResistance=otrzymanych odbitych obrażeń
+item.stat.defensiveSlowLifeLeach=odporności na kradzież zdrowia
+item.stat.defensiveSlowManaLeach=odporności na kradzież energii
+item.stat.defensiveBonusProtection=dodatkowego pancerza
+item.stat.defensiveStun=odporności na ogłuszenie
+item.stat.defensiveFreeze=odporności na zamrożenie
+item.stat.defensivePetrify=odporności na spetryfikowanie
+item.stat.defensiveSleep=odporności na sen
+item.stat.defensiveTrap=odporności na unieruchomienie
+item.stat.defensiveDisruption=odporności na przerwanie
+item.stat.defensiveKnockdown=odporności na powalenie
+item.stat.defensiveConfusion=odporności na dezorientację
+item.stat.defensiveFear=odporności na strach
+item.stat.defensiveTaunt=odporności na prowokację
+item.stat.defensiveLifeLeach=odporności na wysysanie zdrowia
+item.stat.defensiveManaLeach=odporności na wysysanie energii
+item.stat.defensiveReflect=odbitych obrażeń
+item.stat.defensiveTotalSpeedResistance=odporności na spowolnienie
+item.stat.defensivePercentCurrentLife=odporności na obrażenia od obecnego zdrowia
+item.stat.defensiveCrowdControl=skrócenia efektów kontroli
+item.stat.defensiveConvert=skrócenia kontroli umysłu
+
+# Atrybuty postaci — liczbą i procentem.
+item.stat.characterStrength=Budowy ciała
+item.stat.characterDexterity=Przebiegłości
+item.stat.characterIntelligence=Duchowości
+item.stat.characterLife=Zdrowia
+item.stat.characterMana=Energii
+item.stat.characterLifeRegen=regeneracji zdrowia na sekundę
+item.stat.characterManaRegen=regeneracji energii na sekundę
+item.stat.characterOffensiveAbility=zdolności ofensywnych
+item.stat.characterDefensiveAbility=zdolności defensywnych
+item.stat.characterConstitution=kondycji
+item.stat.characterRunSpeedMax=maksymalnej szybkości ruchu
+item.stat.characterManaLimitReserve=zarezerwowanej energii
+item.stat.characterStrengthModifier=Budowy ciała
+item.stat.characterDexterityModifier=Przebiegłości
+item.stat.characterIntelligenceModifier=Duchowości
+item.stat.characterLifeModifier=Zdrowia
+item.stat.characterManaModifier=Energii
+item.stat.characterLifeRegenModifier=regeneracji zdrowia
+item.stat.characterManaRegenModifier=regeneracji energii
+item.stat.characterOffensiveAbilityModifier=zdolności ofensywnych
+item.stat.characterDefensiveAbilityModifier=zdolności defensywnych
+item.stat.characterAttackSpeedModifier=szybkości ataku
+item.stat.characterSpellCastSpeedModifier=szybkości rzucania czarów
+item.stat.characterRunSpeedModifier=szybkości ruchu
+item.stat.characterTotalSpeedModifier=łącznej szybkości
+item.stat.characterDodgePercent=szansy na unik przed atakami wręcz
+item.stat.characterDeflectProjectile=szansy na unik przed pociskami
+item.stat.characterHealIncreasePercent=zwiększonego leczenia
+item.stat.characterEnergyAbsorptionPercent=energii pochłanianej z wrogich czarów
+item.stat.characterIncreasedExperience=zdobywanego doświadczenia
+item.stat.characterLightRadius=promienia światła
+item.stat.characterGlobalReqReduction=obniżenia wymagań atrybutów
+item.stat.characterLevelReqReduction=obniżenia wymaganego poziomu
+item.stat.characterManaLimitReserveReduction=rezerwacji energii
+item.stat.characterConstitutionModifier=kondycji
+item.stat.characterRunSpeedMaxModifier=maksymalnej szybkości ruchu
+item.stat.characterAttackSpeedMaxModifier=maksymalnej szybkości ataku
+item.stat.characterSpellCastSpeedMaxModifier=maksymalnej szybkości rzucania czarów
+item.stat.characterArmorStrengthReqReduction=obniżenia wymagań Budowy ciała dla pancerzy
+item.stat.characterMeleeStrengthReqReduction=obniżenia wymagań Budowy ciała dla broni białej
+item.stat.characterMeleeDexterityReqReduction=obniżenia wymagań Przebiegłości dla broni białej
+item.stat.characterWeaponStrengthReqReduction=obniżenia wymagań Budowy ciała dla broni
+item.stat.characterHuntingDexterityReqReduction=obniżenia wymagań Przebiegłości dla broni dystansowej
+item.stat.characterJewelryIntelligenceReqReduction=obniżenia wymagań Duchowości dla biżuterii
+item.stat.characterShieldStrengthReqReduction=obniżenia wymagań Budowy ciała dla tarcz
+item.stat.skillCooldownReduction=skrócenia odnowienia umiejętności
+item.stat.skillManaCostReduction=kosztu energii umiejętności
+
+# Ile kosztuje umiejętność i jak daleko sięga; niżej pola występujące tylko w modyfikatorze umiejętności.
+item.stat.skillActiveLifeCost=kosztu zdrowia na sekundę
+item.stat.skillActiveManaCost=kosztu energii na sekundę
+item.stat.skillManaCost=kosztu energii
+item.stat.skillActiveDuration=czasu trwania
+item.stat.skillTargetNumber=cel(e)
+item.stat.weaponDamagePct=obrażeń od broni
+item.stat.retaliationDamagePct=obrażeń odbicia dodanych do ataku
+item.stat.skillChanceWeight=do szansy użycia
+item.stat.skillTargetAngle=stopni kąta ataku
+item.stat.cooldownCharges=ładunek(i)
+item.stat.petLimit=limitu przywołańców
+item.stat.damageAbsorptionPercent=pochłanianych obrażeń
+item.stat.projectileLaunchRotation=łuku strzału
+item.stat.beamAngle=stopni łuku promienia
+item.stat.beamNumber=promień/promienie
+item.stat.spawnObjectsTimeToLive=sek. życia
+
+# Nagłówek przedmiotu: pancerz i szybkość ataku — te same wiersze, które gra pokazuje pod nazwą przedmiotu.
+item.head.armour={0} pancerza
+item.head.aps={0} ataków na sekundę
+
+# Wymagania przedmiotu. Zwykle z gry; to jest zapas.
+item.need.level=Poziom gracza
+item.need.strength=Budowa ciała
+item.need.dexterity=Przebiegłość
+item.need.intelligence=Duchowość
+
+# Nagłówki części przedmiotu. Gra ich nie ma: wpisuje bonusy części prosto do wspólnej listy, a my musimy pokazać,
+# skąd pochodzi wiersz. „Składnik” i „Wzmocnienie” gra ma — te dwa są zapasowe.
+item.part.prefix=Prefiks
+item.part.suffix=Sufiks
+item.part.modifier=Przebudzenie
+item.part.component=Składnik
+item.part.relicBonus=Bonus ukończenia
+item.part.augment=Wzmocnienie
+item.part.ascension=Bonus wyniesienia
+
+# Rzadkość przedmiotu. Zwykle z gry; to jest zapas.
+item.rarity.common=Zwykły
+item.rarity.magical=Magiczny
+item.rarity.rare=Rzadki
+item.rarity.epic=Epicki
+item.rarity.legendary=Legendarny
+item.rarity.quest=Zadania
+
+# Uwaga pod podpowiedzią o wylosowanych liczbach i rozmiar przedmiotu w polach.
+item.rolled.noteDoubt=Liczby w wierszach to to, co wypadło WŁAŚNIE TEMU przedmiotowi, tak jak pokazałaby je gra. Dla wierszy z czerwonym znacznikiem nie zmierzyliśmy jeszcze miejsca pola w kolejności losowania: zostawiono tam liczbę z zapisu, a obliczoną dopisano jako „wypadło N ?” — może różnić się od gry o jeden stopień.
+item.cells=pola: {0}
+item.allFields=— wszystkie niezerowe pola zapisu —
+
+# Pozostałe wiersze podpowiedzi. Gdzie gra ma własny szablon, pokazywany jest on; to jest zapas.
+item.weaponDamageHand={0}% obrażeń od broni: {1}
+item.hand.main=główna ręka
+item.hand.off=druga ręka
+item.missing.noGame=baza danych gry nie jest podłączona
+item.missing.noRecord=zapis usunięto łatką gry
+item.restore.life=zdrowia
+item.restore.mana=energii
+item.restore.head=Przywraca
+item.need.short=— za mało, jest {0}
+item.chanceOfOne={0}% szansy na jedno z:
+item.chanceOfAll={0}% szansy na:
+item.chanceOf={0}% szansy na
+item.forSeconds=przez {0} sek.
+item.petBonusAll=Bonus do wszystkich przywołańców
+item.set=Zestaw
+item.setNamed=Zestaw: {0}
+item.setWorn=Zestaw ({0})
+item.conversionField=konwersja obrażeń
+item.conversion={0}% konwersji: {1} w {2}
+item.noGameWords=(ten wiersz nie ma tu słów gry)
+item.rolledValue=wypadło {0} ?
+item.racial.damage=obrażeń przeciw:
+item.racial.defence=mniej obrażeń od:
+item.skillPlus=+{0} do {1}
+item.masteryPlus=+{0} do wszystkich umiejętności mistrzostwa {1}
+item.allSkillsPlus=+{0} do wszystkich umiejętności
+item.summonCount=przywołanych: {0}
+item.activationChance=szansy na aktywację
+item.stat.retaliationDamageMultModifier=zmiany łącznych obrażeń odbicia
+item.conversionGone=-{0}% {1}

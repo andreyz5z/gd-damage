@@ -1,0 +1,36 @@
+# GHI CHÚ VỀ CÁCH TÍNH ĐÒN ĐÁNH (thẻ «Sát thương mỗi đòn», mục «Cách tính»).
+
+model.bareHands=Tay chính không cầm vũ khí. Sát thương của bản thân nắm đấm không được tính — chỉ tính những gì kỹ năng, tín ngưỡng và vật phẩm mang lại; trong trò chơi, nhân vật tay không có thêm vài điểm sát thương vật lý.
+model.dualDot=Khi cầm hai vũ khí, sát thương theo thời gian không chia theo tay: {0} bằng 0,75 tổng sát thương theo thời gian của CẢ HAI tay và của chính nhân vật, mỗi nguồn chỉ tính MỘT lần. Theo từng tay, trò chơi hiện đầy đủ «sát thương theo thời gian của tay này + của nhân vật», nên dòng «mỗi đòn» có thể lớn hơn hoặc nhỏ hơn một tay. Chỉ xử lý như vậy với sát thương theo thời gian do chính vũ khí mang (phụ kiện bên trong không tính).
+model.plainAttack=Đây là Tấn Công Mặc Định bằng vũ khí tay chính. Có thể chọn kỹ năng trong danh sách phía trên.
+model.skill=Kỹ năng «{0}», cấp {1}.
+model.skillNoWeapon=Kỹ năng không có phần sát thương vũ khí — nên vũ khí hoàn toàn không tham gia đòn này, các chỉ số cộng thẳng của vật phẩm cũng vậy: chỉ tính sát thương riêng của kỹ năng.
+model.skillWeapon={0}% sát thương vũ khí: hệ số này áp dụng cho sát thương vũ khí cùng sát thương theo thời gian của nó, nhưng không áp dụng cho sát thương cộng thẳng riêng của kỹ năng.
+model.charge=Kỹ năng được tích tụ: {0}% ở lần tích cuối. Bảng của trò chơi tính theo con số này ngay cả khi chưa tích, và hệ số chỉ áp dụng cho phần sát thương vũ khí — sát thương cộng thẳng riêng của kỹ năng giữ nguyên. Chú giải của chính kỹ năng không mang hệ số này: ở đó phần sát thương ghi là {1}%.
+model.modifiers=Các biến thể kỹ năng được tính vào đòn này: {0}. Phần trăm của chúng thuộc về đòn đánh, không thuộc về nhân vật — vì vậy chúng không có trong thẻ tổng chỉ số. Trò chơi cũng tính chúng vào: với «Tiết Tấu Đại Kích» trò chơi ghi 210 độ và 5 mục tiêu, và đó là con số của «Tinh Thần Chiến Đấu».
+model.temporaryIn=Ở đây có tính một hiệu ứng tạm thời của kỹ năng: {0}. Nó áp dụng khi kỹ năng trúng và kéo dài vài giây — tức là khi bạn còn tấn công, nó vẫn giữ. Nhưng bảng của trò chơi hiện kỹ năng KHÔNG có nó, vì vậy hãy so bảng với con số không có hiệu ứng tạm thời (bên dưới).
+model.temporaryOut=Các hiệu ứng tạm thời ({0}) không được tính ở đây.
+model.retaliation=Kỹ năng cộng thêm vào đòn {0}% sát thương phản công của nhân vật — phần này được tính và chia theo loại. PHẦN DƯ: với «Lá Chắn của Menhir» quy tắc cho 1089 lửa so với 1092 cần có, tức lệch 0,28%; ba điểm này từ đâu ra chưa tìm được.
+model.notCounted=Không tính vào: {0}.
+model.notModelled=Không xét: cộng dồn sát thương theo thời gian từ các nguồn khác nhau, đòn chí mạng, chỉ số chống một loại quái (nhân ở cuối cùng) và kháng của mục tiêu.
+
+# Tên các loại sát thương trong dòng «Sát thương mỗi đòn» và phản công: «1234 Sát Thương Lửa».
+model.type.Physical=Sát Thương Vật Lý
+model.type.Pierce=Sát Thương Xuyên Phá
+model.type.Fire=Sát Thương Lửa
+model.type.Cold=Sát Thương Băng
+model.type.Lightning=Sát Thương Sét
+model.type.Poison=Sát Thương A-xít
+model.type.Life=Sát Thương Sinh Khí
+model.type.Aether=Sát Thương Aether
+model.type.Chaos=Sát Thương Hỗn Nguyên
+model.type.Bleeding=Xuất Huyết
+
+# Tên sát thương theo thời gian: «2072 Thiêu Đốt mỗi giây».
+model.dot.Physical=Nội Thương
+model.dot.Fire=Thiêu Đốt
+model.dot.Cold=Bỏng Băng
+model.dot.Lightning=Điện Giật
+model.dot.Poison=Độc
+model.dot.Life=Rút Sinh Khí
+model.dot.Bleeding=Xuất Huyết

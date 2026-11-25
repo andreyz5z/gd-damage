@@ -1,0 +1,150 @@
+# OKNO „DOVEDNOSTI“: povolání, nápovědy dovedností, oddanost, brány.
+# Názvy povolání, dovedností a souhvězdí pocházejí ze hry.
+
+skills.title=Dovednosti — {0}
+skills.levelParen=(úroveň {0})
+
+# Volba a opuštění povolání
+skills.choose.first=První povolání
+skills.choose.second=Druhé povolání
+skills.choose.intro=Povolání se počítá za zvolené, jakmile do jeho lišty přijde první bod — přesně to uděláme, utratíme jeden bod dovedností. Stejné povolání nelze zvolit dvakrát.
+skills.choose.opensAt=Ve hře se odemyká na úrovni {0}.
+skills.choose.freePoints=Volné body dovedností: {0}.
+skills.noPoints.text=Nejsou žádné volné body dovedností, a povolání se volí vložením bodu do jeho lišty.\n\nPřidejte bod v poli „Body dovedností“ hlavního okna, a pak ho tu půjde utratit. Utratit neexistující bod není dovoleno: postava by utratila víc, než získala.
+skills.noPoints.title=Nedostatek bodů dovedností
+skills.take.ask=Zvolit povolání „{0}“?\n\nJeden bod dovedností půjde do jeho lišty — tak se povolání stává zvoleným. Nyní volných: {1}.
+skills.take.undo=Rozmyslet si to můžete tlačítkem „Opustit povolání“ — body se vrátí.
+skills.take.title=Volba povolání
+skills.drop.ask=Opustit povolání „{0}“?\n\nKaždý do něj vložený bod bude vyjmut — celkem {1}, včetně bodu lišty — a vrátí se mezi volné. Dovednosti tohoto povolání zmizí a hvězdy oddanosti na ně navázané zůstanou nenavázané.
+skills.drop.title=Opuštění povolání
+skills.drop.button=Opustit povolání „{0}“
+skills.drop.secondFirst=Nejprve opusťte druhé povolání
+skills.mastery.fallbackName=povolání {0}
+skills.mastery.tooEarlyFirst=Ve hře se první povolání odemyká na úrovni {0}, a postava má {1}.
+skills.mastery.tooEarlySecond=Ve hře se druhé povolání odemyká na úrovni {0}, a postava má {1}.
+
+# Nápověda dovednosti
+skills.kind.mastery=povolání
+skills.kind.active=aktivní dovednost
+skills.kind.weaponPool=výchozí útok (dovednost zásoby zbraní)
+skills.kind.modifier=modifikátor dovednosti
+skills.kind.transmuter=transmutátor
+skills.kind.passive=pasivní dovednost
+skills.tip.poolChance=Šance na použití místo výchozího útoku: {0}%
+skills.tip.poolShared=Zvolené výchozí útoky: {0}, jejich šance dávají dohromady {1}%. Na jeden útok se spustí jen jeden z nich.
+skills.tip.poolSharedFull=Zvolené výchozí útoky: {0}, jejich šance dávají dohromady {1}%. Na jeden útok se spustí jen jeden z nich; prostý útok zbraní už nenastane vůbec.
+skills.tip.dependsOn=Odemyká: {0}
+skills.tip.level=Současná úroveň: {0}
+skills.tip.levelWithBonus=Současná úroveň: {0} + {1} z předmětů
+skills.tip.max=(lze zvýšit do {0})
+skills.tip.maxWithGear=(lze zvýšit do {0}, limit s předměty {1})
+skills.tip.recordNumbers=Toto jsou čísla ze záznamu dovednosti, před bonusy postavy. Ve vlastní nápovědě je hra ukazuje už vynásobené veškerým zraněním, které nosíte — proto jsou její čísla větší. Zranění s bonusy: „Výpočet zranění…“ → „Zranění na zásah“.
+skills.tip.recordNumbersHand=Kromě žlutého řádku o ruce: tam je v závorce už zranění té ruky, přesně jak ho ukazuje hra.
+skills.tip.celestialPower=Nebeská moc
+skills.tip.fromItem=Z předmětu: {0}
+skills.tip.nextLevel=Další úroveň: {0}
+
+# Oddanost
+skills.devotion.tab=Oddanost
+skills.devotion.spent=Utracené body oddanosti: {0} z {1} získaných, volných {2}
+skills.devotion.split=Z toho {0} jsou pasivní hvězdy (sečtené níže) a {1} hvězdy s dovedností (zobrazené zvlášť).
+skills.devotion.sums=Celkové bonusy
+skills.devotion.none=žádné
+skills.devotion.granted=Udělené dovednosti
+skills.devotion.boundTo=navázáno na: {0}
+skills.devotion.unbound=na nic nenavázáno — nespustí se
+skills.devotion.levels=Změnit úroveň dovedností oddanosti
+skills.devotion.starOf={0}, hvězda {1}
+skills.devotion.total=celkem {0}
+skills.devotionLevels.title=Úroveň dovedností oddanosti — {0}
+skills.devotionLevels.of=z {0}
+skills.devotionLevels.none=Postava nemá hvězdy oddanosti, které udělují dovednost.
+skills.constellations.count=Souhvězdí ve hře: {0}. Dokončená: {1}, započatá: {2}.
+skills.constellations.legend=Zvolené hvězdy jsou označené; v závorkách u souhvězdí — kolik jeho hvězd je zvoleno, co dává a co vyžaduje.
+skills.constellations.gives=dává: {0}
+skills.constellations.needs=vyžaduje: {0}
+skills.constellations.star=hvězda {0}
+skills.constellations.notTaken=(nezvolena)
+
+# Mapa oddanosti: přidávání bodů do hvězd myší
+skills.devo.hint=Levý klik na hvězdu přidá bod, pravý ho vrátí. Kolečko přibližuje, tažením se mapa posouvá.
+skills.devo.fit=Celá mapa
+skills.devo.zoom=měřítko {0} %
+skills.devo.points=Body oddanosti: {0}
+skills.devo.stars=Zvolených hvězd: {0} z {1}
+skills.devo.noPoints=Žádné volné body oddanosti nezbyly. Přidejte je v poli „Body oddanosti“ v hlavním okně.
+skills.devo.already=V této hvězdě už bod je.
+skills.devo.locked=Souhvězdí „{0}“ je zatím zavřené: chybí spřízněnost — {1}.
+skills.devo.parentFirst=Nejdřív je potřeba vzít „{0}“ — tahle hvězda na ní visí.
+skills.devo.empty=V této hvězdě nejsou žádné body.
+skills.devo.childFirst=Na této hvězdě visí zvolená „{0}“ — nejdřív ji sejměte.
+skills.devo.affinityHolds=Souhvězdí je celé a jeho spřízněnost drží „{0}“: bez ní by zbylo {1}.
+skills.devo.bindHint=Klikněte na hvězdu levým tlačítkem a vyberte dovednost.
+
+# Nebeská moc: na kterou dovednost ji pověsit
+skills.bind.title=Na kterou dovednost pověsit „{0}“
+skills.bind.none=Žádná dovednost není přiřazena
+skills.bind.chosen=(vybrána)
+skills.bind.busy=(obsazeno: {0})
+skills.bind.fromItem=(z předmětu)
+skills.bind.legend=Červeně — dovednosti, které postava ještě nemá naučené: vybrat je lze také a moc začne fungovat, jakmile do nich přijdou body.
+
+# Brány
+skills.portals.tab=Brány
+skills.portals.column=Brána
+skills.portals.notBuilt=Seznam bran není vytvořen. Čte se ze souborů herního světa a trvá to asi minutu.
+skills.portals.build=Vytvořit seznam bran
+skills.portals.reading=Čtou se soubory světa…
+skills.portals.readingWhat=Čtou se soubory světa: {0}
+skills.portals.readError=Soubory světa se nepodařilo přečíst: {0}
+skills.portals.layer=Vrstva Riftgates na {0}: záznamů {1}
+skills.portals.openAll=Otevřít všechny brány na všech obtížnostech
+skills.portals.openDifficulty={0}: otevřít všechny ({1} z {2})
+skills.portals.closeAll=Zavřít všechny brány na všech obtížnostech?\n\nOdstraní to i ty, které postava našla sama. Vedle uložené hry zůstane záložní kopie.
+skills.portals.closeOne=Zavřít všechny brány na obtížnosti „{0}“?\n\nOdstraní to i ty, které postava našla sama. Vedle uložené hry zůstane záložní kopie.
+skills.portals.title=Brány
+skills.portals.summary=Bran ve hře: {0}.   Otevřených: {1}
+skills.portals.source=Seznam se čte ze souborů herního světa; upravuje se jen uložená hra postavy.
+skills.portals.open=otevřena
+
+# Co dovednost vyvolává — řádky pod nápovědou vyvolávací dovednosti.
+skills.pet.summons=Vyvolává: {0}
+skills.pet.limit=až {0} najednou
+skills.pet.lives=doba života {0} s
+skills.pet.permanent=trvalý
+skills.pet.life=zdraví {0}
+skills.pet.lifeNote=zdraví počítáme podle vlastních pravidel a může se od hry lišit
+
+# Rozdělování bodů ve stromu: levý klik přidá bod, pravý ho vrátí
+skills.edit.points=Body dovedností: {0}
+skills.edit.hint=Levý klik přidá bod, pravý ho vrátí.
+skills.edit.noPoints=Žádné volné body dovedností nezbyly. Přidejte je v poli „Body dovedností“ v hlavním okně.
+skills.edit.atMax=Dovednost je už na svém stropu {0}. To, co přidává vybavení, jde nad strop a do uložené hry se neukládá.
+skills.edit.masteryFirst=Nejdřív pruh mistrovství: vložte do něj bod a strom se otevře.
+skills.edit.tierClosed=Tento sloupec se otevírá na úrovni mistrovství {0}, a pruh je na {1}.
+skills.edit.ownerFirst=Nejdřív je potřeba vzít „{0}“ — tahle dovednost na ní visí.
+skills.edit.exclusive=Aktivní může být jen jedna výhradní dovednost, a tou už je „{0}“.
+skills.edit.empty=V této dovednosti nejsou žádné body.
+skills.edit.ownerBusy=Na této dovednosti visí „{0}“ a jsou v ní ještě body.
+skills.edit.barLast=Poslední bod pruhu je samo mistrovství — vraťte místo toho celé mistrovství.
+skills.edit.barHolds=„{0}“ stojí ve sloupci, který se otevírá na úrovni mistrovství {1}.
+
+# KARTA „REPUTACE“: frakce a hodnosti. Jména frakcí, hodnosti a jejich pořadí dává hra.
+skills.factions.tab=Reputace
+skills.factions.column=Frakce
+skills.factions.rank=Hodnost
+skills.factions.value=Reputace
+skills.factions.boost=Rychlost růstu
+skills.factions.notes=Poznámky
+skills.factions.summary=Frakcí ve hře: {0}.   Záznamů v uložené hře: {1}
+skills.factions.short=Uložená hra obsahuje {0} záznamů, zatímco hra zná {1} frakcí: poslední v ní ještě nejsou. Objeví se, až postavu uloží sama hra.
+skills.factions.source=Jména, hodnosti a pořadí se čtou ze souborů hry; upravuje se jen uložená hra postavy.
+skills.factions.unreadable=Frakce se ze souborů hry nepodařilo přečíst.
+skills.factions.showHidden=Zobrazit i frakce, které hra ve svém panelu neukazuje
+skills.factions.setRank=Hodnost:
+skills.factions.exact=Nebo číslo:
+skills.factions.apply=Použít na vybrané
+skills.factions.pickFirst=Nejprve vyberte v seznamu alespoň jednu frakci.
+skills.factions.hidden=v panelu hry se nezobrazuje
+skills.factions.noGain=reputace neroste
+skills.factions.boostTimes=×{0}

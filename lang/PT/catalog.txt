@@ -1,0 +1,44 @@
+# O CATÁLOGO DE ITENS (coluna esquerda da janela principal).
+
+catalog.title=Catálogo de itens
+catalog.wearable=Tudo o que se equipa
+catalog.everything=Todos os itens
+catalog.search=parte de um nome…
+catalog.bonus=bônus: velocidade de ataque…
+catalog.bulkHint=Ctrl + clique esquerdo — pegar uma pilha
+catalog.count={0} itens
+catalog.notBuilt=(catálogo não criado)
+catalog.hidden=({0} ocultos pelos filtros)
+catalog.level=nív. {0}
+
+# Raridade
+catalog.rarity.common=Comum
+catalog.rarity.magical=Mágico
+catalog.rarity.rare=Raro
+catalog.rarity.epic=Épico
+catalog.rarity.legendary=Lendário
+catalog.rarity.quest=Missão
+
+# Seções
+catalog.category.head=Armadura: cabeça
+catalog.category.shoulders=Armadura: ombros
+catalog.category.chest=Armadura: torso
+catalog.category.hands=Armadura: mãos
+catalog.category.waist=Armadura: cintura
+catalog.category.legs=Armadura: pernas
+catalog.category.feet=Armadura: pés
+catalog.category.amulet=Joias: amuletos
+catalog.category.ring=Joias: anéis
+catalog.category.medal=Joias: medalhas
+catalog.category.relic=Relíquias
+catalog.category.weapon1h=Armas: de uma mão
+catalog.category.weapon2h=Armas: de duas mãos
+catalog.category.ranged1h=Armas: pistolas
+catalog.category.ranged2h=Armas: rifles
+catalog.category.shield=Mão secundária: escudos
+catalog.category.offhand=Mão secundária: focos
+catalog.category.component=Componentes
+catalog.category.augment=Aprimoramentos
+catalog.category.consumable=Consumíveis
+catalog.category.crafting=Ingredientes e projetos
+catalog.category.other=Outros

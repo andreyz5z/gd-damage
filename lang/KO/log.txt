@@ -1,0 +1,185 @@
+# 전투 시뮬레이션 로그 («전투 시뮬레이션» 탭): 로그 줄, 이유, 실행 후 메모.
+#
+# 소수는 이미 쓰인 형태 (마침표 구분)로 오며, {n} 안에서는 아무것도 다시 계산하지 않습니다. 비교 기호
+# «<», «≥», «→», 괄호, 줄의 각 부분 사이 쉼표는 프로그램이 넣습니다.
+
+# 스스로 공격하지 않는 스킬이 하는 일. 이 말은 로그 («강화, 데미지 없음»),
+# «누를 것» 목록, 실행 메모에 나옵니다.
+log.effect.damage=데미지
+log.effect.summon=소환
+log.effect.buff=강화
+log.effect.debuff=약화
+log.effect.none=레코드에 데미지 없음
+
+# 로그 한 줄: «12.34초  휘두르기: 양손   812와 790   (보너스 미적용 피해 1020와 990)   [이유]».
+log.line.at={0}초
+log.line.and=와
+log.line.before=(보너스 미적용 피해 {0})
+log.seconds={0}초
+log.from=«{0}»에서
+log.target.dummy=인형
+log.target.generic=대상
+
+# 손. «휘두르기: 양손», «주 손 치명타, 단계 2», «주 43.1 < 97.0» (손별 적중 추첨).
+log.hand.both=양손
+log.hand.main=주 손
+log.hand.off=보조 손
+log.roll.main=주
+log.roll.off=보조
+log.partial.mainMissed=(주 손 빗나감)
+log.partial.offMissed=(보조 손 빗나감)
+
+log.swing=휘두르기: {0}
+log.swing.hands=손 {0} → {1}
+log.swing.crit={0} 치명타, 단계 {1} ×{2}
+log.miss=빗나감
+log.fire.crit={0} 치명타 ×{1}
+
+# 무엇이 맞혔나: «스킬: …», «발동: 메테오», «공격 대신: …».
+log.fire.skill=스킬
+log.fire.channel=채널링
+log.fire.spell=주문
+log.fire.pool=공격 대신
+log.fire.proc=발동
+log.fire.devotion=디보션
+log.fire.finale=피날레: {0}번째 공격
+log.fire.attack=공격
+log.fire.charges=(충전 {0})
+
+# 지속 데미지 틱: «연소 틱 (주 손, 기본 무기 공격에서)».
+log.tick={0} 틱
+log.tick.from={0}에서
+log.tick.left={0}초 남음
+log.tick.partial=불완전한 틱 {0}%
+log.tick.autoattack=기본 무기 공격
+log.dot.FireDot=연소
+log.dot.ColdDot=동상
+log.dot.LightningDot=감전
+log.dot.PoisonDot=독
+log.dot.LifeDot=생기 부식
+log.dot.BleedingDot=출혈
+log.dot.PhysicalDot=체내 충격
+
+# 대상의 체력.
+log.life.killed=대상 처치
+log.life.killedWhy=TTK {0}초: 체력 {2}에 {1}을(를) 주었습니다. 이후에도 살아 있는 것처럼 데미지를 세지만, 더 줄일 체력은 없습니다
+log.life.cut=체력 감소 {0}%  «{1}»에서
+log.life.cutWhy=대상의 체력 {0} → {1}
+log.life.cutResist=효과 {0}%, 대상의 저항력 {1}%
+log.life.gear=장비
+
+# 오라, 재사용 대기시간마다의 강화, 재사용 대기시간 초기화.
+log.aura=오라: {0}
+log.buff=강화: {0}
+log.buff.holds=지속 {0}초
+log.buff.cooldown=재사용 대기시간 {0}초
+log.buff.shield=흡수 보호막 {0} — 깨질 때까지 유지
+log.buff.noDuration=레코드에 지속시간 없음
+log.buff.notInQueue=그 데미지 보너스는 대기열에서 작용하지 않습니다
+log.buff.noEffect=우리 데미지에 영향을 주지 않습니다
+log.reset=재사용 대기시간 초기화: «{0}»
+log.reset.why=«{0}», {1}% {2} — {3}초 동안, {5} 대신 {4}에 준비
+log.reset.onCrit=치명타 공격 시
+log.reset.onAttack=공격 시
+
+# 발동했거나 눌렀지만 공격하지 않음.
+log.silent.fired=발동
+log.silent.pressed=누름:
+log.silent.buff=강화, 지속 {0}초
+log.silent.resists=저항력 감소
+log.silent.defense=방어 능력 −{0}
+log.silent.offense=공격 능력 −{0}
+log.silent.absolute=저항력 수치 −{0}
+log.silent.relative=현재 저항력의 −{0}%
+log.silent.debuff=대상을 {0}초 동안 약화
+log.silent.debuffNothing=우리 데미지에 전혀 영향을 주지 않습니다
+log.silent.summon=소환 — 펫이 풀에 합류하며, 그 공격은 아래의 별도 줄에 있습니다
+log.silent.noDamage={0}, 데미지 없음
+
+# 로그의 펫.
+log.pet.how.self=자동
+log.pet.how.pressed=누름
+log.pet.summonBlocked=소환 ({0}): {1}
+log.pet.limit=종류의 한도에 이미 닿았습니다 — {0} × «{1}», 더 늘지 않습니다
+log.pet.summoned=소환 ({0}): «{1}» #{2}
+log.pet.standing={1} 중 {0} 존재
+log.pet.lives=지속 {0}초
+log.pet.permanent=영구
+log.pet.aps=초당 공격 {0}
+log.pet.gone=퇴장: «{0}» #{1}
+log.pet.goneWhy=지속시간 {0}초 종료, 공격 {1}회
+log.pet.goneTrap=적에 의해 작동, 공격 {0}회
+log.pet.onceAt={0}초 후 폭발
+log.pet.aura=펫의 오라: «{0}» {1}
+log.pet.auraTarget=펫의 오라: «{0}»
+log.pet.auraAllies=가까이 있는 동안 우리와 다른 펫을 강화
+log.pet.auraOnTarget=가까이 있는 동안 대상에게 걸려 있음
+log.pet.miss=펫 빗나감: «{0} #{1}» {2}
+log.pet.hitChance=적중 확률 {0}%
+log.pet.hit=펫: «{0} #{1}» {2}
+log.pet.auto=(기본 공격)
+log.pet.auraMark=(오라)
+log.pet.perSecond=초당 1회
+log.pet.speed=속도 초당 {0}회 공격
+log.pet.every={0}초마다
+log.pet.crit=치명타 단계 {0} ×{1}
+log.pet.dotApplied=지속 데미지 부여
+# 틱 줄의 펫 지속 데미지 출처: «연소 틱 («<펫> #1: <스킬>»에서)».
+log.pet.source={0} #{1}: {2}
+# 게임에서 이름이 없는 펫 스킬 — 레코드 경로의 끝부분으로 부릅니다.
+log.pet.noName=이름 없음: {0}
+
+# 실행 결과: 종족 보너스.
+log.racial.noRace=종족 대상 보너스 ({0}개)는 이 대상에게 작용하지 않습니다: 종족이 전혀 없습니다 (인형과 같음)
+log.racial.none=대상은 {0}이며, 그에 대한 보너스가 없습니다 (다른 종족에 대한 것은 있음: {1})
+log.racial.has=대상은 {0}이며, 그에 대한 우리 보너스는 데미지 {1}% (배율 ×{2})
+log.racial.flat=종족 «{0}»에 대한 고정 보너스 ({1} 데미지)는 모았지만 적용하지 않았습니다: 어떤 종류의 데미지로 오는지 (툴팁에 종류 없음), 순서의 어디에 들어가는지 모릅니다. 비율 보너스는 글의 공식대로 넣지만, 고정 보너스는 글에도 파일에도 공식이 없습니다 — 측정이 필요합니다
+
+# 실행 결과: 도움말 (잘못 고른 것).
+log.hint.mainNotSpell=«{0}»이(가) 주 스킬로 선택되었지만 채널링도, 재사용 대기시간 없는 주문도 아닙니다 (또는 애니메이션을 찾지 못함) — 선택하지 않은 것처럼 무기로 공격합니다
+log.hint.buffPressed=«{0}»은(는) 강화입니다: 켜져 있는 동안 공격에 보너스가 붙지만, 그 자체로 공격하지는 않습니다. 강화 목록에서 체크하세요
+log.hint.channelWithAttack=채널링 «{0}»이(가) 기본 무기 공격과 함께 눌렸습니다 — 게임에서는 있을 수 없습니다: 빔을 유지하는 동안 무기로 공격하지 않습니다. 누르는 시점은 시전속도가 아니라 레코드의 «재사용 대기시간»입니다. 주 스킬로 선택하세요
+log.hint.starHits=별 «{0}»은(는) 데미지를 줍니다 — 강화로는 켜지 않습니다. 누를 것 목록에서 체크하면 재사용 대기시간마다 공격합니다
+log.hint.starReplacing=별 «{0}»은(는) «{1}»에 연결되어 있습니다 — 대체 공격입니다: 버튼에 할당되어 일반 공격 대신 공격합니다. 이런 것도 셀 수 있지만, 이번 실행에서는 그것으로 공격하지 않습니다 — 세이브가 할당을 저장하지 않기 때문입니다. «공격 수단» 목록에서 고르면 별이 작동합니다
+log.hint.starIdle=별 «{0}»은(는) 스킬 «{1}»에 연결되어 있지만, 그 스킬은 이번 실행에서 공격하지 않습니다 (누를 것에 체크되지 않았고 무기 풀에도 없음) — 발동이 전혀 없으며, 운이 나쁜 것이 아닙니다
+
+# 실행 결과: 읽지 못한 것.
+log.unread.starBuffNoDuration=별 «{0}»은(는) 강화를 걸지만, 레코드에 지속시간이 없습니다 — 유지할 방법이 없어 대기열에는 발동했다는 사실만 표시됩니다
+log.unread.starNoDamage=별 «{0}»의 데미지를 읽지 못했습니다: 발동은 대기열에 있지만 데미지는 없습니다
+log.unread.buffNoDuration=강화 «{0}»은(는) 데미지를 바꾸지만, 레코드에 지속시간이 없습니다 — 대기열에는 발동만 표시되고 보너스는 작용하지 않습니다
+log.unread.summonNoPet=소환 «{0}»이(가) 발동했지만, 그런 펫이 풀에 없습니다 — 그 데미지는 세지 않습니다
+log.unread.petMoveNoRate=펫 «{0}»에게 데미지를 주는 스킬 «{1}»이(가) 있지만, 얼마나 자주 쓰는지 레코드에 없습니다 — 대기열에서는 쓰지 않습니다
+log.unread.petNoSpeed=펫 «{0}»의 공격 속도를 읽지 못했습니다 (애니메이션 표 없음) — 그 기본 공격은 대기열에 넣지 않습니다
+log.unread.petNoMoves=펫 «{0}»의 데미지 스킬을 하나도 읽지 못했습니다 — 대기열에서 소환은 되지만 공격하지 않습니다
+
+# 실행 결과: 아이템과 세트의 스킬 — 각각 어떻게 되었나.
+log.gear.mainSpell=기본 무기 공격 대신 주 스킬, 공격 {0}회
+log.gear.pool=무기 풀 안
+log.gear.onlyCrit=치명타 시에만 추첨;
+log.gear.fired={0}회 발동
+log.gear.firedSummon=— 소환, 펫이 풀에 합류해 공격
+log.gear.firedDebuff=— 대상 약화
+log.gear.firedBuff=— 우리에게 강화
+log.gear.conditionNotModelled=조건은 모델링하지 않습니다 —
+log.gear.pressed=누를 것에 체크됨, 재사용 대기시간마다 누름: {0}회 누름
+log.gear.notPressed=누를 수 있음 — 누를 것에 체크되지 않음
+log.gear.conditionHits=조건은 모델링하지 않지만 데미지가 있습니다 — 체크하면 재사용 대기시간마다 씁니다
+log.gear.noHit=공격하지 않음 ({0})
+log.gear.conditionNoHit=조건은 모델링하지 않으며 데미지 없음 ({0}) — 대기열에 참여하지 않습니다
+
+# 실행 결과: 별과 펫 이름별.
+log.star.head=«{0}» Lv. {1} («{2}»에서)
+log.star.onlyCrit=(치명타 시에만)
+log.star.chance=확률 {0}%
+log.star.cooldown=재사용 대기시간 {0}초
+log.star.fired={1}회 추첨 중 {0}회 발동
+log.star.blocked=재사용 대기시간으로 {0}회 막힘
+log.petLine.auras=다른 펫에게 주는 펫의 오라 (다음 펫이 살아 있는 동안) — {0}: {1}
+log.petLine.head=«{0}» ({1}) — {2}회 소환
+log.petLine.limit=동시에 최대 {0}
+log.petLine.hits=공격 {0}
+log.petLine.misses=빗나감 {0}
+log.petLine.crits=치명타 {0}
+log.petLine.damage=데미지 {0}
+log.petLine.expired=시간 종료로 퇴장 {0}
+log.petLine.blocked=한도를 넘은 소환 {0}

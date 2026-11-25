@@ -1,0 +1,14 @@
+# FENÊTRE « PARAMÈTRES ».
+
+settings.title=Paramètres
+settings.gameFolder=Dossier de Grim Dawn :
+settings.gameFolder.browse=Le dossier où Grim Dawn est installé
+settings.savesFolder=Dossier des sauvegardes (pour la boîte d'ouverture) :
+settings.savesFolder.browse=Le dossier de vos sauvegardes
+settings.browse=Choisir…
+settings.language=Langue :
+settings.rebuildCatalog=Recréer le catalogue d'objets
+settings.rawFields=Afficher tous les champs de la fiche dans la description de l'objet
+settings.fileHint=settings.json se trouve à côté du programme
+settings.ok=OK
+settings.cancel=Annuler

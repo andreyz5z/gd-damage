@@ -1,0 +1,70 @@
+# 加成来源：「总加成」标签页「组成」提示中各项的标签。
+# 攻击正是凭这些标签找到自己的项，所以每个标签只在一个地方生成。
+# 翻译时注意：物品部件的标签（totals.part.*）必须互不相同——否则不同部件的行会共用同一次伤害判定。
+# --langtest 会检查这一点。
+
+totals.part.prefix=（前缀）
+totals.part.suffix=（后缀）
+totals.part.component=（镶嵌物）
+totals.part.relicBonus=（完成加成）
+totals.part.augment=（增幅）
+totals.part.modifier=（改造）
+totals.part.ascension=（飞升）
+totals.setShort=套装：{0}
+totals.fromItem=来自物品：{0}（{1}）
+totals.devotion=星座信仰：{0}
+totals.skill=技能：{0}（等级 {1}）
+totals.toggled=已开启：{0}（等级 {1}）
+totals.skillMod=技能改造：{0}
+totals.toggledMod=已开启，技能改造：{0}
+totals.chosenOn={0} — 手动开启
+totals.chosenOff={0} — 手动关闭
+totals.gateItem={0}（来自物品）— {1}
+totals.gateDevotion={0}（星座信仰）— {1}
+
+totals.gate.needDualAny=既没有双持近战武器，也没有两把单手远程武器
+totals.gate.needDualMelee=没有双持武器
+totals.gate.needDualRanged=没有两把单手远程武器
+totals.gate.needRanged=没有远程武器
+totals.gate.needGuns=需要两把手枪或一把步枪
+totals.gate.needEmptyHands=手中持有武器
+totals.gate.wrongWeapon=手中武器不符
+
+# 「总加成」标签页的分组标题。「抗性」「反击」「防御」和「属性」取自游戏（其人物面板）；这四行只是备用。
+totals.group.damage=伤害
+totals.group.overTime=持续伤害
+totals.group.retaliation=反击
+totals.group.debuff=从目标身上削减的
+totals.group.resist=抗性
+totals.group.defence=防御
+totals.group.attributes=属性
+totals.group.skills=技能
+totals.group.other=其他
+
+# 护甲部位。通常取自游戏（其护甲面板）；这是备用。
+totals.zone.head=头部
+totals.zone.shoulders=肩部
+totals.zone.chest=胸部
+totals.zone.arms=手臂
+totals.zone.legs=腿部
+totals.zone.feet=足部
+
+# 战宠身上达到上限的项：「… 达到上限：混乱 84%（+12% 超出最大值），眩晕 …」。
+totals.capWord.elemental=元素
+totals.capWord.stun=眩晕
+totals.capWord.freeze=冻结
+totals.capWord.trap=束缚
+totals.capWord.petrify=石化
+totals.capWord.convert=心灵控制
+
+# 抗性名称。取自游戏（其人物面板）；这是备用，用游戏的说法。
+totals.resist.fire=火焰
+totals.resist.cold=冰冷
+totals.resist.lightning=闪电
+totals.resist.poison=毒素&酸性
+totals.resist.pierce=穿刺
+totals.resist.aether=虚化
+totals.resist.chaos=混乱
+totals.resist.life=活力
+totals.resist.bleeding=流血
+totals.resist.physical=物理

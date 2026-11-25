@@ -1,0 +1,18 @@
+# PANEL VYBAVENÍ: názvy míst (objevují se i ve zprávách „nepatří na místo …“).
+
+equipment.weapon1=Zbraň I
+equipment.offhand1=Druhá ruka I
+equipment.weapon2=Zbraň II
+equipment.offhand2=Druhá ruka II
+equipment.head=Hlava
+equipment.neck=Krk
+equipment.medal=Medaile
+equipment.shoulders=Ramena
+equipment.chest=Hruď
+equipment.hands=Ruce
+equipment.waist=Pás
+equipment.legs=Nohy
+equipment.ring1=Prsten 1
+equipment.feet=Chodidla
+equipment.relic=Relikvie
+equipment.ring2=Prsten 2

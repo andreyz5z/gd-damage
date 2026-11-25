@@ -1,0 +1,19 @@
+# OKNO „AKTYWNE UMIEJĘTNOŚCI”.
+
+active.title=Aktywne umiejętności — {0}
+active.none=Ta postać nie ma ani przełączanych umiejętności, ani umiejętności z przedmiotów.
+active.source.devotionOn=poświęcenie przypisane do „{0}”
+
+# Warunki uruchomienia, w skrócie („warunek „przy bloku” nie jest losowany”).
+active.trigger.attack=przy ataku
+active.trigger.attackCrit=przy ataku krytycznym
+active.trigger.lowHealth=przy niskim zdrowiu
+active.trigger.lowMana=przy niskiej energii
+active.trigger.hitByEnemy=gdy zostaniemy trafieni
+active.trigger.hitByMelee=przy trafieniu wręcz
+active.trigger.hitByProjectile=przy trafieniu pociskiem
+active.trigger.hitByCrit=przy trafieniu krytycznym w nas
+active.trigger.block=przy bloku
+active.trigger.onKill=przy zabiciu
+active.trigger.castBuff=przy rzuceniu wzmocnienia
+active.trigger.onEquip=przy założeniu

@@ -1,0 +1,23 @@
+# FINESTRA «EVOCAZIONI ATTIVE» e righe delle evocazioni nelle altre finestre.
+# I nomi delle evocazioni e delle loro abilità vengono dal gioco.
+
+pets.title=Evocazioni attive — {0}
+pets.checkbox={0}   ({1}, liv. {2})
+pets.limit=fino a {0} alla volta
+pets.lifetime={0} s di vita
+pets.life=salute: base {0} × (1 + {1}% propria + {2}% nostra) = {3}
+pets.lifeAura=salute: base {0} × (1 + {1}% propria + {2}% nostra + {3}% aure) = {4}
+pets.armour=armatura: base {0} × (1 + {1}% propria + {2}% nostra) = {3}   (il gioco non mostra mai l'armatura delle evocazioni: è una cifra nostra)
+pets.auras=sotto aure: {0}
+pets.none=Questo personaggio non ha nessuna abilità che evochi una creatura.
+pets.note=Salute: base × (1 + propria% + bonus alle evocazioni% + aure%). Il danno delle abilità è moltiplicato per i bonus alle evocazioni: la regola è stata misurata su sette numeri del gioco.
+
+pets.level=liv. {0}
+pets.levelUnknown=il record dell'evocazione non indica un livello
+pets.attack={0}   (evocazione «{1}», {2})
+
+# Conversione dell'evocazione
+pets.conversion.title=Conversione di questa evocazione
+pets.conversion.capped=Da un tipo non esce più del cento per cento: il cento si divide tra i riceventi secondo le loro quote. Tra parentesi, ciò che gli oggetti indicano davvero.
+pets.conversion.line={0}% di conversione: {1} in {2}
+pets.conversion.recorded=(il record dice {0}%)

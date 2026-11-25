@@ -1,0 +1,52 @@
+# BẢNG NHÂN VẬT (các ô của cửa sổ chính) và chú giải thuộc tính.
+
+character.name=Tên
+character.class=Lớp
+character.file=Tệp
+character.level=Cấp
+character.experience=Kinh Nghiệm
+character.physique=Thể Chất
+character.cunning=Khéo Léo
+character.spirit=Tinh Thần
+character.health=Máu
+character.energy=Năng Lượng
+character.attributePoints=Điểm Tiềm Năng
+character.skillPoints=Điểm Kỹ Năng
+character.devotionPoints=Điểm Tín Ngưỡng
+character.totalDevotion=Tổng Tín Ngưỡng
+character.money=Tiền Sắt
+character.tributes=Điểm Cống Hiến
+character.difficulties=Độ khó
+character.difficulty.normal=Bình Thường, Kỳ Cựu
+character.difficulty.elite=Cao Cấp
+character.difficulty.ultimate=Tối Thượng
+
+# Sửa các con số mà trò chơi tự tính
+character.freeEdit=Sửa thuộc tính tự do
+character.freeEdit.warning=Trò chơi tự tính năm con số này từ số điểm đã dùng, vật phẩm đang mặc và kỹ năng — các công thức đã được hiểu rõ và khớp chính xác với trò chơi.\n\nNếu bạn ghi giá trị riêng vào đây, bản lưu sẽ không còn khớp với những gì trò chơi hiện trên màn hình: nó sẽ tính lại máu và năng lượng theo quy tắc riêng và giữ nguyên thuộc tính của bạn.\n\nVẫn cho phép sửa?
+character.keptInSave=Được lưu trong bản lưu tách riêng khỏi những gì trò chơi hiện trên màn hình.\nMáu và năng lượng cuối cùng do chính trò chơi tính — từ điểm đã dùng, thuộc tính, vật phẩm và kỹ năng — và không khớp với con số này.\nChính xác thứ gì được lưu ở đây chúng tôi chưa tìm ra, vì vậy không cho sửa.
+
+# Chú giải thuộc tính
+character.tip.now={0}: hiện tại {1}
+character.tip.own=trong bản lưu {0}, điểm đã dùng {1}
+character.tip.fromGear=từ vật phẩm và kỹ năng: {0}
+character.tip.gives=Mang lại (tính thêm trên mức gốc {0}):
+character.tip.percents=Và phần trăm — mức gốc {0} cũng được tính ở đây:
+character.tip.percentLine=+{0}% {1}
+character.perPoint.life=+{0} máu mỗi điểm
+character.perPoint.energy=+{0} năng lượng mỗi điểm
+character.perPoint.defense=+{0} khả năng phòng thủ mỗi điểm
+character.perPoint.offense=+{0} khả năng tấn công mỗi điểm
+character.perPoint.lifeRegen=+{0} hồi máu mỗi điểm
+character.perPoint.energyRegen=+{0} hồi năng lượng mỗi điểm
+character.divided.physical=sát thương vật lý và xuyên phá
+character.divided.bleed=sát thương nội thương và xuất huyết
+character.divided.magic=sát thương phép thuật
+character.divided.dots=các sát thương theo thời gian còn lại
+character.divided.energyRegen=hồi năng lượng
+character.needs.physique=Cần cho giáp, vũ khí cận chiến và khiên.
+character.needs.cunning=Cần cho vũ khí tầm xa và một phần vũ khí cận chiến.
+character.needs.spirit=Cần cho nhẫn, bùa hộ mệnh và vật phẩm của pháp sư.
+character.hardcore=Hardcore
+character.revive=Hồi sinh
+character.revive.tip=Xóa dấu tử vong. Hãy kiểm tra trong game xem nhân vật có tải lại được không.

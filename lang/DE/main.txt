@@ -1,0 +1,110 @@
+# HAUPTFENSTER: Titel, Menüschaltflächen, Inventar, Statuszeile, Meldungen.
+#
+# Format aller Sprachdateien: Schlüssel=Text. Eine Zeile mit # ist ein Kommentar.
+# \n ist ein Zeilenumbruch. {0}, {1} sind die Stellen, an denen das Programm eine Zahl oder einen Namen einsetzt;
+# sie müssen in der Übersetzung bleiben, ihre Reihenfolge darf sich ändern.
+# Namen von Gegenständen, Klassen und Fertigkeiten stehen nicht hier — sie kommen aus dem Spiel selbst.
+
+main.title=Grim Dawn — Charakteransicht
+main.title.character=Grim Dawn — {0}
+
+# Menüschaltflächen
+main.menu.open=Spielstand öffnen
+main.menu.skills=Fähigkeiten
+main.menu.damage=Schadensberechnung
+main.menu.settings=Einstellungen
+
+# Inventar und Stauraum
+main.edit.button=Gegenstand bearbeiten
+main.edit.armed=Gegenstand anklicken
+main.trash.idle=Gegenstand löschen — aufnehmen und hier klicken
+main.trash.armed=Gegenstand löschen
+main.stash.title=Charakter-Stauraum
+main.stash.none=Charakter-Stauraum: keine Reiter
+main.stash.count=Charakter-Stauraum: {0} Reiter, {1} Gegenstände
+main.bags.main=Haupttasche
+main.bags.extra=Tasche {0}
+
+# Die Zeile unter den Charakterfeldern
+main.summary=Taschen {0}, Gegenstände {1}\nStauraum: Reiter {2}, Gegenstände {3}
+main.summary.noInventory=NOCH KEIN INVENTAR: Der Charakter wurde im Menü erstellt und hat das Spiel nie betreten.\nBetritt das Spiel mindestens einmal mit ihm — dann erscheinen Taschen und Ausrüstung.\nStauraum: Reiter {0}, Gegenstände {1}
+
+# Speichern und Öffnen
+main.status.saved=Gespeichert {0}
+main.status.savedBackup=Gespeichert {0}   Sicherungskopie: {1}
+main.status.saveError=SPEICHERFEHLER: {0}
+main.saveError.title=Speichern fehlgeschlagen
+main.open.title=player.gdc auswählen
+main.open.filter=Grim-Dawn-Spielstand (player.gdc)|player.gdc|Alle Dateien|*.*
+main.loadError.title=Spielstand konnte nicht gelesen werden
+main.noInventory.text=Dieser Charakter hat noch kein Inventar.\n\nEr wurde im Spielmenü erstellt und hat die Welt nie betreten, daher enthält der Spielstand weder Taschen noch Ausrüstungsplätze noch Waffensätze — das Spiel legt sie beim ersten Betreten der Welt an.\n\nBetritt das Spiel mindestens einmal mit diesem Charakter, dann lässt sich die Ausrüstung bearbeiten. Alles andere — Stufe, Attribute, Fähigkeiten, Devotion — ist schon jetzt verfügbar.
+main.noInventory.title=Noch kein Inventar
+main.status.openFirst=Öffne zuerst einen Spielstand.
+
+# Der Spielordner
+main.status.noGame=Der Grim-Dawn-Ordner wurde nicht gefunden — öffne „Einstellungen…“ und gib ihn an.
+main.status.gameBase=Spieldatenbank: {0}   Sprache: {1}
+main.status.gameError=Die Spieldatenbank konnte nicht geöffnet werden: {0}
+main.askGame.text=Der Grim-Dawn-Ordner wurde nicht gefunden.\n\nDie Suche durchsucht Steam-Bibliotheken, GOG- und Installer-Einträge in der Registry und die üblichen Spieleordner auf allen Laufwerken. Liegt das Spiel woanders, gib seinen Ordner an — den, in dem database\\database.arz liegt.
+main.askGame.title=Wo ist Grim Dawn installiert?
+
+# Der Gegenstandskatalog
+main.catalog.title=Gegenstandskatalog
+main.catalog.stale=Die Spieldateien haben sich nach dem Erstellen des Katalogs geändert — offenbar ist ein Update erschienen.\nGegenstandskatalog neu erstellen?
+main.catalog.missing=Der Gegenstandskatalog ist noch nicht erstellt.\nAus den Spieldateien erstellen? Das dauert einige Sekunden.
+main.status.catalog=Katalog: {0} Gegenstände
+main.status.catalogBuilding=Gegenstandskatalog wird erstellt…
+main.status.catalogBuilt=Katalog erstellt: {0} Gegenstände
+main.status.catalogError=Katalog konnte nicht erstellt werden: {0}
+
+# Der Gegenstand in der Hand
+main.status.noIcon=Dieser Gegenstand hat in der Spieldatenbank kein Symbol, daher ist seine Größe in Feldern unbekannt — er kann nicht sicher hinzugefügt werden.
+main.status.bulkLimit=Stapel von {0} aufgenommen — das ist die Grenze für diese Art.
+main.status.bulkNoLimit=Stapel von {0} aufgenommen (das Spiel nennt für diese Art keine Grenze — wir haben hundert genommen, wie bei den anderen).
+main.status.newInHand=Neuer Gegenstand in der Hand: {0} ({1}x{2})  —  klicke auf einen freien Platz in einer Tasche oder im Stauraum, auf einen Ausrüstungsplatz oder auf einen Reiterkopf. Esc bricht ab.
+main.status.inHand=In der Hand: {0} ({1}x{2})  —  klicke auf einen freien Platz in einer Tasche oder im Stauraum, auf einen Reiterkopf, auf einen Ausrüstungsplatz oder auf die Leiste „Gegenstand löschen“. Esc bricht ab.
+main.status.takenOff=In die Hand abgelegt: {0}  —  lege ihn in eine Tasche, in den Stauraum, auf einen anderen passenden Platz oder lösche ihn. Esc bricht ab.
+main.status.sizeUnknown=Die Größe dieses Gegenstands ist unbekannt (kein Symbol in der Spieldatenbank) — er kann nicht bewegt werden, sonst könnte er aus dem Raster ragen.
+main.status.noRoom=Passt hier nicht — {0}x{1} freie Felder nötig. Rechtsklick oder Esc bricht ab.
+main.status.noStacking=«{0}» lässt sich nicht stapeln — hier wird ein freies Feld gebraucht.
+main.status.stackFull=Dieser Stapel ist schon voll: {0}. Lege ihn woanders ab.
+main.status.stackFullOf=Dieser Stapel ist schon voll: {0} von {1}. Lege ihn woanders ab.
+main.status.merged={0} zusammengelegt: Der Stapel hat jetzt {1}.
+main.status.mergedRest={0} zusammengelegt: Der Stapel hat jetzt {1}, {2} bleiben in der Hand — lege sie auf einen freien Platz oder lösche sie.
+main.status.addedBag=In eine Tasche gelegt: {0}
+main.status.addedStash=In den Stauraum gelegt: {0}
+main.status.unequippedBag=Abgelegt und in eine Tasche gelegt: {0}
+main.status.unequippedStash=Abgelegt und in den Stauraum gelegt: {0}
+main.status.movedBag=In eine Tasche verschoben: {0}
+main.status.movedStash=In den Stauraum verschoben: {0}
+main.status.equipped=Angelegt: {0} → {1}
+main.status.reequipped=Umgesetzt: {0} → {1}
+main.status.discarded=Der neue Gegenstand wurde verworfen: {0} (er war nie im Spielstand).
+main.status.deleted=Gelöscht: {0}   (die Originaldatei liegt als .bak daneben)
+main.status.noRoomBag=In dieser Tasche ist kein Platz für {0}x{1}.
+main.status.noRoomStash=In diesem Stauraum-Reiter ist kein Platz für {0}x{1}.
+main.status.cancelled=Abgebrochen: {0} ist an seinem Platz geblieben.
+
+# Warum es sich nicht anlegen lässt
+main.why.noInventory=Dieser Charakter hat noch kein Inventar: Er wurde im Menü erstellt und hat das Spiel nie betreten. Betritt das Spiel mindestens einmal mit ihm — das Spiel legt Taschen, Ausrüstungsplätze und Waffensätze selbst an, dann lassen sie sich bearbeiten.
+main.why.sameSlot=Der Gegenstand liegt bereits auf diesem Platz.
+main.why.wrongSlot=«{0}» passt nicht auf den Platz «{1}».
+main.why.slotBusy=Der Platz «{0}» ist belegt — lege zuerst ab, was dort angelegt ist.
+main.why.level=«{0}» erfordert Stufe {1}, der Charakter hat {2}.
+main.why.twoHanded=Eine Zweihandwaffe belegt beide Hände — mache zuerst die Nebenhand frei.
+main.why.offHandBusy=In der Haupthand liegt eine Zweihandwaffe — sie belegt auch die Nebenhand.
+
+# Gegenstand bearbeiten
+main.status.editArmed=Klicke auf einen Gegenstand — das Fenster zum Bearbeiten der Werte öffnet sich. Erneut auf die Schaltfläche klicken bricht ab.
+main.status.editCancelled=Bearbeiten abgebrochen — der Klick hat den Gegenstand verfehlt.
+main.status.editNoSeed=An diesem Gegenstand gibt es nichts zu suchen: Er stammt nicht aus dem Spielstand.
+main.status.editUnchanged=Der Gegenstand wurde nicht geändert.
+main.status.editDone=Der Gegenstand wurde geändert und gespeichert.
+
+# Was zum Anlegen fehlt (Statuszeile).
+main.need.level=Stufe {0} (vorhanden {1})
+
+# Eine Komponente oder ein Zusatz kommt in einen Gegenstand (2. Oktober). Was wohin passt, sagen die Aufzeichnungen des Spiels.
+main.status.partAttached=Eingesetzt: {0} → {1}
+main.status.partReplaced=Eingesetzt: {0} → {1}, anstelle von „{2}“
+main.status.partWrongItem=„{0}“ passt nicht in „{1}“.

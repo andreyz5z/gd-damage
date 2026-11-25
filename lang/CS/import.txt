@@ -1,0 +1,57 @@
+# Načtení postavy z GrimTools (rozbor — MECHANICS 106)
+import.button=Načíst postavu z GrimTools
+import.warning=Pokusíme se obléci vaši postavu podle dat z GrimTools. Vaše stávající nasazené vybavení bude zničeno a všechny vlastnosti postavy přepsány podle importu. Pokud některý prvek z vašeho odkazu nebude rozpoznán, toto místo zůstane beze změny. Opravdu chcete pokračovat?
+import.title=Načtení postavy z GrimTools
+import.paste=Vložte odkaz na build — například https://www.grimtools.com/calc/2ELApkPN
+import.go=Načíst
+import.close=Zavřít
+import.seedNote=Předměty budou přesně tytéž, ale čísla uvnitř jejich rozpětí budou naše: v buildu žádné hody nejsou. Každý předmět lze potom doladit v okně úprav.
+import.badLink=Tohle nevypadá jako odkaz na build z GrimTools.
+import.err.build=Stránka se otevřela, ale build na ní není. Zkontrolujte odkaz — musí vést na stránku buildu.
+import.err.other=Nepovedlo se: {0}
+import.step.page=Čte se stránka buildu…
+import.step.database=Stahuje se databáze GrimTools…
+import.step.match=Porovnává se se záznamy hry…
+import.result.gear=Nasazených předmětů: {0}; vyprázdněných míst: {1}
+import.result.skills=Dovedností: {0}, hvězd oddanosti: {1}, navázání nebeských mocí: {2}
+import.result.bio=Úroveň {0}; tělesnost {1}, mazanost {2}, duch {3}
+import.missed.items=Nerozpoznaných předmětů: {0} — tato místa zůstala, jak byla ({1})
+
+# Průběh práce a její konec. 2. října: uživatel neviděl ani jedno.
+import.step.reading=Rozebírá se databáze GrimTools…
+import.step.haveDatabase=Databáze GrimTools je už rozebraná — stahovat není co.
+import.step.dress=Obléká se postava…
+import.status.database=Stahuje se databáze GrimTools, soubor {0} z {1}: {2} z {3} MB
+import.status.databaseSoFar=Stahuje se databáze GrimTools, soubor {0} z {1}: {2} MB
+import.status.done=Hotovo. Postava je oblečená — zavřete okno a uvidíte ji.
+import.status.donePartly=Hotovo, ale nepřeneslo se všechno — podrobnosti výše.
+import.status.failed=Nepovedlo se.
+# Chyby: každá svým jménem, ne jedno „nepovedlo se“ na všechno.
+import.err.network=Není spojení se stránkami GrimTools. Zkontrolujte internet a zkuste to znovu.
+import.err.page=Stránka buildu se neotevřela — server odpověděl {0}. Zkontrolujte odkaz; server může být právě nedostupný.
+import.err.timeout=Stránky GrimTools neodpověděly. Zkontrolujte připojení k internetu — web může být právě nedostupný.
+import.err.database=Databázi GrimTools se nepodařilo přečíst — není co přenášet. Zkuste to ještě jednou.
+import.err.catalog=Katalog předmětů hry se nepodařilo sestavit. Zkontrolujte, zda je složka hry zadaná správně.
+# Co se nepřeneslo — číslem: jejich čísla by nikomu nic neřekla.
+import.missed.parts=Nerozpoznaných částí předmětů: {0} — předměty jsou nasazené, ale bez nich.
+import.missed.skills=Nerozpoznaných dovedností: {0}
+import.missed.powers=Nerozpoznaných nebeských mocí: {0}
+import.missed.shapes=Nerozpoznaných navázání u dovedností proměny: {0}
+import.missed.repeats=Záznamů přišlo dvakrát: {0} — opakování se vynechala.
+# Názvy míst. Build jim říká weapon1Alt a amulet — takové názvy se člověku nepředkládají.
+import.slot.head=Hlava
+import.slot.amulet=Šíje
+import.slot.chest=Hruď
+import.slot.legs=Nohy
+import.slot.feet=Chodidla
+import.slot.hands=Ruce
+import.slot.ring1=Prsten 1
+import.slot.ring2=Prsten 2
+import.slot.waist=Pas
+import.slot.shoulders=Ramena
+import.slot.medal=Medaile
+import.slot.relic=Relikvie
+import.slot.weapon1=Zbraň
+import.slot.weapon2=Štít nebo druhá ruka
+import.slot.weapon1Alt=Zbraň (druhá sada)
+import.slot.weapon2Alt=Štít nebo druhá ruka (druhá sada)

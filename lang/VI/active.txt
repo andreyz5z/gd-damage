@@ -1,0 +1,19 @@
+# CỬA SỔ «KỸ NĂNG ĐANG BẬT».
+
+active.title=Kỹ năng đang bật — {0}
+active.none=Nhân vật này không có kỹ năng bật/tắt và không có kỹ năng từ vật phẩm.
+active.source.devotionOn=tín ngưỡng gắn với «{0}»
+
+# Điều kiện kích hoạt, ngắn gọn («điều kiện «khi đỡ đòn» không được gieo»).
+active.trigger.attack=khi tấn công
+active.trigger.attackCrit=khi tấn công chí mạng
+active.trigger.lowHealth=khi ít máu
+active.trigger.lowMana=khi ít năng lượng
+active.trigger.hitByEnemy=khi ta bị đánh trúng
+active.trigger.hitByMelee=khi bị đánh cận chiến
+active.trigger.hitByProjectile=khi trúng đạn
+active.trigger.hitByCrit=khi bị chí mạng
+active.trigger.block=khi đỡ đòn
+active.trigger.onKill=khi hạ gục
+active.trigger.castBuff=khi dùng hiệu ứng tăng cường
+active.trigger.onEquip=khi trang bị

@@ -1,0 +1,52 @@
+# PANEL POSTACI (pola okna głównego) i podpowiedzi atrybutów.
+
+character.name=Imię
+character.class=Klasa
+character.file=Plik
+character.level=Poziom
+character.experience=Doświadczenie
+character.physique=Budowa ciała
+character.cunning=Przebiegłość
+character.spirit=Duchowość
+character.health=Zdrowie
+character.energy=Energia
+character.attributePoints=Punkty atrybutów
+character.skillPoints=Punkty umiejętności
+character.devotionPoints=Punkty poświęcenia
+character.totalDevotion=Poświęcenie łącznie
+character.money=Żelazne Monety
+character.tributes=Trybuty
+character.difficulties=Trudność
+character.difficulty.normal=Prosty, Weteran
+character.difficulty.elite=Elita
+character.difficulty.ultimate=Ultimate
+
+# Edycja liczb, które gra oblicza sama
+character.freeEdit=Swobodna edycja atrybutów
+character.freeEdit.warning=Gra sama oblicza te pięć liczb z wydanych punktów, noszonych przedmiotów i umiejętności — wzory są znane i zgadzają się z grą co do punktu.\n\nJeśli wpiszesz tu własne wartości, zapis przestanie się zgadzać z tym, co gra pokazuje na ekranie: przeliczy zdrowie i energię według własnych zasad, a twoje atrybuty zachowa.\n\nMimo to zezwolić na edycję?
+character.keptInSave=Przechowywane w zapisie osobno od tego, co gra pokazuje na ekranie.\nKońcowe zdrowie i energię oblicza sama gra — z wydanych punktów, atrybutów, przedmiotów i umiejętności — i nie zgadzają się one z tą liczbą.\nCo dokładnie jest tu przechowywane, jeszcze nie ustaliliśmy, dlatego edycja jest zamknięta.
+
+# Podpowiedź atrybutu
+character.tip.now={0}: teraz {1}
+character.tip.own=w zapisie {0}, wydane punkty: {1}
+character.tip.fromGear=z przedmiotów i umiejętności: {0}
+character.tip.gives=Daje (liczone ponad bazę {0}):
+character.tip.percents=I procenty — baza {0} liczy się tu także:
+character.tip.percentLine=+{0}% {1}
+character.perPoint.life=+{0} zdrowia na punkt
+character.perPoint.energy=+{0} energii na punkt
+character.perPoint.defense=+{0} zdolności defensywnych na punkt
+character.perPoint.offense=+{0} zdolności ofensywnych na punkt
+character.perPoint.lifeRegen=+{0} regeneracji zdrowia na punkt
+character.perPoint.energyRegen=+{0} regeneracji energii na punkt
+character.divided.physical=obrażenia fizyczne i przebijające
+character.divided.bleed=obrażenia od wewnętrznej traumy i krwawienia
+character.divided.magic=obrażenia magiczne
+character.divided.dots=pozostałe obrażenia w czasie
+character.divided.energyRegen=regeneracja energii
+character.needs.physique=Wymagana do pancerzy, broni białej i tarcz.
+character.needs.cunning=Wymagana do broni dystansowej i części broni białej.
+character.needs.spirit=Wymagana do pierścieni, amuletów i przedmiotów magicznych.
+character.hardcore=Hardcore
+character.revive=Wskrześ
+character.revive.tip=Usuwa znacznik śmierci. Sprawdź w grze, czy postać znowu się wczytuje.

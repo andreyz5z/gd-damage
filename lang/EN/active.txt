@@ -1,0 +1,19 @@
+# THE "ACTIVE SKILLS" WINDOW.
+
+active.title=Active skills — {0}
+active.none=This character has no toggled skills and no skills granted by items.
+active.source.devotionOn=devotion attached to «{0}»
+
+# Skill trigger conditions, in short ("the «on block» condition is not rolled").
+active.trigger.attack=on attack
+active.trigger.attackCrit=on critical attack
+active.trigger.lowHealth=on low health
+active.trigger.lowMana=on low energy
+active.trigger.hitByEnemy=when we are hit
+active.trigger.hitByMelee=when hit in melee
+active.trigger.hitByProjectile=when hit by a projectile
+active.trigger.hitByCrit=when critically hit
+active.trigger.block=on block
+active.trigger.onKill=on kill
+active.trigger.castBuff=when a buff is cast
+active.trigger.onEquip=when equipped

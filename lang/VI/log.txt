@@ -1,0 +1,185 @@
+# NHẬT KÝ MÔ PHỎNG CHIẾN ĐẤU (thẻ «Mô phỏng chiến đấu»): các dòng, lý do và ghi chú sau lần chạy.
+#
+# Số thập phân đến đã được viết sẵn (dùng dấu chấm), trong {n} không tính lại gì. Dấu so sánh
+# «<», «≥», «→», dấu ngoặc và dấu phẩy giữa các phần của dòng do chương trình đặt.
+
+# Kỹ năng tự nó không đánh thì làm gì. Từ này hiện trong nhật ký («tăng cường, không sát thương»),
+# trong danh sách «bấm gì» và trong ghi chú của lần chạy.
+log.effect.damage=sát thương
+log.effect.summon=triệu hồi
+log.effect.buff=tăng cường
+log.effect.debuff=suy yếu
+log.effect.none=bản ghi không có sát thương
+
+# Một dòng nhật ký: «12.34 giây  vung: cả hai tay   812 và 790   (sát thương chưa cộng thưởng 1020 và 990)   [lý do]».
+log.line.at={0} giây
+log.line.and=và
+log.line.before=(sát thương chưa cộng thưởng {0})
+log.seconds={0} giây
+log.from=từ «{0}»
+log.target.dummy=bù nhìn
+log.target.generic=mục tiêu
+
+# Tay. «vung: cả hai tay», «chí mạng tay chính, bậc 2», «chính 43.1 < 97.0».
+log.hand.both=cả hai tay
+log.hand.main=tay chính
+log.hand.off=tay phụ
+log.roll.main=chính
+log.roll.off=phụ
+log.partial.mainMissed=(tay chính trượt)
+log.partial.offMissed=(tay phụ trượt)
+
+log.swing=vung: {0}
+log.swing.hands=tay {0} → {1}
+log.swing.crit=chí mạng {0}, bậc {1} ×{2}
+log.miss=trượt
+log.fire.crit=chí mạng {0} ×{1}
+
+# Cái gì đánh: «kỹ năng: …», «kích hoạt: Thiên Thạch», «thay đòn đánh: …».
+log.fire.skill=kỹ năng
+log.fire.channel=vận chiêu
+log.fire.spell=phép
+log.fire.pool=thay đòn đánh
+log.fire.proc=kích hoạt
+log.fire.devotion=tín ngưỡng
+log.fire.finale=kết thúc: đòn {0}
+log.fire.attack=đòn đánh
+log.fire.charges=({0} tích tụ)
+
+# Nhịp sát thương theo thời gian: «nhịp Thiêu Đốt (tay chính, từ Tấn Công Mặc Định)».
+log.tick=nhịp {0}
+log.tick.from=từ {0}
+log.tick.left=còn {0} giây
+log.tick.partial=nhịp chưa đủ {0}%
+log.tick.autoattack=Tấn Công Mặc Định
+log.dot.FireDot=Thiêu Đốt
+log.dot.ColdDot=Bỏng Băng
+log.dot.LightningDot=Điện Giật
+log.dot.PoisonDot=Độc
+log.dot.LifeDot=Rút Sinh Khí
+log.dot.BleedingDot=Xuất Huyết
+log.dot.PhysicalDot=Nội Thương
+
+# Máu của mục tiêu.
+log.life.killed=mục tiêu bị hạ gục
+log.life.killedWhy=TTK {0} giây: đã gây {1} so với {2} máu; từ đây vẫn tính sát thương như thể nó còn sống, nhưng không còn máu để giảm
+log.life.cut=giảm máu {0}%  từ «{1}»
+log.life.cutWhy=máu mục tiêu {0} → {1}
+log.life.cutResist=hiệu ứng {0}%, kháng của mục tiêu {1}%
+log.life.gear=trang bị
+
+# Hào quang, tăng cường theo hồi chiêu, đặt lại hồi chiêu.
+log.aura=hào quang: {0}
+log.buff=tăng cường: {0}
+log.buff.holds=kéo dài {0} giây
+log.buff.cooldown=hồi chiêu {0} giây
+log.buff.shield=khiên hấp thụ {0} — giữ tới khi bị phá
+log.buff.noDuration=bản ghi không có thời lượng
+log.buff.notInQueue=chỉ số sát thương của nó KHÔNG có tác dụng trong hàng đợi
+log.buff.noEffect=không ảnh hưởng tới sát thương của ta
+log.reset=đặt lại hồi chiêu: «{0}»
+log.reset.why=«{0}», {1}% {2} — trong {3} giây, sẵn sàng lúc {4} thay vì {5}
+log.reset.onCrit=khi tấn công chí mạng
+log.reset.onAttack=khi tấn công
+
+# Đã kích hoạt hoặc đã bấm, nhưng không đánh.
+log.silent.fired=đã kích hoạt
+log.silent.pressed=đã bấm:
+log.silent.buff=tăng cường, kéo dài {0} giây
+log.silent.resists=giảm kháng
+log.silent.defense=−{0} khả năng phòng thủ
+log.silent.offense=−{0} khả năng tấn công
+log.silent.absolute=−{0} kháng theo số
+log.silent.relative=−{0}% kháng hiện có
+log.silent.debuff=suy yếu mục tiêu trong {0} giây
+log.silent.debuffNothing=hoàn toàn không ảnh hưởng tới sát thương của ta
+log.silent.summon=triệu hồi — thuộc hạ vào nhóm, đòn của nó ở bên dưới theo dòng riêng
+log.silent.noDamage={0}, không sát thương
+
+# Thuộc hạ trong nhật ký.
+log.pet.how.self=tự động
+log.pet.how.pressed=đã bấm
+log.pet.summonBlocked=triệu hồi ({0}): {1}
+log.pet.limit=đã đủ giới hạn của loại — {0} × «{1}», không thêm nữa
+log.pet.summoned=đã triệu hồi ({0}): «{1}» số {2}
+log.pet.standing=đang có {0} trên {1}
+log.pet.lives=sống {0} giây
+log.pet.permanent=vĩnh viễn
+log.pet.aps=đòn mỗi giây {0}
+log.pet.gone=đã rời đi: «{0}» số {1}
+log.pet.goneWhy=hết thời gian sống {0} giây, số đòn {1}
+log.pet.goneTrap=bị kẻ địch kích hoạt, số đòn {0}
+log.pet.onceAt=nổ sau {0} giây
+log.pet.aura=hào quang thuộc hạ: «{0}» {1}
+log.pet.auraTarget=hào quang thuộc hạ: «{0}»
+log.pet.auraAllies=tăng cường cho ta và các thuộc hạ khác khi nó ở gần
+log.pet.auraOnTarget=bám trên mục tiêu khi nó ở gần
+log.pet.miss=thuộc hạ đánh trượt: «{0} số {1}» {2}
+log.pet.hitChance=tỷ lệ trúng {0}%
+log.pet.hit=thuộc hạ: «{0} số {1}» {2}
+log.pet.auto=(đòn mặc định)
+log.pet.auraMark=(hào quang)
+log.pet.perSecond=mỗi giây một lần
+log.pet.speed=tốc độ {0} đòn/giây
+log.pet.every=mỗi {0} giây
+log.pet.crit=chí mạng bậc {0} ×{1}
+log.pet.dotApplied=đã áp dụng sát thương theo thời gian
+# Nguồn sát thương theo thời gian của thuộc hạ trong dòng nhịp: «nhịp Thiêu Đốt (từ «<thuộc hạ> số 1: <kỹ năng>»)».
+log.pet.source={0} số {1}: {2}
+# Kỹ năng thuộc hạ không có tên trong trò chơi — gọi theo phần cuối đường dẫn bản ghi.
+log.pet.noName=không tên: {0}
+
+# Kết quả lần chạy: chỉ số chống chủng tộc.
+log.racial.noRace=chỉ số chống chủng tộc ({0} cái) không có tác dụng với mục tiêu này: nó hoàn toàn KHÔNG có chủng tộc (như bù nhìn)
+log.racial.none=mục tiêu là {0}, và ta không có chỉ số chống nó (có chống chủng tộc khác: {1})
+log.racial.has=mục tiêu là {0}, chỉ số chống nó của ta là {1}% sát thương (hệ số ×{2})
+log.racial.flat=chỉ số cộng thẳng chống chủng tộc «{0}» ({1} sát thương) ĐÃ THU THẬP NHƯNG CHƯA ÁP DỤNG: không biết nó đến dưới loại sát thương nào (chú giải không nêu loại), cũng không biết nó đứng ở vị trí nào trong thứ tự. Loại phần trăm chúng tôi đặt theo công thức của bài viết; loại cộng thẳng không có công thức trong bài viết lẫn trong tệp — cần đo đạc
+
+# Kết quả lần chạy: gợi ý (chọn chưa đúng).
+log.hint.mainNotSpell=«{0}» được chọn làm chính, nhưng nó không phải vận chiêu cũng không phải phép không hồi chiêu (hoặc không tìm thấy hoạt ảnh) — ta đánh bằng vũ khí, như khi không chọn
+log.hint.buffPressed=«{0}» là tăng cường: chỉ số của nó áp dụng cho các đòn khi còn hiệu lực, nhưng nó không đánh thành đòn. Hãy đánh dấu nó ở mục tăng cường
+log.hint.channelWithAttack=vận chiêu «{0}» được bấm CÙNG LÚC với Tấn Công Mặc Định — trong trò chơi không có chuyện đó: khi đang giữ tia, vũ khí không đánh. Nó được bấm theo «hồi chiêu» của bản ghi, không theo tốc độ thi triển. Hãy chọn nó làm chính
+log.hint.starHits=sao «{0}» gây sát thương — ta không bật nó như tăng cường; hãy đánh dấu nó trong danh sách bấm, nó sẽ đánh theo hồi chiêu
+log.hint.starReplacing=sao «{0}» gắn với «{1}» — đó là ĐÒN THAY THẾ: được gán vào một nút và đánh thay cho đòn thường. Chúng tôi tính được loại này, nhưng trong lần chạy NÀY ta không đánh bằng nó — bản lưu không giữ việc gán nút. Hãy chọn nó trong danh sách «tấn công bằng», khi đó sao sẽ hoạt động
+log.hint.starIdle=sao «{0}» gắn với kỹ năng «{1}», và kỹ năng này KHÔNG ĐÁNH trong lần chạy này (không đánh dấu để bấm, không ở nhóm đòn vũ khí) — không có lần kích hoạt nào, và đó không phải xui xẻo
+
+# Kết quả lần chạy: những gì chưa đọc được.
+log.unread.starBuffNoDuration=sao «{0}» gây TĂNG CƯỜNG, nhưng bản ghi không có thời lượng — ta không có gì để giữ nó, nên hàng đợi chỉ hiện việc nó đã kích hoạt
+log.unread.starNoDamage=chưa đọc được sát thương của sao «{0}»: lần kích hoạt có trong hàng đợi, sát thương thì không
+log.unread.buffNoDuration=tăng cường «{0}» thay đổi sát thương, nhưng bản ghi không có thời lượng — hàng đợi chỉ hiện lần kích hoạt, chỉ số không có tác dụng
+log.unread.summonNoPet=triệu hồi «{0}» đã kích hoạt, nhưng không có thuộc hạ như vậy trong nhóm — sát thương của nó không được tính
+log.unread.petMoveNoRate=thuộc hạ «{0}» có kỹ năng «{1}» gây sát thương, nhưng bản ghi không nói nó dùng thường xuyên thế nào — trong hàng đợi nó không được dùng
+log.unread.petNoSpeed=không đọc được tốc độ đánh của thuộc hạ «{0}» (không có bảng hoạt ảnh) — đòn mặc định của nó không vào hàng đợi
+log.unread.petNoMoves=không đọc được kỹ năng gây sát thương nào của thuộc hạ «{0}» — trong hàng đợi nó được triệu hồi nhưng không đánh
+
+# Kết quả lần chạy: kỹ năng từ vật phẩm và bộ — mỗi cái ra sao.
+log.gear.mainSpell=kỹ năng chính thay cho Tấn Công Mặc Định, số đòn {0}
+log.gear.pool=trong nhóm đòn vũ khí
+log.gear.onlyCrit=chỉ gieo khi chí mạng;
+log.gear.fired=đã kích hoạt {0} lần
+log.gear.firedSummon=— triệu hồi, thuộc hạ vào nhóm và đánh
+log.gear.firedDebuff=— suy yếu mục tiêu
+log.gear.firedBuff=— tăng cường lên ta
+log.gear.conditionNotModelled=điều kiện không được mô phỏng —
+log.gear.pressed=đã đánh dấu để bấm, bấm theo hồi chiêu: đã bấm {0} lần
+log.gear.notPressed=bấm được — chưa đánh dấu để bấm
+log.gear.conditionHits=điều kiện không được mô phỏng, có sát thương — hãy đánh dấu, nó sẽ chạy theo hồi chiêu
+log.gear.noHit=không đánh ({0})
+log.gear.conditionNoHit=điều kiện không được mô phỏng, không sát thương ({0}) — không tham gia hàng đợi
+
+# Kết quả lần chạy: sao và thuộc hạ theo tên.
+log.star.head=«{0}» cấp {1} từ «{2}»
+log.star.onlyCrit=(chỉ khi chí mạng)
+log.star.chance=tỷ lệ {0}%
+log.star.cooldown=hồi chiêu {0} giây
+log.star.fired=kích hoạt {0} lần trên {1} lần gieo
+log.star.blocked=bị hồi chiêu chặn {0} lần
+log.petLine.auras=hào quang thuộc hạ cho các thuộc hạ khác khi chúng còn sống — {0}: {1}
+log.petLine.head=«{0}» ({1}) — triệu hồi {2} lần
+log.petLine.limit=tối đa {0} cùng lúc
+log.petLine.hits=đòn {0}
+log.petLine.misses=trượt {0}
+log.petLine.crits=chí mạng {0}
+log.petLine.damage=sát thương {0}
+log.petLine.expired=hết thời gian rời đi {0}
+log.petLine.blocked=triệu hồi vượt giới hạn {0}

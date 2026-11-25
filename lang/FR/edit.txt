@@ -1,0 +1,67 @@
+# FENÊTRE « MODIFIER L'OBJET » et ses sous-fenêtres : bonus d'ascension, bonus d'achèvement de relique.
+# Les lignes de statistiques de l'objet viennent de l'infobulle (une partie de la formulation est celle du jeu).
+
+edit.title=Modifier l'objet
+edit.stop=Arrêter la recherche
+edit.relicBonus=Bonus d'achèvement (relique)…
+edit.affixes=Préfixe et suffixe…
+edit.ascension=Bonus d'ascension…
+edit.reroll=Retirer l'objet au hasard
+edit.findMax=Chercher le tirage maximal
+edit.findValues=Chercher par valeurs
+edit.close=Fermer
+edit.notSaved=(trouvé, non écrit)
+edit.secondEnd=└ l'autre extrémité de la même ligne
+edit.hiddenRolls=Tiré, mais non affiché dans l'infobulle
+edit.perSecond=({0} par 1 s — c'est ce que contient le champ)
+edit.range=sur {0}…{1}
+
+# Panneau de droite : déroulement et fin de la recherche
+edit.rerolled=L'objet a été retiré au hasard.\nRien n'a été recherché — un objet aléatoire est valide en soi.\nPour l'écrire dans la sauvegarde, appuyez sur « Appliquer ».
+edit.badNumber=Impossible de lire le nombre de la ligne « {0} » : {1}
+edit.busy=Recherche…
+edit.busyProgress=Recherche… {0} millions sur 2147 vérifiés
+edit.searching=Recherche de l'objet en essayant des valeurs.\nLa durée dépend de la rapidité de l'ordinateur.
+edit.found=Tous les nombres choisis ont été trouvés. Appuyez sur « Appliquer » pour écrire l'objet dans la sauvegarde.
+edit.impossible=Cette statistique n'a jamais une telle valeur :
+edit.impossibleHint=Saisissez l'une des valeurs affichées à droite de la ligne.
+edit.cancelled=La recherche a été arrêtée.
+edit.notFound=Ces statistiques ne peuvent pas être trouvées ensemble. Décochez les statistiques qui comptent le moins pour vous et réessayez.
+edit.hardest=Le champ le plus difficile était : {0}. Toutes les possibilités ont été essayées ; un tel objet ne peut pas exister dans le jeu.
+edit.same=L'objet est déjà ainsi. Rien à changer.
+edit.saved=Écrit dans la sauvegarde.\nL'objet lui-même, ses affixes, son composant et son ascension n'ont pas été touchés — il est resté un objet que le jeu aurait pu faire tomber.
+edit.relicCleared=Le bonus d'achèvement a été retiré.
+edit.relicSet=Bonus d'achèvement : {0}
+edit.ascensionCleared=Le bonus d'ascension a été retiré.
+edit.ascensionSet=Bonus d'ascension : {0}
+edit.report.scanned={0} vérifiés en {1} s
+edit.report.found=TROUVÉ :   ({0})
+edit.report.impossible={0} : ce champ ne donne jamais la valeur {1}
+
+# Fenêtre du bonus d'ascension
+edit.affixSet=Préfixe : {0}\nSuffixe : {1}
+edit.affix.title=Préfixe et suffixe
+edit.affix.head=Actuellement : préfixe — {0} ;   suffixe — {1}\nSeuls ceux que le jeu donne aux objets de ce type sont affichés ; un point marque les rares (verts).\nLes nombres de la liste sont ceux TIRÉS pour cet objet : un affixe est tiré au sort, et ce que vous voyez ici est ce que vous obtenez.
+edit.affix.prefix=Préfixe
+edit.affix.suffix=Suffixe
+edit.affix.none=aucun
+edit.affix.gone=(le jeu ne le distribue plus — il n'est pas dans la liste)
+edit.affix.clear=Retirer cette partie
+edit.affix.level=Exige le niveau {0}
+edit.affix.building=Lecture des tables d'objets du jeu — une fois après une mise à jour.
+
+edit.asc.title=Bonus d'ascension
+edit.asc.head=Seuls les bonus auxquels un objet de ce type a droit sont affichés — une arme à une main n'a pas droit à ceux des armes à deux mains, et inversement.
+# edit.asc.unknownClass=inconnue
+# edit.asc.noPool=non déterminée
+edit.asc.allPools=toutes les réserves, pas seulement les siennes
+
+# Fenêtre du bonus d'achèvement de relique
+edit.relic.title=Bonus d'achèvement de relique
+edit.relic.head=Relique : {0}   —   niveau de fabrication : {1}\nLes nombres de la liste sont ceux TIRÉS pour cet objet : le bonus d'achèvement est tiré au sort, et ce que vous voyez ici est ce que vous obtenez.
+edit.relic.unknown=inconnu
+edit.relic.noKind=non indiqué
+# edit.relic.noTable=cette relique n'en a AUCUNE — elle n'obtient jamais de bonus d'achèvement
+edit.relic.allTables=toutes les tables, pas seulement la sienne
+edit.relic.noTableList=Cette relique n'a pas de table de bonus — elle n'obtient jamais de bonus d'achèvement.
+edit.relic.jitter=(dispersion {0} %)
