@@ -1,20 +1,34 @@
-The character save editor and DPS calculator for Grim Dawn.
+# GD Damage
 
-You can:
-Open a save and view item stats, change them to the desired value (up to the maximum roll, if possible)
-Add any item from the game to the inventory
-Change character stats
-Change the character’s current skills/devotion bonuses
-View damage from auto-attacks or skills as in the game, or with the inclusion of damage queue simulation conditions (damage taking into account skill triggers) - THE MAIN PURPOSE OF THE EDITOR
-You can open closed portals
-Change an item’s ascension bonus /relic bonus/affixes
-You can reset/choose the character’s class
-Change reputation value
-Import full character from GrimTools
-Resurrect hardcore character
-(and maybe something more)
+A character save editor and DPS calculator for **Grim Dawn**. Its main feature is damage simulation for auto-attacks and skills, including triggered effects.
 
-The editor has been tested with the game with all DLCs; it has not been tested how it will work without them.
+**[Download the latest release](https://github.com/andreyz5z/gd-damage/releases/latest)**
 
-You can download the latest version on the releases page:
-https://github.com/andreyz5z/gd-damage/releases
+## Damage calculator
+
+- View damage for auto-attacks and individual skills as shown in the game.
+- Simulate a sequence of attacks and skills to estimate DPS with skill triggers taken into account.
+
+## Save editor
+
+### Items
+
+- View item stats and adjust their values up to the maximum roll where supported.
+- Add items from the game to your inventory.
+- Change item affixes, ascension bonuses, and relic bonuses.
+
+### Characters
+
+- Edit character stats, skills, and devotion bonuses.
+- Reset or choose character classes.
+- Change faction reputation and unlock portals.
+- Import a full character from GrimTools.
+- Resurrect a hardcore character.
+
+## Getting started
+
+1. Download the Windows x64 ZIP from the [latest release](https://github.com/andreyz5z/gd-damage/releases/latest).
+2. Extract the entire archive.
+3. Run `gdc-gui.exe`.
+
+The editor uses data from your Grim Dawn installation. It has been tested with all DLCs installed. Compatibility with setups missing one or more DLCs is untested.
