@@ -23,6 +23,8 @@ character.difficulty.ultimate=Ultimate
 
 # Edycja liczb, które gra oblicza sama
 character.freeEdit=Swobodna edycja atrybutów
+character.resetAttributes=Przywróć bazowe atrybuty
+character.resetAttributes.warning=Budowa ciała, Przebiegłość i Duchowość wrócą do wartości bazowych. Wszystkie wydane punkty atrybutów będzie można rozdzielić ponownie. Kontynuować?
 character.freeEdit.warning=Gra sama oblicza te pięć liczb z wydanych punktów, noszonych przedmiotów i umiejętności — wzory są znane i zgadzają się z grą co do punktu.\n\nJeśli wpiszesz tu własne wartości, zapis przestanie się zgadzać z tym, co gra pokazuje na ekranie: przeliczy zdrowie i energię według własnych zasad, a twoje atrybuty zachowa.\n\nMimo to zezwolić na edycję?
 character.keptInSave=Przechowywane w zapisie osobno od tego, co gra pokazuje na ekranie.\nKońcowe zdrowie i energię oblicza sama gra — z wydanych punktów, atrybutów, przedmiotów i umiejętności — i nie zgadzają się one z tą liczbą.\nCo dokładnie jest tu przechowywane, jeszcze nie ustaliliśmy, dlatego edycja jest zamknięta.
 

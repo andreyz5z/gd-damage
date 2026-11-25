@@ -23,6 +23,8 @@ character.difficulty.ultimate=终极
 
 # 编辑游戏自己计算的数字
 character.freeEdit=自由编辑属性
+character.resetAttributes=将属性重置为基础值
+character.resetAttributes.warning=体格、灵巧和精神将恢复为基础值。所有已分配的属性点都将返还，可重新分配。继续吗？
 character.freeEdit.warning=这五个数字由游戏根据已花费的点数、穿戴的物品和技能自行计算——公式已经弄清，与游戏完全一致。\n\n如果在这里写入自己的数值，存档将与游戏屏幕上显示的内容不一致：游戏会按自己的规则重新计算生命和能量，而保留你的属性。\n\n仍然允许编辑吗？
 character.keptInSave=与游戏屏幕上显示的内容分开保存在存档中。\n最终的生命和能量由游戏自己根据已花费的点数、属性、物品和技能计算，与这个数字不一致。\n这里具体保存的是什么我们还没弄清楚，所以编辑已关闭。
 

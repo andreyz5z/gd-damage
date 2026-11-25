@@ -23,6 +23,8 @@ character.difficulty.ultimate=Suprema
 
 # Modificare i numeri che il gioco calcola da sé
 character.freeEdit=Modifica libera degli attributi
+character.resetAttributes=Ripristina gli attributi base
+character.resetAttributes.warning=Fisico, Acume e Spirito torneranno ai valori di base. Tutti i punti attributo investiti potranno essere riassegnati. Continuare?
 character.freeEdit.warning=Il gioco calcola da sé questi cinque numeri a partire dai punti spesi, dagli oggetti indossati e dalle abilità: le formule sono note e coincidono esattamente con il gioco.\n\nSe scrivi qui valori tuoi, il salvataggio non corrisponderà più a ciò che il gioco mostra a schermo: ricalcolerà salute ed energia con le sue regole e manterrà i tuoi attributi.\n\nConsentire comunque la modifica?
 character.keptInSave=Conservato nel salvataggio separatamente da ciò che il gioco mostra a schermo.\nLa salute e l'energia finali le calcola il gioco stesso — dai punti spesi, dagli attributi, dagli oggetti e dalle abilità — e non coincidono con questo numero.\nCosa venga conservato esattamente qui non l'abbiamo ancora scoperto, per questo la modifica è chiusa.
 

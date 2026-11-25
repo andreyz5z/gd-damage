@@ -23,6 +23,8 @@ character.difficulty.ultimate=Supremo
 
 # Editar os números que o jogo calcula sozinho
 character.freeEdit=Editar atributos livremente
+character.resetAttributes=Redefinir atributos
+character.resetAttributes.warning=Físico, Astúcia e Espírito voltarão aos valores base. Todos os pontos de atributo investidos poderão ser redistribuídos. Continuar?
 character.freeEdit.warning=O jogo calcula sozinho estes cinco números a partir dos pontos gastos, dos itens equipados e das habilidades — as fórmulas são conhecidas e batem exatamente com o jogo.\n\nSe você escrever seus próprios valores aqui, o jogo salvo deixará de bater com o que o jogo mostra na tela: ele recalculará a saúde e a energia pelas próprias regras e manterá seus atributos.\n\nPermitir a edição mesmo assim?
 character.keptInSave=Guardado no jogo salvo separadamente do que o jogo mostra na tela.\nA saúde e a energia finais são calculadas pelo próprio jogo — a partir dos pontos gastos, dos atributos, dos itens e das habilidades — e não batem com este número.\nO que exatamente é guardado aqui ainda não descobrimos, por isso a edição está fechada.
 

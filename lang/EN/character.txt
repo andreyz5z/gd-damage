@@ -23,6 +23,8 @@ character.difficulty.ultimate=Ultimate
 
 # Editing the numbers the game works out by itself
 character.freeEdit=Edit attributes freely
+character.resetAttributes=Reset attributes to base
+character.resetAttributes.warning=Physique, Cunning, and Spirit will return to their base values. All invested attribute points will be returned to the unspent pool. Continue?
 character.freeEdit.warning=The game works these five numbers out by itself from spent points, worn items and skills — the equations are understood and match the game to the point.\n\nIf you write your own values here, the save will start to disagree with what the game shows on screen: it will recompute health and energy by its own rules and keep your attributes.\n\nAllow editing anyway?
 character.keptInSave=Kept in the save separately from what the game shows on screen.\nThe final health and energy are worked out by the game itself — from spent points, attributes, items and skills — and they do not match this number.\nWhat exactly is kept here we have not worked out yet, which is why editing is closed.
 

@@ -23,6 +23,8 @@ character.difficulty.ultimate=Ultime
 
 # Modifier les nombres que le jeu calcule lui-même
 character.freeEdit=Modifier librement les attributs
+character.resetAttributes=Réinitialiser les attributs
+character.resetAttributes.warning=Le Physique, la Malice et l’Esprit retrouveront leurs valeurs de base. Tous les points d’attributs investis pourront être réattribués. Continuer ?
 character.freeEdit.warning=Le jeu calcule lui-même ces cinq nombres à partir des points dépensés, des objets portés et des compétences — les formules sont comprises et correspondent exactement au jeu.\n\nSi vous écrivez vos propres valeurs ici, la sauvegarde ne correspondra plus à ce que le jeu affiche à l'écran : il recalculera la santé et l'énergie selon ses propres règles et gardera vos attributs.\n\nAutoriser quand même la modification ?
 character.keptInSave=Conservé dans la sauvegarde séparément de ce que le jeu affiche à l'écran.\nLa santé et l'énergie finales sont calculées par le jeu lui-même — à partir des points dépensés, des attributs, des objets et des compétences — et ne correspondent pas à ce nombre.\nCe qui est exactement conservé ici, nous ne l'avons pas encore établi, c'est pourquoi la modification est fermée.
 

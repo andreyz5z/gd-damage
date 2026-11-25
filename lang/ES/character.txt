@@ -23,6 +23,8 @@ character.difficulty.ultimate=Legendaria
 
 # Editar los números que el juego calcula por sí mismo
 character.freeEdit=Editar atributos libremente
+character.resetAttributes=Restablecer atributos
+character.resetAttributes.warning=Constitución, Astucia y Espíritu volverán a sus valores base. Podrás volver a repartir todos los puntos de atributo invertidos. ¿Continuar?
 character.freeEdit.warning=El juego calcula por sí mismo estos cinco números a partir de los puntos gastados, los objetos equipados y las habilidades; las fórmulas se conocen y coinciden exactamente con el juego.\n\nSi escribes aquí tus propios valores, la partida dejará de coincidir con lo que el juego muestra en pantalla: recalculará la vida y la energía según sus propias reglas y conservará tus atributos.\n\n¿Permitir la edición de todos modos?
 character.keptInSave=Se guarda en la partida aparte de lo que el juego muestra en pantalla.\nLa vida y la energía finales las calcula el propio juego —a partir de los puntos gastados, los atributos, los objetos y las habilidades— y no coinciden con este número.\nQué se guarda exactamente aquí aún no lo hemos averiguado, por eso la edición está cerrada.
 

@@ -86,6 +86,8 @@ namespace Gdc.Gui
             Margin = new Padding(3, 8, 3, 3),
         };
 
+        readonly Button resetAttributes = new Button { AutoSize = true };
+
         // Importing a character rewrites the whole save
         // from an outside build, so it asks first. The work is `GrimToolsImportForm`.
         // Its look is the top row's — `MainForm.MenuLook` — and only its look: the
@@ -105,10 +107,14 @@ namespace Gdc.Gui
         // Everything the character carries, so the tooltip can say what an
         // attribute actually is right now — the save keeps only the part that
         // points were spent on.
-        // The game arrives AFTER `Show`, so whatever needs it has to be asked again
-        // here — the import button is the one that does.
+        // The game arrives after `Show`, so update the actions that need it here too.
         public void SetBonuses(CharacterTotals t, GameData game)
-        { bonuses = t; this.game = game; importButton.Enabled = character != null && game != null; Explain(); }
+        {
+            bonuses = t;
+            this.game = game;
+            UpdateGameActions();
+            Explain();
+        }
 
         public event EventHandler Changed;
 
@@ -157,6 +163,11 @@ namespace Gdc.Gui
             AddField(left, "spirit", "character.spirit", 0, 100000);
             AddField(left, "health", "character.health", 0, 10000000);
             AddField(left, "energy", "character.energy", 0, 10000000);
+            MainForm.MenuLook(resetAttributes);
+            Lang.Bind(resetAttributes, "character.resetAttributes");
+            resetAttributes.Click += delegate { ResetAttributes(); };
+            left.Controls.Add(resetAttributes);
+            left.SetColumnSpan(resetAttributes, 2);
             AddSeparator(left);
             // Under the attributes rather than beside the difficulties: two lines
             // of text at the bottom of the right column pushed the panel past its
@@ -248,6 +259,21 @@ namespace Gdc.Gui
         // changed at once — gear, skills, attributes — so the window that owns this
         // panel has to build itself again rather than just mark the save dirty.
         public event EventHandler Imported;
+
+        void ResetAttributes()
+        {
+            if (character == null || game == null) return;
+            if (MessageBox.Show(this, Lang.T("character.resetAttributes.warning"), Lang.T("character.resetAttributes"),
+                                MessageBoxButtons.OKCancel, MessageBoxIcon.Warning,
+                                MessageBoxDefaultButton.Button2) != DialogResult.OK) return;
+
+            CommitTyped();
+            if (PlayerAttributes.ResetInvested(game, character) == 0) return;
+            loading = true;
+            try { ShowAttributes(character); }
+            finally { loading = false; }
+            Raise();
+        }
 
         // IMPORTING A CHARACTER FROM GRIMTOOLS. It asks outright, because there is
         // nothing to undo it with: what is worn is destroyed and every number of the
@@ -528,10 +554,13 @@ namespace Gdc.Gui
             elite.Enabled = on;
             ultimate.Enabled = on;
             freeEdit.Enabled = on;
-            // Importing needs a character to import INTO, and the game's own files to
-            // match the build against.
-            importButton.Enabled = on && game != null;
+            UpdateGameActions();
             ApplyLock();
+        }
+
+        void UpdateGameActions()
+        {
+            importButton.Enabled = resetAttributes.Enabled = character != null && game != null;
         }
 
         // What an attribute is and what it buys, in the game's own terms. Every
@@ -669,12 +698,7 @@ namespace Gdc.Gui
 
                 Set("level", c.Level);
                 Set("experience", c.Experience);
-                Set("physique", (decimal)c.Physique);
-                Set("cunning", (decimal)c.Cunning);
-                Set("spirit", (decimal)c.Spirit);
-                Set("health", (decimal)c.Health);
-                Set("energy", (decimal)c.Energy);
-                Set("attributePoints", c.AttributePoints);
+                ShowAttributes(c);
                 Set("skillPoints", c.SkillPoints);
                 Set("devotionPoints", c.DevotionPoints);
                 Set("totalDevotion", c.TotalDevotion);
@@ -686,6 +710,16 @@ namespace Gdc.Gui
                 SetEnabled(true);
             }
             finally { loading = false; }
+        }
+
+        void ShowAttributes(Character c)
+        {
+            Set("physique", (decimal)c.Physique);
+            Set("cunning", (decimal)c.Cunning);
+            Set("spirit", (decimal)c.Spirit);
+            Set("health", (decimal)c.Health);
+            Set("energy", (decimal)c.Energy);
+            Set("attributePoints", c.AttributePoints);
         }
 
         void Set(string key, decimal value)

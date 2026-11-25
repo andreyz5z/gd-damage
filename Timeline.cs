@@ -621,6 +621,7 @@ namespace Gdc.Gui
         // Skill presses over the run — total and by name; and how many times the
         // self-firing ones went off (procs and gear skills with an "on attack" condition).
         public int Presses, Procs, PoolFired;
+        public int ProjectileVolleys;
         // Fired WITHOUT DAMAGE — summons and devotion buffs. Counted apart from `Procs`
         // on purpose: they add not a point of damage, and mixing them with the striking
         // procs would misstate how often the striking ones fire.
@@ -900,7 +901,7 @@ namespace Gdc.Gui
         // procs and skills arrive here, and the order within a moment must be firm.
         // PETS (E7) added three kinds: a summon (by tick, by the skill's cooldown), a
         // pet's strike, and its departure at the end of its lifetime.
-        enum Kind { Swing = 0, Tick = 1, Press = 2, Aura = 3, Summon = 4, PetHit = 5, PetGone = 6 }
+        enum Kind { Swing = 0, Tick = 1, Press = 2, Aura = 3, Summon = 4, PetHit = 5, PetGone = 6, Volley = 7 }
 
         // ONE PET STANDING BY. There can be several identical ones (Raise Skeletons caps
         // at eight) and all of them strike — hence a number, not just a kind.
@@ -932,6 +933,9 @@ namespace Gdc.Gui
             public TimelinePets.Kind Summon;   // for a summon: whom we call
             public PetLive Pet;                // for a strike or departure: which pet
             public TimelinePets.Move Move;     // for a strike: what it strikes with
+            public LogKind VolleyLog = default;
+            public string VolleyCaption = null;
+            public bool VolleyTriggersProcs = false;
             public Event(double at, int actor, int order)
             { At = at; Actor = actor; Order = order; What = Kind.Swing; Source = null; Skill = null; Ring = null; Summon = null; Pet = null; Move = null; }
             public Event(double at, int actor, int order, Dot dot)
@@ -2933,6 +2937,15 @@ namespace Gdc.Gui
                     continue;
                 }
 
+                if (e.What == Kind.Volley)
+                {
+                    FireVolley(game, c, totals, seeded, target, opt, run, queue, dots, ref order,
+                               e, e.Skill, roll, hitRng, pth, thresholds, multipliers, critDamage,
+                               below, perSecond, e.VolleyLog, e.VolleyCaption, book, ProjectileVolley.Of(e.Skill.Skill),
+                               e.VolleyTriggersProcs ? procs : null, procRng);
+                    continue;
+                }
+
                 // A SKILL PRESS. It strikes with its own hands (no layout — MECHANICS 38),
                 // each hand with its own hit roll and its own crit, and the damage is taken
                 // from `HitHandMin` — with the skill's share and its own damage.
@@ -3017,13 +3030,8 @@ namespace Gdc.Gui
                     Fire(game, c, totals, seeded, target, opt, run, queue, dots, ref order, e, p,
                          roll, hitRng, pth, thresholds, multipliers, critDamage, below, perSecond,
                          p.Channel || p.Main ? LogKind.Plain : LogKind.Pressed,
-                         Lang.T(p.Channel ? "log.fire.channel" : p.Main ? "log.fire.spell" : "log.fire.skill"), book);
-                    // A PROC FIRES FROM A PRESSED SKILL TOO, not only from the default
-                    // attack: "the meteor activates from it as well, by the way" (measured
-                    // 6 September, MECHANICS 39).
-                    Procs(game, c, totals, seeded, target, opt, run, queue, dots, ref order, e,
-                          procs, roll, hitRng, procRng, pth, thresholds, multipliers, critDamage,
-                          below, perSecond, book, run.LastCrit);
+                         Lang.T(p.Channel ? "log.fire.channel" : p.Main ? "log.fire.spell" : "log.fire.skill"),
+                         book, procs, procRng);
                     // The next press comes as soon as the cooldown is up.
                     //
                     // AND IF THERE IS NO COOLDOWN, WE TAKE THE INTERVAL FROM THE USER.
@@ -3261,10 +3269,7 @@ namespace Gdc.Gui
                         run.PoolFired++;
                         Fire(game, c, totals, seeded, target, opt, run, queue, dots, ref order, e,
                              swap, roll, hitRng, pth, thresholds, multipliers, critDamage,
-                             below, perSecond, LogKind.Pool, Lang.T("log.fire.pool"), book);
-                        Procs(game, c, totals, seeded, target, opt, run, queue, dots, ref order, e,
-                              procs, roll, hitRng, procRng, pth, thresholds, multipliers,
-                              critDamage, below, perSecond, book, run.LastCrit);
+                             below, perSecond, LogKind.Pool, Lang.T("log.fire.pool"), book, procs, procRng);
                         double apsPool = panel.SwingAPS(dual ? (int)kind : 0);
                         if (apsPool > 0) queue.Add(new Event(e.At + 1 / apsPool, e.Actor, ++order));
                         // A pool skill IS the swing: it takes the swing's interval.
@@ -3300,10 +3305,7 @@ namespace Gdc.Gui
                          assigned.Finale ? Lang.T("log.fire.finale", Fmt0(assigned.ChargeLevels + 1))
                                          : Lang.T("log.fire.attack") + (assigned.ChargeLevels > 0
                                                           ? " " + Lang.T("log.fire.charges", charge) : ""),
-                         book);
-                    Procs(game, c, totals, seeded, target, opt, run, queue, dots, ref order, e,
-                          procs, roll, hitRng, procRng, pth, thresholds, multipliers,
-                          critDamage, below, perSecond, book, run.LastCrit);
+                         book, procs, procRng);
                     double apsA = panel.SwingAPS(dual ? (int)kind : 0);
                     if (apsA > 0) queue.Add(new Event(e.At + 1 / apsA, e.Actor, ++order));
                     // The assigned attack IS the swing: it takes the swing's interval.
@@ -4287,15 +4289,6 @@ namespace Gdc.Gui
         // measured: there is no hand layout (it always strikes with its own), and the damage
         // comes from `HitHandMin`, where the skill's share and its own damage are already
         // summed (MECHANICS 38).
-        static void Fire(GameData game, Character c, CharacterTotals totals, ExactRolls seeded,
-                         TimelineTarget target, TimelineOptions opt, TimelineRun run,
-                         List<Event> queue, Dictionary<string, Dot> dots, ref int order,
-                         Event e, Press p, HitRoll roll, Random hitRng, double pth,
-                         double[] thresholds, double[] multipliers, double critDamage,
-                         double below, List<double> perSecond, StarBook book)
-        { Fire(game, c, totals, seeded, target, opt, run, queue, dots, ref order, e, p, roll,
-               hitRng, pth, thresholds, multipliers, critDamage, below, perSecond, LogKind.Pressed, Lang.T("log.fire.skill"), book); }
-
         // `lineKind` is the log line's kind (its colour in the window) and at the same time
         // the proc marker for the totals: the proc sum used to recognise a proc by the word
         // "proc" inside `kindWord`.
@@ -4304,7 +4297,90 @@ namespace Gdc.Gui
                          List<Event> queue, Dictionary<string, Dot> dots, ref int order,
                          Event e, Press p, HitRoll roll, Random hitRng, double pth,
                          double[] thresholds, double[] multipliers, double critDamage,
-                         double below, List<double> perSecond, LogKind lineKind, string kindWord, StarBook book)
+                         double below, List<double> perSecond, LogKind lineKind, string kindWord, StarBook book,
+                         List<Proc> procs = null, Random procRng = null)
+        {
+            if (p.Skill != null) run.Count(p.Skill.Dbr, p.Skill.Name);
+            ProjectileVolley volley = ProjectileVolley.Of(p.Skill);
+            // A persistent rain repeats its volley at the imported interval. Later waves
+            // use the loadout and target defenses at their own impact time.
+            if (volley.Interval > 0)
+                for (double delay = volley.Interval; delay < volley.Duration - 1e-9 && e.At + delay <= opt.Seconds;
+                     delay += volley.Interval)
+                    queue.Add(new Event(e.At + delay, e.Actor, ++order, p)
+                    {
+                        What = Kind.Volley,
+                        VolleyLog = lineKind,
+                        VolleyCaption = kindWord,
+                        VolleyTriggersProcs = procs != null
+                    });
+            FireVolley(game, c, totals, seeded, target, opt, run, queue, dots, ref order, e, p,
+                       roll, hitRng, pth, thresholds, multipliers, critDamage, below, perSecond,
+                       lineKind, kindWord, book, volley, procs, procRng);
+        }
+
+        static void FireVolley(GameData game, Character c, CharacterTotals totals, ExactRolls seeded,
+                               TimelineTarget target, TimelineOptions opt, TimelineRun run,
+                               List<Event> queue, Dictionary<string, Dot> dots, ref int order,
+                               Event e, Press p, HitRoll roll, Random hitRng, double pth,
+                               double[] thresholds, double[] multipliers, double critDamage,
+                               double below, List<double> perSecond, LogKind lineKind, string kindWord, StarBook book,
+                               ProjectileVolley volley, List<Proc> procs, Random procRng)
+        {
+            bool multiple = volley.Count > 1 || volley.Interval > 0;
+            if (multiple) run.ProjectileVolleys++;
+            double defenceCut = multiple && book != null ? book.Debuffs.DefenceCut(e.At) : 0;
+            for (int i = 0; i < volley.Count; i++)
+            {
+                string title = p.Name;
+                if (multiple)
+                {
+                    title += " [" + (i + 1) + "/" + volley.Count + "]";
+                    if (volley.Coverage < 1 && hitRng.NextDouble() >= volley.Coverage)
+                    {
+                        run.Misses++;
+                        Add(run, opt, e.At, LogKind.Miss, Lang.T("log.miss") + ": " + kindWord + " " + title,
+                            "", 0, 0, null, null);
+                        continue;
+                    }
+                }
+
+                if (i > 0 && book != null)
+                {
+                    // Earlier projectiles can apply reductions before a later one lands.
+                    target.AbsoluteCut = book.Debuffs.AbsoluteCut(e.At);
+                    target.RelativeCut = book.Debuffs.RelativeCut(e.At);
+                    target.ArmorCut = book.Debuffs.ArmorCut(e.At);
+                    double cut = book.Debuffs.DefenceCut(e.At);
+                    if (cut != defenceCut)
+                    {
+                        defenceCut = cut;
+                        double oa = Combat.Ability(game, c, totals, c.Cunning,
+                                                   "characterOffensiveAbility", "characterDexterity");
+                        pth = Math.Max(Combat.PthMinimum(game),
+                                       Combat.Pth(game, oa, Math.Max(0, target.DefensiveAbility - cut)));
+                        below = Combat.BelowThreshold(game, pth);
+                    }
+                }
+
+                bool crit;
+                bool landed = FireHit(game, c, totals, seeded, target, opt, run, queue, dots, ref order, e, p,
+                                      roll, hitRng, pth, thresholds, multipliers, critDamage, below, perSecond,
+                                      lineKind, kindWord, book, title, multiple, out crit);
+                if (procs != null && (!multiple || landed))
+                    Procs(game, c, totals, seeded, target, opt, run, queue, dots, ref order, e,
+                          procs, roll, hitRng, procRng, pth, thresholds, multipliers, critDamage, below,
+                          perSecond, book, multiple ? crit : run.LastCrit);
+            }
+        }
+
+        static bool FireHit(GameData game, Character c, CharacterTotals totals, ExactRolls seeded,
+                            TimelineTarget target, TimelineOptions opt, TimelineRun run,
+                            List<Event> queue, Dictionary<string, Dot> dots, ref int order,
+                            Event e, Press p, HitRoll roll, Random hitRng, double pth,
+                            double[] thresholds, double[] multipliers, double critDamage,
+                            double below, List<double> perSecond, LogKind lineKind, string kindWord,
+                            StarBook book, string title, bool multiple, out bool crit)
         {
             // A SKILL WITHOUT A WEAPON-DAMAGE SHARE STRIKES ONCE, NOT ONCE PER HAND.
             //
@@ -4314,7 +4390,6 @@ namespace Gdc.Gui
             // exactly where there is something to strike with — i.e. where there is a weapon
             // share.
             run.LastCrit = false;
-            if (p.Skill != null) run.Count(p.Skill.Dbr, p.Skill.Name);
             bool byWeapon = p.Skill != null && Math.Abs(p.Skill.WeaponPct) > 0.0001;
             bool[] swung = byWeapon
                          ? new[] { p.Hands != Hands.Off, p.Hands == Hands.Both || p.Hands == Hands.Off }
@@ -4332,7 +4407,7 @@ namespace Gdc.Gui
             // The crit for the `AttackEnemyCrit` condition — the tier has already been
             // rolled, and damage does not affect whether a star fires, so it can be known in
             // advance.
-            bool crit = (landed[0] && tiers[0] > 1) || (landed[1] && tiers[1] > 1);
+            crit = (landed[0] && tiers[0] > 1) || (landed[1] && tiers[1] > 1);
             // For "on critical attack" procs — those are rolled AFTER the strike.
             run.LastCrit = crit;
 
@@ -4351,12 +4426,14 @@ namespace Gdc.Gui
             if (!landed[0] && !landed[1])
             {
                 run.Misses++;
-                Add(run, opt, e.At, LogKind.Miss, Lang.T("log.miss") + ": " + kindWord + " " + p.Name, why, 0, 0, null, null);
-                // A star's roll is made on a miss too, just as for procs (MECHANICS 33).
-                Stars(run, opt, book, e, p.Skill == null ? null : p.Skill.Dbr, false, false,
-                      game, c, totals, seeded, target, queue, dots, ref order, roll, hitRng,
-                      pth, thresholds, multipliers, critDamage, below, perSecond);
-                return;
+                Add(run, opt, e.At, LogKind.Miss, Lang.T("log.miss") + ": " + kindWord + " " + title, why, 0, 0, null, null);
+                // Preserve the single-strike proc rule (MECHANICS 33). A volley gives one
+                // opportunity for each projectile that actually hits the target.
+                if (!multiple)
+                    Stars(run, opt, book, e, p.Skill == null ? null : p.Skill.Dbr, false, false,
+                          game, c, totals, seeded, target, queue, dots, ref order, roll, hitRng,
+                          pth, thresholds, multipliers, critDamage, below, perSecond);
+                return false;
             }
             run.Hits++;
 
@@ -4459,7 +4536,7 @@ namespace Gdc.Gui
             // ONE HAND MISSING IS NOT A MISS, BUT IT MUST BE SAID. The user's request: a full
             // miss only when both miss, and a partial one must be visible in words, not only
             // from the roll figures.
-            Add(run, opt, e.At, lineKind, kindWord + ": " + p.Name + Partial(swung, landed),
+            Add(run, opt, e.At, lineKind, kindWord + ": " + title + Partial(swung, landed),
                 why, damage, before, hands, landed, handsBefore);
             // PERCENT-LIFE DAMAGE FROM THIS STRIKE — the strongest of the skill's own and the
             // gear's (they do not stack; MECHANICS 77).
@@ -4477,6 +4554,7 @@ namespace Gdc.Gui
             Stars(run, opt, book, e, p.Skill == null ? null : p.Skill.Dbr, crit, false,
                   game, c, totals, seeded, target, queue, dots, ref order, roll, hitRng,
                   pth, thresholds, multipliers, critDamage, below, perSecond);
+            return true;
         }
 
         // APPLYING A DOT. The same source means the same dot: the duration is extended and the

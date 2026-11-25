@@ -23,6 +23,8 @@ character.difficulty.ultimate=Ultimátní
 
 # Úprava čísel, která hra počítá sama
 character.freeEdit=Volná úprava atributů
+character.resetAttributes=Obnovit základní atributy
+character.resetAttributes.warning=Fyzická kondice, rafinovanost a duchovno se vrátí na základní hodnoty. Všechny dosud přidělené body atributů budete moci znovu rozdělit. Pokračovat?
 character.freeEdit.warning=Těchto pět čísel počítá hra sama z utracených bodů, nošených předmětů a dovedností — vzorce jsou známé a s hrou se shodují přesně.\n\nPokud sem zapíšete vlastní hodnoty, uložená hra se přestane shodovat s tím, co hra ukazuje na obrazovce: přepočítá zdraví a energii podle svých pravidel a vaše atributy ponechá.\n\nPřesto úpravu povolit?
 character.keptInSave=Uloženo v uložené hře odděleně od toho, co hra ukazuje na obrazovce.\nKonečné zdraví a energii počítá hra sama — z utracených bodů, atributů, předmětů a dovedností — a s tímto číslem se neshodují.\nCo přesně je tu uloženo, jsme zatím nezjistili, proto je úprava uzavřená.
 

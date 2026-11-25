@@ -23,6 +23,8 @@ character.difficulty.ultimate=Tối Thượng
 
 # Sửa các con số mà trò chơi tự tính
 character.freeEdit=Sửa thuộc tính tự do
+character.resetAttributes=Đặt lại thuộc tính
+character.resetAttributes.warning=Thể Chất, Khéo Léo và Tinh Thần sẽ trở về giá trị cơ bản. Bạn có thể phân bổ lại tất cả Điểm Tiềm Năng đã sử dụng. Tiếp tục?
 character.freeEdit.warning=Trò chơi tự tính năm con số này từ số điểm đã dùng, vật phẩm đang mặc và kỹ năng — các công thức đã được hiểu rõ và khớp chính xác với trò chơi.\n\nNếu bạn ghi giá trị riêng vào đây, bản lưu sẽ không còn khớp với những gì trò chơi hiện trên màn hình: nó sẽ tính lại máu và năng lượng theo quy tắc riêng và giữ nguyên thuộc tính của bạn.\n\nVẫn cho phép sửa?
 character.keptInSave=Được lưu trong bản lưu tách riêng khỏi những gì trò chơi hiện trên màn hình.\nMáu và năng lượng cuối cùng do chính trò chơi tính — từ điểm đã dùng, thuộc tính, vật phẩm và kỹ năng — và không khớp với con số này.\nChính xác thứ gì được lưu ở đây chúng tôi chưa tìm ra, vì vậy không cho sửa.
 

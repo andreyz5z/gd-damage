@@ -23,6 +23,8 @@ character.difficulty.ultimate=Ultimativ
 
 # Die Zahlen bearbeiten, die das Spiel selbst berechnet
 character.freeEdit=Attribute frei bearbeiten
+character.resetAttributes=Attribute zurücksetzen
+character.resetAttributes.warning=Konstitution, Raffinesse und Geist werden auf ihre Grundwerte zurückgesetzt. Alle investierten Attributpunkte stehen danach wieder zur freien Verteilung bereit. Fortfahren?
 character.freeEdit.warning=Diese fünf Zahlen berechnet das Spiel selbst aus vergebenen Punkten, getragenen Gegenständen und Fähigkeiten — die Formeln sind verstanden und stimmen mit dem Spiel genau überein.\n\nWenn du hier eigene Werte einträgst, weicht der Spielstand von dem ab, was das Spiel auf dem Bildschirm zeigt: Es berechnet Leben und Energie nach seinen eigenen Regeln neu und behält deine Attribute.\n\nBearbeiten trotzdem erlauben?
 character.keptInSave=Wird im Spielstand getrennt von dem gespeichert, was das Spiel auf dem Bildschirm zeigt.\nDas endgültige Leben und die Energie berechnet das Spiel selbst — aus vergebenen Punkten, Attributen, Gegenständen und Fähigkeiten — und sie stimmen nicht mit dieser Zahl überein.\nWas genau hier gespeichert wird, haben wir noch nicht herausgefunden, daher ist das Bearbeiten gesperrt.
 
